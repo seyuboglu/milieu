@@ -1,0 +1,2298 @@
+id,name,class,size
+C4020858,Choreatic disease,,28
+C4020859,Pyramidal tract disease,,12
+C2675111,Abnormal eyelashes,,13
+C0003803,Arnold Chiari Malformation,,11
+C1837082,Metaphyseal cupping,,11
+C4020851,Cortical white matter abnormalities seen on MRI,,18
+C1837081,Tibial bowing,,20
+C4020854,Neuro-degenerative disease,,43
+C4020855,Respiratory function loss,,129
+C4020856,Terminal tremor,,20
+C0020461,Hyperkalemia,,17
+C0079924,Oligohydramnios,reproductive system ,32
+C0003578,Apnea,,45
+C0332606,Elfin facies,,10
+C0857973,Increased serum parathyroid hormone,,14
+C0240310,Hypoplasia of the maxilla,,66
+C0241210,Speech Delay,,116
+C0027720,Nephrosis,urinary system ,15
+C0026636,Mouth Diseases,gastrointestinal system ,12
+C1838979,MITOCHONDRIAL COMPLEX I DEFICIENCY,,20
+C1838608,Radial aplasia,,15
+C2219717,menstrual periods stopped for over 6 months,,13
+C1837404,"High, narrow palate",,32
+C1837402,Flat occiput,,26
+C0746940,nonverbal,,43
+C0043352,Xerostomia,,42
+C0206698,Cholangiocarcinoma,cancer,25
+C0231835,Tachypnea,,20
+C1389016,ATRIOVENTRICULAR CANAL DEFECT,,17
+C1850072,Tented upper lip,,19
+C0598608,Hyperhomocysteinemia,inherited metabolic disorder,11
+C1855773,"Psychomotor retardation, profound",,17
+C0221356,Brachycephaly,,88
+C1837084,Short metacarpal,,44
+C1837397,"Global developmental delay, severe",,47
+C0741796,Recurrent bronchitis,,23
+C0027659,"Neoplasms, Experimental",,37
+C0027658,"Neoplasms, Germ Cell and Embryonal",cancer,13
+C4022003,Erectile abnormalities,,16
+C0002171,Alopecia Areata,immune system ,11
+C0002170,Alopecia,integumentary system ,91
+C0521719,Clouding of corneal stroma,,50
+C0428977,Bradycardia,,36
+C0009447,Common Variable Immunodeficiency,immune system ,11
+C0017658,Glomerulonephritis,urinary system ,34
+C1837249,"Malformations of Cortical Development, Group II",,31
+C1969372,Tubulointerstitial fibrosis,,11
+C0948023,Urine phosphorous concentration above normal,,21
+C0004364,Autoimmune Diseases,,64
+C0035258,Restless Legs Syndrome,nervous system ,12
+C0151205,Periorbital edema,,13
+C0730292,Macular dystrophy,,11
+C0730290,Cone dystrophy,,20
+C0013990,Pathological accumulation of air in tissues,,10
+C0553723,Squamous cell carcinoma of skin,cancer,12
+C1859117,Recurrent pulmonary infections,,29
+C4280624,Blind spot located at fixation point,,21
+C4012968,Mild global developmental delay,,15
+C1839829,Short distal phalanges,,50
+C0151686,Growth retardation,,114
+C1305420,Prominent ear,,56
+C1866730,Rhizomelia,,26
+C1855285,Protruding ears,,56
+C0001206,Acromegaly,endocrine system ,17
+C0240538,Convex nasal ridge,,38
+C0431904,Ulnar polydactyly of fingers,,47
+C0027726,Nephrotic Syndrome,urinary system ,57
+C0405580,Adrenal cortical hypofunction,endocrine system ,16
+C1563720,Kallmann Syndrome 2 (disorder),,18
+C0011849,Diabetes Mellitus,acquired metabolic ,91
+C0011848,Diabetes Insipidus,urinary system ,10
+C1834060,Short middle phalanx of the 5th finger,,13
+C0020564,Hypertrophy,,17
+C4072849,Scapular weakness,,23
+C0038587,Substance Withdrawal Syndrome,,53
+C1839739,Prominent lower lip,,64
+C0040412,Fissured tongue,gastrointestinal system ,17
+C0003028,Anhidrosis,integumentary system ,14
+C0040411,Tongue Neoplasms,,10
+C0027080,Myoglobinuria,,11
+C0007273,Carotid Artery Diseases,nervous system ,11
+C1858085,Malar flattening,,130
+C4228227,Small thymus,,13
+C1112705,Nuclear non-senile cataract,,18
+C4021107,Non-obstructive azoospermia,,22
+C1956346,Coronary Artery Disease,,78
+C4024748,Aplasia/Hypoplasia of the iris,,10
+C0236969,Substance-Related Disorders,,115
+C0007873,Uterine Cervical Neoplasm,cancer,26
+C0030554,Paresthesia,,32
+C1857042,Sparse scalp hair,,42
+C0026633,Mouth Abnormalities,,14
+C0149754,Cellulitis of periorbital region,,13
+C1857287,Stroke-like episodes,,19
+C1851854,Thin dental enamel,,35
+C0023891,"Liver Cirrhosis, Alcoholic",endocrine system ,16
+C0242488,Acute Lung Injury,,18
+C0023893,"Liver Cirrhosis, Experimental",,767
+C0023892,Biliary cirrhosis,gastrointestinal system ,45
+C0023895,Liver diseases,endocrine system ,88
+C4024989,Hereditary nonpolyposis colorectal carcinoma,,18
+C0234378,Static Tremor,,21
+C0234376,Action Tremor,,22
+C1839604,Renal failure in adulthood,,76
+C3163798,Recurrent lower respiratory tract infection,,12
+C3809288,LEFT VENTRICULAR NONCOMPACTION 8,,40
+C1854418,Biparietal narrowing,,28
+C1846460,Malformed pinnae,,37
+C2677378,Duodenal villous atrophy,,16
+C0030312,Pancytopenia,hematopoietic system ,36
+C0751295,Memory Loss,,47
+C3164374,Abnormality of pulmonary valve,,23
+C0340543,Familial primary pulmonary hypertension,,11
+C0011206,Delirium,,10
+C4025901,Abnormality of body height,,13
+C4025900,Abnormality of female internal genitalia,,14
+C0273115,Lung Injury,,20
+C0454555,Hypernasal voice,,42
+C0473527,Hypoalphalipoproteinemias,,10
+C0240953,Winged scapula,,23
+C1321329,Slowed saccades,,12
+C0024667,Animal Mammary Neoplasms,,143
+C0029422,Osteochondrodysplasias,musculoskeletal system ,72
+C4025763,Abnormality of the rib cage,,12
+C0026351,Moderate mental retardation (I.Q. 35-49),,28
+C0015393,Eye Abnormalities,,36
+C0024668,"Mammary Neoplasms, Experimental",,155
+C0020295,Hydronephrosis,urinary system ,69
+C1837142,Poor suck,,20
+C0019158,Hepatitis,,24
+C3808249,Optic disc abnormalities,,12
+C0019151,Hepatic Encephalopathy,nervous system ,15
+C1446712,Overlapping fingers,,10
+C0079154,Congenital Nonbullous Ichthyosiform Erythroderma,monogenic ,16
+C0152013,Adenocarcinoma of lung (disorder),respiratory system ,60
+C1864897,Cognitive delay,,614
+C0002962,Angina Pectoris,,14
+C3496069,cocaine use,,11
+C0241910,"Hepatitis, Autoimmune",immune system ,17
+C0033578,Prostatic Neoplasms,cancer,492
+C0008297,Choanal Atresia,respiratory system ,28
+C3552713,Talipes foot deformities,,20
+C0015695,Fatty Liver,inherited metabolic disorder,75
+C4280678,Posterior displacement of the tongue,,10
+C4280679,Increased calcium level in kidney,,21
+C0311468,Increased bilirubin level (finding),,18
+C1868571,"Thick, flared eyebrows",,41
+C1868577,Patella aplasia-hypoplasia,,13
+C0004352,Autistic Disorder,,286
+C0233514,Abnormal behavior,,52
+C1836926,Fundus with peripheral 'bony spicules',,12
+C0282160,Aplasia Cutis Congenita,,14
+C0158465,Acquired cubitus valgus,,18
+C0021831,Intestinal Diseases,gastrointestinal system ,11
+C3806283,Frequent fractures,,54
+C0027404,Narcolepsy,,21
+C0015967,Fever,,127
+C0001418,Adenocarcinoma,cancer,114
+C1510586,Autism Spectrum Disorders,,76
+C3806443,Puffy cheeks,,50
+C0887833,"Carcinoma, Pancreatic Ductal",cancer,20
+C1837522,Decreased pain sensation,,20
+C0349639,Juvenile Myelomonocytic Leukemia,hematopoietic system ,20
+C4280495,Concave bridge of nose,,196
+C0042109,Urticaria,,31
+C0751837,Gait Ataxia,,51
+C1860614,ULNAR HYPOPLASIA,,24
+C0003811,Cardiac Arrhythmia,,100
+C0018995,Hemochromatosis,inherited metabolic disorder,12
+C1837098,Easy fatigability,,18
+C0162298,Joint stiffness,,84
+C1836653,Ascending aortic dissection,,13
+C4020843,Abnormal urinary amino-acid findings,,38
+C0438717,Transaminases increased,,81
+C4020840,Abnormal vertebral bodies,,16
+C4020847,Abnormality of pelvic girdle bone morphology,,38
+C0003486,Aortic Aneurysm,cardiovascular system ,10
+C4020844,Bullet vertebral body,,17
+C0700078,Decreased tendon reflex,,124
+C0011860,"Diabetes Mellitus, Non-Insulin-Dependent",acquired metabolic ,157
+C4021664,Abnormality of the abdominal wall,,10
+C0032226,Pleural Diseases,respiratory system ,10
+C2752013,Prenatal onset,,139
+C1368816,Sebaceous adenoma,benign neoplasm,18
+C0003962,Ascites,,21
+C0262404,Cerebellar degeneration,,103
+C2973725,Pulmonary arterial hypertension,,40
+C1864711,Muscle biopsy shows dystrophic changes,,39
+C4021776,Abnormality of the voice,,46
+C0432103,Submucous cleft of hard palate,,11
+C1837899,Isoelectric focusing of serum transferrin consistent with CDG type I,,10
+C0206686,Adrenocortical carcinoma,cancer,22
+C0003706,Arachnodactyly,,49
+C1837385,Poor growth,,114
+C3805574,Increased fracture rate,,54
+C1837388,Abnormal respiratory patterns,,20
+C2981150,Uranostaphyloschisis,,167
+C0003492,Aortic coarctation,,30
+C2265792,Skeletal muscle hypertrophy,,16
+C0158646,Cleft palate with cleft lip,,23
+C0220633,Uveal melanoma,nervous system ,10
+C4020869,Abnormality of the abdomen,,14
+C0012833,Dizziness,,28
+C0232939,Primary physiologic amenorrhea,,55
+C0035334,Retinitis Pigmentosa,nervous system ,177
+C1843108,Short hands,,54
+C0151740,Intracranial Hypertension,nervous system ,24
+C0151747,Renal tubular disorder,,12
+C0151744,Myocardial Ischemia,cardiovascular system ,171
+C1839839,MAJOR AFFECTIVE DISORDER 2,,24
+C1855340,Bowing of the long bones,,31
+C0029442,Osteomalacia,musculoskeletal system ,11
+C0029443,Osteomyelitis,,17
+C0001916,Albinism,,11
+C0003635,Apraxias,,27
+C1290857,Disorder of face,,10
+C1840457,Loss of retinal pigment epithelium,,10
+C0241054,Skin bulla,,56
+C1858452,Thickened calvaria,,17
+C1839546,Microretrognathia,,13
+C1854387,Type 1 muscle fiber predominance,,10
+C1850667,Highly variable phenotype and severity,,152
+C0265319,Fibrous skin tumor of tuberous sclerosis,,18
+C0151611,Electroencephalogram abnormal,,103
+C0038454,Cerebrovascular accident,nervous system ,57
+C0006267,Bronchiectasis,respiratory system ,40
+C0011053,Deafness,,198
+C1851971,Hypoplastic myelodysplasia,,19
+C2677762,Tall forehead,,103
+C0039685,Tetralogy of Fallot,cardiovascular system ,46
+C0029191,Orchitis,endocrine system ,12
+C0544886,Somatic mutation,,62
+C0520459,Necrotizing Enterocolitis,gastrointestinal system ,17
+C1835884,Triangular face,,58
+C0149925,Small cell carcinoma of lung,respiratory system ,42
+C0431863,Carpal synostosis,,12
+C0332563,Papule,,44
+C0234182,Gowers sign,,24
+C4024753,Abnormality of the retinal vasculature,,59
+C1836623,Low to undetectable plasma cortisol,,12
+C4024756,Abnormality of macular pigmentation,,16
+C0452138,"Sensorineural hearing loss, bilateral",,27
+C0424448,Mask-like facies,,25
+C0149725,Lower respiratory tract infection,,12
+C0149721,Left Ventricular Hypertrophy,,56
+C0036651,Senile lentigo,,10
+C0079541,Holoprosencephaly,,17
+C0018798,Congenital Heart Defects,cardiovascular system ,59
+C0266061,Open Bite,,21
+C3489733,Oculomotor apraxia,,25
+C0020179,Huntington Disease,nervous system ,12
+C4024996,Aplasia/Hypoplasia of the lungs,,13
+C0011875,Diabetic Angiopathies,cardiovascular system ,16
+C0235833,Congenital diaphragmatic hernia,,38
+C0266539,Congenital total cataract,,15
+C0036421,Systemic Scleroderma,immune system ,12
+C0578626,blue iris (physical finding),,17
+C0030305,Pancreatitis,endocrine system ,51
+C1853193,Recurrent skin infections,,21
+C0155119,Recurrent erosion of cornea,nervous system ,12
+C0032914,Pre-Eclampsia,cardiovascular system ,25
+C1277241,Delayed myelination,,22
+C0242584,Autoimmune thrombocytopenia,,22
+C0000731,Abdomen distended,,43
+C0000737,Abdominal Pain,,106
+C1843005,Absent eyelashes,,16
+C0424688,Small head,,375
+C3714745,Malabsorption,,87
+C1405984,Absent radius,,15
+C0857379,Auricular malformation,,41
+C0036337,Schizoaffective Disorder,cognitive disorder,21
+C0853897,Diabetic Cardiomyopathies,,10
+C0239676,High forehead,,103
+C0265783,Congenital hypoplasia of lung,,48
+C0162674,Chronic progressive external ophthalmoplegia,musculoskeletal system ,23
+C0338715,Drug-induced depressive state,,14
+C1842688,Hypoplasia of the brainstem,,22
+C0162670,Mitochondrial Myopathies,musculoskeletal system ,31
+C0162672,MERRF Syndrome,musculoskeletal system ,12
+C1861975,"Cafe au lait spots, multiple",,17
+C1842680,Hypoplastic lobules,,11
+C1849089,Broad forehead,,60
+C0001956,alcohol use disorder,,13
+C0004106,Astigmatism,nervous system ,22
+C0392163,Corneal erosion,,16
+C0234985,Mental deterioration,,33
+C0023434,Chronic Lymphocytic Leukemia,cancer,48
+C1846228,Absence of pubertal development,,17
+C1848207,Poor speech,,37
+C1136249,"Mental Retardation, X-Linked",,23
+C0036202,Sarcoidosis,immune system ,10
+C1832160,Poor temperature regulation,,10
+C0920269,Microsatellite Instability,,15
+C0277959,Coarse hair,,31
+C0339535,"Night blindness, congenital stationary",,15
+C0438237,Liver enzymes abnormal,,81
+C0038325,Stevens-Johnson Syndrome,integumentary system ,30
+C0042024,Urinary Incontinence,,37
+C0005741,Blepharitis,nervous system ,17
+C4280666,Triangular head shape,,10
+C4280665,Wedge shaped head,,10
+C4280664,Big calvaria,,147
+C1827524,Wide spaced nipples,,46
+C0005744,Blepharophimosis,nervous system ,56
+C0005747,Blepharospasm,nervous system ,11
+C2751582,Mitochondrial respiratory chain defects,,15
+C0600427,Cocaine Dependence,,44
+C1833144,"Slender, gracile long tubular bones",,21
+C3277697,"Decreased visual acuity, progressive",,36
+C0025521,Inborn Errors of Metabolism,,16
+C0026106,Mild Mental Retardation,,71
+C4280807,Flattening of cranial vault,,20
+C0600031,Congenital absence of spleen,,10
+C0021841,Intestinal Neoplasms,gastrointestinal system ,12
+C0021843,Intestinal Obstruction,gastrointestinal system ,20
+C4280808,Abnormally small eyeball,,97
+C0232744,Decreased liver function,,24
+C0014116,Endocardial Cushion Defects,cardiovascular system ,17
+C0018055,"Gonadal Dysgenesis, Mixed",endocrine system ,19
+C0018051,Gonadal Dysgenesis,endocrine system ,20
+C0877165,Short phalanx of finger,,32
+C0543888,Epileptic encephalopathy,,26
+C0022548,Keloid,,38
+C1836735,hypopigmented skin patch,,60
+C3839460,Nonprogressive,,12
+C0424711,Orbital separation diminished,,23
+C1837066,Recurrent viral infections,,15
+C4020876,Dull intelligence,,649
+C4020874,No development of motor milestones,,151
+C4020875,Mental and motor retardation,,614
+C4020873,Infratentorial atrophy,,103
+C1861403,Variable expressivity,,166
+C0426789,Short thorax,,21
+C0027709,Nephrocalcinosis,acquired metabolic ,24
+C0027708,Nephroblastoma,cancer,20
+C0027707,"Nephritis, Interstitial",urinary system ,10
+C0264303,Laryngomalacia,,14
+C0600104,Obsessive compulsive behavior,,25
+C0026650,Movement Disorders,nervous system ,62
+C1835763,Vertebral body fusion,,25
+C0232461,Increased appetite (finding),,26
+C0234967,Choreoathetoid movements,,32
+C1837463,Narrow face,,54
+C0949445,Cervical Dystonia,,17
+C2937365,Recurrent aphthous ulcer,,15
+C0262444,Dental abnormalities,,61
+C0262431,Compression fracture of vertebral column,,14
+C1855020,Acute necrotizing encephalopathy,,14
+C0268307,Conjugated hyperbilirubinemia,,14
+C1855751,Bulbous nasal tip,,48
+C3278811,Thumb aplasia,,16
+C0017181,Gastrointestinal Hemorrhage,,52
+C0002395,Alzheimer's Disease,nervous system ,87
+C0240421,"Muscle weakness, progressive",,22
+C1835452,Hypoplastic ovary,,30
+C0008519,Ectopic Tissue,,14
+C0743912,Increased ferritin,,14
+C0009421,Comatose,,56
+C0018989,Hemiparesis,,44
+C1837260,Prominent forehead,,67
+C0268237,Cytochrome-c Oxidase Deficiency,inherited metabolic disorder,13
+C0035304,Retinal Degeneration,nervous system ,48
+C0035305,Retinal Detachment,nervous system ,33
+C0035309,Retinal Diseases,nervous system ,57
+C1862265,Elevated gonadotropins,,15
+C0878787,Growth failure,,114
+C0029453,Osteopenia,,99
+C0431478,Posteriorly rotated ear,,61
+C0271388,Pendular Nystagmus,,14
+C0029456,Osteoporosis,musculoskeletal system ,164
+C1855333,Small genitalia,,13
+C0271385,Horizontal Nystagmus,,10
+C1269683,Major Depressive Disorder,,262
+C0265654,Tarsal Coalition,,12
+C1450010,"Plagiocephaly, Nonsynostotic",,20
+C1848924,Infantile onset,,238
+C0023418,leukemia,hematopoietic system ,53
+C0231679,Ulnar deviation of the fingers,,21
+C0011881,Diabetic Nephropathy,,35
+C1527336,Sjogren's Syndrome,immune system ,12
+C3887499,Renal cyst,,30
+C0009081,Congenital clubfoot,musculoskeletal system ,110
+C0007384,Cataplexy,,11
+C0575167,Deformity of neck,,19
+C1864903,Hyperinsulinaemic hypoglycaemia,,16
+C0009952,Febrile Convulsions,,14
+C0542223,Loss of speech,,16
+C0020542,Pulmonary Hypertension,cardiovascular system ,69
+C0020541,"Hypertension, Portal",endocrine system ,22
+C3279149,"Liver dysfunction, mild",,24
+C0155320,"Blindness, Cortical",nervous system ,33
+C0020545,"Hypertension, Renovascular",cardiovascular system ,10
+C3549698,Coxa valga deformity,,22
+C3277226,Restrictive ventilatory defect,,11
+C0004114,Astrocytoma,cancer,29
+C0025958,Microcephaly,,26
+C0027066,Myoclonus,,79
+C0006386,Bunion,,26
+C0149931,Migraine Disorders,nervous system ,87
+C0332573,Macule,,19
+C1843663,Sphincter disturbances,,16
+C1319853,"Asthma, Aspirin-Induced",,13
+C0265275,Jeune thoracic dystrophy,,11
+C1859717,Depressed nasal tip,,11
+C3840083,Late closure of anterior fontanel,,11
+C0399526,Class III malocclusion,,78
+C1145670,Respiratory Failure,,77
+C1262477,Weight decreased,,104
+C0423798,Increased tendency to bruise,,67
+C1843367,Poor school performance,,649
+C0020490,Hyperopia,nervous system ,47
+C0019294,"Hernia, Inguinal",gastrointestinal system ,89
+C0036920,Sezary Syndrome,cancer,27
+C0234428,Disturbance of consciousness,,19
+C4025569,Eunuchoid habitus,,14
+C1853743,Axial hypotonia,,46
+C0850715,Abnormality of blood and blood-forming tissues,,10
+C0039446,Telangiectasis,cardiovascular system ,17
+C1846449,Irregular epiphyses,,10
+C2674608,Feeding difficulties in infancy,,175
+C1442903,Exostoses,musculoskeletal system ,11
+C3887709,Optic Neuropathy,,12
+C4023397,Abnormal hair quantity,,16
+C0151891,Retinal depigmentation,,12
+C0266435,Congenital hypoplasia of penis,,179
+C0699743,Congenital muscular dystrophy (disorder),,14
+C0239067,Difficulty walking up stairs,,12
+C0041834,Erythema,,58
+C1846223,Adrenal hypoplasia,,12
+C1846226,Mineralocorticoid insufficiency,,12
+C3552463,Very poor growth,,114
+C0038002,Splenomegaly,,189
+C0008924,Cleft Lip,,79
+C0008925,Cleft Palate,,199
+C0004936,Mental disorders,,12
+C4024818,"Night blindness, progressive",,51
+C0022346,Icterus,,82
+C0032461,Polycythemia,hematopoietic system ,12
+C0024003,Lordosis,,55
+C3161330,Profound intellectual disabilities,,31
+C4025814,Abnormality of the metaphyses,,48
+C1842366,Low anterior hairline,,30
+C4025819,Abnormality of the hypothalamus-pituitary axis,,12
+C0221373,Claw hand,,26
+C0265677,Congenital hemivertebra,,25
+C1844806,Weight less than 3rd percentile,,17
+C0025286,Meningioma,nervous system ,23
+C0015300,Exophthalmos,nervous system ,97
+C1512419,Hereditary Melanoma,cancer,12
+C0853087,Nail abnormality,,22
+C2220104,Blister of skin,,56
+C1970705,Fragile hair,,25
+C1832446,Sparse eyebrow,,43
+C0334013,Phrynoderma,,11
+C0339527,Leber Congenital Amaurosis,nervous system ,19
+C0042580,Vesico-Ureteral Reflux,urinary system ,34
+C1853562,Adult onset,,83
+C0262655,Recurrent urinary tract infection,,24
+C0349506,Photosensitivity of skin,,55
+C0025289,Meningitis,nervous system ,27
+C4280652,Prominent back of the head,,22
+C0222716,Structure of wormian bone,,24
+C4280651,Hypotrophic malar bone,,130
+C4280656,Narrow cranium shape,,78
+C0042345,Varicosity,cardiovascular system ,13
+C4280654,Narrow skull shape,,78
+C4280655,Narrow head shape,,78
+C0877359,Liver function test increased,,81
+C3278975,Attenuation of retinal blood vessels,,16
+C4021242,Hypoplasia of the zygomatic bone,,22
+C1859480,Cone-shaped epiphyses of phalanges,,16
+C0587246,Muscle weakness of limb,,21
+C3806467,Respiratory insufficiency due to muscle weakness,,37
+C4280653,Turridolichocephaly,,78
+C0019829,Hodgkin Disease,cancer,16
+C1136382,Sclerocystic Ovaries,,17
+C0162538,Immunoglobulin A deficiency (disorder),immune system ,20
+C0162539,IgG Deficiency,immune system ,22
+C0019825,Hoarseness,,31
+C4020861,Depressed philtrum,,21
+C4020860,Supratentorial atrophy,,94
+C4020865,Fibular polydactyly,,12
+C4020864,Abnormality of the haematopoietic system,,10
+C4020867,Persistant truncus arteriosus,,17
+C1168401,Squamous cell carcinoma of the head and neck,cancer,30
+C4020868,Elevated heart rate,,25
+C0152459,Linear atrophy,,15
+C0241355,Small testicle,,76
+C0231687,Spastic gait,,23
+C0231686,"Gait, Unsteady",,29
+C1849538,Delayed eruption of primary teeth,,10
+C0241240,Tall stature,,34
+C0238207,Ectopic kidney,,11
+C2937358,Cerebral Hemorrhage,,40
+C0004943,Behcet Syndrome,cardiovascular system ,23
+C0854107,Haemorrhage subcutaneous,,10
+C0234958,muscle degeneration,,140
+C0026640,Mouth Neoplasms,,53
+C0001768,Agammaglobulinemia,immune system ,16
+C4021395,Abnormality of the antihelix,,10
+C2051831,Pectus excavatum,,100
+C0003949,Asbestosis,respiratory system ,12
+C0032209,Platybasia,,13
+C1847906,Onion bulb formation,,19
+C1850049,Bilateral fifth finger clinodactyly,,110
+C1855038,Hepatocellular necrosis,,14
+C0432163,Defect of vertebral segmentation,,17
+C1865866,Congenital sensorineural hearing loss,,12
+C3494422,Retrognathia,,55
+C3280770,Cerebellar vermis aplasia or hypoplasia,,12
+C4073292,Afro-textured hair,,13
+C0151908,Dry skin,,76
+C0012811,Colon diverticulum anatomic structure,,15
+C0040053,Thrombosis,,45
+C0240295,Mandibular hypoplasia,,276
+C0426799,Congenital hypoplasia of clavicle,,18
+C0017661,IGA Glomerulonephritis,urinary system ,37
+C1847879,X-linked dominant,,57
+C0035313,Retinal Dysplasia,,11
+C1855106,Neonatal onset,,21
+C4021800,Enamel abnormalities,,31
+C0017668,Focal glomerulosclerosis,urinary system ,37
+C3715165,LEFT VENTRICULAR NONCOMPACTION 10,,40
+C1837108,Decreased muscle mass,,31
+C1843300,Sparse eyelashes,,32
+C0151766,Liver function tests abnormal finding,,81
+C0031149,Peritoneal Neoplasms,,10
+C0544755,Genu varum,,30
+C1861218,Hypoplastic ilia,,13
+C0029464,Osteosclerosis,musculoskeletal system ,23
+C0029463,Osteosarcoma,cancer,44
+C0042900,Vitiligo,immune system ,19
+C0241074,Skin hyperelastic,,32
+C0271390,"Nystagmus, End-Position",,12
+C1847584,Distal sensory impairment,,52
+C0079773,"Lymphoma, T-Cell, Cutaneous",,23
+C0079772,T-Cell Lymphoma,,13
+C4280482,Flat back of the head,,26
+C0345397,Accessory rib,,10
+C0014866,Esophageal Stenosis,,16
+C4021734,Abnormality of mitochondrial metabolism,,16
+C4021735,Abnormality of the hip bone,,17
+C0265998,ANONYCHIA,,20
+C4072879,Small cheekbone,,22
+C0431448,Absent eyebrow,,13
+C3552853,"Color vision defect, severe",,31
+C0011071,Sudden death,,17
+C0149630,Bicuspid aortic valve,,16
+C0409338,Flexion contracture - elbow,,32
+C0431447,Synophrys,,40
+C0020555,Hypertrichosis,integumentary system ,24
+C0020557,Hypertriglyceridemia,,12
+C0020550,Hyperthyroidism,endocrine system ,14
+C0029882,Otitis Media,nervous system ,22
+C0410916,Neonatal Death,,14
+C1561643,Chronic Kidney Diseases,,13
+C0234162,Cerebellar Dysmetria,,56
+C2229182,"Psychomotor retardation, mild",,15
+C0240671,Partial thromboplastin time increased (finding),,11
+C1856694,Areflexia of lower limbs,,10
+C1527311,Brain Edema,nervous system ,32
+C0006663,Calcinosis,acquired metabolic ,45
+C0948163,Leukoaraiosis,,18
+C0040997,Trigeminal Neuralgia,nervous system ,12
+C0030567,Parkinson Disease,nervous system ,63
+C0010417,Cryptorchidism,,262
+C1857079,Atretic auditory canal,,23
+C0237326,Dyschezia,,139
+C0220981,Metabolic acidosis,,44
+C0029089,Ophthalmoplegia,nervous system ,99
+C0019555,"Hip Dislocation, Congenital",,48
+C0232513,Premature tooth loss,,18
+C4021759,Generalized myoclonic seizures,,39
+C0427068,Monoparesis - leg,,27
+C0241654,VALVULAR ABNORMALITY,,12
+C1857679,Sloping forehead,,46
+C0034194,Pyloric Stenosis,gastrointestinal system ,38
+C0427065,Distal muscle weakness,,62
+C0266642,Situs ambiguus,,25
+C0007621,Neoplastic Cell Transformation,,115
+C0427063,Shoulder girdle weakness,,10
+C0497156,Lymphadenopathy,,64
+C0007758,Cerebellar Ataxia,,258
+C0542346,Pimples,,10
+C0011253,Delusions,,12
+C0010308,Congenital Hypothyroidism,endocrine system ,14
+C1844592,Soft skin,,17
+C0158986,Neonatal hypoglycemia,,18
+C0343073,Wooly hair,,17
+C2112129,Postaxial foot polydactyly,,12
+C0266423,Congenital anomaly of testis,,52
+C1867131,Broad hallux,,29
+C0019693,HIV Infections,,100
+C0038013,Ankylosing spondylitis,musculoskeletal system ,12
+C0427515,Neutrophil abnormality,,21
+C0392386,Decreased platelet count,,112
+C0024032,Low Birth Weights,,69
+C0748691,Shoulder weakness,,10
+C0001973,"Alcoholic Intoxication, Chronic",,292
+C4025821,Anterior hypopituitarism,,19
+C1844813,Widely spaced teeth,,31
+C0000889,Acanthosis Nigricans,integumentary system ,20
+C0015310,Exotropia,nervous system ,25
+C1844749,Rib fusion,,16
+C0022596,Palmoplantar Keratosis,integumentary system ,60
+C0027051,Myocardial Infarction,cardiovascular system ,106
+C0334008,Pachyderma,,21
+C0018671,Head and Neck Neoplasms,cancer,26
+C0013421,Dystonia,nervous system ,117
+C1832348,Slow-growing hair,,19
+C0008625,Chromosome Aberrations,,15
+C0027055,Myocardial Reperfusion Injury,,85
+C2316810,Chronic kidney disease stage 5,,31
+C4280645,Hypertrophy of lower jaw,,78
+C4280644,Increased size of mandible,,78
+C4280647,Hypertrophy of cheeks,,50
+C4280641,Hypotrophic maxilla,,66
+C0152116,Spasmodic torticollis,,17
+C4280643,Decreased projection of maxilla,,66
+C4280642,Deficiency of upper jaw bones,,66
+C4280648,Hyperplasia of cheeks,,50
+C0025500,Mesothelioma,benign neoplasm,39
+C0014130,Endocrine System Diseases,,11
+C0410264,Contracture of tendo achilles,,10
+C0042571,Vertigo,,28
+C0040264,Tinnitus,,19
+C0426818,Thin rib,,21
+C0028738,Nystagmus,nervous system ,317
+C4021254,Cutaneous finger syndactyly,,11
+C0018273,Growth Disorders,,33
+C0014553,Absence Epilepsy,nervous system ,23
+C1866190,Atresia of the external auditory canal,,23
+C0014556,"Epilepsy, Temporal Lobe",nervous system ,23
+C1866195,Downturned corners of mouth,,51
+C0022568,Keratitis,nervous system ,24
+C0018099,Gout,musculoskeletal system ,14
+C2830004,Somnolence,,15
+C4020813,Increased gastric cancer,,21
+C0032927,Precancerous Conditions,,93
+C1260899,"Anemia, Diamond-Blackfan",hematopoietic system ,18
+C0234144,Dysgraphia,,16
+C0426492,Small tongue,,10
+C0087012,"Ataxia, Spinocerebellar",monogenic ,17
+C0853697,Neutrophil count decreased,,48
+C1859541,Variable degree of villous atrophy,,16
+C0263454,Chloracne,,33
+C0004782,Basal Ganglia Diseases,nervous system ,14
+C0795690,Congenital omphalocele,gastrointestinal system ,21
+C0685840,Congenital hypoplasia of ovary,,30
+C0013336,Dwarfism,,37
+C0018418,Gynecomastia,endocrine system ,56
+C0039231,Tachycardia,,43
+C0151576,Elevated creatine kinase,,117
+C1855009,Psychomotor regression in infants,,102
+C0032580,Adenomatous Polyposis Coli,monogenic ,14
+C0009398,Color vision defect,,33
+C0009404,Colorectal Neoplasms,,233
+C0001627,Congenital adrenal hyperplasia,,11
+C0001624,Adrenal Gland Neoplasms,cancer,11
+C1850456,Progressive microcephaly,,32
+C1844527,Clitoral hypoplasia,,14
+C0338831,Manic,,14
+C4021815,Abnormality of the palate,,18
+C0345996,Milium Cyst,,16
+C4021813,Oral cleft,,18
+C2674574,"Aortic aneurysm, familial thoracic 3",,13
+C1142533,Smooth philtrum,,43
+C0035455,Rhinitis,respiratory system ,14
+C0151480,Anti-nuclear factor positive,,18
+C0241005,Creatine phosphokinase serum increased,,117
+C0079744,Diffuse Large B-Cell Lymphoma,,34
+C0333913,Achromasia,,11
+C1848673,Hypoplastic feet,,69
+C1865186,Bell-shaped thorax,,10
+C0158761,Radioulnar Synostosis,,24
+C4255213,Increased size of skull,,147
+C0035078,Kidney Failure,urinary system ,76
+C4021724,Decreased activity of cytochrome C oxidase in muscle tissue,,10
+C4021727,EMG: neuropathic changes,,16
+C4021726,EMG: myopathic abnormalities,,22
+C0272027,Pyridoxine-responsive sideroblastic anemia,,16
+C0265989,Congenital scar,,13
+C0268363,Osteogenesis imperfecta type IV (disorder),,10
+C2936907,NADH:Q(1) Oxidoreductase deficiency,inherited metabolic disorder,24
+C0344482,Hypoplasia of corpus callosum,,90
+C0401151,Chronic diarrhea,,30
+C3554617,Adducted thumb,,22
+C0023290,"Leishmaniasis, Visceral",,14
+C0393706,Early infantile epileptic encephalopathy with suppression bursts,,10
+C0235153,"Hallucinations, Sensory",,41
+C0242350,Erectile dysfunction,,32
+C0026884,Mutism,,10
+C0265215,Meckel-Gruber syndrome,,13
+C0018564,Hand deformities,,32
+C0009375,Colonic Neoplasms,gastrointestinal system ,142
+C1862863,Sparse body hair,,32
+C0431380,Cortical Dysplasia,,13
+C0023904,"Liver Neoplasms, Experimental",,95
+C0023903,Liver neoplasms,gastrointestinal system ,123
+C0271901,Microcytic hypochromic anemia (disorder),,11
+C1834118,Potato nose,,48
+C1856661,Cloudy cornea,,33
+C1856660,Abnormal helices,,11
+C0392775,Cystic medial necrosis of aorta,,13
+C0392777,Poikiloderma,,14
+C0003504,Aortic Valve Insufficiency,cardiovascular system ,30
+C0221170,Muscular stiffness,,12
+C0740392,"Infarction, Middle Cerebral Artery",nervous system ,33
+C0268583,Methylmalonic acidemia,,16
+C0740394,Hyperuricemia,acquired metabolic ,17
+C0011882,Diabetic Neuropathies,nervous system ,14
+C0023343,Leprosy,,12
+C1857641,Severe postnatal growth retardation,,16
+C0011884,Diabetic Retinopathy,cardiovascular system ,11
+C1848490,Protruding eyes,,97
+C1845977,X- linked recessive,,110
+C0751495,"Seizures, Focal",,14
+C0266294,Unilateral agenesis of kidney,,20
+C0878544,Cardiomyopathies,cardiovascular system ,112
+C0266292,Congenital anomaly of the kidney,,12
+C0027339,Nail Diseases,integumentary system ,24
+C2053437,Full lower lip,,64
+C0030354,Papilloma,benign neoplasm,25
+C0020505,Hyperphagia,,26
+C0030193,Pain,,79
+C0233794,Memory impairment,,47
+C0000768,Congenital Abnormality,,11
+C1834752,"MYCOBACTERIUM TUBERCULOSIS, SUSCEPTIBILITY TO (finding)",,11
+C4082169,Metatarsus Varus,,24
+C0036349,Paranoid Schizophrenia,cognitive disorder,17
+C1849295,Hypoplastic labia minora,,13
+C1854838,Progressive neurologic deterioration,,19
+C0036341,Schizophrenia,cognitive disorder,1041
+C0424323,Physical aggression,,76
+C1301509,Severe visual impairment,,16
+C0037299,Skin Ulcer,,49
+C0001969,Alcoholic Intoxication,,34
+C4025838,Abnormality of the pharynx,,20
+C0162429,Malnutrition,,11
+C0497552,Congenital neurologic anomalies,,20
+C0431362,Lobar Holoprosencephaly,,20
+C0431363,Alobar Holoprosencephaly,,14
+C0376480,Gingival Overgrowth,gastrointestinal system ,33
+C0021051,Immunologic Deficiency Syndromes,immune system ,114
+C0004134,Ataxia,,15
+C2227134,mandibular excess (physical finding),,78
+C0221358,Long narrow head,,78
+C0233315,Premature birth of newborn,,67
+C0221357,Brachydactyly,,125
+C0221354,Frontal bossing,,157
+C0021296,"Infant, Small for Gestational Age",,177
+C0221352,Syndactyly of fingers,,48
+C0221353,Horseshoe Kidney,,16
+C1844820,Range of joint movement increased,,33
+C0012819,Diverticular disease of colon,,15
+C0554101,Villous atrophy,,16
+C4025616,CNS hypomyelination,,17
+C4280582,Agenesis of eyebrows,,13
+C4280581,Aplasia of eyebrows,,13
+C0004245,Atrioventricular Block,cardiovascular system ,11
+C1856872,Sloping shoulders,,21
+C0038379,Strabismus,,272
+C1853237,Isolated cases,,75
+C1856786,Hypoplastic fingernails,,11
+C1853235,Sclerocornea,nervous system ,14
+C0236175,Elevated IgE,,10
+C0019209,Hepatomegaly,,260
+C0014306,Enophthalmos,nervous system ,63
+C0019202,Hepatolenticular Degeneration,endocrine system ,24
+C0022408,Arthropathy,musculoskeletal system ,15
+C0024115,Lung diseases,respiratory system ,51
+C0024117,Chronic Obstructive Airway Disease,respiratory system ,38
+C1619700,RENAL ADYSPLASIA,,24
+C0152438,Sprengel deformity,,16
+C4025723,Abnormal upper motor neuron morphology,,11
+C0043094,Weight Gain,,100
+C4280368,Hypotrophic cheekbone,,22
+C4280369,Flattening of the zygomatic bone,,22
+C0687149,Pure gonadal dysgenesis,,19
+C0403553,Renal dysplasia and retinal aplasia (disorder),,10
+C0853193,Bipolar I disorder,,18
+C1854301,Motor delay,,151
+C1862475,Abnormality of retinal pigmentation,,113
+C4082304,Oligodontia,,24
+C0022578,Keratoconus,nervous system ,63
+C0240063,Coloboma of iris,,38
+C1846439,ODONTOID HYPOPLASIA,,16
+C1846950,Short middle phalanges,,12
+C0157733,hair abnormalities (non-specific),,31
+C0014544,Epilepsy,nervous system ,564
+C1510497,Lens Opacities,,232
+C0162557,"Liver Failure, Acute",,29
+C0018790,Cardiac Arrest,cardiovascular system ,10
+C0014549,Tonic-Clonic Epilepsy,nervous system ,10
+C0018799,Heart Diseases,cardiovascular system ,43
+C1833752,Varying degree of multiple fractures,,54
+C0022353,Neonatal Jaundice,integumentary system ,18
+C0005283,beta Thalassemia,monogenic ,10
+C0151514,Atrophic condition of skin,integumentary system ,26
+C0024809,Marijuana Abuse,,33
+C0038990,Sweating,,83
+C1836509,Hypotonic seizures,,11
+C1840077,Anteverted nostril,,191
+C0426790,Narrow thorax,,54
+C0013491,Ecchymosis,,67
+C1836189,Radially deviated fingers,,38
+C1836184,Short femoral neck,,15
+C1837279,Hypoplastic toenails,,22
+C1837458,Impaired smooth pursuit,,14
+C0235986,Growth hormone excess,,14
+C0334588,Giant Cell Glioblastoma,cancer,12
+C1860236,Irregular hyperpigmentation,,33
+C1833118,"Cataract, Pulverulent",,11
+C0232466,Feeding difficulties,,127
+C0005910,Body Weight,,14
+C1865841,Flared iliac wings,,13
+C2609414,Acute kidney injury,,72
+C1865847,Ulnar bowing,,10
+C1860834,Infantile muscular hypotonia,,12
+C1860838,Large prominent ears,,87
+C0339063,Cellulitis of eyelid,,17
+C1865060,Molar tooth sign on MRI,,12
+C0002452,Amelogenesis Imperfecta,gastrointestinal system ,14
+C0240479,Neck muscle weakness,,17
+C0027626,Neoplasm Invasiveness,,143
+C0027627,Neoplasm Metastasis,,185
+C0231791,Toeing-in,,24
+C0040034,Thrombocytopenia,hematopoietic system ,130
+C1862095,Bilateral single transverse palmar creases,,34
+C0240278,Lymphatic obstruction,,21
+C1848701,Elevated hepatic transaminases,,81
+C0040038,Thromboembolism,,15
+C1865992,Short hallux,,16
+C0032460,Polycystic Ovary Syndrome,,162
+C4021821,Abnormality of the urinary system,,21
+C1836696,Lower limb hyperreflexia,,10
+C0345967,Malignant mesothelioma,cancer,109
+C0003850,Arteriosclerosis,cardiovascular system ,11
+C0948740,Pituitary hypoplasia,endocrine system ,13
+C0025990,Micrognathism,,276
+C0029408,Degenerative polyarthritis,,118
+C0025995,Micromelia,,59
+C0029401,Osteitis Deformans,musculoskeletal system ,10
+C0042963,Vomiting,,113
+C0018939,Hematological Disease,,18
+C0476397,Electroretinogram abnormal,,96
+C0235095,Visual field constriction,,36
+C0392557,Nuclear cataract,,19
+C0241013,Serum ferritin increased,,14
+C0241011,Low serum estradiol levels,,22
+C1851792,Aplasia/Hypoplasia of the earlobes,,11
+C0241772,"Reflex, Deep Tendon, Absent",,93
+C0158775,Congenital anomaly of spine,,16
+C0423757,Thin skin,,47
+C4023911,Aplasia/Hypoplasia of the breasts,,10
+C1855019,Psychomotor regression,,102
+C0151811,Subcutaneous nodule,,54
+C4021753,Abnormality of the immune system,,19
+C1850530,Flexion contractures of joints,,93
+C0220982,Ketoacidosis,,11
+C0151818,Opisthotonus,,14
+C1844947,Death in early childhood,,82
+C0013274,Patent ductus arteriosus,cardiovascular system ,77
+C0151639,Decreased fertility in females,,20
+C0265535,Trigonocephaly,,10
+C0151632,ESR raised,,20
+C0034885,Rectal Neoplasms,gastrointestinal system ,18
+C0034880,Hyperacusis,,11
+C0375206,Hemiplegia and hemiparesis,,38
+C1142166,Brugada Syndrome (disorder),cardiovascular system ,15
+C1860127,Impaired T cell function,,14
+C1860121,Decreased testosterone in males,,28
+C0241703,High pitched voice,,23
+C0016978,gallbladder neoplasm,cancer,11
+C3489396,"Hypogonadism, Isolated Hypogonadotropic",,74
+C1806780,Cerebrospinal fluid protein increased above normal,,14
+C0234146,Absent reflex,,93
+C0265221,Walker-Warburg congenital muscular dystrophy,,14
+C0948187,Tracheomalacia,,11
+C0009363,Congenital ocular coloboma (disorder),nervous system ,40
+C1859126,Stippled epiphyses,,28
+C1458155,Mammary Neoplasms,,448
+C1839254,Small capital femoral epiphyses,,10
+C0431399,Familial aplasia of the vermis,,19
+C1445953,Poor eye contact,,12
+C1834696,Hyporeflexia of lower limbs,,10
+C0085605,Liver Failure,,73
+C0085606,Urgency of micturition,,14
+C0427190,"Ataxia, Truncal",,21
+C0085602,Polydipsia,,15
+C0242383,Age related macular degeneration,monogenic ,19
+C0007193,"Cardiomyopathy, Dilated",cardiovascular system ,83
+C3714581,Multicystic Dysplastic Kidney,,52
+C0080178,Spina Bifida,nervous system ,19
+C0007194,Hypertrophic Cardiomyopathy,cardiovascular system ,95
+C0855329,Electrocardiogram change,,81
+C0080174,Spina Bifida Occulta,,12
+C0694550,Recurrent pneumonia,,29
+C0026827,Muscle hypotonia,,575
+C1857657,Decreased subcutaneous adipose tissue,,13
+C1857656,Precociously senile appearance,,18
+C0852283,Respiratory Distress Syndrome,,15
+C0266625,Preauricular sinus,,27
+C0266623,Congenital anomaly of neck,,19
+C1853932,Rimmed vacuoles on biopsy,,15
+C0744641,Intermittent migraine headaches,,79
+C1846435,Short-trunked dwarfism,,13
+C1846434,Hypoplastic scapulae,,14
+C0037199,Sinusitis,,40
+C1868085,Craniofacial hyperostosis,,11
+C0085110,Severe Combined Immunodeficiency,immune system ,17
+C0016202,Flatfoot,,72
+C1691215,Penile hypospadias,,106
+C1261473,Sarcoma,,24
+C0221766,Diastasis recti,,10
+C0221765,Chronic schizophrenia,,12
+C3150281,Fetal overgrowth,,17
+C0024232,Lymphatic Metastasis,,14
+C4023452,Elevated C-reactive protein level,,15
+C0020595,Hypoaldosteronism,,12
+C0020224,Polyhydramnios,reproductive system ,85
+C0020598,Hypocalcemia,,32
+C0235942,Skull malformation,,38
+C0239989,Decreased IgM,,11
+C0235946,Cerebral atrophy,,185
+C0266371,Streak ovary,,15
+C0239981,Hypoalbuminemia,,24
+C4082173,Porencephaly,,17
+C0037286,Skin Neoplasms,benign neoplasm,67
+C2676676,"BREAST-OVARIAN CANCER, FAMILIAL, SUSCEPTIBILITY TO, 1",,13
+C0036572,Seizures,,603
+C0558242,Stretched skin,,10
+C4025844,Chorioretinal abnormality,,24
+C4025845,Abnormality of the iris,,14
+C4025846,Abnormality of vision,,40
+C0030232,Pallor,,41
+C4280598,Flattening of head,,20
+C4025662,Abnormality of the ulna,,10
+C4280595,Cranial defect,,10
+C0558165,Curly hair (finding),,14
+C4280597,Rhomboid shaped head,,20
+C4280596,Calvarial defect,,10
+C0685381,Congenital hypoplasia of radius,,23
+C1849039,Metaphyseal widening,,23
+C0919267,ovarian neoplasm,cancer,102
+C0751688,Malignant Squamous Cell Neoplasm,cancer,17
+C0038363,Aphthous Stomatitis,gastrointestinal system ,15
+C0235896,Infiltrate of lung,,18
+C0033774,Pruritus,,59
+C0086132,Depressive Symptoms,,30
+C0042373,Vascular Diseases,cardiovascular system ,16
+C0152427,Polydactyly,,28
+C0152423,Congenital small ears,,48
+C0152421,Macrotia,,87
+C1842714,Desquamation of skin soon after birth,,11
+C4280370,Depressed cheekbone,,22
+C0002736,Amyotrophic Lateral Sclerosis,monogenic ,51
+C0008372,Intrahepatic Cholestasis,gastrointestinal system ,13
+C0008370,Cholestasis,gastrointestinal system ,84
+C0400966,Non-alcoholic Fatty Liver Disease,,42
+C0699791,Stomach Carcinoma,cancer,11
+C1848395,Large for gestational age,,11
+C1849265,Overgrowth,,17
+C0856863,Broad-based gait,,19
+C0018784,Sensorineural Hearing Loss (disorder),nervous system ,295
+C0033054,Prenatal Exposure Delayed Effects,,10
+C0018781,Noise-induced hearing loss,,22
+C0431371,Absence of septum pellucidum,,13
+C0206762,"Limb Deformities, Congenital",,16
+C1844383,Recurrent bacterial infection,,42
+C1836047,Long face,,71
+C1844384,Recurrent fungal infections,,13
+C0014067,Occipital Encephalocele,,10
+C0014065,Congenital cerebral hernia,,21
+C4020849,Bowed and upward slanting eyebrows,,41
+C0004509,Azoospermia,reproductive system ,32
+C0040336,Tobacco Use Disorder,,11
+C1844548,Hypoplastic finger,,18
+C1858025,Spinal rigidity,,13
+C2267233,Neonatal Hypotonia,,64
+C0014591,Epistaxis,,43
+C4022878,Descending aortic dissection,,13
+C3806301,Scarring alopecia of scalp,,13
+C1862314,Basal cell nevi,,23
+C1836195,Hypoplastic toes,,31
+C0018991,Hemiplegia,,13
+C0032273,Pneumoconiosis,respiratory system ,14
+C1837485,Flat acetabular roof,,10
+C0042798,Low Vision,,175
+C0426870,Large hand,,18
+C0853945,Oral mucosal blistering,,10
+C0005904,Body Temperature Changes,,10
+C1865037,Cone-shaped epiphyses,,24
+C0028077,Night Blindness,nervous system ,88
+C0263490,Brittle hair,,25
+C1837482,Thoracic hypoplasia,,14
+C4020846,Prone to bacterial infection,,42
+C0003466,"Anus, Imperforate",gastrointestinal system ,46
+C0003467,Anxiety,,120
+C1260926,Abnormal pigmentation,,25
+C0347959,Lactic acidemia,,106
+C0003469,Anxiety Disorders,cognitive disorder,37
+C1836996,Marfanoid body habitus,,11
+C0009171,Cocaine Abuse,,16
+C1848736,Distal amyotrophy,,51
+C0040028,"Thrombocythemia, Essential",cancer,12
+C0003862,Arthralgia,,91
+C4020838,Relative short stature,,13
+C4020839,Multiple vertebral anomalies,,16
+C4025669,Decreased circulating ACTH level,,12
+C0206160,Reticulocytosis,,20
+C0043202,Wolff-Parkinson-White Syndrome,cardiovascular system ,22
+C1850309,Mildly increased creatine kinase,,20
+C0035126,Reperfusion Injury,,85
+C4280616,Large elongated pulp chamber,,15
+C1855665,Ovoid vertebral bodies,,17
+C0432040,"Simple syndactyly of toes, first web space",,23
+C0025988,Microglossia,,10
+C0344559,Irido-corneo-trabecular dysgenesis (disorder),,10
+C0018923,Hemangiosarcoma,cardiovascular system ,18
+C4280612,Decreased width of tooth,,59
+C1859399,Radial bowing,,13
+C1848654,Broad ribs,,12
+C0003886,Arthrogryposis,,54
+C0018924,Hemarthrosis,musculoskeletal system ,11
+C2315100,Pediatric failure to thrive,,367
+C4023909,Aplasia/Hypoplasia of the abdominal wall musculature,,17
+C0027125,Myotonia,,10
+C1859775,Anterior pituitary hypoplasia,,13
+C1859778,Postnatal growth retardation,,57
+C4021745,Abnormality of the musculature,,16
+C0151825,Bone pain,,42
+C4021741,Abnormal cortical bone morphology,,22
+C1862132,Short ulnae,,24
+C1838681,Rapidly progressive,,27
+C1855062,Large dysplastic ears,,87
+C0220994,Hyperammonemia,,30
+C4072822,Wide bregma sutures,,47
+C4072823,Broad cranium shape,,88
+C4072820,Large bregma sutures,,47
+C0009917,Contracture,,96
+C0085271,Self-Injurious Behavior,,12
+C4072827,Cone/cone-rod dystrophy,,20
+C4072824,Wide skull shape,,88
+C0234979,Dysdiadochokinesis,,25
+C0017563,Gingival Diseases,gastrointestinal system ,20
+C0017566,Gingival Hyperplasia,,35
+C0017567,Gingival Hypertrophy,gastrointestinal system ,34
+C0017565,Gingival Hemorrhage,,18
+C1855204,Cellular immunodeficiency,,19
+C1839798,Long nose,,15
+C1839797,Deep philtrum,,21
+C0027022,Myeloproliferative disease,cancer,16
+C0399385,Early tooth exfoliation,,18
+C3714756,Intellectual Disability,,744
+C3714757,Juvenile rheumatoid arthritis,,11
+C0270612,Leukoencephalopathies,,29
+C1858574,Sparse axillary hair,,28
+C0010068,Coronary heart disease,cardiovascular system ,22
+C0234132,Pyramidal sign,,29
+C0234133,Extrapyramidal sign,,29
+C1856468,"Round, full face",,45
+C0342276,Maturity onset diabetes mellitus in young,,11
+C0175754,Agenesis of corpus callosum,,82
+C0542518,Enlarged kidney,,15
+C0549613,BILIARY TRACT ABNORMALITY,,16
+C0242422,Parkinsonian Disorders,,56
+C0677886,Epithelial ovarian cancer,cancer,10
+C0085612,Ventricular arrhythmia,,11
+C1865200,Delayed epiphyseal ossification,,10
+C3279397,Very long chain fatty acid accumulation,,13
+C0020452,Hyperemia,,13
+C0020455,Hypergammaglobulinemia,,10
+C0020456,Hyperglycemia,acquired metabolic ,33
+C0028326,Noonan Syndrome,,17
+C0014550,"Epilepsies, Myoclonic",nervous system ,41
+C0154676,Organic writer's cramp,nervous system ,10
+C0154671,Degenerative brain disorder,nervous system ,100
+C1276035,Pena-Shokeir syndrome type I,,12
+C0265529,Plagiocephaly,,20
+C0266610,Preauricular dimple,,27
+C0240735,Personality change,,23
+C0266617,Congenital anomaly of face,,58
+C1849923,Generalized hypopigmentation,,15
+C0423224,Sunken eyes,,63
+C1843921,Postural instability,,19
+C0424503,Dysmorphic facies,,48
+C0423221,Globe of eye large,,20
+C1853141,Slow decrease in visual acuity,,13
+C0333068,Flexion contracture,,93
+C1857130,Hypoplastic mandible condyle,,276
+C0338451,Frontotemporal dementia,,10
+C0085109,Corneal Neovascularization,nervous system ,13
+C0037769,West Syndrome,nervous system ,18
+C0085298,Sudden Cardiac Death,,29
+C0024228,Lymphatic Diseases,immune system ,14
+C0267963,Exocrine pancreatic insufficiency,endocrine system ,14
+C0854110,Insulin resistant diabetes,,13
+C0029124,Optic Atrophy,nervous system ,225
+C0239998,Recurrent infections,,48
+C0266387,Bicornuate uterus,,11
+C0154920,Pigmentary iris degeneration,,21
+C0162316,Iron deficiency anemia,,10
+C1835229,Onset of lymphedema around puberty,,21
+C1832200,Peroxisome biogenesis disorders,,11
+C1849073,Fused vertebrae,,25
+C1860493,Sternal anomalies,,19
+C0162154,Atrophic scar,,18
+C0011351,Dental Enamel Hypoplasia,gastrointestinal system ,35
+C0041948,Uremia,urinary system ,17
+C1408258,Kidney damage,,25
+C0020678,Hypotrichosis,integumentary system ,28
+C0267812,Micronodular cirrhosis,,12
+C0341703,Adult Fanconi syndrome,urinary system ,12
+C0341706,Glycinuria,,10
+C0581342,Redundant skin,,28
+C0021400,Influenza,,52
+C0020672,"Hypothermia, natural",,17
+C0020676,Hypothyroidism,endocrine system ,49
+C0221629,Proximal muscle weakness,,48
+C4280560,Increased thickness of cranium,,17
+C4280565,Delayed maturation of end part of long bone,,10
+C4280566,Abnormal development of end part of bone,,14
+C4280567,Abnormal skeletal development,,60
+C0026267,Mitral Valve Prolapse Syndrome,cardiovascular system ,40
+C0026266,Mitral Valve Insufficiency,cardiovascular system ,33
+C0038356,Stomach Neoplasms,cancer,303
+C0311394,Difficulty walking,,28
+C0038358,Gastric ulcer,gastrointestinal system ,18
+C1854494,Slow progression,,90
+C1400105,Hypertrophy of nose,,23
+C0424296,Social disinhibition,,14
+C0424295,Hyperactive behavior,,91
+C0152021,Congenital heart disease,,24
+C0282527,Infantile Refsum Disease (disorder),inherited metabolic disorder,13
+C0282525,"Adrenoleukodystrophy, Neonatal",,13
+C4280304,Curvature of digit,,60
+C3277418,Gastrointestinal hamartomatous polyps,,10
+C0001125,"Acidosis, Lactic",acquired metabolic ,108
+C1167712,Corneal diameter increased,,13
+C0001126,Renal tubular acidosis,urinary system ,10
+C0520927,Decreased fertility,,33
+C1836296,Weakness of lower limb,,27
+C1838869,Proximal neurogenic muscle weakness,,48
+C0156394,Hypertrophy of clitoris,,40
+C0022680,Polycystic Kidney Diseases,monogenic ,20
+C0019080,Hemorrhage,,17
+C0019087,Hemorrhagic Disorders,hematopoietic system ,31
+C1704375,Hypophosphatemic Rickets,,11
+C0270948,Neurogenic Muscular Atrophy,,140
+C0973461,Dysphasia,,23
+C1860475,Tortuous retinal vessels,,15
+C0023212,Left-Sided Heart Failure,,16
+C0022336,Creutzfeldt-Jakob disease,nervous system ,13
+C0003507,Aortic Valve Stenosis,cardiovascular system ,20
+C1861329,Spinal canal stenosis,,12
+C1861324,Short philtrum,,53
+C1836038,Poor head control,,14
+C1866141,Foot dorsiflexor weakness,,27
+C3553450,Profound global developmental delay,,17
+C0014850,Esophageal Atresia,gastrointestinal system ,25
+C0014859,Esophageal Neoplasms,cancer,70
+C0037926,Compression of spinal cord,,10
+C0557874,Global developmental delay,,614
+C4020730,Increased intramyocellular lipid droplets,,13
+C1842876,Depressed nasal ridge,,51
+C0239174,Late tooth eruption,,61
+C0014457,Eosinophilia,hematopoietic system ,28
+C0005937,Bone Cysts,,12
+C0311375,Arsenic Poisoning,,61
+C0398623,Thrombophilia,hematopoietic system ,16
+C0018681,Headache,,37
+C4021998,Lack of skin elasticity,,10
+C1850794,"Muscle atrophy, proximal",,12
+C0043459,Zellweger Syndrome,inherited metabolic disorder,15
+C0033860,Psoriasis,integumentary system ,67
+C1841659,Atrioventricular nodal disease,,10
+C0238621,Aminoaciduria,,38
+C0220697,"POLYDACTYLY, POSTAXIAL",,13
+C2748653,Chubby cheeks,,50
+C0231246,Failure to gain weight,,367
+C4083050,Agenesis of teeth,,21
+C1859424,Increased chromosomal breakage,,27
+C0238395,Male Pseudohermaphroditism,,19
+C0234860,Weak cry,,17
+C0238397,Pulmonary artery stenosis,,20
+C0002878,"Anemia, Hemolytic",hematopoietic system ,56
+C0003873,Rheumatoid Arthritis,musculoskeletal system ,173
+C0003872,"Arthritis, Psoriatic",,14
+C0002871,Anemia,hematopoietic system ,153
+C0002874,Aplastic Anemia,hematopoietic system ,12
+C1840380,Persistent cavum septum pellucidum,,10
+C1850171,Short limb dwarfism recognizable at birth,,10
+C1855676,Cerebellar vermis aplasia/ hypoplasia,,12
+C0206754,Neuroendocrine Tumors,endocrine system ,11
+C3501843,Nonmedullary Thyroid Carcinoma,,10
+C0018916,Hemangioma,benign neoplasm,24
+C3495559,Juvenile arthritis,,130
+C0028797,Occupational Diseases,,12
+C0264133,Acquired flat foot,,72
+C0009763,Conjunctivitis,nervous system ,37
+C0017979,Glycosuria,,29
+C1860816,Preauricular skin tag,,19
+C4072835,Kinky hair texture,,13
+C4072834,Rough hair texture,,31
+C4072837,Fractured hair,,25
+C4072836,Nappy hair texture,,13
+C4072831,Delayed closure of the soft spot on the skull,,11
+C4072830,Asymmetry of the posterior cranium,,20
+C4072833,Funny looking face,,48
+C4072832,Distortion of face,,48
+C0017574,Gingivitis,gastrointestinal system ,11
+C1864156,"Conjunctivitis, recurrent",,37
+C0016689,Freckles,,33
+C1848530,Abnormal visual pursuit,,14
+C0006118,Brain Neoplasms,nervous system ,23
+C4022675,Increased female libido,,13
+C0006111,Brain Diseases,nervous system ,23
+C0006114,Cerebral Edema,,25
+C0025362,Mental Retardation,,649
+C0494475,Tonic - clonic seizures,,54
+C0235430,Ketonemia,,11
+C0151721,Testicular hypogonadism,,21
+C0151723,Hypomagnesemia,,12
+C0280631,Leiomyosarcoma of uterus,cancer,13
+C0023798,Lipoma,benign neoplasm,22
+C0085623,Akinesia,,13
+C0023794,Lipoidosis,inherited metabolic disorder,19
+C0376358,Malignant neoplasm of prostate,cancer,11
+C0020443,Hypercholesterolemia,,39
+C0020445,"Hypercholesterolemia, Familial",inherited metabolic disorder,17
+C4023616,Abnormality of immune system physiology,,16
+C0040822,Tremor,,113
+C3544092,Urgency frequency syndrome,,14
+C0007370,Catalepsy,,15
+C1849937,"Short limb dwarfism, disproportionate",,22
+C0023487,Acute Promyelocytic Leukemia,cancer,40
+C0023485,Precursor B-Cell Lymphoblastic Leukemia-Lymphoma,,12
+C1843392,Death in childhood,,14
+C0037771,"Paraparesis, Spastic",,16
+C0010346,Crohn Disease,,44
+C1846149,Progressive mental retardation,,37
+C0037772,Spastic Paraplegia,,42
+C0595939,Stillbirth,,17
+C1856749,Hypoplastic-absent toenails,,12
+C1857121,Neurodevelopmental regression,,102
+C2266639,Absence of eyebrows,,32
+C0279680,Transitional cell carcinoma of bladder,cancer,17
+C0393525,Progressive cerebellar ataxia,,13
+C0752347,Lewy Body Disease,cognitive disorder,21
+C1386048,Intrauterine retardation,,177
+C3203102,Idiopathic pulmonary arterial hypertension,,40
+C4023101,Elevated luteinizing hormone,,14
+C0040485,Torticollis,,18
+C1859236,Prolonged neonatal jaundice,,17
+C1301959,Bulbar weakness,,19
+C0034150,Purpura,hematopoietic system ,27
+C1865244,Shallow orbits,,13
+C0007570,Celiac Disease,immune system ,30
+C1842060,Prominent supraorbital ridges,,19
+C0151699,Intracranial Hemorrhages,,15
+C0266399,Infantile uterus,,23
+C0030252,Palpitations,,18
+C0149521,"Pancreatitis, Chronic",,10
+C0011168,Deglutition Disorders,,132
+C4025860,Hearing abnormality,,12
+C0041974,Urethral Stricture,,15
+C0578682,Madarosis of eyebrow,,13
+C0027819,Neuroblastoma,cancer,51
+C0581354,Recurrent sinusitis,,22
+C0015625,Fanconi Anemia,hematopoietic system ,22
+C4280574,Problems speaking,,37
+C4024202,Reduced number of teeth,,21
+C0259817,Xerosis,,76
+C2930812,Generalized elastolysis,,24
+C0024141,"Lupus Erythematosus, Systemic",musculoskeletal system ,75
+C0001807,Aggressive behavior,,75
+C0025160,Megacolon,gastrointestinal system ,29
+C3550546,Depressed nasal root/bridge,,196
+C0423112,Short palpebral fissure,,38
+C1384666,hearing impairment,,201
+C0008350,Cholelithiasis,,20
+C4082299,Bulbar palsy,,19
+C0857460,Increased number of platelets,,14
+C0038238,Steatorrhea,gastrointestinal system ,17
+C0277828,Late fontanel closure,,28
+C1862425,Prominent globes,,97
+C1849488,Increased serum pyruvate,,14
+C0267048,Glossoptosis,,10
+C0036601,Self Mutilation,,14
+C0022521,Kartagener Syndrome,,34
+C0442874,Neuropathy,nervous system ,53
+C0005587,"Depression, Bipolar",cognitive disorder,12
+C0005586,Bipolar Disorder,cognitive disorder,516
+C4020888,Epithelial corneal erosions,,12
+C1864985,Progressive disorder,,143
+C0019322,Umbilical hernia,,78
+C1844704,Platyspondyly,,57
+C1567435,Polycystic Kidney - body part,,18
+C0005612,Birth Weight,,14
+C4025644,Hypothalamic gonadotropin-releasing hormone deficiency,,14
+C1961099,Precursor T-Cell Lymphoblastic Leukemia-Lymphoma,,16
+C0596263,Carcinogenesis,,10
+C4048268,Cortical visual impairment,,33
+C1866134,Wide anterior fontanel,,44
+C1867955,Increased incidence of hepatocellular carcinoma,,27
+C0026034,Microstomia,,78
+C4021611,Abnormality of epiphysis morphology,,40
+C1390474,Increased susceptibility to fractures,,21
+C4020747,Biopsy shows villous atrophy,,16
+C3714796,Isolated somatotropin deficiency,,33
+C1836440,Increased serum lactate,,70
+C0156273,Bladder Diverticulum,urinary system ,10
+C0877056,Hypoglycaemic seizure,,10
+C0426970,Spastic Quadriplegia,,36
+C4020962,Enlarged thorax,,18
+C1836150,Gait imbalance,,17
+C4020969,Inflammatory abnormality of the eye,,10
+C0017168,Gastroesophageal reflux disease,gastrointestinal system ,80
+C0575802,Small hand,,39
+C2931822,Nasopharyngeal carcinoma,,19
+C0027497,Nausea,,17
+C1854113,Prominent nasal bridge,,57
+C0027498,Nausea and vomiting,,100
+C0013595,Eczema,,44
+C0013592,Ectropion,nervous system ,21
+C1854114,Short nose,,132
+C0022658,Kidney Diseases,urinary system ,116
+C1306710,Facial asymmetry,,33
+C0917990,Acro-Osteolysis,monogenic ,12
+C3278923,Dilated ventricles (finding),,124
+C4049796,Abnormality of cardiovascular system morphology,,24
+C2239176,Liver carcinoma,,244
+C0206726,gliosarcoma,cancer,16
+C0948089,Acute Coronary Syndrome,,33
+C0029927,Ovarian Cysts,,42
+C1837770,Sparse hair,,61
+C0263498,Premature canities,,25
+C1184923,Lumbar lordosis,,36
+C0009024,Clonus,,25
+C4021768,Abnormality of metabolism/homeostasis,,136
+C4021761,Morphological abnormality of the pyramidal tract,,12
+C0264142,Spade-like hand,,16
+C0576860,Narrowing of ear canal,,13
+C1838662,Metaphyseal irregularity,,24
+C0086565,Liver Dysfunction,,99
+C0016506,Foot Deformities,,30
+C2132198,Abnormal blistering of the skin,,56
+C1855996,Psychomotor regression beginning in infancy,,102
+C0011991,Diarrhea,,118
+C0085584,Encephalopathies,nervous system ,52
+C0085583,Choreoathetosis,,32
+C0085581,Restrictive lung disease,,11
+C0085580,Essential Hypertension,cardiovascular system ,21
+C0023012,Language Delay,,116
+C0023015,Language Disorders,,13
+C0023014,Language Development Disorders,,11
+C0026848,Myopathy,musculoskeletal system ,111
+C0041755,Adverse reaction to drug,,61
+C0033975,Psychotic Disorders,,150
+C0026847,Spinal Muscular Atrophy,nervous system ,14
+C0026846,Muscular Atrophy,musculoskeletal system ,14
+C0344539,Hypoplasia of iris,,10
+C0035412,Rhabdomyosarcoma,cancer,15
+C0035410,Rhabdomyolysis,,15
+C0344530,Congenital keratoglobus,nervous system ,14
+C0344531,Embryotoxon,,28
+C1857202,Frequent vomiting,,19
+C4280630,Pinched bridge of nose,,17
+C1857206,Laterally sparse eyebrows,,12
+C0023787,Lipodystrophy,musculoskeletal system ,17
+C0009806,Constipation,gastrointestinal system ,144
+C0085636,Photophobia,,122
+C0085631,Agitation,,16
+C0085633,Mood swings,,77
+C0085632,Apathy,,16
+C1855538,Small face,,10
+C0524851,Neurodegenerative Disorders,nervous system ,79
+C0027092,Myopia,nervous system ,119
+C0685409,Congenital Camptodactyly,,40
+C0376634,Craniofacial Abnormalities,,151
+C0020473,Hyperlipidemia,inherited metabolic disorder,35
+C3463824,MYELODYSPLASTIC SYNDROME,,36
+C0694563,Excessive daytime somnolence,,14
+C2677328,Brain hypomyelination,,11
+C0850703,Frequent falls,,12
+C1449861,"Micronuclei, Chromosome-Defective",,22
+C3887875,Visual field defects,,19
+C0009241,Cognition Disorders,,30
+C0023493,Adult T-Cell Lymphoma/Leukemia,cancer,31
+C0266011,Accessory nipple,,11
+C0266013,Congenital hypoplasia of breast,,25
+C0006413,Burkitt Lymphoma,cancer,15
+C0578038,Thin lips,,49
+C0030469,Paranasal Sinus Diseases,respiratory system ,34
+C0021655,Insulin Resistance,,72
+C3150077,"Short stature, mild",,13
+C0011570,Mental Depression,cognitive disorder,260
+C0085129,Bronchial Hyperreactivity,,12
+C1862939,AMYOTROPHIC LATERAL SCLEROSIS 1,,49
+C0007095,Carcinoid Tumor,,24
+C1839758,Narrow forehead,,37
+C0231528,Myalgia,,58
+C1843700,Variation in muscle fiber size,,16
+C2677869,Hair shaft abnormalities,,31
+C2364082,Sense of smell impaired,,21
+C1138421,Spider Veins,,17
+C1876165,Copper-Overload Cirrhosis,,11
+C0000786,Spontaneous abortion,,114
+C1442988,Rudimentary vagina,,14
+C0427546,Atypical lymphocyte observed,,11
+C0497327,Dementia,,80
+C0266122,Cleft uvula,,27
+C0265610,Congenital clinodactyly,,60
+C0750857,Alkaline phosphatase serum increased,,29
+C0001925,Albuminuria,,25
+C4024878,Generalized hyperpigmentation,,22
+C4025871,Abnormality of the face,,10
+C0011175,Dehydration,,40
+C0040588,Tracheoesophageal Fistula,,37
+C0020302,Hydrophthalmos,nervous system ,19
+C0007787,Transient Ischemic Attack,cardiovascular system ,10
+C0007786,Brain Ischemia,nervous system ,92
+C0007785,Cerebral Infarction,nervous system ,10
+C0007789,Cerebral Palsy,nervous system ,15
+C0020651,"Hypotension, Orthostatic",,18
+C0003864,Arthritis,musculoskeletal system ,53
+C1849121,Thin face,,54
+C0162285,Edema of eyelid,,10
+C1969913,"Hyperkeratosis, generalized",,14
+C0236736,Cocaine-Related Disorders,,108
+C0236733,Amphetamine-Related Disorders,,75
+C0338656,Impaired cognition,,104
+C2711227,Steatohepatitis,,44
+C0338474,Central nervous system demyelination,,28
+C0339789,Congenital deafness,,186
+C0575071,Gowers sign present,,24
+C0221263,Cafe-au-Lait Spots,,37
+C0221260,Dystrophia unguium,,54
+C0008325,Cholecystitis,gastrointestinal system ,12
+C1866231,Full cheeks,,50
+C1866234,Protruding lower lip,,54
+C4022996,Abnormal sex determination,,11
+C4022995,Sex reversal,,10
+C0576093,Knee joint valgus deformity,,56
+C0005138,Berylliosis,respiratory system ,11
+C0541764,Delayed bone age,,136
+C4025252,Abnormal nasal morphology,,16
+C0751466,Phonophobia,,11
+C0235991,Small for gestational age (disorder),,69
+C0022821,Kyphosis deformity of spine,,117
+C0235996,Hepatic enzyme increased,,81
+C0019214,Hepatosplenomegaly,,22
+C0423867,Fine hair,,43
+C0920299,Overriding toe,,10
+C4025650,Abnormality of lipid metabolism,,12
+C1328931,Multiple lentigines,,10
+C4280640,Retrusion of upper jaw bones,,66
+C0027796,Neuralgia,,14
+C0027794,Neural Tube Defects,,31
+C2673410,Small midface,,105
+C0008031,Chest Pain,,38
+C1836830,Developmental regression,,102
+C0014877,Esotropia,nervous system ,19
+C1271100,Lower limb spasticity,,10
+C0685891,Congenital hypoplasia of thymus,,15
+C1849340,Long palpebral fissure,,17
+C1846821,Coagulation abnormalities,,28
+C0752166,Bardet-Biedl Syndrome,monogenic ,22
+C0011334,Dental caries,gastrointestinal system ,74
+C0014474,Ependymoma,nervous system ,15
+C0334092,Hamartomatous polyp,,10
+C4280320,Hypotrophic midface,,105
+C4280321,Decreased projection of midface,,105
+C0025202,melanoma,cancer,215
+C0426848,Sacral dimples,,18
+C4021972,Urogenital sinus anomaly,,15
+C1850776,Rapidly progressive disorder,,27
+C4021976,Abnormality of the lymphatic system,,14
+C0426817,Short ribs,,30
+C1865027,Hypoplastic iliac wing,,19
+C0032285,Pneumonia,respiratory system ,89
+C1836940,Excess nuchal skin,,30
+C4048798,"Night blindness, congenital stationary, complete",,10
+C0033805,Pseudohypoaldosteronism,urinary system ,12
+C0521525,Short neck,,142
+C0002418,Amblyopia,nervous system ,19
+C0522214,Abnormal visual evoked potential,,26
+C4083076,Increased head circumference,,147
+C1850493,"Psychomotor regression, progressive",,102
+C0002896,Sideroblastic anemia,hematopoietic system ,12
+C0263537,Onychogryposis,,13
+C1856963,Fragile nails,,16
+C1836542,Depressed nasal bridge,,196
+C1836543,Thick vermilion border,,25
+C0012236,DiGeorge Syndrome,,12
+C0206733,Strawberry nevus of skin,benign neoplasm,10
+C0345030,Peripheral pulmonary artery stenosis,,14
+C0041696,Unipolar Depression,cognitive disorder,256
+C1837760,Prominent eyes,,97
+C0268731,Renal glomerular disease,,15
+C0855740,Abnormal platelet function,,12
+C0158734,Polydactyly of toes,,12
+C0158731,Congenital pectus carinatum,,53
+C0018979,Hemianopsia,,25
+C0158733,Hand polydactyly,,11
+C0240340,Microdontia (disorder),,59
+C0265974,Birthmark,,35
+C4021797,Abnormality of the thorax,,19
+C0017178,Gastrointestinal Diseases,,12
+C0151529,Bleeding time prolonged,,31
+C0151526,Premature Birth,,76
+C4022018,Telangiectasia of the skin,,40
+C0948896,Primary hypogonadism,,36
+C0011616,Contact Dermatitis,integumentary system ,71
+C1851731,Generalized overgrowth,,17
+C0011615,"Dermatitis, Atopic",integumentary system ,37
+C0035579,Rickets,musculoskeletal system ,17
+C3277059,Congenital Bilateral Cataracts,,59
+C0018800,Cardiomegaly,,115
+C0018801,Heart failure,cardiovascular system ,169
+C0018802,Congestive heart failure,cardiovascular system ,76
+C0026838,Muscle Spasticity,,200
+C0026837,Muscle Rigidity,,49
+C0241181,Fragile skin,,18
+C0009324,Ulcerative Colitis,gastrointestinal system ,60
+C1856438,Hypoketotic hypoglycemia,,11
+C0271578,Female hypogonadism syndrome,,18
+C1858729,Decreased motor NCV,,22
+C0031256,Petechiae,,13
+C0034372,Quadriplegia,nervous system ,10
+C0376628,Chromosome Breakage,,32
+C3854388,Hyperferritinaemia,,14
+C1865572,Proximally placed thumbs,,17
+C3279222,Cerebellar hypoplasia and atrophy,,50
+C0003123,Anorexia,,49
+C2749675,Cortical gyral simplification,,19
+C0003126,Anosmia,,22
+C1839326,Abnormally-shaped vertebrae,,31
+C0409354,Flexion contracture of hip,,10
+C0023467,"Leukemia, Myelocytic, Acute",cancer,122
+C1858430,Death in infancy,,82
+C3714497,Reactive airway disease,,21
+C1565489,Renal Insufficiency,,87
+C1167918,CSF lactate increased,,33
+C0264886,Conduction disorder of the heart,,82
+C0007134,Renal Cell Carcinoma,cancer,141
+C1857108,Decreased joint mobility,,53
+C0007137,Squamous cell carcinoma,cancer,120
+C0007131,Non-Small Cell Lung Carcinoma,respiratory system ,111
+C0677050,Manganese Poisoning,,11
+C0242698,"Ventricular Dysfunction, Left",,19
+C0243050,Cardiovascular Abnormalities,,31
+C0007138,"Carcinoma, Transitional Cell",cancer,33
+C0751883,"Congenital Myasthenic Syndromes, Postsynaptic",,11
+C4072821,"Large, late-closing fontanelle",,47
+C0020796,Profound Mental Retardation,,31
+C0085159,Seasonal Affective Disorder,,16
+C0039621,Tetany,,18
+C0740279,Atrophy of cerebellum,,103
+C0029172,Oral Submucous Fibrosis,gastrointestinal system ,16
+C0027947,Neutropenia,hematopoietic system ,13
+C4072825,Thickened facial skin with coarse facial features,,109
+C0266483,Pachygyria,,41
+C3665596,Warts,,10
+C0497202,Abnormal ocular motility,,19
+C0007222,Cardiovascular Diseases,,59
+C1856266,Coronal craniosynostosis,,14
+C0242184,Hypoxia,,33
+C0010964,Dandy-Walker Syndrome,nervous system ,31
+C0687120,Nephronophthisis,monogenic ,18
+C0239946,"Fibrosis, Liver",,32
+C0037822,Speech Disorders,,59
+C0009918,Contracture of joint,,93
+C1333990,Hereditary Nonpolyposis Colorectal Cancer,monogenic ,11
+C0010495,Cutis Laxa,integumentary system ,24
+C0748140,Multiple pulmonary infections,,29
+C0566899,Small labia majora,,16
+C0024305,"Lymphoma, Non-Hodgkin",cancer,23
+C0024301,"Lymphoma, Follicular",,19
+C0023518,Leukocytosis,,13
+C0744356,genital abnormal,,17
+C0277799,Intermittent fever,,15
+C0745730,Multiple lipomata,,15
+C0870082,Hyperkeratosis,,45
+C1842083,Abnormality of the ribs,,32
+C0423250,Corneal stromal opacities,,33
+C1854912,Short tubular bones,,23
+C0876973,Infectious disease of lung,,29
+C1853242,Midface retrusion,,105
+C1854919,Severe psychomotor retardation,,47
+C1853241,Flat face,,52
+C1853246,Everted lower lip vermilion,,54
+C1846347,Renal salt wasting,,18
+C1849134,Decreased lower limb vibratory sense,,13
+C0751401,Ophthalmoparesis,,11
+C0025149,Medulloblastoma,cancer,52
+C0376545,Hematologic Neoplasms,,22
+C0750937,"Ataxia, Appendicular",,25
+C4280614,Angle class 2 malocclusion,,57
+C4025790,Specific learning disability,,51
+C1861866,Hypoplasia or absence of the corpus callosum,,23
+C1861869,Underdeveloped supraorbital ridges,,38
+C0020305,Hydrops Fetalis,,22
+C1398312,Narrow palate,,20
+C0152191,"Scotoma, Central",,21
+C0151691,High density lipoprotein decreased,,10
+C0024636,Malocclusion,,57
+C1853487,Bushy eyebrows,,49
+C0281966,reproductive system abnormality,,17
+C0018213,Graves Disease,immune system ,14
+C0010036,Corneal dystrophy,nervous system ,13
+C0010038,Corneal Opacity,,53
+C0037221,Situs Inversus,,18
+C0553692,Brain hemorrhage,,14
+C0025323,Menorrhagia,,17
+C0025322,Premature Menopause,endocrine system ,24
+C4072826,Skin tag on the posterior cheek,,19
+C0004238,Atrial Fibrillation,cardiovascular system ,38
+C0019189,"Hepatitis, Chronic",gastrointestinal system ,23
+C0154835,Retinal telangiectasia,cardiovascular system ,11
+C0021359,Infertility,reproductive system ,33
+C1844505,Pointed chin,,33
+C3275417,Ragged-red fibers,,33
+C0162835,Hypopigmentation disorder,,25
+C0162834,Hyperpigmentation,,36
+C0027540,Necrosis,,53
+C1858573,Sparse pubic hair,,31
+C0026010,Microphthalmos,nervous system ,100
+C0271215,"Blindness, Legal",,110
+C1842820,Cardiac conduction abnormalities,,81
+C0013604,Edema,,69
+C0005944,Metabolic Bone Disorder,,11
+C0005941,"Bone Diseases, Developmental",,26
+C0042514,"Tachycardia, Ventricular",,24
+C1840069,Sandal gap,,24
+C0042510,Ventricular Fibrillation,,16
+C4280333,Recurrent sinus disease,,22
+C0683322,Mental impairment,,103
+C1865017,Thin upper lip vermilion,,70
+C1865014,Long philtrum,,137
+C0037293,Skin tag,integumentary system ,10
+C1456784,Paranoia,,20
+C0522224,Paralysed,,42
+C0426891,Broad thumbs,,28
+C1848178,Female external genitalia in males,,13
+C0553982,Impaired left ventricular function,,16
+C0553980,Endomyocardial Fibrosis,cardiovascular system ,10
+C0239234,Low set ears,,181
+C0263523,Micronychia (disorder),,24
+C0002880,Autoimmune hemolytic anemia,immune system ,15
+C0002886,"Anemia, Macrocytic",hematopoietic system ,18
+C0022679,Cystic kidney,urinary system ,30
+C0002888,"Anemia, Megaloblastic",hematopoietic system ,16
+C0746674,Generalized muscle weakness,,57
+C1836003,Facial diplegia,,10
+C1836550,Loss of developmental milestones,,102
+C1961102,Precursor Cell Lymphoblastic Leukemia Lymphoma,,45
+C0232940,Secondary physiologic amenorrhea,,23
+C0018965,Hematuria,,36
+C1840379,Cerebellar vermis hypoplasia,,24
+C0265965,Dyskeratosis Congenita,integumentary system ,12
+C0424810,Periorbital swelling,,13
+C4021782,Abnormality of the fingernails,,52
+C4021780,Abnormality of the liver,,21
+C1280433,Lipoatrophy,,19
+C4021786,Atypical scarring of skin,,62
+C4021785,Abnormality of the metacarpal bones,,17
+C0521620,Dilatation of ureter,,15
+C0011581,Depressive disorder,,414
+C0027765,nervous system disorder,,53
+C1306122,Oguchi disease,nervous system ,10
+C1860844,"Thin, sparse hair",,61
+C0022665,Kidney Neoplasm,cancer,29
+C0013132,Drooling,,27
+C0086543,Cataract,,240
+C4021975,Abnormality of the tonsils,,10
+C0151889,Hyperreflexia,,209
+C0011606,Exfoliative dermatitis,,25
+C0011609,Drug Eruptions,,18
+C3203358,Hypoventilation,,11
+C0033941,"Psychoses, Substance-Induced",,17
+C0018818,Ventricular Septal Defects,cardiovascular system ,120
+C0162671,MELAS Syndrome,musculoskeletal system ,18
+C0018817,Atrial Septal Defects,cardiovascular system ,86
+C0018816,Heart Septal Defects,cardiovascular system ,25
+C1855081,"MICROCEPHALY, PRIMARY AUTOSOMAL RECESSIVE, 1",,16
+C0006142,Malignant neoplasm of breast,,15
+C0009319,Colitis,gastrointestinal system ,31
+C3887524,Skin Erosion,,12
+C0392476,Epiphyseal dysplasia,,14
+C0026826,Muscle Hypertonia,,88
+C0026821,Muscle Cramp,,56
+C3665347,Visual Impairment,,175
+C0700208,Acquired scoliosis,,286
+C3665349,Secondary hypothyroidism,,14
+C0031900,Pierre Robin Syndrome,musculoskeletal system ,12
+C1720887,Female Urogenital Diseases,,18
+C0427149,"Gait, Drop Foot",,24
+C0268079,Hyperphosphaturia,,21
+C1834405,Nail dysplasia,,52
+C0432333,Abnormal dermatoglyphic pattern,,24
+C1864696,Distal limb muscle weakness due to peripheral neuropathy,,62
+C0003119,Anophthalmos,,13
+C1389113,Generalized amyotrophy,,20
+C0476254,Dyslexia,,16
+C0023473,"Myeloid Leukemia, Chronic",cancer,23
+C0235063,Respiratory Depression,,13
+C0023470,Myeloid Leukemia,cancer,17
+C0431483,Simple ear,,41
+C0265563,Congenital dislocation of radial head,,14
+C4020899,Autosomal recessive predisposition,,1445
+C1849075,Relative macrocephaly,,12
+C0409348,Flexion contracture of proximal interphalangeal joint,,75
+C0016522,"Foramen Ovale, Patent",cardiovascular system ,10
+C3551535,"Mitral regurgitation, mild",,32
+C0542519,Congenital absence of kidney,,31
+C0007120,Bronchioloalveolar Adenocarcinoma,respiratory system ,14
+C0243026,Sepsis,,21
+C0234629,Abnormal color vision,,31
+C0542514,Blue sclera,,33
+C0266039,Taurodontism,,15
+C1835047,"MELANOMA, CUTANEOUS MALIGNANT, 1",,15
+C2674432,Decreased bone mineral density Z score,,31
+C2242472,Infection of bone,,17
+C3160718,"PARKINSON DISEASE, LATE-ONSET",,14
+C0858867,Reticulocytopenia,,10
+C0020458,Hyperhidrosis disorder,,83
+C0745103,Hyperlipoproteinemia Type IIa,,11
+C0020459,Hyperinsulinism,acquired metabolic ,87
+C0302501,Mandibular hyperplasia,,78
+C0015371,Extrapyramidal Disorders,,29
+C0267456,Villous atrophy of intestine,,16
+C0028754,Obesity,acquired metabolic ,275
+C1855685,Extinguished electroretinogram,,15
+C0037036,Sialorrhea,,28
+C0431659,Hypoplasia of scrotum,,24
+C1136179,Hammer Toe,,23
+C4024780,Almond-shaped eyes,,26
+C0162119,Hemoglobin low,,127
+C0030044,Acrocephaly,,12
+C4024890,Excessive wrinkled skin,,16
+C0427055,Facial Paresis,,59
+C0024312,Lymphopenia,hematopoietic system ,40
+C1956257,Pulmonary Stenosis,,45
+C1843479,"Neurogenic muscle atrophy, especially in the lower limbs",,140
+C0581381,Recurrent upper respiratory tract infection,,21
+C1857486,"Low-set, posteriorly rotated ears",,112
+C0266589,Congenital ear anomaly NOS (disorder),,30
+C0024530,Malaria,,16
+C0423110,Downward slant of palpebral fissure,,159
+C1858285,Decreased number of large and small myelinated fibers,,20
+C0423113,Telecanthus,,62
+C1854928,Protuberant abdomen,,16
+C0036454,Scotoma,,12
+C0010606,Adenoid Cystic Carcinoma,cancer,100
+C0349588,Short stature,,545
+C0023264,Leigh Disease,inherited metabolic disorder,36
+C0266619,Potter's facies,,10
+C0575059,Spastic tetraparesis,,12
+C4025787,Skull defect,,10
+C3808377,"CATARACT 16, MULTIPLE TYPES",,15
+C0240635,Byzanthine arch palate,,195
+C0221204,Lytic lesion,,32
+C1800706,Idiopathic Pulmonary Fibrosis,respiratory system ,15
+C0233715,Speech impairment,,116
+C0206620,"Lymphangioma, Cystic",benign neoplasm,21
+C0036857,Severe mental retardation (I.Q. 20-34),,99
+C0240912,Vertical Talus,,25
+C0221209,Pelvic kidney,,10
+C0522055,Electrocardiogram abnormal,,84
+C0520966,Abnormal coordination,,15
+C0553730,Calcium pyrophosphate deposition disease,,13
+C0019284,Diaphragmatic Hernia,musculoskeletal system ,41
+C0282612,Prostatic Intraepithelial Neoplasias,,11
+C4280637,Hypertrophy of supraorbital margins,,19
+C0747085,Recurrent otitis media,,42
+C4280639,Hyperplasia of supraorbital margins,,19
+C1849211,Generalized hirsutism,,36
+C0018777,Conductive hearing loss,,123
+C0018772,"Hearing Loss, Partial",,186
+C0008780,Ciliary Motility Disorders,,38
+C0010043,Corneal Ulcer,nervous system ,15
+C0742906,C-reactive protein increased,,15
+C0236663,Alcohol withdrawal syndrome,,12
+C0019196,Hepatitis C,,15
+C0178417,Anhedonia,,27
+C0015672,Fatigue,,192
+C2931456,"Prostate cancer, familial",,13
+C4280456,Dysplasia of tooth enamel,,35
+C4280457,Defective enamel matrix,,35
+C0426429,Broad nasal tip,,28
+C0162809,Kallmann Syndrome,endocrine system ,20
+C0238288,"Muscular Dystrophy, Facioscapulohumeral",musculoskeletal system ,13
+C0426422,Narrow nose,,23
+C0426421,Wide nose,,35
+C1263857,Peripheral axonal neuropathy,,18
+C0020255,Hydrocephalus,nervous system ,113
+C0239137,Coxa valga,,22
+C4020777,Underdeveloped brows,,38
+C0349204,Nonorganic psychosis,,84
+C0376175,Bell Palsy,nervous system ,58
+C1849367,Nasal bridge wide,,237
+C1832117,Short upper arms,,16
+C1846803,Small epiphyses,,10
+C0239138,Hip joint varus deformity - observation,,24
+C0025261,Memory Disorders,,40
+C0395837,Stenosis of external auditory canal,,13
+C1866210,"Highly variable phenotype, even within families",,152
+C4021956,Aplasia/Hypoplasia of the eyebrow,,32
+C0013386,"Dyskinesia, Drug-Induced",,15
+C0013384,Dyskinetic syndrome,,16
+C1858120,Generalized hypotonia,,40
+C1858127,Limb-girdle muscle weakness,,12
+C0426886,Tapering fingers (finding),,25
+C1848765,Sparse/absent eyebrows,,32
+C3536741,Discordant ventriculoarterial connection,,17
+C0015923,Fetal Alcohol Syndrome,,15
+C0238669,Aortic root dilatation,,11
+C0917796,"Optic Atrophy, Hereditary, Leber",nervous system ,15
+C4021550,Elevated follicle stimulating hormone,,15
+C4021551,Absence of secondary sex characteristics,,22
+C3553764,Joint hyperflexibility,,78
+C1859461,Femoral bowing,,20
+C0917798,Cerebral Ischemia,,32
+C0022661,"Kidney Failure, Chronic",urinary system ,45
+C0334634,"Malignant lymphoma, lymphocytic, intermediate differentiation, diffuse",,13
+C0014038,Encephalitis,nervous system ,11
+C3806482,Recurrent respiratory infections,,146
+C0018553,"Hamartoma Syndrome, Multiple",monogenic ,10
+C1385263,facial deformity,,48
+C0017601,Glaucoma,nervous system ,120
+C1833999,Pigmentary retinal degeneration,,11
+C0878575,Peripheral demyelination,,16
+C0684276,Hypsarrhythmia,,25
+C0022116,Ischemia,cardiovascular system ,28
+C1833225,Dystrophic toenail changes,,12
+C0520743,Mediastinal lymphadenopathy,,11
+C0040128,Thyroid Diseases,endocrine system ,24
+C1389280,Basal ganglia calcification,,16
+C3278401,Hair hypopigmentation,,12
+C0024121,Lung Neoplasms,respiratory system ,213
+C1857949,Prominent metopic ridge,,15
+C0086795,Pfaundler-Hurler Syndrome,,12
+C0264172,Barrel chest,,12
+C0005745,Blepharoptosis,nervous system ,238
+C0151878,Prolonged QT interval,,17
+C0541794,Skeletal muscle atrophy,,140
+C4020958,Rough bone trabeculation,,12
+C0031099,Periodontitis,gastrointestinal system ,23
+C0031090,Periodontal Diseases,gastrointestinal system ,21
+C0018824,Heart valve disease,cardiovascular system ,36
+C1855728,Low posterior hairline,,52
+C1848570,"Large, floppy ears",,87
+C0006157,Breech Presentation,,10
+C0026764,Multiple Myeloma,cancer,33
+C0476403,Electromyogram abnormal,,59
+C0026769,Multiple Sclerosis,nervous system ,42
+C0600467,Neurogenic Inflammation,,12
+C0031117,Peripheral Neuropathy,nervous system ,134
+C0162820,"Dermatitis, Allergic Contact",immune system ,66
+C2931673,"Ceroid lipofuscinosis, neuronal 1, infantile",,10
+C0231712,Waddling gait,,34
+C1850135,Splayed metaphyses,,20
+C0023882,Little's Disease,nervous system ,14
+C1522137,Hypertriglyceridemia result,,37
+C0917805,Transient Cerebral Ischemia,,12
+C0020649,Hypotension,,82
+C0917801,Sleeplessness,,16
+C0271650,Impaired glucose tolerance,acquired metabolic ,29
+C4022588,Fatigable weakness of swallowing muscles,,28
+C0597167,Islets of Langerhans hyperplasia,,11
+C0023890,Liver Cirrhosis,gastrointestinal system ,139
+C1866862,Highly variable severity,,166
+C0525045,Mood Disorders,cognitive disorder,187
+C1298695,Hypoplasia of optic disc,,12
+C0240543,Bulbous nose,,48
+C0234632,Reduced visual acuity,,63
+C4024665,High-grade hypermetropia,,26
+C1167713,Corneal diameter decreased,,47
+C0345309,Hypoplasia of vagina,,14
+C0702166,Acne,integumentary system ,34
+C1834055,Thin hypoplastic alae nasi,,51
+C0476273,Respiratory distress,,43
+C0544820,Hypomyelination,,17
+C0027960,Nevus,,19
+C0020534,Orbital separation excessive,,246
+C0020538,Hypertensive disease,cardiovascular system ,303
+C0235659,Reduced fetal movement,,55
+C1839764,Broad flat nasal bridge,,237
+C3551430,Sparse or absent eyebrows,,32
+C4023786,Elevated levels of phytanic acid,,15
+C0037932,Curvature of spine,,287
+C0270685,Cerebral calcification,,50
+C0030293,Pancreatic Insufficiency,,13
+C0030297,Pancreatic Neoplasm,cancer,88
+C1849020,Short metatarsal,,21
+C4011556,Eyebrow abnormalities,,12
+C1835581,Large protruding ears,,87
+C0542476,Forgetful,,47
+C1145628,Autonomic nervous system disorders,,19
+C2749463,Radial aplasia/hypoplasia,,29
+C4024737,Aplasia/Hypoplasia of the skin,,17
+C0595929,Serum cholesterol raised,,22
+C0020626,Hypoparathyroidism,endocrine system ,17
+C0020625,Hyponatremia,,24
+C3809811,"PARKINSON DISEASE 19, JUVENILE-ONSET",,10
+C0424551,Impaired exercise tolerance,,43
+C0268362,Osteogenesis imperfecta type III (disorder),,11
+C0020621,Hypokalemia,,33
+C0020620,Hypohidrosis,integumentary system ,25
+C0554972,Large auricle,,87
+C3551052,"Night blindness, stationary",,10
+C0554970,Pallor of optic disc,,39
+C0023532,"Leukoplakia, Oral",,21
+C0007117,Basal cell carcinoma,cancer,52
+C0023530,Leukopenia,hematopoietic system ,37
+C0423109,Upward slant of palpebral fissure,,75
+C1321884,Atresia of vagina,,10
+C0424731,Single transverse palmar crease,,29
+C1720508,Retinal pigment epithelial abnormality,,113
+C0456070,Growth delay,,114
+C0019569,Hirschsprung Disease,gastrointestinal system ,40
+C1835473,Diaphyseal thickening,,12
+C1862761,Increased hepatocellular carcinoma risk,,27
+C0237653,Immunologic Hypersensitivity,,11
+C0563243,Poor coordination,,11
+C0221217,Neck webbing,,35
+C0024437,Macular degeneration,nervous system ,16
+C0279628,Adenocarcinoma Of Esophagus,cancer,14
+C1843687,"ATRIAL FIBRILLATION, FAMILIAL, 1 (disorder)",,22
+C0024433,Macrostomia,,73
+C0221210,Congenital malrotation of intestine,,16
+C0020757,Ichthyoses,,41
+C0279626,Squamous cell carcinoma of esophagus,cancer,80
+C4280623,Rotting teeth,,74
+C4280627,Failure of development of eyelashes,,16
+C4280626,Aplasia of eyelashes,,16
+C4280625,Decreased size of eyeball,,97
+C1842153,Irregular vertebral endplates,,16
+C0747078,Generalized osteopenia,,99
+C4280629,Hyperplasia of nose,,23
+C4280628,Malformation of the neck,,19
+C0038271,Stereotyped Behavior,,38
+C0038273,Stereotypic Movement Disorder,,40
+C0024591,Malignant hyperpyrexia due to anesthesia,monogenic ,10
+C1859896,Progressive macrocephaly,,18
+C0015397,Disorder of eye,nervous system ,22
+C0751778,"Myoclonic Epilepsies, Progressive",monogenic ,49
+C0743359,ear infection chronic,,52
+C0241178,Velvety skin,,17
+C0019163,Hepatitis B,,12
+C0162323,Polyarthritis,,11
+C4280538,Curvature of little finger,,110
+C4280533,Decreased calcification of skull,,10
+C4280532,Decreased width of the skull,,28
+C0426414,Small nose,,132
+C0426415,Large nose,,23
+C1867446,Bulging forehead,,67
+C1263846,Attention deficit hyperactivity disorder,,116
+C0004763,Barrett Esophagus,gastrointestinal system ,15
+C0239105,Conjunctival telangiectasis,,14
+C4020878,Diffusely thickened skin,,21
+C1842003,Subclinical abnormal liver function tests,,81
+C4021977,Visceral angiomatosis,,13
+C0024299,Lymphoma,hematopoietic system ,47
+C0008311,Cholangitis,gastrointestinal system ,10
+C0008312,Primary biliary cirrhosis,gastrointestinal system ,15
+C0028960,Oligospermia,reproductive system ,16
+C0027697,Nephritis,urinary system ,17
+C1861063,"TOBACCO ADDICTION, SUSCEPTIBILITY TO (finding)",,12
+C0004096,Asthma,respiratory system ,99
+C4020871,Dystonic disease,,106
+C0454644,Delayed speech and language development,,116
+C0015934,Fetal Growth Retardation,,186
+C4048273,Chorioretinal atrophy,,11
+C4048270,Decreased antibody level in blood,,35
+C4021546,Abnormal mitochondria in muscle tissue,,20
+C4020898,Overactive bladder syndrome,,14
+C0993582,"Arthritis, Experimental",,40
+C1837514,Phenotypic variability,,152
+C4020897,Uroureter,,15
+C4020891,Pinched nasal bridge,,17
+C4020892,Capuchin ears,,17
+C0836924,Thrombocytosis,hematopoietic system ,14
+C0032617,Polyuria,,23
+C0266544,Microcornea,,47
+C1317785,Tooth size discrepancy,,45
+C1833058,Small intestine biopsy shows villous atrophy,,16
+C4280636,Hypertrophy of supraorbital ridge,,19
+C0262361,abnormal growth,,35
+C0017636,Glioblastoma,cancer,77
+C0013575,Ectodermal Dysplasia,,13
+C1837731,Overfolded helix,,24
+C1837732,Thickened helices,,15
+C1847514,Postnatal microcephaly,,24
+C0545053,Advanced bone age,,36
+C0017638,Glioma,cancer,78
+C0017639,Gliosis,,56
+C0240379,Open mouth,,45
+C0013080,Down Syndrome,,15
+C0002514,"Amino Acid Metabolism, Inborn Errors",inherited metabolic disorder,13
+C0342491,Small adrenal gland,,12
+C0040136,Thyroid Neoplasm,cancer,37
+C0028768,Obsessive-Compulsive Disorder,cognitive disorder,32
+C1840087,Radial ray hypoplasia,,23
+C0027746,Nerve Degeneration,,120
+C1838993,Episodic vomiting,,19
+C1837352,Childhood onset,,39
+C3839753,Abnormality of nail of toe,,11
+C0746926,"Multiple, subcutaneous nodules",,54
+C0013405,"Dyspnea, Paroxysmal",,13
+C0013404,Dyspnea,,70
+C4280638,Hyperplasia of supraorbital ridge,,19
+C0151311,Cranial nerve palsies,nervous system ,11
+C0151313,Sensory neuropathy,nervous system ,20
+C0566620,Nasal voice,,42
+C0018834,Heartburn,,76
+C1855710,Bone marrow hypocellularity,,21
+C3278509,Spinal fusion,,25
+C1845847,Coarse facial features,,109
+C0042164,Uveitis,nervous system ,13
+C1839972,Increased IgM levels,,16
+C0241157,pustule,,10
+C1858719,Facial muscle weakness of muscles innervated by CN VII,,58
+C4022020,Mucosal telangiectasiae,,14
+C0700590,Increased sweating,,83
+C0344312,White forelock,,12
+C0344315,Depressed mood,,17
+C0242339,Dyslipidemias,,30
+C0432355,Hypoplasia of nipple,,16
+C0020437,Hypercalcemia,acquired metabolic ,36
+C0158113,Contracture of joint of hand,,30
+C3665386,Abnormal vision,,53
+C1458140,Bleeding tendency,,37
+C0020438,Hypercalciuria,,27
+C0270846,Epileptic drop attack,,11
+C0041667,Underweight,,17
+C3887611,Restlessness,,14
+C0392525,Nephrolithiasis,,32
+C0678222,Breast Carcinoma,,26
+C2748958,Increased susceptibility to bacterial infections,,42
+C0023186,Learning Disorders,,29
+C0271183,Severe myopia,,22
+C0270853,"Myoclonic Epilepsy, Juvenile",nervous system ,10
+C0270850,Idiopathic generalized epilepsy,,11
+C1621895,Adrenal hyperplasia,,13
+C0085762,Alcohol abuse,,44
+C0278124,Absent tendon reflex,,93
+C0020507,Hyperplasia,,26
+C0040433,Tooth Crowding,,45
+C0020502,Hyperparathyroidism,endocrine system ,12
+C0039070,Syncope,,23
+C1112256,Peripheral sensorimotor neuropathy,,16
+C0039075,Syndactyly,musculoskeletal system ,42
+C3551426,Dystrophic fingernails,,18
+C0016382,Flushing,,60
+C0270921,Axonal neuropathy,nervous system ,18
+C0917816,Mental deficiency,,649
+C0546969,"Preauricular Fistulae, Congenital",,28
+C1839025,Decreased amplitudes on flash visual electroretinogram,,13
+C0546967,Posterior embryotoxon,,28
+C0036508,Seborrheic dermatitis,integumentary system ,13
+C0266470,Cerebellar Hypoplasia,,62
+C0546964,Genu recurvatum,,12
+C0034013,Precocious Puberty,,27
+C0034012,Delayed Puberty,,97
+C0338502,Hypoplasia of the optic nerve,,17
+C0338503,Septo-Optic Dysplasia,monogenic ,11
+C0031511,Pheochromocytoma,,18
+C1336708,Testicular Germ Cell Tumor,endocrine system ,14
+C0020619,Hypogonadism,endocrine system ,124
+C0432073,Defect of skull ossification,,10
+C2936346,22q11 Deletion Syndrome,,10
+C0020617,Hypoglycemic coma,nervous system ,10
+C0020615,Hypoglycemia,acquired metabolic ,99
+C0023520,Leukodystrophy,nervous system ,32
+C0431890,Hypoplasia of thumb,,26
+C0241442,Protrusion of tongue,,11
+C2700617,Irritation - emotion,,68
+C0266052,Precocious exfoliation of primary tooth,,11
+C0007102,Malignant tumor of colon,cancer,16
+C0004153,Atherosclerosis,cardiovascular system ,59
+C1845447,Cupped ears (finding),,17
+C1845112,Hyperkyphosis,,114
+C0004158,Athetosis,,16
+C0341787,Bifid scrotum,,16
+C0920163,Idiopathic thrombocytopenia,,22
+C1832603,EKG abnormalities,,81
+C0424585,Tires quickly,,18
+C0019572,Hirsutism,,47
+C0024421,Macroglossia,,67
+C0027962,Melanocytic nevus,,43
+C4230640,Convex nasal bridge,,57
+C1853383,Tented mouth,,19
+C0042384,Vasculitis,cardiovascular system ,23
+C4280617,Tooth mass arch size discrepancy,,45
+C4025749,Abnormality of the spleen,,13
+C4280615,Defective tooth enamel,,31
+C0015230,Exanthema,integumentary system ,42
+C4280613,Angle class 3 malocclusion,,57
+C4280611,Decreased size of teeth,,62
+C0005779,Blood Coagulation Disorders,hematopoietic system ,43
+C1858395,Tubular atrophy,,10
+C4280618,Inadequate arch length for tooth size,,45
+C4280619,Missing more than six teeth,,22
+C1704317,Leukokeratosis,,20
+C0520679,"Sleep Apnea, Obstructive",,10
+C0677776,Hereditary Breast and Ovarian Cancer Syndrome,monogenic ,14
+C0037274,Dermatologic disorders,integumentary system ,94
+C0423820,Ridged nails,,15
+C0021368,Inflammation,,114
+C0021364,Male infertility,reproductive system ,69
+C0021361,Female infertility,,29
+C1857640,Decreased nerve conduction velocity,,42
+C4280663,Increased size of cranium,,147
+C0152031,Joint swelling,,26
+C0002994,Angioedema,integumentary system ,10
+C4021790,Abnormality of the skeletal system,,11
+C1955869,Malformations of Cortical Development,,12
+C1839767,Inverted V-shaped upper lip,,19
+C0008073,Developmental Disabilities,,22
+C0042487,Venous Thrombosis,,46
+C4021792,Abnormality of the clavicle,,14
+C0238463,Papillary thyroid carcinoma,cancer,33
+C0036095,Salivary Gland Neoplasms,,46
+C0456132,Large fontanelle,,47
+C1850189,Large pinnae,,87
+C3806554,Dysseborrheic dermatitis,,13
+C1849300,Widely patent fontanels and sutures,,12
+C1457883,Aggressive reaction,,75
+C0751617,Semilobar Holoprosencephaly,,14
+C0748318,Progressive renal failure,,13
+C0524620,Metabolic Syndrome X,,20
+C1960469,Left ventricular noncompaction,,14
+C0008677,"Bronchitis, Chronic",respiratory system ,12
+C1398325,Absent auditory canals,,23
+C0239594,Short finger,,18
+C0013362,Dysarthria,,192
+C0013363,Dysautonomia,,20
+C0033375,Prolactinoma,benign neoplasm,10
+C0005424,Biliary Tract Diseases,gastrointestinal system ,16
+C3151520,Early severe fetal akinesia sequence,,11
+C0266295,Congenital hypoplasia of kidney,,32
+C0033687,Proteinuria,urinary system ,124
+C1859447,Hypoplastic ischia,,11
+C0013581,Ectopia Lentis,nervous system ,17
+C0018920,"Hemangioma, Cavernous",hematopoietic system ,20
+C0001430,Adenoma,benign neoplasm,32
+C4020887,Photodysphoria,,122
+C4020886,Defective or absent horizontal voluntary eye movements,,25
+C4020885,Difficulties with night vision,,88
+C4020884,Anxiety disease,,120
+C1867873,Failure to thrive in infancy,,35
+C0728829,Congenital pes cavus,,88
+C0018536,Hallux Valgus,,26
+C0262374,Stricture of anus,,13
+C0018021,Goiter,endocrine system ,18
+C1850573,Slender build,,14
+C1836635,Loeys-Dietz Aortic Aneurysm Syndrome,monogenic ,13
+C1840305,Absent external auditory canals,,23
+C0332615,Myopathic facies,,13
+C0038220,Status Epilepticus,nervous system ,83
+C0263401,Cutis marmorata,,32
+C0085576,Iron-Refractory Iron Deficiency Anemia,hematopoietic system ,16
+C1837658,Gross motor development delay,,21
+C0231807,Dyspnea on exertion,,24
+C0016663,Pathological fracture,,20
+C1859678,Mental deterioration in childhood,,102
+C0018843,Heat Stroke,,13
+C0013182,Drug Allergy,,35
+C4022012,Death in early adulthood,,31
+C0009676,Confusion,,22
+C0034935,Babinski Reflex,,100
+C0151786,Muscle Weakness,,182
+C0456909,Blind Vision,,111
+C0027643,"Neoplasm Recurrence, Local",,32
+C0856975,Autistic behavior,,20
+C1851868,Reduced tensile strength of hair,,25
+C0035222,"Respiratory Distress Syndrome, Adult",respiratory system ,56
+C0006625,Cachexia,,57
+C0035229,Respiratory Insufficiency,,140
+C0035228,Respiratory Hypersensitivity,,18
+C0009691,Congenital cataract,,59
+C0854723,Retinal Dystrophies,nervous system ,33
+C0410550,Collapse of vertebra,,14
+C0685695,Abnormal lung lobation,,10
+C0020429,Hyperalgesia,,80
+C0020428,Hyperaldosteronism,endocrine system ,19
+C1839364,Progressive visual loss,,36
+C2985290,Fetal Alcohol Spectrum Disorders,,13
+C0235032,Neurotoxicity Syndromes,nervous system ,26
+C0079731,B-Cell Lymphomas,cancer,15
+C0678230,Congenital Epicanthus,,178
+C0271623,Hypogonadotropic hypogonadism,,75
+C2931092,Maternally Inherited Leigh Syndrome,,11
+C0271196,"Scotoma, Centrocecal",,11
+C0023380,Lethargy,,77
+C0011854,"Diabetes Mellitus, Insulin-Dependent",acquired metabolic ,48
+C0011853,"Diabetes Mellitus, Experimental",,107
+C0029454,Osteopetrosis,musculoskeletal system ,12
+C0010520,Cyanosis,,17
+C1866934,Decreased to absent deep tendon reflexes,,44
+C0344233,Retinal blind spot,,12
+C0344232,Blurred vision,,19
+C0085207,Gestational Diabetes,acquired metabolic ,12
+C0020514,Hyperprolactinemia,acquired metabolic ,10
+C0020517,Hypersensitivity,immune system ,63
+C0040427,Tooth Abnormalities,,70
+C1301937,Talipes,,20
+C0497247,Increase in blood pressure,,129
+C0014170,Endometrial Neoplasms,reproductive system ,53
+C0271441,Chronic otitis media,,52
+C0085684,Foot-drop,,27
+C0085681,Hyperphosphatemia (disorder),acquired metabolic ,17
+C0085682,Hypophosphatemia,,18
+C0266463,Lissencephaly,,15
+C0266464,Polymicrogyria,,48
+C1839039,Highly variable clinical phenotype,,152
+C0265660,Syndactyly of the toes,,45
+C0034065,Pulmonary Embolism,respiratory system ,21
+C0034067,Pulmonary Emphysema,,23
+C0149745,Oral Ulcer,,16
+C0034069,Pulmonary Fibrosis,respiratory system ,81
+C0006845,"Candidiasis, Chronic Mucocutaneous",,11
+C0155552,"Hearing Loss, Mixed Conductive-Sensorineural",,12
+C0035828,Romano-Ward Syndrome,cardiovascular system ,14
+C0020608,Hypodontia,,83
+C0233565,Bradykinesia,,34
+C0584837,Choanal stenosis,,11
+C0007114,Malignant neoplasm of skin,cancer,16
+C4022587,Fatigable weakness of respiratory muscles,,28
+C4024641,Enlarged polycystic ovaries,,10
+C1839630,"Hypotonia, severe",,33
+C1879312,Agyria,,15
+C3550658,Maternal oligohydramnios,,32
+C1843156,"Hearing loss, progressive sensorineural",,32
+C0423903,Low intelligence,,649
+C1853737,Prominent occiput,,22
+C0240896,Fundus coloboma,,18
+C0240897,Retinal exudates,,11
+C1853738,Long eyelashes,,37
+C1867103,Limited elbow extension,,20
+C0575081,Gait abnormality,,137
+C0266362,Ambiguous Genitalia,,24
+C0543541,HYPERGLYCINURIA (disorder),,12
+C4275179,Young onset Parkinson disease,,10
+C1842774,Hyperpigmented macules,,43
+C1854882,Absent speech,,43
+C0024236,Lymphedema,immune system ,22
+C0016059,Fibrosis,,43
+C0021390,Inflammatory Bowel Diseases,gastrointestinal system ,37
+C0010278,Craniosynostosis,musculoskeletal system ,44
+C0037268,Skin Abnormalities,,37
+C0575158,Kyphoscoliosis deformity of spine,,60
+C0015644,Muscular fasciculation,,22
+C4280517,Enlargement of craniofacial bones,,11
+C4280516,Thick craniofacial bones,,11
+C0008489,Chorea,,29
+C0152025,Polyneuropathy,nervous system ,37
+C4280518,Hypertrophy of craniofacial bones,,11
+C0333641,Atrophic,,10
+C4280269,Noncancerous mole,,28
+C4280262,Dystrophic tooth enamel,,31
+C1837087,Macular pigmentary changes,,16
+C0002622,Amnesia,cognitive disorder,17
+C4020734,"Nystagmus, continuous pendular",,14
+C4277682,Chemical and Drug Induced Liver Injury,,212
+C0005695,Bladder Neoplasm,cancer,114
+C0239479,Round face,,45
+C1850496,Neuronal loss,,25
+C0010200,Coughing,,25
+C4082243,Maxillary retrognathia,,66
+C1849314,Absence of radius and ulna,,15
+C1849311,Short first metacarpals,,11
+C0037317,Sleep disturbances,,37
+C0037315,Sleep Apnea Syndromes,,16
+C1866241,Broad feet,,19
+C1842170,Centrally nucleated skeletal muscle fibers,,10
+C0553706,SERUM PHOSPHATE ELEVATED,,14
+C4280607,Small wings of the pelvic girdle,,13
+C4280606,Hanging skin,,24
+C0398650,Immune thrombocytopenic purpura,immune system ,24
+C3278981,"Decreased visual acuity, slowly progressive",,13
+C0521573,Coloboma of eyelid,,15
+C0014175,Endometriosis,reproductive system ,156
+C0028949,Oligomenorrhea,,19
+C3536714,Renal dysplasia,,24
+C0027430,Nasal Polyps,,10
+C0001403,Addison Disease,endocrine system ,18
+C0026850,Muscular Dystrophy,musculoskeletal system ,44
+C0086437,Joint laxity,,55
+C0022638,Ketosis,,11
+C0086438,Hypogammaglobulinemia,immune system ,35
+C0086439,Hypokinesia,,19
+C0018524,Hallucinations,,42
+C0311277,"Obesity, Abdominal",,27
