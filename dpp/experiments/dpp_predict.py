@@ -2,7 +2,6 @@
 import logging
 import os
 import json
-import parse
 import datetime
 import time
 from multiprocessing import Pool
@@ -17,7 +16,7 @@ from tqdm import tqdm
 from dpp.data.associations import load_diseases
 from dpp.data.network import PPINetwork
 from dpp.experiments.experiment import Experiment
-from dpp.methods.lci.method import LCI
+from dpp.methods.lci.lci_method import LCI
 from dpp.util import Params, set_logger, string_to_list, fraction_nonzero
 
 
@@ -48,12 +47,11 @@ class DPPPredict(Experiment):
                                            exclude_splits=['none'])
         
         logging.info("Loading Network...")
-        self.netwok = PPINetwork(self.params["ppi_network"]) 
-        self.node_to_protein = {n: p for p, n in self.protein_to_node.items()}
+        self.network = PPINetwork(self.params["ppi_network"]) 
 
-        self.method = globals()[self.params["method_class"]](self.ppi_networkx, 
-                                                             self.protein_to_node, 
-                                                          self.params["method_params"])
+        self.method = globals()[self.params["method_class"]](self.network, 
+                                                             self.diseases_dict, 
+                                                             self.params["method_params"])
     
     def process_disease(self, disease):
         """
@@ -102,18 +100,14 @@ class DPPPredict(Experiment):
         Saves the results to a csv using a pandas Data Fram
         """
         print("Saving Results...")
-        self.results.to_csv(os.path.join(self.dir, 'results.csv'), index=False)
-
-        if summary:
-            summary_df = self.summarize_results()
-            summary_df.to_csv(os.path.join(self.dir, 'summary.csv'))
+        self.results.to_csv(os.path.join(self.dir, 'predictions.csv'), index=False)
     
     def load_results(self):
         """
         Loads the results from a csv to a pandas Data Frame.
         """
         print("Loading Results...")
-        self.results = pd.read_csv(os.path.join(self.dir, 'results.csv'))
+        self.results = pd.read_csv(os.path.join(self.dir, 'predictions.csv'))
     
 
 def process_disease_wrapper(disease):
@@ -124,7 +118,7 @@ def main(process_dir, overwrite, notify):
     with open(os.path.join(process_dir, "params.json")) as f:
         params = json.load(f)
     assert(params["process"] == "dpp_predict")
-    exp = DPPPredict(process_dir, paramns["process_params"])
+    exp = DPPPredict(process_dir, params["process_params"])
     if exp.is_completed():
         exp.load_results()
     elif exp.run():

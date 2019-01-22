@@ -335,8 +335,8 @@ def train(model, optimizer, loss_fn, dataloader, metrics, params):
 
             # move to GPU if available
             if params.cuda:
-                labels_batch = labels_batch.cuda(params.cuda_gpu, async=True)
-                data_batch = data_batch.cuda(params.cuda_gpu, async=True)
+                labels_batch = labels_batch.cuda(params.cuda_gpu)
+                data_batch = data_batch.cuda(params.cuda_gpu)
 
             # compute model output and loss
             if params.cuda:
@@ -405,8 +405,8 @@ def evaluate(model, loss_fn, dataloader, metrics, params):
             assert(torch.dot(data_batch.view(-1), labels_batch.view(-1)) == 0)
             # move to GPU if available
             if params.cuda:
-                labels_batch = labels_batch.cuda(params.cuda_gpu, async=True)
-                data_batch = data_batch.cuda(params.cuda_gpu, async=True)
+                labels_batch = labels_batch.cuda(params.cuda_gpu)
+                data_batch = data_batch.cuda(params.cuda_gpu)
 
             output_batch = model(data_batch)
             if params.cuda:
