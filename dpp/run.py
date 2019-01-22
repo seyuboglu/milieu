@@ -6,7 +6,9 @@ import logging
 import os
 import json
 
-import dpp.experiments.dpp as dpp
+import dpp.experiments.dpp_evaluate as dpp_evaluate
+import dpp.experiments.dpp_predict as dpp_predict
+
 
 import click
 
