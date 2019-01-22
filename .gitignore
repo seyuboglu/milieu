@@ -106,3 +106,6 @@ venv.bak/
 .vscode
 
 **predictions.csv
+
+**gene2go.txt
+**.obo

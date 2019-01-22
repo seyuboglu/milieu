@@ -62,7 +62,7 @@ class PPINetwork:
             return np.array([self.node_to_protein[n] 
                              for n in nodes if n in self.node_to_protein])
         else:
-            return np.array(self.node_to_protein.values())
+            return np.fromiter(self.node_to_protein.values(), dtype=int)
     
     def get_nodes(self, proteins=None):
         """
@@ -77,5 +77,5 @@ class PPINetwork:
             return np.array([self.protein_to_node[p] 
                              for p in proteins if p in self.protein_to_node])
         else:
-            return np.array(self.protein_to_node.values())
+            return np.fromiter(self.protein_to_node.values(), dtype=int)
 
