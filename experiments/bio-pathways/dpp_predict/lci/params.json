@@ -1,0 +1,18 @@
+{
+    "process": "dpp_predict",
+    "process_params": 
+        {
+            "n_processes": 1,
+            "ppi_network": "data/networks/bio-pathways-network.txt",
+            "diseases_path": "data/associations/disgenet-associations.csv",
+            "disease_subset": [],
+
+            "method_class": "LCI",
+            "method_params": {
+                "dir": "experiments/bio-pathways/dpp_evaluate/lci/lci",
+                "d": 1,
+                "initialization": "ones",
+                "cuda": true
+            }
+        }
+}
