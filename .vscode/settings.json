@@ -1,7 +1,0 @@
-{
-    "files.exclude": {
-        "**.egg-info": true,
-        "env": true
-    },
-    "python.pythonPath": "env/bin/python"
-}
