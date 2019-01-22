@@ -22,7 +22,7 @@ from dpp.output import ExperimentResults
 from dpp.util import Params, set_logger, parse_id_rank_pair
 
 
-class DPP(Experiment):
+class DPPEvaluate(Experiment):
     """
     Class for the disease protein prediction experiment
     """
@@ -218,12 +218,9 @@ def main(process_dir, overwrite, notify):
     """
     with open(os.path.join(process_dir, "params.json")) as f:
         params = json.load(f)
-    assert(params["process"] == "dpp")
-    exp = DPP(process_dir, params["process_params"])
+    assert(params["process"] == "dpp_evaluate")
+    exp = DPPEvaluate(process_dir, params["process_params"])
     if exp.is_completed():
         exp.load_results()
     elif exp.run():
         exp.save_results()
-
-if __name__ == "__main__":
-    sys.exit(main())
