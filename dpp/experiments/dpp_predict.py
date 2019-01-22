@@ -49,6 +49,7 @@ class DPPPredict(Experiment):
         logging.info("Loading Network...")
         self.network = PPINetwork(self.params["ppi_network"]) 
 
+        self.params["method_params"]["dir"] = dir
         self.method = globals()[self.params["method_class"]](self.network, 
                                                              self.diseases_dict, 
                                                              self.params["method_params"])
@@ -58,7 +59,7 @@ class DPPPredict(Experiment):
         """
         # compute method scores for disease
         disease_nodes = disease.to_node_array(self.network)
-        scores = self.method.compute_scores(disease_nodes, None, disease)
+        scores = self.method.compute_scores(disease_nodes, disease)
 
         # zero out scores for disease_nodes
         scores[disease_nodes] = 0

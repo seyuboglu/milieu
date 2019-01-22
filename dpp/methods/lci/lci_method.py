@@ -27,16 +27,15 @@ from dpp.methods.lci.utils import (save_checkpoint, load_checkpoint,
 class LCI(DPPMethod):
     """ GCN method class
     """
-    def __init__(self, network, diseases,
-                 params):
+    def __init__(self, network, diseases, params):
         super().__init__(network, diseases, params)
 
         self.dir = params["dir"]
         self.adjacency = self.network.adj_matrix
         self.diseases = diseases
         self.params = params
-
-        if os.path.isdir(os.path.join(self.dir, "models")):
+        print(self.params)
+        if "load_dir" in self.params:
             self.load_method()
         else:
             self.train_method(diseases)
@@ -46,16 +45,25 @@ class LCI(DPPMethod):
     def load_method(self):
         """
         """
+        logging.info("Loading Params...")
+        with open(os.path.join(self.params["load_dir"], "params.json")) as f:
+            params = json.load(f)["process_params"]["method_params"]
+        params.update(self.params)
+        self.params = params
+        
         logging.info("Loading Models...")
         self.folds_to_models = {}
-        for model_file in os.listdir(os.path.join(self.dir, "models")):
+        for model_file in os.listdir(os.path.join(self.params["load_dir"], "models")):
             split = parse.parse("model_{}.tar", model_file)[0]
-            self.folds_to_models[split] = os.path.join(self.dir, "models", model_file)
+            self.folds_to_models[split] = os.path.join(self.params["load_dir"], 
+                                                       "models", 
+                                                       model_file)
 
 
     def train_method(self, diseases):
         """
         """
+        logging.info("Training Models...")
         folds_to_diseases = defaultdict(set)
         for disease in diseases.values():
             if disease.split == "none":
@@ -71,15 +79,15 @@ class LCI(DPPMethod):
             val_fold = str((int(test_fold) - 1) % len(folds_to_diseases))
             test_dataset = DiseaseDataset([disease 
                                            for disease in folds_to_diseases[test_fold]],
-                                           protein_to_node)
+                                           self.network)
             val_dataset = DiseaseDataset([disease 
                                           for disease in folds_to_diseases[val_fold]],
-                                          protein_to_node) 
+                                          self.network) 
             train_dataset = DiseaseDataset([disease  
                                              for fold, diseases in folds_to_diseases.items()
                                              if fold != test_fold and fold != val_fold
                                              for disease in diseases], 
-                                            protein_to_node)
+                                            self.network)
             
             # ensure no data leakage
             assert(not set.intersection(*[test_dataset.get_ids(), 
@@ -97,26 +105,26 @@ class LCI(DPPMethod):
         """ Trains the underlying model
         """
         train_dl = DataLoader(train_dataset, 
-                              batch_size=self.params.batch_size, 
+                              batch_size=self.params["batch_size"], 
                               shuffle=True,
-                              num_workers=self.params.num_workers,
-                              pin_memory=self.params.cuda)
+                              num_workers=self.params["num_workers"],
+                              pin_memory=self.params["cuda"])
     
         dev_dl = DataLoader(val_dataset, 
-                            batch_size=self.params.batch_size, 
+                            batch_size=self.params["batch_size"], 
                             shuffle=True,
-                            num_workers=self.params.num_workers,
-                            pin_memory=self.params.cuda)
+                            num_workers=self.params["num_workers"],
+                            pin_memory=self.params["cuda"])
 
 
         model = LCIModule(self.params, self.adjacency)
 
-        if self.params.cuda:
+        if self.params["cuda"]:
             model = model.cuda()
-        optimizer = Adam(model.parameters(), lr=self.params.learning_rate, 
-                         weight_decay=self.params.weight_decay)
+        optimizer = Adam(model.parameters(), lr=self.params["learning_rate"], 
+                         weight_decay=self.params["weight_decay"])
         
-        logging.info("Starting training for {} epoch(s)".format(self.params.num_epochs))
+        logging.info("Starting training for {} epoch(s)".format(self.params["num_epochs"]))
         model.train()
         train_and_evaluate(
             model,
@@ -132,7 +140,7 @@ class LCI(DPPMethod):
         return model.cpu()
 
 
-    def compute_scores(self, train_pos, val_pos, disease):
+    def compute_scores(self, train_pos, disease):
         """ Compute the scores predicted by GCN.
         Args: 
             
@@ -222,12 +230,12 @@ class LCIModule(nn.Module):
 class DiseaseDataset(Dataset):
     """
     """
-    def __init__(self, diseases, protein_to_node, frac_known=0.9):
+    def __init__(self, diseases, network, frac_known=0.9):
         """
         """
-        self.n = len(protein_to_node)
+        self.n = len(network)
         self.examples = [{"id": disease.id, 
-                          "nodes": disease.to_node_array(protein_to_node)}
+                          "nodes": disease.to_node_array(network)}
                          for disease 
                          in diseases]
         self.frac_known = frac_known
@@ -285,10 +293,10 @@ def fetch_dataloader(diseases, protein_to_node, params):
     assert(not set.intersection(*[dataset.get_ids() for dataset in datasets.values()]))
 
     dataloader = DataLoader(dataset, 
-                            batch_size=params.batch_size, 
+                            batch_size=params["batch_size"], 
                             shuffle=True,
-                            num_workers=params.num_workers,
-                            pin_memory=params.cuda)
+                            num_workers=params["num_workers"],
+                            pin_memory=params["cuda"])
 
     return dataloader
 
@@ -334,13 +342,13 @@ def train(model, optimizer, loss_fn, dataloader, metrics, params):
             assert(torch.dot(data_batch.view(-1), labels_batch.view(-1)) == 0)
 
             # move to GPU if available
-            if params.cuda:
-                labels_batch = labels_batch.cuda(params.cuda_gpu)
-                data_batch = data_batch.cuda(params.cuda_gpu)
+            if params["cuda"]:
+                labels_batch = labels_batch.cuda(params["cuda_gpu"])
+                data_batch = data_batch.cuda(params["cuda_gpu"])
 
             # compute model output and loss
-            if params.cuda:
-                model.cuda(params.cuda_gpu)
+            if params["cuda"]:
+                model.cuda(params["cuda_gpu"])
             
             output_batch = model(data_batch)
             loss = loss_fn(output_batch, labels_batch, getattr(params, 'loss_params', None))
@@ -353,7 +361,7 @@ def train(model, optimizer, loss_fn, dataloader, metrics, params):
             optimizer.step()
 
             # Evaluate summaries only once in a while
-            if i % params.save_summary_steps == 0:
+            if i % params["save_summary_steps"] == 0:
                 # extract data from torch Variable, move to cpu, convert to numpy arrays
                 if(type(output_batch) is tuple):
                     # output_batch is first element in tuple 
@@ -361,7 +369,7 @@ def train(model, optimizer, loss_fn, dataloader, metrics, params):
                 outputs_labels.append((output_batch.data.cpu(), labels_batch.data.cpu()))
 
             # update the average loss
-            losses.append(loss.data)
+            losses.append(loss.data.cpu().numpy())
             loss_avg.update(loss.data)
 
             t.set_postfix(loss='{:05.3f}'.format(loss_avg()))
@@ -404,16 +412,16 @@ def evaluate(model, loss_fn, dataloader, metrics, params):
             # ensure no data leakage
             assert(torch.dot(data_batch.view(-1), labels_batch.view(-1)) == 0)
             # move to GPU if available
-            if params.cuda:
-                labels_batch = labels_batch.cuda(params.cuda_gpu)
-                data_batch = data_batch.cuda(params.cuda_gpu)
+            if params["cuda"]:
+                labels_batch = labels_batch.cuda(params["cuda_gpu"])
+                data_batch = data_batch.cuda(params["cuda_gpu"])
 
             output_batch = model(data_batch)
-            if params.cuda:
-                model.cuda(params.cuda_gpu)
+            if params["cuda"]:
+                model.cuda(params["cuda_gpu"])
 
             loss = loss_fn(output_batch, labels_batch, getattr(params, 'loss_params', None))
-            losses.append(loss.data)
+            losses.append(loss.data.cpu().numpy())
 
 
             # extract data from torch Variable, move to cpu, convert to numpy arrays
@@ -461,13 +469,12 @@ def train_and_evaluate(model, train_dataloader,
         load_checkpoint(restore_path, model, optimizer)
 
     best_val_primary_metric = 0.0
-
-    for epoch in range(params.num_epochs):
+    for epoch in range(params["num_epochs"]):
         if scheduler:
             scheduler.step()
 
         # Run one epoch
-        logging.info("Epoch {}/{}".format(epoch + 1, params.num_epochs))
+        logging.info("Epoch {}/{}".format(epoch + 1, params["num_epochs"]))
 
         # compute number of batches in one epoch (one full pass over the training set)
         logging.info("Train")
@@ -477,7 +484,7 @@ def train_and_evaluate(model, train_dataloader,
         logging.info("Evaluate")
         val_metrics = evaluate(model, loss_fn, val_dataloader, metrics, params)
 
-        val_primary_metric = val_metrics[params.primary_metric]
+        val_primary_metric = val_metrics[params["primary_metric"]]
         is_best = val_primary_metric >= best_val_primary_metric
 
         # Save weights
@@ -492,7 +499,7 @@ def train_and_evaluate(model, train_dataloader,
 
         # If best_eval, best_save_path
         if is_best:
-            logging.info("- Found new best " + params.primary_metric)
+            logging.info("- Found new best " + params["primary_metric"])
 
             best_json_path = os.path.join(model_dir, "metrics_val_best_weights.json")
             second_best_json_path = os.path.join(model_dir,     

@@ -15,6 +15,7 @@ import click
 
 from dpp.experiments.experiment import Experiment
 from dpp.methods.random_walk import RandomWalk
+from dpp.methods.lci.lci_method import LCI
 from dpp.data.associations import load_diseases
 from dpp.data.network import PPINetwork
 from dpp.metrics import positive_rankings, recall_at, recall, auroc, average_precision
@@ -50,6 +51,7 @@ class DPPEvaluate(Experiment):
                                            exclude_splits=['none'])
 
         # load method
+        self.params["method_params"]["dir"] = dir
         self.method = globals()[self.params["method_class"]](self.network,
                                                           self.diseases_dict,
                                                           self.params["method_params"])
