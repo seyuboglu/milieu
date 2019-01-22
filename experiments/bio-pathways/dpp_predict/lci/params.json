@@ -9,9 +9,7 @@
 
             "method_class": "LCI",
             "method_params": {
-                "dir": "experiments/bio-pathways/dpp_evaluate/lci/lci",
-                "d": 1,
-                "initialization": "ones",
+                "load_dir": "experiments/bio-pathways/dpp_evaluate/lci/lci",
                 "cuda": true
             }
         }
