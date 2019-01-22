@@ -52,7 +52,7 @@ class DPPPredict(Experiment):
         self.node_to_protein = {n: p for p, n in self.protein_to_node.items()}
 
         self.method = globals()[self.params["method_class"]](self.ppi_networkx, 
-                                                          self.protein_to_node, 
+                                                             self.protein_to_node, 
                                                           self.params["method_params"])
     
     def process_disease(self, disease):
