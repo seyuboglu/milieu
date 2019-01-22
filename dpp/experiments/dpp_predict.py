@@ -100,7 +100,7 @@ class DPPPredict(Experiment):
         Saves the results to a csv using a pandas Data Fram
         """
         print("Saving Results...")
-        self.results.to_csv(os.path.join(self.dir, 'predictions.csv'), index=False)
+        self.results.to_csv(os.path.join(self.dir, 'predictions.csv'))
     
     def load_results(self):
         """
