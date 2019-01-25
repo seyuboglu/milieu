@@ -8,6 +8,7 @@ import json
 
 import dpp.experiments.dpp_evaluate as dpp_evaluate
 import dpp.experiments.dpp_predict as dpp_predict
+import dpp.experiments.go_enrichment as go_enrichment
 
 
 import click
