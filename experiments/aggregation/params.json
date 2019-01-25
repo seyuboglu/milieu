@@ -1,0 +1,42 @@
+{
+    "diseases_path": "data/associations/disgenet-associations-nodup7.csv",
+    "disease_subset": [],
+
+    "groups_columns": [["data", "class"]],
+
+    "experiments": [{"name": "data",
+                     "path": "data/disease_data/disgenet-classes.csv",
+                     "cols": ["name", "class"]},
+                    {"name": "loo_ptest[DP]", 
+                     "path": "experiments/disgenet/bio-pathways/significance/ptest_pairwise_mean/results.csv",
+                     "cols": ["disease_size", "pvalue_COMP", "pvalue_DNS"]},
+                    
+                    {"name": "lci_dpp[DP]", 
+                     "path": "experiments/disgenet/bio-pathways/dpp-10/learned_cn/cv/nodup7-cc7/metrics.csv",
+                     "cols": ["Recall-at-100", "Recall-at-25", "AUROC", "Mean Average Precision"]},
+                    {"name": "lci_dpp[0.3][DP]", 
+                     "path": "experiments/disgenet/bio-pathways/dpp-10/learned_cn/cv/nodup7-cc3/metrics.csv",
+                     "cols": ["Recall-at-100", "Recall-at-25", "AUROC", "Mean Average Precision"]},
+                    {"name": "ci_dpp[DP]", 
+                     "path": "experiments/disgenet/bio-pathways/dpp-10/comp/comp_sqrt_rnorm_cnorm_zscore/metrics.csv",
+                     "cols": ["Recall-at-100", "Recall-at-25", "AUROC", "Mean Average Precision"]},
+                    {"name": "rw_dpp[DP]", 
+                     "path": "experiments/disgenet/bio-pathways/dpp-10/rw-0_25/metrics.csv",
+                     "cols": ["Recall-at-100", "Recall-at-25", "AUROC", "Mean Average Precision"]},
+                    {"name": "dns_dpp[DP]", 
+                     "path": "experiments/disgenet/bio-pathways/dpp-10/dns/dn_id_rnorm/metrics.csv",
+                     "cols": ["Recall-at-100", "Recall-at-25", "AUROC", "Mean Average Precision"]},
+                    {"name": "diamond_dpp[DP]", 
+                     "path": "experiments/disgenet/bio-pathways/dpp-10/diamond/metrics.csv",
+                     "cols": ["Recall-at-100", "Recall-at-25", "AUROC", "Mean Average Precision"]},
+                    {"name": "node2vec_dpp[DP]", 
+                     "path": "experiments/disgenet/bio-pathways/dpp-10/lr-node2vec/metrics.csv",
+                     "cols": ["Recall-at-100", "Recall-at-25", "AUROC", "Mean Average Precision"]},
+
+                     {"name": "subgraph_metrics[DP]", 
+                      "path": "experiments/disgenet/bio-pathways/disease_subgraphs/subgraph_metrics.csv",
+                      "cols": ["Conductance of Disease Nodes", "Conductance of Intermediate Nodes", "Density of Disease Subgraph"]}
+                   ],
+    
+    "plots": []
+}
