@@ -90,11 +90,9 @@ def prepare_sns(sns, params):
         params (object) dictionary containing settings for each of the seaborn plots
     """
     sns.set_context('paper', font_scale=1) 
-    sns.set(palette=tuple(getattr(params, "plot_palette", ["#E03C3F", "#FF9300", 
-                                                           "#F8BA00", "#CB297B", 
-                                                           "#6178A8", "#56C1FF"])),
-            font=getattr(params, "plot_font", "Times New Roman"))
-    sns.set_style(getattr(params, "plot_style", "ticks"),  
+    sns.set(palette=tuple(params.get("plot_palette", ["#E03C3F", "lightgrey"])),
+            font=params.get("plot_font", "Times New Roman"))
+    sns.set_style(params.get("plot_style", "ticks"),  
                   {'xtick.major.size': 5.0, 'xtick.minor.size': 5.0, 
                    'ytick.major.size': 5.0, 'ytick.minor.size': 5.0})
 
@@ -146,8 +144,24 @@ def print_title(title="Experiment", subtitle=None):
     print("Sabri Eyuboglu  -- SNAP Group -- Stanford University")
     print("====================================================")
 
+
 def torch_all_close(a, b, tolerance=1e-12):
     """
     Check if all elements in two tensors are equal within a tolerance.
     """
     return torch.all(torch.lt(torch.abs(a - b), tolerance))
+
+
+def load_matrices(name_to_matrix):
+    """
+    Loads a set of ppi_matrices stored in numpy files (.npy).
+    Also zeroes out the diagonal
+    args:
+        name_to_matrix    (dict) name to matrix file path
+    """
+    ppi_matrices = {}
+    for name, file in name_to_matrix.items():
+        matrix = np.load(file)
+        np.fill_diagonal(matrix, 0) 
+        ppi_matrices[name] = matrix
+    return ppi_matrices
