@@ -21,68 +21,11 @@ from dpp.data.associations import load_diseases
 from dpp.data.network import PPINetwork
 from dpp.data.network_matrices import load_network_matrices
 from dpp.experiments.experiment import Experiment
-from dpp.util import Params, set_logger, prepare_sns
+from dpp.util import Params, set_logger, prepare_sns, compute_pvalue, build_degree_buckets
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--dir', default='experiments/base_model',
                     help="Directory containing params.json")
-
-
-def compute_pvalue(result, null_results):
-    """
-    """
-    null_results = np.array(null_results)
-    return np.logical_or((null_results > result), 
-                          np.isclose(null_results, result)).mean()
-
-
-def build_degree_buckets(network, min_len=500):
-    """
-    Buckets nodes by degree such that no bucket has less than min_size nodes.
-    args:
-        network (PPINetwork)
-        min_len (int)  minimum bucket size
-    return:
-        degree_to_bucket  (dict)    map from degree to the corresponding bucket
-    """
-    network = network.nx
-    degrees = np.array(network.degree())[:, 1]
-
-    # build degree to buckets
-    degree_to_buckets = defaultdict(list)
-    max_degree = np.max(degrees)
-    for node, degree in enumerate(degrees):
-        degree_to_buckets[degree].append(node)
-
-    # enforce min_len
-    curr_bucket = None
-    prev_bucket = None
-    curr_degrees = []
-    for degree in range(max_degree + 1):
-        # skip nonexistant degrees
-        if degree not in degree_to_buckets:
-            continue
-        
-        curr_degrees.append(degree)
-
-        # extend current bucket if necessary
-        if curr_bucket is not None:
-            curr_bucket.extend(degree_to_buckets[degree])
-            degree_to_buckets[degree] = curr_bucket
-        else: 
-            curr_bucket = degree_to_buckets[degree]
-            
-        if(len(curr_bucket) >= min_len):
-            prev_bucket = curr_bucket
-            curr_bucket = None
-            curr_degrees = []
-
-    if curr_bucket is not None and prev_bucket is not None and len(curr_bucket) < min_len:
-        prev_bucket.extend(curr_bucket)
-        for degree in curr_degrees:
-            degree_to_buckets[degree] = prev_bucket
-
-    return degree_to_buckets
 
 
 class ProteinSignificance(Experiment):
@@ -110,7 +53,6 @@ class ProteinSignificance(Experiment):
         self.diseases = load_diseases(self.params["diseases_path"], 
                                       self.params["disease_subset"],
                                       exclude_splits=['none'])
-        
     
     def get_null_nodes(self, node, quantity=1):
         """
@@ -177,7 +119,8 @@ class ProteinSignificance(Experiment):
         self.network = PPINetwork(self.params["ppi_network"]) 
 
         logging.info("Loading PPI Matrices...")
-        self.ppi_matrices = load_network_matrices(self.params["ppi_matrices"])
+        self.ppi_matrices = load_network_matrices(self.params["ppi_matrices"],
+                                                  self.network)
 
         logging.info("Building Degree Buckets...")
         self.degree_to_bucket = build_degree_buckets(self.network,

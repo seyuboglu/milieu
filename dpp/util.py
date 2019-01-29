@@ -6,7 +6,7 @@ import smtplib
 from re import sub
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from collections import OrderedDict
+from collections import OrderedDict, defaultdict
 
 import numpy as np
 import torch 
@@ -127,7 +127,7 @@ def string_to_list(string, type=str, delimiter=" "):
     string = string.strip("[] ")
     string = string.replace("\n", "")
     string = sub(" +", " ", string)
-    return map(type, string.split(delimiter))
+    return list(map(type, string.split(delimiter)))
 
 
 def fraction_nonzero(array):
@@ -151,17 +151,57 @@ def torch_all_close(a, b, tolerance=1e-12):
     """
     return torch.all(torch.lt(torch.abs(a - b), tolerance))
 
+def compute_pvalue(result, null_results):
+    """
+    """
+    null_results = np.array(null_results)
+    return np.logical_or((null_results > result), 
+                          np.isclose(null_results, result)).mean()
 
-def load_matrices(name_to_matrix):
+def build_degree_buckets(network, min_len=500):
     """
-    Loads a set of ppi_matrices stored in numpy files (.npy).
-    Also zeroes out the diagonal
+    Buckets nodes by degree such that no bucket has less than min_size nodes.
     args:
-        name_to_matrix    (dict) name to matrix file path
+        network (PPINetwork)
+        min_len (int)  minimum bucket size
+    return:
+        degree_to_bucket  (dict)    map from degree to the corresponding bucket
     """
-    ppi_matrices = {}
-    for name, file in name_to_matrix.items():
-        matrix = np.load(file)
-        np.fill_diagonal(matrix, 0) 
-        ppi_matrices[name] = matrix
-    return ppi_matrices
+    network = network.nx
+    degrees = np.array(network.degree())[:, 1]
+
+    # build degree to buckets
+    degree_to_buckets = defaultdict(list)
+    max_degree = np.max(degrees)
+    for node, degree in enumerate(degrees):
+        degree_to_buckets[degree].append(node)
+
+    # enforce min_len
+    curr_bucket = None
+    prev_bucket = None
+    curr_degrees = []
+    for degree in range(max_degree + 1):
+        # skip nonexistant degrees
+        if degree not in degree_to_buckets:
+            continue
+        
+        curr_degrees.append(degree)
+
+        # extend current bucket if necessary
+        if curr_bucket is not None:
+            curr_bucket.extend(degree_to_buckets[degree])
+            degree_to_buckets[degree] = curr_bucket
+        else: 
+            curr_bucket = degree_to_buckets[degree]
+            
+        if(len(curr_bucket) >= min_len):
+            prev_bucket = curr_bucket
+            curr_bucket = None
+            curr_degrees = []
+
+    if curr_bucket is not None and prev_bucket is not None and len(curr_bucket) < min_len:
+        prev_bucket.extend(curr_bucket)
+        for degree in curr_degrees:
+            degree_to_buckets[degree] = prev_bucket
+
+    return degree_to_buckets
