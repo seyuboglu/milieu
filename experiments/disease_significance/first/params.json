@@ -5,37 +5,42 @@
             "n_processes": 1,
             "ppi_network": "data/networks/bio-pathways-network.txt",
             "diseases_path": "data/associations/disgenet-associations.csv",
-            "disease_subset": ["C0023470", "C0018818", "C0162671"],
+            "disease_subset": ["C0023470", "C0009447", "C0008325", "C0016978", "C0001403",
+                               "C0003504", "C0699791", "C0006413", "C0854110"],
 
             "ppi_matrices": {"ci": "data/network_matrices/ci"},
             "metric_fns": ["mean_frac_direct_interactions",
                            "mean_common_interactor_score"],
 
-            "n_random_pathways": 100,
+            "n_random_pathways": 10000,
             "min_bucket_len": 250,
 
             "plots_to_params": {
-                "full_distribution": {
-                    "plot_fn": "plot_full_distribution",
-                    "metrics": ["mean_common_interactor_score", 
-                                "mean_frac_direct_interactions"],
-                    "plot_type": "bar",
-                    "yscale": "linear",
-                    "xlabel": "p-value",
-                    "bins": 50,
-                    "xmin": 0.0,
-                    "xmax": 0.15
-                },
-                "direct_interactions": { 
+                "ci": { 
                     "plot_fn": "plot_disease",
-                    "disease_ids": ["C0023470", "C0018818", "C0162671"],
+                    "disease_ids": ["C0854110"],
                     "metrics": ["mean_common_interactor_score"],
                     "plot_type": "bar",
                     "yscale": "linear",
-                    "xlabel": "fraction",
-                    "bins": 1000,
+                    "xlabel": "Mean common interactor score",
+                    "ylabel": "# of pathways [count]",
+                    "bins": 75,
                     "xmin": 0.0,
-                    "xmax": 1.0
+                    "xmax": 1.0,
+                    "null_color": "#686868"
+                }, 
+                "di": { 
+                    "plot_fn": "plot_disease",
+                    "disease_ids": ["C0023470", "C0009447", "C0008325", "C0016978", "C0003504", "C0699791", "C0006413", "C0854110"],
+                    "metrics": ["mean_frac_direct_interactions"],
+                    "plot_type": "bar",
+                    "yscale": "linear",
+                    "xlabel": "Mean common interactor score",
+                    "ylabel": "# of pathways [count]",
+                    "bins": 30,
+                    "xmin": 0.0,
+                    "xmax": 1.0,
+                    "null_color": "#686868"
                 }
             },
             

@@ -83,7 +83,7 @@ def parse_id_rank_pair(str):
     return int(id), float(rank)
 
 
-def prepare_sns(sns, params):
+def prepare_sns(sns, params={}):
     """ Prepares seaborn for plotting according to the plot settings specified in
     params. 
     Args: 
@@ -130,6 +130,14 @@ def string_to_list(string, type=str, delimiter=" "):
     return list(map(type, string.split(delimiter)))
 
 
+def list_to_string(list, delimiter=" "):
+    """
+    Converts a string to a list. 
+    """
+    string = "[" + delimiter.join(map(str, list)) + "]"
+    return string
+
+
 def fraction_nonzero(array):
     """
     Computes fraction of elements in array that are nonzero
@@ -157,6 +165,19 @@ def compute_pvalue(result, null_results):
     null_results = np.array(null_results)
     return np.logical_or((null_results > result), 
                           np.isclose(null_results, result)).mean()
+
+def load_mapping(path, delimiter=" "):
+    """
+    loads a str-str mapping from a text file
+    """
+    mapping = {}
+    with open(path) as f:
+        for line in f:
+            if line[0] == '#':
+                continue
+            a, b = line.split(delimiter)
+            mapping[a] = b.strip("\n")
+    return mapping
 
 def build_degree_buckets(network, min_len=500):
     """

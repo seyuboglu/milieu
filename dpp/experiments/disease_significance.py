@@ -20,7 +20,7 @@ from dpp.data.network import PPINetwork
 from dpp.data.network_matrices import load_network_matrices
 from dpp.experiments.experiment import Experiment
 from dpp.util import (Params, set_logger, prepare_sns, string_to_list, 
-                      compute_pvalue, build_degree_buckets)
+                      compute_pvalue, build_degree_buckets, list_to_string)
 
 
 def loo_iter(disease_pathway):
@@ -114,7 +114,7 @@ class DiseaseSignificance(Experiment):
             disease_pvalue = compute_pvalue(disease_result, null_results)
             results.update({"pvalue_" + metric_fn: disease_pvalue,
                             "disease_" + metric_fn: disease_result,
-                            "null_" + metric_fn: null_results})
+                            "null_" + metric_fn: list_to_string(null_results)})
             
         return results
     
@@ -195,7 +195,10 @@ class DiseaseSignificance(Experiment):
         """
         Plots one disease 
         """
+        sns.set(rc={'figure.figsize':(5, 3)})
+        prepare_sns(sns, self.params)
         for disease_id in disease_ids:
+            print(disease_id)
             row = self.results.loc[self.results['disease_id'] == disease_id]
             disease_dir = os.path.join(self.dir, 'figures', 'diseases', disease_id)
 
@@ -203,28 +206,42 @@ class DiseaseSignificance(Experiment):
                 os.makedirs(disease_dir)
 
             for metric in metrics:
+                disease_mean = row["disease_" + metric]
                 null_results = row["null_" + metric].values[0]
 
                 if type(null_results) == str:
                     null_results = string_to_list(null_results, float)
 
+                xmin = min((disease_mean.item(), min(null_results)))
+                xmax = max((disease_mean.item(),))
+                delta = np.abs(xmax - xmin) * 0.1
+                xmin -= delta
+                xmax += delta
+
                 if plot_type == "bar":
-                    sns.distplot(null_results, kde=False, bins=40, 
-                                 color=null_color, label="Random Pathways")
+                    sns.distplot(null_results, kde=False, bins=bins, 
+                                 hist_kws={'range': (xmin, xmax)},
+                                 color=null_color, label="Random pathways")
                     plt.ylabel(ylabel)
     
-                elif self.params["plot_type"] == "kde":
+                elif plot_type == "kde":
                     sns.kdeplot(null_results, shade=True, kernel="gau", 
                                 color=null_color, label="Random Pathways")
                     plt.ylabel(ylabel)
                     plt.yticks([])
 
-                elif self.params["plot_type"] == "bar_kde":
-                    sns.distplot(null_results, kde=True, bins=20, 
-                                 color=null_color, label="Random Pathways") 
+                elif plot_type == "bar_kde":
+                    ax = plt.gca()
+                    fig2, ax2 = plt.subplots()
+                    sns.distplot(null_results, hist=False, kde=True,
+                                 color=null_color, label="Random Pathways")
+                    ax = sns.distplot(null_results, ax=ax2, kde=False, bins=bins, 
+                                      hist_kws={'range': (xmin, xmax)},
+                                      color=null_color, label="Random Pathways", norm_hist=False)
+                    ax.yaxis = ax2.yaxis
+                    plt.ylabel(ylabel)
                     plt.ylabel(ylabel)
 
-                disease_mean = row["disease_" + metric]
                 disease = self.diseases[disease_id]
                 sns.scatterplot(disease_mean, 0, label=disease.name)
 
@@ -234,6 +251,7 @@ class DiseaseSignificance(Experiment):
                 plt.tight_layout()
                 plt.savefig(os.path.join(disease_dir, 
                                          name + "_{}_{}.pdf".format(metric, plot_type)))
+                plt.show()
                 plt.close()
                 plt.clf()
     
