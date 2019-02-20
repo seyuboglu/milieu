@@ -192,8 +192,12 @@ class ProteinSignificance(Experiment):
                                xmin=0.0, xmax=1.0):
         """
         """
+        
         for metric_name in metrics:
             metric = np.array(self.results[metric_name])
+            
+            metric[metric >= 0.1] = 0.15
+
             if plot_type == "bar":
                 sns.distplot(metric, bins=bins, kde=False, 
                             hist_kws={'range': (xmin, xmax),

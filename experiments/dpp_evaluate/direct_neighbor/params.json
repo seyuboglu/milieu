@@ -1,5 +1,5 @@
 {
-    "n_processes": 30, 
+    "n_processes": 1, 
 
     "ppi_network": "data/networks/bio-pathways-network.txt",
     "diseases_path": "data/associations/disgenet-associations.csv",
@@ -7,7 +7,8 @@
     
     "n_folds": 10,
 
-    "method": "random_walk",
+    "method": "ppi_matrix",
 
-    "rw_alpha": 0.25
+    "ppi_matrix": "data/ppi_matrices/dn_id_rnorm.npy",
+    "normalize": false
 }

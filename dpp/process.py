@@ -38,7 +38,7 @@ class Process(object):
         return os.path.isfile(os.path.join(self.dir, 'results.csv'))
 
     def _run(self): 
-        pass
+        raise NotImplementedError
     
     def run(self, overwrite=False):
         if os.path.isfile(os.path.join(self.dir, 'results.csv')) and not overwrite:

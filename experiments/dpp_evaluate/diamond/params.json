@@ -7,7 +7,8 @@
     
     "n_folds": 10,
 
-    "method": "random_walk",
+    "method": "diamond",
 
-    "rw_alpha": 0.25
+    "max_nodes": 300,
+    "dm_alpha": 10
 }

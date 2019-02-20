@@ -20,11 +20,11 @@
                     "metrics": ["common_interactor_score_pvalue", 
                                 "frac_direct_interactions_pvalue"],
                     "plot_type": "bar",
-                    "yscale": "linear",
+                    "yscale": "log",
                     "xlabel": "p-value",
                     "bins": 50,
                     "xmin": 0.0,
-                    "xmax": 0.15
+                    "xmax": 0.2
                 },
                 "direct_interactions": { 
                     "plot_fn": "plot_full_distribution",

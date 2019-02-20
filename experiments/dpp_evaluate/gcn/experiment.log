@@ -1,0 +1,228 @@
+2018-09-27 22:19:43,630:INFO: Disease Protein Prediction in the PPI Network
+2018-09-27 22:19:43,631:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-09-27 22:19:43,631:INFO: ======================================
+2018-09-27 22:19:43,631:INFO: Loading PPI Network...
+2018-09-27 22:19:55,247:INFO: Loading Disease Associations...
+2018-09-27 22:20:08,844:INFO: Running Experiment...
+2018-09-27 22:20:09,457:WARNING: From /dfs/scratch0/sabri/dpp-experiments/source/method/gcn/metrics.py:6: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See tf.nn.softmax_cross_entropy_with_logits_v2.
+
+2018-09-27 22:23:59,770:INFO: Disease Protein Prediction in the PPI Network
+2018-09-27 22:23:59,771:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-09-27 22:23:59,771:INFO: ======================================
+2018-09-27 22:23:59,771:INFO: Loading PPI Network...
+2018-09-27 22:24:11,014:INFO: Loading Disease Associations...
+2018-09-27 22:24:23,336:INFO: Running Experiment...
+2018-09-27 22:24:23,745:WARNING: From /dfs/scratch0/sabri/dpp-experiments/source/method/gcn/metrics.py:6: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See tf.nn.softmax_cross_entropy_with_logits_v2.
+
+2018-09-28 11:29:50,908:INFO: Disease Protein Prediction in the PPI Network
+2018-09-28 11:29:50,909:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-09-28 11:29:50,909:INFO: ======================================
+2018-09-28 11:29:50,909:INFO: Loading PPI Network...
+2018-09-28 11:30:00,935:INFO: Loading Disease Associations...
+2018-09-28 11:30:12,566:INFO: Running Experiment...
+2018-09-28 11:30:12,876:WARNING: From /dfs/scratch0/sabri/dpp-experiments/source/method/gcn/metrics.py:6: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See tf.nn.softmax_cross_entropy_with_logits_v2.
+
+2018-09-28 11:34:25,842:INFO: Disease Protein Prediction in the PPI Network
+2018-09-28 11:34:25,842:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-09-28 11:34:25,842:INFO: ======================================
+2018-09-28 11:34:25,842:INFO: Loading PPI Network...
+2018-09-28 11:34:35,817:INFO: Loading Disease Associations...
+2018-09-28 11:34:47,985:INFO: Running Experiment...
+2018-09-28 11:34:48,301:WARNING: From /dfs/scratch0/sabri/dpp-experiments/source/method/gcn/metrics.py:6: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See tf.nn.softmax_cross_entropy_with_logits_v2.
+
+2018-09-28 11:38:11,271:INFO: Disease Protein Prediction in the PPI Network
+2018-09-28 11:38:11,272:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-09-28 11:38:11,272:INFO: ======================================
+2018-09-28 11:38:11,272:INFO: Loading PPI Network...
+2018-09-28 11:38:21,073:INFO: Loading Disease Associations...
+2018-09-28 11:38:33,198:INFO: Running Experiment...
+2018-09-28 11:38:33,537:WARNING: From /dfs/scratch0/sabri/dpp-experiments/source/method/gcn/metrics.py:6: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See tf.nn.softmax_cross_entropy_with_logits_v2.
+
+2018-09-28 12:33:56,797:INFO: Disease Protein Prediction in the PPI Network
+2018-09-28 12:33:56,798:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-09-28 12:33:56,798:INFO: ======================================
+2018-09-28 12:33:56,798:INFO: Loading PPI Network...
+2018-09-28 12:34:07,664:INFO: Loading Disease Associations...
+2018-09-28 12:34:27,568:INFO: Running Experiment...
+2018-09-28 12:34:28,115:WARNING: From /dfs/scratch0/sabri/dpp-experiments/source/method/gcn/metrics.py:6: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+2018-09-28 12:43:09,867:INFO: Disease Protein Prediction in the PPI Network
+2018-09-28 12:43:09,868:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-09-28 12:43:09,868:INFO: ======================================
+2018-09-28 12:43:09,868:INFO: Loading PPI Network...
+2018-09-28 12:43:16,782:INFO: Loading Disease Associations...
+2018-09-28 12:43:24,552:INFO: Running Experiment...
+2018-09-28 12:43:25,145:WARNING: From /dfs/scratch0/sabri/dpp-experiments/source/method/gcn/metrics.py:6: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+2018-09-28 12:56:21,344:INFO: Disease Protein Prediction in the PPI Network
+2018-09-28 12:56:21,344:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-09-28 12:56:21,345:INFO: ======================================
+2018-09-28 12:56:21,345:INFO: Loading PPI Network...
+2018-09-28 12:56:28,277:INFO: Loading Disease Associations...
+2018-09-28 12:56:36,032:INFO: Running Experiment...
+2018-09-28 12:56:36,708:WARNING: From /dfs/scratch0/sabri/dpp-experiments/source/method/gcn/metrics.py:6: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+2018-09-28 13:00:13,504:INFO: Disease Protein Prediction in the PPI Network
+2018-09-28 13:00:13,505:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-09-28 13:00:13,505:INFO: ======================================
+2018-09-28 13:00:13,505:INFO: Loading PPI Network...
+2018-09-28 13:00:20,721:INFO: Loading Disease Associations...
+2018-09-28 13:00:28,480:INFO: Running Experiment...
+2018-09-28 13:00:28,855:WARNING: From /dfs/scratch0/sabri/dpp-experiments/source/method/gcn/metrics.py:6: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+2018-09-28 13:02:26,322:INFO: Disease Protein Prediction in the PPI Network
+2018-09-28 13:02:26,323:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-09-28 13:02:26,323:INFO: ======================================
+2018-09-28 13:02:26,323:INFO: Loading PPI Network...
+2018-09-28 13:02:33,197:INFO: Loading Disease Associations...
+2018-09-28 13:02:40,963:INFO: Running Experiment...
+2018-09-28 13:02:41,419:WARNING: From /dfs/scratch0/sabri/dpp-experiments/source/method/gcn/metrics.py:6: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+2018-09-28 13:06:00,773:INFO: Disease Protein Prediction in the PPI Network
+2018-09-28 13:06:00,773:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-09-28 13:06:00,773:INFO: ======================================
+2018-09-28 13:06:00,773:INFO: Loading PPI Network...
+2018-09-28 13:06:07,797:INFO: Loading Disease Associations...
+2018-09-28 13:06:15,572:INFO: Running Experiment...
+2018-09-28 13:06:15,994:WARNING: From /dfs/scratch0/sabri/dpp-experiments/source/method/gcn/metrics.py:6: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+2018-09-28 13:09:43,826:INFO: Disease Protein Prediction in the PPI Network
+2018-09-28 13:09:43,827:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-09-28 13:09:43,827:INFO: ======================================
+2018-09-28 13:09:43,827:INFO: Loading PPI Network...
+2018-09-28 13:09:50,741:INFO: Loading Disease Associations...
+2018-09-28 13:09:58,506:INFO: Running Experiment...
+2018-09-28 13:09:58,865:WARNING: From /dfs/scratch0/sabri/dpp-experiments/source/method/gcn/metrics.py:6: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+2018-09-28 13:31:58,624:INFO: Disease Protein Prediction in the PPI Network
+2018-09-28 13:31:58,624:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-09-28 13:31:58,624:INFO: ======================================
+2018-09-28 13:31:58,625:INFO: Loading PPI Network...
+2018-09-28 13:32:06,057:INFO: Loading Disease Associations...
+2018-09-28 13:32:14,286:INFO: Running Experiment...
+2018-09-28 13:32:21,035:WARNING: From /dfs/scratch0/sabri/dpp-experiments/source/method/gcn/metrics.py:6: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+2018-09-28 13:39:34,441:INFO: Disease Protein Prediction in the PPI Network
+2018-09-28 13:39:34,442:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-09-28 13:39:34,442:INFO: ======================================
+2018-09-28 13:39:34,442:INFO: Loading PPI Network...
+2018-09-28 13:39:41,530:INFO: Loading Disease Associations...
+2018-09-28 13:39:49,312:INFO: Running Experiment...
+2018-09-28 13:39:49,702:WARNING: From /dfs/scratch0/sabri/dpp-experiments/source/method/gcn/metrics.py:6: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+2018-09-28 13:46:50,228:INFO: Disease Protein Prediction in the PPI Network
+2018-09-28 13:46:50,229:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-09-28 13:46:50,229:INFO: ======================================
+2018-09-28 13:46:50,229:INFO: Loading PPI Network...
+2018-09-28 14:15:36,820:INFO: Disease Protein Prediction in the PPI Network
+2018-09-28 14:15:36,820:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-09-28 14:15:36,820:INFO: ======================================
+2018-09-28 14:15:36,820:INFO: Loading PPI Network...
+2018-09-28 14:15:43,683:INFO: Loading Disease Associations...
+2018-09-28 14:15:51,463:INFO: Running Experiment...
+2018-09-28 14:15:51,858:WARNING: From /dfs/scratch0/sabri/dpp-experiments/source/method/gcn/metrics.py:6: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+2018-09-28 14:33:16,622:INFO: Disease Protein Prediction in the PPI Network
+2018-09-28 14:33:16,623:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-09-28 14:33:16,623:INFO: ======================================
+2018-09-28 14:33:16,623:INFO: Loading PPI Network...
+2018-09-28 14:33:23,704:INFO: Loading Disease Associations...
+2018-09-28 14:33:31,491:INFO: Running Experiment...
+2018-09-28 14:33:32,116:WARNING: From /dfs/scratch0/sabri/dpp-experiments/source/method/gcn/metrics.py:6: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+

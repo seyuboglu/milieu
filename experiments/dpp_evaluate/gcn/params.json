@@ -1,0 +1,29 @@
+{
+    "n_processes": 1, 
+    "device": "/device:GPU:0",
+    "verbose": false,    
+
+    "ppi_network": "data/networks/bio-pathways-network.txt",
+    "diseases_path": "data/associations/disgenet-associations.csv",
+    "disease_subset": [], 
+    
+    "n_folds": 10,
+
+    "method": "gcn",
+    "model": "gcn", 
+    "matrix": "adjacency", 
+
+    "architecture": [["gcl", 128], ["fcl", 16]],
+
+    "learning_rate": 0.001,
+    "dropout": 0.5,
+    "weight_decay": 5e-4,
+
+    "epochs": 40,
+    "early_stopping": 100, 
+    "shuffle_negatives": true,
+
+    "saliency_map": false
+}
+
+
