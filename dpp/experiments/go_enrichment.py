@@ -4,14 +4,18 @@ import os
 import json
 import datetime
 import time
+import pickle
+from collections import defaultdict
 from multiprocessing import Pool
 
 import numpy as np
+from scipy.stats import spearmanr
 import pandas as pd
 from tqdm import tqdm
 from goatools.obo_parser import GODag
 from goatools.associations import read_ncbi_gene2go
 from goatools.go_enrichment import GOEnrichmentStudy
+
 
 from dpp.data.associations import load_diseases
 from dpp.data.network import PPINetwork
@@ -33,7 +37,8 @@ class GOEnrichment(Experiment):
         super().__init__(dir, params)
 
         # Set the logger
-        set_logger(os.path.join(self.dir, 'experiment.log'), level=logging.INFO, console=True)
+        set_logger(os.path.join(self.dir, 'experiment.log'), 
+                   level=logging.INFO, console=True)
 
         # Log title 
         logging.info("Disease Protein Prediction")
@@ -48,7 +53,6 @@ class GOEnrichment(Experiment):
         logging.info("Loading Network...")
         self.network = PPINetwork(self.params["ppi_network"]) 
         
-
         logging.info("Loading enrichment study...")
         obodag = GODag(self.params["go_path"])
         geneid2go = read_ncbi_gene2go(self.params["gene_to_go_path"], taxids=[9606])
@@ -62,18 +66,30 @@ class GOEnrichment(Experiment):
         self.method_to_preds = {name: pd.read_csv(os.path.join(preds, "predictions.csv"), 
                                                   index_col=0) 
                                 for name, preds in self.params["method_to_preds"].items()}
-    
+        
+        enrichment_results_path = os.path.join(self.dir, "enrichment_results.pkl")
+        if os.path.exists(enrichment_results_path):
+            logging.info("Loading enrichment results...")
+            with open(enrichment_results_path, 'rb') as f:
+                self.enrichment_results = pickle.load(f)
+        else:
+            self.enrichment_results = defaultdict(dict)
+        
     def run_study(self, proteins):
         """
         """
         results = self.enrichment_study.run_study(proteins)
-        significant_terms = [r.goterm.name for r in results if r.p_fdr_bh < 0.05]
-        top_k_terms = [r.goterm.name 
-                       for r in sorted(results, 
-                                       key=lambda x: x.p_fdr_bh)[:self.params["top_k"]]]
+        term_to_pval = {r.goterm.name: r.p_fdr_bh for r in results}
 
-
-        return set(significant_terms), set(top_k_terms)
+        return term_to_pval
+    
+    def compute_spearman_correlation(self, a_term_to_pval, b_term_to_pval):
+        """
+        """
+        terms = list(a_term_to_pval.keys())
+        sp_corr, sp_pval = spearmanr([a_term_to_pval[term] for term in terms],
+                                     [b_term_to_pval[term] for term in terms])
+        return sp_corr, sp_pval
 
     def process_disease(self, disease):
         """
@@ -81,7 +97,19 @@ class GOEnrichment(Experiment):
         results = {}
         # compute method scores for disease
         disease_proteins = set(self.diseases_dict[disease.id].proteins)
-        disease_terms, top_disease_terms = self.run_study(disease_proteins)
+
+        if disease.id in self.enrichment_results["disease"]:
+            disease_term_to_pval = self.enrichment_results["disease"][disease.id]
+        else:
+            disease_term_to_pval = self.run_study(disease_proteins)
+            self.enrichment_results["disease"][disease.id] = disease_term_to_pval
+
+        disease_terms = set([term for term, pval 
+                             in disease_term_to_pval.items() if pval < 0.05])
+        top_disease_terms = set([term for term, _
+                                 in sorted(disease_term_to_pval.items(), 
+                                           key=lambda x: x[1])[:self.params["top_k"]]])
+        
         results = {"disease_name": disease.name, 
                    "disease_num_significant": len(disease_terms),
                    f"disease_top_{self.params['top_k']}": top_disease_terms}
@@ -96,12 +124,29 @@ class GOEnrichment(Experiment):
                                               .sort_values(ascending=False)
                                               .index[:num_preds]))
             
-            pred_terms, top_pred_terms = self.run_study(pred_proteins)
+            if disease.id in self.enrichment_results[name]:
+                pred_term_to_pval = self.enrichment_results[name][disease.id]
+            else: 
+                pred_term_to_pval = self.run_study(pred_proteins)
+                self.enrichment_results[name][disease.id] = pred_term_to_pval
+
+            pred_terms = set([term for term, pval 
+                              in pred_term_to_pval.items() if pval < 0.05])
+            top_pred_terms = set([term for term, _
+                                  in sorted(pred_term_to_pval.items(), 
+                                            key=lambda x: x[1])[:self.params["top_k"]]])
+
             jaccard = len(disease_terms & pred_terms) / len(disease_terms | pred_terms)
+            sp_corr, sp_pval = self.compute_spearman_correlation(disease_term_to_pval,
+                                                                 pred_term_to_pval)
 
             results[f"{name}_num_significant"] = len(pred_terms)
             results[f"{name}_top_{self.params['top_k']}"] = top_pred_terms
             results[f"{name}_jaccard_sim"] = jaccard
+            results[f"{name}_sp_corr"] = sp_corr
+            results[f"{name}_sp_pval"] = sp_pval
+            print(f"{name}_sp_pval:", sp_pval)
+            print(f"{name}_sp_pcorr:", sp_corr)
 
         return disease, results 
 
@@ -117,8 +162,8 @@ class GOEnrichment(Experiment):
         if self.params["n_processes"] > 1:
             with tqdm(total=len(diseases)) as t: 
                 p = Pool(self.params["n_processes"])
-                for disease, results in p.imap(process_disease_wrapper, diseases):
-                    results.append(results)
+                for disease, result in p.imap(process_disease_wrapper, diseases):
+                    results.append(result)
                     indices.append(disease.id)
                     t.update()
         else:
@@ -131,14 +176,17 @@ class GOEnrichment(Experiment):
         
         self.results = pd.DataFrame(results, index=indices)
 
-
     def save_results(self, summary=True):
         """
         Saves the results to a csv using a pandas Data Fram
         """
         print("Saving Results...")
         self.results.to_csv(os.path.join(self.dir, 'results.csv'))
-    
+
+        if self.params["save_enrichment_results"]:
+            with open(os.path.join(self.dir,'enrichment_results.pkl'), 'wb') as f:
+                pickle.dump(self.enrichment_results, f)
+            
     def load_results(self):
         """
         Loads the results from a csv to a pandas Data Frame.
