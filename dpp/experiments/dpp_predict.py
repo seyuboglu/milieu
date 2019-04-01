@@ -16,7 +16,8 @@ from tqdm import tqdm
 from dpp.data.associations import load_diseases
 from dpp.data.network import PPINetwork
 from dpp.experiments.experiment import Experiment
-from dpp.methods.lci.lci_method import LCI
+from dpp.methods.lci.lci_method import LCI 
+from dpp.methods.random_walk import RandomWalk
 from dpp.util import Params, set_logger, string_to_list, fraction_nonzero
 
 
@@ -81,8 +82,8 @@ class DPPPredict(Experiment):
         if self.params["n_processes"] > 1:
             with tqdm(total=len(diseases)) as t: 
                 p = Pool(self.params["n_processes"])
-                for disease, results in p.imap(process_disease_wrapper, diseases):
-                    results.append(results)
+                for disease, result in p.imap(process_disease_wrapper, diseases):
+                    results.append(result)
                     indices.append(disease.id)
                     t.update()
         else:
@@ -119,6 +120,7 @@ def main(process_dir, overwrite, notify):
     with open(os.path.join(process_dir, "params.json")) as f:
         params = json.load(f)
     assert(params["process"] == "dpp_predict")
+    global exp
     exp = DPPPredict(process_dir, params["process_params"])
     if exp.is_completed():
         exp.load_results()

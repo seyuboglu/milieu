@@ -84,7 +84,7 @@ class GOEnrichment(Experiment):
         disease_terms, top_disease_terms = self.run_study(disease_proteins)
         results = {"disease_name": disease.name, 
                    "disease_num_significant": len(disease_terms),
-                   f"disease_top_{self.params['top_k']}": top_disease_terms}
+                   "disease_top_{}".format(self.params['top_k']): top_disease_terms}
 
         # number of predictions to be made 
         num_preds = (len(disease_proteins) 
@@ -97,11 +97,13 @@ class GOEnrichment(Experiment):
                                               .index[:num_preds]))
             
             pred_terms, top_pred_terms = self.run_study(pred_proteins)
-            jaccard = len(disease_terms & pred_terms) / len(disease_terms | pred_terms)
+            intersection = (disease_terms & pred_terms)
+            union = (disease_terms | pred_terms)
+            jaccard = 0 if len(union) == 0 else len(intersection) / len(union)
 
-            results[f"{name}_num_significant"] = len(pred_terms)
-            results[f"{name}_top_{self.params['top_k']}"] = top_pred_terms
-            results[f"{name}_jaccard_sim"] = jaccard
+            results["{}_num_significant".format(name)] = len(pred_terms)
+            results["{}_top_{}".format(name, self.params['top_k'])] = top_pred_terms
+            results["{}_jaccard_sim".format(name)] = jaccard
 
         return disease, results 
 
@@ -117,8 +119,8 @@ class GOEnrichment(Experiment):
         if self.params["n_processes"] > 1:
             with tqdm(total=len(diseases)) as t: 
                 p = Pool(self.params["n_processes"])
-                for disease, results in p.imap(process_disease_wrapper, diseases):
-                    results.append(results)
+                for disease, result in p.imap(process_disease_wrapper, diseases):
+                    results.append(result)
                     indices.append(disease.id)
                     t.update()
         else:
