@@ -1,0 +1,15 @@
+{
+    "n_processes": 1,
+
+    "ppi_network": "data/networks/bio-pathways-network.txt",
+    "diseases_path": "data/associations/disgenet-associations.csv",
+    "disease_subset": [],
+    
+    "n_folds": 10,
+
+    "method": "lr",
+    "features": ["data/embeddings/node2vec-q1-p1-d128.txt"],
+
+    "reg_L2": 1.0, 
+    "normalize": true
+}

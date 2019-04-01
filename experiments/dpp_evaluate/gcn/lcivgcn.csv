@@ -1,0 +1,1812 @@
+,gcn_recall_100,lci_recall_100,name
+C4020858,0.08333333333333333,0.0,Choreatic disease
+C4020859,0.0,0.0,Pyramidal tract disease
+C2675111,0.25,0.55,Abnormal eyelashes
+C0003803,0.3,0.3,Arnold Chiari Malformation
+C1837082,0.0,0.0,Metaphyseal cupping
+C4020851,0.05,0.05,Cortical white matter abnormalities seen on MRI
+C0033941,0.1,0.0,"Psychoses, Substance-Induced"
+C4020854,0.0,0.1,Neuro-degenerative disease
+C1837087,0.15,0.6,Macular pigmentary changes
+C1837084,0.06999999999999999,0.105,Short metacarpal
+C0079924,0.03333333333333333,0.16666666666666666,Oligohydramnios
+C0003578,0.11,0.06999999999999999,Apnea
+C0332606,0.0,0.2,Elfin facies
+C1866730,0.0,0.03333333333333333,Rhizomelia
+C0240310,0.030952380952380957,0.11190476190476192,Hypoplasia of the maxilla
+C0241210,0.00909090909090909,0.027272727272727268,Speech Delay
+C0027720,0.0,0.15,Nephrosis
+C0026636,0.2,0.0,Mouth Diseases
+C4021107,0.1,0.3,Non-obstructive azoospermia
+C0026633,0.1,0.15,Mouth Abnormalities
+C2219717,0.1,0.0,menstrual periods stopped for over 6 months
+C1837404,0.03333333333333333,0.14166666666666666,"High, narrow palate"
+C1837402,0.3833333333333333,0.45,Flat occiput
+C0746940,0.0,0.0,nonverbal
+C0043352,0.025,0.025,Xerostomia
+C0206698,0.21666666666666665,0.1,Cholangiocarcinoma
+C0231835,0.0,0.15,Tachypnea
+C1389016,0.1,0.1,ATRIOVENTRICULAR CANAL DEFECT
+C1864897,0.03617486338797814,0.016475409836065574,Cognitive delay
+C0221210,0.0,0.45,Congenital malrotation of intestine
+C0598608,0.15,0.0,Hyperhomocysteinemia
+C4020855,0.08333333333333333,0.15833333333333333,Respiratory function loss
+C0221356,0.056944444444444436,0.04444444444444444,Brachycephaly
+C4020856,0.0,0.0,Terminal tremor
+C1837397,0.105,0.29500000000000004,"Global developmental delay, severe"
+C0741796,0.3833333333333333,0.26666666666666666,Recurrent bronchitis
+C0003486,0.3,0.1,Aortic Aneurysm
+C0027658,0.1,0.0,"Neoplasms, Germ Cell and Embryonal"
+C4022003,0.05,0.2,Erectile abnormalities
+C0002171,0.0,0.1,Alopecia Areata
+C0002170,0.034722222222222224,0.08888888888888888,Alopecia
+C0521719,0.18,0.32,Clouding of corneal stroma
+C0428977,0.2,0.3083333333333333,Bradycardia
+C0009447,0.2,0.6,Common Variable Immunodeficiency
+C0017658,0.2916666666666667,0.31666666666666665,Glomerulonephritis
+C1837249,0.3,0.4333333333333333,"Malformations of Cortical Development, Group II"
+C1969372,0.1,0.0,Tubulointerstitial fibrosis
+C0948023,0.0,0.0,Urine phosphorous concentration above normal
+C0038454,0.11333333333333333,0.17,Cerebrovascular accident
+C0035258,0.0,0.0,Restless Legs Syndrome
+C0151205,0.0,0.15,Periorbital edema
+C0730292,0.0,0.0,Macular dystrophy
+C0730290,0.1,0.15,Cone dystrophy
+C0013990,0.1111111111111111,0.0,Pathological accumulation of air in tissues
+C0476397,0.03333333333333333,0.25555555555555554,Electroretinogram abnormal
+C1859117,0.13333333333333333,0.13333333333333333,Recurrent pulmonary infections
+C0023434,0.08333333333333333,0.09166666666666663,Chronic Lymphocytic Leukemia
+C4012968,0.1,0.25,Mild global developmental delay
+C1839829,0.12,0.20000000000000004,Short distal phalanges
+C0151686,0.10909090909090907,0.07272727272727272,Growth retardation
+C0857973,0.0,0.0,Increased serum parathyroid hormone
+C1527311,0.4833333333333333,0.575,Brain Edema
+C0240538,0.1,0.2333333333333333,Convex nasal ridge
+C0431904,0.22000000000000006,0.235,Ulnar polydactyly of fingers
+C0027726,0.2,0.13666666666666666,Nephrotic Syndrome
+C0405580,0.85,0.95,Adrenal cortical hypofunction
+C1563720,0.1,0.35,Kallmann Syndrome 2 (disorder)
+C0011849,0.1,0.05,Diabetes Mellitus
+C0011848,0.0,0.3,Diabetes Insipidus
+C1834060,0.25,0.3,Short middle phalanx of the 5th finger
+C0431478,0.0,0.06666666666666668,Posteriorly rotated ear
+C4072849,0.13333333333333333,0.1833333333333333,Scapular weakness
+C0038587,0.21,0.2,Substance Withdrawal Syndrome
+C1839739,0.13333333333333333,0.1214285714285714,Prominent lower lip
+C0040412,0.4,0.5,Fissured tongue
+C0003028,0.0,0.15,Anhidrosis
+C0040411,0.0,0.0,Tongue Neoplasms
+C0027080,0.3,0.3,Myoglobinuria
+C0007273,0.0,0.0,Carotid Artery Diseases
+C1858085,0.03141025641025641,0.030769230769230767,Malar flattening
+C4228227,0.0,0.15,Small thymus
+C1112705,0.5,0.6,Nuclear non-senile cataract
+C3887709,0.6,0.6,Optic Neuropathy
+C1956346,0.04107142857142857,0.10892857142857144,Coronary Artery Disease
+C4024748,0.2222222222222222,0.2222222222222222,Aplasia/Hypoplasia of the iris
+C0236969,0.028181818181818183,0.056363636363636366,Substance-Related Disorders
+C0007873,0.08333333333333333,0.2333333333333333,Uterine Cervical Neoplasm
+C0030554,0.0,0.11666666666666665,Paresthesia
+C1857042,0.045,0.1,Sparse scalp hair
+C0238395,0.2,0.55,Male Pseudohermaphroditism
+C1857287,0.7,0.7,Stroke-like episodes
+C1851854,0.05833333333333333,0.175,Thin dental enamel
+C0023891,0.05,0.0,"Liver Cirrhosis, Alcoholic"
+C0242488,0.05,0.0,Acute Lung Injury
+C0023893,0.03137726767863753,0.03820807108478341,"Liver Cirrhosis, Experimental"
+C0023892,0.135,0.135,Biliary cirrhosis
+C0023895,0.034722222222222224,0.15,Liver diseases
+C4024989,0.3,0.3,Hereditary nonpolyposis colorectal carcinoma
+C0234378,0.45,0.4333333333333333,Static Tremor
+C0265783,0.0,0.105,Congenital hypoplasia of lung
+C3163798,0.45,0.5,Recurrent lower respiratory tract infection
+C3809288,0.2,0.4,LEFT VENTRICULAR NONCOMPACTION 8
+C1854418,0.3333333333333333,0.3333333333333333,Biparietal narrowing
+C0019555,0.065,0.105,"Hip Dislocation, Congenital"
+C2677378,0.15,0.25,Duodenal villous atrophy
+C0030312,0.10833333333333332,0.10833333333333332,Pancytopenia
+C0751295,0.175,0.125,Memory Loss
+C3164374,0.13333333333333333,0.13333333333333333,Abnormality of pulmonary valve
+C0340543,0.3,0.15,Familial primary pulmonary hypertension
+C0011206,0.3,0.4,Delirium
+C4025900,0.45,0.55,Abnormality of female internal genitalia
+C0273115,0.15,0.25,Lung Injury
+C0454555,0.05,0.025,Hypernasal voice
+C0473527,0.0,0.0,Hypoalphalipoproteinemias
+C1321329,0.0,0.0,Slowed saccades
+C0024667,0.08736263736263736,0.0945054945054945,Animal Mammary Neoplasms
+C0029422,0.1375,0.2375,Osteochondrodysplasias
+C4025763,0.0,0.0,Abnormality of the rib cage
+C0026351,0.0,0.0,Moderate mental retardation (I.Q. 35-49)
+C0751778,0.075,0.175,"Myoclonic Epilepsies, Progressive"
+C0206754,0.0,0.25,Neuroendocrine Tumors
+C0019158,0.08333333333333333,0.0,Hepatitis
+C3808249,0.2,0.15,Optic disc abnormalities
+C0019151,0.25,0.3,Hepatic Encephalopathy
+C1446712,0.2,0.4,Overlapping fingers
+C0079154,0.2,0.5,Congenital Nonbullous Ichthyosiform Erythroderma
+C0152013,0.06666666666666668,0.1,Adenocarcinoma of lung (disorder)
+C1850072,0.0,0.0,Tented upper lip
+C0002962,0.15,0.15,Angina Pectoris
+C3496069,0.0,0.0,cocaine use
+C0241910,0.3,0.25,"Hepatitis, Autoimmune"
+C0033578,0.06529255319148937,0.07176418439716313,Prostatic Neoplasms
+C0008297,0.0,0.15,Choanal Atresia
+C3552713,0.15,0.3,Talipes foot deformities
+C1855773,0.75,0.8,"Psychomotor retardation, profound"
+C4280678,0.0,0.0,Posterior displacement of the tongue
+C4280679,0.0,0.0,Increased calcium level in kidney
+C0311468,0.05,0.25,Increased bilirubin level (finding)
+C1868571,0.16999999999999998,0.195,"Thick, flared eyebrows"
+C1868577,0.3,0.15,Patella aplasia-hypoplasia
+C0004352,0.029914529914529912,0.022507122507122508,Autistic Disorder
+C1843367,0.02822420634920635,0.03288690476190476,Poor school performance
+C1836926,0.0,0.0,Fundus with peripheral 'bony spicules'
+C0282160,0.25,0.5,Aplasia Cutis Congenita
+C0158465,0.3,0.2,Acquired cubitus valgus
+C0021831,0.0,0.0,Intestinal Diseases
+C3806283,0.13,0.23,Frequent fractures
+C0027404,0.0,0.1,Narcolepsy
+C0015967,0.07243589743589743,0.1032051282051282,Fever
+C0001418,0.12424242424242422,0.16818181818181815,Adenocarcinoma
+C1510586,0.06964285714285715,0.014285714285714284,Autism Spectrum Disorders
+C0558242,0.2222222222222222,0.2222222222222222,Stretched skin
+C0887833,0.15,0.15,"Carcinoma, Pancreatic Ductal"
+C1837522,0.0,0.0,Decreased pain sensation
+C0033774,0.10333333333333332,0.17666666666666667,Pruritus
+C4280495,0.04631578947368421,0.09631578947368424,Concave bridge of nose
+C0042109,0.1,0.1,Urticaria
+C0020490,0.0,0.0,Hyperopia
+C0018772,0.07602339181286549,0.09883040935672514,"Hearing Loss, Partial"
+C1860614,0.1,0.13333333333333333,ULNAR HYPOPLASIA
+C0003811,0.08222222222222222,0.07111111111111112,Cardiac Arrhythmia
+C0018995,0.25,0.35,Hemochromatosis
+C1837098,0.0,0.35,Easy fatigability
+C0018991,0.0,0.0,Hemiplegia
+C4020843,0.03333333333333333,0.0,Abnormal urinary amino-acid findings
+C0438717,0.0625,0.075,Transaminases increased
+C4020840,0.2,0.15,Abnormal vertebral bodies
+C4020847,0.14166666666666666,0.29166666666666663,Abnormality of pelvic girdle bone morphology
+C4020846,0.15,0.175,Prone to bacterial infection
+C4020844,0.3,0.5,Bullet vertebral body
+C0266371,0.1,0.3,Streak ovary
+C0234979,0.0,0.0,Dysdiadochokinesis
+C0011860,0.05523809523809523,0.05523809523809523,"Diabetes Mellitus, Non-Insulin-Dependent"
+C4021664,0.1,0.2,Abnormality of the abdominal wall
+C0032226,0.1,0.2,Pleural Diseases
+C1368816,0.4,0.5,Sebaceous adenoma
+C0003962,0.21666666666666665,0.26666666666666666,Ascites
+C0262404,0.13,0.14,Cerebellar degeneration
+C2973725,0.05,0.075,Pulmonary arterial hypertension
+C1864711,0.025,0.2,Muscle biopsy shows dystrophic changes
+C0009763,0.10833333333333332,0.15833333333333333,Conjunctivitis
+C0432103,0.0,0.0,Submucous cleft of hard palate
+C1837899,0.3,0.5,Isoelectric focusing of serum transferrin consistent with CDG type I
+C0206686,0.2,0.2,Adrenocortical carcinoma
+C0003706,0.02,0.1,Arachnodactyly
+C1837388,0.5,0.5,Abnormal respiratory patterns
+C2981150,0.06066176470588236,0.04154411764705882,Uranostaphyloschisis
+C0003492,0.25,0.2333333333333333,Aortic coarctation
+C2265792,0.0,0.0,Skeletal muscle hypertrophy
+C0158646,0.0,0.0,Cleft palate with cleft lip
+C0220633,0.0,0.25,Uveal melanoma
+C0012833,0.16666666666666666,0.1,Dizziness
+C0232939,0.11,0.14333333333333334,Primary physiologic amenorrhea
+C0035334,0.01875,0.15514705882352942,Retinitis Pigmentosa
+C1853743,0.0,0.06000000000000001,Axial hypotonia
+C0151740,0.3833333333333333,0.3333333333333333,Intracranial Hypertension
+C0151747,0.0,0.0,Renal tubular disorder
+C0151744,0.047426470588235285,0.05441176470588236,Myocardial Ischemia
+C1839839,0.13333333333333333,0.0,MAJOR AFFECTIVE DISORDER 2
+C1855340,0.0,0.0,Bowing of the long bones
+C0029442,0.0,0.0,Osteomalacia
+C0029443,0.1,0.25,Osteomyelitis
+C0003635,0.06666666666666668,0.13333333333333333,Apraxias
+C1290857,0.0,0.2,Disorder of face
+C0151699,0.4,0.3,Intracranial Hemorrhages
+C0241054,0.1933333333333333,0.2833333333333333,Skin bulla
+C1858452,0.1,0.05,Thickened calvaria
+C1839546,0.0,0.0,Microretrognathia
+C1850667,0.11333333333333333,0.13333333333333333,Highly variable phenotype and severity
+C0006267,0.225,0.175,Bronchiectasis
+C4072836,0.3,0.1,Nappy hair texture
+C0917990,0.0,0.15,Acro-Osteolysis
+C0039685,0.045,0.05,Tetralogy of Fallot
+C0029191,0.15,0.2,Orchitis
+C4072831,0.0,0.0,Delayed closure of the soft spot on the skull
+C0520459,0.15,0.3,Necrotizing Enterocolitis
+C0149925,0.15,0.125,Small cell carcinoma of lung
+C0431863,0.0,0.1,Carpal synostosis
+C0332563,0.02,0.13,Papule
+C0234182,0.03333333333333333,0.1,Gowers sign
+C4024753,0.06999999999999999,0.26,Abnormality of the retinal vasculature
+C1836623,0.0,0.7,Low to undetectable plasma cortisol
+C0452138,0.35,0.35,"Sensorineural hearing loss, bilateral"
+C0424448,0.0,0.03333333333333333,Mask-like facies
+C0149721,0.165,0.235,Left Ventricular Hypertrophy
+C0079541,0.1,0.4,Holoprosencephaly
+C0018798,0.08666666666666667,0.06999999999999999,Congenital Heart Defects
+C0266061,0.05,0.2,Open Bite
+C3489733,0.18333333333333326,0.18333333333333326,Oculomotor apraxia
+C0020179,0.0,0.0,Huntington Disease
+C4024996,0.0,0.0,Aplasia/Hypoplasia of the lungs
+C0011875,0.1,0.15,Diabetic Angiopathies
+C0235833,0.13333333333333333,0.15833333333333333,Congenital diaphragmatic hernia
+C0266539,0.2,0.3,Congenital total cataract
+C0036421,0.0,0.0,Systemic Scleroderma
+C0578626,0.25,0.35,blue iris (physical finding)
+C0030305,0.125,0.075,Pancreatitis
+C1853193,0.3,0.3833333333333333,Recurrent skin infections
+C0155119,0.2,0.3,Recurrent erosion of cornea
+C0024809,0.08333333333333333,0.06666666666666668,Marijuana Abuse
+C1277241,0.0,0.0,Delayed myelination
+C0242584,0.2833333333333333,0.18333333333333326,Autoimmune thrombocytopenia
+C0000731,0.045,0.19,Abdomen distended
+C0000737,0.04111111111111111,0.1022222222222222,Abdominal Pain
+C1843005,0.0,0.0,Absent eyelashes
+C0424688,0.08051209103840681,0.04850640113798009,Small head
+C0857379,0.05,0.05,Auricular malformation
+C0036337,0.0,0.1,Schizoaffective Disorder
+C0853897,0.0,0.2,Diabetic Cardiomyopathies
+C0239676,0.03818181818181818,0.13636363636363635,High forehead
+C0162674,0.2,0.3,Chronic progressive external ophthalmoplegia
+C0338715,0.0,0.0,Drug-induced depressive state
+C1842688,0.08333333333333333,0.08333333333333333,Hypoplasia of the brainstem
+C0162670,0.36666666666666653,0.4666666666666666,Mitochondrial Myopathies
+C0162672,0.5,0.5,MERRF Syndrome
+C1861975,0.4,0.35,"Cafe au lait spots, multiple"
+C1842680,0.0,0.0,Hypoplastic lobules
+C1849089,0.03333333333333333,0.11666666666666667,Broad forehead
+C0001956,0.0,0.0,alcohol use disorder
+C0004106,0.05,0.2,Astigmatism
+C0392163,0.25,0.35,Corneal erosion
+C0234985,0.0,0.03333333333333333,Mental deterioration
+C1846228,0.0,0.35,Absence of pubertal development
+C1848207,0.0,0.0,Poor speech
+C1136249,0.15,0.0,"Mental Retardation, X-Linked"
+C0036202,0.0,0.0,Sarcoidosis
+C1832160,0.2,0.0,Poor temperature regulation
+C0920269,0.05,0.0,Microsatellite Instability
+C0277959,0.12499999999999994,0.14999999999999994,Coarse hair
+C0339535,0.15,0.25,"Night blindness, congenital stationary"
+C0038325,0.2333333333333333,0.26666666666666666,Stevens-Johnson Syndrome
+C0042024,0.025,0.0,Urinary Incontinence
+C0005741,0.2,0.2,Blepharitis
+C0024121,0.11345029239766086,0.12397660818713448,Lung Neoplasms
+C4280665,0.0,0.3,Wedge shaped head
+C4280664,0.08952380952380952,0.1719047619047619,Big calvaria
+C1827524,0.115,0.135,Wide spaced nipples
+C0005744,0.016666666666666666,0.10333333333333332,Blepharophimosis
+C0005747,0.2,0.2,Blepharospasm
+C2751582,0.6,0.6,Mitochondrial respiratory chain defects
+C1832200,1.0,1.0,Peroxisome biogenesis disorders
+C0235430,0.55,0.4,Ketonemia
+C1833144,0.13333333333333333,0.18333333333333326,"Slender, gracile long tubular bones"
+C3277697,0.05833333333333333,0.10833333333333332,"Decreased visual acuity, progressive"
+C0025521,0.05,0.0,Inborn Errors of Metabolism
+C4048270,0.0,0.09166666666666666,Decreased antibody level in blood
+C4280807,0.1,0.15,Flattening of cranial vault
+C0600031,0.0,0.0,Congenital absence of spleen
+C0021841,0.5,0.45,Intestinal Neoplasms
+C1855285,0.07333333333333332,0.05333333333333333,Protruding ears
+C4280808,0.04111111111111111,0.06444444444444444,Abnormally small eyeball
+C0232744,0.05,0.25,Decreased liver function
+C0018051,0.0,0.15,Gonadal Dysgenesis
+C0877165,0.0,0.05833333333333333,Short phalanx of finger
+C0543888,0.13333333333333333,0.05,Epileptic encephalopathy
+C0022548,0.14999999999999994,0.175,Keloid
+C1836735,0.2833333333333333,0.29999999999999993,hypopigmented skin patch
+C3839460,0.0,0.0,Nonprogressive
+C1846347,0.25,0.4,Renal salt wasting
+C4020878,0.13333333333333333,0.13333333333333333,Diffusely thickened skin
+C4020874,0.035238095238095235,0.05666666666666665,No development of motor milestones
+C0162298,0.13055555555555556,0.16527777777777775,Joint stiffness
+C1861403,0.04,0.02625,Variable expressivity
+C0426789,0.1,0.1,Short thorax
+C0027708,0.15,0.2,Nephroblastoma
+C0027707,0.4,0.6,"Nephritis, Interstitial"
+C0264303,0.15,0.2,Laryngomalacia
+C0600104,0.2333333333333333,0.15,Obsessive compulsive behavior
+C0026650,0.19,0.22333333333333333,Movement Disorders
+C0232461,0.0,0.05,Increased appetite (finding)
+C0234967,0.09166666666666666,0.06666666666666668,Choreoathetoid movements
+C1837463,0.03333333333333333,0.2,Narrow face
+C0949445,0.0,0.0,Cervical Dystonia
+C2937365,0.0,0.0,Recurrent aphthous ulcer
+C0262444,0.15,0.15,Dental abnormalities
+C0262431,0.05,0.35,Compression fracture of vertebral column
+C1855020,0.9,1.0,Acute necrotizing encephalopathy
+C0268307,0.0,0.15,Conjugated hyperbilirubinemia
+C1855751,0.02,0.12000000000000002,Bulbous nasal tip
+C3278811,0.0,0.4,Thumb aplasia
+C0017181,0.2333333333333333,0.3366666666666667,Gastrointestinal Hemorrhage
+C0002395,0.13194444444444445,0.1375,Alzheimer's Disease
+C0240421,0.4833333333333333,0.7333333333333333,"Muscle weakness, progressive"
+C0376545,0.5166666666666666,0.4666666666666666,Hematologic Neoplasms
+C1850189,0.02222222222222222,0.04583333333333333,Large pinnae
+C0743912,0.25,0.25,Increased ferritin
+C0009421,0.2933333333333333,0.37666666666666665,Comatose
+C0018989,0.175,0.175,Hemiparesis
+C1837260,0.014285714285714284,0.030952380952380964,Prominent forehead
+C0268237,0.35,0.35,Cytochrome-c Oxidase Deficiency
+C0035304,0.06000000000000001,0.16499999999999998,Retinal Degeneration
+C0035305,0.125,0.08333333333333333,Retinal Detachment
+C0035309,0.07333333333333332,0.15,Retinal Diseases
+C1862265,0.0,0.0,Elevated gonadotropins
+C0029453,0.021111111111111112,0.0811111111111111,Osteopenia
+C0020564,0.15,0.1,Hypertrophy
+C0271388,0.15,0.3,Pendular Nystagmus
+C0023380,0.2375,0.3178571428571428,Lethargy
+C0029454,0.05,0.05,Osteopetrosis
+C0271385,0.0,0.0,Horizontal Nystagmus
+C1269683,0.01953846153846154,0.04738461538461538,Major Depressive Disorder
+C0520679,0.2,0.4,"Sleep Apnea, Obstructive"
+C1848924,0.05036231884057971,0.07228260869565217,Infantile onset
+C0023418,0.29666666666666663,0.26,leukemia
+C0231679,0.1,0.18333333333333326,Ulnar deviation of the fingers
+C0011881,0.15833333333333333,0.14166666666666666,Diabetic Nephropathy
+C1527336,0.05,0.2,Sjogren's Syndrome
+C3887499,0.0,0.13333333333333333,Renal cyst
+C0009081,0.01818181818181818,0.03636363636363636,Congenital clubfoot
+C0007384,0.0,0.2,Cataplexy
+C3161330,0.0,0.05833333333333333,Profound intellectual disabilities
+C1864903,0.1,0.1,Hyperinsulinaemic hypoglycaemia
+C0009952,0.1,0.25,Febrile Convulsions
+C0542223,0.25,0.0,Loss of speech
+C0020542,0.0,0.042857142857142864,Pulmonary Hypertension
+C0020541,0.1,0.16666666666666666,"Hypertension, Portal"
+C0155320,0.3333333333333333,0.3666666666666665,"Blindness, Cortical"
+C0020545,0.0,0.2,"Hypertension, Renovascular"
+C3549698,0.0,0.2833333333333333,Coxa valga deformity
+C3277226,0.25,0.35,Restrictive ventilatory defect
+C0221373,0.11666666666666665,0.26666666666666666,Claw hand
+C0020445,0.7,0.65,"Hypercholesterolemia, Familial"
+C0027066,0.04107142857142857,0.042857142857142864,Myoclonus
+C0006386,0.13333333333333333,0.35,Bunion
+C0149931,0.13035714285714287,0.08035714285714285,Migraine Disorders
+C0332573,0.05,0.25,Macule
+C1861869,0.33333333333333337,0.425,Underdeveloped supraorbital ridges
+C0265275,0.2,0.3,Jeune thoracic dystrophy
+C0002514,0.0,0.0,"Amino Acid Metabolism, Inborn Errors"
+C0399526,0.05178571428571428,0.125,Class III malocclusion
+C1145670,0.24642857142857136,0.2964285714285714,Respiratory Failure
+C0423798,0.2333333333333333,0.21904761904761907,Increased tendency to bruise
+C0233514,0.09333333333333334,0.28,Abnormal behavior
+C0751837,0.0,0.0,Gait Ataxia
+C0019294,0.125,0.20555555555555555,"Hernia, Inguinal"
+C0036920,0.2,0.2,Sezary Syndrome
+C0234428,0.55,0.55,Disturbance of consciousness
+C1843108,0.07666666666666667,0.13666666666666666,Short hands
+C0039446,0.45,0.45,Telangiectasis
+C1846449,0.2,0.4,Irregular epiphyses
+C2674608,0.0911764705882353,0.12156862745098038,Feeding difficulties in infancy
+C1442903,0.2,0.2,Exostoses
+C4023397,0.25,0.45,Abnormal hair quantity
+C0266435,0.04019607843137255,0.08660130718954248,Congenital hypoplasia of penis
+C0699743,0.3,0.3,Congenital muscular dystrophy (disorder)
+C0239067,0.1,0.3,Difficulty walking up stairs
+C0041834,0.25,0.2633333333333333,Erythema
+C1846223,0.0,0.0,Adrenal hypoplasia
+C1846226,0.1,0.45,Mineralocorticoid insufficiency
+C0038002,0.059649122807017535,0.1131578947368421,Splenomegaly
+C0008924,0.05,0.15178571428571427,Cleft Lip
+C0004936,0.25,0.2,Mental disorders
+C0037771,0.0,0.0,"Paraparesis, Spastic"
+C0032461,0.35,0.2,Polycythemia
+C0024003,0.07333333333333332,0.10333333333333332,Lordosis
+C0575167,0.0,0.25,Deformity of neck
+C4025814,0.02,0.085,Abnormality of the metaphyses
+C1842366,0.16666666666666666,0.2333333333333333,Low anterior hairline
+C4025819,0.0,0.0,Abnormality of the hypothalamus-pituitary axis
+C0004114,0.13333333333333333,0.2,Astrocytoma
+C0265677,0.08333333333333333,0.18333333333333326,Congenital hemivertebra
+C1844806,0.1,0.1,Weight less than 3rd percentile
+C0025286,0.15,0.26666666666666666,Meningioma
+C0015300,0.1522222222222222,0.1511111111111111,Exophthalmos
+C1836696,0.0,0.0,Lower limb hyperreflexia
+C0853087,0.3833333333333333,0.31666666666666665,Nail abnormality
+C1970705,0.35,0.3,Fragile hair
+C1832446,0.02,0.06999999999999999,Sparse eyebrow
+C0334013,0.3,0.2,Phrynoderma
+C0339527,0.15,0.05,Leber Congenital Amaurosis
+C0042580,0.11666666666666665,0.075,Vesico-Ureteral Reflux
+C1853562,0.0,0.09861111111111112,Adult onset
+C0010036,0.0,0.1,Corneal dystrophy
+C0349506,0.21,0.3466666666666666,Photosensitivity of skin
+C0025289,0.08333333333333333,0.2,Meningitis
+C4280652,0.21666666666666665,0.18333333333333326,Prominent back of the head
+C0222716,0.15,0.08333333333333333,Structure of wormian bone
+C4280656,0.14107142857142854,0.2125,Narrow cranium shape
+C0042345,0.25,0.45,Varicosity
+C0152459,0.4,0.25,Linear atrophy
+C3278975,0.05,0.15,Attenuation of retinal blood vessels
+C4021242,0.0,0.25,Hypoplasia of the zygomatic bone
+C1859480,0.0,0.05,Cone-shaped epiphyses of phalanges
+C0587246,0.05,0.13333333333333333,Muscle weakness of limb
+C3806467,0.025,0.15,Respiratory insufficiency due to muscle weakness
+C1844592,0.45,0.45,Soft skin
+C1136382,0.05,0.05,Sclerocystic Ovaries
+C0162538,0.1,0.15,Immunoglobulin A deficiency (disorder)
+C0162539,0.0,0.15,IgG Deficiency
+C0019825,0.0,0.16666666666666666,Hoarseness
+C4020861,0.0,0.08333333333333333,Depressed philtrum
+C4020860,0.02,0.06555555555555555,Supratentorial atrophy
+C4020865,0.0,0.15,Fibular polydactyly
+C4020867,0.05,0.05,Persistant truncus arteriosus
+C4020869,0.2,0.5,Abnormality of the abdomen
+C4020868,0.1,0.15,Elevated heart rate
+C0241355,0.11607142857142855,0.11785714285714285,Small testicle
+C0231687,0.0,0.11666666666666665,Spastic gait
+C0231686,0.3,0.2333333333333333,"Gait, Unsteady"
+C1849538,0.4,0.4,Delayed eruption of primary teeth
+C0241240,0.075,0.05833333333333333,Tall stature
+C0238207,0.1,0.3,Ectopic kidney
+C2937358,0.35,0.325,Cerebral Hemorrhage
+C0854107,0.3,0.3,Haemorrhage subcutaneous
+C0026640,0.08,0.03666666666666667,Mouth Neoplasms
+C0025500,0.05,0.1,Mesothelioma
+C0001768,0.25,0.7,Agammaglobulinemia
+C4021395,0.0,0.2,Abnormality of the antihelix
+C2051831,0.09,0.16,Pectus excavatum
+C0003949,0.3,0.0,Asbestosis
+C0032209,0.2,0.2,Platybasia
+C1847906,0.0,0.0,Onion bulb formation
+C1850049,0.10090909090909092,0.1190909090909091,Bilateral fifth finger clinodactyly
+C1855038,0.7,0.8,Hepatocellular necrosis
+C0432163,0.25,0.35,Defect of vertebral segmentation
+C1865866,0.0,0.0,Congenital sensorineural hearing loss
+C3494422,0.0,0.06000000000000001,Retrognathia
+C0012819,0.0,0.35,Diverticular disease of colon
+C0151908,0.09285714285714286,0.05535714285714286,Dry skin
+C4023101,0.05,0.45,Elevated luteinizing hormone
+C0240295,0.0332010582010582,0.0835978835978836,Mandibular hypoplasia
+C0426799,0.05,0.05,Congenital hypoplasia of clavicle
+C0017661,0.08333333333333333,0.05833333333333333,IGA Glomerulonephritis
+C1847879,0.23666666666666664,0.2866666666666666,X-linked dominant
+C0035313,0.2,0.2,Retinal Dysplasia
+C1855106,0.1,0.2,Neonatal onset
+C1837279,0.0,0.18333333333333326,Hypoplastic toenails
+C0017668,0.1,0.10833333333333332,Focal glomerulosclerosis
+C1837108,0.0,0.0,Decreased muscle mass
+C1859399,0.0,0.0,Radial bowing
+C0031149,0.0,0.0,Peritoneal Neoplasms
+C0544755,0.0,0.2333333333333333,Genu varum
+C1861218,0.0,0.05,Hypoplastic ilia
+C0029464,0.0,0.15,Osteosclerosis
+C0029463,0.18333333333333326,0.13333333333333333,Osteosarcoma
+C0042900,0.0,0.15,Vitiligo
+C1839604,0.026785714285714284,0.025,Renal failure in adulthood
+C1859126,0.3833333333333333,0.5333333333333333,Stippled epiphyses
+C1847584,0.05333333333333333,0.07666666666666666,Distal sensory impairment
+C1843300,0.06666666666666668,0.18333333333333326,Sparse eyelashes
+C0079773,0.05,0.1,"Lymphoma, T-Cell, Cutaneous"
+C0079772,0.3,0.35,T-Cell Lymphoma
+C0016059,0.235,0.19,Fibrosis
+C0014866,0.3,0.6,Esophageal Stenosis
+C4021734,0.7777777777777778,0.7777777777777778,Abnormality of mitochondrial metabolism
+C4021735,0.0,0.1,Abnormality of the hip bone
+C0265998,0.1,0.4,ANONYCHIA
+C0948187,0.0,0.0,Tracheomalacia
+C0685381,0.06666666666666668,0.0,Congenital hypoplasia of radius
+C0011071,0.05,0.15,Sudden death
+C0149630,0.0,0.15,Bicuspid aortic valve
+C0409338,0.0,0.06666666666666668,Flexion contracture - elbow
+C0431447,0.1,0.1,Synophrys
+C0020555,0.4,0.45,Hypertrichosis
+C0020557,0.25,0.25,Hypertriglyceridemia
+C0020550,0.35,0.45,Hyperthyroidism
+C0029882,0.15,0.25,Otitis Media
+C0410916,0.0,0.0,Neonatal Death
+C1561643,0.0,0.0,Chronic Kidney Diseases
+C0234162,0.07333333333333332,0.05666666666666665,Cerebellar Dysmetria
+C0240671,0.7,0.8,Partial thromboplastin time increased (finding)
+C1856694,0.1,0.0,Areflexia of lower limbs
+C0006663,0.16499999999999998,0.23,Calcinosis
+C0040997,0.45,0.65,Trigeminal Neuralgia
+C0030567,0.1,0.11666666666666667,Parkinson Disease
+C0010417,0.08600000000000001,0.05476923076923077,Cryptorchidism
+C1857079,0.1,0.11666666666666665,Atretic auditory canal
+C0237326,0.061538461538461535,0.08351648351648351,Dyschezia
+C0220981,0.14,0.145,Metabolic acidosis
+C0029089,0.12916666666666668,0.3013888888888889,Ophthalmoplegia
+C1846460,0.20833333333333331,0.33333333333333337,Malformed pinnae
+C0151818,0.0,0.0,Opisthotonus
+C0427068,0.0,0.08333333333333333,Monoparesis - leg
+C0241654,0.45,0.5,VALVULAR ABNORMALITY
+C1857679,0.18,0.205,Sloping forehead
+C0034194,0.2333333333333333,0.4666666666666667,Pyloric Stenosis
+C0427065,0.03333333333333333,0.07857142857142856,Distal muscle weakness
+C0266642,0.0,0.0,Situs ambiguus
+C0007621,0.14444444444444446,0.1222222222222222,Neoplastic Cell Transformation
+C0427063,0.0,0.0,Shoulder girdle weakness
+C0497156,0.07857142857142857,0.10952380952380954,Lymphadenopathy
+C0007758,0.16683333333333333,0.1955,Cerebellar Ataxia
+C0542346,0.0,0.0,Pimples
+C0011253,0.6,0.5,Delusions
+C0010308,0.1,0.3,Congenital Hypothyroidism
+C0042164,0.05,0.1,Uveitis
+C0158986,0.1,0.05,Neonatal hypoglycemia
+C1867131,0.08333333333333333,0.26666666666666666,Broad hallux
+C0019693,0.12,0.15,HIV Infections
+C0038013,0.05,0.05,Ankylosing spondylitis
+C0427515,0.2333333333333333,0.4666666666666666,Neutrophil abnormality
+C0392386,0.09924242424242426,0.11666666666666665,Decreased platelet count
+C0024032,0.030952380952380957,0.04523809523809523,Low Birth Weights
+C0001973,0.06838624338624337,0.08306878306878307,"Alcoholic Intoxication, Chronic"
+C1844813,0.13333333333333333,0.16666666666666666,Widely spaced teeth
+C0000889,0.3,0.3,Acanthosis Nigricans
+C0015310,0.0,0.0,Exotropia
+C1844749,0.0,0.15,Rib fusion
+C0027051,0.06909090909090909,0.04818181818181819,Myocardial Infarction
+C0018671,0.13333333333333333,0.03333333333333333,Head and Neck Neoplasms
+C1865014,0.036813186813186814,0.030219780219780223,Long philtrum
+C1832348,0.45,0.3,Slow-growing hair
+C0008625,0.0,0.25,Chromosome Aberrations
+C1860121,0.16666666666666666,0.1,Decreased testosterone in males
+C2316810,0.2,0.2,Chronic kidney disease stage 5
+C1168401,0.1,0.2333333333333333,Squamous cell carcinoma of the head and neck
+C0019214,0.0,0.08333333333333333,Hepatosplenomegaly
+C4280648,0.12,0.18000000000000002,Hyperplasia of cheeks
+C0426817,0.0,0.1,Short ribs
+C0014130,0.0,0.2,Endocrine System Diseases
+C0410264,0.0,0.0,Contracture of tendo achilles
+C0040264,0.15,0.1,Tinnitus
+C0426818,0.08333333333333333,0.18333333333333326,Thin rib
+C0028738,0.0810752688172043,0.07451612903225806,Nystagmus
+C4021254,0.0,0.0,Cutaneous finger syndactyly
+C0018273,0.03333333333333333,0.08333333333333333,Growth Disorders
+C0014553,0.13333333333333333,0.13333333333333333,Absence Epilepsy
+C1838979,0.75,0.85,MITOCHONDRIAL COMPLEX I DEFICIENCY
+C0014556,0.2,0.4666666666666667,"Epilepsy, Temporal Lobe"
+C1866195,0.06000000000000001,0.12000000000000002,Downturned corners of mouth
+C0022568,0.1,0.35,Keratitis
+C0018099,0.0,0.0,Gout
+C4020813,0.3333333333333333,0.45,Increased gastric cancer
+C0032927,0.057142857142857134,0.08214285714285714,Precancerous Conditions
+C1260899,0.7,0.75,"Anemia, Diamond-Blackfan"
+C1806780,0.0,0.2,Cerebrospinal fluid protein increased above normal
+C0426492,0.0,0.0,Small tongue
+C0087012,0.05,0.0,"Ataxia, Spinocerebellar"
+C0853697,0.105,0.185,Neutrophil count decreased
+C0263454,0.13333333333333333,0.06666666666666668,Chloracne
+C0265221,0.45,0.3,Walker-Warburg congenital muscular dystrophy
+C0013336,0.05,0.05,Dwarfism
+C0018418,0.09,0.18666666666666668,Gynecomastia
+C0039231,0.12,0.22000000000000008,Tachycardia
+C0151576,0.04636363636363637,0.05454545454545455,Elevated creatine kinase
+C1855009,0.2155555555555556,0.3011111111111111,Psychomotor regression in infants
+C0032580,0.0,0.0,Adenomatous Polyposis Coli
+C0009398,0.0,0.16666666666666666,Color vision defect
+C0009404,0.023593073593073596,0.03311688311688312,Colorectal Neoplasms
+C0001627,0.2,0.4,Congenital adrenal hyperplasia
+C0001624,0.4,0.5,Adrenal Gland Neoplasms
+C1850456,0.0,0.03333333333333333,Progressive microcephaly
+C0338831,0.0,0.0,Manic
+C4021815,0.55,0.7,Abnormality of the palate
+C0345996,0.2,0.7,Milium Cyst
+C0206762,0.15,0.25,"Limb Deformities, Congenital"
+C0035455,0.1,0.0,Rhinitis
+C0151480,0.35,0.4,Anti-nuclear factor positive
+C0079744,0.09166666666666666,0.13333333333333333,Diffuse Large B-Cell Lymphoma
+C0333913,0.4,0.35,Achromasia
+C1848673,0.09285714285714286,0.11666666666666665,Hypoplastic feet
+C1865186,0.0,0.0,Bell-shaped thorax
+C0158761,0.06666666666666668,0.16666666666666666,Radioulnar Synostosis
+C4021724,0.0,0.2222222222222222,Decreased activity of cytochrome C oxidase in muscle tissue
+C4021727,0.05,0.05,EMG: neuropathic changes
+C4021726,0.15,0.2333333333333333,EMG: myopathic abnormalities
+C0268362,0.5,0.3,Osteogenesis imperfecta type III (disorder)
+C0268363,0.3,0.3,Osteogenesis imperfecta type IV (disorder)
+C2936907,0.8833333333333332,0.8833333333333332,NADH:Q(1) Oxidoreductase deficiency
+C0344482,0.04444444444444444,0.04444444444444444,Hypoplasia of corpus callosum
+C0401151,0.1,0.1,Chronic diarrhea
+C3554617,0.0,0.08333333333333333,Adducted thumb
+C0023290,0.3,0.25,"Leishmaniasis, Visceral"
+C0393706,0.2,0.0,Early infantile epileptic encephalopathy with suppression bursts
+C0235153,0.275,0.275,"Hallucinations, Sensory"
+C0242350,0.16666666666666666,0.125,Erectile dysfunction
+C0026884,0.0,0.0,Mutism
+C0265215,0.65,0.45,Meckel-Gruber syndrome
+C0009375,0.07142857142857142,0.10164835164835163,Colonic Neoplasms
+C1862863,0.025,0.3,Sparse body hair
+C0431380,0.1,0.1,Cortical Dysplasia
+C0023904,0.07666666666666666,0.13666666666666666,"Liver Neoplasms, Experimental"
+C1458140,0.26666666666666666,0.2833333333333333,Bleeding tendency
+C0271901,0.4,0.3,Microcytic hypochromic anemia (disorder)
+C1856661,0.15833333333333333,0.19166666666666665,Cloudy cornea
+C1856660,0.0,0.4,Abnormal helices
+C2936346,0.0,0.0,22q11 Deletion Syndrome
+C0431890,0.0,0.21666666666666665,Hypoplasia of thumb
+C0003504,0.3833333333333333,0.4833333333333333,Aortic Valve Insufficiency
+C0221170,0.0,0.0,Muscular stiffness
+C0740392,0.16666666666666666,0.16666666666666666,"Infarction, Middle Cerebral Artery"
+C0268583,0.3,0.15,Methylmalonic acidemia
+C0740394,0.05,0.0,Hyperuricemia
+C0011882,0.1,0.05,Diabetic Neuropathies
+C1857640,0.2083333333333333,0.2333333333333333,Decreased nerve conduction velocity
+C1857641,0.05,0.2,Severe postnatal growth retardation
+C0011884,0.0,0.0,Diabetic Retinopathy
+C1845977,0.00909090909090909,0.045454545454545456,X- linked recessive
+C0751495,0.0,0.0,"Seizures, Focal"
+C0266294,0.0,0.0,Unilateral agenesis of kidney
+C0266295,0.0,0.0,Congenital hypoplasia of kidney
+C0266292,0.15,0.15,Congenital anomaly of the kidney
+C0007193,0.1375,0.2569444444444445,"Cardiomyopathy, Dilated"
+C0423757,0.11,0.13,Thin skin
+C0030354,0.1,0.3333333333333333,Papilloma
+C0030193,0.014285714285714284,0.07142857142857142,Pain
+C0000768,0.0,0.2,Congenital Abnormality
+C1834752,0.1111111111111111,0.2222222222222222,"MYCOBACTERIUM TUBERCULOSIS, SUSCEPTIBILITY TO (finding)"
+C1839025,0.1,0.1,Decreased amplitudes on flash visual electroretinogram
+C1867103,0.05,0.35,Limited elbow extension
+C0036349,0.05,0.35,Paranoid Schizophrenia
+C1849295,0.2,0.2,Hypoplastic labia minora
+C0266362,0.08333333333333333,0.2,Ambiguous Genitalia
+C0036341,0.046810567010309286,0.05099871134020618,Schizophrenia
+C0037293,0.1,0.4,Skin tag
+C1301509,0.0,0.25,Severe visual impairment
+C0037299,0.14,0.105,Skin Ulcer
+C0001969,0.16666666666666666,0.1,Alcoholic Intoxication
+C4025838,0.2,0.3,Abnormality of the pharynx
+C0162429,0.0,0.0,Malnutrition
+C0431362,0.05,0.3,Lobar Holoprosencephaly
+C0376480,0.09166666666666663,0.05833333333333333,Gingival Overgrowth
+C0021051,0.12424242424242422,0.10757575757575756,Immunologic Deficiency Syndromes
+C0004134,0.2,0.0,Ataxia
+C0233315,0.12142857142857146,0.2833333333333333,Premature birth of newborn
+C0221357,0.0891025641025641,0.0737179487179487,Brachydactyly
+C0221354,0.0575,0.1025,Frontal bossing
+C0021296,0.07450980392156863,0.051960784313725486,"Infant, Small for Gestational Age"
+C0221352,0.04,0.06000000000000001,Syndactyly of fingers
+C0221353,0.05,0.45,Horseshoe Kidney
+C1844820,0.0,0.16666666666666666,Range of joint movement increased
+C4025616,0.15,0.15,CNS hypomyelination
+C4280582,0.0,0.05,Agenesis of eyebrows
+C0004245,0.0,0.0,Atrioventricular Block
+C1856872,0.0,0.2,Sloping shoulders
+C0038379,0.0962962962962963,0.07407407407407407,Strabismus
+C1853237,0.06964285714285715,0.09821428571428573,Isolated cases
+C0266625,0.15,0.25,Preauricular sinus
+C1853235,0.15,0.0,Sclerocornea
+C0236175,0.2,0.4,Elevated IgE
+C0019209,0.06307692307692307,0.11846153846153848,Hepatomegaly
+C0014306,0.08095238095238094,0.08333333333333333,Enophthalmos
+C0019202,0.08333333333333333,0.16666666666666666,Hepatolenticular Degeneration
+C0022408,0.1,0.25,Arthropathy
+C0024115,0.065,0.105,Lung diseases
+C0024117,0.1,0.19166666666666665,Chronic Obstructive Airway Disease
+C0152438,0.0,0.25,Sprengel deformity
+C0743359,0.1733333333333333,0.2333333333333333,ear infection chronic
+C4025723,0.1,0.2,Abnormal upper motor neuron morphology
+C0272027,0.75,0.8,Pyridoxine-responsive sideroblastic anemia
+C0040053,0.265,0.405,Thrombosis
+C0403553,0.4,0.4,Renal dysplasia and retinal aplasia (disorder)
+C0853193,0.0,0.0,Bipolar I disorder
+C1862475,0.04636363636363637,0.19272727272727272,Abnormality of retinal pigmentation
+C4082304,0.08333333333333333,0.0,Oligodontia
+C0240063,0.025,0.075,Coloboma of iris
+C0015695,0.1,0.06666666666666668,Fatty Liver
+C1846439,0.35,0.5,ODONTOID HYPOPLASIA
+C1846950,0.35,0.15,Short middle phalanges
+C0157733,0.05833333333333333,0.03333333333333333,hair abnormalities (non-specific)
+C0014544,0.041688311688311684,0.03256493506493506,Epilepsy
+C1510497,0.02648221343873518,0.07114624505928854,Lens Opacities
+C0162557,0.1,0.03333333333333333,"Liver Failure, Acute"
+C0018790,0.1,0.1,Cardiac Arrest
+C0014549,0.3,0.2,Tonic-Clonic Epilepsy
+C0018799,0.09,0.025,Heart Diseases
+C0022353,0.0,0.2,Neonatal Jaundice
+C0005283,0.2,0.4,beta Thalassemia
+C0032914,0.15,0.2,Pre-Eclampsia
+C0038990,0.1486111111111111,0.2083333333333333,Sweating
+C1836509,0.1,0.3,Hypotonic seizures
+C1840077,0.02690058479532164,0.10643274853801167,Anteverted nostril
+C0426790,0.0,0.07666666666666666,Narrow thorax
+C1836189,0.025,0.2333333333333333,Radially deviated fingers
+C1836184,0.05,0.05,Short femoral neck
+C4021800,0.1,0.2333333333333333,Enamel abnormalities
+C1837458,0.0,0.0,Impaired smooth pursuit
+C0005587,0.0,0.2,"Depression, Bipolar"
+C0334588,0.15,0.25,Giant Cell Glioblastoma
+C0034012,0.14777777777777776,0.06555555555555556,Delayed Puberty
+C1833118,0.3,0.55,"Cataract, Pulverulent"
+C0232466,0.02435897435897436,0.016666666666666666,Feeding difficulties
+C0005910,0.0,0.0,Body Weight
+C1865841,0.2,0.4,Flared iliac wings
+C2609414,0.07142857142857142,0.1,Acute kidney injury
+C1865847,0.0,0.0,Ulnar bowing
+C1860834,0.15,0.25,Infantile muscular hypotonia
+C0034150,0.21666666666666665,0.26666666666666666,Purpura
+C1865060,0.45,0.65,Molar tooth sign on MRI
+C0002452,0.0,0.0,Amelogenesis Imperfecta
+C0240479,0.05,0.35,Neck muscle weakness
+C0027626,0.13241758241758245,0.14615384615384616,Neoplasm Invasiveness
+C0027627,0.1,0.11333333333333333,Neoplasm Metastasis
+C0231791,0.0,0.0,Toeing-in
+C1862095,0.26666666666666666,0.3916666666666667,Bilateral single transverse palmar creases
+C0240278,0.15,0.05,Lymphatic obstruction
+C0040038,0.45,0.5,Thromboembolism
+C1865992,0.4,0.6,Short hallux
+C0032460,0.006666666666666665,0.04583333333333333,Polycystic Ovary Syndrome
+C4021821,0.6,0.65,Abnormality of the urinary system
+C1512419,0.4,0.35,Hereditary Melanoma
+C0345967,0.01,0.06,Malignant mesothelioma
+C0003850,0.4,0.3,Arteriosclerosis
+C0948740,0.1,0.1,Pituitary hypoplasia
+C0029408,0.06893939393939394,0.15757575757575756,Degenerative polyarthritis
+C0025995,0.08666666666666667,0.08333333333333333,Micromelia
+C0029401,0.125,0.0,Osteitis Deformans
+C0042963,0.13560606060606056,0.13636363636363638,Vomiting
+C0018939,0.0,0.1,Hematological Disease
+C1865200,0.1111111111111111,0.3333333333333333,Delayed epiphyseal ossification
+C0235095,0.05,0.3666666666666665,Visual field constriction
+C0241011,0.03333333333333333,0.21666666666666665,Low serum estradiol levels
+C1851792,0.25,0.3,Aplasia/Hypoplasia of the earlobes
+C4023911,0.0,0.0,Aplasia/Hypoplasia of the breasts
+C0151811,0.09,0.13333333333333333,Subcutaneous nodule
+C4021753,0.0,0.25,Abnormality of the immune system
+C1850530,0.05555555555555556,0.07777777777777778,Flexion contractures of joints
+C0220982,0.0,0.5,Ketoacidosis
+C0232513,0.1,0.2,Premature tooth loss
+C0221765,0.0,0.0,Chronic schizophrenia
+C0013274,0.08214285714285714,0.09642857142857142,Patent ductus arteriosus
+C0151639,0.1,0.4,Decreased fertility in females
+C0151632,0.25,0.4,ESR raised
+C0034885,0.45,0.5,Rectal Neoplasms
+C0034880,0.0,0.2,Hyperacusis
+C0375206,0.03333333333333333,0.06666666666666668,Hemiplegia and hemiparesis
+C1142166,0.0,0.2,Brugada Syndrome (disorder)
+C1860127,0.0,0.0,Impaired T cell function
+C0027055,0.2,0.21666666666666665,Myocardial Reperfusion Injury
+C0241703,0.0,0.03333333333333333,High pitched voice
+C0016978,0.3,0.3,gallbladder neoplasm
+C3489396,0.05535714285714286,0.12678571428571428,"Hypogonadism, Isolated Hypogonadotropic"
+C0234144,0.0,0.15,Dysgraphia
+C0234146,0.02222222222222222,0.01111111111111111,Absent reflex
+C0795690,0.05,0.05,Congenital omphalocele
+C0031900,0.1,0.15,Pierre Robin Syndrome
+C0009363,0.08333333333333333,0.2333333333333333,Congenital ocular coloboma (disorder)
+C0271390,0.0,0.1,"Nystagmus, End-Position"
+C1458155,0.07353266888150609,0.10891472868217053,Mammary Neoplasms
+C1839254,0.0,0.2,Small capital femoral epiphyses
+C0020224,0.01111111111111111,0.08472222222222223,Polyhydramnios
+C0431399,0.35,0.2,Familial aplasia of the vermis
+C1445953,0.05,0.0,Poor eye contact
+C1834696,0.0,0.0,Hyporeflexia of lower limbs
+C0085605,0.2714285714285713,0.3553571428571428,Liver Failure
+C0085606,0.0,0.2,Urgency of micturition
+C0427190,0.03333333333333333,0.0,"Ataxia, Truncal"
+C0085602,0.0,0.0,Polydipsia
+C0242383,0.2,0.25,Age related macular degeneration
+C1866134,0.075,0.305,Wide anterior fontanel
+C3714581,0.3366666666666667,0.48,Multicystic Dysplastic Kidney
+C0080178,0.0,0.1,Spina Bifida
+C0007194,0.14444444444444446,0.17916666666666664,Hypertrophic Cardiomyopathy
+C0080174,0.15,0.15,Spina Bifida Occulta
+C0497552,0.0,0.1,Congenital neurologic anomalies
+C1857657,0.0,0.0,Decreased subcutaneous adipose tissue
+C1857656,0.35,0.45,Precociously senile appearance
+C1856786,0.1,0.2,Hypoplastic fingernails
+C1853932,0.05,0.35,Rimmed vacuoles on biopsy
+C1846435,0.25,0.25,Short-trunked dwarfism
+C1846434,0.0,0.05,Hypoplastic scapulae
+C0037199,0.15,0.3,Sinusitis
+C0085110,0.25,0.25,Severe Combined Immunodeficiency
+C0016202,0.05357142857142857,0.16428571428571428,Flatfoot
+C1691215,0.04909090909090909,0.13363636363636364,Penile hypospadias
+C1261473,0.13333333333333333,0.13333333333333333,Sarcoma
+C0221766,0.0,0.2222222222222222,Diastasis recti
+C1844947,0.12222222222222225,0.22361111111111112,Death in early childhood
+C3150281,0.3,0.3,Fetal overgrowth
+C0024232,0.05,0.0,Lymphatic Metastasis
+C1842083,0.0,0.05833333333333333,Abnormality of the ribs
+C0020598,0.0,0.0,Hypocalcemia
+C0235942,0.075,0.1,Skull malformation
+C0239989,0.05,0.15,Decreased IgM
+C0235946,0.011764705882352941,0.005882352941176471,Cerebral atrophy
+C0004096,0.01111111111111111,0.021111111111111112,Asthma
+C0239981,0.0,0.06666666666666668,Hypoalbuminemia
+C4082173,0.0,0.3,Porencephaly
+C0037286,0.14285714285714285,0.15714285714285714,Skin Neoplasms
+C2676676,0.1,0.4,"BREAST-OVARIAN CANCER, FAMILIAL, SUSCEPTIBILITY TO, 1"
+C0030232,0.315,0.4400000000000001,Pallor
+C4025844,0.35,0.7,Chorioretinal abnormality
+C4025846,0.1,0.2083333333333333,Abnormality of vision
+C4025662,0.3,0.3,Abnormality of the ulna
+C4280595,0.2,0.3,Cranial defect
+C0558165,0.6,0.5,Curly hair (finding)
+C4025669,0.0,0.0,Decreased circulating ACTH level
+C0919267,0.1022222222222222,0.12222222222222225,ovarian neoplasm
+C0751688,0.0,0.0,Malignant Squamous Cell Neoplasm
+C0235896,0.15,0.05,Infiltrate of lung
+C0349639,0.35,0.3,Juvenile Myelomonocytic Leukemia
+C0086132,0.1,0.03333333333333333,Depressive Symptoms
+C0042373,0.0,0.0,Vascular Diseases
+C0152427,0.26666666666666666,0.2833333333333333,Polydactyly
+C0152423,0.02,0.04,Congenital small ears
+C1842714,0.0,0.1,Desquamation of skin soon after birth
+C3277418,0.2,0.5,Gastrointestinal hamartomatous polyps
+C0002736,0.06000000000000001,0.06000000000000001,Amyotrophic Lateral Sclerosis
+C0008372,0.15,0.2,Intrahepatic Cholestasis
+C0008370,0.057142857142857134,0.028571428571428567,Cholestasis
+C0400966,0.05,0.0,Non-alcoholic Fatty Liver Disease
+C0699791,0.1,0.15,Stomach Carcinoma
+C1848395,0.45,0.45,Large for gestational age
+C0856863,0.05,0.0,Broad-based gait
+C0018784,0.09047619047619047,0.0693121693121693,Sensorineural Hearing Loss (disorder)
+C0033054,0.0,0.0,Prenatal Exposure Delayed Effects
+C0018781,0.0,0.0,Noise-induced hearing loss
+C0431371,0.1,0.15,Absence of septum pellucidum
+C1836047,0.06964285714285715,0.06964285714285715,Long face
+C1844384,0.35,0.6,Recurrent fungal infections
+C0014067,0.2,0.2,Occipital Encephalocele
+C0014065,0.1,0.1,Congenital cerebral hernia
+C0004509,0.025,0.12499999999999994,Azoospermia
+C0040336,0.0,0.2,Tobacco Use Disorder
+C1844548,0.05,0.2,Hypoplastic finger
+C1858025,0.0,0.35,Spinal rigidity
+C2267233,0.0,0.17142857142857146,Neonatal Hypotonia
+C0014591,0.3,0.36,Epistaxis
+C3806301,0.25,0.25,Scarring alopecia of scalp
+C1862314,0.18333333333333326,0.5666666666666667,Basal cell nevi
+C1836195,0.0,0.12499999999999994,Hypoplastic toes
+C0032273,0.0,0.0,Pneumoconiosis
+C0043094,0.06,0.03,Weight Gain
+C0042798,0.029411764705882356,0.10588235294117647,Low Vision
+C0426870,0.05,0.25,Large hand
+C0853945,0.3,0.9,Oral mucosal blistering
+C3278923,0.008333333333333333,0.04102564102564103,Dilated ventricles (finding)
+C0263498,0.13333333333333333,0.3,Premature canities
+C0028077,0.07083333333333333,0.2986111111111111,Night Blindness
+C1837485,0.0,0.2222222222222222,Flat acetabular roof
+C1837482,0.0,0.0,Thoracic hypoplasia
+C0003466,0.08,0.06000000000000001,"Anus, Imperforate"
+C0003467,0.045454545454545456,0.054545454545454536,Anxiety
+C1260926,0.15,0.2,Abnormal pigmentation
+C0347959,0.3077777777777778,0.4077777777777777,Lactic acidemia
+C0003469,0.025,0.14166666666666666,Anxiety Disorders
+C1836996,0.0,0.25,Marfanoid body habitus
+C0009171,0.15,0.15,Cocaine Abuse
+C0231528,0.04,0.06000000000000001,Myalgia
+C0040028,0.05,0.3,"Thrombocythemia, Essential"
+C0003862,0.05333333333333333,0.08777777777777777,Arthralgia
+C4020838,0.5,0.45,Relative short stature
+C0003864,0.03666666666666667,0.19,Arthritis
+C0043202,0.65,0.45,Wolff-Parkinson-White Syndrome
+C1850309,0.1,0.15,Mildly increased creatine kinase
+C0035126,0.1375,0.18888888888888888,Reperfusion Injury
+C4280616,0.15,0.35,Large elongated pulp chamber
+C0432040,0.08333333333333333,0.1,"Simple syndactyly of toes, first web space"
+C0344559,0.0,0.2222222222222222,Irido-corneo-trabecular dysgenesis (disorder)
+C0018923,0.2,0.05,Hemangiosarcoma
+C4280612,0.05,0.08333333333333333,Decreased width of tooth
+C0018920,0.35,0.6,"Hemangioma, Cavernous"
+C1848654,0.0,0.15,Broad ribs
+C0003886,0.02,0.09333333333333334,Arthrogryposis
+C0018924,0.9,0.8,Hemarthrosis
+C2315100,0.07492492492492492,0.06944444444444445,Pediatric failure to thrive
+C4023909,0.25,0.45,Aplasia/Hypoplasia of the abdominal wall musculature
+C0027125,0.0,0.0,Myotonia
+C1859778,0.05333333333333333,0.09,Postnatal growth retardation
+C0750937,0.0,0.0,"Ataxia, Appendicular"
+C4021745,0.15,0.1,Abnormality of the musculature
+C0151825,0.025,0.1,Bone pain
+C4021741,0.05,0.0,Abnormal cortical bone morphology
+C1838681,0.13333333333333333,0.06666666666666668,Rapidly progressive
+C0022346,0.05,0.2,Icterus
+C0220994,0.13333333333333333,0.3,Hyperammonemia
+C4072822,0.06999999999999999,0.14,Wide bregma sutures
+C0345397,0.0,0.3,Accessory rib
+C1864985,0.04952380952380952,0.021428571428571432,Progressive disorder
+C2752013,0.0071428571428571435,0.058241758241758236,Prenatal onset
+C1856266,0.3,0.3,Coronal craniosynostosis
+C0017565,0.45,0.35,Gingival Hemorrhage
+C1855204,0.15,0.35,Cellular immunodeficiency
+C1839798,0.0,0.0,Long nose
+C0027022,0.3,0.25,Myeloproliferative disease
+C3714757,0.55,0.55,Juvenile rheumatoid arthritis
+C0270612,0.21666666666666665,0.25,Leukoencephalopathies
+C1858574,0.16666666666666666,0.2833333333333333,Sparse axillary hair
+C0234132,0.0,0.0,Pyramidal sign
+C0271215,0.08363636363636365,0.08363636363636362,"Blindness, Legal"
+C1856468,0.045,0.085,"Round, full face"
+C0342276,0.4,0.5,Maturity onset diabetes mellitus in young
+C0175754,0.075,0.0625,Agenesis of corpus callosum
+C0549613,0.25,0.3,BILIARY TRACT ABNORMALITY
+C0242422,0.13333333333333333,0.03666666666666667,Parkinsonian Disorders
+C0677886,0.0,0.0,Epithelial ovarian cancer
+C0085612,0.1,0.1,Ventricular arrhythmia
+C0020452,0.1,0.3,Hyperemia
+C0020455,0.0,0.0,Hypergammaglobulinemia
+C0020456,0.13333333333333333,0.18333333333333326,Hyperglycemia
+C1835884,0.08333333333333333,0.08333333333333333,Triangular face
+C0020459,0.0375,0.09861111111111112,Hyperinsulinism
+C0154676,0.0,0.0,Organic writer's cramp
+C1855685,0.05,0.1,Extinguished electroretinogram
+C1276035,0.0,0.2,Pena-Shokeir syndrome type I
+C0427055,0.05,0.22,Facial Paresis
+C0240735,0.36666666666666653,0.2333333333333333,Personality change
+C0266617,0.016666666666666666,0.09,Congenital anomaly of face
+C0266619,0.3333333333333333,0.4444444444444444,Potter's facies
+C1843921,0.0,0.05,Postural instability
+C0423221,0.0,0.15,Globe of eye large
+C1853141,0.65,0.65,Slow decrease in visual acuity
+C0338451,0.1,0.3,Frontotemporal dementia
+C0085109,0.1,0.2,Corneal Neovascularization
+C0019829,0.0,0.0,Hodgkin Disease
+C0037769,0.05,0.0,West Syndrome
+C0085298,0.06666666666666668,0.13333333333333333,Sudden Cardiac Death
+C0267963,0.0,0.0,Exocrine pancreatic insufficiency
+C0854110,0.15,0.25,Insulin resistant diabetes
+C0029124,0.07142857142857142,0.1285714285714286,Optic Atrophy
+C0239998,0.0,0.02,Recurrent infections
+C0266387,0.0,0.0,Bicornuate uterus
+C0154920,0.15,0.3,Pigmentary iris degeneration
+C0021361,0.21666666666666665,0.18333333333333326,Female infertility
+C0852283,0.0,0.0,Respiratory Distress Syndrome
+C1849073,0.0,0.2833333333333333,Fused vertebrae
+C1860493,0.1,0.3,Sternal anomalies
+C0024591,0.0,0.6,Malignant hyperpyrexia due to anesthesia
+C0041948,0.15,0.2,Uremia
+C1408258,0.2333333333333333,0.1,Kidney damage
+C0020678,0.0,0.15,Hypotrichosis
+C0267812,0.2,0.0,Micronodular cirrhosis
+C0341703,0.0,0.0,Adult Fanconi syndrome
+C0341706,0.5,0.5,Glycinuria
+C0277799,0.0,0.25,Intermittent fever
+C0581342,0.0,0.06666666666666668,Redundant skin
+C0021400,0.2,0.12,Influenza
+C0020672,0.05,0.25,"Hypothermia, natural"
+C0020676,0.02,0.06000000000000001,Hypothyroidism
+C0221629,0.065,0.16499999999999998,Proximal muscle weakness
+C0026267,0.24166666666666664,0.24166666666666664,Mitral Valve Prolapse Syndrome
+C0026266,0.09166666666666666,0.10833333333333332,Mitral Valve Insufficiency
+C0038356,0.05,0.07666666666666669,Stomach Neoplasms
+C0311394,0.06666666666666668,0.0,Difficulty walking
+C0038358,0.0,0.0,Gastric ulcer
+C1854494,0.0,0.04583333333333333,Slow progression
+C0424296,0.05,0.05,Social disinhibition
+C0424295,0.02222222222222222,0.07777777777777778,Hyperactive behavior
+C4280304,0.0,0.12,Curvature of digit
+C0001126,0.0,0.0,Renal tubular acidosis
+C0520927,0.05,0.19166666666666665,Decreased fertility
+C0156394,0.275,0.475,Hypertrophy of clitoris
+C0022680,0.05,0.15,Polycystic Kidney Diseases
+C0019080,0.15,0.2,Hemorrhage
+C0019087,0.06666666666666668,0.33333333333333337,Hemorrhagic Disorders
+C0038220,0.10972222222222223,0.0375,Status Epilepticus
+C0973461,0.03333333333333333,0.03333333333333333,Dysphasia
+C1860475,0.4,0.65,Tortuous retinal vessels
+C0022336,0.0,0.0,Creutzfeldt-Jakob disease
+C0003507,0.05,0.0,Aortic Valve Stenosis
+C1861329,0.0,0.0,Spinal canal stenosis
+C1861324,0.03666666666666667,0.016666666666666666,Short philtrum
+C1836038,0.0,0.0,Poor head control
+C1866141,0.11666666666666665,0.18333333333333326,Foot dorsiflexor weakness
+C0014850,0.36666666666666653,0.3666666666666665,Esophageal Atresia
+C0014859,0.11666666666666665,0.13095238095238096,Esophageal Neoplasms
+C0752347,0.18333333333333326,0.2,Lewy Body Disease
+C4020730,0.0,0.2,Increased intramyocellular lipid droplets
+C1842876,0.085,0.025,Depressed nasal ridge
+C0239174,0.08666666666666667,0.10333333333333332,Late tooth eruption
+C0014457,0.06666666666666668,0.15,Eosinophilia
+C0005937,0.2,0.0,Bone Cysts
+C0311375,0.016666666666666666,0.0,Arsenic Poisoning
+C0398623,0.65,0.7,Thrombophilia
+C0018681,0.05,0.05,Headache
+C1850794,0.0,0.0,"Muscle atrophy, proximal"
+C0033860,0.03666666666666667,0.16666666666666666,Psoriasis
+C0220697,0.15,0.15,"POLYDACTYLY, POSTAXIAL"
+C4083050,0.0,0.13333333333333333,Agenesis of teeth
+C1859424,0.4833333333333333,0.5333333333333333,Increased chromosomal breakage
+C0013581,0.35,0.4,Ectopia Lentis
+C0234860,0.2,0.05,Weak cry
+C0238397,0.1,0.2,Pulmonary artery stenosis
+C0002878,0.14,0.09666666666666664,"Anemia, Hemolytic"
+C0003873,0.06470588235294117,0.07058823529411765,Rheumatoid Arthritis
+C0003872,0.2,0.0,"Arthritis, Psoriatic"
+C0002871,0.06666666666666668,0.03333333333333333,Anemia
+C0002874,0.2,0.45,Aplastic Anemia
+C1840380,0.0,0.0,Persistent cavum septum pellucidum
+C1850171,0.3,0.3,Short limb dwarfism recognizable at birth
+C1837142,0.0,0.0,Poor suck
+C3501843,0.0,0.0,Nonmedullary Thyroid Carcinoma
+C0018916,0.2,0.2,Hemangioma
+C3495559,0.032692307692307694,0.048076923076923066,Juvenile arthritis
+C0028797,0.0,0.0,Occupational Diseases
+C4021776,0.025,0.115,Abnormality of the voice
+C0017979,0.0,0.21666666666666665,Glycosuria
+C1860816,0.1,0.3,Preauricular skin tag
+C0151611,0.06818181818181819,0.18363636363636365,Electroencephalogram abnormal
+C1851971,0.0,0.3,Hypoplastic myelodysplasia
+C0544886,0.14523809523809525,0.17857142857142855,Somatic mutation
+C0017574,0.05,0.0,Gingivitis
+C0016689,0.16666666666666666,0.3416666666666667,Freckles
+C3714745,0.2513888888888889,0.2263888888888889,Malabsorption
+C0006118,0.18333333333333326,0.05,Brain Neoplasms
+C0006111,0.05,0.0,Brain Diseases
+C0494475,0.16,0.255,Tonic - clonic seizures
+C0600427,0.16999999999999998,0.075,Cocaine Dependence
+C0151721,0.18333333333333326,0.2,Testicular hypogonadism
+C0151723,0.0,0.2,Hypomagnesemia
+C0023798,0.1,0.3,Lipoma
+C0085623,0.0,0.2,Akinesia
+C0023794,0.1,0.0,Lipoidosis
+C0008677,0.2,0.2,"Bronchitis, Chronic"
+C0020443,0.075,0.15,Hypercholesterolemia
+C0025958,0.05,0.13333333333333333,Microcephaly
+C4023616,0.2,0.4,Abnormality of immune system physiology
+C0040822,0.054545454545454536,0.05454545454545455,Tremor
+C0007370,0.35,0.45,Catalepsy
+C1849937,0.18333333333333326,0.18333333333333326,"Short limb dwarfism, disproportionate"
+C0023487,0.10833333333333332,0.08333333333333333,Acute Promyelocytic Leukemia
+C0023485,0.1,0.1,Precursor B-Cell Lymphoblastic Leukemia-Lymphoma
+C1843392,0.1,0.0,Death in childhood
+C4049796,0.3333333333333333,0.3,Abnormality of cardiovascular system morphology
+C0010346,0.125,0.125,Crohn Disease
+C1846149,0.10833333333333332,0.175,Progressive mental retardation
+C0037772,0.02,0.145,Spastic Paraplegia
+C0595939,0.0,0.05,Stillbirth
+C1856749,0.25,0.5,Hypoplastic-absent toenails
+C2266639,0.0,0.225,Absence of eyebrows
+C0279680,0.4,0.6,Transitional cell carcinoma of bladder
+C0393525,0.0,0.05,Progressive cerebellar ataxia
+C0241074,0.3083333333333333,0.3083333333333333,Skin hyperelastic
+C4024737,0.1,0.4,Aplasia/Hypoplasia of the skin
+C1262477,0.04818181818181818,0.1272727272727273,Weight decreased
+C1301959,0.15,0.25,Bulbar weakness
+C0023264,0.575,0.6,Leigh Disease
+C1865244,0.2,0.2,Shallow orbits
+C0007570,0.05,0.15,Celiac Disease
+C1842060,0.05,0.2,Prominent supraorbital ridges
+C1840457,0.0,0.2222222222222222,Loss of retinal pigment epithelium
+C0266399,0.15,0.18333333333333326,Infantile uterus
+C0030252,0.25,0.2,Palpitations
+C0149521,0.0,0.0,"Pancreatitis, Chronic"
+C0011168,0.015384615384615384,0.02307692307692308,Deglutition Disorders
+C4025860,0.0,0.0,Hearing abnormality
+C0041974,0.15,0.5,Urethral Stricture
+C0027819,0.165,0.16,Neuroblastoma
+C0581354,0.05,0.15,Recurrent sinusitis
+C2930812,0.16666666666666666,0.3,Generalized elastolysis
+C0024141,0.061904761904761886,0.08095238095238094,"Lupus Erythematosus, Systemic"
+C0035412,0.15,0.25,Rhabdomyosarcoma
+C0001807,0.042857142857142864,0.05535714285714286,Aggressive behavior
+C0025160,0.0,0.2333333333333333,Megacolon
+C0423112,0.25833333333333336,0.38333333333333336,Short palpebral fissure
+C0008350,0.15,0.25,Cholelithiasis
+C0857460,0.25,0.25,Increased number of platelets
+C0038238,0.0,0.0,Steatorrhea
+C0277828,0.06666666666666668,0.11666666666666665,Late fontanel closure
+C1849488,0.2,0.1,Increased serum pyruvate
+C0036601,0.0,0.0,Self Mutilation
+C0022521,0.03333333333333333,0.0,Kartagener Syndrome
+C0442874,0.06000000000000001,0.20000000000000004,Neuropathy
+C0235986,0.1,0.0,Growth hormone excess
+C0005586,0.04931972789115646,0.055442176870748296,Bipolar Disorder
+C0019322,0.0875,0.10357142857142856,Umbilical hernia
+C1844704,0.10666666666666666,0.21,Platyspondyly
+C0005612,0.0,0.0,Birth Weight
+C1961099,0.05,0.15,Precursor T-Cell Lymphoblastic Leukemia-Lymphoma
+C0596263,0.1111111111111111,0.2222222222222222,Carcinogenesis
+C1844527,0.2,0.4,Clitoral hypoplasia
+C1867955,0.08333333333333333,0.11666666666666665,Increased incidence of hepatocellular carcinoma
+C0026034,0.0125,0.05357142857142857,Microstomia
+C4021611,0.1,0.175,Abnormality of epiphysis morphology
+C1390474,0.2,0.3,Increased susceptibility to fractures
+C1836440,0.21,0.4333333333333334,Increased serum lactate
+C0156273,0.3,0.5,Bladder Diverticulum
+C0877056,0.0,0.0,Hypoglycaemic seizure
+C0262374,0.15,0.15,Stricture of anus
+C4020962,0.45,0.3,Enlarged thorax
+C1836150,0.0,0.25,Gait imbalance
+C4020969,0.1,0.0,Inflammatory abnormality of the eye
+C0017168,0.0375,0.09107142857142857,Gastroesophageal reflux disease
+C0575802,0.09166666666666663,0.13333333333333333,Small hand
+C2931822,0.1,0.1,Nasopharyngeal carcinoma
+C0027497,0.0,0.1,Nausea
+C1854113,0.03333333333333333,0.05,Prominent nasal bridge
+C0027498,0.06666666666666668,0.07777777777777778,Nausea and vomiting
+C0013595,0.11,0.2,Eczema
+C0013592,0.1,0.2,Ectropion
+C1854114,0.022527472527472527,0.038461538461538464,Short nose
+C0022658,0.045454545454545456,0.1181818181818182,Kidney Diseases
+C2239176,0.10833333333333332,0.07499999999999997,Liver carcinoma
+C0948089,0.2083333333333333,0.14166666666666666,Acute Coronary Syndrome
+C0029927,0.025,0.08333333333333333,Ovarian Cysts
+C1837770,0.1,0.2,Sparse hair
+C1184923,0.05,0.1,Lumbar lordosis
+C0009024,0.35,0.35,Clonus
+C4021768,0.061538461538461535,0.13076923076923078,Abnormality of metabolism/homeostasis
+C0264142,0.0,0.2,Spade-like hand
+C0576860,0.0,0.35,Narrowing of ear canal
+C1838662,0.05,0.03333333333333333,Metaphyseal irregularity
+C0004158,0.0,0.0,Athetosis
+C0016506,0.0,0.06666666666666668,Foot Deformities
+C0011991,0.07045454545454546,0.08863636363636364,Diarrhea
+C0085584,0.2,0.29500000000000004,Encephalopathies
+C0085580,0.0,0.3,Essential Hypertension
+C0023015,0.35,0.15,Language Disorders
+C0023014,0.2,0.1,Language Development Disorders
+C0026848,0.11,0.07333333333333332,Myopathy
+C0041755,0.05,0.08333333333333333,Adverse reaction to drug
+C0026847,0.15,0.1,Spinal Muscular Atrophy
+C0026846,0.25,0.05,Muscular Atrophy
+C0344539,0.0,0.0,Hypoplasia of iris
+C0031117,0.0,0.02307692307692308,Peripheral Neuropathy
+C0035410,0.3,0.05,Rhabdomyolysis
+C0344530,0.0,0.15,Congenital keratoglobus
+C0344531,0.0,0.45,Embryotoxon
+C1857202,0.7,0.7,Frequent vomiting
+C0020305,0.3,0.16666666666666666,Hydrops Fetalis
+C1857206,0.2,0.3,Laterally sparse eyebrows
+C0023787,0.0,0.0,Lipodystrophy
+C3714796,0.06666666666666668,0.0,Isolated somatotropin deficiency
+C0085636,0.03484848484848485,0.12878787878787878,Photophobia
+C0085631,0.05,0.0,Agitation
+C0085633,0.09821428571428573,0.06785714285714288,Mood swings
+C0085632,0.05,0.15,Apathy
+C1855538,0.2,0.3,Small face
+C0524851,0.05178571428571428,0.1,Neurodegenerative Disorders
+C0027092,0.06060606060606059,0.05833333333333333,Myopia
+C0685409,0.05833333333333333,0.08333333333333333,Congenital Camptodactyly
+C0376634,0.08809523809523809,0.08904761904761904,Craniofacial Abnormalities
+C0020473,0.11666666666666665,0.24166666666666664,Hyperlipidemia
+C3463824,0.025,0.175,MYELODYSPLASTIC SYNDROME
+C0694563,0.15,0.35,Excessive daytime somnolence
+C0747085,0.115,0.19,Recurrent otitis media
+C1449861,0.15,0.2,"Micronuclei, Chromosome-Defective"
+C3887875,0.0,0.15,Visual field defects
+C0009241,0.0,0.06666666666666668,Cognition Disorders
+C0023493,0.16666666666666666,0.18333333333333326,Adult T-Cell Lymphoma/Leukemia
+C0266011,0.0,0.2,Accessory nipple
+C0266013,0.13333333333333333,0.31666666666666665,Congenital hypoplasia of breast
+C0006413,0.2,0.15,Burkitt Lymphoma
+C0578038,0.06000000000000001,0.065,Thin lips
+C0021655,0.09821428571428573,0.14107142857142854,Insulin Resistance
+C0338474,0.4333333333333333,0.5833333333333333,Central nervous system demyelination
+C0011570,0.06133333333333332,0.07316666666666667,Mental Depression
+C0085129,0.0,0.05,Bronchial Hyperreactivity
+C1862939,0.09,0.045,AMYOTROPHIC LATERAL SCLEROSIS 1
+C0007095,0.0,0.0,Carcinoid Tumor
+C1839758,0.0,0.05833333333333333,Narrow forehead
+C1848736,0.0,0.06000000000000001,Distal amyotrophy
+C1843700,0.0,0.0,Variation in muscle fiber size
+C2364082,0.1,0.2,Sense of smell impaired
+C0027659,0.16666666666666666,0.24166666666666664,"Neoplasms, Experimental"
+C1876165,0.0,0.1,Copper-Overload Cirrhosis
+C0000786,0.10833333333333332,0.09015151515151516,Spontaneous abortion
+C1442988,0.15,0.65,Rudimentary vagina
+C0427546,0.0,0.3,Atypical lymphocyte observed
+C0497327,0.12857142857142856,0.028571428571428567,Dementia
+C0266122,0.06666666666666668,0.03333333333333333,Cleft uvula
+C0750857,0.08333333333333333,0.0,Alkaline phosphatase serum increased
+C0001925,0.1,0.15,Albuminuria
+C4024878,0.16666666666666666,0.2833333333333333,Generalized hyperpigmentation
+C0011175,0.13333333333333333,0.2083333333333333,Dehydration
+C0040588,0.3083333333333333,0.5083333333333333,Tracheoesophageal Fistula
+C0020302,0.05,0.2,Hydrophthalmos
+C0007787,0.4,0.2,Transient Ischemic Attack
+C0007786,0.14305555555555555,0.14444444444444446,Brain Ischemia
+C0007785,0.3,0.4,Cerebral Infarction
+C0007789,0.0,0.05,Cerebral Palsy
+C0020651,0.15,0.2,"Hypotension, Orthostatic"
+C0206160,0.0,0.2,Reticulocytosis
+C0162285,0.0,0.0,Edema of eyelid
+C1969913,0.45,0.7,"Hyperkeratosis, generalized"
+C0236736,0.14166666666666666,0.17916666666666664,Cocaine-Related Disorders
+C0236733,0.08035714285714285,0.028571428571428567,Amphetamine-Related Disorders
+C0338656,0.01,0.14333333333333334,Impaired cognition
+C2711227,0.045,0.13,Steatohepatitis
+C0221263,0.275,0.4,Cafe-au-Lait Spots
+C0221260,0.22666666666666666,0.4566666666666667,Dystrophia unguium
+C0008325,0.5,0.45,Cholecystitis
+C1866234,0.04,0.09,Protruding lower lip
+C4022996,0.0,0.55,Abnormal sex determination
+C4022995,0.1,0.4,Sex reversal
+C0576093,0.08666666666666667,0.19333333333333333,Knee joint valgus deformity
+C0005138,0.0,0.0,Berylliosis
+C0541764,0.0967032967032967,0.10384615384615384,Delayed bone age
+C4025252,0.0,0.35,Abnormal nasal morphology
+C0751466,0.2,0.4,Phonophobia
+C0022821,0.06969696969696969,0.11439393939393938,Kyphosis deformity of spine
+C0423867,0.025,0.16499999999999998,Fine hair
+C0920299,0.0,0.0,Overriding toe
+C4025650,0.0,0.2222222222222222,Abnormality of lipid metabolism
+C1328931,0.5,0.6,Multiple lentigines
+C0027796,0.0,0.0,Neuralgia
+C0027794,0.03333333333333333,0.03333333333333333,Neural Tube Defects
+C2673410,0.03818181818181818,0.07636363636363637,Small midface
+C0008031,0.1,0.15,Chest Pain
+C0014877,0.0,0.15,Esotropia
+C1271100,0.0,0.0,Lower limb spasticity
+C1849340,0.15,0.4,Long palpebral fissure
+C0752166,0.55,0.5833333333333333,Bardet-Biedl Syndrome
+C0014474,0.25,0.3,Ependymoma
+C0025202,0.009761904761904763,0.05904761904761905,melanoma
+C0426848,0.0,0.1,Sacral dimples
+C4021975,0.0,0.0,Abnormality of the tonsils
+C4021977,0.2,0.4,Visceral angiomatosis
+C1865027,0.2,0.25,Hypoplastic iliac wing
+C0032285,0.1375,0.18333333333333326,Pneumonia
+C1836940,0.13333333333333333,0.26666666666666666,Excess nuchal skin
+C1850496,0.0,0.0,Neuronal loss
+C0033805,0.2,0.4,Pseudohypoaldosteronism
+C0521525,0.04285714285714285,0.05,Short neck
+C0002418,0.1,0.4,Amblyopia
+C0522214,0.06666666666666668,0.21666666666666665,Abnormal visual evoked potential
+C0002896,0.0,0.0,Sideroblastic anemia
+C0263537,0.4,0.4,Onychogryposis
+C1856963,0.0,0.25,Fragile nails
+C1836543,0.0,0.15,Thick vermilion border
+C1306710,0.225,0.25833333333333336,Facial asymmetry
+C0206733,0.3,0.4,Strawberry nevus of skin
+C0432073,0.0,0.0,Defect of skull ossification
+C0268731,0.0,0.0,Renal glomerular disease
+C0855740,0.45,0.6,Abnormal platelet function
+C0158734,0.35,0.2,Polydactyly of toes
+C0158731,0.12333333333333332,0.16,Congenital pectus carinatum
+C0018979,0.5,0.5,Hemianopsia
+C0158733,0.15,0.05,Hand polydactyly
+C4021790,0.0,0.0,Abnormality of the skeletal system
+C4021792,0.2,0.2,Abnormality of the clavicle
+C4021797,0.0,0.05,Abnormality of the thorax
+C0017178,0.0,0.2,Gastrointestinal Diseases
+C1850573,0.15,0.15,Slender build
+C0948896,0.19166666666666665,0.13333333333333333,Primary hypogonadism
+C0011616,0.07142857142857142,0.028571428571428567,Contact Dermatitis
+C0011615,0.3583333333333333,0.3416666666666667,"Dermatitis, Atopic"
+C0035579,0.1,0.0,Rickets
+C3277059,0.18,0.18,Congenital Bilateral Cataracts
+C1866934,0.255,0.31,Decreased to absent deep tendon reflexes
+C0018801,0.057916666666666665,0.05666666666666665,Heart failure
+C0018802,0.13571428571428573,0.09047619047619047,Congestive heart failure
+C0026838,0.11210526315789476,0.1326315789473684,Muscle Spasticity
+C0026837,0.04,0.06000000000000001,Muscle Rigidity
+C0241181,0.3,0.5,Fragile skin
+C0009324,0.11333333333333333,0.09,Ulcerative Colitis
+C1856438,0.45,0.5,Hypoketotic hypoglycemia
+C0271578,0.1,0.3,Female hypogonadism syndrome
+C1858729,0.0,0.05,Decreased motor NCV
+C1838608,0.0,0.45,Radial aplasia
+C0031256,0.4,0.25,Petechiae
+C0034372,0.0,0.0,Quadriplegia
+C0020461,0.15,0.25,Hyperkalemia
+C1865572,0.2,0.2,Proximally placed thumbs
+C3279222,0.25,0.27,Cerebellar hypoplasia and atrophy
+C0003123,0.175,0.195,Anorexia
+C2749675,0.0,0.05,Cortical gyral simplification
+C0003126,0.1,0.2,Anosmia
+C1839326,0.06666666666666668,0.2333333333333333,Abnormally-shaped vertebrae
+C0409354,0.2,0.2,Flexion contracture of hip
+C0023467,0.05705128205128205,0.05,"Leukemia, Myelocytic, Acute"
+C3714497,0.1,0.13333333333333333,Reactive airway disease
+C1167918,0.625,0.7083333333333333,CSF lactate increased
+C0007134,0.021978021978021976,0.0879120879120879,Renal Cell Carcinoma
+C1857108,0.09666666666666666,0.11666666666666667,Decreased joint mobility
+C0007137,0.14924242424242426,0.16742424242424242,Squamous cell carcinoma
+C0007131,0.06545454545454546,0.04818181818181818,Non-Small Cell Lung Carcinoma
+C0677050,0.2,0.1,Manganese Poisoning
+C0242698,0.0,0.0,"Ventricular Dysfunction, Left"
+C0243050,0.06666666666666668,0.2333333333333333,Cardiovascular Abnormalities
+C0007138,0.18333333333333326,0.1,"Carcinoma, Transitional Cell"
+C0751883,0.2,0.75,"Congenital Myasthenic Syndromes, Postsynaptic"
+C0085271,0.1,0.0,Self-Injurious Behavior
+C0085159,0.5,0.0,Seasonal Affective Disorder
+C0039621,0.0,0.1,Tetany
+C0029172,0.45,0.4,Oral Submucous Fibrosis
+C0027947,0.0,0.2,Neutropenia
+C4072825,0.13090909090909092,0.15909090909090912,Thickened facial skin with coarse facial features
+C0266483,0.0,0.09,Pachygyria
+C3665596,0.3,0.3,Warts
+C0497202,0.0,0.1,Abnormal ocular motility
+C0007222,0.06666666666666668,0.12,Cardiovascular Diseases
+C0017563,0.4,0.6,Gingival Diseases
+C0242184,0.08333333333333333,0.05833333333333333,Hypoxia
+C0010964,0.2333333333333333,0.2,Dandy-Walker Syndrome
+C0025261,0.025,0.13333333333333333,Memory Disorders
+C0239946,0.13333333333333333,0.125,"Fibrosis, Liver"
+C0037822,0.03333333333333333,0.11666666666666665,Speech Disorders
+C0566899,0.25,0.35,Small labia majora
+C0024305,0.26666666666666666,0.2,"Lymphoma, Non-Hodgkin"
+C0024301,0.0,0.0,"Lymphoma, Follicular"
+C0023518,0.25,0.15,Leukocytosis
+C0020649,0.12361111111111113,0.18333333333333326,Hypotension
+C0745730,0.0,0.0,Multiple lipomata
+C0870082,0.05,0.135,Hyperkeratosis
+C1854912,0.06666666666666668,0.2333333333333333,Short tubular bones
+C1853241,0.15666666666666668,0.31000000000000005,Flat face
+C0424711,0.06666666666666668,0.06666666666666668,Orbital separation diminished
+C1849134,0.0,0.25,Decreased lower limb vibratory sense
+C0751401,0.2,0.3,Ophthalmoparesis
+C0025149,0.11666666666666667,0.21666666666666665,Medulloblastoma
+C1835452,0.31666666666666665,0.3,Hypoplastic ovary
+C2677328,0.45,0.45,Brain hypomyelination
+C4025790,0.02,0.085,Specific learning disability
+C1861866,0.08333333333333333,0.13333333333333333,Hypoplasia or absence of the corpus callosum
+C1843663,0.0,0.15,Sphincter disturbances
+C1319853,0.15,0.0,"Asthma, Aspirin-Induced"
+C1398312,0.2,0.35,Narrow palate
+C0152191,0.5,0.6,"Scotoma, Central"
+C0850715,0.0,0.2,Abnormality of blood and blood-forming tissues
+C1853487,0.20000000000000004,0.18,Bushy eyebrows
+C0018213,0.0,0.1,Graves Disease
+C0262655,0.08333333333333333,0.11666666666666665,Recurrent urinary tract infection
+C0037221,0.0,0.0,Situs Inversus
+C0553692,0.05,0.35,Brain hemorrhage
+C0025323,0.6,0.7,Menorrhagia
+C0025322,0.2,0.3333333333333333,Premature Menopause
+C0004238,0.075,0.08333333333333333,Atrial Fibrillation
+C0019189,0.15,0.2833333333333333,"Hepatitis, Chronic"
+C0004943,0.0,0.16666666666666666,Behcet Syndrome
+C0021359,0.05,0.0,Infertility
+C1844505,0.125,0.08333333333333333,Pointed chin
+C3275417,0.3833333333333333,0.4333333333333333,Ragged-red fibers
+C0162835,0.11666666666666665,0.2,Hypopigmentation disorder
+C0162834,0.03333333333333333,0.175,Hyperpigmentation
+C0027540,0.12000000000000002,0.14,Necrosis
+C0234133,0.0,0.06666666666666668,Extrapyramidal sign
+C0013604,0.028571428571428567,0.05952380952380953,Edema
+C0005944,0.0,0.1,Metabolic Bone Disorder
+C0005941,0.0,0.0,"Bone Diseases, Developmental"
+C0042514,0.2,0.08333333333333333,"Tachycardia, Ventricular"
+C1840069,0.0,0.0,Sandal gap
+C0042510,0.05,0.3,Ventricular Fibrillation
+C1865017,0.07142857142857142,0.028571428571428567,Thin upper lip vermilion
+C0013421,0.15833333333333333,0.19318181818181807,Dystonia
+C1456784,0.0,0.0,Paranoia
+C0522224,0.025,0.0,Paralysed
+C0426891,0.1,0.15,Broad thumbs
+C0553980,0.1,0.1,Endomyocardial Fibrosis
+C0239234,0.04477124183006535,0.07843137254901962,Low set ears
+C0263523,0.0,0.18333333333333326,Micronychia (disorder)
+C0026827,0.051127819548872175,0.03546365914786967,Muscle hypotonia
+C0002880,0.15,0.2,Autoimmune hemolytic anemia
+C0002888,0.05,0.3,"Anemia, Megaloblastic"
+C0746674,0.09,0.05666666666666665,Generalized muscle weakness
+C1836003,0.2,0.0,Facial diplegia
+C0018564,0.31666666666666665,0.4166666666666666,Hand deformities
+C1961102,0.135,0.095,Precursor Cell Lymphoblastic Leukemia Lymphoma
+C0878544,0.06287878787878788,0.06363636363636364,Cardiomyopathies
+C0018965,0.03333333333333333,0.025,Hematuria
+C1840379,0.15,0.18333333333333326,Cerebellar vermis hypoplasia
+C0265965,0.3,0.55,Dyskeratosis Congenita
+C4021782,0.06000000000000001,0.18,Abnormality of the fingernails
+C4021780,0.6166666666666666,0.6166666666666666,Abnormality of the liver
+C1280433,0.15,0.1,Lipoatrophy
+C4021785,0.2,0.2,Abnormality of the metacarpal bones
+C0521620,0.0,0.2,Dilatation of ureter
+C0011581,0.03846153846153845,0.05641025641025641,Depressive disorder
+C0027765,0.07666666666666667,0.03666666666666667,nervous system disorder
+C0151514,0.16666666666666666,0.31666666666666665,Atrophic condition of skin
+C0022665,0.2333333333333333,0.16666666666666666,Kidney Neoplasm
+C0013132,0.08333333333333333,0.11666666666666665,Drooling
+C0151889,0.0911904761904762,0.058571428571428566,Hyperreflexia
+C0011606,0.16666666666666666,0.21666666666666665,Exfoliative dermatitis
+C0011609,0.15,0.05,Drug Eruptions
+C3203358,0.0,0.0,Hypoventilation
+C0018818,0.02575757575757576,0.06818181818181819,Ventricular Septal Defects
+C0162671,0.9,0.7,MELAS Syndrome
+C0018817,0.059722222222222225,0.11527777777777776,Atrial Septal Defects
+C0018816,0.03333333333333333,0.13333333333333333,Heart Septal Defects
+C1855081,0.4,0.4,"MICROCEPHALY, PRIMARY AUTOSOMAL RECESSIVE, 1"
+C0006142,0.4,0.55,Malignant neoplasm of breast
+C0009319,0.06666666666666668,0.15833333333333333,Colitis
+C3887524,0.15,0.45,Skin Erosion
+C0392476,0.2,0.55,Epiphyseal dysplasia
+C0026826,0.125,0.10277777777777776,Muscle Hypertonia
+C0026821,0.02,0.016666666666666666,Muscle Cramp
+C0018553,0.1111111111111111,0.4444444444444444,"Hamartoma Syndrome, Multiple"
+C0700208,0.08546798029556649,0.09963054187192118,Acquired scoliosis
+C0700078,0.09935897435897437,0.05705128205128205,Decreased tendon reflex
+C3665349,0.1,0.1,Secondary hypothyroidism
+C1720887,0.0,0.35,Female Urogenital Diseases
+C0427149,0.08333333333333333,0.0,"Gait, Drop Foot"
+C1834405,0.15666666666666668,0.3066666666666667,Nail dysplasia
+C0432333,0.45,0.4333333333333333,Abnormal dermatoglyphic pattern
+C0003119,0.1,0.0,Anophthalmos
+C1389113,0.0,0.0,Generalized amyotrophy
+C0020514,0.0,0.0,Hyperprolactinemia
+C0023473,0.25,0.4166666666666666,"Myeloid Leukemia, Chronic"
+C0023470,0.4,0.45,Myeloid Leukemia
+C0265563,0.1,0.15,Congenital dislocation of radial head
+C1849075,0.0,0.0,Relative macrocephaly
+C0409348,0.0375,0.06428571428571428,Flexion contracture of proximal interphalangeal joint
+C0016522,0.0,0.2,"Foramen Ovale, Patent"
+C0542518,0.0,0.2,Enlarged kidney
+C0542519,0.06666666666666668,0.16666666666666666,Congenital absence of kidney
+C0007120,0.15,0.3,Bronchioloalveolar Adenocarcinoma
+C0243026,0.2,0.13333333333333333,Sepsis
+C0542514,0.15,0.15,Blue sclera
+C3160718,0.0,0.1,"PARKINSON DISEASE, LATE-ONSET"
+C0858867,0.5,0.7,Reticulocytopenia
+C0028326,0.65,0.65,Noonan Syndrome
+C0745103,0.4,0.4,Hyperlipoproteinemia Type IIa
+C0037926,0.0,0.0,Compression of spinal cord
+C1849039,0.2,0.2,Metaphyseal widening
+C0431659,0.0,0.03333333333333333,Hypoplasia of scrotum
+C1136179,0.0,0.0,Hammer Toe
+C4024780,0.5333333333333334,0.6333333333333333,Almond-shaped eyes
+C0030044,0.2,0.2,Acrocephaly
+C4024890,0.2,0.25,Excessive wrinkled skin
+C0024312,0.025,0.075,Lymphopenia
+C1956257,0.115,0.155,Pulmonary Stenosis
+C0581381,0.3833333333333333,0.45,Recurrent upper respiratory tract infection
+C1857486,0.08181818181818183,0.17272727272727273,"Low-set, posteriorly rotated ears"
+C0266589,0.0,0.1,Congenital ear anomaly NOS (disorder)
+C0024530,0.1,0.1,Malaria
+C0423110,0.08833333333333332,0.12,Downward slant of palpebral fissure
+C1858285,0.0,0.0,Decreased number of large and small myelinated fibers
+C0423113,0.03333333333333333,0.047619047619047616,Telecanthus
+C1854928,0.0,0.15,Protuberant abdomen
+C0036454,0.1,0.2,Scotoma
+C0010606,0.08,0.0711111111111111,Adenoid Cystic Carcinoma
+C0349588,0.04945573294629898,0.05137880986937591,Short stature
+C1849923,0.0,0.0,Generalized hypopigmentation
+C0575059,0.0,0.0,Spastic tetraparesis
+C3808377,0.35,0.6,"CATARACT 16, MULTIPLE TYPES"
+C0240635,0.051578947368421064,0.11973684210526316,Byzanthine arch palate
+C0221204,0.0,0.05833333333333333,Lytic lesion
+C1800706,0.0,0.0,Idiopathic Pulmonary Fibrosis
+C0036857,0.09666666666666668,0.08555555555555558,Severe mental retardation (I.Q. 20-34)
+C0240912,0.08333333333333333,0.16666666666666666,Vertical Talus
+C4280630,0.0,0.0,Pinched bridge of nose
+C0520966,0.0,0.0,Abnormal coordination
+C0553730,0.0,0.15,Calcium pyrophosphate deposition disease
+C0019284,0.175,0.05,Diaphragmatic Hernia
+C0282612,0.2,0.2,Prostatic Intraepithelial Neoplasias
+C0850703,0.0,0.2,Frequent falls
+C1849211,0.125,0.15,Generalized hirsutism
+C0018777,0.0590909090909091,0.05833333333333333,Conductive hearing loss
+C2830004,0.05,0.1,Somnolence
+C0236663,0.0,0.0,Alcohol withdrawal syndrome
+C0019196,0.0,0.1,Hepatitis C
+C0178417,0.0,0.1,Anhedonia
+C0015672,0.04385964912280702,0.08304093567251461,Fatigue
+C4020958,0.35,0.5,Rough bone trabeculation
+C0426429,0.0,0.0,Broad nasal tip
+C0162809,0.1,0.2,Kallmann Syndrome
+C0238288,0.0,0.1,"Muscular Dystrophy, Facioscapulohumeral"
+C0426421,0.05833333333333333,0.05833333333333333,Wide nose
+C1263857,0.0,0.0,Peripheral axonal neuropathy
+C0020255,0.054545454545454536,0.07196969696969699,Hydrocephalus
+C0034065,0.3333333333333333,0.4333333333333333,Pulmonary Embolism
+C1849367,0.034420289855072464,0.08659420289855073,Nasal bridge wide
+C1832117,0.0,0.0,Short upper arms
+C1846803,0.1,0.4,Small epiphyses
+C0239138,0.08333333333333333,0.13333333333333333,Hip joint varus deformity - observation
+C0687120,0.25,0.35,Nephronophthisis
+C1333990,0.5,0.6,Hereditary Nonpolyposis Colorectal Cancer
+C0013386,0.2,0.2,"Dyskinesia, Drug-Induced"
+C0013384,0.05,0.0,Dyskinetic syndrome
+C1858120,0.025,0.0,Generalized hypotonia
+C1858127,0.0,0.4,Limb-girdle muscle weakness
+C0426886,0.0,0.03333333333333333,Tapering fingers (finding)
+C3536741,0.0,0.2,Discordant ventriculoarterial connection
+C0015923,0.0,0.0,Fetal Alcohol Syndrome
+C0238669,0.35,0.45,Aortic root dilatation
+C0917796,0.7,0.7,"Optic Atrophy, Hereditary, Leber"
+C4021551,0.13333333333333333,0.2333333333333333,Absence of secondary sex characteristics
+C3553764,0.1392857142857143,0.2321428571428571,Joint hyperflexibility
+C1859461,0.0,0.15,Femoral bowing
+C0008519,0.15,0.25,Ectopic Tissue
+C0917798,0.16666666666666666,0.31666666666666665,Cerebral Ischemia
+C0022661,0.115,0.095,"Kidney Failure, Chronic"
+C0334634,0.35,0.0,"Malignant lymphoma, lymphocytic, intermediate differentiation, diffuse"
+C0014038,0.3,0.4,Encephalitis
+C3806482,0.042857142857142864,0.0857142857142857,Recurrent respiratory infections
+C1142533,0.025,0.06999999999999999,Smooth philtrum
+C0017601,0.02575757575757576,0.1189393939393939,Glaucoma
+C1833999,0.0,0.0,Pigmentary retinal degeneration
+C0878575,0.0,0.15,Peripheral demyelination
+C0684276,0.0,0.15,Hypsarrhythmia
+C0022116,0.03333333333333333,0.08333333333333333,Ischemia
+C1833225,0.0,0.2,Dystrophic toenail changes
+C0520743,0.2,0.35,Mediastinal lymphadenopathy
+C0040128,0.0,0.0,Thyroid Diseases
+C1389280,0.1,0.2,Basal ganglia calcification
+C3278401,0.0,0.05,Hair hypopigmentation
+C0028754,0.031230769230769232,0.05046153846153847,Obesity
+C1857949,0.15,0.45,Prominent metopic ridge
+C0086795,0.8,0.9,Pfaundler-Hurler Syndrome
+C0264172,0.0,0.2,Barrel chest
+C0206620,0.35,0.4,"Lymphangioma, Cystic"
+C0151878,0.3,0.4,Prolonged QT interval
+C0541794,0.09395604395604397,0.03571428571428571,Skeletal muscle atrophy
+C2931456,0.2,0.15,"Prostate cancer, familial"
+C0151891,0.0,0.3,Retinal depigmentation
+C0018824,0.125,0.24166666666666664,Heart valve disease
+C1855728,0.13666666666666666,0.2533333333333333,Low posterior hairline
+C0006157,0.2,0.2,Breech Presentation
+C0026764,0.1,0.05833333333333333,Multiple Myeloma
+C0476403,0.08,0.12000000000000002,Electromyogram abnormal
+C0026769,0.075,0.08333333333333333,Multiple Sclerosis
+C0600467,0.0,0.1,Neurogenic Inflammation
+C0162820,0.016666666666666666,0.016666666666666666,"Dermatitis, Allergic Contact"
+C2931673,0.0,0.0,"Ceroid lipofuscinosis, neuronal 1, infantile"
+C0231712,0.15833333333333333,0.2,Waddling gait
+C1850135,0.0,0.0,Splayed metaphyses
+C0584837,0.2,0.2,Choanal stenosis
+C1522137,0.075,0.05833333333333333,Hypertriglyceridemia result
+C0917805,0.15,0.2,Transient Cerebral Ischemia
+C0917801,0.0,0.25,Sleeplessness
+C0271650,0.2,0.06666666666666668,Impaired glucose tolerance
+C4022588,0.14999999999999994,0.0,Fatigable weakness of swallowing muscles
+C0597167,0.25,0.4,Islets of Langerhans hyperplasia
+C0023890,0.13333333333333333,0.1423076923076923,Liver Cirrhosis
+C0525045,0.06699346405228758,0.07222222222222223,Mood Disorders
+C1298695,0.2,0.25,Hypoplasia of optic disc
+C0234632,0.06999999999999999,0.13666666666666666,Reduced visual acuity
+C4024665,0.0,0.15,High-grade hypermetropia
+C1167713,0.165,0.23,Corneal diameter decreased
+C0021843,0.25,0.45,Intestinal Obstruction
+C0702166,0.0,0.05833333333333333,Acne
+C1834055,0.0,0.13333333333333336,Thin hypoplastic alae nasi
+C0476273,0.05,0.1,Respiratory distress
+C1860236,0.4,0.4333333333333333,Irregular hyperpigmentation
+C0027960,0.25,0.05,Nevus
+C0027962,0.16499999999999998,0.25,Melanocytic nevus
+C0020538,0.08004926108374384,0.1147783251231527,Hypertensive disease
+C0235659,0.0,0.06000000000000001,Reduced fetal movement
+C0270685,0.175,0.175,Cerebral calcification
+C0030297,0.13055555555555556,0.14027777777777778,Pancreatic Neoplasm
+C1849020,0.15,0.18333333333333326,Short metatarsal
+C4011556,0.3,0.0,Eyebrow abnormalities
+C1145628,0.0,0.0,Autonomic nervous system disorders
+C2749463,0.4166666666666666,0.4833333333333333,Radial aplasia/hypoplasia
+C1865037,0.18333333333333326,0.2,Cone-shaped epiphyses
+C0595929,0.1,0.3333333333333333,Serum cholesterol raised
+C0020626,0.0,0.0,Hypoparathyroidism
+C0020625,0.3333333333333333,0.4166666666666666,Hyponatremia
+C3809811,0.2,0.4,"PARKINSON DISEASE 19, JUVENILE-ONSET"
+C0424551,0.37,0.41,Impaired exercise tolerance
+C0020621,0.0,0.0,Hypokalemia
+C0020620,0.0,0.21666666666666665,Hypohidrosis
+C0554970,0.25833333333333336,0.3583333333333333,Pallor of optic disc
+C0023532,0.36666666666666653,0.65,"Leukoplakia, Oral"
+C0007117,0.105,0.195,Basal cell carcinoma
+C0007114,0.2,0.2,Malignant neoplasm of skin
+C0423109,0.014285714285714284,0.1964285714285714,Upward slant of palpebral fissure
+C1321884,0.1,0.1,Atresia of vagina
+C0424731,0.06666666666666668,0.2,Single transverse palmar crease
+C1835473,0.15,0.15,Diaphyseal thickening
+C0563243,0.4,0.45,Poor coordination
+C0221217,0.26666666666666666,0.3333333333333333,Neck webbing
+C0024437,0.0,0.2,Macular degeneration
+C0279628,0.0,0.1,Adenocarcinoma Of Esophagus
+C1843687,0.2,0.15,"ATRIAL FIBRILLATION, FAMILIAL, 1 (disorder)"
+C0024433,0.11428571428571427,0.14107142857142854,Macrostomia
+C0993582,0.20833333333333331,0.2,"Arthritis, Experimental"
+C0020757,0.25,0.375,Ichthyoses
+C0279626,0.09285714285714283,0.07857142857142856,Squamous cell carcinoma of esophagus
+C4280623,0.11785714285714285,0.1732142857142857,Rotting teeth
+C0553723,0.2,0.5,Squamous cell carcinoma of skin
+C1842153,0.15,0.35,Irregular vertebral endplates
+C4280629,0.0,0.2,Hyperplasia of nose
+C0038271,0.08333333333333333,0.08333333333333333,Stereotyped Behavior
+C0162154,0.65,0.65,Atrophic scar
+C0015397,0.0,0.0,Disorder of eye
+C0015393,0.05,0.0,Eye Abnormalities
+C0004782,0.2,0.2,Basal Ganglia Diseases
+C0019163,0.45,0.1,Hepatitis B
+C0162323,0.4,0.55,Polyarthritis
+C1263846,0.06,0.1,Attention deficit hyperactivity disorder
+C0004763,0.1,0.0,Barrett Esophagus
+C0239105,0.35,0.6,Conjunctival telangiectasis
+C1837066,0.15,0.3,Recurrent viral infections
+C0008311,0.0,0.1,Cholangitis
+C0008312,0.0,0.0,Primary biliary cirrhosis
+C0028960,0.0,0.0,Oligospermia
+C0027697,0.3,0.15,Nephritis
+C1861063,0.2,0.3,"TOBACCO ADDICTION, SUSCEPTIBILITY TO (finding)"
+C4048273,0.0,0.2,Chorioretinal atrophy
+C0026106,0.0,0.028571428571428567,Mild Mental Retardation
+C4020899,0.024113475177304958,0.01914893617021277,Autosomal recessive predisposition
+C4020892,0.1,0.1,Capuchin ears
+C0032617,0.0,0.1,Polyuria
+C0262361,0.4333333333333333,0.4166666666666666,abnormal growth
+C0017636,0.14107142857142854,0.15535714285714286,Glioblastoma
+C0013575,0.0,0.0,Ectodermal Dysplasia
+C1837731,0.0,0.0,Overfolded helix
+C1837732,0.45,0.4,Thickened helices
+C1847514,0.05,0.05,Postnatal microcephaly
+C0545053,0.025,0.08333333333333333,Advanced bone age
+C0017638,0.06785714285714288,0.11071428571428572,Glioma
+C0017639,0.18666666666666668,0.18,Gliosis
+C0240379,0.0,0.025,Open mouth
+C0013080,0.2,0.0,Down Syndrome
+C1859717,0.2,0.3,Depressed nasal tip
+C0040136,0.10833333333333332,0.11666666666666665,Thyroid Neoplasm
+C0027746,0.0931818181818182,0.06666666666666668,Nerve Degeneration
+C1837352,0.0,0.025,Childhood onset
+C3839753,0.2,0.35,Abnormality of nail of toe
+C0013404,0.0,0.04523809523809523,Dyspnea
+C0151311,0.25,0.45,Cranial nerve palsies
+C0151313,0.0,0.0,Sensory neuropathy
+C1855710,0.15,0.3,Bone marrow hypocellularity
+C1839972,0.3,0.2,Increased IgM levels
+C4022020,0.2,0.4,Mucosal telangiectasiae
+C0344312,0.05,0.45,White forelock
+C0344315,0.0,0.0,Depressed mood
+C0232940,0.31666666666666665,0.31666666666666665,Secondary physiologic amenorrhea
+C0242339,0.08333333333333333,0.13333333333333333,Dyslipidemias
+C0432355,0.2,0.1,Hypoplasia of nipple
+C0020437,0.0,0.125,Hypercalcemia
+C0158113,0.0,0.0,Contracture of joint of hand
+C3665386,0.2,0.15999999999999998,Abnormal vision
+C0023903,0.06060606060606059,0.1037878787878788,Liver neoplasms
+C0020438,0.0,0.13333333333333333,Hypercalciuria
+C3887611,0.3,0.05,Restlessness
+C0392525,0.03333333333333333,0.1,Nephrolithiasis
+C0678222,0.26666666666666666,0.4833333333333333,Breast Carcinoma
+C0023186,0.03333333333333333,0.0,Learning Disorders
+C0271183,0.0,0.25,Severe myopia
+C0270853,0.0,0.0,"Myoclonic Epilepsy, Juvenile"
+C0270850,0.0,0.0,Idiopathic generalized epilepsy
+C1621895,0.1,0.3,Adrenal hyperplasia
+C0085762,0.145,0.02,Alcohol abuse
+C0020507,0.06666666666666668,0.06666666666666668,Hyperplasia
+C0040433,0.095,0.1,Tooth Crowding
+C0020502,0.15,0.1,Hyperparathyroidism
+C0039070,0.4166666666666666,0.3666666666666665,Syncope
+C1112256,0.0,0.0,Peripheral sensorimotor neuropathy
+C0039075,0.1,0.16499999999999998,Syndactyly
+C3551426,0.15,0.3,Dystrophic fingernails
+C1619700,0.18333333333333326,0.13333333333333333,RENAL ADYSPLASIA
+C0020295,0.11666666666666667,0.18809523809523807,Hydronephrosis
+C0036508,0.0,0.0,Seborrheic dermatitis
+C0266470,0.016666666666666666,0.05,Cerebellar Hypoplasia
+C0546964,0.5,0.7,Genu recurvatum
+C0034013,0.08333333333333333,0.08333333333333333,Precocious Puberty
+C0265654,0.0,0.1,Tarsal Coalition
+C0338502,0.0,0.1,Hypoplasia of the optic nerve
+C0338503,0.1,0.1,Septo-Optic Dysplasia
+C0031511,0.2,0.3,Pheochromocytoma
+C1336708,0.0,0.0,Testicular Germ Cell Tumor
+C0020619,0.050757575757575765,0.15,Hypogonadism
+C0345030,0.0,0.15,Peripheral pulmonary artery stenosis
+C0020617,0.1,0.1,Hypoglycemic coma
+C0020615,0.2333333333333333,0.13111111111111112,Hypoglycemia
+C0023520,0.4583333333333333,0.45,Leukodystrophy
+C0392777,0.35,0.5,Poikiloderma
+C0241442,0.0,0.0,Protrusion of tongue
+C2700617,0.17619047619047618,0.1,Irritation - emotion
+C0266052,0.05,0.15,Precocious exfoliation of primary tooth
+C0007102,0.15,0.5,Malignant tumor of colon
+C0004153,0.12,0.16999999999999998,Atherosclerosis
+C1868085,0.0,0.0,Craniofacial hyperostosis
+C0341787,0.0,0.1,Bifid scrotum
+C0019572,0.23,0.265,Hirsutism
+C0024421,0.014285714285714284,0.09523809523809523,Macroglossia
+C0020534,0.05,0.08750000000000001,Orbital separation excessive
+C0042384,0.15,0.11666666666666665,Vasculitis
+C4280614,0.12333333333333332,0.2,Angle class 2 malocclusion
+C0015230,0.14,0.265,Exanthema
+C1854387,0.2,0.6,Type 1 muscle fiber predominance
+C0005779,0.12,0.32,Blood Coagulation Disorders
+C1858395,0.0,0.2,Tubular atrophy
+C0010068,0.2,0.2,Coronary heart disease
+C0677776,0.65,0.95,Hereditary Breast and Ovarian Cancer Syndrome
+C0037274,0.0,0.021111111111111112,Dermatologic disorders
+C0423820,0.15,0.3,Ridged nails
+C0021368,0.12651515151515152,0.1431818181818182,Inflammation
+C0021364,0.07619047619047617,0.0738095238095238,Male infertility
+C0162316,0.3,0.1,Iron deficiency anemia
+C0023343,0.0,0.1111111111111111,Leprosy
+C0152031,0.25,0.2,Joint swelling
+C0022596,0.22,0.3066666666666667,Palmoplantar Keratosis
+C1955869,0.1,0.0,Malformations of Cortical Development
+C0008073,0.0,0.0,Developmental Disabilities
+C0238463,0.0,0.11666666666666665,Papillary thyroid carcinoma
+C0036095,0.0,0.025,Salivary Gland Neoplasms
+C1849300,0.1,0.35,Widely patent fontanels and sutures
+C0524620,0.1,0.05,Metabolic Syndrome X
+C1960469,0.05,0.45,Left ventricular noncompaction
+C0376358,0.0,0.0,Malignant neoplasm of prostate
+C0013362,0.036842105263157884,0.021052631578947368,Dysarthria
+C0033375,0.1,0.1,Prolactinoma
+C0033687,0.04242424242424242,0.05833333333333333,Proteinuria
+C1859447,0.2,0.15,Hypoplastic ischia
+C0001430,0.03333333333333333,0.125,Adenoma
+C1867873,0.1,0.2,Failure to thrive in infancy
+C0728829,0.02361111111111111,0.034722222222222224,Congenital pes cavus
+C0426970,0.0,0.025,Spastic Quadriplegia
+C0018021,0.1,0.25,Goiter
+C0151529,0.19166666666666665,0.26666666666666666,Bleeding time prolonged
+C1836635,0.3,0.4,Loeys-Dietz Aortic Aneurysm Syndrome
+C0033975,0.034761904761904765,0.07857142857142856,Psychotic Disorders
+C0332615,0.15,0.25,Myopathic facies
+C1704375,0.3,0.3,Hypophosphatemic Rickets
+C0263401,0.09166666666666666,0.2,Cutis marmorata
+C0085576,0.55,0.5,Iron-Refractory Iron Deficiency Anemia
+C1837658,0.1,0.1,Gross motor development delay
+C0231807,0.06666666666666668,0.21666666666666665,Dyspnea on exertion
+C0016663,0.0,0.0,Pathological fracture
+C0018843,0.7,0.55,Heat Stroke
+C0013182,0.09166666666666663,0.125,Drug Allergy
+C4022012,0.5,0.4166666666666666,Death in early adulthood
+C0009676,0.0,0.15,Confusion
+C0034935,0.12000000000000002,0.13000000000000006,Babinski Reflex
+C0151786,0.12941176470588234,0.13529411764705884,Muscle Weakness
+C4022018,0.1,0.225,Telangiectasia of the skin
+C0027643,0.16666666666666666,0.06666666666666668,"Neoplasm Recurrence, Local"
+C0856975,0.1,0.0,Autistic behavior
+C0035222,0.025,0.075,"Respiratory Distress Syndrome, Adult"
+C0006625,0.2,0.12000000000000002,Cachexia
+C0035228,0.0,0.15,Respiratory Hypersensitivity
+C0854723,0.14999999999999994,0.275,Retinal Dystrophies
+C0685695,0.0,0.2222222222222222,Abnormal lung lobation
+C0020429,0.1,0.12857142857142856,Hyperalgesia
+C0020428,0.25,0.35,Hyperaldosteronism
+C2985290,0.0,0.0,Fetal Alcohol Spectrum Disorders
+C0235032,0.0,0.0,Neurotoxicity Syndromes
+C0079731,0.15,0.15,B-Cell Lymphomas
+C0678230,0.045098039215686274,0.0803921568627451,Congenital Epicanthus
+C2931092,0.8571428571428571,0.8571428571428571,Maternally Inherited Leigh Syndrome
+C0029456,0.04375,0.09301470588235294,Osteoporosis
+C0011854,0.045,0.13,"Diabetes Mellitus, Insulin-Dependent"
+C0011853,0.056363636363636366,0.1509090909090909,"Diabetes Mellitus, Experimental"
+C1855333,0.35,0.4,Small genitalia
+C0010520,0.05,0.15,Cyanosis
+C0018800,0.09772727272727272,0.11666666666666665,Cardiomegaly
+C0344232,0.5,0.5,Blurred vision
+C0085207,0.15,0.2,Gestational Diabetes
+C0476254,0.2,0.2,Dyslexia
+C0020517,0.1595238095238095,0.2738095238095238,Hypersensitivity
+C2674432,0.0,0.13333333333333333,Decreased bone mineral density Z score
+C0497247,0.04318181818181818,0.1053030303030303,Increase in blood pressure
+C0085681,0.0,0.0,Hyperphosphatemia (disorder)
+C0085682,0.0,0.05,Hypophosphatemia
+C0266463,0.1,0.4,Lissencephaly
+C0266464,0.225,0.325,Polymicrogyria
+C0265660,0.04,0.155,Syndactyly of the toes
+C0349204,0.025,0.06428571428571428,Nonorganic psychosis
+C0034067,0.4833333333333333,0.31666666666666665,Pulmonary Emphysema
+C0149745,0.0,0.2,Oral Ulcer
+C0034069,0.2125,0.25,Pulmonary Fibrosis
+C0006845,0.4,0.65,"Candidiasis, Chronic Mucocutaneous"
+C0155552,0.2,0.45,"Hearing Loss, Mixed Conductive-Sensorineural"
+C0035828,0.45,0.25,Romano-Ward Syndrome
+C0020608,0.09722222222222222,0.14444444444444446,Hypodontia
+C0233565,0.03333333333333333,0.09166666666666666,Bradykinesia
+C0023882,0.0,0.0,Little's Disease
+C0023530,0.3,0.35,Leukopenia
+C4024641,0.4,0.6,Enlarged polycystic ovaries
+C1839630,0.31666666666666665,0.4916666666666666,"Hypotonia, severe"
+C1843156,0.2333333333333333,0.3,"Hearing loss, progressive sensorineural"
+C0240896,0.0,0.0,Fundus coloboma
+C1853738,0.25,0.25,Long eyelashes
+C0575081,0.021428571428571432,0.07307692307692308,Gait abnormality
+C0005745,0.14387351778656124,0.12233201581027668,Blepharoptosis
+C1854838,0.05,0.2,Progressive neurologic deterioration
+C0024299,0.205,0.205,Lymphoma
+C1842774,0.195,0.385,Hyperpigmented macules
+C1837081,0.1,0.35,Tibial bowing
+C0004364,0.07857142857142857,0.11428571428571427,Autoimmune Diseases
+C0021390,0.06666666666666668,0.0,Inflammatory Bowel Diseases
+C0037268,0.0,0.0,Skin Abnormalities
+C0575158,0.06666666666666668,0.2,Kyphoscoliosis deformity of spine
+C0015644,0.08333333333333333,0.05,Muscular fasciculation
+C0152021,0.11666666666666665,0.11666666666666665,Congenital heart disease
+C0152025,0.2,0.15,Polyneuropathy
+C0333641,0.0,0.0,Atrophic
+C4280269,0.2333333333333333,0.4166666666666666,Noncancerous mole
+C0002994,0.0,0.2222222222222222,Angioedema
+C0042487,0.405,0.495,Venous Thrombosis
+C0002622,0.1,0.05,Amnesia
+C4277682,0.07748538011695906,0.0608187134502924,Chemical and Drug Induced Liver Injury
+C0005695,0.04636363636363637,0.1018181818181818,Bladder Neoplasm
+C0010200,0.2333333333333333,0.26666666666666666,Coughing
+C1849311,0.25,0.25,Short first metacarpals
+C0037317,0.125,0.21666666666666665,Sleep disturbances
+C0037315,0.1,0.2,Sleep Apnea Syndromes
+C1866241,0.1,0.35,Broad feet
+C1842170,0.1,0.5,Centrally nucleated skeletal muscle fibers
+C0014170,0.1,0.06000000000000001,Endometrial Neoplasms
+C0521573,0.0,0.0,Coloboma of eyelid
+C0014175,0.12047619047619047,0.0938095238095238,Endometriosis
+C0028949,0.2,0.1,Oligomenorrhea
+C0027430,0.3,0.3,Nasal Polyps
+C0086437,0.07666666666666666,0.16333333333333333,Joint laxity
+C0086439,0.0,0.05,Hypokinesia
+C0311277,0.1,0.1,"Obesity, Abdominal"

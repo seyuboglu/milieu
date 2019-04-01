@@ -31,6 +31,8 @@ MANIFEST
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
+*.npy
+*.pdf
 
 # Installer logs
 pip-log.txt
@@ -111,3 +113,4 @@ venv.bak/
 **gene2go.txt
 **.obo
 **.tar
+**.pkl

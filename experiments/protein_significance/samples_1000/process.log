@@ -1,0 +1,92 @@
+2019-01-27 19:47:54,976:INFO: Metric Significance of Diseases in the PPI Network
+2019-01-27 19:47:54,977:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-01-27 19:47:54,977:INFO: ======================================
+2019-01-27 19:47:54,977:INFO: Loading Disease Associations...
+2019-01-27 19:47:55,038:INFO: Loading Network...
+2019-01-27 19:48:03,337:INFO: Loading PPI Matrices...
+2019-01-27 19:48:08,301:INFO: Building Degree Buckets...
+2019-01-27 19:48:08,367:INFO: Running Experiment...
+2019-01-27 20:05:07,089:INFO: Metric Significance of Diseases in the PPI Network
+2019-01-27 20:05:07,089:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-01-27 20:05:07,089:INFO: ======================================
+2019-01-27 20:05:07,089:INFO: Loading Disease Associations...
+2019-01-27 20:05:18,801:INFO: Metric Significance of Diseases in the PPI Network
+2019-01-27 20:05:18,802:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-01-27 20:05:18,802:INFO: ======================================
+2019-01-27 20:05:18,802:INFO: Loading Disease Associations...
+2019-01-27 20:05:42,698:INFO: Metric Significance of Diseases in the PPI Network
+2019-01-27 20:05:42,698:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-01-27 20:05:42,698:INFO: ======================================
+2019-01-27 20:05:42,698:INFO: Loading Disease Associations...
+2019-01-27 20:41:50,900:INFO: Metric Significance of Diseases in the PPI Network
+2019-01-27 20:41:50,900:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-01-27 20:41:50,900:INFO: ======================================
+2019-01-27 20:41:50,900:INFO: Loading Disease Associations...
+2019-01-28 19:19:19,995:INFO: Metric Significance of Diseases in the PPI Network
+2019-01-28 19:19:19,996:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-01-28 19:19:19,996:INFO: ======================================
+2019-01-28 19:19:19,996:INFO: Loading Disease Associations...
+2019-01-28 19:20:26,281:INFO: Metric Significance of Diseases in the PPI Network
+2019-01-28 19:20:26,281:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-01-28 19:20:26,281:INFO: ======================================
+2019-01-28 19:20:26,281:INFO: Loading Disease Associations...
+2019-02-11 11:21:48,966:INFO: Metric Significance of Diseases in the PPI Network
+2019-02-11 11:21:48,967:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-02-11 11:21:48,967:INFO: ======================================
+2019-02-11 11:21:48,967:INFO: Loading Disease Associations...
+2019-02-11 11:29:03,812:INFO: Metric Significance of Diseases in the PPI Network
+2019-02-11 11:29:03,812:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-02-11 11:29:03,812:INFO: ======================================
+2019-02-11 11:29:03,812:INFO: Loading Disease Associations...
+2019-02-11 11:30:59,180:INFO: Metric Significance of Diseases in the PPI Network
+2019-02-11 11:30:59,180:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-02-11 11:30:59,180:INFO: ======================================
+2019-02-11 11:30:59,180:INFO: Loading Disease Associations...
+2019-02-11 11:31:28,515:INFO: Metric Significance of Diseases in the PPI Network
+2019-02-11 11:31:28,515:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-02-11 11:31:28,516:INFO: ======================================
+2019-02-11 11:31:28,516:INFO: Loading Disease Associations...
+2019-02-11 11:32:16,889:INFO: Metric Significance of Diseases in the PPI Network
+2019-02-11 11:32:16,889:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-02-11 11:32:16,890:INFO: ======================================
+2019-02-11 11:32:16,890:INFO: Loading Disease Associations...
+2019-02-11 11:34:19,111:INFO: Metric Significance of Diseases in the PPI Network
+2019-02-11 11:34:19,112:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-02-11 11:34:19,112:INFO: ======================================
+2019-02-11 11:34:19,112:INFO: Loading Disease Associations...
+2019-02-11 11:38:21,995:INFO: Metric Significance of Diseases in the PPI Network
+2019-02-11 11:38:21,995:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-02-11 11:38:21,995:INFO: ======================================
+2019-02-11 11:38:21,996:INFO: Loading Disease Associations...
+2019-02-11 11:39:38,088:INFO: Metric Significance of Diseases in the PPI Network
+2019-02-11 11:39:38,089:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-02-11 11:39:38,089:INFO: ======================================
+2019-02-11 11:39:38,089:INFO: Loading Disease Associations...
+2019-02-11 11:42:27,993:INFO: Metric Significance of Diseases in the PPI Network
+2019-02-11 11:42:27,993:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-02-11 11:42:27,993:INFO: ======================================
+2019-02-11 11:42:27,993:INFO: Loading Disease Associations...
+2019-02-11 11:44:49,544:INFO: Metric Significance of Diseases in the PPI Network
+2019-02-11 11:44:49,545:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-02-11 11:44:49,545:INFO: ======================================
+2019-02-11 11:44:49,545:INFO: Loading Disease Associations...
+2019-02-11 11:45:34,705:INFO: Metric Significance of Diseases in the PPI Network
+2019-02-11 11:45:34,705:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-02-11 11:45:34,705:INFO: ======================================
+2019-02-11 11:45:34,705:INFO: Loading Disease Associations...
+2019-02-11 11:46:09,579:INFO: Metric Significance of Diseases in the PPI Network
+2019-02-11 11:46:09,579:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-02-11 11:46:09,579:INFO: ======================================
+2019-02-11 11:46:09,579:INFO: Loading Disease Associations...
+2019-02-11 11:46:33,519:INFO: Metric Significance of Diseases in the PPI Network
+2019-02-11 11:46:33,519:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-02-11 11:46:33,519:INFO: ======================================
+2019-02-11 11:46:33,520:INFO: Loading Disease Associations...
+2019-02-11 11:48:06,480:INFO: Metric Significance of Diseases in the PPI Network
+2019-02-11 11:48:06,480:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-02-11 11:48:06,480:INFO: ======================================
+2019-02-11 11:48:06,480:INFO: Loading Disease Associations...
+2019-02-11 11:48:51,780:INFO: Metric Significance of Diseases in the PPI Network
+2019-02-11 11:48:51,780:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-02-11 11:48:51,780:INFO: ======================================
+2019-02-11 11:48:51,781:INFO: Loading Disease Associations...
