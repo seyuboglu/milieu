@@ -2,7 +2,7 @@
     "process": "go_enrichment",
     "process_params": 
         {
-            "n_processes": 2,
+            "n_processes": 15,
             "ppi_network": "data/networks/bio-pathways-network.txt",
             "diseases_path": "data/associations/disgenet-associations.csv",
             "disease_subset": [],

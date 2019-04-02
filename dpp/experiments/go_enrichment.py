@@ -136,7 +136,8 @@ class GOEnrichment(Experiment):
                                   in sorted(pred_term_to_pval.items(), 
                                             key=lambda x: x[1])[:self.params["top_k"]]])
 
-            jaccard = len(disease_terms & pred_terms) / len(disease_terms | pred_terms)
+            jaccard = (len(disease_terms & pred_terms) / len(disease_terms | pred_terms) 
+                       if len(disease_terms | pred_terms) != 0 else 0)
             sp_corr, sp_pval = self.compute_spearman_correlation(disease_term_to_pval,
                                                                  pred_term_to_pval)
 
@@ -145,8 +146,6 @@ class GOEnrichment(Experiment):
             results[f"{name}_jaccard_sim"] = jaccard
             results[f"{name}_sp_corr"] = sp_corr
             results[f"{name}_sp_pval"] = sp_pval
-            print(f"{name}_sp_pval:", sp_pval)
-            print(f"{name}_sp_pcorr:", sp_corr)
 
         return disease, results 
 
