@@ -23,7 +23,7 @@ from dpp.methods.mia.metrics import Metrics
 class MIAModel(nn.Module):
 
     def __init__(self, network, gcn_layer_configs=[], fcn_layer_configs=[],
-                 optim_class="Adam", optim_args={},
+                 dropout_prob=0.5, optim_class="Adam", optim_args={},
                  scheduler_class=None, scheduler_args={},
                  cuda=True, devices=[0]):
         """
@@ -58,6 +58,7 @@ class MIAModel(nn.Module):
                 layer_config["args"]["in_features"] = len(network)
             layer = globals()[layer_config["class"]](**layer_config["args"])
             self.gcn.append(layer)
+
         
         # fcn
         self.fcn = nn.ModuleList()
@@ -65,6 +66,9 @@ class MIAModel(nn.Module):
             layer = globals()[layer_config["class"]](**layer_config["args"])
             self.fcn.append(layer)
         
+        self.final_layer = nn.Linear(in_features=1, out_features=1, bias=True)
+        
+        self.dropout = nn.Dropout(p=dropout_prob)
         self._build_optimizer(optim_class, optim_args, scheduler_class, scheduler_args)
 
     def predict(self, inputs):
@@ -77,17 +81,26 @@ class MIAModel(nn.Module):
         """
         m, n = inputs.shape
 
-        node_embeddings = torch.eye(self.adj_rcnorm.shape[0])
+        node_embeddings = torch.eye(self.adj_rcnorm.shape[0]).to(self.device)
         for i, layer in enumerate(self.gcn):
             node_embeddings = layer(node_embeddings, self.adj_rcnorm)
+            node_embeddings = nn.functional.relu(node_embeddings)
+            node_embeddings = self.dropout(node_embeddings)
         
         for i, layer in enumerate(self.fcn):
             node_embeddings = layer(node_embeddings)
+            if i == len(self.fcn) - 1: 
+                node_embeddings = torch.sigmoid(node_embeddings)
+            else:
+                node_embeddings = nn.functional.relu(node_embeddings)
+                node_embeddings = self.dropout(node_embeddings)
 
+        print(node_embeddings.mean())
         outputs = torch.matmul(inputs, self.adj_rcnorm)  # (m, n)
         outputs = torch.mul(outputs, node_embeddings.t())  # (m, n)
         outputs = torch.matmul(outputs, self.adj_rnorm)  # (m, n)
-
+        outputs = self.final_layer(outputs.unsqueeze(-1)).squeeze(-1)
+        print(torch.sigmoid(outputs).mean())
         return outputs
 
     def loss(self, outputs, targets):
@@ -107,7 +120,7 @@ class MIAModel(nn.Module):
 
         # move to cuda
         if self.cuda:
-            self._to_gpu()
+            self.to(self.device)
 
         metrics = Metrics(metric_configs)
         avg_loss = 0
@@ -121,8 +134,7 @@ class MIAModel(nn.Module):
                 # forward pass
                 predictions = self.predict(inputs)
 
-                labels = self._get_labels(targets)
-                metrics.add(predictions, labels)
+                metrics.add(predictions, targets)
 
                 # compute average loss and update the progress bar
                 t.update()
@@ -144,7 +156,7 @@ class MIAModel(nn.Module):
 
         # move to cuda
         if self.cuda:
-            self._to_gpu()
+            self.to(self.device)
 
         for epoch in range(num_epochs):
             logging.info(f'Epoch {epoch + 1} of {num_epochs}')
@@ -221,13 +233,6 @@ class MIAModel(nn.Module):
                                                       **scheduler_args)
         else:
             self.scheduler = None
-    
-    def _to_gpu(self):
-        """ Moves the model to the gpu. Should be reimplemented by child model for
-        data parallel.
-        """
-        if self.cuda:
-            self.to(self.device)
 
 
 class GraphConvolution(nn.Module):
@@ -257,9 +262,9 @@ class GraphConvolution(nn.Module):
         support = torch.mm(input, self.weight)
         output = torch.spmm(adj, support)
         if self.bias is not None:
-            return output + self.bias
-        else:
-            return output
+            output = output + self.bias
+        
+        return output
 
     def __repr__(self):
         return self.__class__.__name__ + ' (' \

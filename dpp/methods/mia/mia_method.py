@@ -50,14 +50,16 @@ class MIA(DPPMethod):
         model = MIAModel(self.network, **self.model_args)
         train_dataloader = DataLoader(TrainDataset(train_nodes, 
                                                    self.network,
-                                                   **self.valid_dataset_args))
+                                                   **self.train_dataset_args),
+                                      batch_size=self.params["batch_size"])
         
         valid_nodes = [node for node in disease.to_node_array(self.network) 
                        if node not in train_nodes]
         valid_dataloader = DataLoader(ValidDataset(train_nodes,
                                                    valid_nodes, 
                                                    self.network, 
-                                                   **self.valid_dataset_args))
+                                                   **self.valid_dataset_args),
+                                      batch_size=self.params["batch_size"])
         
         for epoch_num, train_metrics in enumerate(model.train_model(
                 dataloader=train_dataloader, **self.train_args)):
@@ -89,6 +91,10 @@ class TrainDataset(Dataset):
         self.train_nodes = train_nodes
         self.num_examples = num_examples
         self.frac_hidden = frac_hidden
+
+        adj_matrix = network.adj_matrix
+        self.mutual_interactors = torch.matmul(adj_matrix, 
+                                               torch.sum(adj_matrix[train_nodes], dim=0))
     
     def __len__(self):
         """
@@ -105,9 +111,14 @@ class TrainDataset(Dataset):
         hidden_nodes = self.train_nodes[:split]
         known_nodes = self.train_nodes[split:]
 
-        X = torch.zeros(self.num_nodes, dtype=torch.float)
+        X = torch.zeros(self.num_nodes dtype=torch.float)
         X[known_nodes] = 1
-        Y = torch.zeros(self.num_nodes, dtype=torch.float) 
+
+        Y = -1 * torch.ones(self.num_nodes, dtype=torch.float) 
+        probs = torch.softmax(self.mutual_interactors + 1)
+        neg_nodes = np.random.choice(self.num_nodes, size=len(hidden_nodes), 
+                                     replace=False, p=probs)
+        Y[neg_nodes] = 0
         Y[hidden_nodes] = 1
 
         # ensure no data leakage
@@ -134,9 +145,9 @@ class ValidDataset(Dataset):
         """
         """
 
-        X = torch.zeros(self.n, dtype=torch.float)
+        X = torch.zeros(self.num_nodes, dtype=torch.float)
         X[self.train_nodes] = 1
-        Y = torch.zeros(self.n, dtype=torch.float) 
+        Y = torch.zeros(self.num_nodes, dtype=torch.float) 
         Y[self.valid_nodes] = 1
 
         # ensure no data leakage

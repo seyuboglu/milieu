@@ -16,12 +16,12 @@ from  dpp.metrics import recall_score
 class Metrics:
     """
     """
-    def __init__(self, metric_fns):
+    def __init__(self, metric_configs):
         """
         args:
             metrics_fns (list, strings)   list of function names to use for eval
         """
-        self.metric_fns = metric_fns
+        self.metric_configs = metric_configs
         # Dictionary mapping functions to
         self.metrics = defaultdict(int)
 
@@ -68,10 +68,10 @@ class Metrics:
         Computes metrics on all 
         """
         # call all metric_fns, detach since output has require grad
-        for metric_fn, kwargs in self.metric_fns.items():
+        for metric_config in self.metric_configs:
+            metric_fn = metric_config["fn"]
             self.metrics[metric_fn] = globals()[metric_fn](self.probs,
-                                                           self.labels,
-                                                           **kwargs)
+                                                                     self.labels)
 
 
 def accuracy(probs, targets):
