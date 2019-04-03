@@ -5,7 +5,7 @@
             "n_processes": 1,
             "ppi_network": "data/networks/bio-pathways-network.txt",
             "diseases_path": "data/associations/disgenet-associations.csv",
-            "disease_subset": ["C0001627", "C0008325"],
+            "disease_subset": ["C0001627"],
 
             "n_folds": 10,
 

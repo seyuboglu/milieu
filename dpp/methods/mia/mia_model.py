@@ -38,6 +38,8 @@ class MIAModel(nn.Module):
         self.device = devices[0]
         self.devices = devices
 
+        self.network = network
+
         adj_matrix = torch.tensor(network.adj_matrix, dtype=torch.float)
 
         # build degree vector
@@ -46,10 +48,12 @@ class MIAModel(nn.Module):
 
         # convert adjacency to sparse matrix
         adj_rcnorm = torch.mul(torch.mul(deg_vec.view(1, -1), adj_matrix), 
-                               deg_vec.view(-1, 1))
-        adj_rnorm = torch.mul(deg_vec.view(1, -1), adj_matrix)
+                                         deg_vec.view(-1, 1)).to_sparse()
+        adj_rnorm = torch.mul(deg_vec.view(1, -1), adj_matrix).to_sparse()
         self.register_buffer("adj_rcnorm", adj_rcnorm)
         self.register_buffer("adj_rnorm", adj_rnorm)
+
+        self.eye = torch.eye(self.adj_rcnorm.shape[0]).to(self.device)
 
         # gcn 
         self.gcn = nn.ModuleList()
@@ -81,7 +85,7 @@ class MIAModel(nn.Module):
         """
         m, n = inputs.shape
 
-        node_embeddings = torch.eye(self.adj_rcnorm.shape[0]).to(self.device)
+        node_embeddings = self.eye
         for i, layer in enumerate(self.gcn):
             node_embeddings = layer(node_embeddings, self.adj_rcnorm)
             node_embeddings = nn.functional.relu(node_embeddings)
@@ -90,17 +94,20 @@ class MIAModel(nn.Module):
         for i, layer in enumerate(self.fcn):
             node_embeddings = layer(node_embeddings)
             if i == len(self.fcn) - 1: 
-                node_embeddings = torch.sigmoid(node_embeddings)
+                node_embeddings = node_embeddings / node_embeddings.sum()
+                print("Query Score: ", node_embeddings[5432])
+                print("Max Node: ", self.network.get_proteins([node_embeddings.argmax().item()]))
+                print("Max Score:", node_embeddings.max().data)
+                print("Mean Score: ", node_embeddings.mean().data)
             else:
                 node_embeddings = nn.functional.relu(node_embeddings)
                 node_embeddings = self.dropout(node_embeddings)
 
-        print(node_embeddings.mean())
-        outputs = torch.matmul(inputs, self.adj_rcnorm)  # (m, n)
+        outputs = torch.sparse.mm(self.adj_rcnorm.t(), inputs.t()).t()  # (m, n)
         outputs = torch.mul(outputs, node_embeddings.t())  # (m, n)
-        outputs = torch.matmul(outputs, self.adj_rnorm)  # (m, n)
+        outputs = torch.sparse.mm(self.adj_rnorm.t(), outputs.t()).t()  # (m, n)
         outputs = self.final_layer(outputs.unsqueeze(-1)).squeeze(-1)
-        print(torch.sigmoid(outputs).mean())
+
         return outputs
 
     def loss(self, outputs, targets):
@@ -108,8 +115,8 @@ class MIAModel(nn.Module):
         Weighted binary cross entropy loss.
         """
         # ignore -1 indices
-        outputs = outputs[torch.where(targets != -1)]
-        targets = targets[torch.where(targets != -1)]
+        outputs = outputs[targets != -1]
+        targets = targets[targets != -1]
 
         bce_loss = nn.BCEWithLogitsLoss()
         return bce_loss(outputs, targets) 
@@ -205,9 +212,7 @@ class MIAModel(nn.Module):
                 loss = loss.cpu().detach().numpy()
                 # compute metrics periodically:
                 if i % summary_period == 0:
-                    predictions = self.predict(inputs)
-                    metrics.add(predictions, targets, {"loss": loss})
-                    del predictions
+                    metrics.add(outputs, targets, {"loss": loss})
 
                 # compute average loss and update progress bar
                 avg_loss = ((avg_loss * i) + loss) / (i + 1)

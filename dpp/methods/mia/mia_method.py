@@ -47,6 +47,7 @@ class MIA(DPPMethod):
         Args: 
             
         """
+        print(disease.id)
         model = MIAModel(self.network, **self.model_args)
         train_dataloader = DataLoader(TrainDataset(train_nodes, 
                                                    self.network,
@@ -92,9 +93,15 @@ class TrainDataset(Dataset):
         self.num_examples = num_examples
         self.frac_hidden = frac_hidden
 
-        adj_matrix = network.adj_matrix
-        self.mutual_interactors = torch.matmul(adj_matrix, 
-                                               torch.sum(adj_matrix[train_nodes], dim=0))
+        adj_matrix = torch.tensor(network.adj_matrix, dtype=torch.float)
+        deg_vec = torch.sum(adj_matrix, dim=1, dtype=torch.float)
+        deg_vec = torch.pow(deg_vec, -0.5)
+        self.adj_rcnorm = torch.mul(torch.mul(deg_vec.view(1, -1), adj_matrix), 
+                               deg_vec.view(-1, 1)).to_sparse()
+        self.adj_rnorm = torch.mul(deg_vec.view(1, -1), adj_matrix)
+
+        self.normal = torch.distributions.normal.Normal(loc=0, scale=1)
+
     
     def __len__(self):
         """
@@ -111,18 +118,26 @@ class TrainDataset(Dataset):
         hidden_nodes = self.train_nodes[:split]
         known_nodes = self.train_nodes[split:]
 
-        X = torch.zeros(self.num_nodes dtype=torch.float)
+        X = torch.zeros(self.num_nodes, dtype=torch.float)
         X[known_nodes] = 1
 
-        Y = -1 * torch.ones(self.num_nodes, dtype=torch.float) 
-        probs = torch.softmax(self.mutual_interactors + 1)
-        neg_nodes = np.random.choice(self.num_nodes, size=len(hidden_nodes), 
-                                     replace=False, p=probs)
-        Y[neg_nodes] = 0
-        Y[hidden_nodes] = 1
+        mi_scores = torch.sparse.mm(self.adj_rcnorm, 
+                                    torch.sum(self.adj_rnorm[known_nodes], 
+                                              dim=0).unsqueeze(1)).squeeze()
 
-        # ensure no data leakage
-        assert(torch.dot(X, Y) == 0)
+        Y = -1 * torch.ones(self.num_nodes, dtype=torch.float) 
+        for hidden_node in hidden_nodes:
+            hidden_mi_score = mi_scores[hidden_node]
+
+            normalized_scores = (mi_scores - hidden_mi_score) / torch.std(mi_scores)
+            cdfs = self.normal.cdf(normalized_scores).numpy()
+            probs = (cdfs / np.sum(cdfs))
+            neg_node = np.random.choice(self.num_nodes, size=1, replace=False, p=probs)
+            Y[hidden_node] = 1
+            Y[neg_node] = 0
+            # print(f"Hidden MI: {mi_scores[hidden_node]}, Neg MI: {mi_scores[neg_node]}")
+            
+        Y[known_nodes] = -1
 
         return X, Y
 

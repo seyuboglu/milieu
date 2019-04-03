@@ -163,6 +163,7 @@ def recall_at_100(probs, labels):
     k = 100
     probs = probs.numpy()
     labels = labels.numpy()
+    labels[labels == -1] = 0
 
     N, M = probs.shape
     argsort_output = np.argsort(probs, axis=1)
