@@ -13,7 +13,7 @@ import torch
 import torch.nn as nn 
 from torch.autograd import Variable
 from torch.optim import Adam
-from torch.utils.data import DataLoader
+from torch.utils.data import Dataset, DataLoader
 from tqdm import tqdm
 from scipy.sparse import coo_matrix, csr_matrix
 import parse
@@ -25,11 +25,11 @@ from dpp.methods.lci.utils import (save_checkpoint, load_checkpoint,
                                    save_dict_to_json, RunningAverage)
 
 
-class MIAMethod(DPPMethod):
+class MIA(DPPMethod):
     """ GCN method class
     """
-    def __init__(self, network, params):
-        super().__init__(network, params)
+    def __init__(self, network, diseases_dict, params):
+        super().__init__(network, diseases_dict, params)
 
         self.dir = params["dir"]
         self.network = network 
@@ -39,6 +39,8 @@ class MIAMethod(DPPMethod):
         self.valid_dataset_args = params["valid_dataset_args"]
         self.train_dataset_args = params["train_dataset_args"]
         self.model_args = params["model_args"]
+        self.train_args = params["train_args"]
+        self.valid_args = params["valid_args"]
         
     def compute_scores(self, train_nodes, disease):
         """ Compute the scores predicted by GCN.
@@ -51,7 +53,7 @@ class MIAMethod(DPPMethod):
                                                    **self.valid_dataset_args))
         
         valid_nodes = [node for node in disease.to_node_array(self.network) 
-                     if node not in train_nodes]
+                       if node not in train_nodes]
         valid_dataloader = DataLoader(ValidDataset(train_nodes,
                                                    valid_nodes, 
                                                    self.network, 
@@ -59,14 +61,17 @@ class MIAMethod(DPPMethod):
         
         for epoch_num, train_metrics in enumerate(model.train_model(
                 dataloader=train_dataloader, **self.train_args)):
-            val_metrics = model.score(valid_dataloader, **self.evaluate_args) 
+            valid_metrics = model.score(valid_dataloader, **self.valid_args)
+
+            logging.info(f"Train Metrics: {train_metrics.metrics}") 
+            logging.info(f"Valid Metrics: {valid_metrics.metrics}")
         
         # get predictions 
         num_nodes = len(self.network)
         inputs = torch.zeros(1, num_nodes)
         inputs[0, train_nodes] = 1
 
-        if self.params["cuda"]:
+        if model.cuda:
             inputs = inputs.cuda()
 
         outputs = model(inputs)
@@ -79,6 +84,7 @@ class TrainDataset(Dataset):
     def __init__(self, train_nodes, network, num_examples=200, frac_hidden=0.25):
         """
         """
+        super()
         self.num_nodes = len(network)
         self.train_nodes = train_nodes
         self.num_examples = num_examples
@@ -93,8 +99,8 @@ class TrainDataset(Dataset):
     def __getitem__(self, idx):
         """
         """
-        np.random.shuffle(self.disease_nodes)
-        split = int(self.frac_hidden * len(self.disease_nodes))
+        np.random.shuffle(self.train_nodes)
+        split = int(self.frac_hidden * len(self.train_nodes))
 
         hidden_nodes = self.train_nodes[:split]
         known_nodes = self.train_nodes[split:]

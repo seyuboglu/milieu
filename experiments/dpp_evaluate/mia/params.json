@@ -1,0 +1,87 @@
+{
+    "process": "dpp_evaluate",
+    "process_params": 
+        {
+            "n_processes": 1,
+            "ppi_network": "data/networks/bio-pathways-network.txt",
+            "diseases_path": "data/associations/disgenet-associations.csv",
+            "disease_subset": [],
+
+            "n_folds": 10,
+
+            "method_class": "MIA",
+            "method_params": {
+                "model_args": {
+                    "cuda": false,
+                    "devices": [0],
+
+                    "optim_class": "Adam",
+                    "optim_args": {
+                        "lr": 1e-4,
+                        "weight_decay": 0
+                    },
+
+                    "scheduler_class": "StepLR",
+                    "scheduler_args": {
+                        "step_size": 20,
+                        "gamma": 0.5
+                    },
+
+                    "gcn_layer_configs": [
+                        {
+                            "class": "GraphConvolution",
+                            "args": {
+                                "in_features": -1,
+                                "out_features": 128
+                            }
+                        },
+                        {
+                            "class": "GraphConvolution",
+                            "args": {
+                                "in_features": 128,
+                                "out_features": 512
+                            }
+                        }
+                    ],
+    
+                    "fcn_layer_configs": [
+                        {
+                            "class": "Linear",
+                            "args": {
+                                "in_features": 512,
+                                "out_features": 512
+                            }
+                        },
+                        {
+                            "class": "Linear",
+                            "args": {
+                                "in_features": 512,
+                                "out_features": 1
+                            }
+                        }
+                    ]
+                },
+
+                "train_dataset_args": {
+                    "num_examples": 50,
+                    "frac_hidden": 0.25
+                },
+
+                "valid_dataset_args": {},
+
+                "train_args": {
+                    "num_epochs": 150,
+                    "summary_period": 1,
+                    "metric_configs": [
+                        {"fn": "recall_at_100"}
+                    ]
+                },
+
+                "valid_args": {
+                    "metric_configs": [
+                        {"fn": "recall_at_100"}
+                    ]
+                }
+            }
+        }
+}

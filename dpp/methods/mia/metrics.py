@@ -9,136 +9,69 @@ import numpy as np
 import pandas as pd
 import sklearn.metrics as skl
 import torch
-from nltk.translate.bleu_score import sentence_bleu
-from rouge import Rouge
 
-from pet_ct.util.util import hard_to_soft, flex_concat, place_on_cpu, get_batch_size
-from pet_ct.data.report_transforms import split_impression_sections, word_tokenize
+from  dpp.metrics import recall_score
 
 
 class Metrics:
     """
     """
-    def __init__(self, metric_configs=[]):
+    def __init__(self, metric_fns):
         """
         args:
             metrics_fns (list, strings)   list of function names to use for eval
-            break_ties (string) method to break ties (in probabilistic labels).
         """
-        self.metric_configs = metric_configs
-
+        self.metric_fns = metric_fns
         # Dictionary mapping functions to
-        self.metrics = defaultdict(dict)
+        self.metrics = defaultdict(int)
 
-        self.global_metrics = defaultdict(int)
-
-        self.preds = defaultdict(list)
-        self.targets = defaultdict(list)
-
-        self.info = []
+        self.outputs = torch.Tensor()
+        self.probs = torch.Tensor()
+        self.labels = torch.Tensor()
 
         self.precomputed_keys = None
-        self.total_size = 0
-
-    def add(self, preds, targets,
-            info, precomputed_metrics={}):
+ 
+    def add(self, batch_outputs, batch_labels, precomputed_metrics={}):
         """
-        Add a batches preds and targets. If you've already computed metrics for the batch
+        Add a batches outputs and labels. If you've already computed metrics for the batch
         (e.g. loss) you can pass in that value via precomputed metrics and it will update
-        the average value in metrics. Note: must always provide the same precomputed
-        metrics.
+        the average value in metrics. Note: must always provide the same precomputed 
+        metrics. 
         args:
-            preds    (list(tensor))    [(batch_size, ..., k)]
-            targets     (list(tensor))    [(batch_size, ...,  1)]
+            batch_outputs    (tensor)    (batch_size, k)
+            batch_labels     (tensor)    (batch_size, 1)
             precomputed_metrics (dict) A dictionary of metric  values that have already
                 been computed for the batch
         """
-        # convert to list if only one element is passed in
-        if type(preds) != dict:
-            preds = {"primary": preds}
-        if type(targets) != dict:
-            targets = {"primary": targets}
-
-        if preds.keys() != targets.keys():
-            raise ValueError("Predictions and targets over different tasks.")
-
-        tasks = list(preds.keys())
-        batch_size = get_batch_size(list(targets.values())[0])
-        for task in tasks:
-            task_targets = targets[task]
-            task_preds = preds[task]
-            if(get_batch_size(task_targets) != get_batch_size(task_preds)):
-                raise ValueError("preds must match targets in first dim.")
-
-            self.preds[task].append(place_on_cpu(task_preds))
-            self.targets[task].append(place_on_cpu(task_targets))
-
-        self.info.extend(info)
-
-        # include precomputed keys in global metrics
+        if(batch_labels.shape[0] != batch_outputs.shape[0]):
+            raise ValueError("batch_probs must match batch_labels in first dim.")
+            
         if self.precomputed_keys is None:
-            self.precomputed_keys = set(precomputed_metrics.keys())
+            self.precomputed_keys = set(precomputed_metrics.keys()) 
         elif self.precomputed_keys != set(precomputed_metrics.keys()):
             raise ValueError("must always supply same precomputed metrics.")
 
+        batch_size = batch_labels.shape[0]
+        total_size = self.labels.shape[0]
+        
+        batch_probs = torch.nn.functional.softmax(batch_outputs, dim=1)
+        self.outputs = torch.cat([self.outputs, batch_outputs.cpu().detach()])
+        self.probs = torch.cat([self.probs, batch_probs.cpu().detach()])
+        self.labels = torch.cat([self.labels, batch_labels.float().cpu().detach()])
+        
         for key, value in precomputed_metrics.items():
-            self.global_metrics[key] = ((self.total_size * self.global_metrics[key] +
-                                         batch_size * value) /
-                                        (batch_size + self.total_size))
-        self.total_size += batch_size
+            self.metrics[key] = ((total_size * self.metrics[key] + batch_size * value) / 
+                                 (batch_size + total_size))
 
     def compute(self):
         """
-        Computes metrics on all
+        Computes metrics on all 
         """
         # call all metric_fns, detach since output has require grad
-        for metric_config in self.metric_configs:
-            self._compute_metric(**metric_config)
-
-    def _compute_metric(self, fn, args={}, name=None, tasks=None,
-                        is_primary=False, primary_task="primary"):
-        """
-        """
-        name = name if name is not None else fn
-
-        values = []
-        for task in self.preds.keys():
-            if tasks is not None and task not in tasks:
-                continue
-
-            total_value = 0
-            total_size = 0
-
-            all_preds = []
-            all_targets = []
-            for batch_preds, batch_targets in zip(self.preds[task], self.targets[task]):
-                if type(batch_preds) is torch.Tensor:
-                    # flatten dimensions
-                    batch_preds = batch_preds.view(-1, batch_preds.shape[-1]).squeeze(-1)
-                    batch_targets = batch_targets.view(-1).squeeze(-1)
-                all_preds.append(batch_preds)
-                all_targets.append(batch_targets)
-
-            all_preds = flex_concat(all_preds, dim=0)
-            all_targets = flex_concat(all_targets, dim=0)
-
-            value = globals()[fn](all_preds, all_targets, **args)
-
-            self.metrics[task][name] = value
-            values.append(value)
-
-            if is_primary and primary_task == task:
-                self.primary_metric = self.metrics[task][name]
-
-        self.global_metrics[name] = np.mean(values)
-
-    def get_metric(self, metric, task=None):
-        """
-        """
-        if task is None:
-            return self.global_metrics[metric]
-        else:
-            return self.metrics[task][metric]
+        for metric_fn, kwargs in self.metric_fns.items():
+            self.metrics[metric_fn] = globals()[metric_fn](self.probs,
+                                                           self.labels,
+                                                           **kwargs)
 
 
 def accuracy(probs, targets):
@@ -222,3 +155,46 @@ def f1_score(probs, labels):
 
     pred = np.argmax(probs, axis=1)
     return skl.f1_score(labels, pred, pos_label=1)
+
+
+def recall_at_100(probs, labels):
+    """
+    """
+    k = 100
+    probs = probs.numpy()
+    labels = labels.numpy()
+
+    N, M = probs.shape
+    argsort_output = np.argsort(probs, axis=1)
+    rows = np.column_stack((np.arange(N),) * k)
+    cols = argsort_output[:, (M - k):]
+    binary_output = np.zeros_like(probs)
+    binary_output[rows, cols] = 1
+
+    recall = np.mean([recall_score(labels[row, :], 
+                      binary_output[row, :]) for row in range(N)])
+
+    return recall
+
+
+def hard_to_soft(Y_h, k):
+    """Converts a 1D tensor of hard labels into a 2D tensor of soft labels
+    Source: MeTaL from HazyResearch, https://github.com/HazyResearch/metal/blob/master/metal/utils.py
+    Args:
+        Y_h: an [n], or [n,1] tensor of hard (int) labels in {1,...,k}
+        k: the largest possible label in Y_h
+    Returns:
+        Y_s: a torch.FloatTensor of shape [n, k] where Y_s[i, j-1] is the soft
+            label for item i and label j
+    """
+    Y_h = Y_h.clone()
+    Y_h = Y_h.squeeze()
+    assert Y_h.dim() == 1
+    assert (Y_h >= 0).all()
+    assert (Y_h < k).all()
+    n = Y_h.shape[0]
+    Y_s = torch.zeros((n, k), dtype=Y_h.dtype, device=Y_h.device)
+    for i, j in enumerate(Y_h):
+        Y_s[i, int(j)] = 1.0
+    return Y_s
+

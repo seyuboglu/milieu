@@ -3,6 +3,7 @@
 import os
 import json
 import logging
+import math
 from collections import defaultdict
 
 import numpy as np
@@ -19,7 +20,7 @@ from dpp.util import place_on_cpu, place_on_gpu
 from dpp.methods.mia.metrics import Metrics
 
 
-class MIAModel(nn.module):
+class MIAModel(nn.Module):
 
     def __init__(self, network, gcn_layer_configs=[], fcn_layer_configs=[],
                  optim_class="Adam", optim_args={},
@@ -30,32 +31,31 @@ class MIAModel(nn.module):
 
         args:
             network (PPINetwork) 
-            layer_configs   ()
+            layer_configs   (list) 
         """
         super().__init__()
         self.cuda = cuda
         self.device = devices[0]
         self.devices = devices
-        self._build_optimizer(optim_class, optim_args, scheduler_class, scheduler_args)
 
         adj_matrix = torch.tensor(network.adj_matrix, dtype=torch.float)
 
         # build degree vector
-        deg_vec = torch.sum(adj_matrix, axis=1, dtype=np.float)
-        deg_vec = torch.power(deg_vec, -0.5)
-        deg_vec = torch.tensor(deg_vec, dtype=torch.float)
+        deg_vec = torch.sum(adj_matrix, dim=1, dtype=torch.float)
+        deg_vec = torch.pow(deg_vec, -0.5)
 
         # convert adjacency to sparse matrix
-        adj_matrix = torch.tensor(adj_matrix, dtype=torch.float)
         adj_rcnorm = torch.mul(torch.mul(deg_vec.view(1, -1), adj_matrix), 
                                deg_vec.view(-1, 1))
-        adj_rnorm = torch.mul(D.view(1, -1), A)
+        adj_rnorm = torch.mul(deg_vec.view(1, -1), adj_matrix)
         self.register_buffer("adj_rcnorm", adj_rcnorm)
         self.register_buffer("adj_rnorm", adj_rnorm)
 
         # gcn 
         self.gcn = nn.ModuleList()
-        for layer_config in gcn_layer_configs: 
+        for idx, layer_config in enumerate(gcn_layer_configs): 
+            if idx == 0:
+                layer_config["args"]["in_features"] = len(network)
             layer = globals()[layer_config["class"]](**layer_config["args"])
             self.gcn.append(layer)
         
@@ -64,7 +64,9 @@ class MIAModel(nn.module):
         for layer_config in fcn_layer_configs: 
             layer = globals()[layer_config["class"]](**layer_config["args"])
             self.fcn.append(layer)
-    
+        
+        self._build_optimizer(optim_class, optim_args, scheduler_class, scheduler_args)
+
     def predict(self, inputs):
         """
         """
@@ -83,8 +85,8 @@ class MIAModel(nn.module):
             node_embeddings = layer(node_embeddings)
 
         outputs = torch.matmul(inputs, self.adj_rcnorm)  # (m, n)
-        outputs = torch.mul(outputs, node_embeddings)  # (d, m, n)
-        outputs = torch.matmul(outputs, self.adj_rnorm)  # (d, m, n)
+        outputs = torch.mul(outputs, node_embeddings.t())  # (m, n)
+        outputs = torch.matmul(outputs, self.adj_rnorm)  # (m, n)
 
         return outputs
 
@@ -111,7 +113,7 @@ class MIAModel(nn.module):
         avg_loss = 0
 
         with tqdm(total=len(dataloader)) as t, torch.no_grad():
-            for i, (inputs, targets, info) in enumerate(dataloader):
+            for i, (inputs, targets) in enumerate(dataloader):
                 # move to GPU if available
                 if self.cuda:
                     inputs, targets = place_on_gpu([inputs, targets], self.device)
@@ -120,7 +122,7 @@ class MIAModel(nn.module):
                 predictions = self.predict(inputs)
 
                 labels = self._get_labels(targets)
-                metrics.add(predictions, labels, info)
+                metrics.add(predictions, labels)
 
                 # compute average loss and update the progress bar
                 t.update()
@@ -173,7 +175,7 @@ class MIAModel(nn.module):
         avg_loss = 0
 
         with tqdm(total=len(dataloader)) as t:
-            for i, (inputs, targets, info) in enumerate(dataloader):
+            for i, (inputs, targets) in enumerate(dataloader):
                 if self.cuda:
                     inputs, targets = place_on_gpu([inputs, targets], self.device)
 
@@ -190,8 +192,7 @@ class MIAModel(nn.module):
                 # compute metrics periodically:
                 if i % summary_period == 0:
                     predictions = self.predict(inputs)
-                    metrics.add(predictions, targets, info,
-                                {"loss": loss})
+                    metrics.add(predictions, targets, {"loss": loss})
                     del predictions
 
                 # compute average loss and update progress bar
@@ -211,14 +212,8 @@ class MIAModel(nn.module):
                          scheduler_class=None, scheduler_args={}):
         """
         """
-        # load optimizer
-        if "params" in optim_args:
-            for params_dict in optim_args["params"]:
-                params_dict["params"] = self._modules[params_dict["params"]].parameters()
-        else:
-            optim_args["params"] = self.parameters()
+        self.optimizer = getattr(optims, optim_class)(self.parameters(), **optim_args)
 
-        self.optimizer = getattr(optims, optim_class)(**optim_args)
         # load scheduler
         if scheduler_class is not None:
             self.scheduler = getattr(schedulers,
@@ -253,7 +248,7 @@ class GraphConvolution(nn.Module):
         self.reset_parameters()
 
     def reset_parameters(self):
-        stdv = 1. / torch.sqrt(self.weight.size(1))
+        stdv = 1. / math.sqrt(self.weight.size(1))
         self.weight.data.uniform_(-stdv, stdv)
         if self.bias is not None:
             self.bias.data.uniform_(-stdv, stdv)

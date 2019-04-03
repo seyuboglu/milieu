@@ -436,7 +436,7 @@ def evaluate(model, loss_fn, dataloader, metrics, params):
     outputs, labels = zip(*outputs_labels)
     outputs = torch.cat(outputs, dim=0)
     labels = torch.cat(labels, dim=0)
-    summary = {metric:metrics[metric](outputs, labels)
+    summary = {metric: metrics[metric](outputs, labels)
                for metric in metrics}
     summary['loss'] = np.mean(losses)
 
