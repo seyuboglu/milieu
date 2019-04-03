@@ -99,7 +99,6 @@ class DPPEvaluate(Experiment):
             disease: (Disease) A disease object
         """
         scores = self.method.compute_scores(train_nodes, disease)
-        self.method 
         return scores
 
     def run_dpp(self, disease):

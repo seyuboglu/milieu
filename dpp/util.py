@@ -226,3 +226,45 @@ def build_degree_buckets(network, min_len=500):
             degree_to_buckets[degree] = prev_bucket
 
     return degree_to_buckets
+
+def place_on_gpu(data, device=0):
+    """
+    Recursively places all 'torch.Tensor's in data on gpu and detaches.
+    If elements are lists or tuples, recurses on the elements. Otherwise it
+    ignores it.
+    source: inspired by place_on_gpu from Snorkel Metal
+    https://github.com/HazyResearch/metal/blob/master/metal/utils.py
+    """
+    data_type = type(data)
+    if data_type in (list, tuple):
+        data = [place_on_gpu(data[i], device) for i in range(len(data))]
+        data = data_type(data)
+        return data
+    elif data_type is dict:
+        data = {key: place_on_gpu(val, device) for key, val in data.items()}
+        return data
+    elif isinstance(data, torch.Tensor):
+        return data.to(device)
+    else:
+        return data
+
+def place_on_cpu(data):
+    """
+    Recursively places all 'torch.Tensor's in data on cpu and detaches from computation
+    graph. If elements are lists or tuples, recurses on the elements. Otherwise it
+    ignores it.
+    source: inspired by place_on_gpu from Snorkel Metal
+    https://github.com/HazyResearch/metal/blob/master/metal/utils.py
+    """
+    data_type = type(data)
+    if data_type in (list, tuple):
+        data = [place_on_cpu(data[i]) for i in range(len(data))]
+        data = data_type(data)
+        return data
+    elif data_type is dict:
+        data = {key: place_on_cpu(val) for key,val in data.items()}
+        return data
+    elif isinstance(data, torch.Tensor):
+        return data.cpu().detach()
+    else:
+        return data
