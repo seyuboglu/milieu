@@ -107,9 +107,11 @@ class MIAModel(nn.Module):
         """
         Weighted binary cross entropy loss.
         """
-        num_pos = 1.0 * targets.data.sum()
-        num_neg = targets.data.nelement() - num_pos
-        bce_loss = nn.BCEWithLogitsLoss(pos_weight=num_neg / num_pos)
+        # ignore -1 indices
+        outputs = outputs[torch.where(targets != -1)]
+        targets = targets[torch.where(targets != -1)]
+
+        bce_loss = nn.BCEWithLogitsLoss()
         return bce_loss(outputs, targets) 
     
     def score(self, dataloader, metric_configs=[], log_predictions=True):
