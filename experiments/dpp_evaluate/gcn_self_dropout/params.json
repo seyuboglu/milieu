@@ -1,0 +1,91 @@
+{
+    "process": "dpp_evaluate",
+    "process_params": 
+        {
+            "n_processes": 1,
+            "ppi_network": "data/networks/bio-pathways-network.txt",
+            "diseases_path": "data/associations/disgenet-associations.csv",
+            "disease_subset": ["C0001627"],
+
+            "n_folds": 10,
+
+            "method_class": "GCN",
+            "method_params": {
+                "model_args": {
+                    "cuda": false,
+                    "devices": [0],
+
+                    "optim_class": "Adam",
+                    "optim_args": {
+                        "lr": 1e-2,
+                        "weight_decay": 0
+                    },
+
+                    "scheduler_class": "StepLR",
+                    "scheduler_args": {
+                        "step_size": 20,
+                        "gamma": 0.5
+                    },
+
+                    "gcn_layer_configs": [
+                        {
+                            "class": "GraphConvolutionLayer",
+                            "args": {
+                                "out_features": 128,
+                                "self_dropout": 0.5,
+                                "activation": "relu"
+                            }
+                        },
+                        {
+                            "class": "GraphConvolutionLayer",
+                            "args": {
+                                "in_features": 128,
+                                "out_features": 512,
+                                "self_dropout": 0.0,
+                                "activation": "relu"
+                            }
+                        }
+                    ],
+    
+                    "fcn_layer_configs": [
+                        {
+                            "class": "FullyConnectedLayer",
+                            "args": {
+                                "in_features": 512,
+                                "out_features": 512,
+                                "dropout": 0.5,
+                                "activation": "relu"
+                            }
+                        },
+                        {
+                            "class": "FullyConnectedLayer",
+                            "args": {
+                                "in_features": 512,
+                                "out_features": 1,
+                                "dropout": 0.5,
+                                "activation": null
+                            }
+                        }
+                    ]
+                },
+
+                "dataset_args": {
+                    "num_examples": 1
+                },
+
+                "train_args": {
+                    "num_epochs": 6,
+                    "summary_period": 1,
+                    "metric_configs": [
+                        {"fn": "recall_at_100"}
+                    ]
+                },
+
+                "valid_args": {
+                    "metric_configs": [
+                        {"fn": "recall_at_100"}
+                    ]
+                }
+            }
+        }
+}

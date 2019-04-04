@@ -17,6 +17,7 @@ from dpp.experiments.experiment import Experiment
 from dpp.methods.random_walk import RandomWalk
 from dpp.methods.lci.lci_method import LCI
 from dpp.methods.mia.mia_method import MIA
+from dpp.methods.gcn.gcn_method import GCN
 from dpp.data.associations import load_diseases
 from dpp.data.network import PPINetwork
 from dpp.metrics import positive_rankings, recall_at, recall, auroc, average_precision
