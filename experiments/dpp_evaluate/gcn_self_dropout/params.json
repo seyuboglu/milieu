@@ -5,19 +5,19 @@
             "n_processes": 1,
             "ppi_network": "data/networks/bio-pathways-network.txt",
             "diseases_path": "data/associations/disgenet-associations.csv",
-            "disease_subset": ["C0001627"],
+            "disease_subset": ["C0008325"],
 
             "n_folds": 10,
 
             "method_class": "GCN",
             "method_params": {
                 "model_args": {
-                    "cuda": false,
+                    "cuda": true,
                     "devices": [0],
 
                     "optim_class": "Adam",
                     "optim_args": {
-                        "lr": 1e-2,
+                        "lr": 1e-1,
                         "weight_decay": 0
                     },
 
@@ -31,46 +31,16 @@
                         {
                             "class": "GraphConvolutionLayer",
                             "args": {
-                                "out_features": 128,
-                                "self_dropout": 0.5,
-                                "activation": "relu"
-                            }
-                        },
-                        {
-                            "class": "GraphConvolutionLayer",
-                            "args": {
-                                "in_features": 128,
-                                "out_features": 512,
-                                "self_dropout": 0.0,
-                                "activation": "relu"
-                            }
-                        }
-                    ],
-    
-                    "fcn_layer_configs": [
-                        {
-                            "class": "FullyConnectedLayer",
-                            "args": {
-                                "in_features": 512,
-                                "out_features": 512,
-                                "dropout": 0.5,
-                                "activation": "relu"
-                            }
-                        },
-                        {
-                            "class": "FullyConnectedLayer",
-                            "args": {
-                                "in_features": 512,
                                 "out_features": 1,
-                                "dropout": 0.5,
-                                "activation": null
+                                "self_dropout": 1.0,
+                                "bias": false
                             }
                         }
                     ]
                 },
 
                 "dataset_args": {
-                    "num_examples": 1
+                    "num_examples": 30
                 },
 
                 "train_args": {

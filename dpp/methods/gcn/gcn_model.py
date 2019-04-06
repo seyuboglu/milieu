@@ -50,13 +50,12 @@ class GCNModel(nn.Module):
         adj_matrix_norm = torch.mul(torch.mul(deg_vec.view(1, -1), adj_matrix), 
                                     deg_vec.view(-1, 1)).to_sparse()
         self.register_buffer("adj_matrix_norm", adj_matrix_norm)
+        if self.cuda:
+            self.adj_matrix_norm = self.adj_matrix_norm.to(self.device)
 
         if "in_features" not in gcn_layer_configs[0]["args"]:
             self.features = False 
             gcn_layer_configs[0]["args"]["in_features"] = len(network)
-            self.eye = torch.eye(self.adj_matrix_norm.shape[0])
-            if self.cuda:
-                self.eye.to(self.device)
         else:
             self.features = False
 
@@ -83,15 +82,12 @@ class GCNModel(nn.Module):
         """
         """
         if not self.features:
-            inputs = self.eye
-
-        m, n = inputs.shape
+            inputs = None
 
         outputs = inputs
         for i, layer in enumerate(self.gcn):
-            outputs = layer(outputs, self.adj_matrix_norm, 
-                            eye_input=(i == 0 and not self.features))
-        
+            outputs = layer(self.adj_matrix_norm, outputs)
+                
         for i, layer in enumerate(self.fcn):
             outputs = layer(outputs)
 
@@ -209,8 +205,8 @@ class GCNModel(nn.Module):
                     writer.add_scalar(tag="loss", scalar_value=loss)
                 t.set_postfix(loss='{:05.3f}'.format(float(avg_loss)))
                 t.update()
-
                 del loss, outputs, inputs, targets
+
 
         metrics.compute()
         return metrics
@@ -238,14 +234,14 @@ class GraphConvolutionLayer(nn.Module):
     """
 
     def __init__(self, in_features, out_features, bias=True, 
-                 self_dropout=0.5, activation="relu"):
+                 self_dropout=0.5, activation=None):
         super().__init__()
         self.in_features = in_features
         self.out_features = out_features
         self.self_dropout = self_dropout
         self.activation = activation
 
-        self.weight = nn.Parameter(torch.FloatTensor(2 * in_features, out_features))
+        self.weight = nn.Parameter(torch.FloatTensor(in_features, out_features))
         if bias:
             self.bias = nn.Parameter(torch.FloatTensor(out_features))
         else:
@@ -258,14 +254,33 @@ class GraphConvolutionLayer(nn.Module):
         if self.bias is not None:
             self.bias.data.uniform_(-stdv, stdv)
 
-    def forward(self, inputs, adj, eye_input=False):
-        neighborhood = torch.spmm(adj, inputs) if not eye_input else adj.to_dense()
+    def forward(self, adj, inputs=None):
+        # if inputs is None:
+        #     neighborhood = adj.to_dense()
+        #     if self.self_dropout is not None and self.training:
+        #         mask = (torch.rand(self.weight.shape[0]//2) > 
+        #                 self.self_dropout).type(torch.float).to(self.weight.device)
+        #         self_weight = self.weight[:self.weight.shape[0]//2] * mask.unsqueeze(-1)
+        #     else:
+        #         self_weight = self.weight[:self.weight.shape[0]//2]
 
-        if self.self_dropout is not None and self.training:
-            mask = (torch.rand(inputs.shape[0]) > self.self_dropout).type(torch.float)
-            inputs = inputs * mask.unsqueeze(-1) 
+        #     outputs = torch.mm(neighborhood, self.weight[self.weight.shape[0]//2:])
+        #     outputs += self_weight
+        # else:
+        #     neighborhood = torch.spmm(adj, inputs) 
+        #     if self.self_dropout is not None and self.training:
+        #         mask = (torch.rand(inputs.shape[0]) > 
+        #                 self.self_dropout).type(torch.float).to(inputs.device)
+        #         inputs = inputs * mask.unsqueeze(-1)
+        #     outputs = torch.mm(torch.cat([inputs, neighborhood], dim=1), self.weight)
 
-        outputs = torch.mm(torch.cat([inputs, neighborhood], dim=1), self.weight)
+        if inputs is None:
+            neighborhood = adj
+        else:
+            neighborhood = torch.spmm(adj, inputs)
+        outputs = torch.mm(neighborhood, self.weight)
+
+
 
         if self.bias is not None:
             outputs = outputs + self.bias
@@ -288,7 +303,7 @@ class FullyConnectedLayer(nn.Module):
     """
 
     def __init__(self, in_features, out_features, bias=True, 
-                 dropout=0.5, activation="relu"):
+                 dropout=0.5, activation=None):
         super().__init__()
         self.in_features = in_features
         self.out_features = out_features
