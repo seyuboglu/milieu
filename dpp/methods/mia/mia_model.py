@@ -18,11 +18,12 @@ from tqdm import tqdm
 
 from dpp.util import place_on_cpu, place_on_gpu
 from dpp.methods.mia.metrics import Metrics
+from dpp.data.embeddings import load_embeddings
 
 
 class MIAModel(nn.Module):
 
-    def __init__(self, network, gcn_layer_configs=[], fcn_layer_configs=[],
+    def __init__(self, network, embeddings_path,
                  dropout_prob=0.5, optim_class="Adam", optim_args={},
                  scheduler_class=None, scheduler_args={},
                  cuda=True, devices=[0]):
@@ -41,6 +42,7 @@ class MIAModel(nn.Module):
         self.network = network
 
         adj_matrix = torch.tensor(network.adj_matrix, dtype=torch.float)
+        self.adj_matrix = adj_matrix
 
         # build degree vector
         deg_vec = torch.sum(adj_matrix, dim=1, dtype=torch.float)
@@ -53,23 +55,13 @@ class MIAModel(nn.Module):
         self.register_buffer("adj_rcnorm", adj_rcnorm)
         self.register_buffer("adj_rnorm", adj_rnorm)
 
-        self.eye = torch.eye(self.adj_rcnorm.shape[0]).to(self.device)
+        self.embeddings = torch.tensor(load_embeddings(embeddings_path, network), 
+                                       dtype=torch.float)
+        self.att_proj_layer = nn.Linear(in_features=self.embeddings.shape[1], 
+                                        out_features=self.embeddings.shape[1], bias=True)
 
-        # gcn 
-        self.gcn = nn.ModuleList()
-        for idx, layer_config in enumerate(gcn_layer_configs): 
-            if idx == 0:
-                layer_config["args"]["in_features"] = len(network)
-            layer = globals()[layer_config["class"]](**layer_config["args"])
-            self.gcn.append(layer)
-
-        
-        # fcn
-        self.fcn = nn.ModuleList()
-        for layer_config in fcn_layer_configs: 
-            layer = globals()[layer_config["class"]](**layer_config["args"])
-            self.fcn.append(layer)
-        
+        self.weight_layer = nn.Linear(in_features=self.embeddings.shape[1] * 2, 
+                                      out_features=1, bias=True)
         self.final_layer = nn.Linear(in_features=1, out_features=1, bias=True)
         
         self.dropout = nn.Dropout(p=dropout_prob)
@@ -83,29 +75,26 @@ class MIAModel(nn.Module):
     def forward(self, inputs): 
         """
         """
-        m, n = inputs.shape
+        batch_size, num_nodes = inputs.shape
+        assert(batch_size == 1)
+        inputs = inputs.squeeze(0)
 
-        node_embeddings = self.eye
-        for i, layer in enumerate(self.gcn):
-            node_embeddings = layer(node_embeddings, self.adj_rcnorm)
-            node_embeddings = nn.functional.relu(node_embeddings)
-            node_embeddings = self.dropout(node_embeddings)
+        # currently only works with batch_size 1
+        pos_embeddings = self.embeddings[torch.nonzero(inputs), :].squeeze(1)  # num_pos x d
+        pos_embeddings_proj = self.att_proj_layer(pos_embeddings)  # num_pos x d
+        att_scores = torch.matmul(pos_embeddings_proj, self.embeddings.t())  # num_pos x num_nodes
+        pos_adj = self.adj_matrix[torch.nonzero(inputs), :].squeeze(1)
+        att_scores = pos_adj * att_scores  # num_pos x num_nodes
+        att_probs = torch.softmax(att_scores, dim=0)   # num_pos x num_nodes
+        context_embeddings = torch.matmul(att_probs.t(), pos_embeddings) # num_nodes x d
+        context_embeddings = torch.cat((self.embeddings, context_embeddings), dim=1)
+        mutual_node_weights = torch.sigmoid(self.weight_layer(context_embeddings)) 
         
-        for i, layer in enumerate(self.fcn):
-            node_embeddings = layer(node_embeddings)
-            if i == len(self.fcn) - 1: 
-                node_embeddings = node_embeddings / node_embeddings.sum()
-                print("Query Score: ", node_embeddings[5432])
-                print("Max Node: ", self.network.get_proteins([node_embeddings.argmax().item()]))
-                print("Max Score:", node_embeddings.max().data)
-                print("Mean Score: ", node_embeddings.mean().data)
-            else:
-                node_embeddings = nn.functional.relu(node_embeddings)
-                node_embeddings = self.dropout(node_embeddings)
-
-        outputs = torch.sparse.mm(self.adj_rcnorm.t(), inputs.t()).t()  # (m, n)
-        outputs = torch.mul(outputs, node_embeddings.t())  # (m, n)
-        outputs = torch.sparse.mm(self.adj_rnorm.t(), outputs.t()).t()  # (m, n)
+        inputs = inputs.unsqueeze(1)
+        outputs = torch.sparse.mm(self.adj_rcnorm.t(), inputs).t()  # (m, n)
+        outputs = torch.mul(outputs, mutual_node_weights.t())  # (m, n)
+        outputs = outputs.squeeze(0).unsqueeze(1)
+        outputs = torch.sparse.mm(self.adj_rnorm.t(), outputs).t()  # (m, n)
         outputs = self.final_layer(outputs.unsqueeze(-1)).squeeze(-1)
 
         return outputs
