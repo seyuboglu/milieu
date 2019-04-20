@@ -159,6 +159,7 @@ def torch_all_close(a, b, tolerance=1e-12):
     """
     return torch.all(torch.lt(torch.abs(a - b), tolerance))
 
+
 def compute_pvalue(result, null_results):
     """
     """
@@ -166,9 +167,23 @@ def compute_pvalue(result, null_results):
     return np.logical_or((null_results > result), 
                           np.isclose(null_results, result)).mean()
 
-def load_mapping(path, delimiter=" "):
+
+def load_mapping(path, delimiter=" ", reverse=False, 
+                 a_transform=lambda x: x,
+                 b_transform=lambda x: x):
     """
-    loads a str-str mapping from a text file
+    Loads a str-str mapping from a text file of the form:     
+        ' a b
+          c d
+          ...'
+    such that, mapping[a] = b and mapping[c] = d.
+    Ignores any lines with missing input. For example:
+        ' a 
+          c d
+          ...'
+    Args:
+        reverse (bool) reverse the order of the mapping so that mapping[b] = a etc.
+        delimiter (str) the string separating the two elements on each line
     """
     mapping = {}
     with open(path) as f:
@@ -176,8 +191,21 @@ def load_mapping(path, delimiter=" "):
             if line[0] == '#':
                 continue
             a, b = line.split(delimiter)
-            mapping[a] = b.strip("\n")
+            b = b.strip("\n")
+
+            if not a or not b:
+                continue
+                
+            a = a_transform(a)
+            b = b_transform(b)
+
+            if reverse:
+                mapping[b] = a
+            else:
+                mapping[a] = b
+
     return mapping
+
 
 def build_degree_buckets(network, min_len=500):
     """

@@ -2,6 +2,7 @@ import numpy as np
 import sklearn.metrics
 import csv
 
+
 def write_dict_to_csv(filename, dict): 
     with open(filename, "wb") as outfile:
         writer = csv.writer(outfile)
@@ -34,7 +35,7 @@ class ExperimentReader():
         """
         return self.metrics[:, self.header_to_col[header]]
 
-        
+
 class ExperimentResults():
     def __init__(self):
         self.result_grid = []

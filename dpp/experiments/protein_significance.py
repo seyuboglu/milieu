@@ -230,7 +230,7 @@ class ProteinSignificance(Experiment):
         plt.xticks(np.arange(0.0, 1.0, 0.05))
         if plot_type == "kde": 
             plt.yticks()
-        plt.legend()
+        #plt.legend()
         # plt.tight_layout()
         plt.xlim(xmin=xmin, xmax=xmax)
         plt.yscale(yscale)

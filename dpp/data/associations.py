@@ -6,24 +6,25 @@ import pandas as pd
 import networkx as nx
 from goatools.obo_parser import GODag
 
+from dpp.util import load_mapping
 
 class Disease: 
     """
     Represents a disease and associated associations. 
     """
 
-    def __init__(self, id, name, proteins, split="none"):
+    def __init__(self, id, name, entrez_ids, split="none"):
         """ Initialize a disease. 
         Args:
             id (string) 
             name (string)
-            proteins (list of ints)
+            proteins (list of ints) entrez ids
             valdiation_proteins (list of ints)
         """
         self.id = id
         self.name = name
-        self.proteins = proteins
-        self.size = len(proteins)
+        self.proteins = entrez_ids
+        self.size = len(self.proteins)
         self.split = split
 
         self.doids = []
@@ -38,6 +39,13 @@ class Disease:
             protein_to_node (dictionary)
         """
         return network.get_nodes(self.proteins)
+    
+    def to_names(self, entrez_to_name):
+        """ Translates the disease protein list from entrez ids to gene names
+        Args:
+            entrez_to_name  (dict)  dictionary mapping entrez_ids to name
+        """
+        return [entrez_to_name[entrez_id] for entrez_id in self.proteins]
 
 
 def load_diseases(associations_path, 
@@ -46,7 +54,7 @@ def load_diseases(associations_path,
                   gene_names_path=None): 
     """ Load a set of disease-protein associations
     Args:
-        assoications_path (string)
+        associations_path (string)
         diseases_subset (set) 
     Returns:
         diseases (dict)
@@ -56,36 +64,23 @@ def load_diseases(associations_path,
     with open(associations_path) as associations_file:
         reader = csv.DictReader(associations_file)
 
-        has_ids = "Associated Gene IDs" in reader.fieldnames
-        assert(has_ids or gene_names_path is not None)
-
-        if not has_ids:
-            _, name_to_protein = load_gene_names(gene_names_path)
-
         for row in reader:
-            disease_id = row["Disease ID"]
+            disease_id = row["disease_id"]
             if(diseases_subset and disease_id not in diseases_subset):
                 continue  
-            disease_name = row["Disease Name"]
 
-            if has_ids:
-                disease_proteins = set([int(a.strip()) 
-                                        for a in row["Associated Gene IDs"].split(",")])
-            else:
-                disease_proteins = set([int(name_to_protein[a.strip()]) 
-                                        for a in row["Associated Genes Names"].split(",")
-                                        if a.strip() in name_to_protein])
-            if "splits" in row:
-                split = row["splits"]
-            else:
-                split = None
-            
+            split = row.get("splits", None)
             if split in exclude_splits:
                 continue
 
-            total += len(disease_proteins)
+            disease_name = row["disease_name"]
+
+            entrez_ids = set([int(a.strip()) 
+                                    for a in row["gene_entrez_ids"].split(",")])
+
+            total += len(entrez_ids)
             diseases[disease_id] = Disease(disease_id, disease_name, 
-                                           disease_proteins, split)
+                                           entrez_ids, split)
 
     return diseases 
 

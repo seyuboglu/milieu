@@ -1,0 +1,24 @@
+{
+    "process": "disease_subgraph",
+    "process_params": 
+        {
+            "n_processes": 1,
+            "ppi_network": "data/networks/bio-pathways-network.txt",
+            "diseases_path": "data/associations/disgenet-associations.csv",
+            "disease_subset": ["C0003803", "C0398623", "C0023264", "C0001418", 
+                               "C1960469", "C0008325", "C0265275", "C0006142"],
+
+            "method_to_preds": {
+                "lci": "experiments/dpp_predict/lci"
+            },
+
+            "field_to_protein_data": {
+                "protein_name": {
+                    "path": "data/protein/symbol_to_entrez.txt",
+                    "args": {"delimiter": "\t", "reverse": "True"}
+                }
+            },
+
+            "num_preds": 5
+        }
+}

@@ -243,8 +243,8 @@ class DiseaseSignificance(Experiment):
                     plt.ylabel(ylabel)
 
                 disease = self.diseases[disease_id]
-                sns.scatterplot(disease_mean, 0, label=disease.name)
-
+                sns.scatterplot(disease_mean, 0)
+                
                 plt.xlabel(xlabel)
                 sns.despine()
 
@@ -303,7 +303,8 @@ class DiseaseSignificance(Experiment):
         plt.xticks(np.arange(0.0, 1.0, 0.05))
         if plot_type == "kde": 
             plt.yticks()
-        plt.legend()
+        print("hello")
+        #plt.legend()
         #plt.tight_layout()
         plt.xlim(left=0, right=0.25)
         plt.yscale(yscale)
