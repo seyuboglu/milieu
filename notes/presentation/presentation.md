@@ -1,9 +1,5 @@
 # Presentation - April 22
 
-
-
-
-
 # Sections
 
 ### Disease Associated Proteins

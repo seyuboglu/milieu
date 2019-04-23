@@ -129,6 +129,7 @@ class GOEnrichment(Experiment):
             else: 
                 pred_term_to_pval = self.run_study(pred_proteins)
                 self.enrichment_results[name][disease.id] = pred_term_to_pval
+                print(self.enrichment_results)
 
             pred_terms = set([term for term, pval 
                               in pred_term_to_pval.items() if pval < 0.05])
@@ -184,6 +185,7 @@ class GOEnrichment(Experiment):
 
         if self.params["save_enrichment_results"]:
             with open(os.path.join(self.dir,'enrichment_results.pkl'), 'wb') as f:
+                print(self.enrichment_results)
                 pickle.dump(self.enrichment_results, f)
             
     def load_results(self):
