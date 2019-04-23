@@ -82,14 +82,13 @@ def accuracy(probs, targets):
         probs    (tensor)    (size, k)  2-d array of class probabilities
         labels     (tensor)    (size, 1) 1-d array of correct class indices
     """
-    probs = torch.nn.functional.softmax(probs, dim=1)
     probs = probs.numpy()
     targets = targets.numpy()
 
-    pred = np.argmax(probs, axis=1)
+    pred = probs > 0.5
 
     # ignore -1
-    pred = pred[(targets != -1).squeeze()]
+    pred = pred[(targets != -1)]
     targets = targets[targets != -1]
 
     return np.sum(pred == targets) / targets.size

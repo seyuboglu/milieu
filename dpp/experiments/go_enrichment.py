@@ -67,13 +67,13 @@ class GOEnrichment(Experiment):
                                                   index_col=0) 
                                 for name, preds in self.params["method_to_preds"].items()}
         
-        enrichment_results_path = os.path.join(self.dir, "enrichment_results.pkl")
-        if os.path.exists(enrichment_results_path):
-            logging.info("Loading enrichment results...")
-            with open(enrichment_results_path, 'rb') as f:
-                self.enrichment_results = pickle.load(f)
+        outputs_path = os.path.join(self.dir, "outputs.pkl")
+        if os.path.exists(outputs_path):
+            logging.info("Loading outputs...")
+            with open(outputs_path, 'rb') as f:
+                self.outputs = pickle.load(f)
         else:
-            self.enrichment_results = defaultdict(dict)
+            self.outputs = {}
         
     def run_study(self, proteins):
         """
@@ -95,14 +95,15 @@ class GOEnrichment(Experiment):
         """
         """
         results = {}
+        output = {}
         # compute method scores for disease
         disease_proteins = set(self.diseases_dict[disease.id].proteins)
 
-        if disease.id in self.enrichment_results["disease"]:
-            disease_term_to_pval = self.enrichment_results["disease"][disease.id]
+        if disease.id in self.outputs:
+            disease_term_to_pval = self.outputs[disease.id]["disease"]
         else:
             disease_term_to_pval = self.run_study(disease_proteins)
-            self.enrichment_results["disease"][disease.id] = disease_term_to_pval
+        output["disease"] = disease_term_to_pval
 
         disease_terms = set([term for term, pval 
                              in disease_term_to_pval.items() if pval < 0.05])
@@ -124,12 +125,11 @@ class GOEnrichment(Experiment):
                                               .sort_values(ascending=False)
                                               .index[:num_preds]))
 
-            if disease.id in self.enrichment_results[name]:
-                pred_term_to_pval = self.enrichment_results[name][disease.id]
+            if disease.id in self.outputs:
+                pred_term_to_pval = self.outputs[disease.id][name]
             else: 
                 pred_term_to_pval = self.run_study(pred_proteins)
-                self.enrichment_results[name][disease.id] = pred_term_to_pval
-                print(self.enrichment_results)
+            output[name] = pred_term_to_pval
 
             pred_terms = set([term for term, pval 
                               in pred_term_to_pval.items() if pval < 0.05])
@@ -148,7 +148,7 @@ class GOEnrichment(Experiment):
             results[f"{name}_sp_corr"] = sp_corr
             results[f"{name}_sp_pval"] = sp_pval
 
-        return disease, results 
+        return disease, results, output
 
     def _run(self):
         """
@@ -156,24 +156,29 @@ class GOEnrichment(Experiment):
         """        
         results = []
         indices = []
+        outputs = {}
 
         diseases = list(self.diseases_dict.values())
         diseases.sort(key=lambda x: x.split)
         if self.params["n_processes"] > 1:
             with tqdm(total=len(diseases)) as t: 
                 p = Pool(self.params["n_processes"])
-                for disease, result in p.imap(process_disease_wrapper, diseases):
+                for disease, result, output in p.imap(process_disease_wrapper, diseases):
                     results.append(result)
                     indices.append(disease.id)
+                    outputs[disease.id] = output
                     t.update()
         else:
             with tqdm(total=len(diseases)) as t: 
                 for disease in diseases:
-                    disease, result = self.process_disease(disease)
+                    disease, result, output = self.process_disease(disease)
                     results.append(result)
                     indices.append(disease.id)
+                    outputs[disease.id] = output
+
                     t.update()
         
+        self.outputs = outputs
         self.results = pd.DataFrame(results, index=indices)
 
     def save_results(self, summary=True):
@@ -184,9 +189,8 @@ class GOEnrichment(Experiment):
         self.results.to_csv(os.path.join(self.dir, 'results.csv'))
 
         if self.params["save_enrichment_results"]:
-            with open(os.path.join(self.dir,'enrichment_results.pkl'), 'wb') as f:
-                print(self.enrichment_results)
-                pickle.dump(self.enrichment_results, f)
+            with open(os.path.join(self.dir,'outputs.pkl'), 'wb') as f:
+                pickle.dump(self.outputs, f)
             
     def load_results(self):
         """

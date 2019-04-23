@@ -5,14 +5,14 @@
             "n_processes": 1,
             "ppi_network": "data/networks/bio-pathways-network.txt",
             "diseases_path": "data/associations/disgenet-associations.csv",
-            "disease_subset": ["C0001627"],
+            "disease_subset": ["C0008325"],
 
             "n_folds": 10,
 
             "method_class": "MIA",
             "method_params": {
                 "model_args": {
-                    "cuda": false,
+                    "cuda": true,
                     "devices": [0],
 
                     "optim_class": "Adam",
@@ -43,13 +43,15 @@
                     "num_epochs": 6,
                     "summary_period": 1,
                     "metric_configs": [
-                        {"fn": "recall_at_100"}
+                        {"fn": "recall_at_100"},
+                        {"fn": "accuracy"}
                     ]
                 },
 
                 "valid_args": {
                     "metric_configs": [
-                        {"fn": "recall_at_100"}
+                        {"fn": "recall_at_100"},
+                        {"fn": "accuracy"}
                     ]
                 }
             }

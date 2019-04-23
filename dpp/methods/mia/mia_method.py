@@ -132,9 +132,10 @@ class TrainDataset(Dataset):
             normalized_scores = (mi_scores - hidden_mi_score) / torch.std(mi_scores)
             cdfs = self.normal.cdf(normalized_scores).numpy()
             probs = (cdfs / np.sum(cdfs))
-            neg_node = np.random.choice(self.num_nodes, size=1, replace=False, p=probs)
-            Y[hidden_node] = 1
+            neg_node = np.random.choice(self.num_nodes, size=1, replace=False) #, p=probs)
             Y[neg_node] = 0
+            Y[hidden_node] = 1
+
             # print(f"Hidden MI: {mi_scores[hidden_node]}, Neg MI: {mi_scores[neg_node]}")
             
         Y[known_nodes] = -1

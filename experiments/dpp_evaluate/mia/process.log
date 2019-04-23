@@ -4704,3 +4704,1729 @@
 2019-04-11 11:39:47,391:INFO: Epoch 1 of 6
 2019-04-11 11:39:47,393:INFO: - Current learning rate: 0.01
 2019-04-11 11:39:47,393:INFO: Training
+2019-04-11 11:46:03,519:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 11:46:03,519:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 11:46:03,519:INFO: ======================================
+2019-04-11 11:46:03,519:INFO: Loading PPI Network...
+2019-04-11 11:46:11,001:INFO: Loading Disease Associations...
+2019-04-11 11:46:11,030:INFO: Running Experiment...
+2019-04-11 11:46:22,286:INFO: Starting training for 6 epoch(s)
+2019-04-11 11:46:22,287:INFO: Epoch 1 of 6
+2019-04-11 11:46:22,287:INFO: - Current learning rate: 0.01
+2019-04-11 11:46:22,287:INFO: Training
+2019-04-11 11:46:38,606:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 11:46:38,607:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 11:46:38,607:INFO: ======================================
+2019-04-11 11:46:38,607:INFO: Loading PPI Network...
+2019-04-11 11:46:46,413:INFO: Loading Disease Associations...
+2019-04-11 11:46:46,447:INFO: Running Experiment...
+2019-04-11 11:46:57,454:INFO: Starting training for 6 epoch(s)
+2019-04-11 11:47:01,878:INFO: Epoch 1 of 6
+2019-04-11 11:47:01,879:INFO: - Current learning rate: 0.01
+2019-04-11 11:47:01,879:INFO: Training
+2019-04-11 11:48:23,102:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 11:48:23,102:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 11:48:23,103:INFO: ======================================
+2019-04-11 11:48:23,103:INFO: Loading PPI Network...
+2019-04-11 11:48:29,877:INFO: Loading Disease Associations...
+2019-04-11 11:48:29,891:INFO: Running Experiment...
+2019-04-11 11:48:41,226:INFO: Starting training for 6 epoch(s)
+2019-04-11 11:48:45,951:INFO: Epoch 1 of 6
+2019-04-11 11:48:45,952:INFO: - Current learning rate: 0.01
+2019-04-11 11:48:45,952:INFO: Training
+2019-04-11 11:48:53,001:INFO: Validation
+2019-04-11 11:48:53,068:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.7077238430579503, 'recall_at_100': 0.0})
+2019-04-11 11:48:53,068:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:48:53,068:INFO: Epoch 2 of 6
+2019-04-11 11:48:53,068:INFO: - Current learning rate: 0.01
+2019-04-11 11:48:53,069:INFO: Training
+2019-04-11 11:48:59,974:INFO: Validation
+2019-04-11 11:49:00,041:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6865898360808692, 'recall_at_100': 0.0})
+2019-04-11 11:49:00,042:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:49:00,042:INFO: Epoch 3 of 6
+2019-04-11 11:49:00,042:INFO: - Current learning rate: 0.01
+2019-04-11 11:49:00,042:INFO: Training
+2019-04-11 11:49:06,959:INFO: Validation
+2019-04-11 11:49:07,029:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6839004387458165, 'recall_at_100': 0.0})
+2019-04-11 11:49:07,029:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:49:07,029:INFO: Epoch 4 of 6
+2019-04-11 11:49:07,029:INFO: - Current learning rate: 0.01
+2019-04-11 11:49:07,030:INFO: Training
+2019-04-11 11:51:01,969:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 11:51:01,969:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 11:51:01,969:INFO: ======================================
+2019-04-11 11:51:01,969:INFO: Loading PPI Network...
+2019-04-11 11:51:09,187:INFO: Loading Disease Associations...
+2019-04-11 11:51:09,220:INFO: Running Experiment...
+2019-04-11 11:51:26,703:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 11:51:26,704:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 11:51:26,704:INFO: ======================================
+2019-04-11 11:51:26,704:INFO: Loading PPI Network...
+2019-04-11 11:51:34,165:INFO: Loading Disease Associations...
+2019-04-11 11:51:34,195:INFO: Running Experiment...
+2019-04-11 11:51:44,612:INFO: Starting training for 6 epoch(s)
+2019-04-11 11:51:49,267:INFO: Epoch 1 of 6
+2019-04-11 11:51:49,267:INFO: - Current learning rate: 0.01
+2019-04-11 11:51:49,268:INFO: Training
+2019-04-11 11:51:56,292:INFO: Validation
+2019-04-11 11:51:56,365:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6913821756839752, 'recall_at_100': 0.0})
+2019-04-11 11:51:56,365:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:51:56,365:INFO: Epoch 2 of 6
+2019-04-11 11:51:56,365:INFO: - Current learning rate: 0.01
+2019-04-11 11:51:56,365:INFO: Training
+2019-04-11 11:52:03,359:INFO: Validation
+2019-04-11 11:52:03,422:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6892390112082164, 'recall_at_100': 0.0})
+2019-04-11 11:52:03,422:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:52:03,422:INFO: Epoch 3 of 6
+2019-04-11 11:52:03,422:INFO: - Current learning rate: 0.01
+2019-04-11 11:52:03,422:INFO: Training
+2019-04-11 11:52:10,498:INFO: Validation
+2019-04-11 11:52:10,568:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6864900549252828, 'recall_at_100': 0.0})
+2019-04-11 11:52:10,568:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:52:10,568:INFO: Epoch 4 of 6
+2019-04-11 11:52:10,568:INFO: - Current learning rate: 0.01
+2019-04-11 11:52:10,568:INFO: Training
+2019-04-11 11:52:17,427:INFO: Validation
+2019-04-11 11:52:17,494:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6823530654112498, 'recall_at_100': 0.0})
+2019-04-11 11:52:17,494:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:52:17,494:INFO: Epoch 5 of 6
+2019-04-11 11:52:17,494:INFO: - Current learning rate: 0.01
+2019-04-11 11:52:17,495:INFO: Training
+2019-04-11 11:52:24,537:INFO: Validation
+2019-04-11 11:52:24,602:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6833379377921422, 'recall_at_100': 0.0})
+2019-04-11 11:52:24,602:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:52:24,602:INFO: Epoch 6 of 6
+2019-04-11 11:52:24,602:INFO: - Current learning rate: 0.01
+2019-04-11 11:52:24,602:INFO: Training
+2019-04-11 11:52:31,582:INFO: Validation
+2019-04-11 11:52:31,645:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6799738377332687, 'recall_at_100': 0.0})
+2019-04-11 11:52:31,645:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:52:41,739:INFO: Starting training for 6 epoch(s)
+2019-04-11 11:52:42,006:INFO: Epoch 1 of 6
+2019-04-11 11:52:42,006:INFO: - Current learning rate: 0.01
+2019-04-11 11:52:42,006:INFO: Training
+2019-04-11 11:52:48,935:INFO: Validation
+2019-04-11 11:52:49,011:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.701953583955765, 'recall_at_100': 0.0})
+2019-04-11 11:52:49,011:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:52:49,011:INFO: Epoch 2 of 6
+2019-04-11 11:52:49,011:INFO: - Current learning rate: 0.01
+2019-04-11 11:52:49,011:INFO: Training
+2019-04-11 11:52:56,019:INFO: Validation
+2019-04-11 11:52:56,100:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6904190808534623, 'recall_at_100': 0.0})
+2019-04-11 11:52:56,100:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:52:56,100:INFO: Epoch 3 of 6
+2019-04-11 11:52:56,100:INFO: - Current learning rate: 0.01
+2019-04-11 11:52:56,100:INFO: Training
+2019-04-11 11:53:03,175:INFO: Validation
+2019-04-11 11:53:03,243:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.686739922563235, 'recall_at_100': 0.0})
+2019-04-11 11:53:03,243:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:53:03,243:INFO: Epoch 4 of 6
+2019-04-11 11:53:03,243:INFO: - Current learning rate: 0.01
+2019-04-11 11:53:03,243:INFO: Training
+2019-04-11 11:53:10,302:INFO: Validation
+2019-04-11 11:53:10,374:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6877315739790598, 'recall_at_100': 0.0})
+2019-04-11 11:53:10,375:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:53:10,375:INFO: Epoch 5 of 6
+2019-04-11 11:53:10,375:INFO: - Current learning rate: 0.01
+2019-04-11 11:53:10,375:INFO: Training
+2019-04-11 11:53:17,392:INFO: Validation
+2019-04-11 11:53:17,464:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6853184868892034, 'recall_at_100': 0.0})
+2019-04-11 11:53:17,465:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:53:17,465:INFO: Epoch 6 of 6
+2019-04-11 11:53:17,465:INFO: - Current learning rate: 0.01
+2019-04-11 11:53:17,465:INFO: Training
+2019-04-11 11:53:24,533:INFO: Validation
+2019-04-11 11:53:24,596:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6863410810629527, 'recall_at_100': 0.0})
+2019-04-11 11:53:24,596:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:53:35,389:INFO: Starting training for 6 epoch(s)
+2019-04-11 11:53:35,635:INFO: Epoch 1 of 6
+2019-04-11 11:53:35,635:INFO: - Current learning rate: 0.01
+2019-04-11 11:53:35,635:INFO: Training
+2019-04-11 11:53:42,618:INFO: Validation
+2019-04-11 11:53:42,685:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.692742027839025, 'recall_at_100': 0.0})
+2019-04-11 11:53:42,686:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:53:42,686:INFO: Epoch 2 of 6
+2019-04-11 11:53:42,686:INFO: - Current learning rate: 0.01
+2019-04-11 11:53:42,686:INFO: Training
+2019-04-11 11:53:49,689:INFO: Validation
+2019-04-11 11:53:49,763:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6926961143811544, 'recall_at_100': 0.0})
+2019-04-11 11:53:49,763:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:53:49,763:INFO: Epoch 3 of 6
+2019-04-11 11:53:49,763:INFO: - Current learning rate: 0.01
+2019-04-11 11:53:49,764:INFO: Training
+2019-04-11 11:53:56,741:INFO: Validation
+2019-04-11 11:53:56,815:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6922355065743129, 'recall_at_100': 0.0})
+2019-04-11 11:53:56,815:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:53:56,815:INFO: Epoch 4 of 6
+2019-04-11 11:53:56,815:INFO: - Current learning rate: 0.01
+2019-04-11 11:53:56,815:INFO: Training
+2019-04-11 11:54:10,785:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 11:54:10,785:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 11:54:10,785:INFO: ======================================
+2019-04-11 11:54:10,786:INFO: Loading PPI Network...
+2019-04-11 11:54:17,521:INFO: Loading Disease Associations...
+2019-04-11 11:54:17,535:INFO: Running Experiment...
+2019-04-11 11:54:27,975:INFO: Starting training for 6 epoch(s)
+2019-04-11 11:54:32,713:INFO: Epoch 1 of 6
+2019-04-11 11:54:32,713:INFO: - Current learning rate: 0.01
+2019-04-11 11:54:32,713:INFO: Training
+2019-04-11 11:54:39,758:INFO: Validation
+2019-04-11 11:54:39,829:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.7330089330673217, 'recall_at_100': 0.5333333333333333})
+2019-04-11 11:54:39,830:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:54:39,830:INFO: Epoch 2 of 6
+2019-04-11 11:54:39,830:INFO: - Current learning rate: 0.01
+2019-04-11 11:54:39,830:INFO: Training
+2019-04-11 11:54:46,772:INFO: Validation
+2019-04-11 11:54:46,846:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6946249345938363, 'recall_at_100': 0.39166666666666666})
+2019-04-11 11:54:46,846:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:54:46,847:INFO: Epoch 3 of 6
+2019-04-11 11:54:46,847:INFO: - Current learning rate: 0.01
+2019-04-11 11:54:46,847:INFO: Training
+2019-04-11 11:54:53,699:INFO: Validation
+2019-04-11 11:54:53,769:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6862924824158351, 'recall_at_100': 0.475})
+2019-04-11 11:54:53,769:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:54:53,769:INFO: Epoch 4 of 6
+2019-04-11 11:54:53,769:INFO: - Current learning rate: 0.01
+2019-04-11 11:54:53,769:INFO: Training
+2019-04-11 11:55:00,744:INFO: Validation
+2019-04-11 11:55:00,809:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6825009455283483, 'recall_at_100': 0.4666666666666667})
+2019-04-11 11:55:00,809:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:55:00,809:INFO: Epoch 5 of 6
+2019-04-11 11:55:00,809:INFO: - Current learning rate: 0.01
+2019-04-11 11:55:00,809:INFO: Training
+2019-04-11 11:55:07,619:INFO: Validation
+2019-04-11 11:55:07,687:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.684198318918546, 'recall_at_100': 0.43333333333333335})
+2019-04-11 11:55:07,687:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:55:07,687:INFO: Epoch 6 of 6
+2019-04-11 11:55:07,687:INFO: - Current learning rate: 0.01
+2019-04-11 11:55:07,687:INFO: Training
+2019-04-11 11:55:14,569:INFO: Validation
+2019-04-11 11:55:14,635:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.681351034839948, 'recall_at_100': 0.35833333333333334})
+2019-04-11 11:55:14,635:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:55:25,094:INFO: Starting training for 6 epoch(s)
+2019-04-11 11:55:25,429:INFO: Epoch 1 of 6
+2019-04-11 11:55:25,429:INFO: - Current learning rate: 0.01
+2019-04-11 11:55:25,429:INFO: Training
+2019-04-11 11:55:32,166:INFO: Validation
+2019-04-11 11:55:32,236:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.7059866269429524, 'recall_at_100': 0.2916666666666667})
+2019-04-11 11:55:32,236:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:55:32,236:INFO: Epoch 2 of 6
+2019-04-11 11:55:32,236:INFO: - Current learning rate: 0.01
+2019-04-11 11:55:32,236:INFO: Training
+2019-04-11 11:55:39,190:INFO: Validation
+2019-04-11 11:55:39,263:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6876812487840651, 'recall_at_100': 0.325})
+2019-04-11 11:55:39,264:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:55:39,264:INFO: Epoch 3 of 6
+2019-04-11 11:55:39,264:INFO: - Current learning rate: 0.01
+2019-04-11 11:55:39,264:INFO: Training
+2019-04-11 11:55:46,153:INFO: Validation
+2019-04-11 11:55:46,225:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6844610532124837, 'recall_at_100': 0.39166666666666666})
+2019-04-11 11:55:46,226:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:55:46,226:INFO: Epoch 4 of 6
+2019-04-11 11:55:46,226:INFO: - Current learning rate: 0.01
+2019-04-11 11:55:46,226:INFO: Training
+2019-04-11 11:55:52,841:INFO: Validation
+2019-04-11 11:55:52,905:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6823372562726339, 'recall_at_100': 0.39166666666666666})
+2019-04-11 11:55:52,906:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:55:52,906:INFO: Epoch 5 of 6
+2019-04-11 11:55:52,906:INFO: - Current learning rate: 0.01
+2019-04-11 11:55:52,906:INFO: Training
+2019-04-11 11:55:59,698:INFO: Validation
+2019-04-11 11:55:59,766:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6790668924649558, 'recall_at_100': 0.375})
+2019-04-11 11:55:59,766:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:55:59,766:INFO: Epoch 6 of 6
+2019-04-11 11:55:59,766:INFO: - Current learning rate: 0.01
+2019-04-11 11:55:59,766:INFO: Training
+2019-04-11 11:56:06,838:INFO: Validation
+2019-04-11 11:56:06,913:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.680142373840014, 'recall_at_100': 0.31666666666666665})
+2019-04-11 11:56:06,913:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:56:17,344:INFO: Starting training for 6 epoch(s)
+2019-04-11 11:56:17,901:INFO: Epoch 1 of 6
+2019-04-11 11:56:17,901:INFO: - Current learning rate: 0.01
+2019-04-11 11:56:17,902:INFO: Training
+2019-04-11 11:56:24,715:INFO: Validation
+2019-04-11 11:56:24,783:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.7575967421134313, 'recall_at_100': 0.0})
+2019-04-11 11:56:24,783:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:56:24,784:INFO: Epoch 2 of 6
+2019-04-11 11:56:24,784:INFO: - Current learning rate: 0.01
+2019-04-11 11:56:24,784:INFO: Training
+2019-04-11 11:57:40,314:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 11:57:40,314:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 11:57:40,314:INFO: ======================================
+2019-04-11 11:57:40,315:INFO: Loading PPI Network...
+2019-04-11 11:57:47,651:INFO: Loading Disease Associations...
+2019-04-11 11:57:47,666:INFO: Running Experiment...
+2019-04-11 11:57:59,373:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 11:57:59,373:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 11:57:59,373:INFO: ======================================
+2019-04-11 11:57:59,373:INFO: Loading PPI Network...
+2019-04-11 11:58:06,926:INFO: Loading Disease Associations...
+2019-04-11 11:58:06,940:INFO: Running Experiment...
+2019-04-11 11:58:17,246:INFO: Starting training for 6 epoch(s)
+2019-04-11 11:58:22,658:INFO: Epoch 1 of 6
+2019-04-11 11:58:22,659:INFO: - Current learning rate: 0.01
+2019-04-11 11:58:22,659:INFO: Training
+2019-04-11 11:58:29,678:INFO: Validation
+2019-04-11 11:58:29,742:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6932168861230215, 'recall_at_100': 0.03333333333333333})
+2019-04-11 11:58:29,742:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:58:29,742:INFO: Epoch 2 of 6
+2019-04-11 11:58:29,742:INFO: - Current learning rate: 0.01
+2019-04-11 11:58:29,742:INFO: Training
+2019-04-11 11:58:36,756:INFO: Validation
+2019-04-11 11:58:36,827:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.690876763065656, 'recall_at_100': 0.0})
+2019-04-11 11:58:36,827:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:58:36,827:INFO: Epoch 3 of 6
+2019-04-11 11:58:36,827:INFO: - Current learning rate: 0.01
+2019-04-11 11:58:36,827:INFO: Training
+2019-04-11 11:58:43,904:INFO: Validation
+2019-04-11 11:58:43,971:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6875855257113773, 'recall_at_100': 0.0})
+2019-04-11 11:58:43,971:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:58:43,971:INFO: Epoch 4 of 6
+2019-04-11 11:58:43,971:INFO: - Current learning rate: 0.01
+2019-04-11 11:58:43,971:INFO: Training
+2019-04-11 11:58:50,935:INFO: Validation
+2019-04-11 11:58:51,012:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6860144933064779, 'recall_at_100': 0.0})
+2019-04-11 11:58:51,013:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:58:51,013:INFO: Epoch 5 of 6
+2019-04-11 11:58:51,013:INFO: - Current learning rate: 0.01
+2019-04-11 11:58:51,013:INFO: Training
+2019-04-11 11:58:58,052:INFO: Validation
+2019-04-11 11:58:58,115:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6800338874260584, 'recall_at_100': 0.0})
+2019-04-11 11:58:58,115:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:58:58,115:INFO: Epoch 6 of 6
+2019-04-11 11:58:58,115:INFO: - Current learning rate: 0.01
+2019-04-11 11:58:58,115:INFO: Training
+2019-04-11 11:59:05,079:INFO: Validation
+2019-04-11 11:59:05,157:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6789631525675455, 'recall_at_100': 0.0})
+2019-04-11 11:59:05,157:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:59:16,692:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 11:59:16,692:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 11:59:16,692:INFO: ======================================
+2019-04-11 11:59:16,692:INFO: Loading PPI Network...
+2019-04-11 11:59:25,141:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 11:59:25,141:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 11:59:25,141:INFO: ======================================
+2019-04-11 11:59:25,141:INFO: Loading PPI Network...
+2019-04-11 11:59:32,266:INFO: Loading Disease Associations...
+2019-04-11 11:59:32,281:INFO: Running Experiment...
+2019-04-11 11:59:42,848:INFO: Starting training for 6 epoch(s)
+2019-04-11 11:59:48,129:INFO: Epoch 1 of 6
+2019-04-11 11:59:48,130:INFO: - Current learning rate: 0.01
+2019-04-11 11:59:48,130:INFO: Training
+2019-04-11 11:59:54,992:INFO: Validation
+2019-04-11 11:59:55,056:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6963229527076086, 'recall_at_100': 0.39166666666666666})
+2019-04-11 11:59:55,056:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 11:59:55,056:INFO: Epoch 2 of 6
+2019-04-11 11:59:55,057:INFO: - Current learning rate: 0.01
+2019-04-11 11:59:55,057:INFO: Training
+2019-04-11 12:00:01,910:INFO: Validation
+2019-04-11 12:00:01,978:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6895126849412918, 'recall_at_100': 0.425})
+2019-04-11 12:00:01,978:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:00:01,978:INFO: Epoch 3 of 6
+2019-04-11 12:00:01,978:INFO: - Current learning rate: 0.01
+2019-04-11 12:00:01,978:INFO: Training
+2019-04-11 12:00:08,807:INFO: Validation
+2019-04-11 12:00:08,874:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6855249027411146, 'recall_at_100': 0.4583333333333333})
+2019-04-11 12:00:08,874:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:00:08,874:INFO: Epoch 4 of 6
+2019-04-11 12:00:08,874:INFO: - Current learning rate: 0.01
+2019-04-11 12:00:08,874:INFO: Training
+2019-04-11 12:00:15,741:INFO: Validation
+2019-04-11 12:00:15,817:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6846996972958247, 'recall_at_100': 0.375})
+2019-04-11 12:00:15,817:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:00:15,817:INFO: Epoch 5 of 6
+2019-04-11 12:00:15,817:INFO: - Current learning rate: 0.01
+2019-04-11 12:00:15,818:INFO: Training
+2019-04-11 12:00:22,583:INFO: Validation
+2019-04-11 12:00:22,650:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6791930814584096, 'recall_at_100': 0.6083333333333333})
+2019-04-11 12:00:22,650:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:00:22,651:INFO: Epoch 6 of 6
+2019-04-11 12:00:22,651:INFO: - Current learning rate: 0.01
+2019-04-11 12:00:22,651:INFO: Training
+2019-04-11 12:00:29,636:INFO: Validation
+2019-04-11 12:00:29,701:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6796863734722136, 'recall_at_100': 0.575})
+2019-04-11 12:00:29,701:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:00:40,060:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:00:40,386:INFO: Epoch 1 of 6
+2019-04-11 12:00:40,386:INFO: - Current learning rate: 0.01
+2019-04-11 12:00:40,386:INFO: Training
+2019-04-11 12:00:47,082:INFO: Validation
+2019-04-11 12:00:47,143:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.7213345925013225, 'recall_at_100': 0.0})
+2019-04-11 12:00:47,143:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:00:47,144:INFO: Epoch 2 of 6
+2019-04-11 12:00:47,144:INFO: - Current learning rate: 0.01
+2019-04-11 12:00:47,144:INFO: Training
+2019-04-11 12:00:53,999:INFO: Validation
+2019-04-11 12:00:54,070:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6935522596041362, 'recall_at_100': 0.0})
+2019-04-11 12:00:54,071:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:00:54,071:INFO: Epoch 3 of 6
+2019-04-11 12:00:54,071:INFO: - Current learning rate: 0.01
+2019-04-11 12:00:54,071:INFO: Training
+2019-04-11 12:01:00,919:INFO: Validation
+2019-04-11 12:01:00,984:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6918612321217856, 'recall_at_100': 0.0})
+2019-04-11 12:01:00,984:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:01:00,984:INFO: Epoch 4 of 6
+2019-04-11 12:01:00,985:INFO: - Current learning rate: 0.01
+2019-04-11 12:01:00,985:INFO: Training
+2019-04-11 12:01:07,850:INFO: Validation
+2019-04-11 12:01:07,911:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6904797067244848, 'recall_at_100': 0.0})
+2019-04-11 12:01:07,911:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:01:07,911:INFO: Epoch 5 of 6
+2019-04-11 12:01:07,911:INFO: - Current learning rate: 0.01
+2019-04-11 12:01:07,911:INFO: Training
+2019-04-11 12:01:14,696:INFO: Validation
+2019-04-11 12:01:14,766:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.690771382053693, 'recall_at_100': 0.0})
+2019-04-11 12:01:14,766:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:01:14,767:INFO: Epoch 6 of 6
+2019-04-11 12:01:14,767:INFO: - Current learning rate: 0.01
+2019-04-11 12:01:14,767:INFO: Training
+2019-04-11 12:01:21,536:INFO: Validation
+2019-04-11 12:01:21,605:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6892662932475405, 'recall_at_100': 0.008333333333333333})
+2019-04-11 12:01:21,605:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:01:31,823:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:01:32,068:INFO: Epoch 1 of 6
+2019-04-11 12:01:32,068:INFO: - Current learning rate: 0.01
+2019-04-11 12:01:32,068:INFO: Training
+2019-04-11 12:01:38,937:INFO: Validation
+2019-04-11 12:01:39,008:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.7126416226228077, 'recall_at_100': 0.0})
+2019-04-11 12:01:39,009:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:01:39,009:INFO: Epoch 2 of 6
+2019-04-11 12:01:39,009:INFO: - Current learning rate: 0.01
+2019-04-11 12:01:39,009:INFO: Training
+2019-04-11 12:01:49,392:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 12:01:49,392:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 12:01:49,393:INFO: ======================================
+2019-04-11 12:01:49,393:INFO: Loading PPI Network...
+2019-04-11 12:01:56,546:INFO: Loading Disease Associations...
+2019-04-11 12:01:56,560:INFO: Running Experiment...
+2019-04-11 12:02:07,239:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:02:11,601:INFO: Epoch 1 of 6
+2019-04-11 12:02:11,602:INFO: - Current learning rate: 0.01
+2019-04-11 12:02:11,602:INFO: Training
+2019-04-11 12:02:18,638:INFO: Validation
+2019-04-11 12:02:18,701:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.7315643191337585, 'recall_at_100': 0.075})
+2019-04-11 12:02:18,701:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:02:18,701:INFO: Epoch 2 of 6
+2019-04-11 12:02:18,702:INFO: - Current learning rate: 0.01
+2019-04-11 12:02:18,702:INFO: Training
+2019-04-11 12:02:25,522:INFO: Validation
+2019-04-11 12:02:25,585:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6941569626331331, 'recall_at_100': 0.14166666666666666})
+2019-04-11 12:02:25,585:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:02:25,585:INFO: Epoch 3 of 6
+2019-04-11 12:02:25,586:INFO: - Current learning rate: 0.01
+2019-04-11 12:02:25,586:INFO: Training
+2019-04-11 12:02:32,434:INFO: Validation
+2019-04-11 12:02:32,503:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6918843746185304, 'recall_at_100': 0.38333333333333336})
+2019-04-11 12:02:32,503:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:02:32,503:INFO: Epoch 4 of 6
+2019-04-11 12:02:32,503:INFO: - Current learning rate: 0.01
+2019-04-11 12:02:32,503:INFO: Training
+2019-04-11 12:02:39,340:INFO: Validation
+2019-04-11 12:02:39,406:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6892468164364498, 'recall_at_100': 0.5166666666666667})
+2019-04-11 12:02:39,406:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:02:39,407:INFO: Epoch 5 of 6
+2019-04-11 12:02:39,407:INFO: - Current learning rate: 0.01
+2019-04-11 12:02:39,407:INFO: Training
+2019-04-11 12:02:46,217:INFO: Validation
+2019-04-11 12:02:46,288:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6833704650402069, 'recall_at_100': 0.5583333333333333})
+2019-04-11 12:02:46,288:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:02:46,288:INFO: Epoch 6 of 6
+2019-04-11 12:02:46,288:INFO: - Current learning rate: 0.01
+2019-04-11 12:02:46,288:INFO: Training
+2019-04-11 12:02:53,890:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 12:02:53,890:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 12:02:53,890:INFO: ======================================
+2019-04-11 12:02:53,890:INFO: Loading PPI Network...
+2019-04-11 12:03:00,808:INFO: Loading Disease Associations...
+2019-04-11 12:03:00,823:INFO: Running Experiment...
+2019-04-11 12:03:11,438:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:03:16,252:INFO: Epoch 1 of 6
+2019-04-11 12:03:16,252:INFO: - Current learning rate: 0.01
+2019-04-11 12:03:16,252:INFO: Training
+2019-04-11 12:03:23,162:INFO: Validation
+2019-04-11 12:03:23,221:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.7098105589548747, 'recall_at_100': 0.35})
+2019-04-11 12:03:23,221:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:03:23,221:INFO: Epoch 2 of 6
+2019-04-11 12:03:23,221:INFO: - Current learning rate: 0.01
+2019-04-11 12:03:23,221:INFO: Training
+2019-04-11 12:03:30,052:INFO: Validation
+2019-04-11 12:03:30,122:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6169313530127208, 'recall_at_100': 0.4})
+2019-04-11 12:03:30,122:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:03:30,122:INFO: Epoch 3 of 6
+2019-04-11 12:03:30,122:INFO: - Current learning rate: 0.01
+2019-04-11 12:03:30,123:INFO: Training
+2019-04-11 12:03:37,015:INFO: Validation
+2019-04-11 12:03:37,085:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.5695701489845914, 'recall_at_100': 0.36666666666666664})
+2019-04-11 12:03:37,086:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:03:37,086:INFO: Epoch 4 of 6
+2019-04-11 12:03:37,086:INFO: - Current learning rate: 0.01
+2019-04-11 12:03:37,086:INFO: Training
+2019-04-11 12:03:43,945:INFO: Validation
+2019-04-11 12:03:44,009:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.5783264125386877, 'recall_at_100': 0.4})
+2019-04-11 12:03:44,009:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:03:44,009:INFO: Epoch 5 of 6
+2019-04-11 12:03:44,009:INFO: - Current learning rate: 0.01
+2019-04-11 12:03:44,009:INFO: Training
+2019-04-11 12:03:51,013:INFO: Validation
+2019-04-11 12:03:51,083:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.539689847330252, 'recall_at_100': 0.39166666666666666})
+2019-04-11 12:03:51,083:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:03:51,083:INFO: Epoch 6 of 6
+2019-04-11 12:03:51,084:INFO: - Current learning rate: 0.01
+2019-04-11 12:03:51,084:INFO: Training
+2019-04-11 12:03:57,979:INFO: Validation
+2019-04-11 12:03:58,045:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.5306575337424874, 'recall_at_100': 0.3416666666666667})
+2019-04-11 12:03:58,045:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:04:08,514:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:04:08,771:INFO: Epoch 1 of 6
+2019-04-11 12:04:08,771:INFO: - Current learning rate: 0.01
+2019-04-11 12:04:08,771:INFO: Training
+2019-04-11 12:04:36,921:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 12:04:36,921:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 12:04:36,921:INFO: ======================================
+2019-04-11 12:04:36,921:INFO: Loading PPI Network...
+2019-04-11 12:04:43,854:INFO: Loading Disease Associations...
+2019-04-11 12:04:43,868:INFO: Running Experiment...
+2019-04-11 12:04:54,101:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:04:59,352:INFO: Epoch 1 of 6
+2019-04-11 12:04:59,353:INFO: - Current learning rate: 0.01
+2019-04-11 12:04:59,353:INFO: Training
+2019-04-11 12:05:07,456:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 12:05:07,457:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 12:05:07,457:INFO: ======================================
+2019-04-11 12:05:07,457:INFO: Loading PPI Network...
+2019-04-11 12:05:14,364:INFO: Loading Disease Associations...
+2019-04-11 12:05:14,377:INFO: Running Experiment...
+2019-04-11 12:05:24,583:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:05:29,165:INFO: Epoch 1 of 6
+2019-04-11 12:05:29,165:INFO: - Current learning rate: 0.01
+2019-04-11 12:05:29,165:INFO: Training
+2019-04-11 12:05:33,942:INFO: Validation
+2019-04-11 12:05:34,010:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.7339981238047282, 'recall_at_100': 0.3416666666666667})
+2019-04-11 12:05:34,011:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:05:34,011:INFO: Epoch 2 of 6
+2019-04-11 12:05:34,011:INFO: - Current learning rate: 0.01
+2019-04-11 12:05:34,011:INFO: Training
+2019-04-11 12:05:38,687:INFO: Validation
+2019-04-11 12:05:38,762:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6963391770919164, 'recall_at_100': 0.36666666666666664})
+2019-04-11 12:05:38,762:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:05:38,762:INFO: Epoch 3 of 6
+2019-04-11 12:05:38,762:INFO: - Current learning rate: 0.01
+2019-04-11 12:05:38,762:INFO: Training
+2019-04-11 12:05:43,487:INFO: Validation
+2019-04-11 12:05:43,551:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6934666424989702, 'recall_at_100': 0.2833333333333333})
+2019-04-11 12:05:43,551:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:05:43,551:INFO: Epoch 4 of 6
+2019-04-11 12:05:43,552:INFO: - Current learning rate: 0.01
+2019-04-11 12:05:43,552:INFO: Training
+2019-04-11 12:05:48,288:INFO: Validation
+2019-04-11 12:05:48,359:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6930027604103088, 'recall_at_100': 0.35})
+2019-04-11 12:05:48,359:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:05:48,359:INFO: Epoch 5 of 6
+2019-04-11 12:05:48,359:INFO: - Current learning rate: 0.01
+2019-04-11 12:05:48,359:INFO: Training
+2019-04-11 12:05:53,135:INFO: Validation
+2019-04-11 12:05:53,201:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6921066651741664, 'recall_at_100': 0.31666666666666665})
+2019-04-11 12:05:53,201:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:05:53,202:INFO: Epoch 6 of 6
+2019-04-11 12:05:53,202:INFO: - Current learning rate: 0.01
+2019-04-11 12:05:53,202:INFO: Training
+2019-04-11 12:05:58,070:INFO: Validation
+2019-04-11 12:05:58,131:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6935680449008943, 'recall_at_100': 0.0})
+2019-04-11 12:05:58,131:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:06:04,447:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 12:06:04,447:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 12:06:04,447:INFO: ======================================
+2019-04-11 12:06:04,448:INFO: Loading PPI Network...
+2019-04-11 12:06:11,246:INFO: Loading Disease Associations...
+2019-04-11 12:06:11,261:INFO: Running Experiment...
+2019-04-11 12:06:22,785:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:06:27,758:INFO: Epoch 1 of 6
+2019-04-11 12:06:27,758:INFO: - Current learning rate: 0.01
+2019-04-11 12:06:27,759:INFO: Training
+2019-04-11 12:07:26,018:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 12:07:26,019:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 12:07:26,019:INFO: ======================================
+2019-04-11 12:07:26,019:INFO: Loading PPI Network...
+2019-04-11 12:07:32,882:INFO: Loading Disease Associations...
+2019-04-11 12:07:32,898:INFO: Running Experiment...
+2019-04-11 12:07:43,558:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:07:47,887:INFO: Epoch 1 of 6
+2019-04-11 12:07:47,887:INFO: - Current learning rate: 0.01
+2019-04-11 12:07:47,887:INFO: Training
+2019-04-11 12:07:54,773:INFO: Validation
+2019-04-11 12:07:54,839:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6908473859230679, 'recall_at_100': 0.4166666666666667})
+2019-04-11 12:07:54,839:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:07:54,839:INFO: Epoch 2 of 6
+2019-04-11 12:07:54,840:INFO: - Current learning rate: 0.01
+2019-04-11 12:07:54,840:INFO: Training
+2019-04-11 12:08:01,849:INFO: Validation
+2019-04-11 12:08:01,916:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6899318516254425, 'recall_at_100': 0.425})
+2019-04-11 12:08:01,916:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:08:01,916:INFO: Epoch 3 of 6
+2019-04-11 12:08:01,916:INFO: - Current learning rate: 0.01
+2019-04-11 12:08:01,916:INFO: Training
+2019-04-11 12:08:08,854:INFO: Validation
+2019-04-11 12:08:08,923:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6885706126689911, 'recall_at_100': 0.45})
+2019-04-11 12:08:08,924:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:08:08,924:INFO: Epoch 4 of 6
+2019-04-11 12:08:08,924:INFO: - Current learning rate: 0.01
+2019-04-11 12:08:08,924:INFO: Training
+2019-04-11 12:08:15,927:INFO: Validation
+2019-04-11 12:08:15,995:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6888474027315775, 'recall_at_100': 0.4})
+2019-04-11 12:08:15,995:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:08:15,995:INFO: Epoch 5 of 6
+2019-04-11 12:08:15,995:INFO: - Current learning rate: 0.01
+2019-04-11 12:08:15,995:INFO: Training
+2019-04-11 12:08:22,916:INFO: Validation
+2019-04-11 12:08:22,980:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6886102189620336, 'recall_at_100': 0.4166666666666667})
+2019-04-11 12:08:22,980:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:08:22,981:INFO: Epoch 6 of 6
+2019-04-11 12:08:22,981:INFO: - Current learning rate: 0.01
+2019-04-11 12:08:22,981:INFO: Training
+2019-04-11 12:08:29,789:INFO: Validation
+2019-04-11 12:08:29,859:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.689139277736346, 'recall_at_100': 0.39166666666666666})
+2019-04-11 12:08:29,859:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:09:01,188:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 12:09:01,188:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 12:09:01,188:INFO: ======================================
+2019-04-11 12:09:01,188:INFO: Loading PPI Network...
+2019-04-11 12:09:08,105:INFO: Loading Disease Associations...
+2019-04-11 12:09:08,119:INFO: Running Experiment...
+2019-04-11 12:09:18,458:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:09:23,060:INFO: Epoch 1 of 6
+2019-04-11 12:09:23,062:INFO: - Current learning rate: 0.01
+2019-04-11 12:09:23,062:INFO: Training
+2019-04-11 12:09:30,123:INFO: Validation
+2019-04-11 12:09:30,189:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6888456682364146, 'recall_at_100': 0.425})
+2019-04-11 12:09:30,189:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0})
+2019-04-11 12:09:30,189:INFO: Epoch 2 of 6
+2019-04-11 12:09:30,190:INFO: - Current learning rate: 0.01
+2019-04-11 12:09:30,190:INFO: Training
+2019-04-11 12:09:37,186:INFO: Validation
+2019-04-11 12:09:37,258:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6886407862106961, 'recall_at_100': 0.43333333333333335})
+2019-04-11 12:09:37,258:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0})
+2019-04-11 12:09:37,258:INFO: Epoch 3 of 6
+2019-04-11 12:09:37,258:INFO: - Current learning rate: 0.01
+2019-04-11 12:09:37,258:INFO: Training
+2019-04-11 12:09:44,264:INFO: Validation
+2019-04-11 12:09:44,338:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6876239349444707, 'recall_at_100': 0.4666666666666667})
+2019-04-11 12:09:44,338:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0})
+2019-04-11 12:09:44,338:INFO: Epoch 4 of 6
+2019-04-11 12:09:44,338:INFO: - Current learning rate: 0.01
+2019-04-11 12:09:44,338:INFO: Training
+2019-04-11 12:09:51,187:INFO: Validation
+2019-04-11 12:09:51,254:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6878679702679317, 'recall_at_100': 0.49166666666666664})
+2019-04-11 12:09:51,254:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0})
+2019-04-11 12:09:51,254:INFO: Epoch 5 of 6
+2019-04-11 12:09:51,254:INFO: - Current learning rate: 0.01
+2019-04-11 12:09:51,254:INFO: Training
+2019-04-11 12:09:58,300:INFO: Validation
+2019-04-11 12:09:58,368:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6861679563919704, 'recall_at_100': 0.5})
+2019-04-11 12:09:58,368:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.5})
+2019-04-11 12:09:58,368:INFO: Epoch 6 of 6
+2019-04-11 12:09:58,369:INFO: - Current learning rate: 0.01
+2019-04-11 12:09:58,369:INFO: Training
+2019-04-11 12:10:06,419:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 12:10:06,419:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 12:10:06,419:INFO: ======================================
+2019-04-11 12:10:06,419:INFO: Loading PPI Network...
+2019-04-11 12:10:13,571:INFO: Loading Disease Associations...
+2019-04-11 12:10:13,585:INFO: Running Experiment...
+2019-04-11 12:10:24,789:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:10:30,262:INFO: Epoch 1 of 6
+2019-04-11 12:10:30,263:INFO: - Current learning rate: 0.01
+2019-04-11 12:10:30,263:INFO: Training
+2019-04-11 12:10:37,373:INFO: Validation
+2019-04-11 12:10:37,443:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.730803636709849, 'recall_at_100': 0.0})
+2019-04-11 12:10:37,443:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:10:37,443:INFO: Epoch 2 of 6
+2019-04-11 12:10:37,443:INFO: - Current learning rate: 0.01
+2019-04-11 12:10:37,444:INFO: Training
+2019-04-11 12:10:44,514:INFO: Validation
+2019-04-11 12:10:44,587:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6958785792191823, 'recall_at_100': 0.016666666666666666})
+2019-04-11 12:10:44,587:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:10:44,587:INFO: Epoch 3 of 6
+2019-04-11 12:10:44,587:INFO: - Current learning rate: 0.01
+2019-04-11 12:10:44,587:INFO: Training
+2019-04-11 12:10:51,503:INFO: Validation
+2019-04-11 12:10:51,575:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.693227885166804, 'recall_at_100': 0.0})
+2019-04-11 12:10:51,575:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:10:51,575:INFO: Epoch 4 of 6
+2019-04-11 12:10:51,576:INFO: - Current learning rate: 0.01
+2019-04-11 12:10:51,576:INFO: Training
+2019-04-11 12:11:24,186:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 12:11:24,186:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 12:11:24,187:INFO: ======================================
+2019-04-11 12:11:24,187:INFO: Loading PPI Network...
+2019-04-11 12:11:31,059:INFO: Loading Disease Associations...
+2019-04-11 12:11:31,073:INFO: Running Experiment...
+2019-04-11 12:11:42,058:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:11:46,947:INFO: Epoch 1 of 6
+2019-04-11 12:11:46,948:INFO: - Current learning rate: 0.01
+2019-04-11 12:11:46,948:INFO: Training
+2019-04-11 12:11:53,968:INFO: Validation
+2019-04-11 12:11:54,033:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6952361464500428, 'recall_at_100': 0.008333333333333333})
+2019-04-11 12:11:54,033:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:11:54,033:INFO: Epoch 2 of 6
+2019-04-11 12:11:54,034:INFO: - Current learning rate: 0.01
+2019-04-11 12:11:54,034:INFO: Training
+2019-04-11 12:12:01,053:INFO: Validation
+2019-04-11 12:12:01,120:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.693155112862587, 'recall_at_100': 0.0})
+2019-04-11 12:12:01,120:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:12:01,121:INFO: Epoch 3 of 6
+2019-04-11 12:12:01,121:INFO: - Current learning rate: 0.01
+2019-04-11 12:12:01,121:INFO: Training
+2019-04-11 12:12:08,297:INFO: Validation
+2019-04-11 12:12:08,366:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6931492477655409, 'recall_at_100': 0.0})
+2019-04-11 12:12:08,367:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:12:08,367:INFO: Epoch 4 of 6
+2019-04-11 12:12:08,367:INFO: - Current learning rate: 0.01
+2019-04-11 12:12:08,367:INFO: Training
+2019-04-11 12:12:15,388:INFO: Validation
+2019-04-11 12:12:15,458:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6931480844815572, 'recall_at_100': 0.0})
+2019-04-11 12:12:15,459:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:12:15,459:INFO: Epoch 5 of 6
+2019-04-11 12:12:15,459:INFO: - Current learning rate: 0.01
+2019-04-11 12:12:15,459:INFO: Training
+2019-04-11 12:12:22,512:INFO: Validation
+2019-04-11 12:12:22,579:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.693147623538971, 'recall_at_100': 0.0})
+2019-04-11 12:12:22,579:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:12:22,579:INFO: Epoch 6 of 6
+2019-04-11 12:12:22,579:INFO: - Current learning rate: 0.01
+2019-04-11 12:12:22,579:INFO: Training
+2019-04-11 12:12:29,567:INFO: Validation
+2019-04-11 12:12:29,642:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6931474914153417, 'recall_at_100': 0.0})
+2019-04-11 12:12:29,642:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:12:40,101:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:12:40,432:INFO: Epoch 1 of 6
+2019-04-11 12:12:40,433:INFO: - Current learning rate: 0.01
+2019-04-11 12:12:40,433:INFO: Training
+2019-04-11 12:12:47,435:INFO: Validation
+2019-04-11 12:12:47,509:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.7223982632160186, 'recall_at_100': 0.0})
+2019-04-11 12:12:47,509:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:12:47,509:INFO: Epoch 2 of 6
+2019-04-11 12:12:47,509:INFO: - Current learning rate: 0.01
+2019-04-11 12:12:47,509:INFO: Training
+2019-04-11 12:12:54,529:INFO: Validation
+2019-04-11 12:12:54,598:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6947790304819743, 'recall_at_100': 0.0})
+2019-04-11 12:12:54,598:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:12:54,598:INFO: Epoch 3 of 6
+2019-04-11 12:12:54,598:INFO: - Current learning rate: 0.01
+2019-04-11 12:12:54,598:INFO: Training
+2019-04-11 12:13:01,493:INFO: Validation
+2019-04-11 12:13:01,573:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6931588321924209, 'recall_at_100': 0.0})
+2019-04-11 12:13:01,573:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:13:01,573:INFO: Epoch 4 of 6
+2019-04-11 12:13:01,573:INFO: - Current learning rate: 0.01
+2019-04-11 12:13:01,574:INFO: Training
+2019-04-11 12:13:08,466:INFO: Validation
+2019-04-11 12:13:08,533:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6931422879298529, 'recall_at_100': 0.0})
+2019-04-11 12:13:08,534:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:13:08,534:INFO: Epoch 5 of 6
+2019-04-11 12:13:08,534:INFO: - Current learning rate: 0.01
+2019-04-11 12:13:08,534:INFO: Training
+2019-04-11 12:13:15,424:INFO: Validation
+2019-04-11 12:13:15,489:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6931297729412713, 'recall_at_100': 0.0})
+2019-04-11 12:13:15,489:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:13:15,489:INFO: Epoch 6 of 6
+2019-04-11 12:13:15,489:INFO: - Current learning rate: 0.01
+2019-04-11 12:13:15,489:INFO: Training
+2019-04-11 12:13:22,408:INFO: Validation
+2019-04-11 12:13:22,480:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6930903812249503, 'recall_at_100': 0.0})
+2019-04-11 12:13:22,480:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:13:32,445:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:13:32,703:INFO: Epoch 1 of 6
+2019-04-11 12:13:32,704:INFO: - Current learning rate: 0.01
+2019-04-11 12:13:32,704:INFO: Training
+2019-04-11 12:13:39,672:INFO: Validation
+2019-04-11 12:13:39,737:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.7131978958845139, 'recall_at_100': 0.0})
+2019-04-11 12:13:39,737:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:13:39,737:INFO: Epoch 2 of 6
+2019-04-11 12:13:39,737:INFO: - Current learning rate: 0.01
+2019-04-11 12:13:39,737:INFO: Training
+2019-04-11 12:13:46,639:INFO: Validation
+2019-04-11 12:13:46,704:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6937005778153738, 'recall_at_100': 0.025})
+2019-04-11 12:13:46,704:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:13:46,704:INFO: Epoch 3 of 6
+2019-04-11 12:13:46,705:INFO: - Current learning rate: 0.01
+2019-04-11 12:13:46,705:INFO: Training
+2019-04-11 12:13:53,694:INFO: Validation
+2019-04-11 12:13:53,763:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6931495487689971, 'recall_at_100': 0.016666666666666666})
+2019-04-11 12:13:53,763:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:13:53,763:INFO: Epoch 4 of 6
+2019-04-11 12:13:53,763:INFO: - Current learning rate: 0.01
+2019-04-11 12:13:53,763:INFO: Training
+2019-04-11 12:14:00,853:INFO: Validation
+2019-04-11 12:14:00,917:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6931480973958969, 'recall_at_100': 0.008333333333333333})
+2019-04-11 12:14:00,917:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:14:00,917:INFO: Epoch 5 of 6
+2019-04-11 12:14:00,917:INFO: - Current learning rate: 0.01
+2019-04-11 12:14:00,917:INFO: Training
+2019-04-11 12:14:07,923:INFO: Validation
+2019-04-11 12:14:07,998:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6931474228700004, 'recall_at_100': 0.0})
+2019-04-11 12:14:07,998:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:14:07,998:INFO: Epoch 6 of 6
+2019-04-11 12:14:07,998:INFO: - Current learning rate: 0.01
+2019-04-11 12:14:07,999:INFO: Training
+2019-04-11 12:14:15,070:INFO: Validation
+2019-04-11 12:14:15,129:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6931427369515101, 'recall_at_100': 0.0})
+2019-04-11 12:14:15,130:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:14:25,180:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:14:25,445:INFO: Epoch 1 of 6
+2019-04-11 12:14:25,446:INFO: - Current learning rate: 0.01
+2019-04-11 12:14:25,446:INFO: Training
+2019-04-11 12:14:32,410:INFO: Validation
+2019-04-11 12:14:32,476:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.7267498900492986, 'recall_at_100': 0.0})
+2019-04-11 12:14:32,476:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:14:32,476:INFO: Epoch 2 of 6
+2019-04-11 12:14:32,476:INFO: - Current learning rate: 0.01
+2019-04-11 12:14:32,477:INFO: Training
+2019-04-11 12:14:39,433:INFO: Validation
+2019-04-11 12:14:39,501:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6954409301280975, 'recall_at_100': 0.0})
+2019-04-11 12:14:39,501:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:14:39,501:INFO: Epoch 3 of 6
+2019-04-11 12:14:39,501:INFO: - Current learning rate: 0.01
+2019-04-11 12:14:39,501:INFO: Training
+2019-04-11 12:14:46,460:INFO: Validation
+2019-04-11 12:14:46,528:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6931804329156876, 'recall_at_100': 0.0})
+2019-04-11 12:14:46,528:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0})
+2019-04-11 12:14:46,528:INFO: Epoch 4 of 6
+2019-04-11 12:14:46,528:INFO: - Current learning rate: 0.01
+2019-04-11 12:14:46,528:INFO: Training
+2019-04-11 12:15:21,593:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 12:15:21,593:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 12:15:21,593:INFO: ======================================
+2019-04-11 12:15:21,593:INFO: Loading PPI Network...
+2019-04-11 12:15:29,233:INFO: Loading Disease Associations...
+2019-04-11 12:15:29,267:INFO: Running Experiment...
+2019-04-11 12:15:40,740:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:15:44,703:INFO: Epoch 1 of 6
+2019-04-11 12:15:44,704:INFO: - Current learning rate: 0.01
+2019-04-11 12:15:44,705:INFO: Training
+2019-04-11 12:16:58,308:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 12:16:58,308:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 12:16:58,308:INFO: ======================================
+2019-04-11 12:16:58,308:INFO: Loading PPI Network...
+2019-04-11 12:17:05,652:INFO: Loading Disease Associations...
+2019-04-11 12:17:05,666:INFO: Running Experiment...
+2019-04-11 12:17:15,987:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:17:20,714:INFO: Epoch 1 of 6
+2019-04-11 12:17:20,715:INFO: - Current learning rate: 0.01
+2019-04-11 12:17:20,715:INFO: Training
+2019-04-11 12:19:24,084:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 12:19:24,085:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 12:19:24,085:INFO: ======================================
+2019-04-11 12:19:24,085:INFO: Loading PPI Network...
+2019-04-11 12:19:31,636:INFO: Loading Disease Associations...
+2019-04-11 12:19:31,651:INFO: Running Experiment...
+2019-04-11 12:19:42,896:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:19:47,942:INFO: Epoch 1 of 6
+2019-04-11 12:19:47,943:INFO: - Current learning rate: 0.01
+2019-04-11 12:19:47,943:INFO: Training
+2019-04-11 12:19:55,066:INFO: Validation
+2019-04-11 12:20:42,023:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 12:20:42,023:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 12:20:42,023:INFO: ======================================
+2019-04-11 12:20:42,023:INFO: Loading PPI Network...
+2019-04-11 12:20:49,607:INFO: Loading Disease Associations...
+2019-04-11 12:20:49,621:INFO: Running Experiment...
+2019-04-11 12:21:00,736:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:21:05,738:INFO: Epoch 1 of 6
+2019-04-11 12:21:05,739:INFO: - Current learning rate: 0.01
+2019-04-11 12:21:05,739:INFO: Training
+2019-04-11 12:21:12,799:INFO: Validation
+2019-04-11 12:21:12,867:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6944977124532061, 'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:21:12,867:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:21:12,868:INFO: Epoch 2 of 6
+2019-04-11 12:21:12,868:INFO: - Current learning rate: 0.01
+2019-04-11 12:21:12,868:INFO: Training
+2019-04-11 12:21:19,828:INFO: Validation
+2019-04-11 12:21:19,894:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6931507180134457, 'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:21:19,894:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:21:19,894:INFO: Epoch 3 of 6
+2019-04-11 12:21:19,894:INFO: - Current learning rate: 0.01
+2019-04-11 12:21:19,894:INFO: Training
+2019-04-11 12:21:26,894:INFO: Validation
+2019-04-11 12:21:26,962:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.693148765961329, 'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:21:26,962:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:21:26,962:INFO: Epoch 4 of 6
+2019-04-11 12:21:26,962:INFO: - Current learning rate: 0.01
+2019-04-11 12:21:26,962:INFO: Training
+2019-04-11 12:21:34,011:INFO: Validation
+2019-04-11 12:21:34,078:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6931481649478276, 'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:21:34,078:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:21:34,078:INFO: Epoch 5 of 6
+2019-04-11 12:21:34,078:INFO: - Current learning rate: 0.01
+2019-04-11 12:21:34,079:INFO: Training
+2019-04-11 12:21:41,003:INFO: Validation
+2019-04-11 12:21:41,075:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6931478480497996, 'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:21:41,075:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:21:41,075:INFO: Epoch 6 of 6
+2019-04-11 12:21:41,076:INFO: - Current learning rate: 0.01
+2019-04-11 12:21:41,076:INFO: Training
+2019-04-11 12:22:00,776:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 12:22:00,777:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 12:22:00,777:INFO: ======================================
+2019-04-11 12:22:00,777:INFO: Loading PPI Network...
+2019-04-11 12:22:09,595:INFO: Loading Disease Associations...
+2019-04-11 12:22:09,612:INFO: Running Experiment...
+2019-04-11 12:22:20,607:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:22:24,519:INFO: Epoch 1 of 6
+2019-04-11 12:22:24,519:INFO: - Current learning rate: 0.01
+2019-04-11 12:22:24,519:INFO: Training
+2019-04-11 12:22:31,645:INFO: Validation
+2019-04-11 12:22:31,721:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6939400384823481, 'recall_at_100': 0.43333333333333335, 'accuracy': 0.9999072227118802})
+2019-04-11 12:22:31,721:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:22:31,721:INFO: Epoch 2 of 6
+2019-04-11 12:22:31,721:INFO: - Current learning rate: 0.01
+2019-04-11 12:22:31,721:INFO: Training
+2019-04-11 12:22:38,792:INFO: Validation
+2019-04-11 12:22:38,859:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6791675229867299, 'recall_at_100': 0.43333333333333335, 'accuracy': 0.9999072227118802})
+2019-04-11 12:22:38,859:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:22:38,859:INFO: Epoch 3 of 6
+2019-04-11 12:22:38,859:INFO: - Current learning rate: 0.01
+2019-04-11 12:22:38,859:INFO: Training
+2019-04-11 12:23:13,641:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 12:23:13,641:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 12:23:13,641:INFO: ======================================
+2019-04-11 12:23:13,641:INFO: Loading PPI Network...
+2019-04-11 12:23:21,180:INFO: Loading Disease Associations...
+2019-04-11 12:23:21,194:INFO: Running Experiment...
+2019-04-11 12:23:32,047:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:23:36,836:INFO: Epoch 1 of 6
+2019-04-11 12:23:36,837:INFO: - Current learning rate: 0.01
+2019-04-11 12:23:36,838:INFO: Training
+2019-04-11 12:23:43,890:INFO: Validation
+2019-04-11 12:23:43,960:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.7574542919794719, 'recall_at_100': 0.325, 'accuracy': 0.9999072227118802})
+2019-04-11 12:23:43,960:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:23:43,960:INFO: Epoch 2 of 6
+2019-04-11 12:23:43,961:INFO: - Current learning rate: 0.01
+2019-04-11 12:23:43,961:INFO: Training
+2019-04-11 12:23:51,030:INFO: Validation
+2019-04-11 12:23:51,095:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6978389581044514, 'recall_at_100': 0.38333333333333336, 'accuracy': 0.9999072227118802})
+2019-04-11 12:23:51,095:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:23:51,095:INFO: Epoch 3 of 6
+2019-04-11 12:23:51,095:INFO: - Current learning rate: 0.01
+2019-04-11 12:23:51,095:INFO: Training
+2019-04-11 12:23:58,083:INFO: Validation
+2019-04-11 12:23:58,149:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6813857177893321, 'recall_at_100': 0.43333333333333335, 'accuracy': 0.9999072227118802})
+2019-04-11 12:23:58,150:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:23:58,150:INFO: Epoch 4 of 6
+2019-04-11 12:23:58,150:INFO: - Current learning rate: 0.01
+2019-04-11 12:23:58,150:INFO: Training
+2019-04-11 12:24:05,245:INFO: Validation
+2019-04-11 12:24:05,310:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.67499138712883, 'recall_at_100': 0.45, 'accuracy': 0.9999072227118802})
+2019-04-11 12:24:05,311:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:24:05,311:INFO: Epoch 5 of 6
+2019-04-11 12:24:05,311:INFO: - Current learning rate: 0.01
+2019-04-11 12:24:05,311:INFO: Training
+2019-04-11 12:24:12,422:INFO: Validation
+2019-04-11 12:24:12,494:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6690143009026845, 'recall_at_100': 0.4583333333333333, 'accuracy': 0.9999072227118802})
+2019-04-11 12:24:12,494:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:24:12,494:INFO: Epoch 6 of 6
+2019-04-11 12:24:12,495:INFO: - Current learning rate: 0.01
+2019-04-11 12:24:12,495:INFO: Training
+2019-04-11 12:24:19,468:INFO: Validation
+2019-04-11 12:24:19,533:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6660589178403219, 'recall_at_100': 0.38333333333333336, 'accuracy': 0.9999072227118802})
+2019-04-11 12:24:19,533:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:25:16,515:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 12:25:16,515:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 12:25:16,515:INFO: ======================================
+2019-04-11 12:25:16,515:INFO: Loading PPI Network...
+2019-04-11 12:25:23,531:INFO: Loading Disease Associations...
+2019-04-11 12:25:23,548:INFO: Running Experiment...
+2019-04-11 12:25:33,474:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:25:37,997:INFO: Epoch 1 of 6
+2019-04-11 12:25:37,998:INFO: - Current learning rate: 0.01
+2019-04-11 12:25:37,998:INFO: Training
+2019-04-11 12:26:02,313:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 12:26:02,313:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 12:26:02,313:INFO: ======================================
+2019-04-11 12:26:02,313:INFO: Loading PPI Network...
+2019-04-11 12:26:09,528:INFO: Loading Disease Associations...
+2019-04-11 12:26:09,542:INFO: Running Experiment...
+2019-04-11 12:26:19,716:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:26:25,091:INFO: Epoch 1 of 6
+2019-04-11 12:26:25,093:INFO: - Current learning rate: 0.01
+2019-04-11 12:26:25,093:INFO: Training
+2019-04-11 12:26:32,284:INFO: Validation
+2019-04-11 12:26:32,356:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.7150082141160966, 'recall_at_100': 0.008333333333333333, 'accuracy': 0.9999072227118802})
+2019-04-11 12:26:32,356:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:26:32,356:INFO: Epoch 2 of 6
+2019-04-11 12:26:32,356:INFO: - Current learning rate: 0.01
+2019-04-11 12:26:32,356:INFO: Training
+2019-04-11 12:27:14,800:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 12:27:14,800:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 12:27:14,800:INFO: ======================================
+2019-04-11 12:27:14,800:INFO: Loading PPI Network...
+2019-04-11 12:27:22,185:INFO: Loading Disease Associations...
+2019-04-11 12:27:22,199:INFO: Running Experiment...
+2019-04-11 12:27:32,489:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:27:38,148:INFO: Epoch 1 of 6
+2019-04-11 12:27:38,149:INFO: - Current learning rate: 0.01
+2019-04-11 12:27:38,149:INFO: Training
+2019-04-11 12:27:45,269:INFO: Validation
+2019-04-11 12:27:45,334:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.7373673458894093, 'recall_at_100': 0.03333333333333333, 'accuracy': 0.9999072227118802})
+2019-04-11 12:27:45,334:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:27:45,334:INFO: Epoch 2 of 6
+2019-04-11 12:27:45,334:INFO: - Current learning rate: 0.01
+2019-04-11 12:27:45,334:INFO: Training
+2019-04-11 12:27:52,538:INFO: Validation
+2019-04-11 12:27:52,602:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6981597801049548, 'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:27:52,602:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:27:52,603:INFO: Epoch 3 of 6
+2019-04-11 12:27:52,603:INFO: - Current learning rate: 0.01
+2019-04-11 12:27:52,603:INFO: Training
+2019-04-11 12:30:55,855:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 12:30:55,855:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 12:30:55,855:INFO: ======================================
+2019-04-11 12:30:55,855:INFO: Loading PPI Network...
+2019-04-11 12:31:03,850:INFO: Loading Disease Associations...
+2019-04-11 12:31:03,865:INFO: Running Experiment...
+2019-04-11 12:31:14,090:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:31:18,702:INFO: Epoch 1 of 6
+2019-04-11 12:31:18,703:INFO: - Current learning rate: 0.01
+2019-04-11 12:31:18,703:INFO: Training
+2019-04-11 12:31:25,989:INFO: Validation
+2019-04-11 12:31:26,050:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6841433554887771, 'recall_at_100': 0.4083333333333333, 'accuracy': 0.9999072227118802})
+2019-04-11 12:31:26,050:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:31:26,050:INFO: Epoch 2 of 6
+2019-04-11 12:31:26,050:INFO: - Current learning rate: 0.01
+2019-04-11 12:31:26,050:INFO: Training
+2019-04-11 12:31:38,283:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 12:31:38,284:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 12:31:38,284:INFO: ======================================
+2019-04-11 12:31:38,284:INFO: Loading PPI Network...
+2019-04-11 12:31:45,322:INFO: Loading Disease Associations...
+2019-04-11 12:31:45,336:INFO: Running Experiment...
+2019-04-11 12:31:56,011:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:32:01,730:INFO: Epoch 1 of 6
+2019-04-11 12:32:01,731:INFO: - Current learning rate: 0.01
+2019-04-11 12:32:01,731:INFO: Training
+2019-04-11 12:32:08,597:INFO: Validation
+2019-04-11 12:32:08,670:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.7098823120196661, 'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:32:08,670:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:32:08,671:INFO: Epoch 2 of 6
+2019-04-11 12:32:08,671:INFO: - Current learning rate: 0.01
+2019-04-11 12:32:08,671:INFO: Training
+2019-04-11 12:32:15,562:INFO: Validation
+2019-04-11 12:32:15,625:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6934564818938572, 'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:32:15,626:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:32:15,626:INFO: Epoch 3 of 6
+2019-04-11 12:32:15,626:INFO: - Current learning rate: 0.01
+2019-04-11 12:32:15,626:INFO: Training
+2019-04-11 12:33:16,872:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 12:33:16,872:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 12:33:16,872:INFO: ======================================
+2019-04-11 12:33:16,872:INFO: Loading PPI Network...
+2019-04-11 12:33:24,345:INFO: Loading Disease Associations...
+2019-04-11 12:33:24,360:INFO: Running Experiment...
+2019-04-11 12:33:35,145:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:33:39,857:INFO: Epoch 1 of 6
+2019-04-11 12:33:39,858:INFO: - Current learning rate: 0.01
+2019-04-11 12:33:39,858:INFO: Training
+2019-04-11 12:34:00,106:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 12:34:00,107:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 12:34:00,107:INFO: ======================================
+2019-04-11 12:34:00,107:INFO: Loading PPI Network...
+2019-04-11 12:34:07,277:INFO: Loading Disease Associations...
+2019-04-11 12:34:07,291:INFO: Running Experiment...
+2019-04-11 12:34:17,286:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:34:22,945:INFO: Epoch 1 of 6
+2019-04-11 12:34:22,946:INFO: - Current learning rate: 0.01
+2019-04-11 12:34:22,946:INFO: Training
+2019-04-11 12:35:26,853:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 12:35:26,854:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 12:35:26,854:INFO: ======================================
+2019-04-11 12:35:26,854:INFO: Loading PPI Network...
+2019-04-11 12:35:34,303:INFO: Loading Disease Associations...
+2019-04-11 12:35:34,337:INFO: Running Experiment...
+2019-04-11 12:35:44,500:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:35:48,673:INFO: Epoch 1 of 6
+2019-04-11 12:35:48,673:INFO: - Current learning rate: 0.01
+2019-04-11 12:35:48,674:INFO: Training
+2019-04-11 12:35:55,986:INFO: Validation
+2019-04-11 12:35:56,046:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.7148102094729741, 'recall_at_100': 0.43333333333333335, 'accuracy': 0.9999072227118802})
+2019-04-11 12:35:56,046:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:35:56,046:INFO: Epoch 2 of 6
+2019-04-11 12:35:56,046:INFO: - Current learning rate: 0.01
+2019-04-11 12:35:56,046:INFO: Training
+2019-04-11 12:36:03,362:INFO: Validation
+2019-04-11 12:36:03,426:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6785628447930018, 'recall_at_100': 0.425, 'accuracy': 0.9999072227118802})
+2019-04-11 12:36:03,426:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:36:03,426:INFO: Epoch 3 of 6
+2019-04-11 12:36:03,427:INFO: - Current learning rate: 0.01
+2019-04-11 12:36:03,427:INFO: Training
+2019-04-11 12:36:10,577:INFO: Validation
+2019-04-11 12:36:10,647:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6728989561398822, 'recall_at_100': 0.4166666666666667, 'accuracy': 0.9999072227118802})
+2019-04-11 12:36:10,647:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:36:10,647:INFO: Epoch 4 of 6
+2019-04-11 12:36:10,647:INFO: - Current learning rate: 0.01
+2019-04-11 12:36:10,647:INFO: Training
+2019-04-11 12:36:17,879:INFO: Validation
+2019-04-11 12:36:17,947:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6711900661389033, 'recall_at_100': 0.38333333333333336, 'accuracy': 0.9999072227118802})
+2019-04-11 12:36:17,947:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:36:17,947:INFO: Epoch 5 of 6
+2019-04-11 12:36:17,948:INFO: - Current learning rate: 0.01
+2019-04-11 12:36:17,948:INFO: Training
+2019-04-11 12:36:25,022:INFO: Validation
+2019-04-11 12:36:25,094:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6660092333952586, 'recall_at_100': 0.44166666666666665, 'accuracy': 0.9999072227118802})
+2019-04-11 12:36:25,094:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:36:25,094:INFO: Epoch 6 of 6
+2019-04-11 12:36:25,094:INFO: - Current learning rate: 0.01
+2019-04-11 12:36:25,094:INFO: Training
+2019-04-11 12:36:32,214:INFO: Validation
+2019-04-11 12:36:32,274:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6640858044226964, 'recall_at_100': 0.325, 'accuracy': 0.9999072227118802})
+2019-04-11 12:36:32,274:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:36:42,383:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:36:42,631:INFO: Epoch 1 of 6
+2019-04-11 12:36:42,631:INFO: - Current learning rate: 0.01
+2019-04-11 12:36:42,632:INFO: Training
+2019-04-11 12:36:49,630:INFO: Validation
+2019-04-11 12:36:49,699:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.690236343940099, 'recall_at_100': 0.36666666666666664, 'accuracy': 0.9999072227118802})
+2019-04-11 12:36:49,699:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.5, 'accuracy': 0.9999072227118802})
+2019-04-11 12:36:49,699:INFO: Epoch 2 of 6
+2019-04-11 12:36:49,699:INFO: - Current learning rate: 0.01
+2019-04-11 12:36:49,699:INFO: Training
+2019-04-11 12:36:56,798:INFO: Validation
+2019-04-11 12:36:56,868:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6833783348401387, 'recall_at_100': 0.4, 'accuracy': 0.9999072227118802})
+2019-04-11 12:36:56,868:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.5, 'accuracy': 0.9999072227118802})
+2019-04-11 12:36:56,869:INFO: Epoch 3 of 6
+2019-04-11 12:36:56,869:INFO: - Current learning rate: 0.01
+2019-04-11 12:36:56,869:INFO: Training
+2019-04-11 12:37:04,053:INFO: Validation
+2019-04-11 12:37:04,118:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6785603145758311, 'recall_at_100': 0.375, 'accuracy': 0.9999072227118802})
+2019-04-11 12:37:04,118:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.5, 'accuracy': 0.9999072227118802})
+2019-04-11 12:37:04,118:INFO: Epoch 4 of 6
+2019-04-11 12:37:04,118:INFO: - Current learning rate: 0.01
+2019-04-11 12:37:04,118:INFO: Training
+2019-04-11 12:37:11,170:INFO: Validation
+2019-04-11 12:37:11,237:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6726351956526438, 'recall_at_100': 0.36666666666666664, 'accuracy': 0.9999072227118802})
+2019-04-11 12:37:11,237:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:37:11,237:INFO: Epoch 5 of 6
+2019-04-11 12:37:11,237:INFO: - Current learning rate: 0.01
+2019-04-11 12:37:11,237:INFO: Training
+2019-04-11 12:37:18,361:INFO: Validation
+2019-04-11 12:37:18,433:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6679797937472661, 'recall_at_100': 0.375, 'accuracy': 0.9999072227118802})
+2019-04-11 12:37:18,433:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.5, 'accuracy': 0.9999072227118802})
+2019-04-11 12:37:18,433:INFO: Epoch 6 of 6
+2019-04-11 12:37:18,433:INFO: - Current learning rate: 0.01
+2019-04-11 12:37:18,433:INFO: Training
+2019-04-11 12:37:25,589:INFO: Validation
+2019-04-11 12:37:25,652:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6609122405449549, 'recall_at_100': 0.425, 'accuracy': 0.9999072227118802})
+2019-04-11 12:37:25,652:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.5, 'accuracy': 0.9999072227118802})
+2019-04-11 12:37:36,599:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:37:36,866:INFO: Epoch 1 of 6
+2019-04-11 12:37:36,866:INFO: - Current learning rate: 0.01
+2019-04-11 12:37:36,866:INFO: Training
+2019-04-11 12:37:43,964:INFO: Validation
+2019-04-11 12:37:44,035:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6933950891097387, 'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:37:44,035:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:37:44,035:INFO: Epoch 2 of 6
+2019-04-11 12:37:44,035:INFO: - Current learning rate: 0.01
+2019-04-11 12:37:44,035:INFO: Training
+2019-04-11 12:37:51,193:INFO: Validation
+2019-04-11 12:37:51,258:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6931498805681865, 'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:37:51,258:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:37:51,258:INFO: Epoch 3 of 6
+2019-04-11 12:37:51,258:INFO: - Current learning rate: 0.01
+2019-04-11 12:37:51,258:INFO: Training
+2019-04-11 12:37:58,388:INFO: Validation
+2019-04-11 12:37:58,458:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6931476672490439, 'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:37:58,458:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:37:58,458:INFO: Epoch 4 of 6
+2019-04-11 12:37:58,458:INFO: - Current learning rate: 0.01
+2019-04-11 12:37:58,458:INFO: Training
+2019-04-11 12:38:05,628:INFO: Validation
+2019-04-11 12:38:05,690:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6931467324495315, 'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:38:05,690:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:38:05,691:INFO: Epoch 5 of 6
+2019-04-11 12:38:05,691:INFO: - Current learning rate: 0.01
+2019-04-11 12:38:05,691:INFO: Training
+2019-04-11 12:38:12,869:INFO: Validation
+2019-04-11 12:38:12,944:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6932218074798584, 'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:38:12,945:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:38:12,945:INFO: Epoch 6 of 6
+2019-04-11 12:38:12,945:INFO: - Current learning rate: 0.01
+2019-04-11 12:38:12,945:INFO: Training
+2019-04-11 12:38:20,146:INFO: Validation
+2019-04-11 12:38:20,206:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6930984884500504, 'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:38:20,206:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:38:30,056:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:38:30,389:INFO: Epoch 1 of 6
+2019-04-11 12:38:30,389:INFO: - Current learning rate: 0.01
+2019-04-11 12:38:30,389:INFO: Training
+2019-04-11 12:38:37,396:INFO: Validation
+2019-04-11 12:38:37,468:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6942032297452292, 'recall_at_100': 0.4083333333333333, 'accuracy': 0.9999072227118802})
+2019-04-11 12:38:37,469:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:38:37,469:INFO: Epoch 2 of 6
+2019-04-11 12:38:37,469:INFO: - Current learning rate: 0.01
+2019-04-11 12:38:37,469:INFO: Training
+2019-04-11 12:38:44,587:INFO: Validation
+2019-04-11 12:38:44,652:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6769609947999319, 'recall_at_100': 0.375, 'accuracy': 0.9999072227118802})
+2019-04-11 12:38:44,652:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:38:44,652:INFO: Epoch 3 of 6
+2019-04-11 12:38:44,652:INFO: - Current learning rate: 0.01
+2019-04-11 12:38:44,652:INFO: Training
+2019-04-11 12:38:51,924:INFO: Validation
+2019-04-11 12:38:51,990:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6691032965977987, 'recall_at_100': 0.5166666666666667, 'accuracy': 0.9999072227118802})
+2019-04-11 12:38:51,990:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:38:51,990:INFO: Epoch 4 of 6
+2019-04-11 12:38:51,990:INFO: - Current learning rate: 0.01
+2019-04-11 12:38:51,990:INFO: Training
+2019-04-11 12:38:59,139:INFO: Validation
+2019-04-11 12:38:59,215:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.661854205528895, 'recall_at_100': 0.36666666666666664, 'accuracy': 0.9999072227118802})
+2019-04-11 12:38:59,215:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:38:59,216:INFO: Epoch 5 of 6
+2019-04-11 12:38:59,216:INFO: - Current learning rate: 0.01
+2019-04-11 12:38:59,216:INFO: Training
+2019-04-11 12:40:12,496:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 12:40:12,496:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 12:40:12,496:INFO: ======================================
+2019-04-11 12:40:12,496:INFO: Loading PPI Network...
+2019-04-11 12:40:20,473:INFO: Loading Disease Associations...
+2019-04-11 12:40:20,490:INFO: Running Experiment...
+2019-04-11 12:40:31,148:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:40:36,157:INFO: Epoch 1 of 6
+2019-04-11 12:40:36,158:INFO: - Current learning rate: 0.0001
+2019-04-11 12:40:36,158:INFO: Training
+2019-04-11 12:40:43,325:INFO: Validation
+2019-04-11 12:40:43,390:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.7568389932314555, 'recall_at_100': 0.425, 'accuracy': 0.9999072227118802})
+2019-04-11 12:40:43,390:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:40:43,390:INFO: Epoch 2 of 6
+2019-04-11 12:40:43,390:INFO: - Current learning rate: 0.0001
+2019-04-11 12:40:43,390:INFO: Training
+2019-04-11 12:40:50,644:INFO: Validation
+2019-04-11 12:40:50,714:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.7557524859905242, 'recall_at_100': 0.4083333333333333, 'accuracy': 0.9999072227118802})
+2019-04-11 12:40:50,714:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:40:50,715:INFO: Epoch 3 of 6
+2019-04-11 12:40:50,715:INFO: - Current learning rate: 0.0001
+2019-04-11 12:40:50,715:INFO: Training
+2019-04-11 12:40:57,666:INFO: Validation
+2019-04-11 12:40:57,732:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.7546804885069529, 'recall_at_100': 0.38333333333333336, 'accuracy': 0.9999072227118802})
+2019-04-11 12:40:57,732:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:40:57,733:INFO: Epoch 4 of 6
+2019-04-11 12:40:57,733:INFO: - Current learning rate: 0.0001
+2019-04-11 12:40:57,733:INFO: Training
+2019-04-11 12:41:05,986:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 12:41:05,987:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 12:41:05,987:INFO: ======================================
+2019-04-11 12:41:05,987:INFO: Loading PPI Network...
+2019-04-11 12:41:12,708:INFO: Loading Disease Associations...
+2019-04-11 12:41:12,723:INFO: Running Experiment...
+2019-04-11 12:41:22,665:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:41:28,685:INFO: Epoch 1 of 6
+2019-04-11 12:41:28,686:INFO: - Current learning rate: 0.001
+2019-04-11 12:41:28,686:INFO: Training
+2019-04-11 12:41:35,880:INFO: Validation
+2019-04-11 12:41:35,946:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.7746024588743844, 'recall_at_100': 0.008333333333333333, 'accuracy': 0.9999072227118802})
+2019-04-11 12:41:35,946:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:41:35,946:INFO: Epoch 2 of 6
+2019-04-11 12:41:35,946:INFO: - Current learning rate: 0.001
+2019-04-11 12:41:35,946:INFO: Training
+2019-04-11 12:41:44,341:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 12:41:44,341:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 12:41:44,341:INFO: ======================================
+2019-04-11 12:41:44,341:INFO: Loading PPI Network...
+2019-04-11 12:41:51,457:INFO: Loading Disease Associations...
+2019-04-11 12:41:51,471:INFO: Running Experiment...
+2019-04-11 12:42:02,151:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:42:07,905:INFO: Epoch 1 of 6
+2019-04-11 12:42:07,906:INFO: - Current learning rate: 0.1
+2019-04-11 12:42:07,906:INFO: Training
+2019-04-11 12:42:15,025:INFO: Validation
+2019-04-11 12:42:15,085:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6949557165304819, 'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:42:15,085:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:42:15,085:INFO: Epoch 2 of 6
+2019-04-11 12:42:15,085:INFO: - Current learning rate: 0.1
+2019-04-11 12:42:15,086:INFO: Training
+2019-04-11 12:42:22,277:INFO: Validation
+2019-04-11 12:42:22,341:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.693149937192599, 'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:42:22,341:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:42:22,341:INFO: Epoch 3 of 6
+2019-04-11 12:42:22,341:INFO: - Current learning rate: 0.1
+2019-04-11 12:42:22,341:INFO: Training
+2019-04-11 12:42:29,581:INFO: Validation
+2019-04-11 12:42:29,645:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6931471864382428, 'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:42:29,645:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:42:29,645:INFO: Epoch 4 of 6
+2019-04-11 12:42:29,645:INFO: - Current learning rate: 0.1
+2019-04-11 12:42:29,645:INFO: Training
+2019-04-11 12:42:36,749:INFO: Validation
+2019-04-11 12:42:36,816:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6931471834580104, 'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:42:36,816:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:42:36,816:INFO: Epoch 5 of 6
+2019-04-11 12:42:36,817:INFO: - Current learning rate: 0.1
+2019-04-11 12:42:36,817:INFO: Training
+2019-04-11 12:42:43,914:INFO: Validation
+2019-04-11 12:42:43,983:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6931471814711888, 'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:42:43,984:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:42:43,984:INFO: Epoch 6 of 6
+2019-04-11 12:42:43,984:INFO: - Current learning rate: 0.1
+2019-04-11 12:42:43,984:INFO: Training
+2019-04-11 12:42:51,147:INFO: Validation
+2019-04-11 12:42:51,214:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6934837917486827, 'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:42:51,214:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:43:02,040:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:43:03,214:INFO: Epoch 1 of 6
+2019-04-11 12:43:03,214:INFO: - Current learning rate: 0.1
+2019-04-11 12:43:03,214:INFO: Training
+2019-04-11 12:43:10,711:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 12:43:10,711:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 12:43:10,711:INFO: ======================================
+2019-04-11 12:43:10,711:INFO: Loading PPI Network...
+2019-04-11 12:43:17,591:INFO: Loading Disease Associations...
+2019-04-11 12:43:17,605:INFO: Running Experiment...
+2019-04-11 12:43:28,378:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:43:33,413:INFO: Epoch 1 of 6
+2019-04-11 12:43:33,414:INFO: - Current learning rate: 0.01
+2019-04-11 12:43:33,414:INFO: Training
+2019-04-11 12:43:40,537:INFO: Validation
+2019-04-11 12:43:40,601:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.7157522161801656, 'recall_at_100': 0.4083333333333333, 'accuracy': 0.9999072227118802})
+2019-04-11 12:43:40,601:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:43:40,601:INFO: Epoch 2 of 6
+2019-04-11 12:43:40,601:INFO: - Current learning rate: 0.01
+2019-04-11 12:43:40,601:INFO: Training
+2019-04-11 12:43:47,800:INFO: Validation
+2019-04-11 12:43:47,862:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6844969997803371, 'recall_at_100': 0.2916666666666667, 'accuracy': 0.9999072227118802})
+2019-04-11 12:43:47,862:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:43:47,862:INFO: Epoch 3 of 6
+2019-04-11 12:43:47,862:INFO: - Current learning rate: 0.01
+2019-04-11 12:43:47,862:INFO: Training
+2019-04-11 12:43:54,947:INFO: Validation
+2019-04-11 12:43:55,016:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.674811859925588, 'recall_at_100': 0.425, 'accuracy': 0.9999072227118802})
+2019-04-11 12:43:55,016:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:43:55,016:INFO: Epoch 4 of 6
+2019-04-11 12:43:55,016:INFO: - Current learning rate: 0.01
+2019-04-11 12:43:55,016:INFO: Training
+2019-04-11 12:44:02,148:INFO: Validation
+2019-04-11 12:44:02,217:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6741311212380726, 'recall_at_100': 0.3, 'accuracy': 0.9999072227118802})
+2019-04-11 12:44:02,217:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:44:02,218:INFO: Epoch 5 of 6
+2019-04-11 12:44:02,218:INFO: - Current learning rate: 0.01
+2019-04-11 12:44:02,218:INFO: Training
+2019-04-11 12:44:09,514:INFO: Validation
+2019-04-11 12:44:09,580:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6682645787795385, 'recall_at_100': 0.4083333333333333, 'accuracy': 0.9999072227118802})
+2019-04-11 12:44:09,580:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:44:09,580:INFO: Epoch 6 of 6
+2019-04-11 12:44:09,580:INFO: - Current learning rate: 0.01
+2019-04-11 12:44:09,580:INFO: Training
+2019-04-11 12:44:16,575:INFO: Validation
+2019-04-11 12:44:16,651:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6658708393573761, 'recall_at_100': 0.425, 'accuracy': 0.9999072227118802})
+2019-04-11 12:44:16,652:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:44:26,512:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:44:26,831:INFO: Epoch 1 of 6
+2019-04-11 12:44:26,831:INFO: - Current learning rate: 0.01
+2019-04-11 12:44:26,831:INFO: Training
+2019-04-11 12:44:33,919:INFO: Validation
+2019-04-11 12:44:33,990:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.7324821263551712, 'recall_at_100': 0.425, 'accuracy': 0.9999072227118802})
+2019-04-11 12:44:33,991:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.5, 'accuracy': 0.9999072227118802})
+2019-04-11 12:44:33,991:INFO: Epoch 2 of 6
+2019-04-11 12:44:33,991:INFO: - Current learning rate: 0.01
+2019-04-11 12:44:33,991:INFO: Training
+2019-04-11 12:44:41,176:INFO: Validation
+2019-04-11 12:44:41,243:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6847825447718302, 'recall_at_100': 0.425, 'accuracy': 0.9999072227118802})
+2019-04-11 12:44:41,243:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.5, 'accuracy': 0.9999072227118802})
+2019-04-11 12:44:41,243:INFO: Epoch 3 of 6
+2019-04-11 12:44:41,243:INFO: - Current learning rate: 0.01
+2019-04-11 12:44:41,243:INFO: Training
+2019-04-11 12:44:48,323:INFO: Validation
+2019-04-11 12:44:48,387:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.675910712281863, 'recall_at_100': 0.425, 'accuracy': 0.9999072227118802})
+2019-04-11 12:44:48,387:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.5, 'accuracy': 0.9999072227118802})
+2019-04-11 12:44:48,387:INFO: Epoch 4 of 6
+2019-04-11 12:44:48,387:INFO: - Current learning rate: 0.01
+2019-04-11 12:44:48,387:INFO: Training
+2019-04-11 12:44:55,403:INFO: Validation
+2019-04-11 12:44:55,469:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6730661123991013, 'recall_at_100': 0.35, 'accuracy': 0.9999072227118802})
+2019-04-11 12:44:55,469:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.5, 'accuracy': 0.9999072227118802})
+2019-04-11 12:44:55,469:INFO: Epoch 5 of 6
+2019-04-11 12:44:55,469:INFO: - Current learning rate: 0.01
+2019-04-11 12:44:55,469:INFO: Training
+2019-04-11 12:45:02,588:INFO: Validation
+2019-04-11 12:45:02,655:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6639236003160475, 'recall_at_100': 0.45, 'accuracy': 0.9999072227118802})
+2019-04-11 12:45:02,655:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.5, 'accuracy': 0.9999072227118802})
+2019-04-11 12:45:02,655:INFO: Epoch 6 of 6
+2019-04-11 12:45:02,655:INFO: - Current learning rate: 0.01
+2019-04-11 12:45:02,655:INFO: Training
+2019-04-11 12:45:09,689:INFO: Validation
+2019-04-11 12:45:09,759:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6608515083789825, 'recall_at_100': 0.45, 'accuracy': 0.9999072227118802})
+2019-04-11 12:45:09,759:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.5, 'accuracy': 0.9999072227118802})
+2019-04-11 12:45:19,970:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:45:20,214:INFO: Epoch 1 of 6
+2019-04-11 12:45:20,215:INFO: - Current learning rate: 0.01
+2019-04-11 12:45:20,215:INFO: Training
+2019-04-11 12:45:27,244:INFO: Validation
+2019-04-11 12:45:27,315:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.7212380826473236, 'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:45:27,315:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:45:27,315:INFO: Epoch 2 of 6
+2019-04-11 12:45:27,315:INFO: - Current learning rate: 0.01
+2019-04-11 12:45:27,315:INFO: Training
+2019-04-11 12:45:34,515:INFO: Validation
+2019-04-11 12:45:34,581:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6945950855811438, 'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:45:34,581:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:45:34,581:INFO: Epoch 3 of 6
+2019-04-11 12:45:34,581:INFO: - Current learning rate: 0.01
+2019-04-11 12:45:34,581:INFO: Training
+2019-04-11 12:45:41,812:INFO: Validation
+2019-04-11 12:45:41,883:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6931597630182902, 'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:45:41,884:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:45:41,884:INFO: Epoch 4 of 6
+2019-04-11 12:45:41,884:INFO: - Current learning rate: 0.01
+2019-04-11 12:45:41,884:INFO: Training
+2019-04-11 12:45:48,999:INFO: Validation
+2019-04-11 12:45:49,068:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6931494732697805, 'recall_at_100': 0.008333333333333333, 'accuracy': 0.9999072227118802})
+2019-04-11 12:45:49,068:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:45:49,068:INFO: Epoch 5 of 6
+2019-04-11 12:45:49,068:INFO: - Current learning rate: 0.01
+2019-04-11 12:45:49,069:INFO: Training
+2019-04-11 12:45:56,102:INFO: Validation
+2019-04-11 12:45:56,162:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6931480516990028, 'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:45:56,162:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:45:56,162:INFO: Epoch 6 of 6
+2019-04-11 12:45:56,162:INFO: - Current learning rate: 0.01
+2019-04-11 12:45:56,162:INFO: Training
+2019-04-11 12:46:03,323:INFO: Validation
+2019-04-11 12:46:03,392:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6931445946296059, 'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:46:03,392:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:46:13,405:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:46:13,655:INFO: Epoch 1 of 6
+2019-04-11 12:46:13,655:INFO: - Current learning rate: 0.01
+2019-04-11 12:46:13,655:INFO: Training
+2019-04-11 12:46:20,792:INFO: Validation
+2019-04-11 12:46:20,859:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.7082903345425924, 'recall_at_100': 0.48333333333333334, 'accuracy': 0.9999079958559478})
+2019-04-11 12:46:20,859:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:46:20,859:INFO: Epoch 2 of 6
+2019-04-11 12:46:20,859:INFO: - Current learning rate: 0.01
+2019-04-11 12:46:20,859:INFO: Training
+2019-04-11 12:46:27,927:INFO: Validation
+2019-04-11 12:46:28,000:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6757181972265246, 'recall_at_100': 0.4083333333333333, 'accuracy': 0.9999072227118802})
+2019-04-11 12:46:28,000:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:46:28,000:INFO: Epoch 3 of 6
+2019-04-11 12:46:28,000:INFO: - Current learning rate: 0.01
+2019-04-11 12:46:28,001:INFO: Training
+2019-04-11 12:46:34,994:INFO: Validation
+2019-04-11 12:46:35,052:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6703136175870895, 'recall_at_100': 0.39166666666666666, 'accuracy': 0.9999072227118802})
+2019-04-11 12:46:35,053:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:46:35,053:INFO: Epoch 4 of 6
+2019-04-11 12:46:35,053:INFO: - Current learning rate: 0.01
+2019-04-11 12:46:35,053:INFO: Training
+2019-04-11 12:46:42,217:INFO: Validation
+2019-04-11 12:46:42,284:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6581215957800548, 'recall_at_100': 0.5083333333333333, 'accuracy': 0.9999072227118802})
+2019-04-11 12:46:42,284:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:46:42,284:INFO: Epoch 5 of 6
+2019-04-11 12:46:42,285:INFO: - Current learning rate: 0.01
+2019-04-11 12:46:42,285:INFO: Training
+2019-04-11 12:46:49,358:INFO: Validation
+2019-04-11 12:46:49,421:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6563079804182053, 'recall_at_100': 0.43333333333333335, 'accuracy': 0.9999072227118802})
+2019-04-11 12:46:49,422:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:46:49,422:INFO: Epoch 6 of 6
+2019-04-11 12:46:49,422:INFO: - Current learning rate: 0.01
+2019-04-11 12:46:49,422:INFO: Training
+2019-04-11 12:46:56,643:INFO: Validation
+2019-04-11 12:46:56,721:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6507386654615402, 'recall_at_100': 0.43333333333333335, 'accuracy': 0.9999072227118802})
+2019-04-11 12:46:56,721:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:47:07,276:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:47:07,528:INFO: Epoch 1 of 6
+2019-04-11 12:47:07,528:INFO: - Current learning rate: 0.01
+2019-04-11 12:47:07,528:INFO: Training
+2019-04-11 12:47:14,674:INFO: Validation
+2019-04-11 12:47:14,743:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6804293225208918, 'recall_at_100': 0.5583333333333333, 'accuracy': 0.9999072227118802})
+2019-04-11 12:47:14,743:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:47:14,743:INFO: Epoch 2 of 6
+2019-04-11 12:47:14,743:INFO: - Current learning rate: 0.01
+2019-04-11 12:47:14,743:INFO: Training
+2019-04-11 12:47:21,812:INFO: Validation
+2019-04-11 12:47:21,884:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.674782970547676, 'recall_at_100': 0.48333333333333334, 'accuracy': 0.9999072227118802})
+2019-04-11 12:47:21,884:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:47:21,884:INFO: Epoch 3 of 6
+2019-04-11 12:47:21,884:INFO: - Current learning rate: 0.01
+2019-04-11 12:47:21,884:INFO: Training
+2019-04-11 12:47:28,888:INFO: Validation
+2019-04-11 12:47:28,955:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6690245101849238, 'recall_at_100': 0.4166666666666667, 'accuracy': 0.9999072227118802})
+2019-04-11 12:47:28,955:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:47:28,955:INFO: Epoch 4 of 6
+2019-04-11 12:47:28,956:INFO: - Current learning rate: 0.01
+2019-04-11 12:47:28,956:INFO: Training
+2019-04-11 12:47:36,045:INFO: Validation
+2019-04-11 12:47:36,119:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6603898664315543, 'recall_at_100': 0.48333333333333334, 'accuracy': 0.9999072227118802})
+2019-04-11 12:47:36,119:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:47:36,119:INFO: Epoch 5 of 6
+2019-04-11 12:47:36,119:INFO: - Current learning rate: 0.01
+2019-04-11 12:47:36,119:INFO: Training
+2019-04-11 12:47:43,303:INFO: Validation
+2019-04-11 12:47:43,374:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6579337815443675, 'recall_at_100': 0.44166666666666665, 'accuracy': 0.9999072227118802})
+2019-04-11 12:47:43,374:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:47:43,374:INFO: Epoch 6 of 6
+2019-04-11 12:47:43,374:INFO: - Current learning rate: 0.01
+2019-04-11 12:47:43,374:INFO: Training
+2019-04-11 12:47:50,628:INFO: Validation
+2019-04-11 12:47:50,700:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6466476241747539, 'recall_at_100': 0.5166666666666667, 'accuracy': 0.9999072227118802})
+2019-04-11 12:47:50,700:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:48:00,646:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:48:00,892:INFO: Epoch 1 of 6
+2019-04-11 12:48:00,892:INFO: - Current learning rate: 0.01
+2019-04-11 12:48:00,892:INFO: Training
+2019-04-11 12:48:07,968:INFO: Validation
+2019-04-11 12:48:08,034:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.7143884609142938, 'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:48:08,034:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:48:08,034:INFO: Epoch 2 of 6
+2019-04-11 12:48:08,034:INFO: - Current learning rate: 0.01
+2019-04-11 12:48:08,034:INFO: Training
+2019-04-11 12:48:15,166:INFO: Validation
+2019-04-11 12:48:15,230:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6938067406415941, 'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:48:15,230:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:48:15,230:INFO: Epoch 3 of 6
+2019-04-11 12:48:15,230:INFO: - Current learning rate: 0.01
+2019-04-11 12:48:15,230:INFO: Training
+2019-04-11 12:48:22,267:INFO: Validation
+2019-04-11 12:48:22,339:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6931500107049942, 'recall_at_100': 0.008333333333333333, 'accuracy': 0.9999072227118802})
+2019-04-11 12:48:22,339:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:48:22,339:INFO: Epoch 4 of 6
+2019-04-11 12:48:22,339:INFO: - Current learning rate: 0.01
+2019-04-11 12:48:22,339:INFO: Training
+2019-04-11 12:48:29,446:INFO: Validation
+2019-04-11 12:48:29,513:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6931485285361608, 'recall_at_100': 0.008333333333333333, 'accuracy': 0.9999072227118802})
+2019-04-11 12:48:29,514:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:48:29,514:INFO: Epoch 5 of 6
+2019-04-11 12:48:29,514:INFO: - Current learning rate: 0.01
+2019-04-11 12:48:29,514:INFO: Training
+2019-04-11 12:48:36,603:INFO: Validation
+2019-04-11 12:48:36,670:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6931468327840168, 'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:48:36,670:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:48:36,671:INFO: Epoch 6 of 6
+2019-04-11 12:48:36,671:INFO: - Current learning rate: 0.01
+2019-04-11 12:48:36,671:INFO: Training
+2019-04-11 12:48:43,911:INFO: Validation
+2019-04-11 12:48:43,979:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6931480129559835, 'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 12:48:43,979:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:48:53,817:INFO: Starting training for 6 epoch(s)
+2019-04-11 12:48:54,135:INFO: Epoch 1 of 6
+2019-04-11 12:48:54,135:INFO: - Current learning rate: 0.01
+2019-04-11 12:48:54,135:INFO: Training
+2019-04-11 12:49:01,328:INFO: Validation
+2019-04-11 12:49:01,393:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.7387797921895981, 'recall_at_100': 0.4666666666666667, 'accuracy': 0.9999072227118802})
+2019-04-11 12:49:01,394:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999536113559401})
+2019-04-11 12:49:01,394:INFO: Epoch 2 of 6
+2019-04-11 12:49:01,394:INFO: - Current learning rate: 0.01
+2019-04-11 12:49:01,394:INFO: Training
+2019-04-11 13:36:15,829:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 13:36:15,829:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 13:36:15,829:INFO: ======================================
+2019-04-11 13:36:15,829:INFO: Loading PPI Network...
+2019-04-11 13:36:23,791:INFO: Loading Disease Associations...
+2019-04-11 13:36:23,805:INFO: Running Experiment...
+2019-04-11 13:36:34,813:INFO: Starting training for 6 epoch(s)
+2019-04-11 13:36:39,686:INFO: Epoch 1 of 6
+2019-04-11 13:36:39,687:INFO: - Current learning rate: 0.01
+2019-04-11 13:36:39,687:INFO: Training
+2019-04-11 13:37:07,015:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 13:37:07,015:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 13:37:07,015:INFO: ======================================
+2019-04-11 13:37:07,015:INFO: Loading PPI Network...
+2019-04-11 13:37:14,030:INFO: Loading Disease Associations...
+2019-04-11 13:37:14,045:INFO: Running Experiment...
+2019-04-11 13:37:24,389:INFO: Starting training for 6 epoch(s)
+2019-04-11 13:37:30,184:INFO: Epoch 1 of 6
+2019-04-11 13:37:30,184:INFO: - Current learning rate: 0.01
+2019-04-11 13:37:30,184:INFO: Training
+2019-04-11 13:37:37,455:INFO: Validation
+2019-04-11 13:37:37,526:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6845602701107663, 'recall_at_100': 0.4, 'accuracy': 0.9999072227118802})
+2019-04-11 13:37:37,527:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 13:37:37,527:INFO: Epoch 2 of 6
+2019-04-11 13:37:37,527:INFO: - Current learning rate: 0.01
+2019-04-11 13:37:37,527:INFO: Training
+2019-04-11 13:37:44,684:INFO: Validation
+2019-04-11 13:37:44,749:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6832481662432353, 'recall_at_100': 0.4666666666666667, 'accuracy': 0.9999072227118802})
+2019-04-11 13:37:44,749:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 13:37:44,749:INFO: Epoch 3 of 6
+2019-04-11 13:37:44,749:INFO: - Current learning rate: 0.01
+2019-04-11 13:37:44,750:INFO: Training
+2019-04-11 13:37:51,955:INFO: Validation
+2019-04-11 13:37:52,019:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6845850676298143, 'recall_at_100': 0.43333333333333335, 'accuracy': 0.9999072227118802})
+2019-04-11 13:37:52,019:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 13:37:52,019:INFO: Epoch 4 of 6
+2019-04-11 13:37:52,019:INFO: - Current learning rate: 0.01
+2019-04-11 13:37:52,019:INFO: Training
+2019-04-11 13:37:59,150:INFO: Validation
+2019-04-11 13:37:59,220:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6839527308940887, 'recall_at_100': 0.4, 'accuracy': 0.9999072227118802})
+2019-04-11 13:37:59,220:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 13:37:59,221:INFO: Epoch 5 of 6
+2019-04-11 13:37:59,221:INFO: - Current learning rate: 0.01
+2019-04-11 13:37:59,221:INFO: Training
+2019-04-11 13:38:06,418:INFO: Validation
+2019-04-11 13:38:06,486:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.684634539484978, 'recall_at_100': 0.4, 'accuracy': 0.9999072227118802})
+2019-04-11 13:38:06,486:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 13:38:06,486:INFO: Epoch 6 of 6
+2019-04-11 13:38:06,486:INFO: - Current learning rate: 0.01
+2019-04-11 13:38:06,486:INFO: Training
+2019-04-11 13:38:57,761:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 13:38:57,761:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 13:38:57,761:INFO: ======================================
+2019-04-11 13:38:57,761:INFO: Loading PPI Network...
+2019-04-11 13:39:04,497:INFO: Loading Disease Associations...
+2019-04-11 13:39:04,511:INFO: Running Experiment...
+2019-04-11 13:39:15,594:INFO: Starting training for 6 epoch(s)
+2019-04-11 13:39:20,149:INFO: Epoch 1 of 6
+2019-04-11 13:39:20,150:INFO: - Current learning rate: 0.01
+2019-04-11 13:39:20,150:INFO: Training
+2019-04-11 13:39:27,554:INFO: Validation
+2019-04-11 13:39:27,618:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6828164418538412, 'recall_at_100': 0.45, 'accuracy': 0.9999072227118802})
+2019-04-11 13:39:27,618:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 13:39:27,618:INFO: Epoch 2 of 6
+2019-04-11 13:39:27,618:INFO: - Current learning rate: 0.01
+2019-04-11 13:39:27,618:INFO: Training
+2019-04-11 13:39:34,799:INFO: Validation
+2019-04-11 13:39:34,873:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6785456866025924, 'recall_at_100': 0.4166666666666667, 'accuracy': 0.9999072227118802})
+2019-04-11 13:39:34,873:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 13:39:34,873:INFO: Epoch 3 of 6
+2019-04-11 13:39:34,873:INFO: - Current learning rate: 0.01
+2019-04-11 13:39:34,873:INFO: Training
+2019-04-11 13:39:41,808:INFO: Validation
+2019-04-11 13:39:41,873:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6734929084777833, 'recall_at_100': 0.38333333333333336, 'accuracy': 0.9999072227118802})
+2019-04-11 13:39:41,873:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 13:39:41,873:INFO: Epoch 4 of 6
+2019-04-11 13:39:41,873:INFO: - Current learning rate: 0.01
+2019-04-11 13:39:41,873:INFO: Training
+2019-04-11 13:39:48,883:INFO: Validation
+2019-04-11 13:39:48,949:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6681682368119558, 'recall_at_100': 0.475, 'accuracy': 0.9999072227118802})
+2019-04-11 13:39:48,949:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 13:39:48,949:INFO: Epoch 5 of 6
+2019-04-11 13:39:48,949:INFO: - Current learning rate: 0.01
+2019-04-11 13:39:48,949:INFO: Training
+2019-04-11 13:39:55,993:INFO: Validation
+2019-04-11 13:39:56,062:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6647817810376483, 'recall_at_100': 0.4666666666666667, 'accuracy': 0.9999072227118802})
+2019-04-11 13:39:56,063:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 13:39:56,063:INFO: Epoch 6 of 6
+2019-04-11 13:39:56,063:INFO: - Current learning rate: 0.01
+2019-04-11 13:39:56,063:INFO: Training
+2019-04-11 13:40:03,100:INFO: Validation
+2019-04-11 13:40:03,168:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6627538124720258, 'recall_at_100': 0.36666666666666664, 'accuracy': 0.9999072227118802})
+2019-04-11 13:40:03,169:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.5, 'accuracy': 0.9999072227118802})
+2019-04-11 13:40:13,013:INFO: Starting training for 6 epoch(s)
+2019-04-11 13:40:13,329:INFO: Epoch 1 of 6
+2019-04-11 13:40:13,329:INFO: - Current learning rate: 0.01
+2019-04-11 13:40:13,329:INFO: Training
+2019-04-11 13:40:20,423:INFO: Validation
+2019-04-11 13:40:20,492:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6897290647029876, 'recall_at_100': 0.38333333333333336, 'accuracy': 0.9999072227118802})
+2019-04-11 13:40:20,492:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.5, 'accuracy': 0.9999072227118802})
+2019-04-11 13:40:20,492:INFO: Epoch 2 of 6
+2019-04-11 13:40:20,492:INFO: - Current learning rate: 0.01
+2019-04-11 13:40:20,493:INFO: Training
+2019-04-11 13:40:27,553:INFO: Validation
+2019-04-11 13:40:27,623:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6835756172736487, 'recall_at_100': 0.4083333333333333, 'accuracy': 0.9999072227118802})
+2019-04-11 13:40:27,623:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.5, 'accuracy': 0.9999072227118802})
+2019-04-11 13:40:27,623:INFO: Epoch 3 of 6
+2019-04-11 13:40:27,623:INFO: - Current learning rate: 0.01
+2019-04-11 13:40:27,623:INFO: Training
+2019-04-11 13:40:34,911:INFO: Validation
+2019-04-11 13:40:34,987:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6806221544742584, 'recall_at_100': 0.25833333333333336, 'accuracy': 0.9999072227118802})
+2019-04-11 13:40:34,988:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.5, 'accuracy': 0.9999072227118802})
+2019-04-11 13:40:34,988:INFO: Epoch 4 of 6
+2019-04-11 13:40:34,988:INFO: - Current learning rate: 0.01
+2019-04-11 13:40:34,988:INFO: Training
+2019-04-11 13:40:42,165:INFO: Validation
+2019-04-11 13:40:42,230:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6749192823966345, 'recall_at_100': 0.425, 'accuracy': 0.9999072227118802})
+2019-04-11 13:40:42,231:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 13:40:42,231:INFO: Epoch 5 of 6
+2019-04-11 13:40:42,231:INFO: - Current learning rate: 0.01
+2019-04-11 13:40:42,231:INFO: Training
+2019-04-11 13:40:49,395:INFO: Validation
+2019-04-11 13:40:49,467:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.66671115954717, 'recall_at_100': 0.425, 'accuracy': 0.9999072227118802})
+2019-04-11 13:40:49,467:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.5, 'accuracy': 0.9999072227118802})
+2019-04-11 13:40:49,467:INFO: Epoch 6 of 6
+2019-04-11 13:40:49,467:INFO: - Current learning rate: 0.01
+2019-04-11 13:40:49,467:INFO: Training
+2019-04-11 13:40:56,548:INFO: Validation
+2019-04-11 13:40:56,618:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6645523756742477, 'recall_at_100': 0.4583333333333333, 'accuracy': 0.9999072227118802})
+2019-04-11 13:40:56,618:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 0.0, 'accuracy': 0.9999072227118802})
+2019-04-11 13:41:06,360:INFO: Starting training for 6 epoch(s)
+2019-04-11 13:41:06,664:INFO: Epoch 1 of 6
+2019-04-11 13:41:06,664:INFO: - Current learning rate: 0.01
+2019-04-11 13:41:06,664:INFO: Training
+2019-04-11 13:41:13,737:INFO: Validation
+2019-04-11 13:41:13,807:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6863253742456437, 'recall_at_100': 0.44166666666666665, 'accuracy': 0.9999072227118802})
+2019-04-11 13:41:13,807:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999536113559401})
+2019-04-11 13:41:13,808:INFO: Epoch 2 of 6
+2019-04-11 13:41:13,808:INFO: - Current learning rate: 0.01
+2019-04-11 13:41:13,808:INFO: Training
+2019-04-11 13:41:20,919:INFO: Validation
+2019-04-11 13:41:20,986:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6828573038180669, 'recall_at_100': 0.2916666666666667, 'accuracy': 0.9999072227118802})
+2019-04-11 13:41:20,986:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999536113559401})
+2019-04-11 13:41:20,986:INFO: Epoch 3 of 6
+2019-04-11 13:41:20,986:INFO: - Current learning rate: 0.01
+2019-04-11 13:41:20,986:INFO: Training
+2019-04-11 13:41:28,106:INFO: Validation
+2019-04-11 13:41:28,166:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6778053015470504, 'recall_at_100': 0.3333333333333333, 'accuracy': 0.9999072227118802})
+2019-04-11 13:41:28,166:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999536113559401})
+2019-04-11 13:41:28,166:INFO: Epoch 4 of 6
+2019-04-11 13:41:28,167:INFO: - Current learning rate: 0.01
+2019-04-11 13:41:28,167:INFO: Training
+2019-04-11 13:41:35,322:INFO: Validation
+2019-04-11 13:41:35,393:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6744704981644948, 'recall_at_100': 0.4, 'accuracy': 0.9999072227118802})
+2019-04-11 13:41:35,393:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999536113559401})
+2019-04-11 13:41:35,393:INFO: Epoch 5 of 6
+2019-04-11 13:41:35,393:INFO: - Current learning rate: 0.01
+2019-04-11 13:41:35,393:INFO: Training
+2019-04-11 13:41:41,454:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 13:41:41,454:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 13:41:41,454:INFO: ======================================
+2019-04-11 13:41:41,454:INFO: Loading PPI Network...
+2019-04-11 13:41:48,563:INFO: Loading Disease Associations...
+2019-04-11 13:41:48,577:INFO: Running Experiment...
+2019-04-11 13:41:59,491:INFO: Starting training for 6 epoch(s)
+2019-04-11 13:42:05,310:INFO: Epoch 1 of 6
+2019-04-11 13:42:05,310:INFO: - Current learning rate: 0.01
+2019-04-11 13:42:05,310:INFO: Training
+2019-04-11 13:42:14,902:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 13:42:14,902:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 13:42:14,902:INFO: ======================================
+2019-04-11 13:42:14,902:INFO: Loading PPI Network...
+2019-04-11 13:42:21,770:INFO: Loading Disease Associations...
+2019-04-11 13:42:21,784:INFO: Running Experiment...
+2019-04-11 13:42:31,633:INFO: Starting training for 6 epoch(s)
+2019-04-11 13:42:36,444:INFO: Epoch 1 of 6
+2019-04-11 13:42:36,444:INFO: - Current learning rate: 0.01
+2019-04-11 13:42:36,444:INFO: Training
+2019-04-11 13:42:45,809:INFO: Disease Protein Prediction in the PPI Network
+2019-04-11 13:42:45,809:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-04-11 13:42:45,809:INFO: ======================================
+2019-04-11 13:42:45,809:INFO: Loading PPI Network...
+2019-04-11 13:42:52,632:INFO: Loading Disease Associations...
+2019-04-11 13:42:52,646:INFO: Running Experiment...
+2019-04-11 13:43:03,000:INFO: Starting training for 6 epoch(s)
+2019-04-11 13:43:08,604:INFO: Epoch 1 of 6
+2019-04-11 13:43:08,604:INFO: - Current learning rate: 0.01
+2019-04-11 13:43:08,604:INFO: Training
+2019-04-11 13:43:15,837:INFO: Validation
+2019-04-11 13:43:15,910:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6910023540258408, 'recall_at_100': 0.36666666666666664, 'accuracy': 0.9999072227118802})
+2019-04-11 13:43:15,910:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 13:43:15,910:INFO: Epoch 2 of 6
+2019-04-11 13:43:15,911:INFO: - Current learning rate: 0.01
+2019-04-11 13:43:15,911:INFO: Training
+2019-04-11 13:43:23,222:INFO: Validation
+2019-04-11 13:43:23,287:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.68543641269207, 'recall_at_100': 0.44166666666666665, 'accuracy': 0.9999072227118802})
+2019-04-11 13:43:23,287:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 13:43:23,287:INFO: Epoch 3 of 6
+2019-04-11 13:43:23,287:INFO: - Current learning rate: 0.01
+2019-04-11 13:43:23,287:INFO: Training
+2019-04-11 13:43:30,568:INFO: Validation
+2019-04-11 13:43:30,643:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6814317514499029, 'recall_at_100': 0.4, 'accuracy': 0.9999072227118802})
+2019-04-11 13:43:30,643:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 13:43:30,643:INFO: Epoch 4 of 6
+2019-04-11 13:43:30,643:INFO: - Current learning rate: 0.01
+2019-04-11 13:43:30,644:INFO: Training
+2019-04-11 13:43:37,688:INFO: Validation
+2019-04-11 13:43:37,753:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6779617587725321, 'recall_at_100': 0.45, 'accuracy': 0.9999079958559478})
+2019-04-11 13:43:37,753:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 13:43:37,754:INFO: Epoch 5 of 6
+2019-04-11 13:43:37,754:INFO: - Current learning rate: 0.01
+2019-04-11 13:43:37,754:INFO: Training
+2019-04-11 13:43:44,888:INFO: Validation
+2019-04-11 13:43:44,960:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6721497654914856, 'recall_at_100': 0.4666666666666667, 'accuracy': 0.9999072227118802})
+2019-04-11 13:43:44,960:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})
+2019-04-11 13:43:44,961:INFO: Epoch 6 of 6
+2019-04-11 13:43:44,961:INFO: - Current learning rate: 0.01
+2019-04-11 13:43:44,961:INFO: Training
+2019-04-11 13:43:52,042:INFO: Validation
+2019-04-11 13:43:52,103:INFO: Train Metrics: defaultdict(<class 'int'>, {'loss': 0.6698363711436589, 'recall_at_100': 0.4166666666666667, 'accuracy': 0.9999072227118802})
+2019-04-11 13:43:52,103:INFO: Valid Metrics: defaultdict(<class 'int'>, {'recall_at_100': 1.0, 'accuracy': 0.9999072227118802})

@@ -2,13 +2,14 @@
     "process": "go_enrichment",
     "process_params": 
         {
-            "n_processes": 15,
+            "n_processes": 5,
             "ppi_network": "data/networks/bio-pathways-network.txt",
             "diseases_path": "data/associations/disgenet-associations.csv",
             "disease_subset": [],
 
             "method_to_preds": {
-                "lci": "experiments/dpp_predict/lci"
+                "lci": "experiments/dpp_predict/lci",
+                "random_walk": "experiments/dpp_predict/random_walk"
             },
 
             "go_path": "data/go/go-basic.obo",
@@ -23,6 +24,5 @@
             "num_preds": -1,
             "top_k": 10,
             "save_enrichment_results": true
-
         }
 }

@@ -42,7 +42,7 @@ class MIAModel(nn.Module):
         self.network = network
 
         adj_matrix = torch.tensor(network.adj_matrix, dtype=torch.float)
-        self.adj_matrix = adj_matrix
+        self.register_buffer("adj_matrix", adj_matrix)
 
         # build degree vector
         deg_vec = torch.sum(adj_matrix, dim=1, dtype=torch.float)
@@ -55,14 +55,16 @@ class MIAModel(nn.Module):
         self.register_buffer("adj_rcnorm", adj_rcnorm)
         self.register_buffer("adj_rnorm", adj_rnorm)
 
-        self.embeddings = torch.tensor(load_embeddings(embeddings_path, network), 
+        embeddings = torch.tensor(load_embeddings(embeddings_path, network), 
                                        dtype=torch.float)
+        self.register_buffer("embeddings", embeddings)
+
         self.att_proj_layer = nn.Linear(in_features=self.embeddings.shape[1], 
                                         out_features=self.embeddings.shape[1], bias=True)
 
         self.weight_layer = nn.Linear(in_features=self.embeddings.shape[1] * 2, 
-                                      out_features=1, bias=True)
-        self.final_layer = nn.Linear(in_features=1, out_features=1, bias=True)
+                                      out_features=1, bias=False)
+        self.final_layer = nn.Linear(in_features=1, out_features=1, bias=False)
         
         self.dropout = nn.Dropout(p=dropout_prob)
         self._build_optimizer(optim_class, optim_args, scheduler_class, scheduler_args)
@@ -88,7 +90,7 @@ class MIAModel(nn.Module):
         att_probs = torch.softmax(att_scores, dim=0)   # num_pos x num_nodes
         context_embeddings = torch.matmul(att_probs.t(), pos_embeddings) # num_nodes x d
         context_embeddings = torch.cat((self.embeddings, context_embeddings), dim=1)
-        mutual_node_weights = torch.sigmoid(self.weight_layer(context_embeddings)) 
+        mutual_node_weights = torch.sigmoid(self.weight_layer(context_embeddings))
         
         inputs = inputs.unsqueeze(1)
         outputs = torch.sparse.mm(self.adj_rcnorm.t(), inputs).t()  # (m, n)
@@ -96,6 +98,7 @@ class MIAModel(nn.Module):
         outputs = outputs.squeeze(0).unsqueeze(1)
         outputs = torch.sparse.mm(self.adj_rnorm.t(), outputs).t()  # (m, n)
         outputs = self.final_layer(outputs.unsqueeze(-1)).squeeze(-1)
+        print(self.final_layer.weight)
 
         return outputs
 
@@ -106,6 +109,9 @@ class MIAModel(nn.Module):
         # ignore -1 indices
         outputs = outputs[targets != -1]
         targets = targets[targets != -1]
+        print(targets)
+        print(outputs)
+        print(torch.sigmoid(outputs))
 
         bce_loss = nn.BCEWithLogitsLoss()
         return bce_loss(outputs, targets) 
