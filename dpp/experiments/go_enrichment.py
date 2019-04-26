@@ -188,9 +188,9 @@ class GOEnrichment(Experiment):
         print("Saving Results...")
         self.results.to_csv(os.path.join(self.dir, 'results.csv'))
 
-        if self.params["save_enrichment_results"]:
-            with open(os.path.join(self.dir,'outputs.pkl'), 'wb') as f:
-                pickle.dump(self.outputs, f)
+        #if self.params["save_enrichment_results"]:
+        #    with open(os.path.join(self.dir,'outputs.pkl'), 'wb') as f:
+        #        pickle.dump(self.outputs, f)
             
     def load_results(self):
         """

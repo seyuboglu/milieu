@@ -4,7 +4,12 @@
 
 ### Disease Associated Proteins
 
-Notes:
+Let's motivate the discussion with a simple example: 
+
+- Meckel Gruber Syndrome is a rare autosomal recessive disorder.  It is thought to be caused by dysfunction of cilia and flagella in human cells.
+- Currently, there are twelve proteins known to be associated with Meckel Gruber Syndrome. Amongst these proteins, the three that seem to be most salient in manifestation of the disease are B9D1 B9D2 and MSK1 – these proteins form a protein complex that critical ciliogenesis. Disruption of one or more of these proteins – through genetic mutation – causes Meckel Gruber Syndrome. 
+
+
 
 **Disease-Gene Association**
 
@@ -12,7 +17,11 @@ Human diseases can often be traced back to specific genes responsible for the ma
 
 We're going to call such a gene a **disease gene** and say that the disease and gene are associated. 
 
+Specifically, a disease gene is one where an alteration in the gene’s code, expression or protein product underpins the disease. 
+
 Note that I'm probably going to use the terms gene and protein interchangeably, because many genes act as instructions to make proteins we'll say that a protein is associated with a gene when its gene is associated and vice versa. 
+
+
 
 **Disease Pathway**
 
@@ -25,12 +34,6 @@ For our work we use DisGeNet, a huge database of  disease pathways. We use the 1
 In many cases we can identify disease proteins through genome wide association studies.  In other cases, disease proteins can be uncovered through targetted studies that aim to understand the molecular mechanics behind a disease.
 
 
-
-Let's take a look at an example:
-
-- Meckel Gruber Syndrome is a rare autosomal recessive disorder.  It is thought to be caused by dysfunction of cilia and flagella in human cells.
-- Currently, there are twelve proteins known to be associated with Meckel Gruber Syndrome. Amongst these proteins, the three that seem to be most salient in manifestation of the disease are B9D1 B9D2 and MSK1 – these proteins form a protein complex that critical ciliogenesis. Disruption of one or more of these proteins – through genetic mutation – causes Meckel Gruber Syndrome. 
-- 
 
 Slides:
 
