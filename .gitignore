@@ -92,6 +92,8 @@ ENV/
 env.bak/
 venv.bak/
 
+notes/
+
 # Spyder project settings
 .spyderproject
 .spyproject
