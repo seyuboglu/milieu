@@ -1,0 +1,414 @@
+,median_weight,pvalue
+intracellular part,0.03209773078560829,0.997
+intracellular organelle part,0.03209773078560829,1.0
+immune effector process,0.07352720201015472,0.0
+cell activation,0.10522782802581787,0.0
+establishment of localization,0.03209773078560829,0.961
+membrane-bounded organelle,0.03209773078560829,0.999
+organelle lumen,0.06604015082120895,0.0
+leukocyte activation,0.09013835340738297,0.0
+extracellular organelle,0.052180271595716476,0.0
+extracellular matrix,0.19238367676734924,0.0
+secretion by cell,0.07466157525777817,0.0
+regulation of molecular function,0.035646796226501465,0.0
+cellular component organization,0.03209773078560829,1.0
+regulation of biological process,0.03209773078560829,0.997
+organic substance metabolic process,0.032122619450092316,0.001
+enzyme regulator activity,0.03209773078560829,0.791
+protein binding,0.03343098238110542,0.0
+nitrogen compound metabolic process,0.032389819622039795,0.004
+primary metabolic process,0.032151851803064346,0.003
+protein activation cascade,1.1441010236740112,0.0
+cellular developmental process,0.032519981265068054,0.0
+cellular metabolic process,0.03243396803736687,0.0
+transferase activity,0.03209773078560829,0.895
+intracellular organelle,0.03209773078560829,0.999
+system process,0.033694684505462646,0.0
+regulation of biological quality,0.03718017786741257,0.0
+heterocyclic compound binding,0.03209773078560829,1.0
+response to stress,0.044561464339494705,0.0
+organic cyclic compound binding,0.03209773078560829,1.0
+hydrolase activity,0.03209773078560829,0.814
+intrinsic component of membrane,0.03195428475737572,0.396
+non-membrane-bounded organelle,0.03209773078560829,1.0
+ion binding,0.03209773078560829,0.833
+anatomical structure formation involved in morphogenesis,0.0937952995300293,0.0
+carbohydrate derivative binding,0.03277609497308731,0.008
+cell motility,0.03548172861337662,0.0
+sulfur compound binding,0.07755625247955322,0.0
+cellular component biogenesis,0.03826380521059036,0.82
+movement of cell or subcellular component,0.03209773078560829,0.816
+hormone metabolic process,0.12290722131729126,0.0
+cellular response to stimulus,0.06193404272198677,0.0
+response to abiotic stimulus,0.12513059377670288,0.0
+biosynthetic process,0.04268554598093033,0.0
+response to endogenous stimulus,0.1809455156326294,0.0
+response to chemical,0.07357921451330185,0.0
+ligase activity,0.03209773078560829,0.56
+"catalytic activity, acting on RNA",0.03209773078560829,0.842
+small molecule binding,0.03248064965009689,0.015
+small molecule metabolic process,0.035539716482162476,0.0
+anatomical structure development,0.03469717130064964,0.0
+drug binding,0.03282288834452629,0.078
+cofactor binding,0.047118496149778366,0.0
+neuron part,0.03276975080370903,0.005
+cell projection,0.03209773078560829,0.879
+catabolic process,0.034174900501966476,0.005
+multi-organism reproductive process,0.03372485935688019,0.044
+metal cluster binding,0.03556326776742935,0.136
+catalytic complex,0.06688802689313889,0.351
+adult behavior,0.03172924369573593,0.488
+lipid binding,0.03209773078560829,0.42
+transmembrane transporter activity,0.03154030814766884,0.695
+apolipoprotein receptor activity,-0.41664573550224304,0.901
+membrane region,0.24028736352920532,0.0
+macromolecule localization,0.03350986912846565,0.122
+response to biotic stimulus,0.03643549978733063,0.0
+plasma membrane part,0.03209773078560829,0.382
+protein-containing complex binding,0.08140314370393753,0.002
+side of membrane,0.08512057363986969,0.0
+lipid transporter activity,0.03128587827086449,0.708
+signal transduction,0.03373285010457039,0.0
+cellular localization,0.03648383542895317,0.157
+plasma lipoprotein particle organization,0.3381268382072449,0.0
+signaling receptor activity,0.03209773078560829,0.393
+response to external stimulus,0.04018418863415718,0.0
+organelle membrane,0.03209773078560829,0.772
+whole membrane,0.03209773078560829,0.652
+transporter complex,0.03164350241422653,0.395
+membrane protein complex,0.04113629087805748,0.0
+cellular homeostasis,0.03401472419500351,0.0
+ribonucleoprotein complex,0.11581889539957047,0.875
+"translation regulator activity, nucleic acid binding",0.025250058621168137,0.993
+envelope,0.0582754984498024,0.129
+ciliary part,0.03208378702402115,0.795
+plasma membrane region,0.032592758536338806,0.0
+detection of stimulus,0.03209773078560829,0.931
+cell projection part,0.03209773078560829,0.887
+cell cycle process,0.046668995171785355,0.57
+actin filament-based process,0.03209773078560829,0.795
+cell growth,0.04750970005989075,0.261
+process utilizing autophagic mechanism,0.04200363904237747,0.277
+developmental growth,0.043880969285964966,0.03
+"catalytic activity, acting on a protein",0.03209773078560829,0.968
+anatomical structure morphogenesis,0.03716644272208214,0.0
+leukocyte homeostasis,0.11343106627464294,0.12
+transcription coregulator activity,0.04415116086602211,0.659
+activation of immune response,0.08978138864040375,0.0
+leukocyte proliferation,0.04046475887298584,0.082
+cell adhesion,0.03252720460295677,0.0
+cell body,0.03209773078560829,0.718
+cell cycle,0.030182287096977234,0.969
+oxidoreductase activity,0.07159940153360367,0.0
+cell-cell junction,0.040525883436203,0.017
+cell communication,0.034667178988456726,0.0
+glycosylation,0.03144989535212517,0.428
+guanyl-nucleotide exchange factor activity,0.030985716730356216,0.622
+"postsynaptic specialization, intracellular component",0.19845639169216156,0.279
+toxin catabolic process,2.197277069091797,0.022
+oxidation-reduction process,0.17431968450546265,0.0
+secondary metabolic process,0.3286329209804535,0.0
+multicellular organismal homeostasis,0.0657428577542305,0.004
+amide binding,0.06012283265590668,0.0
+outer membrane,0.02510557509958744,0.979
+fatty acid derivative binding,0.03085823357105255,0.53
+lyase activity,0.16465935111045837,0.0
+cell-cell signaling,0.037582434713840485,0.0
+postsynapse,0.02765103243291378,0.952
+multicellular organismal response to stress,0.028428878635168076,0.656
+behavioral defense response,0.024719521403312683,0.801
+learning or memory,0.03161438927054405,0.689
+neurotransmitter binding,0.043741438537836075,0.0
+extracellular matrix binding,0.8950749635696411,0.0
+hormone binding,0.40878239274024963,0.0
+developmental process involved in reproduction,0.04331594705581665,0.0
+mitochondrial membrane part,0.03209773078560829,0.575
+mitochondrial protein complex,-0.020494913682341576,1.0
+sperm part,0.03209773078560829,0.716
+cell recognition,0.03209773078560829,0.567
+fertilization,0.02737259678542614,0.958
+sperm-egg recognition,0.03209773078560829,0.86
+multi-multicellular organism process,0.03169180452823639,0.423
+carbohydrate binding,0.0785461962223053,0.0
+multicellular organismal reproductive process,0.03209773078560829,0.894
+response to other organism,0.03328105807304382,0.005
+contractile fiber part,0.11696050316095352,0.004
+supramolecular polymer,0.03396589681506157,0.541
+tissue migration,0.25115135312080383,0.401
+postsynaptic cytoskeleton,0.253311425447464,0.492
+structural constituent of synapse,0.6977401375770569,0.034
+structural constituent of cytoskeleton,0.8220635056495667,0.198
+cell-substrate junction,0.37941211462020874,0.003
+anchoring junction,0.22879238426685333,0.0
+presynapse,0.03860083967447281,0.015
+chromatin binding,0.061656802892684937,0.687
+presynaptic cytoskeleton,0.009812569245696068,0.782
+myosin complex,0.025302015244960785,0.686
+cluster of actin-based cell projections,0.046816643327474594,0.308
+synaptic membrane,0.03593284636735916,0.0
+postsynaptic specialization membrane,0.03161438927054405,0.574
+muscle adaptation,0.5200808644294739,0.006
+response to inactivity,0.9225413799285889,0.02
+response to stimulus involved in regulation of muscle adaptation,0.9027151465415955,0.007
+cellular process involved in reproduction in multicellular organism,0.03209773078560829,0.859
+morphogenesis of a branching structure,0.6634781360626221,0.0
+multicellular organism development,0.17000073194503784,0.0
+receptor complex,0.09813550859689713,0.0
+pattern specification process,0.03209773078560829,0.516
+molting cycle process,0.11707513779401779,0.01
+epithelial cell proliferation,0.7540701627731323,0.0
+tissue remodeling,1.1348156929016113,0.0
+developmental maturation,0.03272064030170441,0.235
+pigment metabolic process,0.038540273904800415,0.027
+taxis,0.0423874631524086,0.0
+leukocyte migration,0.1305963695049286,0.0
+postsynaptic specialization,0.2511082887649536,0.001
+immune response,0.03209773078560829,0.73
+cell death,0.054897986352443695,0.001
+receptor regulator activity,0.03209773078560829,0.112
+intrinsic component of synaptic membrane,0.029121408239006996,0.738
+cyclase activity,1.0673487186431885,0.0
+intrinsic component of postsynaptic specialization membrane,0.021681826561689377,0.931
+neuron to neuron synapse,0.03936875984072685,0.089
+chemosensory behavior,0.05382128804922104,0.268
+sperm motility,0.03128587827086449,0.698
+maintenance of location,0.10990285873413086,0.026
+cellular detoxification,0.2982352077960968,0.0
+respiratory gaseous exchange,0.0189187191426754,0.704
+coagulation,0.11072569340467453,0.001
+feeding behavior,0.3528289198875427,0.0
+DNA-binding transcription factor activity,0.03209773078560829,0.737
+adaptive thermogenesis,0.014555373229086399,0.849
+channel regulator activity,0.04540218412876129,0.018
+interspecies interaction between organisms,0.2464781552553177,0.003
+response to activity,0.4951889216899872,0.004
+molecular adaptor activity,0.06869213283061981,0.188
+plasma lipoprotein particle clearance,0.28649604320526123,0.0
+antigen processing and presentation,0.06435486674308777,0.191
+endocytic adaptor activity,0.13978901505470276,0.639
+ovulation cycle process,1.2375099658966064,0.0
+extracellular matrix structural constituent,0.06739719957113266,0.0
+extracellular matrix component,0.41661977767944336,0.0
+glycogen debranching enzyme activity,1.7113226652145386,0.105
+stem cell population maintenance,0.22966548800468445,0.013
+maintenance of cell number,0.07404869794845581,0.081
+muscle cell proliferation,1.1250356435775757,0.001
+circadian rhythm,0.5538012385368347,0.007
+rhythmic behavior,0.9543439149856567,0.0
+lymphocyte costimulation,1.012450933456421,0.0
+maintenance of location in cell,0.08801716566085815,0.188
+killing of cells of other organism,0.9743395447731018,0.003
+multi-organism cellular process,1.1651887893676758,0.001
+cytolysis,1.9327399730682373,0.021
+intrinsic component of organelle membrane,0.03209773078560829,0.198
+locomotory behavior,0.03904260694980621,0.12
+plasma membrane,0.1299344152212143,0.0
+isomerase activity,0.16242289543151855,0.0
+production of molecular mediator involved in inflammatory response,-0.029058333486318588,0.696
+peroxidase activity,0.03348313271999359,0.227
+extrinsic component of membrane,0.03599713370203972,0.152
+ossification,0.8992449641227722,0.0
+polyamine binding,0.04926811903715134,0.408
+site of polarized growth,0.031790122389793396,0.794
+anatomical structure regression,1.335374116897583,0.003
+myeloid cell homeostasis,0.4230811595916748,0.124
+protein-lipid complex,0.4233662188053131,0.001
+multicellular organismal signaling,0.13930737972259521,0.001
+digestion,1.07807195186615,0.001
+establishment or maintenance of cell polarity,0.04683879390358925,0.298
+exogenous protein binding,0.34773799777030945,0.0
+cell adhesion mediator activity,0.04026735574007034,0.123
+cilium,0.03184618800878525,0.594
+multi-organism metabolic process,1.336426854133606,0.166
+modified amino acid binding,0.033160291612148285,0.042
+peptidoglycan muralytic activity,-0.007253651972860098,0.993
+blood microparticle,1.9196703433990479,0.03
+intraspecies interaction between organisms,0.027015987783670425,0.783
+multi-organism behavior,0.03490763157606125,0.103
+plasma lipoprotein particle,0.3637238144874573,0.0
+microtubule-based process,0.031982578337192535,0.977
+cell cycle checkpoint,0.19859330356121063,0.194
+T cell selection,0.14185766875743866,0.177
+cytokine production,0.29472413659095764,0.0
+tolerance induction,1.3184159994125366,0.006
+demethylation,0.03128587827086449,0.444
+"catalytic activity, acting on DNA",0.06912218779325485,0.03
+kinetochore,0.034737639129161835,0.645
+microtubule associated complex,0.02577516809105873,0.987
+quaternary ammonium group binding,0.06181103736162186,0.019
+exploration behavior,0.76203453540802,0.017
+reproductive behavior,0.03209773078560829,0.499
+visual behavior,0.03185606002807617,0.701
+production of molecular mediator of immune response,0.031624410301446915,0.737
+pigment accumulation,-0.10654997825622559,0.845
+cellular pigmentation,-0.10654997825622559,0.853
+secretion by tissue,0.02802392654120922,0.58
+host cell part,0.023349706083536148,0.655
+neurotransmitter transporter activity,0.031869057565927505,0.383
+organ growth,1.2961784601211548,0.0
+cell division site part,0.00929423701018095,0.978
+collagen metabolic process,0.034538473933935165,0.02
+response to redox state,-0.06120685115456581,0.649
+organism emergence from protective structure,0.025318942964076996,0.728
+protein folding,0.032389722764492035,0.798
+transcription factor complex,0.09898769855499268,0.368
+aging,0.5436633825302124,0.003
+endoplasmic reticulum membrane,0.05367449298501015,0.041
+neural precursor cell proliferation,0.07821037620306015,0.019
+stem cell proliferation,0.1097664088010788,0.01
+multicellular organismal movement,0.38304266333580017,0.039
+ensheathment of neurons,0.11943192034959793,0.0
+meiotic cell cycle process,0.03320533409714699,0.27
+metallochaperone activity,2.2815921306610107,0.0
+adhesion of symbiont to host,0.30030184984207153,0.146
+detoxification of inorganic compound,0.03740951418876648,0.026
+methylation,0.024481315165758133,0.995
+protein transporter activity,-0.05636991932988167,0.981
+leukocyte mediated cytotoxicity,0.10476139187812805,0.017
+cell-cell fusion,0.03209773078560829,0.514
+syncytium formation,0.03209773078560829,0.567
+B cell selection,-0.44493526220321655,0.833
+Bcl-2 family protein complex,-0.5850557088851929,0.901
+tricarboxylic acid cycle enzyme complex,1.096154808998108,0.003
+oxidoreductase complex,0.3142920732498169,0.003
+cyclin-dependent protein kinase activity,0.322933554649353,0.202
+I-kappaB/NF-kappaB complex,-0.11306346952915192,0.829
+cytochrome complex,0.9604055881500244,0.0
+lumenal side of membrane,0.6424515843391418,0.275
+PcG protein complex,-0.024234924465417862,0.978
+gene silencing,0.03547908365726471,0.342
+mesenchymal cell proliferation,1.2961784601211548,0.0
+cell proliferation involved in kidney development,2.2959086894989014,0.001
+developmental induction,0.7542877197265625,0.002
+anatomical structure arrangement,0.4807441532611847,0.016
+intermediate filament-based process,0.3589216470718384,0.048
+gamma-tubulin complex,-0.2540782392024994,0.942
+regulation of transcription involved in meiotic cell cycle,0.032205935567617416,0.342
+cell division,0.03209773078560829,0.734
+protein complex involved in cell adhesion,0.4484151601791382,0.0
+exocytic process,0.014277664013206959,0.916
+condensed chromosome outer kinetochore,0.6751487255096436,0.477
+other organism membrane,0.41352328658103943,0.099
+tethering complex,-0.006457103416323662,0.957
+organellar ribosome,-0.3556164503097534,0.999
+ribbon synapse,0.13316458463668823,0.298
+excitatory synapse,0.019318515434861183,0.828
+organelle membrane contact site,0.029795315116643906,0.506
+peptidase inhibitor complex,1.299642562866211,0.006
+inflammasome complex,0.07053039222955704,0.26
+multi-organism localization,0.5918500423431396,0.435
+membrane docking,0.12756583094596863,0.627
+glycoprotein complex,1.2948778867721558,0.0
+enzyme activator complex,0.06792551279067993,0.617
+transcription elongation factor complex,0.0391283817589283,0.684
+chaperone complex,-0.3889754116535187,0.993
+antigen binding,0.247435063123703,0.011
+protein-containing complex scaffold activity,-0.02976110391318798,0.915
+amyloid-beta clearance,0.7124659419059753,0.07
+lipoprotein particle receptor activity,0.6289052963256836,0.007
+somatic diversification of immune receptors,0.10054030269384384,0.297
+immunoglobulin complex,0.03209773078560829,0.51
+dedifferentiation,0.2092282772064209,0.368
+DNA packaging complex,0.02449626848101616,0.94
+protein-DNA complex,0.03891180455684662,0.614
+DNA repair complex,1.4900574684143066,0.0
+pituitary gonadotropin complex,3.735430955886841,0.0
+transcriptional repressor complex,0.3505125641822815,0.473
+intrinsic component of synaptic vesicle membrane,0.03209773078560829,0.412
+glial cell proliferation,-0.12333059310913086,0.772
+Sm-like protein family complex,0.505760908126831,0.19
+collagen trimer,0.060521289706230164,0.013
+respirasome,0.6497702598571777,0.045
+response to estrogen,0.0168941468000412,0.78
+extrinsic component of synaptic membrane,0.0002286047674715519,0.701
+nucleocytoplasmic carrier activity,-0.012470077723264694,0.903
+mRNA cleavage factor complex,0.2741682529449463,0.325
+catenin-TCF7L2 complex,2.3790435791015625,0.031
+demethylase activity,0.03139786794781685,0.496
+cohesin complex,1.2841943502426147,0.002
+translation repressor activity,0.03245506435632706,0.33
+microtubule organizing center localization,0.05375874042510986,0.507
+germ cell proliferation,-0.3854254484176636,0.873
+motor behavior,1.822782039642334,0.002
+mechanosensory behavior,-0.009795429185032845,0.874
+ovulation cycle,0.6094228625297546,0.019
+RNA cap binding complex,-0.0363314226269722,0.899
+structural molecule activity conferring elasticity,1.3783586025238037,0.0
+ferritin complex,0.7466015815734863,0.315
+BLOC complex,0.0020336154848337173,0.806
+detoxification of nitrogen compound,2.133800745010376,0.009
+general transcription initiation factor activity,0.0829184353351593,0.714
+fatty acid beta-oxidation multienzyme complex,0.6732459664344788,0.37
+respiratory burst,2.2267909049987793,0.0
+amine binding,0.37254852056503296,0.001
+other organism cell,-0.04460201412439346,0.958
+insulin-like growth factor binding protein complex,0.5512897372245789,0.069
+growth factor complex,0.5512897372245789,0.076
+"immunoglobulin complex, circulating",0.016532814130187035,0.767
+chromosome segregation,0.05315883457660675,0.578
+inhibin complex,0.3642546534538269,0.239
+activin complex,0.7306475043296814,0.152
+host cell surface binding,-0.023343022912740707,0.663
+eukaryotic translation initiation factor 3 complex,-0.3640032708644867,0.96
+protein serine/threonine phosphatase complex,0.026691406965255737,0.859
+molting cycle,0.22140081226825714,0.26
+laminin complex,0.1821945607662201,0.26
+nuclear membrane part,0.04295622557401657,0.209
+localization of cell,-0.42788165807724,0.954
+"transforming growth factor beta receptor, cytoplasmic mediator activity",1.281481146812439,0.126
+intracellular,1.335374116897583,0.151
+SMAD protein complex,0.7909685373306274,0.591
+ensheathing process,2.190415382385254,0.029
+origin recognition complex,0.05288537219166756,0.594
+intercellular transport,1.2626322507858276,0.042
+chromosome localization to nuclear envelope involved in homologous chromosome segregation,0.38462620973587036,0.104
+cell tip,0.16523200273513794,0.228
+mucus layer,0.6758105158805847,0.129
+contractile ring,-0.31175583600997925,0.933
+dissemination or transmission of organism from other organism involved in symbiotic interaction,1.8708577156066895,0.302
+vocalization behavior,-0.08061767369508743,0.872
+behavioral response to pain,0.7381715774536133,0.374
+external encapsulating structure,0.03376976400613785,0.277
+neurotrophin production,0.8845513463020325,0.159
+peroxiredoxin activity,0.6527549028396606,0.349
+DNA polymerase processivity factor complex,4.038308620452881,0.06
+ESCRT complex,0.0733262151479721,0.436
+Pex17p-Pex14p docking complex,2.2615363597869873,0.006
+cell proliferation involved in heart morphogenesis,0.5074804425239563,0.332
+vesicle targeting,-0.12101118266582489,0.907
+movement in environment of other organism involved in symbiotic interaction,1.335529088973999,0.045
+cyclic nucleotide-dependent protein kinase activity,0.5682162046432495,0.303
+postsynaptic endosome,0.4683739244937897,0.38
+DNA recombinase mediator complex,0.48887088894844055,0.063
+nucleocytoplasmic transport complex,-0.28529661893844604,0.86
+NF-kappaB complex,1.8776240348815918,0.26
+light absorption,4.3964314460754395,0.003
+ER membrane insertion complex,1.5683009624481201,0.109
+epithelial cell proliferation involved in prostate gland development,3.4214675426483154,0.039
+extrinsic component of postsynaptic specialization membrane,0.33436349034309387,0.22
+troponin complex,-0.7685977816581726,0.994
+immunological memory process,1.0163530111312866,0.315
+THO complex,0.9364546537399292,0.381
+Noc complex,0.7443991303443909,0.206
+growth involved in symbiotic interaction,-0.05610202997922897,0.974
+transcription regulator recruiting activity,-0.21445266902446747,0.768
+mRNA editing complex,0.05032174289226532,0.63
+developmental pigmentation,1.0627354383468628,0.251
+cell leading edge,0.10274188965559006,0.147
+endopeptidase Clp complex,-0.2188250869512558,0.781
+MIS12/MIND type complex,0.5419062376022339,0.315
+transposition,0.03209773078560829,0.468
+glutamatergic synapse,-0.04332979768514633,0.903
+intrinsic component of spine apparatus membrane,0.13739150762557983,0.335
+SMC loading complex,1.195488691329956,0.081
+tubulobulbar complex,0.8235081434249878,0.225
+guanyl-nucleotide exchange factor complex,0.03209773078560829,0.494
+intrinsic component of postsynaptic endosome membrane,-0.06632166355848312,0.713
+GABA-ergic synapse,-0.23204267024993896,0.982
+inhibitory synapse,-0.23204267024993896,0.977
+extrinsic component of postsynaptic endosome membrane,-1.0454715490341187,0.935
+extracellular matrix-cell signaling,-0.025379465892910957,0.561
+condensed chromosome inner kinetochore,-0.7864125370979309,0.912
+MCM complex,0.018313992768526077,0.548
+signal maturation,0.024754773825407028,0.808
+transforming growth factor beta activation,0.03209773078560829,0.678
