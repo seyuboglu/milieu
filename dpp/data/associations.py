@@ -46,6 +46,9 @@ class Disease:
             entrez_to_name  (dict)  dictionary mapping entrez_ids to name
         """
         return [entrez_to_name[entrez_id] for entrez_id in self.proteins]
+    
+    def __len__(self):
+        return len(self.proteins)
 
 
 def load_diseases(associations_path, 
