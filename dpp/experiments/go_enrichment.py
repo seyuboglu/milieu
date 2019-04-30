@@ -218,13 +218,39 @@ def main(process_dir, overwrite, notify):
 
 
 
-def load_go_annotations(network,
-                        level=1,
-                        obodag="data/go/go-basic.obo",
-                        entrez_to_go_path="data/go/gene2go.txt"
-                        )
+def load_go_annotations(proteins,
+                        level=None,
+                        obodag_path="data/go/go-basic.obo",
+                        entrez_to_go_path="data/go/gene2go.txt"):
     """
-    """
+    args:
+    @proteins    (iterable)   proteins to get annotations for
+    @level  (int) the level of the ontology
+    @obodag     (str)   path obo file
+    @entrez_to_go_path (str) path to mapping from entrez ids to go doids
 
-    obodag = GODag(obodag)
-    geneid2go = read_ncbi_gene2go(entrez_to_go_path, taxids=[9606])
+    return:
+    @term_to_proteins (dict) map from term
+    """
+    obodag = GODag(obodag_path)
+    entrez_to_go = read_ncbi_gene2go(entrez_to_go_path, taxids=[9606])
+
+    def get_annotations(protein, level):
+        """
+        """
+        terms = set()
+        doids = entrez_to_go[protein]
+        for doid in doids:
+            for parent in obodag[doid].get_all_parents():
+                if level is None or obodag[parent].level == level:
+                    terms.add(obodag[parent].name)
+
+        return terms
+
+    term_to_proteins = defaultdict(set)
+    for protein in proteins:
+        terms = get_annotations(protein, level)
+        for term in terms:
+            term_to_proteins[term].add(protein)
+    
+    return term_to_proteins 
