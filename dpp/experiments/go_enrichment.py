@@ -215,3 +215,16 @@ def main(process_dir, overwrite, notify):
     elif exp.run():
         exp.save_results()
     exp.plot_results()
+
+
+
+def load_go_annotations(network,
+                        level=1,
+                        obodag="data/go/go-basic.obo",
+                        entrez_to_go_path="data/go/gene2go.txt"
+                        )
+    """
+    """
+
+    obodag = GODag(obodag)
+    geneid2go = read_ncbi_gene2go(entrez_to_go_path, taxids=[9606])
