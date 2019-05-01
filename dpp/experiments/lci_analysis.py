@@ -22,7 +22,7 @@ from goatools.go_enrichment import GOEnrichmentStudy
 
 from dpp.data.associations import load_diseases
 from dpp.data.network import PPINetwork
-from dpp.data.drug import load_drug_targets
+from dpp.data.protein import load_drug_targets, load_essential_proteins
 from dpp.experiments.experiment import Experiment
 from dpp.util import Params, set_logger
 
@@ -148,38 +148,82 @@ class DrugTarget(Experiment):
         plt.legend()
         plt.xlabel(r"$\frac{w_k}{\sqrt{d_k}}$")
         plt.ylabel("# of proteins [normalized]")
+
+
+class EssentialGeneAnalysis(Experiment):
+    """
+    Class for running experiment that conducts enrichment of gene ontology terms in 
+    pathways in the PPI network. 
+    """
+    def __init__(self, dir, params):
+        """
+        Constructor 
+        Args: 
+            dir (string) directory of the experiment to be run
+        """
+        super().__init__(dir, params)
+
+        # set the logger
+        set_logger(os.path.join(self.dir, 'experiment.log'), 
+                   level=logging.INFO, console=True)
+
+        logging.info("Loading disease associations...")
+        self.diseases_dict = load_diseases(self.params["diseases_path"], 
+                                           self.params["disease_subset"],
+                                           exclude_splits=['none'])
         
-
-    def save_results(self, summary=True):
-        """
-        Saves the results to a csv using a pandas Data Fram
-        """
-        print("Saving Results...")
-        self.results.to_csv(os.path.join(self.dir, 'results.csv'))
-
-        #if self.params["save_enrichment_results"]:
-        #    with open(os.path.join(self.dir,'outputs.pkl'), 'wb') as f:
-        #        pickle.dump(self.outputs, f)
+        logging.info("Loading network...")
+        self.network = PPINetwork(self.params["ppi_network"]) 
+        self.degrees = np.array(list(dict(self.network.nx.degree()).values()))
+        
+        logging.info("Loading weights...")
+        with open(os.path.join(params["model_path"], "models", "models.tar"), "rb") as f:
+            split_to_model = pickle.load(f)
             
-    def load_results(self):
+        self.ci_weights = ci_weights = np.mean([model['ci_weight'][0, 0].numpy() 
+                                                for model in split_to_model.values()], axis=0)
+        self.ci_weights_norm = self.ci_weights / np.sqrt(self.degrees)
+
+                
+        logging.info("Loading essential genes...")
+        self.essential_proteins = load_essential_proteins(params["essential_genes_path"])
+        self.essential_nodes = self.network.get_nodes(self.essential_proteins)
+        self.non_essential_nodes = [node for node in self.network.get_nodes()
+                                    if node not in self.essential_nodes]
+        
+        self.essential_array = np.zeros(len(self.network))
+        self.essential_array[self.essential_nodes] = 1
+
+        
+    def compute_weight_stats(self, nodes=None, norm=True):
         """
-        Loads the results from a csv to a pandas Data Frame.
         """
-        print("Loading Results...")
-        self.results = pd.read_csv(os.path.join(self.dir, 'results.csv'))
-    
+        weights = self.ci_weights_norm if norm else self.ci_weights
+        if nodes is None:
+            nodes = np.arange(len(self.network))
+        return {
+            "mean": np.mean(weights[nodes]),
+            "median": np.median(weights[nodes]),
+            "std": np.std(weights[nodes])
+        }
 
-def main(process_dir, overwrite, notify):
-    with open(os.path.join(process_dir, "params.json")) as f:
-        params = json.load(f)
-    assert(params["process"] == "go_enrichment")
-    global exp
-    exp = GOEnrichment(process_dir, params["process_params"])
-    if exp.is_completed():
-        exp.load_results()
-    elif exp.run():
-        exp.save_results()
-    exp.plot_results()
+    def compute_frac_essential(self, nodes): 
+        """
+        """
+        return np.mean(self.essential_array[nodes])
+         
+        
+    def plot_weight_dist(self, node_sets):
+        """
+        """
+        for name, nodes in node_sets.items():
+            sns.distplot(self.ci_weights[nodes], 
+                 kde=False, hist=True, norm_hist=True, bins=15, 
+                 hist_kws={"range":(-0.4, 0.8)}, label=name)
 
-
-
+        plt.xscale('linear')
+        plt.yscale('linear')
+        plt.legend()
+        plt.xlabel(r"$\frac{w_k}{\sqrt{d_k}}$")
+        plt.ylabel("# of proteins [normalized]")
+        
