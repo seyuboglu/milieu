@@ -25,7 +25,13 @@ class Process(object):
             dir (string) The directory where the experiment should be run
             params  (dict)
         """
-        self.dir = dir 
+        self.dir = dir
+        # ensure dir exists
+        if not os.path.isdir(self.dir):
+            os.mkdir(self.dir)
+            with open(os.path.join(self.dir, "params.json"), 'w') as f: 
+                json.dump(params, f, indent=4)
+        
         self.params = params
         set_logger(os.path.join(self.dir, 'process.log'), 
                    level=logging.INFO, 

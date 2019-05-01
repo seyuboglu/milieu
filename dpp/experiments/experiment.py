@@ -2,6 +2,7 @@
 Provides base class for all experiments 
 """
 import os
+import json
 
 import pandas 
 
@@ -19,6 +20,16 @@ class Experiment(Process):
             params  (dict)
         """
         super().__init__(dir, params)
+    
+    def add_params(self, new_params):
+        for key in new_params.keys():
+            if key in self.params:
+                raise ValueError("Cannot update existing parameter.")
+            
+        self.params.update(new_params)
+        
+        with open(os.path.join(self.dir, "params.json"), 'w') as f: 
+            json.dump(self.params, f, indent=4)
     
     def summarize_results(self):
         """
@@ -38,4 +49,5 @@ class Experiment(Process):
     
     def plot_results(self):
         pass
-
+     
+        

@@ -50,6 +50,18 @@ class PPINetwork:
         """
         return len(self.nx)
     
+    def __contains__(self, protein):
+        """
+        True if protein is in network. 
+        @protein (int) entrez id for a protein
+        """
+        return protein in self.protein_to_node
+
+    def get_protein(self, node):
+        """
+        """
+        return self.node_to_protein.get(node, None)
+    
     def get_proteins(self, nodes=None):
         """
         Converts an iterable of node ids to protein ids.
@@ -63,6 +75,11 @@ class PPINetwork:
                              for n in nodes if n in self.node_to_protein])
         else:
             return np.fromiter(self.node_to_protein.values(), dtype=int)
+    
+    def get_node(self, protein):
+        """
+        """
+        return self.protein_to_node.get(protein, None)
     
     def get_nodes(self, proteins=None):
         """
