@@ -1,0 +1,32 @@
+{
+    "process": "dpp_evaluate",
+    "process_params": 
+        {
+            "n_processes": 1,
+            "ppi_network": "data/networks/bio-pathways-network.txt",
+            "diseases_path": "data/associations/disgenet-associations.csv",
+            "disease_subset": [],
+
+            "n_folds": 10,
+
+            "method_class": "LCI",
+            "method_params": {
+                "model_class": "LCIEmbModule",
+                "model_args": {
+                    "emb_hidden_size": 512, 
+                  
+                    "embeddings_path": "data/embeddings/pca_go_d1024.txt"
+                },
+                "cuda": true,
+                "cuda_gpu": 3,
+                "load": false, 
+                "learning_rate": 1e-2,
+                "weight_decay": 1e-5,
+                "num_epochs":  10,
+                "batch_size": 200,
+                "save_summary_steps": 40,
+                "num_workers": 4,
+                "primary_metric": "recall_at_100"
+            }
+        }
+}
