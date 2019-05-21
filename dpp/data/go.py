@@ -18,13 +18,13 @@ from goatools.go_enrichment import GOEnrichmentStudy
 
 
 def load_go_annotations(proteins,
-                        level=None,
+                        levels=None,
                         obodag_path="data/go/go-basic.obo",
                         entrez_to_go_path="data/go/gene2go.txt"):
     """
     args:
     @proteins    (iterable)   proteins to get annotations for
-    @level  (int) the level of the ontology
+    @levels  (list(int)) the levels of the ontology
     @obodag     (str)   path obo file
     @entrez_to_go_path (str) path to mapping from entrez ids to go doids
 
@@ -34,21 +34,21 @@ def load_go_annotations(proteins,
     obodag = GODag(obodag_path)
     entrez_to_go = read_ncbi_gene2go(entrez_to_go_path, taxids=[9606])
 
-    def get_annotations(protein, level):
+    def get_annotations(protein, levels):
         """
         """
         terms = set()
         doids = entrez_to_go[protein]
         for doid in doids:
             for parent in obodag[doid].get_all_parents():
-                if level is None or obodag[parent].level == level:
+                if levels is None or obodag[parent].level in levels:
                     terms.add(obodag[parent].name)
 
         return terms
 
     term_to_proteins = defaultdict(set)
     for protein in proteins:
-        terms = get_annotations(protein, level)
+        terms = get_annotations(protein, levels)
         for term in terms:
             term_to_proteins[term].add(protein)
     
