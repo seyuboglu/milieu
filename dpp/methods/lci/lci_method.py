@@ -22,6 +22,7 @@ from dpp.methods.method import DPPMethod
 from dpp.methods.lci.metrics import metrics
 from dpp.methods.lci.utils import (save_checkpoint, load_checkpoint, 
                                    save_dict_to_json, RunningAverage)
+from dpp.data.embeddings import load_embeddings
 
 
 class LCI(DPPMethod):
@@ -35,7 +36,7 @@ class LCI(DPPMethod):
         self.diseases = diseases
         self.params = params
         print(self.params)
-        if "load_dir" in self.params:
+        if self.params["load"]:
             self.load_method()
         else:
             self.train_method(diseases)
@@ -46,16 +47,16 @@ class LCI(DPPMethod):
         """
         """
         logging.info("Loading Params...")
-        with open(os.path.join(self.params["load_dir"], "params.json")) as f:
+        with open(os.path.join(self.dir, "params.json")) as f:
             params = json.load(f)["process_params"]["method_params"]
         params.update(self.params)
         self.params = params
         
         logging.info("Loading Models...")
         self.folds_to_models = {}
-        for model_file in os.listdir(os.path.join(self.params["load_dir"], "models")):
+        for model_file in os.listdir(os.path.join(self.dir, "models")):
             split = parse.parse("model_{}.tar", model_file)[0]
-            self.folds_to_models[split] = os.path.join(self.params["load_dir"], 
+            self.folds_to_models[split] = os.path.join(self.dir, 
                                                        "models", 
                                                        model_file)
 
@@ -116,8 +117,10 @@ class LCI(DPPMethod):
                             num_workers=self.params["num_workers"],
                             pin_memory=self.params["cuda"])
 
-
-        model = LCIModule(self.params, self.adjacency)
+        if self.params["model_class"] == "LCIEmbModule":
+            model = LCIEmbModule(self.params["model_args"], self.network)
+        else:
+            model = LCIModule(self.params, self.adjacency)
 
         if self.params["cuda"]:
             model = model.cuda()
@@ -154,7 +157,10 @@ class LCI(DPPMethod):
             X = X.cuda()
             
         if disease.split != self.curr_fold:
-            model = LCIModule(self.params, self.adjacency)
+            if self.params["model_class"] == "LCIEmbModule":
+                model = LCIEmbModule(self.params["model_args"], self.network)
+            else:
+                model = LCIModule(self.params, self.adjacency)
             model.load_state_dict(torch.load(self.folds_to_models[disease.split]))          
             model.eval()
             model.cuda()  
@@ -226,6 +232,54 @@ class LCIModule(nn.Module):
         X = X.view(m, n)  # (m, n)
         return X
 
+    
+class LCIEmbModule(nn.Module):
+
+    def __init__(self, params, network):
+        super(LCIEmbModule, self).__init__()
+        self.network = network
+        self.params = params
+        # build degree vector
+        D = np.sum(self.network.adj_matrix, axis=1, dtype=np.float)
+        D = np.power(D, -0.5)
+        D = torch.tensor(D, dtype=torch.float)
+
+        # convert adjacency to sparse matrix
+        A = torch.tensor(self.network.adj_matrix, dtype=torch.float)
+        A_left = torch.mul(torch.mul(D.view(1, -1), A), D.view(-1, 1))
+        A_right = torch.mul(D.view(1, -1), A)
+        self.register_buffer("A_right", A_right)
+        self.register_buffer("A_left", A_left)
+        
+        # load embeddings
+        embeddings = torch.tensor(load_embeddings(self.params["embeddings_path"], self.network), 
+                                  dtype=torch.float)
+        self.register_buffer("embeddings", embeddings)
+        
+        self.emb_hidden_layer = nn.Linear(self.embeddings.shape[1], self.params["emb_hidden_size"])
+        self.emb_final_layer = nn.Linear(self.params["emb_hidden_size"], 1)
+        
+        self.score_final_layer = nn.Linear(1, 1)
+
+    def forward(self, input, test=False):
+        """
+        Forward pass through the model. 
+        Note: m is the # of diseases in the batch, n is the number of nodes 
+        in the network, d is the depth of the embedding. 
+        """
+        m, n = input.shape
+        W = self.emb_hidden_layer(self.embeddings)
+        W = nn.functional.relu(W)
+        W = self.emb_final_layer(W)
+        X = input  # (m, n)
+        X = torch.matmul(X, self.A_left)  # (m, n)
+        X = torch.mul(X, W.squeeze())  # (d, m, n)
+        X = torch.matmul(X, self.A_right)  # (d, m, n)
+
+        X = X.view(1, m * n).t()
+        X = self.score_final_layer(X)
+        X = X.view(m, n)  # (m, n)
+        return X
 
 class DiseaseDataset(Dataset):
     """
