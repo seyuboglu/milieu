@@ -4,6 +4,7 @@ embeddings/
 __pycache__/
 *.py[cod]
 *$py.class
+notes/meetings
 
 # C extensions
 *.so
