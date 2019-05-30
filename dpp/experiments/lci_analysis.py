@@ -149,6 +149,74 @@ class DrugTarget(Experiment):
         plt.xlabel(r"$\frac{w_k}{\sqrt{d_k}}$")
         plt.ylabel("# of proteins [normalized]")
 
+        
+class FunctionalEnrichmentAnalysis(Experiment):
+    """
+    """
+    
+    def __init__(self, dir, params):
+        """
+        """
+        super().__init__(dir, params)
+        
+        set_logger(os.path.join(self.dir, 'experiment.log'), 
+                   level=logging.INFO, console=True)
+
+        logging.info("Loading disease associations...")
+        self.diseases_dict = load_diseases(self.params["diseases_path"], 
+                                           self.params["disease_subset"],
+                                           exclude_splits=['none'])
+        
+        logging.info("Loading network...")
+        self.network = PPINetwork(self.params["ppi_network"]) 
+        self.degrees = np.array(list(dict(self.network.nx.degree()).values()))
+        
+        logging.info("Loading weights...")
+        with open(os.path.join(params["model_path"], "models", "models.tar"), "rb") as f:
+            split_to_model = pickle.load(f)
+            
+        self.ci_weights = ci_weights = np.mean([model['ci_weight'][0, 0].numpy() 
+                                                for model in split_to_model.values()], axis=0)
+        self.ci_weights_norm = self.ci_weights / np.sqrt(self.degrees)
+        
+        logging.info("Loading enrichment study...")
+        geneid2go = read_ncbi_gene2go("data/go/gene2go.txt", taxids=[9606])
+        obodag = GODag("data/go/go-basic.obo")
+        self.go_study = GOEnrichmentStudy(self.network.get_proteins(),
+                                          geneid2go,
+                                          obodag, 
+                                          propagate_counts = True,
+                                          alpha = 0.05,
+                                          methods = ['fdr_bh'])
+
+    
+    def run_study(self):
+        """
+        """
+        top_nodes = np.argsort(self.ci_weights_norm)[-self.params["top_k"]:]
+        top_proteins = self.network.get_proteins(top_nodes)
+        self.raw_results = self.go_study.run_study(set(top_proteins))  
+    
+    def to_csv(self):
+        """
+        """
+        self.results = []
+        for r in self.raw_results:
+            self.results.append({
+                "name": r.name,
+                "pvalue": r.p_fdr_bh,
+                "goterm_id": r.goterm.id
+            })
+        self.results = sorted(self.results, key = lambda x: x["pvalue"])
+        
+        results_df = pd.DataFrame(self.results)
+        results_df.to_csv(os.path.join(self.dir, "all_terms.csv"))            
+            
+        
+        
+        
+        
+        
 
 class EssentialGeneAnalysis(Experiment):
     """
