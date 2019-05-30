@@ -18,8 +18,8 @@ Implementations of several network-based disease protein prediction methods incl
   - `experiments` - modules including experiment harness classes
   - `figures` - modules implementing figure generating classes and functions
   - `methods` - modules including implementations of disease protein prediction methods
-- *experiments* - 
-- *notebooks* - 
+- *experiments* - each experiment we ran has a directory here with parameters, results, figures and notebooks 
+- *notebooks* - assorted notebooks for exploring data and experiments
 - *notes* - assorted project notes
 
 
@@ -46,6 +46,18 @@ Install package (`-e` for development mode)
 pip install -e .
 ```
 
-
-
 ##Experiments 
+
+### disease-significance
+
+### disease_subgraph
+
+### dpp_evaluate
+
+### dpp_predict
+
+### go_enrichment
+
+### lci_anlaysis
+
+### protein_significance
