@@ -197,13 +197,17 @@ class ProteinSignificance(Experiment):
             metric = np.array(self.results[metric_name])
             
             metric[metric >= 0.1] = 0.15
+            
+            prepare_sns(sns, kwargs={"font_scale": 2,
+                         "rc": {'figure.figsize':(6, 3)}})
+
 
             if plot_type == "bar":
                 sns.distplot(metric, bins=bins, kde=False, 
                             hist_kws={'range': (xmin, xmax),
                                       'alpha': 0.8}, 
                             label=metric_name)
-                plt.ylabel("Associations [count{}]".format(r' $\log_{10}$' 
+                plt.ylabel("# of associations [{}]".format(r' $\log_{10}$' 
                                                         if yscale == "log" 
                                                         else ""))
 
@@ -218,7 +222,7 @@ class ProteinSignificance(Experiment):
             elif plot_type == "bar_kde":
                 sns.distplot(metric, bins=40, kde=True, 
                             kde_kws={'clip': (xmin, xmax)}, label=metric_name)
-                plt.ylabel("Associations [count{}]".format(r' $\log_{10}$' 
+                plt.ylabel("# of associations [{}]".format(r' $\log_{10}$' 
                                                         if yscale == "log" 
                                                         else ""))
             
@@ -230,7 +234,7 @@ class ProteinSignificance(Experiment):
         plt.xticks(np.arange(0.0, 1.0, 0.05))
         if plot_type == "kde": 
             plt.yticks()
-        #plt.legend()
+        plt.legend()
         # plt.tight_layout()
         plt.xlim(xmin=xmin, xmax=xmax)
         plt.yscale(yscale)
@@ -239,7 +243,9 @@ class ProteinSignificance(Experiment):
         plot_path = os.path.join(self.figures_dir, 
                                  '{}_{}_'.format(name, 
                                                  yscale) + time_string + '.pdf')
+        plt.tight_layout()
         plt.savefig(plot_path)
+        plt.show()
         plt.close()
         plt.clf()
 

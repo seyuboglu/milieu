@@ -24,7 +24,7 @@ from dpp.data.associations import load_diseases
 from dpp.data.network import PPINetwork
 from dpp.data.protein import load_drug_targets, load_essential_proteins
 from dpp.experiments.experiment import Experiment
-from dpp.util import Params, set_logger
+from dpp.util import Params, set_logger, prepare_sns
 
 
 class DrugTarget(Experiment):
@@ -135,19 +135,29 @@ class DrugTarget(Experiment):
             json.dump(results, f, indent=4)
         
     
-    def plot_drug_weight_dist(self, protein_sets):
+    def plot_drug_weight_dist(self, protein_sets, save="weight_dist.pdf"):
         """
         """
+        
+        prepare_sns(sns, kwargs={"font_scale": 1.4,
+                         "rc": {'figure.figsize':(6, 4)}})
         for name, proteins in protein_sets.items():
             sns.distplot(self.ci_weights_norm[proteins], 
-                 kde=False, hist=True, norm_hist=True, bins=15, 
-                 hist_kws={"range":(-0.4, 0.8)}, label=name)
+                 kde=False, hist=True, norm_hist=True, bins=50, 
+                 hist_kws={"range":(-0.25, 0.75),
+                           "alpha": 0.8},
+                         label=name)
 
+        sns.despine()
         plt.xscale('linear')
         plt.yscale('linear')
         plt.legend()
-        plt.xlabel(r"$\frac{w_k}{\sqrt{d_k}}$")
-        plt.ylabel("# of proteins [normalized]")
+        plt.xlabel(r"Degree-normalized LCI weight, $\frac{w_z}{\sqrt{d_z}}$")
+        plt.ylabel("Density")
+        plt.tight_layout()
+        
+        if save is not None:
+            plt.savefig(os.path.join(self.dir, "_figures", save))
 
         
 class FunctionalEnrichmentAnalysis(Experiment):

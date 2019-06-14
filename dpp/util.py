@@ -1,5 +1,5 @@
 """General utility functions"""
-
+import os
 import json
 import logging
 import smtplib
@@ -41,7 +41,15 @@ class Params():
     def dict(self):
         """Gives dict-like access to Params instance by `params.dict['learning_rate']`"""
         return self.__dict__
-
+    
+def load_params(experiment_dir):
+    """
+    loads the params at the experiment dir
+    """
+    with open(os.path.join(experiment_dir, "params.json")) as f:
+        params = json.load(f,  object_pairs_hook=OrderedDict)
+    return params
+    
 
 def set_logger(log_path, level=logging.INFO, console=True):
     """Sets the logger to log info in terminal and file `log_path`.
@@ -83,7 +91,7 @@ def parse_id_rank_pair(str):
     return int(id), float(rank)
 
 
-def prepare_sns(sns, params={}):
+def prepare_sns(sns, params={}, kwargs={}):
     """ Prepares seaborn for plotting according to the plot settings specified in
     params. 
     Args: 
@@ -91,7 +99,7 @@ def prepare_sns(sns, params={}):
     """
     sns.set_context('paper', font_scale=1) 
     sns.set(palette=tuple(params.get("plot_palette", ["#E03C3F", "lightgrey"])),
-            font=params.get("plot_font", "Times New Roman"))
+            font=params.get("plot_font", "Times New Roman"), **kwargs)
     sns.set_style(params.get("plot_style", "ticks"),  
                   {'xtick.major.size': 5.0, 'xtick.minor.size': 5.0, 
                    'ytick.major.size': 5.0, 'ytick.minor.size': 5.0})

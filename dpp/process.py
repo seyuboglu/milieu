@@ -29,8 +29,8 @@ class Process(object):
         # ensure dir exists
         if not os.path.isdir(self.dir):
             os.mkdir(self.dir)
-        with open(os.path.join(self.dir, "params.json"), 'w') as f: 
-            json.dump(params, f, indent=4)
+            with open(os.path.join(self.dir, "params.json"), 'w') as f: 
+                json.dump(params, f, indent=4)
         
         self.params = params
         set_logger(os.path.join(self.dir, 'process.log'), 

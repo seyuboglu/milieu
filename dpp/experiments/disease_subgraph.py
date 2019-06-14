@@ -60,8 +60,7 @@ class DiseaseSubgraph(Experiment):
                                 for name, preds in self.params["method_to_preds"].items()}
         
         logging.info("Loading Protein Data...")
-        self.field_to_protein_data = {field: load_mapping(path=config["path"], 
-                                                          b_transform=int, 
+        self.field_to_protein_data = {field: load_mapping(path=config["path"],
                                                           **config["args"]) 
                                       for field, config 
                                       in self.params["field_to_protein_data"].items()} 
@@ -149,7 +148,8 @@ class DiseaseSubgraph(Experiment):
             }
             
             for field, data in self.field_to_protein_data.items():
-                node_dict[field] = data.get(protein_id, "")
+                if not ("weight" in field and "common" not in roles):
+                    node_dict[field] = data.get(protein_id, "")
             protein_data.append(node_dict)
         
         df = pd.DataFrame(protein_data)

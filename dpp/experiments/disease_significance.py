@@ -195,7 +195,7 @@ class DiseaseSignificance(Experiment):
         """
         Plots one disease 
         """
-        sns.set(rc={'figure.figsize':(5, 3)})
+        sns.set(font_scale=2, rc={'figure.figsize':(4, 2)})
         prepare_sns(sns, self.params)
         for disease_id in disease_ids:
             print(disease_id)
@@ -220,13 +220,13 @@ class DiseaseSignificance(Experiment):
 
                 if plot_type == "bar":
                     sns.distplot(null_results, kde=False, bins=bins, 
-                                 hist_kws={'range': (xmin, xmax)},
-                                 color=null_color, label="Random pathways")
+                                 hist_kws={'range': (xmin,xmax)},
+                                 color=null_color, label="random pathways")
                     plt.ylabel(ylabel)
     
                 elif plot_type == "kde":
                     sns.kdeplot(null_results, shade=True, kernel="gau", 
-                                color=null_color, label="Random Pathways")
+                                color=null_color, label="random Pathways")
                     plt.ylabel(ylabel)
                     plt.yticks([])
 
@@ -245,12 +245,13 @@ class DiseaseSignificance(Experiment):
                 disease = self.diseases[disease_id]
                 sns.scatterplot(disease_mean, 0)
                 
+                xlabel = r"Mean CI score" # , $\frac{1}{|S|} \sum_{u \in S} CI(u, S \backslash \{u\})$
                 plt.xlabel(xlabel)
                 sns.despine()
 
                 plt.tight_layout()
                 plt.savefig(os.path.join(disease_dir, 
-                                         name + "_{}_{}.pdf".format(metric, plot_type)))
+                                         f"{disease_id}_simple.pdf"))
                 plt.show()
                 plt.close()
                 plt.clf()
