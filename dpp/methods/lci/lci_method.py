@@ -36,7 +36,7 @@ class LCI(DPPMethod):
         self.diseases = diseases
         self.params = params
         print(self.params)
-        if self.params["load"]:
+        if self.params.get("load", False):
             self.load_method()
         else:
             self.train_method(diseases)
