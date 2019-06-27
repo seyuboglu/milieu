@@ -1,0 +1,15 @@
+{
+    "source": "source/exp_dpp.py", 
+    "n_processes": 5, 
+
+    "ppi_network": "data/networks/biogrid-network.txt",
+    "diseases_path": "data/associations/disgenet-associations.csv",
+    "disease_subset": [],
+    
+    "n_folds": 10,
+
+    "method": "ppi_matrix",
+
+    "ppi_matrix": "data/ppi_matrices/biogrid/comp_sqrt_rnorm_cnorm.npy",
+    "normalize": true
+}

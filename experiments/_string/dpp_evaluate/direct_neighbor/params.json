@@ -1,0 +1,16 @@
+{
+    "notify": true,
+    "source": "source/exp_dpp.py", 
+    "n_processes": 5, 
+
+    "ppi_network": "data/networks/string-network.txt",
+    "diseases_path": "data/associations/disgenet-associations.csv",
+    "disease_subset": [],
+    
+    "n_folds": 10,
+
+    "method": "ppi_matrix",
+
+    "ppi_matrix": "data/ppi_matrices/string/dn_id_rnorm.npy",
+    "normalize": true
+}

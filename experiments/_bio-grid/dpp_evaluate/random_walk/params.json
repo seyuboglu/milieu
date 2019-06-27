@@ -1,0 +1,13 @@
+{
+    "n_processes": 30, 
+
+    "ppi_network": "data/networks/biogrid-network.txt",
+    "diseases_path": "data/associations/disgenet-associations.csv",
+    "disease_subset": [],
+    
+    "n_folds": 10,
+
+    "method": "random_walk",
+
+    "rw_alpha": 0.75
+}

@@ -1,0 +1,14 @@
+{
+    "n_processes": 30, 
+
+    "ppi_network": "data/networks/biogrid-network.txt",
+    "diseases_path": "data/associations/disgenet-associations.csv",
+    "disease_subset": [],
+    
+    "n_folds": 10,
+
+    "method": "diamond",
+
+    "max_nodes": 300,
+    "dm_alpha": 10
+}

@@ -201,3 +201,10 @@ Document outline for the supplementary information
 
 for each suppplmentary note that I finish, throw in a sentencein the main paper referring to it 
 
+
+
+Marinka Requests:
+
+
+
+- [ ] Reformat the supplementary recall curves as you did for the real one.  

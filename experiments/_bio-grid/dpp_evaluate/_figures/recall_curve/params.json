@@ -1,0 +1,25 @@
+{
+    "process": "recall_curve",
+    "process_params":
+        {
+            "diseases_path": "data/associations/disgenet-associations.csv",
+
+            "method_exp_dirs": {"LCI": "experiments/_bio-grid/dpp_evaluate/lci",
+                                "Random Walk": "experiments/_bio-grid/dpp_evaluate/random_walk", 
+                                "Direct Neighbor": "experiments/_bio-grid/dpp_evaluate/direct_neighbor",
+                                "DIAMOnD": "experiments/_bio-grid/dpp_evaluate/diamond",
+                                "1-Layer GCN": "experiments/_bio-grid/dpp_evaluate/gcn",
+                                "Node2Vec": "experiments/_bio-grid/dpp_evaluate/lr-node2vec"
+                            },
+
+            "primary": "",
+            "length": 50, 
+            "thresholds": [10, 25], 
+            "offset": 0.003,
+            "by_disease": true,
+            "title": false,
+
+            "plot_palette": ["#E03C3F", "#FF9300", "#F8BA00", "#CB297B", "#6178A8", "#56C1FF"],
+            "plot_font": "AppleGothic"
+        }
+}

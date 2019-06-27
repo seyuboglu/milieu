@@ -1,0 +1,16 @@
+{
+    "n_processes": 5,
+    "notify": true,
+
+    "ppi_network": "data/networks/string-network.txt",
+    "diseases_path": "data/associations/disgenet-associations.csv",
+    "disease_subset": [],
+    
+    "n_folds": 10,
+
+    "method": "lr",
+    "features": ["data/embeddings/string-n2v-q1-p1-d128.txt"],
+
+    "reg_L2": 1.0, 
+    "normalize": true
+}
