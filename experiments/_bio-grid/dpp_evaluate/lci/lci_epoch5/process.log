@@ -1,0 +1,308 @@
+2019-06-28 04:48:47,031:INFO: Disease Protein Prediction in the PPI Network
+2019-06-28 04:48:47,031:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-06-28 04:48:47,031:INFO: ======================================
+2019-06-28 04:48:47,031:INFO: Loading PPI Network...
+2019-06-28 04:48:52,588:INFO: Loading Disease Associations...
+2019-06-28 04:48:52,643:INFO: Training Models...
+2019-06-28 04:48:52,663:INFO: Training model for test 3
+2019-06-28 04:48:59,254:INFO: Starting training for 5 epoch(s)
+2019-06-28 04:48:59,254:INFO: Epoch 1/5
+2019-06-28 04:48:59,254:INFO: Train
+2019-06-28 04:49:01,510:INFO: - Train metrics: recall_at_100: 0.128 ; loss: 1.439
+2019-06-28 04:49:01,510:INFO: Evaluate
+2019-06-28 04:49:03,041:INFO: - Evaluate metrics: recall_at_100: 0.102 ; loss: 1.261
+2019-06-28 04:49:03,041:INFO: - Found new best recall_at_100
+2019-06-28 04:49:03,120:INFO: Epoch 2/5
+2019-06-28 04:49:03,120:INFO: Train
+2019-06-28 04:49:05,401:INFO: - Train metrics: recall_at_100: 0.125 ; loss: 1.188
+2019-06-28 04:49:05,401:INFO: Evaluate
+2019-06-28 04:49:06,958:INFO: - Evaluate metrics: recall_at_100: 0.125 ; loss: 1.121
+2019-06-28 04:49:06,959:INFO: - Found new best recall_at_100
+2019-06-28 04:49:07,068:INFO: Epoch 3/5
+2019-06-28 04:49:07,068:INFO: Train
+2019-06-28 04:49:09,167:INFO: - Train metrics: recall_at_100: 0.165 ; loss: 1.136
+2019-06-28 04:49:09,167:INFO: Evaluate
+2019-06-28 04:49:10,945:INFO: - Evaluate metrics: recall_at_100: 0.142 ; loss: 1.100
+2019-06-28 04:49:10,946:INFO: - Found new best recall_at_100
+2019-06-28 04:49:11,062:INFO: Epoch 4/5
+2019-06-28 04:49:11,062:INFO: Train
+2019-06-28 04:49:13,211:INFO: - Train metrics: recall_at_100: 0.158 ; loss: 1.119
+2019-06-28 04:49:13,211:INFO: Evaluate
+2019-06-28 04:49:14,566:INFO: - Evaluate metrics: recall_at_100: 0.155 ; loss: 1.118
+2019-06-28 04:49:14,566:INFO: - Found new best recall_at_100
+2019-06-28 04:49:14,758:INFO: Epoch 5/5
+2019-06-28 04:49:14,758:INFO: Train
+2019-06-28 04:49:16,907:INFO: - Train metrics: recall_at_100: 0.211 ; loss: 1.102
+2019-06-28 04:49:16,908:INFO: Evaluate
+2019-06-28 04:49:18,405:INFO: - Evaluate metrics: recall_at_100: 0.135 ; loss: 1.118
+2019-06-28 04:49:39,806:INFO: Training model for test 9
+2019-06-28 04:49:42,496:INFO: Starting training for 5 epoch(s)
+2019-06-28 04:49:42,496:INFO: Epoch 1/5
+2019-06-28 04:49:42,496:INFO: Train
+2019-06-28 04:49:44,721:INFO: - Train metrics: recall_at_100: 0.123 ; loss: 1.526
+2019-06-28 04:49:44,721:INFO: Evaluate
+2019-06-28 04:49:46,129:INFO: - Evaluate metrics: recall_at_100: 0.121 ; loss: 1.301
+2019-06-28 04:49:46,130:INFO: - Found new best recall_at_100
+2019-06-28 04:49:46,241:INFO: Epoch 2/5
+2019-06-28 04:49:46,241:INFO: Train
+2019-06-28 04:49:48,504:INFO: - Train metrics: recall_at_100: 0.123 ; loss: 1.216
+2019-06-28 04:49:48,504:INFO: Evaluate
+2019-06-28 04:49:49,968:INFO: - Evaluate metrics: recall_at_100: 0.126 ; loss: 1.156
+2019-06-28 04:49:49,969:INFO: - Found new best recall_at_100
+2019-06-28 04:49:50,086:INFO: Epoch 3/5
+2019-06-28 04:49:50,086:INFO: Train
+2019-06-28 04:49:52,374:INFO: - Train metrics: recall_at_100: 0.129 ; loss: 1.135
+2019-06-28 04:49:52,375:INFO: Evaluate
+2019-06-28 04:49:53,990:INFO: - Evaluate metrics: recall_at_100: 0.131 ; loss: 1.110
+2019-06-28 04:49:53,991:INFO: - Found new best recall_at_100
+2019-06-28 04:49:54,112:INFO: Epoch 4/5
+2019-06-28 04:49:54,112:INFO: Train
+2019-06-28 04:49:56,333:INFO: - Train metrics: recall_at_100: 0.137 ; loss: 1.115
+2019-06-28 04:49:56,333:INFO: Evaluate
+2019-06-28 04:49:57,866:INFO: - Evaluate metrics: recall_at_100: 0.150 ; loss: 1.089
+2019-06-28 04:49:57,866:INFO: - Found new best recall_at_100
+2019-06-28 04:49:57,975:INFO: Epoch 5/5
+2019-06-28 04:49:57,975:INFO: Train
+2019-06-28 04:50:00,205:INFO: - Train metrics: recall_at_100: 0.147 ; loss: 1.108
+2019-06-28 04:50:00,206:INFO: Evaluate
+2019-06-28 04:50:01,813:INFO: - Evaluate metrics: recall_at_100: 0.146 ; loss: 1.078
+2019-06-28 04:50:23,151:INFO: Training model for test 8
+2019-06-28 04:50:25,690:INFO: Starting training for 5 epoch(s)
+2019-06-28 04:50:25,690:INFO: Epoch 1/5
+2019-06-28 04:50:25,690:INFO: Train
+2019-06-28 04:50:27,935:INFO: - Train metrics: recall_at_100: 0.135 ; loss: 1.445
+2019-06-28 04:50:27,936:INFO: Evaluate
+2019-06-28 04:50:29,401:INFO: - Evaluate metrics: recall_at_100: 0.136 ; loss: 1.160
+2019-06-28 04:50:29,402:INFO: - Found new best recall_at_100
+2019-06-28 04:50:29,516:INFO: Epoch 2/5
+2019-06-28 04:50:29,516:INFO: Train
+2019-06-28 04:50:31,763:INFO: - Train metrics: recall_at_100: 0.150 ; loss: 1.189
+2019-06-28 04:50:31,763:INFO: Evaluate
+2019-06-28 04:50:33,257:INFO: - Evaluate metrics: recall_at_100: 0.108 ; loss: 1.257
+2019-06-28 04:50:33,296:INFO: Epoch 3/5
+2019-06-28 04:50:33,297:INFO: Train
+2019-06-28 04:50:35,273:INFO: - Train metrics: recall_at_100: 0.171 ; loss: 1.130
+2019-06-28 04:50:35,273:INFO: Evaluate
+2019-06-28 04:50:36,746:INFO: - Evaluate metrics: recall_at_100: 0.112 ; loss: 1.119
+2019-06-28 04:50:36,786:INFO: Epoch 4/5
+2019-06-28 04:50:36,786:INFO: Train
+2019-06-28 04:50:38,827:INFO: - Train metrics: recall_at_100: 0.139 ; loss: 1.099
+2019-06-28 04:50:38,827:INFO: Evaluate
+2019-06-28 04:50:40,170:INFO: - Evaluate metrics: recall_at_100: 0.120 ; loss: 1.136
+2019-06-28 04:50:40,239:INFO: Epoch 5/5
+2019-06-28 04:50:40,239:INFO: Train
+2019-06-28 04:50:42,307:INFO: - Train metrics: recall_at_100: 0.157 ; loss: 1.100
+2019-06-28 04:50:42,307:INFO: Evaluate
+2019-06-28 04:50:43,737:INFO: - Evaluate metrics: recall_at_100: 0.152 ; loss: 1.097
+2019-06-28 04:50:43,737:INFO: - Found new best recall_at_100
+2019-06-28 04:51:05,280:INFO: Training model for test 2
+2019-06-28 04:51:08,172:INFO: Starting training for 5 epoch(s)
+2019-06-28 04:51:08,172:INFO: Epoch 1/5
+2019-06-28 04:51:08,172:INFO: Train
+2019-06-28 04:51:10,450:INFO: - Train metrics: recall_at_100: 0.128 ; loss: 1.363
+2019-06-28 04:51:10,450:INFO: Evaluate
+2019-06-28 04:51:11,942:INFO: - Evaluate metrics: recall_at_100: 0.131 ; loss: 1.322
+2019-06-28 04:51:11,942:INFO: - Found new best recall_at_100
+2019-06-28 04:51:12,065:INFO: Epoch 2/5
+2019-06-28 04:51:12,065:INFO: Train
+2019-06-28 04:51:14,268:INFO: - Train metrics: recall_at_100: 0.101 ; loss: 1.163
+2019-06-28 04:51:14,268:INFO: Evaluate
+2019-06-28 04:51:15,887:INFO: - Evaluate metrics: recall_at_100: 0.132 ; loss: 1.155
+2019-06-28 04:51:15,888:INFO: - Found new best recall_at_100
+2019-06-28 04:51:15,997:INFO: Epoch 3/5
+2019-06-28 04:51:15,998:INFO: Train
+2019-06-28 04:51:18,158:INFO: - Train metrics: recall_at_100: 0.150 ; loss: 1.109
+2019-06-28 04:51:18,159:INFO: Evaluate
+2019-06-28 04:51:19,786:INFO: - Evaluate metrics: recall_at_100: 0.131 ; loss: 1.151
+2019-06-28 04:51:19,824:INFO: Epoch 4/5
+2019-06-28 04:51:19,824:INFO: Train
+2019-06-28 04:51:22,075:INFO: - Train metrics: recall_at_100: 0.154 ; loss: 1.096
+2019-06-28 04:51:22,075:INFO: Evaluate
+2019-06-28 04:51:23,689:INFO: - Evaluate metrics: recall_at_100: 0.151 ; loss: 1.146
+2019-06-28 04:51:23,690:INFO: - Found new best recall_at_100
+2019-06-28 04:51:23,809:INFO: Epoch 5/5
+2019-06-28 04:51:23,809:INFO: Train
+2019-06-28 04:51:26,073:INFO: - Train metrics: recall_at_100: 0.128 ; loss: 1.088
+2019-06-28 04:51:26,073:INFO: Evaluate
+2019-06-28 04:51:27,672:INFO: - Evaluate metrics: recall_at_100: 0.133 ; loss: 1.133
+2019-06-28 04:51:49,172:INFO: Training model for test 4
+2019-06-28 04:51:52,111:INFO: Starting training for 5 epoch(s)
+2019-06-28 04:51:52,111:INFO: Epoch 1/5
+2019-06-28 04:51:52,111:INFO: Train
+2019-06-28 04:51:54,443:INFO: - Train metrics: recall_at_100: 0.000 ; loss: 1.521
+2019-06-28 04:51:54,444:INFO: Evaluate
+2019-06-28 04:51:56,034:INFO: - Evaluate metrics: recall_at_100: 0.126 ; loss: 1.254
+2019-06-28 04:51:56,034:INFO: - Found new best recall_at_100
+2019-06-28 04:51:56,150:INFO: Epoch 2/5
+2019-06-28 04:51:56,150:INFO: Train
+2019-06-28 04:51:58,334:INFO: - Train metrics: recall_at_100: 0.132 ; loss: 1.196
+2019-06-28 04:51:58,334:INFO: Evaluate
+2019-06-28 04:52:00,062:INFO: - Evaluate metrics: recall_at_100: 0.152 ; loss: 1.155
+2019-06-28 04:52:00,063:INFO: - Found new best recall_at_100
+2019-06-28 04:52:00,186:INFO: Epoch 3/5
+2019-06-28 04:52:00,186:INFO: Train
+2019-06-28 04:52:02,451:INFO: - Train metrics: recall_at_100: 0.153 ; loss: 1.150
+2019-06-28 04:52:02,452:INFO: Evaluate
+2019-06-28 04:52:04,016:INFO: - Evaluate metrics: recall_at_100: 0.146 ; loss: 1.130
+2019-06-28 04:52:04,056:INFO: Epoch 4/5
+2019-06-28 04:52:04,056:INFO: Train
+2019-06-28 04:52:06,303:INFO: - Train metrics: recall_at_100: 0.137 ; loss: 1.129
+2019-06-28 04:52:06,303:INFO: Evaluate
+2019-06-28 04:52:07,999:INFO: - Evaluate metrics: recall_at_100: 0.179 ; loss: 1.120
+2019-06-28 04:52:07,999:INFO: - Found new best recall_at_100
+2019-06-28 04:52:08,097:INFO: Epoch 5/5
+2019-06-28 04:52:08,097:INFO: Train
+2019-06-28 04:52:10,328:INFO: - Train metrics: recall_at_100: 0.142 ; loss: 1.083
+2019-06-28 04:52:10,329:INFO: Evaluate
+2019-06-28 04:52:11,935:INFO: - Evaluate metrics: recall_at_100: 0.145 ; loss: 1.120
+2019-06-28 04:52:33,594:INFO: Training model for test 5
+2019-06-28 04:52:36,403:INFO: Starting training for 5 epoch(s)
+2019-06-28 04:52:36,403:INFO: Epoch 1/5
+2019-06-28 04:52:36,403:INFO: Train
+2019-06-28 04:52:38,712:INFO: - Train metrics: recall_at_100: 0.182 ; loss: 1.471
+2019-06-28 04:52:38,712:INFO: Evaluate
+2019-06-28 04:52:40,262:INFO: - Evaluate metrics: recall_at_100: 0.150 ; loss: 1.144
+2019-06-28 04:52:40,262:INFO: - Found new best recall_at_100
+2019-06-28 04:52:40,370:INFO: Epoch 2/5
+2019-06-28 04:52:40,370:INFO: Train
+2019-06-28 04:52:42,641:INFO: - Train metrics: recall_at_100: 0.123 ; loss: 1.185
+2019-06-28 04:52:42,641:INFO: Evaluate
+2019-06-28 04:52:44,260:INFO: - Evaluate metrics: recall_at_100: 0.126 ; loss: 1.228
+2019-06-28 04:52:44,298:INFO: Epoch 3/5
+2019-06-28 04:52:44,298:INFO: Train
+2019-06-28 04:52:46,557:INFO: - Train metrics: recall_at_100: 0.156 ; loss: 1.135
+2019-06-28 04:52:46,558:INFO: Evaluate
+2019-06-28 04:52:48,050:INFO: - Evaluate metrics: recall_at_100: 0.119 ; loss: 1.092
+2019-06-28 04:52:48,097:INFO: Epoch 4/5
+2019-06-28 04:52:48,097:INFO: Train
+2019-06-28 04:52:50,394:INFO: - Train metrics: recall_at_100: 0.141 ; loss: 1.100
+2019-06-28 04:52:50,395:INFO: Evaluate
+2019-06-28 04:52:52,004:INFO: - Evaluate metrics: recall_at_100: 0.136 ; loss: 1.087
+2019-06-28 04:52:52,040:INFO: Epoch 5/5
+2019-06-28 04:52:52,040:INFO: Train
+2019-06-28 04:52:54,220:INFO: - Train metrics: recall_at_100: 0.161 ; loss: 1.090
+2019-06-28 04:52:54,220:INFO: Evaluate
+2019-06-28 04:52:55,835:INFO: - Evaluate metrics: recall_at_100: 0.158 ; loss: 1.066
+2019-06-28 04:52:55,836:INFO: - Found new best recall_at_100
+2019-06-28 04:53:17,350:INFO: Training model for test 7
+2019-06-28 04:53:20,153:INFO: Starting training for 5 epoch(s)
+2019-06-28 04:53:20,153:INFO: Epoch 1/5
+2019-06-28 04:53:20,153:INFO: Train
+2019-06-28 04:53:22,264:INFO: - Train metrics: recall_at_100: 0.004 ; loss: 1.668
+2019-06-28 04:53:22,264:INFO: Evaluate
+2019-06-28 04:53:23,867:INFO: - Evaluate metrics: recall_at_100: 0.151 ; loss: 1.530
+2019-06-28 04:53:23,867:INFO: - Found new best recall_at_100
+2019-06-28 04:53:23,999:INFO: Epoch 2/5
+2019-06-28 04:53:23,999:INFO: Train
+2019-06-28 04:53:26,434:INFO: - Train metrics: recall_at_100: 0.161 ; loss: 1.426
+2019-06-28 04:53:26,435:INFO: Evaluate
+2019-06-28 04:53:27,973:INFO: - Evaluate metrics: recall_at_100: 0.114 ; loss: 1.277
+2019-06-28 04:53:28,012:INFO: Epoch 3/5
+2019-06-28 04:53:28,012:INFO: Train
+2019-06-28 04:53:30,366:INFO: - Train metrics: recall_at_100: 0.096 ; loss: 1.198
+2019-06-28 04:53:30,367:INFO: Evaluate
+2019-06-28 04:53:31,970:INFO: - Evaluate metrics: recall_at_100: 0.118 ; loss: 1.155
+2019-06-28 04:53:31,997:INFO: Epoch 4/5
+2019-06-28 04:53:31,997:INFO: Train
+2019-06-28 04:53:34,336:INFO: - Train metrics: recall_at_100: 0.135 ; loss: 1.130
+2019-06-28 04:53:34,337:INFO: Evaluate
+2019-06-28 04:53:36,296:INFO: - Evaluate metrics: recall_at_100: 0.153 ; loss: 1.132
+2019-06-28 04:53:36,296:INFO: - Found new best recall_at_100
+2019-06-28 04:53:36,406:INFO: Epoch 5/5
+2019-06-28 04:53:36,406:INFO: Train
+2019-06-28 04:53:38,729:INFO: - Train metrics: recall_at_100: 0.135 ; loss: 1.123
+2019-06-28 04:53:38,730:INFO: Evaluate
+2019-06-28 04:53:40,292:INFO: - Evaluate metrics: recall_at_100: 0.139 ; loss: 1.120
+2019-06-28 04:54:01,944:INFO: Training model for test 1
+2019-06-28 04:54:04,502:INFO: Starting training for 5 epoch(s)
+2019-06-28 04:54:04,503:INFO: Epoch 1/5
+2019-06-28 04:54:04,503:INFO: Train
+2019-06-28 04:54:06,801:INFO: - Train metrics: recall_at_100: 0.135 ; loss: 1.395
+2019-06-28 04:54:06,801:INFO: Evaluate
+2019-06-28 04:54:08,370:INFO: - Evaluate metrics: recall_at_100: 0.136 ; loss: 1.363
+2019-06-28 04:54:08,370:INFO: - Found new best recall_at_100
+2019-06-28 04:54:08,487:INFO: Epoch 2/5
+2019-06-28 04:54:08,487:INFO: Train
+2019-06-28 04:54:10,677:INFO: - Train metrics: recall_at_100: 0.159 ; loss: 1.197
+2019-06-28 04:54:10,678:INFO: Evaluate
+2019-06-28 04:54:12,253:INFO: - Evaluate metrics: recall_at_100: 0.118 ; loss: 1.137
+2019-06-28 04:54:12,290:INFO: Epoch 3/5
+2019-06-28 04:54:12,290:INFO: Train
+2019-06-28 04:54:14,471:INFO: - Train metrics: recall_at_100: 0.118 ; loss: 1.123
+2019-06-28 04:54:14,471:INFO: Evaluate
+2019-06-28 04:54:16,147:INFO: - Evaluate metrics: recall_at_100: 0.137 ; loss: 1.119
+2019-06-28 04:54:16,148:INFO: - Found new best recall_at_100
+2019-06-28 04:54:16,256:INFO: Epoch 4/5
+2019-06-28 04:54:16,256:INFO: Train
+2019-06-28 04:54:18,527:INFO: - Train metrics: recall_at_100: 0.120 ; loss: 1.096
+2019-06-28 04:54:18,528:INFO: Evaluate
+2019-06-28 04:54:20,099:INFO: - Evaluate metrics: recall_at_100: 0.176 ; loss: 1.099
+2019-06-28 04:54:20,100:INFO: - Found new best recall_at_100
+2019-06-28 04:54:20,173:INFO: Epoch 5/5
+2019-06-28 04:54:20,173:INFO: Train
+2019-06-28 04:54:22,485:INFO: - Train metrics: recall_at_100: 0.148 ; loss: 1.095
+2019-06-28 04:54:22,486:INFO: Evaluate
+2019-06-28 04:54:24,129:INFO: - Evaluate metrics: recall_at_100: 0.146 ; loss: 1.106
+2019-06-28 04:54:45,487:INFO: Training model for test 6
+2019-06-28 04:54:48,158:INFO: Starting training for 5 epoch(s)
+2019-06-28 04:54:48,159:INFO: Epoch 1/5
+2019-06-28 04:54:48,159:INFO: Train
+2019-06-28 04:54:50,517:INFO: - Train metrics: recall_at_100: 0.004 ; loss: 1.501
+2019-06-28 04:54:50,517:INFO: Evaluate
+2019-06-28 04:54:52,081:INFO: - Evaluate metrics: recall_at_100: 0.099 ; loss: 1.262
+2019-06-28 04:54:52,082:INFO: - Found new best recall_at_100
+2019-06-28 04:54:52,181:INFO: Epoch 2/5
+2019-06-28 04:54:52,182:INFO: Train
+2019-06-28 04:54:54,266:INFO: - Train metrics: recall_at_100: 0.172 ; loss: 1.197
+2019-06-28 04:54:54,267:INFO: Evaluate
+2019-06-28 04:54:55,835:INFO: - Evaluate metrics: recall_at_100: 0.105 ; loss: 1.123
+2019-06-28 04:54:55,835:INFO: - Found new best recall_at_100
+2019-06-28 04:54:55,933:INFO: Epoch 3/5
+2019-06-28 04:54:55,934:INFO: Train
+2019-06-28 04:54:58,147:INFO: - Train metrics: recall_at_100: 0.151 ; loss: 1.134
+2019-06-28 04:54:58,148:INFO: Evaluate
+2019-06-28 04:54:59,743:INFO: - Evaluate metrics: recall_at_100: 0.124 ; loss: 1.117
+2019-06-28 04:54:59,743:INFO: - Found new best recall_at_100
+2019-06-28 04:54:59,862:INFO: Epoch 4/5
+2019-06-28 04:54:59,862:INFO: Train
+2019-06-28 04:55:02,225:INFO: - Train metrics: recall_at_100: 0.162 ; loss: 1.112
+2019-06-28 04:55:02,225:INFO: Evaluate
+2019-06-28 04:55:03,819:INFO: - Evaluate metrics: recall_at_100: 0.124 ; loss: 1.108
+2019-06-28 04:55:03,819:INFO: - Found new best recall_at_100
+2019-06-28 04:55:03,943:INFO: Epoch 5/5
+2019-06-28 04:55:03,944:INFO: Train
+2019-06-28 04:55:06,218:INFO: - Train metrics: recall_at_100: 0.141 ; loss: 1.098
+2019-06-28 04:55:06,218:INFO: Evaluate
+2019-06-28 04:55:07,795:INFO: - Evaluate metrics: recall_at_100: 0.110 ; loss: 1.112
+2019-06-28 04:55:29,374:INFO: Training model for test 0
+2019-06-28 04:55:32,012:INFO: Starting training for 5 epoch(s)
+2019-06-28 04:55:32,012:INFO: Epoch 1/5
+2019-06-28 04:55:32,012:INFO: Train
+2019-06-28 04:55:34,206:INFO: - Train metrics: recall_at_100: 0.004 ; loss: 1.439
+2019-06-28 04:55:34,207:INFO: Evaluate
+2019-06-28 04:55:35,831:INFO: - Evaluate metrics: recall_at_100: 0.130 ; loss: 1.210
+2019-06-28 04:55:35,832:INFO: - Found new best recall_at_100
+2019-06-28 04:55:35,939:INFO: Epoch 2/5
+2019-06-28 04:55:35,939:INFO: Train
+2019-06-28 04:55:38,150:INFO: - Train metrics: recall_at_100: 0.129 ; loss: 1.217
+2019-06-28 04:55:38,150:INFO: Evaluate
+2019-06-28 04:55:39,921:INFO: - Evaluate metrics: recall_at_100: 0.141 ; loss: 1.192
+2019-06-28 04:55:39,922:INFO: - Found new best recall_at_100
+2019-06-28 04:55:39,995:INFO: Epoch 3/5
+2019-06-28 04:55:39,996:INFO: Train
+2019-06-28 04:55:42,307:INFO: - Train metrics: recall_at_100: 0.136 ; loss: 1.162
+2019-06-28 04:55:42,308:INFO: Evaluate
+2019-06-28 04:55:44,032:INFO: - Evaluate metrics: recall_at_100: 0.152 ; loss: 1.133
+2019-06-28 04:55:44,033:INFO: - Found new best recall_at_100
+2019-06-28 04:55:44,139:INFO: Epoch 4/5
+2019-06-28 04:55:44,139:INFO: Train
+2019-06-28 04:55:46,295:INFO: - Train metrics: recall_at_100: 0.150 ; loss: 1.136
+2019-06-28 04:55:46,295:INFO: Evaluate
+2019-06-28 04:55:47,940:INFO: - Evaluate metrics: recall_at_100: 0.144 ; loss: 1.105
+2019-06-28 04:55:47,972:INFO: Epoch 5/5
+2019-06-28 04:55:47,972:INFO: Train
+2019-06-28 04:55:50,362:INFO: - Train metrics: recall_at_100: 0.124 ; loss: 1.113
+2019-06-28 04:55:50,362:INFO: Evaluate
+2019-06-28 04:55:52,019:INFO: - Evaluate metrics: recall_at_100: 0.163 ; loss: 1.105
+2019-06-28 04:55:52,020:INFO: - Found new best recall_at_100
+2019-06-28 04:56:13,580:INFO: Running Experiment...
