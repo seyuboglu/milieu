@@ -4,7 +4,8 @@
         {
             "diseases_path": "data/associations/disgenet-associations.csv",
 
-            "method_exp_dirs": {"LCI": "experiments/dpp_evaluate/lci",
+            "method_exp_dirs": {"LCI": "experiments/dpp_evaluate/lci-repeat",
+                                "Common Neighbor": "experiments/dpp_evaluate/common_neighbor",
                                 "Random Walk": "experiments/dpp_evaluate/random_walk", 
                                 "Direct Neighbor": "experiments/dpp_evaluate/direct_neighbor",
                                 "DIAMOnD": "experiments/dpp_evaluate/diamond",
@@ -13,8 +14,8 @@
                             },
 
             "primary": "",
-            "length": 22000, 
-            "thresholds": [100], 
+            "length": 300, 
+            "thresholds": [10, 25], 
             "offset": 0.003,
             "by_disease": true,
             "title": false,

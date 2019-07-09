@@ -56,6 +56,20 @@ class PPINetwork:
         @protein (int) entrez id for a protein
         """
         return protein in self.protein_to_node
+    
+    def get_interactions(self, nodes=False):
+        """
+        Edges in are tuples in order 
+        @param nodes (bool) returns edges as nodes if 
+        """
+        for a, b in self.nx.edges():
+            if not nodes:
+                a = self.node_to_protein[a]
+                b = self.node_to_protein[b]
+            
+            yield (a, b) if a < b else (b, a)
+            
+        
 
     def get_protein(self, node):
         """

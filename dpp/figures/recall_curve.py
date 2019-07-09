@@ -81,7 +81,7 @@ class RecallCurve(Figure):
                 for threshold in self.params["thresholds"]:
                     print(f"recall-at-{threshold}: {recall_curve[threshold]}")
                 recall_curves[name] = recall_curve
-                plt.plot(recall_curve, label=name, linewidth=2.0 if name == self.params["primary"] else 1.3 )
+                plt.plot(recall_curve, label=name, linewidth=3.0)
                 print(count)
                 count = 0
             else: 
@@ -102,11 +102,11 @@ class RecallCurve(Figure):
             for name, recall_curve in recall_curves.items():
                 recalls_at_k.append(recall_curve[k])
             recalls_at_k.sort(reverse=True)
-            plt.plot([k, k], [recalls_at_k[0] - self.params["offset"], recalls_at_k[1] + self.params["offset"]], linestyle='--', color='green', alpha=0.5)
+            plt.plot([k, k], [recalls_at_k[0] - self.params["offset"], recalls_at_k[1] + self.params["offset"]], linestyle='--', color='black')
             percent_increase = 1.0 * round(100 * (recalls_at_k[0] - recalls_at_k[1]) / recalls_at_k[1], 1)
             plt.text(x=k + (1.0/100)*self.params["length"], y=recalls_at_k[1] + (recalls_at_k[0] - recalls_at_k[1]) / 2 - 0.001, 
                      s='+' + str(percent_increase) + '%',
-                    fontsize=9, weight='bold', alpha=.75, color='green')
+                    fontsize=9, weight='bold', color='black')
         
         if(self.params["title"]):
             plt.title("Recall-at-K (%) across methods")

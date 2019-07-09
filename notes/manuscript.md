@@ -177,21 +177,46 @@ NUmber of disease proteins
 
 ## Supplementary Material
 
-Notes:
+### Notes
 
-1) Performance on two other PPI networks 
+1) Performance on Two other PPI networks 
+
+Todo:
+
+- [x] STRING
+- [x] Bio-Grid
+- [x] Reformat to combine into one and match main figure
+- [x] Write caption
+- [x] Write note 
 
 2) Performance on more challenging split
 
+- [x] Reformat to match main figure
+- [x] Write caption
+- [ ] Write note
+
 2) Performance by disease class, create two rows 
+
+- [x] Make figure
+- [x] Upload figure
+- [x] Write caption
+- [ ] Write note 
 
 3) Weights as a function of degree 
 
+- [x] Make Figure
+- [x] Write Caption
+- [ ] Write Note
+
 4) Enrichment table
 
+- [x] Make table
+- [x] Write Caption
+- [ ] Write Note
+
+5) Embedding based approach
+
 ### Figures
-
-
 
 Supplementary Note 1:
 
@@ -201,10 +226,3 @@ Document outline for the supplementary information
 
 for each suppplmentary note that I finish, throw in a sentencein the main paper referring to it 
 
-
-
-Marinka Requests:
-
-
-
-- [ ] Reformat the supplementary recall curves as you did for the real one.  

@@ -4,7 +4,7 @@
         {
             "diseases_path": "data/associations/disgenet-associations.csv",
 
-            "method_exp_dirs": {"LCI": "experiments/_bio-grid/dpp_evaluate/lci",
+            "method_exp_dirs": {"LCI": "experiments/_bio-grid/dpp_evaluate/lci/lci_epoch5",
                                 "Random Walk": "experiments/_bio-grid/dpp_evaluate/random_walk", 
                                 "Direct Neighbor": "experiments/_bio-grid/dpp_evaluate/direct_neighbor",
                                 "DIAMOnD": "experiments/_bio-grid/dpp_evaluate/diamond",
