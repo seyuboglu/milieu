@@ -188,33 +188,53 @@ Todo:
 - [x] Reformat to combine into one and match main figure
 - [x] Write caption
 - [x] Write note 
+- [ ] Reference
 
 2) Performance on more challenging split
 
 - [x] Reformat to match main figure
 - [x] Write caption
-- [ ] Write note
+- [x] Write note
+- [x] Reference
 
 2) Performance by disease class, create two rows 
 
 - [x] Make figure
 - [x] Upload figure
 - [x] Write caption
-- [ ] Write note 
+- [x] Write note 
+- [x] Reference
+
+Questions:
+
+Was moving methods section to this note a good idea?
 
 3) Weights as a function of degree 
 
 - [x] Make Figure
 - [x] Write Caption
-- [ ] Write Note
+- [x] Reference
+
+NO NOTE? 
 
 4) Enrichment table
 
 - [x] Make table
 - [x] Write Caption
-- [ ] Write Note
+- [ ] Reference 
+
+NO NOTE? 
 
 5) Embedding based approach
+
+- [x] Create embeddings figure
+- [x] Write caption
+- [x] Note
+- [ ] Reference
+
+Questions: Is Parameteric LCI a good name? 
+
+
 
 ### Figures
 

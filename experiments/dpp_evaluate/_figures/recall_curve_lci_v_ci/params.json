@@ -4,13 +4,13 @@
         {
             "diseases_path": "data/associations/disgenet-associations.csv",
 
-            "method_exp_dirs": {"LCI, GO Embeddings": "experiments/dpp_evaluate/lci-go/lr1e-2",
-                                "LCI": "experiments/dpp_evaluate/lci"
+            "method_exp_dirs": {"LCI": "experiments/dpp_evaluate/lci",
+                                "LCI (uniform weights)": "experiments/dpp_evaluate/common_neighbor"
                             },
 
             "primary": "",
-            "length": 300, 
-            "thresholds": [], 
+            "length": 50, 
+            "thresholds": [25], 
             "offset": 0.003,
             "by_disease": true,
             "title": false,
