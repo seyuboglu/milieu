@@ -56,7 +56,7 @@ Outline, TODOs and notes for the disease pathway
 
 
 
-
+degree distribution of common interactors vs. 
 
 ### Disease Protein Discovery and Experimental Setup
 
@@ -245,4 +245,14 @@ Document outline for the supplementary information
 
 
 for each suppplmentary note that I finish, throw in a sentencein the main paper referring to it 
+
+
+
+### Supplementary Data
+
+Disease Protein Prediction Results
+
+
+
+
 
