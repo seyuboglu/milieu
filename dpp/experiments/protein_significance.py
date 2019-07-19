@@ -192,24 +192,23 @@ class ProteinSignificance(Experiment):
                                xmin=0.0, xmax=1.0):
         """
         """
-        
+
         for metric_name in metrics:
             metric = np.array(self.results[metric_name])
             
             metric[metric >= 0.1] = 0.15
+            print(f"{metric_name}: {len(metric[metric >= 0.1])}")
             
-            prepare_sns(sns, kwargs={"font_scale": 2,
+            prepare_sns(sns, kwargs={"font_scale": 1,
                          "rc": {'figure.figsize':(6, 3)}})
 
 
             if plot_type == "bar":
-                sns.distplot(metric, bins=bins, kde=False, 
+                sns.distplot(metric, bins=bins, kde=False,
                             hist_kws={'range': (xmin, xmax),
                                       'alpha': 0.8}, 
                             label=metric_name)
-                plt.ylabel("# of associations [{}]".format(r' $\log_{10}$' 
-                                                        if yscale == "log" 
-                                                        else ""))
+                plt.ylabel("# of associations")
 
             elif plot_type == "kde":
                 sns.kdeplot(metric, shade=True, kernel="gau", clip=(0, 1), 
@@ -222,9 +221,7 @@ class ProteinSignificance(Experiment):
             elif plot_type == "bar_kde":
                 sns.distplot(metric, bins=40, kde=True, 
                             kde_kws={'clip': (xmin, xmax)}, label=metric_name)
-                plt.ylabel("# of associations [{}]".format(r' $\log_{10}$' 
-                                                        if yscale == "log" 
-                                                        else ""))
+                plt.ylabel("# of associations")
             
             elif plot_type == "":
                 pass
@@ -235,15 +232,15 @@ class ProteinSignificance(Experiment):
         if plot_type == "kde": 
             plt.yticks()
         plt.legend()
-        # plt.tight_layout()
+        plt.tight_layout()
+        plt.ylim(bottom=0, top=3500)
         plt.xlim(xmin=xmin, xmax=xmax)
-        plt.yscale(yscale)
+    #plt.yscale(yscale)
 
         time_string = datetime.datetime.now().strftime("%m-%d_%H%M")
         plot_path = os.path.join(self.figures_dir, 
                                  '{}_{}_'.format(name, 
                                                  yscale) + time_string + '.pdf')
-        plt.tight_layout()
         plt.savefig(plot_path)
         plt.show()
         plt.close()

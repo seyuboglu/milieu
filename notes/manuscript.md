@@ -1,4 +1,4 @@
-# Manuscript Outline
+# Manuscript Outline
 
 Outline, TODOs and notes for the disease pathway 
 
@@ -23,6 +23,10 @@ Outline, TODOs and notes for the disease pathway
 ### Disease protein discovery.
 
 > - [x] Draft
+
+In the top 20 diseases that LCI performs better 
+
+use other performance metrics, and check 
 
 ### Functional enrichment analysis. 
 
@@ -188,7 +192,7 @@ Todo:
 - [x] Reformat to combine into one and match main figure
 - [x] Write caption
 - [x] Write note 
-- [ ] Reference
+- [x] Reference
 
 2) Performance on more challenging split
 
@@ -221,7 +225,7 @@ NO NOTE?
 
 - [x] Make table
 - [x] Write Caption
-- [ ] Reference 
+- [x] Reference 
 
 NO NOTE? 
 
@@ -230,7 +234,7 @@ NO NOTE?
 - [x] Create embeddings figure
 - [x] Write caption
 - [x] Note
-- [ ] Reference
+- [x] Reference
 
 Questions: Is Parameteric LCI a good name? 
 
@@ -248,11 +252,103 @@ for each suppplmentary note that I finish, throw in a sentencein the main paper 
 
 
 
+can reference supplementary note from the caption of the figure, 
+
+
+
+make sure to mention the two other networks i the main paper 
+
+
+
+TODO:
+
+- [ ] Change names in figures 
+
+
+
 ### Supplementary Data
 
 Disease Protein Prediction Results
 
+Network
+
+Associations
+
+
+
+## Code
+
+- [ ] Next step 
+
+
+
+Move LCI method to root of directory, and rename methods to baseline_methods 
+
+One ipython notebook for how to use LCI 
+
+README, look at decagon, graphsage for examples 
+
+As simple as possible 
+
+- [ ] Make repo public
+
+- [ ] Add sentence paper for the code 
+
+- [ ] name of the repo should be name of method 
 
 
 
 
+
+# Title
+
+Method name: 
+
+Learned Shared Interactors
+
+Learning Interactors Shared in Disease Pathways
+
+
+
+Short list:
+
+IMPALA (letter order incorrectr)
+
+aLMIghty (it is what it is)
+
+MILieu  (pronounce)
+
+
+
+
+
+
+
+Notes: 
+
+Milieu's prediction model is tranferable to new diseases:
+
+- expand on the generalizability and emphasize 
+
+
+
+
+
+
+
+Add panel C: 
+
+Data robustness experiment - 
+
+Goal: bar plot, x axis dropped PPI edges, y axis 
+
+
+
+
+
+Do what is most relevant to meeting tomorrow:
+
+1. Finish figure 3
+2. Captions
+3. Rename LCI
+4. Make small changes, don't obsess about english 

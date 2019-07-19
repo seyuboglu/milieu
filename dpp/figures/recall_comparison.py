@@ -44,12 +44,14 @@ class RecallComparison(Figure):
         """
         """
         logging.info("Loading Disease Associations...")
-        self.diseases_dict = load_diseases(self.params["diseases_path"])
+        self.diseases_dict = load_diseases(self.params["diseases_path"], exclude_splits=["none"])
+        print(len(self.diseases_dict))
     
         logging.info("Loading Results...")
         method_to_metrics = {}
         for name, exp_dir in self.params["method_exp_dirs"].items():
-            metrics = pd.read_csv(os.path.join(exp_dir, "metrics.csv"))
+            metrics = pd.read_csv(os.path.join(exp_dir, "metrics.csv"), index_col=0)
+            print(len(metrics))
             method_to_metrics[name] = metrics
         self.method_to_metrics = method_to_metrics
         
@@ -70,7 +72,7 @@ class RecallComparison(Figure):
             
             ref_start = np.where(diffs > 0.0)[0][0]
             method_end = np.where(diffs < 0.0)[-1][-1]
-            
+            print(method_end)
             plt.plot(np.arange(ref_start, len(diffs)), diffs[ref_start:],
                  label=ref_name, alpha=0.6)
             plt.fill_between(np.arange(ref_start, len(diffs)), 
@@ -93,22 +95,10 @@ class RecallComparison(Figure):
             #break
         
 
-    def save(self): 
-        """
-        """
-        plt.savefig(os.path.join(self.dir, 
-                                 f"recall_curve_{self.params['length']}.pdf"))
-    
-    def show(self):
-        """
-        """
-        plt.show()
-
 def main(process_dir, overwrite, notify):
     with open(os.path.join(process_dir, "params.json")) as f:
         params = json.load(f)
-    assert(params["process"] == "recall_curve")
+    assert(params["process"] == "recall_comparison")
     global exp
-    fig = RecallCurve(process_dir, params["process_params"])
+    fig = RecallComparison(process_dir, params["process_params"])
     fig.run()
-    fig.save()
