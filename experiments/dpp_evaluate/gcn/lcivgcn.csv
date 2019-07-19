@@ -1,4 +1,4 @@
-,gcn_recall_100,lci_recall_100,name
+id,gcn_recall_100,lci_recall_100,name
 C4020858,0.08333333333333333,0.0,Choreatic disease
 C4020859,0.0,0.0,Pyramidal tract disease
 C2675111,0.25,0.55,Abnormal eyelashes

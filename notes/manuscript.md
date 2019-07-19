@@ -56,7 +56,7 @@ Outline, TODOs and notes for the disease pathway
 
 
 
-
+degree distribution of common interactors vs. 
 
 ### Disease Protein Discovery and Experimental Setup
 
@@ -177,21 +177,66 @@ NUmber of disease proteins
 
 ## Supplementary Material
 
-Notes:
+### Notes
 
-1) Performance on two other PPI networks 
+1) Performance on Two other PPI networks 
+
+Todo:
+
+- [x] STRING
+- [x] Bio-Grid
+- [x] Reformat to combine into one and match main figure
+- [x] Write caption
+- [x] Write note 
+- [ ] Reference
 
 2) Performance on more challenging split
 
+- [x] Reformat to match main figure
+- [x] Write caption
+- [x] Write note
+- [x] Reference
+
 2) Performance by disease class, create two rows 
+
+- [x] Make figure
+- [x] Upload figure
+- [x] Write caption
+- [x] Write note 
+- [x] Reference
+
+Questions:
+
+Was moving methods section to this note a good idea?
 
 3) Weights as a function of degree 
 
+- [x] Make Figure
+- [x] Write Caption
+- [x] Reference
+
+NO NOTE? 
+
 4) Enrichment table
 
+- [x] Make table
+- [x] Write Caption
+- [ ] Reference 
+
+NO NOTE? 
+
+5) Embedding based approach
+
+- [x] Create embeddings figure
+- [x] Write caption
+- [x] Note
+- [ ] Reference
+
+Questions: Is Parameteric LCI a good name? 
+
+
+
 ### Figures
-
-
 
 Supplementary Note 1:
 
@@ -203,8 +248,11 @@ for each suppplmentary note that I finish, throw in a sentencein the main paper 
 
 
 
-Marinka Requests:
+### Supplementary Data
+
+Disease Protein Prediction Results
 
 
 
-- [ ] Reformat the supplementary recall curves as you did for the real one.  
+
+

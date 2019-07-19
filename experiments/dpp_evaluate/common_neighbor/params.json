@@ -1,0 +1,14 @@
+{
+    "n_processes": 5, 
+
+    "ppi_network": "data/networks/bio-pathways-network.txt",
+    "diseases_path": "data/associations/disgenet-associations.csv",
+    "disease_subset": [],
+    
+    "n_folds": 10,
+
+    "method": "ppi_matrix",
+
+    "ppi_matrix": "data/ppi_matrices/bio-pathways/comp_sqrt_rnorm_cnorm.npy",
+    "normalize": false
+}

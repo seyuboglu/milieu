@@ -9,8 +9,8 @@ from email.mime.text import MIMEText
 from collections import OrderedDict, defaultdict
 
 import numpy as np
+import pandas as pd
 import torch 
-
 
 class Params():
     """Class that loads hyperparameters from a json file.
@@ -304,3 +304,4 @@ def place_on_cpu(data):
         return data.cpu().detach()
     else:
         return data
+

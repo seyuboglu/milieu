@@ -1,0 +1,11 @@
+{
+    "process": "network_similarities",
+    "process_params":
+        {
+            "ppi_networks": {
+                "bio_pathways": "data/networks/bio-pathways-network.txt",
+                "bio_grid": "data/networks/bio-grid-network.txt",
+                "string": "data/networks/string-network.txt"
+            }
+        }
+}
