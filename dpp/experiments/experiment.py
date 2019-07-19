@@ -4,8 +4,6 @@ Provides base class for all experiments
 import os
 import json
 
-import pandas 
-
 from dpp.process import Process
  
 
@@ -20,6 +18,7 @@ class Experiment(Process):
             params  (dict)
         """
         super().__init__(dir, params)
+
     
     def add_params(self, new_params):
         for key in new_params.keys():
@@ -49,5 +48,3 @@ class Experiment(Process):
     
     def plot_results(self):
         pass
-     
-        

@@ -8,8 +8,11 @@ import json
 import smtplib
 import socket
 import traceback
+import random
 
-import pandas 
+import pandas as pd
+import numpy as np
+import torch 
 import click
 
 from dpp.util import set_logger, send_email
@@ -40,12 +43,32 @@ import dpp.data.aggregate as aggregate
     type=bool,
     default=True
 )
-def main(process_dir, overwrite, notify):
+@click.option(
+    "--num_runs",
+    type=int,
+    default=1
+)
+def main(process_dir, overwrite, notify, num_runs):
     """
     """
-    with open(os.path.join(process_dir, "params.json")) as f:
-        params = json.load(f)
-    process = globals()[params["process"]].main(process_dir, overwrite, notify)
+    if num_runs == 1:
+        with open(os.path.join(process_dir, "params.json")) as f:
+            params = json.load(f)
+        process = globals()[params["process"]].main(process_dir, overwrite, notify)
+
+    elif num_runs > 1:
+        for idx in range(num_runs):
+            run_dir = os.path.join(process_dir, f"run_{idx}")
+            os.mkdir(run_dir)
+            with open(os.path.join(process_dir, "params.json")) as f:
+                params = json.load(f)
+            # set seeds
+            seed = idx
+            random.seed(seed)
+            torch.manual_seed(seed)
+            np.random.seed(seed)
+            process = globals()[params["process"]].main(process_dir, overwrite, notify)
+
 
 if __name__ == "__main__":
     sys.exit(main())

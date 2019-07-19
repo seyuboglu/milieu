@@ -1,4 +1,3 @@
-Entrez Gene ID 1	Entrez Gene ID 2
 1394	2778
 6331	17999
 122704	54460
