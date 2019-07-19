@@ -1,0 +1,19 @@
+{
+    "process": "dpp_evaluate",
+    "process_params": {
+        "n_processes": 1, 
+
+        "ppi_network": "data/networks/bio-pathways-network.txt",
+        "diseases_path": "data/associations/disgenet-associations.csv",
+        "disease_subset": [],
+        
+        "n_folds": 10,
+
+        "method_class": "RandomWalk",
+        "method_params": { 
+            "alpha": 10,
+            "max_nodes": 100
+        }
+    }
+  
+}

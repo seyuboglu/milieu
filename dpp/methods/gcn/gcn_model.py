@@ -229,16 +229,15 @@ class GCNModel(nn.Module):
 
 class GraphConvolutionLayer(nn.Module):
     """
-    GCN layer with self dropout. 
+    GCN layer 
     Similar to: https://github.com/tkipf/pygcn/blob/master/pygcn/layers.py  
     """
 
     def __init__(self, in_features, out_features, bias=True, 
-                 self_dropout=0.5, activation=None):
+                 activation="relu"):
         super().__init__()
         self.in_features = in_features
         self.out_features = out_features
-        self.self_dropout = self_dropout
         self.activation = activation
 
         self.weight = nn.Parameter(torch.FloatTensor(in_features, out_features))
