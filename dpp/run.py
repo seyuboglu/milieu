@@ -9,6 +9,7 @@ import smtplib
 import socket
 import traceback
 import random
+from shutil import copyfile
 
 import pandas as pd
 import numpy as np
@@ -60,14 +61,16 @@ def main(process_dir, overwrite, notify, num_runs):
         for idx in range(num_runs):
             run_dir = os.path.join(process_dir, f"run_{idx}")
             os.mkdir(run_dir)
-            with open(os.path.join(process_dir, "params.json")) as f:
+            params_path = os.path.join(process_dir, "params.json")
+            copyfile(params_path, os.path.join(run_dir, "params.json"))
+            with open(params_path) as f:
                 params = json.load(f)
             # set seeds
             seed = idx
             random.seed(seed)
             torch.manual_seed(seed)
             np.random.seed(seed)
-            process = globals()[params["process"]].main(process_dir, overwrite, notify)
+            process = globals()[params["process"]].main(run_dir, overwrite, notify)
 
 
 if __name__ == "__main__":

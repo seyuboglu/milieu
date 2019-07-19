@@ -222,6 +222,7 @@ def main(process_dir, overwrite, notify):
     with open(os.path.join(process_dir, "params.json")) as f:
         params = json.load(f)
     assert(params["process"] == "dpp_evaluate")
+    global exp
     exp = DPPEvaluate(process_dir, params["process_params"])
     if exp.is_completed():
         exp.load_results()

@@ -1,5 +1,6 @@
 {
     "process": "dpp_evaluate",
+    "num_runs": 10, 
     "process_params": {
 
         "n_processes": 1,
