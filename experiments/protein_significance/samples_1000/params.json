@@ -22,19 +22,9 @@
                     "plot_type": "bar",
                     "yscale": "log",
                     "xlabel": "p-value",
-                    "bins": 50,
+                    "bins": 49,
                     "xmin": 0.0,
-                    "xmax": 0.2
-                },
-                "direct_interactions": { 
-                    "plot_fn": "plot_full_distribution",
-                    "metrics": ["frac_direct_interactions"],
-                    "plot_type": "bar",
-                    "yscale": "linear",
-                    "xlabel": "fraction",
-                    "bins": 100,
-                    "xmin": 0.0,
-                    "xmax": 1.0
+                    "xmax": 0.1
                 }
             },
             
