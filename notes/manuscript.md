@@ -352,3 +352,29 @@ Do what is most relevant to meeting tomorrow:
 2. Captions
 3. Rename LCI
 4. Make small changes, don't obsess about english 
+
+
+
+discussed 
+
+representation learning for patient data plus knowledge graph biomedical 
+
+main project 
+
+knowledge graph 
+
+
+
+1) Selling it as a geneal network science principle 
+
+2) Selling it as general biological network principle 
+
+- Predicted GO labels for proteins (very standard, canonical straightforward, perhaps more interesting problem)
+- Marinka is going to think about this for a day or two
+- Predicting drug targets (already tons of work done)
+
+Get GitHub ready for submissions 
+
+Printed copy with notes is on marinka's desk, ask adrijan if you can't get in 
+
+We'll talk on monday 
