@@ -15,6 +15,7 @@ import click
 
 from dpp.experiments.experiment import Experiment
 from dpp.methods.random_walk import RandomWalk
+from dpp.methods.logistic_regression import LogisticRegression
 from dpp.methods.lci.lci_method import LCI
 from dpp.methods.mia.mia_method import MIA
 from dpp.methods.gcn.gcn_method import GCN
