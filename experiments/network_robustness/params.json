@@ -35,7 +35,7 @@
                 },
                 "d": 1,
                 "cuda": true,
-                "cuda_gpu": 0,
+                "cuda_gpu": 2,
                 "num_workers": 1,
 
                 "linear_layer_units": [],
