@@ -22,8 +22,10 @@ from dpp.util import set_logger
 def run_experiment(experiment_dir):
     with open(os.path.join(experiment_dir, "params.json")) as f:
         params = json.load(f)
-    globals()[params["process"]](experiment_dir, 
-                                 params["process_params"])
+    experiment = globals()[params["process"]](experiment_dir, 
+                                              params["process_params"])
+    experiment.run()
+    experiment.save_results()
 
 
 class NetworkRobustness(Experiment):
