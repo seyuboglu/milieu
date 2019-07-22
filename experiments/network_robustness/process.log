@@ -1,0 +1,55 @@
+2019-07-21 21:24:47,876:INFO: Disease Protein Prediction in the PPI Network
+2019-07-21 21:24:47,876:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-07-21 21:24:47,876:INFO: ======================================
+2019-07-21 21:24:47,876:INFO: Loading PPI Network...
+2019-07-21 21:25:12,508:INFO: Disease Protein Prediction in the PPI Network
+2019-07-21 21:25:12,508:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-07-21 21:25:12,508:INFO: ======================================
+2019-07-21 21:25:12,508:INFO: Loading PPI Network...
+2019-07-21 21:25:23,238:INFO: Loading Disease Associations...
+2019-07-21 21:25:23,287:INFO: Training Models...
+2019-07-21 21:25:23,310:INFO: Training model for test 3
+2019-07-21 21:25:31,082:INFO: Starting training for 5 epoch(s)
+2019-07-21 21:25:31,083:INFO: Epoch 1/5
+2019-07-21 21:25:31,083:INFO: Train
+2019-07-21 21:25:37,782:INFO: - Train metrics: recall_at_100: 0.003 ; loss: 00nan
+2019-07-21 21:25:37,782:INFO: Evaluate
+2019-07-21 21:25:39,208:INFO: - Evaluate metrics: recall_at_100: 0.003 ; loss: 00nan
+2019-07-21 21:25:39,208:INFO: - Found new best recall_at_100
+2019-07-21 21:25:39,289:INFO: Epoch 2/5
+2019-07-21 21:25:39,289:INFO: Train
+2019-07-21 21:25:41,578:INFO: - Train metrics: recall_at_100: 0.003 ; loss: 00nan
+2019-07-21 21:25:41,578:INFO: Evaluate
+2019-07-21 21:25:43,060:INFO: - Evaluate metrics: recall_at_100: 0.002 ; loss: 00nan
+2019-07-21 21:25:43,113:INFO: Epoch 3/5
+2019-07-21 21:25:43,113:INFO: Train
+2019-07-21 21:25:45,334:INFO: - Train metrics: recall_at_100: 0.010 ; loss: 00nan
+2019-07-21 21:25:45,334:INFO: Evaluate
+2019-07-21 21:25:46,745:INFO: - Evaluate metrics: recall_at_100: 0.007 ; loss: 00nan
+2019-07-21 21:25:46,749:INFO: - Found new best recall_at_100
+2019-07-21 21:25:46,864:INFO: Epoch 4/5
+2019-07-21 21:25:46,865:INFO: Train
+2019-07-21 21:25:49,017:INFO: - Train metrics: recall_at_100: 0.005 ; loss: 00nan
+2019-07-21 21:25:49,018:INFO: Evaluate
+2019-07-21 21:25:50,439:INFO: - Evaluate metrics: recall_at_100: 0.011 ; loss: 00nan
+2019-07-21 21:25:50,443:INFO: - Found new best recall_at_100
+2019-07-21 21:25:50,568:INFO: Epoch 5/5
+2019-07-21 21:25:50,568:INFO: Train
+2019-07-21 21:25:52,881:INFO: - Train metrics: recall_at_100: 0.002 ; loss: 00nan
+2019-07-21 21:25:52,881:INFO: Evaluate
+2019-07-21 21:25:54,283:INFO: - Evaluate metrics: recall_at_100: 0.002 ; loss: 00nan
+2019-07-21 21:26:03,066:INFO: Training model for test 9
+2019-07-21 21:28:01,164:INFO: Disease Protein Prediction in the PPI Network
+2019-07-21 21:28:01,164:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-07-21 21:28:01,165:INFO: ======================================
+2019-07-21 21:28:01,165:INFO: Loading PPI Network...
+2019-07-21 21:29:12,140:INFO: Disease Protein Prediction in the PPI Network
+2019-07-21 21:29:12,140:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-07-21 21:29:12,140:INFO: ======================================
+2019-07-21 21:29:12,140:INFO: Loading PPI Network...
+2019-07-21 21:29:22,756:INFO: Loading Disease Associations...
+2019-07-21 21:29:22,803:INFO: Training Models...
+2019-07-21 21:29:22,804:INFO: Training model for test 3
+2019-07-21 21:29:30,540:INFO: Starting training for 5 epoch(s)
+2019-07-21 21:29:30,540:INFO: Epoch 1/5
+2019-07-21 21:29:30,540:INFO: Train
