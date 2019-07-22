@@ -67,7 +67,7 @@ class PPINetwork:
             self.nx.remove_edges_from(edges)
             # can't have isolates in the graph
             isolates = nx.isolates(self.nx)
-            for isolate in isolates:
+            for isolate in list(isolates):
                 self.nx.remove_node(isolate)
                 protein = self.node_to_protein[isolate]
                 del self.protein_to_node[protein]
