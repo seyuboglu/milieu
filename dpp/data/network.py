@@ -29,11 +29,18 @@ class PPINetwork:
         """
         # map protein entrez ids to node index
         protein_ids = set()
+        edges = []
         with open(network_path) as network_file:
             for line in network_file:
-                p1, p2 = [int(a) for a in line.split()]
+                if remove_edges > 0 and random.random() < remove_edges:
+                    continue
+                p1, p2 = [int(a) for a in line.split()] 
                 protein_ids.add(p1)
                 protein_ids.add(p2)
+                edges.append((p1, p2))
+        if remove_nodes > 0: 
+            assert(remove_nodes < 1)
+            protein_ids = random.sample(protein_ids, 1 - remove_nodes)
 
         self.protein_to_node = {p: n for n, p in enumerate(protein_ids)}
         self.node_to_protein = {n: p for p, n in self.protein_to_node.items()}
@@ -41,39 +48,12 @@ class PPINetwork:
         # build adjacency matrix
         self.adj_matrix = np.zeros((len(self.protein_to_node), 
                                     len(self.protein_to_node)))
-        with open(network_path) as network_file:
-            for line in network_file:
-                p1, p2 = [int(a) for a in line.split()]
-                n1, n2 = self.protein_to_node[p1], self.protein_to_node[p2]
-                self.adj_matrix[n1, n2] = 1
-                self.adj_matrix[n2, n1] = 1
+        for p1, p2 in edges:
+            n1, n2 = self.protein_to_node[p1], self.protein_to_node[p2]
+            self.adj_matrix[n1, n2] = 1
+            self.adj_matrix[n2, n1] = 1
         
         self.nx = nx.from_numpy_matrix(self.adj_matrix)
-
-        # remove random nodes, for robustness tests
-        if remove_nodes > 0:
-            assert(remove_nodes < 1)
-            for _ in range(int(len(self.nx) * remove_nodes)):
-                node = random.choice(list(self.nx.nodes()))
-                self.nx.remove_node(node)
-                protein = self.node_to_protein[node]
-                del self.protein_to_node[protein]
-                del self.node_to_protein[node]
-
-        if remove_edges > 0:
-            assert(remove_edges < 1)
-            edges = random.sample(self.nx.edges(), k=int(self.nx.number_of_edges() * 
-                                                         remove_edges))
-            self.nx.remove_edges_from(edges)
-            # can't have isolates in the graph
-            isolates = nx.isolates(self.nx)
-            for isolate in list(isolates):
-                self.nx.remove_node(isolate)
-                protein = self.node_to_protein[isolate]
-                del self.protein_to_node[protein]
-                del self.node_to_protein[isolate]
-
-        self.adj_matrix = nx.to_numpy_matrix(self.nx)
     
     def __len__(self):
         """
