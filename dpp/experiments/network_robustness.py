@@ -5,9 +5,11 @@ import os
 import copy 
 import json
 from multiprocessing import Pool
+import random
 
 import numpy as np
 import pandas as pd
+import torch
 
 from dpp.experiments.experiment import Experiment
 from dpp.experiments.dpp_evaluate import DPPEvaluate
@@ -43,7 +45,7 @@ class NetworkRobustness(Experiment):
 
         # set the logger
         set_logger(os.path.join(self.dir, 'experiment.log'), 
-                   level=logging.INFO, console=True)
+                   level=logging.INFO, console=True)        
     
     def _run(self):
         """
@@ -51,20 +53,31 @@ class NetworkRobustness(Experiment):
         """     
         all_experiments = []
         for config_idx, config in enumerate(self.params["configs"]):
+            config_dir = os.path.join(self.dir, f"config_{config_idx}")
+            if not os.path.isdir(config_dir):
+                os.mkdir(config_dir)
+            experiment_params = self.params["experiment_params"]
+            experiment_params.update(config)
+            params = {
+                "process": self.params["experiment_class"],
+                "process_params": experiment_params
+            }
             for run_idx in range(self.params["num_runs"]):
-                run_dir = os.path.join(self.dir, f"config_{config_idx}_run_{run_idx}")
+                run_dir = os.path.join(config_dir, f"run_{run_idx}")
                 if not os.path.isdir(run_dir):
                     os.mkdir(run_dir)
-                experiment_params = self.params["experiment_params"]
-                experiment_params.update(config)
-                params = {
-                    "process": self.params["experiment_class"],
-                    "process_params": experiment_params
-                }
+
                 with open(os.path.join(run_dir, "params.json"), 'w') as f:
                     json.dump(params, f)
                 all_experiments.append(run_dir)
-        for experiment_dir in all_experiments:
+                
+        for idx, experiment_dir in enumerate(all_experiments):
+            # set seeds
+            seed = idx
+            random.seed(seed)
+            torch.manual_seed(seed)
+            np.random.seed(seed)
+
             run_experiment(experiment_dir)
     
 

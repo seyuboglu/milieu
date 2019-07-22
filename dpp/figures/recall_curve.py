@@ -106,7 +106,7 @@ class RecallCurve(Figure):
                 for threshold in self.params["thresholds"]:
                     logging.info(f"recall-at-{threshold}: {recall_curve[threshold]}")
                 recall_curves[name] = recall_curve
-                sns.lineplot(data=recall_curve, label=name, linewidth=0.5)
+                sns.lineplot(data=recall_curve, label=name, linewidth=3)
     
             
         # plot percent differences
@@ -133,12 +133,11 @@ class RecallCurve(Figure):
 
         plt.legend(loc='upper left')
         
-
     def save(self): 
         """
         """
         plt.savefig(os.path.join(self.dir, 
-                                 f"recall_curve_{self.params['length']}.pdf"))
+                                 f"network_robustness.pdf"))
     
     def show(self):
         """

@@ -143,8 +143,8 @@ class DrugTarget(Experiment):
                          "rc": {'figure.figsize':(6, 4)}})
         for name, proteins in protein_sets.items():
             sns.distplot(self.ci_weights_norm[proteins], 
-                 kde=False, hist=True, norm_hist=True, bins=50, 
-                 hist_kws={"range":(-0.25, 0.75),
+                 kde=False, hist=True, norm_hist=True, bins=40, 
+                 hist_kws={"range":(-0.5, 1.5),
                            "alpha": 0.8},
                          label=name)
 
@@ -158,6 +158,21 @@ class DrugTarget(Experiment):
         
         if save is not None:
             plt.savefig(os.path.join(self.dir, "_figures", save))
+    
+    def plot_frac_drug_weight(self, protein_set, save="frac_weight.pdf"):
+        num_bins = 22
+        weights = np.minimum(1.1, self.ci_weights_norm)
+        drug_hist, drug_bins = np.histogram(weights[protein_set],
+                                            range=(-0.3, 1.5), bins=num_bins)
+        all_hist, all_bins = np.histogram(weights, 
+                                          range=(-0.3, 1.5), bins=num_bins)
+        #plt.bar(drug_bins[:-1], drug_hist)
+
+        assert(np.all(drug_bins == all_bins))
+
+        frac_hist = drug_hist / all_hist
+        plt.bar(x=drug_bins[:-1], height=frac_hist, width=(drug_bins[1] - drug_bins[0]))
+
 
         
 class FunctionalEnrichmentAnalysis(Experiment):
