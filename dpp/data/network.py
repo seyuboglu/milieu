@@ -65,6 +65,13 @@ class PPINetwork:
             edges = random.sample(self.nx.edges(), k=int(self.nx.number_of_edges() * 
                                                          remove_edges))
             self.nx.remove_edges_from(edges)
+            # can't have isolates in the graph
+            isolates = nx.isolates(self.nx)
+            for isolate in isolates:
+                self.nx.remove_node(isolate)
+                protein = self.node_to_protein[isolate]
+                del self.protein_to_node[protein]
+                del self.node_to_protein[isolate]
 
         self.adj_matrix = nx.to_numpy_matrix(self.nx)
     
