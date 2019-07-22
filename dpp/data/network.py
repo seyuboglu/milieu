@@ -4,6 +4,7 @@ Module for loading and storing protein-protein interaction networks.
 
 import os
 import logging
+import random
 
 import numpy as np 
 import pandas as pd 
@@ -16,11 +17,15 @@ class PPINetwork:
     Represents a protein protein interaction network. 
     """
 
-    def __init__(self, network_path):
+    def __init__(self, network_path, remove_edges=0, remove_nodes=0):
         """
         Load a protein-proetin interaction network from an adjacency list.
         args:
             network_path (string)
+            remove_edges (double) fraction between 0 and 1 inclusive indicating 
+            fraction of edges to randomly remove 
+            remove_nodes (double) fraction between 0 and 1 inclusive indicating 
+            fraction of nodes to randomly remove 
         """
         # map protein entrez ids to node index
         protein_ids = set()
@@ -29,6 +34,7 @@ class PPINetwork:
                 p1, p2 = [int(a) for a in line.split()]
                 protein_ids.add(p1)
                 protein_ids.add(p2)
+
         self.protein_to_node = {p: n for n, p in enumerate(protein_ids)}
         self.node_to_protein = {n: p for p, n in self.protein_to_node.items()}
 
@@ -43,6 +49,24 @@ class PPINetwork:
                 self.adj_matrix[n2, n1] = 1
         
         self.nx = nx.from_numpy_matrix(self.adj_matrix)
+
+        # remove random nodes, for robustness tests
+        if remove_nodes > 0:
+            assert(remove_nodes < 1)
+            for _ in range(int(len(self.nx) * remove_nodes)):
+                node = random.choice(list(self.nx.nodes()))
+                self.nx.remove_node(node)
+                protein = self.node_to_protein[node]
+                del self.protein_to_node[protein]
+                del self.node_to_protein[node]
+
+        if remove_edges > 0:
+            assert(remove_edges < 1)
+            edges = random.sample(self.nx.edges(), k=int(self.nx.number_of_edges() * 
+                                                         remove_edges))
+            self.nx.remove_edges_from(edges)
+
+        self.adj_matrix = nx.to_numpy_matrix(self.nx)
     
     def __len__(self):
         """
@@ -56,7 +80,7 @@ class PPINetwork:
         @protein (int) entrez id for a protein
         """
         return protein in self.protein_to_node
-    
+        
     def get_interactions(self, nodes=False):
         """
         Edges in are tuples in order 
@@ -68,8 +92,6 @@ class PPINetwork:
                 b = self.node_to_protein[b]
             
             yield (a, b) if a < b else (b, a)
-            
-        
 
     def get_protein(self, node):
         """
@@ -109,4 +131,3 @@ class PPINetwork:
                              for p in proteins if p in self.protein_to_node])
         else:
             return np.fromiter(self.protein_to_node.values(), dtype=int)
-

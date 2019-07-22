@@ -23,8 +23,9 @@ import dpp.experiments.go_enrichment as go_enrichment
 import dpp.experiments.protein_significance as protein_significance
 import dpp.experiments.disease_significance as disease_significance
 import dpp.experiments.disease_subgraph as disease_subgraph
+import dpp.experiments.network_robustness as network_robustness
 import dpp.data.network_matrices as network_matrices
-import dpp.figures.recall_curve  as recall_curve
+import dpp.figures.recall_curve as recall_curve
 import dpp.figures.recall_comparison as recall_comparison
 import dpp.data.aggregate as aggregate 
 

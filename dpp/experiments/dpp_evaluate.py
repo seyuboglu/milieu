@@ -47,7 +47,9 @@ class DPPEvaluate(Experiment):
 
         # load data from params file
         logging.info("Loading PPI Network...")
-        self.network = PPINetwork(self.params["ppi_network"])
+        self.network = PPINetwork(self.params["ppi_network"],
+                                  remove_nodes=self.params.get("remove_nodes", 0),
+                                  remove_edges=self.params.get("remove_edges", 0))
         logging.info("Loading Disease Associations...")
         self.diseases_dict = load_diseases(self.params["diseases_path"], 
                                            self.params["disease_subset"], 

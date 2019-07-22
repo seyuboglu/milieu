@@ -6,6 +6,7 @@ import csv
 from multiprocessing import Pool
 
 import numpy as np
+import pandas as pd
 from sklearn.model_selection import KFold
 import matplotlib.pyplot as plt 
 import seaborn as sns
@@ -45,56 +46,68 @@ class RecallCurve(Figure):
         logging.info("Loading Disease Associations...")
         self.diseases_dict = load_diseases(self.params["diseases_path"])
     
+    def _generate_recall_curve(self, ranks_path):
+        """
+        """
+        count = 0
+        recall_curve_sum = np.zeros(self.params["length"])
+        with open(ranks_path, 'r') as ranks_file:
+            rank_reader = csv.reader(ranks_file)
+            for i, row in enumerate(rank_reader):
+                if i == 0: 
+                    continue
+                if (("associations_threshold" in self.params) and self.params["associations_threshold"] > len(row) - 2):
+                    continue
+                if (("splits" in self.params) and self.diseases_dict[row[0]].split not in self.params["splits"]):
+                    continue 
+                if self.diseases_dict[row[0]].split == "none":
+                    continue 
+                count += 1
+                ranks = [parse_id_rank_pair(rank_str)[1] for rank_str in row[2:]]
+                ranks = np.array(ranks).astype(int)
+                rank_bin_count = np.bincount(ranks)
+                recall_curve = 1.0 * np.cumsum(rank_bin_count) / len(ranks)
+                if len(recall_curve) < self.params["length"]:
+                    recall_curve = np.pad(recall_curve, 
+                                          (0, self.params["length"] - len(recall_curve)), 
+                                          'edge')
+                recall_curve_sum += recall_curve[:self.params["length"]]
+            recall_curve = (recall_curve_sum / (count))
+        return recall_curve
+
     def _generate(self):
         """
         """
         count = 0
         recall_curves = {}
         for name, method_exp_dir in self.params["method_exp_dirs"].items():
-            print(name)
-            if(self.params["by_disease"]):
-                recall_curve_sum = np.zeros(self.params["length"])
-                with open(os.path.join(method_exp_dir, 'ranks.csv'), 'r') as ranks_file:
-                    rank_reader = csv.reader(ranks_file)
-                    for i, row in enumerate(rank_reader):
-                        if i == 0: 
-                            continue
-                        if (("associations_threshold" in self.params) and 
-                            self.params["associations_threshold"] > len(row) - 2):
-                            continue
-                        if (("splits" in self.params) and 
-                            self.diseases_dict[row[0]].split not in self.params["splits"]):
-                            continue 
-                        if self.diseases_dict[row[0]].split == "none":
-                            continue 
-                        count += 1
-                        ranks = [parse_id_rank_pair(rank_str)[1] for rank_str in row[2:]]
-                        ranks = np.array(ranks).astype(int)
-                        rank_bin_count = np.bincount(ranks)
-                        recall_curve = 1.0 * np.cumsum(rank_bin_count) / len(ranks)
-                        if len(recall_curve) < self.params["length"]:
-                            recall_curve = np.pad(recall_curve, 
-                                                (0, self.params["length"] - len(recall_curve)), 
-                                                'edge')
-                        recall_curve_sum += recall_curve[:self.params["length"]]
-                recall_curve = (recall_curve_sum / (count))
-                for threshold in self.params["thresholds"]:
-                    print(f"recall-at-{threshold}: {recall_curve[threshold]}")
+            logging.info(name)
+            if os.path.isdir(os.path.join(method_exp_dir, 'run_0')):
+                # if there are multiple runs of the experiment consider all
+                data = []
+                runs = []
+                for dir_name in os.listdir(method_exp_dir):
+                    if dir_name[:3] != "run":
+                        continue
+                    path = os.path.join(method_exp_dir, dir_name, 'ranks.csv')
+                    run = self._generate_recall_curve(path)
+                    runs.append(run)
+                    for threshold, recall in enumerate(run):
+                        data.append((recall, threshold))
+                data = pd.DataFrame(data=data, columns=["recall", "threshold"])
+                sns.lineplot(data=data, x="threshold", y="recall", 
+                             label=name, linewidth=0.5)
+                recall_curve = np.stack(runs, axis=0).mean(axis=0)
                 recall_curves[name] = recall_curve
-                plt.plot(recall_curve, label=name, linewidth=3.0)
-                print(count)
-                count = 0
-            else: 
-                ranks = []
-                with open(os.path.join(method_exp_dir, 'ranks.csv'), 'r') as ranks_file:
-                    rank_reader = csv.reader(ranks_file)
-                    for i, row in enumerate(rank_reader):
-                        if i == 0: continue
-                        ranks.extend(map(float, row[2:]))
-                ranks = np.array(ranks).astype(int)
-                rank_bin_count = np.bincount(ranks)
-                recall_curve = 1.0 * (np.cumsum(rank_bin_count) / len(ranks))
-                plt.plot(recall_curve[:self.params["length"]], label=name)
+                for threshold in self.params["thresholds"]:
+                    logging.info(f"recall-at-{threshold}: {recall_curve[threshold]}")    
+            else:
+                recall_curve = self._generate_recall_curve(os.path.join(method_exp_dir, 'ranks.csv'))
+                for threshold in self.params["thresholds"]:
+                    logging.info(f"recall-at-{threshold}: {recall_curve[threshold]}")
+                recall_curves[name] = recall_curve
+                sns.lineplot(data=recall_curve, label=name, linewidth=0.5)
+    
             
         # plot percent differences
         for k in self.params["thresholds"]:
