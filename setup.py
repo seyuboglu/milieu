@@ -29,7 +29,7 @@ setuptools.setup(
     ],
     install_requires=[
         'torch', 'numpy', 'pandas', 'scipy', 'scikit-learn',
-        'pydicom', 'tqdm', 'Pillow', 'click', 'matplotlib', 'networkx',
-        'goatools', 'parse'
+        'tqdm', 'click', 'matplotlib', 'networkx',
+        'goatools', 'parse', 'seaborn'
     ]
 )

@@ -10,7 +10,7 @@ import pandas as pd
 import sklearn.metrics as skl
 import torch
 
-from  dpp.metrics import recall_score
+from milieu.metrics import recall_score
 
 
 class Metrics:
