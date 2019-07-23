@@ -10,7 +10,7 @@ with open("README.md", "r") as fh:
 setuptools.setup(
     entry_points={
         'console_scripts':[
-            'run=dpp.run:main'
+            'run=milieu.run:main'
         ]
     },
     name="disease-protein-prediction",
@@ -21,7 +21,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/seyuboglu/disease-protein-prediction",
-    packages=setuptools.find_packages(include=['dpp']),
+    packages=setuptools.find_packages(include=['milieu']),
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
