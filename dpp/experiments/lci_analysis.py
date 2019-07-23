@@ -138,19 +138,20 @@ class DrugTarget(Experiment):
     def plot_drug_weight_dist(self, protein_sets, save="weight_dist.pdf"):
         """
         """
+        weights = np.minimum(1.0, self.ci_weights_norm)
         
         prepare_sns(sns, kwargs={"font_scale": 1.4,
                          "rc": {'figure.figsize':(6, 4)}})
         for name, proteins in protein_sets.items():
-            sns.distplot(self.ci_weights_norm[proteins], 
-                 kde=False, hist=True, norm_hist=True, bins=40, 
-                 hist_kws={"range":(-0.5, 1.5),
+            sns.distplot(weights[proteins], 
+                 kde=False, hist=True, norm_hist=True, bins=25, 
+                 hist_kws={"range":(-0.25, 1.1),
                            "alpha": 0.8},
                          label=name)
 
         sns.despine()
         plt.xscale('linear')
-        plt.yscale('linear')
+        plt.yscale('log')
         plt.legend()
         plt.xlabel(r"Degree-normalized LCI weight, $\frac{w_z}{\sqrt{d_z}}$")
         plt.ylabel("Density")

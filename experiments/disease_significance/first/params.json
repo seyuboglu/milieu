@@ -17,7 +17,7 @@
             "plots_to_params": {
                 "ci": { 
                     "plot_fn": "plot_disease",
-                    "disease_ids": ["C0016978", "C0854110", "C0023470", "C0008325", "C0699791"],
+                    "disease_ids": ["C0008325", "C0023470", "C0699791", "C0854110", "C0016978"],
                     "metrics": ["mean_common_interactor_score"],
                     "plot_type": "bar",
                     "yscale": "linear",
@@ -30,7 +30,7 @@
                 }, 
                 "di": { 
                     "plot_fn": "plot_disease",
-                    "disease_ids": [],
+                    "disease_ids": ["C0008325", "C0023470", "C0699791", "C0854110", "C0016978"],
                     "metrics": ["mean_frac_direct_interactions"],
                     "plot_type": "bar",
                     "yscale": "linear",
@@ -38,7 +38,7 @@
                     "ylabel": "# of pathways",
                     "bins": 40,
                     "xmin": 0.0,
-                    "xmax": 1.0,
+                    "xmax": 2.0,
                     "null_color": "#424242"
                 }
             },

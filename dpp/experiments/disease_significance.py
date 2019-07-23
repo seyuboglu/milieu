@@ -206,14 +206,17 @@ class DiseaseSignificance(Experiment):
                 os.makedirs(disease_dir)
 
             for metric in metrics:
+                logging.info(f"Metric:{metric}")
+               
                 disease_mean = row["disease_" + metric]
                 null_results = row["null_" + metric].values[0]
-
                 if type(null_results) == str:
                     null_results = string_to_list(null_results, float)
+                
+                logging.info(f"p-value: {compute_pvalue(float(disease_mean), null_results)}")
 
                 xmin = min((disease_mean.item(), min(null_results)))
-                xmax = max((disease_mean.item(),))
+                xmax = max((disease_mean.item(), max(null_results)))
                 delta = np.abs(xmax - xmin) * 0.1
                 xmin -= delta
                 xmax += delta
@@ -221,7 +224,7 @@ class DiseaseSignificance(Experiment):
                 if plot_type == "bar":
                     sns.distplot(null_results, kde=False, bins=bins, 
                                  hist_kws={'range': (xmin,xmax)},
-                                 color=null_color, label="random pathways")
+                                 color=null_color)
                     plt.ylabel(ylabel)
     
                 elif plot_type == "kde":
@@ -245,14 +248,14 @@ class DiseaseSignificance(Experiment):
                 disease = self.diseases[disease_id]
                 sns.scatterplot(disease_mean, 0)
                 
-                xlabel = r"Mean CI score" # , $\frac{1}{|S|} \sum_{u \in S} CI(u, S \backslash \{u\})$
+                #xlabel = r"Mean CI score" # , $\frac{1}{|S|} \sum_{u \in S} CI(u, S \backslash \{u\})$
                 plt.xlabel(xlabel)
                 sns.despine()
 
                 plt.tight_layout()
                 plt.savefig(os.path.join(disease_dir, 
                                          f"{disease_id}_simple.pdf"))
-                plt.show()
+                #plt.show()
                 plt.close()
                 plt.clf()
     
@@ -304,7 +307,6 @@ class DiseaseSignificance(Experiment):
         plt.xticks(np.arange(0.0, 1.0, 0.05))
         if plot_type == "kde": 
             plt.yticks()
-        print("hello")
         #plt.legend()
         #plt.tight_layout()
         plt.xlim(left=0, right=0.25)
