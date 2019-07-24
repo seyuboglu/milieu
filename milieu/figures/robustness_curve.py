@@ -18,7 +18,7 @@ from milieu.figures.figure import Figure
 from milieu.util import Params, set_logger, parse_id_rank_pair, prepare_sns
 
  
-class DPPBoxplot(Figure):
+class RobustnessCurve(Figure):
     """ 
     Base class for all disease protein prediction methods.
     """
@@ -49,20 +49,46 @@ class DPPBoxplot(Figure):
     def _generate(self):
         """
         """
-        sns.set_palette("Reds")
+        plt.figure(figsize=(7,3))
 
         count = 0
-        metrics = {}
+        metrics = []
         for name, method_exp_dir in self.params["method_exp_dirs"].items():
-            logging.info(name)
-            metrics_df = pd.read_csv(os.path.join(method_exp_dir, "metrics.csv"), index_col=0)
-            metric = metrics_df[self.params["metric"]]
-            metrics[name] = metric
+            if os.path.isdir(os.path.join(method_exp_dir, 'run_0')):
+                for dir_name in os.listdir(method_exp_dir):
+                    if dir_name[:3] != "run":
+                        continue
+                    curr_df = pd.read_csv(os.path.join(method_exp_dir, dir_name, "metrics.csv"), 
+                                          index_col=0)
+                    mean_metric = curr_df[self.params["metric"]].mean()
+                    metrics.append({
+                        "fraction": float(name),
+                        f"mean_{self.params['metric']}": mean_metric
+                    })                
+
+            else: 
+                logging.info(name)
+                curr_df = pd.read_csv(os.path.join(method_exp_dir, "metrics.csv"), 
+                                      index_col=0)
+                mean_metric = curr_df[self.params["metric"]].mean()
+                metrics.append({
+                    "fraction": float(name),
+                    f"mean_{self.params['metric']}": mean_metric
+                })          
+
         metrics_df = pd.DataFrame.from_dict(metrics)
-        sns.barplot(data=metrics_df)
+        sns.lineplot(x="fraction", y=f"mean_{self.params['metric']}", data=metrics_df,
+                     markers=True)
+        
+        for name, method_exp_dir in self.params["comparison_exp_dirs"].items():
+            curr_df = pd.read_csv(os.path.join(method_exp_dir, "metrics.csv"), 
+                                  index_col=0)
+            mean_metric = curr_df[self.params["metric"]].mean()
+            sns.lineplot(x=np.linspace(0, 0.5), y=[mean_metric] * 50,
+                         dashes=True, label=name, )
+
 
         sns.despine()
-
         plt.ylabel(r"Mean Recall-at-25")
         plt.xlabel(r"Fraction of edges removed")
 

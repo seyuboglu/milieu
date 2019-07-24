@@ -157,8 +157,8 @@ def print_title(title="Experiment", subtitle=None):
     print(title)
     if subtitle is not None: 
         print(subtitle)
-    print("Sabri Eyuboglu  -- SNAP Group -- Stanford University")
-    print("====================================================")
+    print("Sabri Eyuboglu, Marinka Zitnik and Jure Leskovec -- SNAP Group")
+    print("==============================================================")
 
 
 def torch_all_close(a, b, tolerance=1e-12):

@@ -175,6 +175,8 @@ class LCIModule(nn.Module):
 
     def __init__(self, params, adjacency):
         super(LCIModule, self).__init__()
+
+
         # build degree vector
         D = np.sum(adjacency, axis=1, dtype=np.float)
         D = np.power(D, -0.5)
@@ -214,6 +216,7 @@ class LCIModule(nn.Module):
                                          dtype=torch.float,
                                          requires_grad=True))
         self.linear_layer = nn.Linear(self.d, 1)
+    
 
     def forward(self, input, test=False):
         """

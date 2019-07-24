@@ -22,7 +22,7 @@ from milieu.methods.gcn.gcn_method import GCN
 from milieu.data.associations import load_diseases
 from milieu.data.network import PPINetwork
 from milieu.metrics import positive_rankings, recall_at, recall, auroc, average_precision
-from milieu.output import ExperimentResults
+from milieu.data.output import ExperimentResults
 from milieu.util import Params, set_logger, parse_id_rank_pair
 
 

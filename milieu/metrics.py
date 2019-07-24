@@ -1,5 +1,5 @@
 """
-General analysis code for our production-level trained code
+Metrics
 """
 from __future__ import division
 import pickle

@@ -26,6 +26,7 @@ import milieu.experiments.disease_subgraph as disease_subgraph
 import milieu.experiments.network_robustness as network_robustness
 import milieu.data.network_matrices as network_matrices
 import milieu.figures.recall_curve as recall_curve
+import milieu.figures.robustness_curve as robustness_curve
 import milieu.figures.recall_comparison as recall_comparison
 import milieu.data.aggregate as aggregate 
 
