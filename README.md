@@ -27,6 +27,10 @@ Install package (`-e` for development mode)
 pip install -e .
 ```
 
+### Jupyter Notebooks
+
+
+
 
 
 #### Directory
