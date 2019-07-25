@@ -10,6 +10,14 @@ from scipy.stats import rankdata
 from sklearn.metrics import recall_score, precision_recall_curve, average_precision_score, roc_auc_score, roc_curve, precision_recall_curve
 
 
+def compute_metrics(probs, targets, metrics, metric_configs):
+    """
+    """
+    for config in metric_configs:
+        metrics[config["name"]].append(globals()[config["fn"]](targets, 
+                                                               probs, 
+                                                               **config["args"]))
+
 def sample_mask(idx, l):
     """Create mask."""
     mask = np.zeros(l)
@@ -29,6 +37,21 @@ def recall(y_true, y_pred, excluded_indices=[]):
     y_pred_no_train = y_pred[no_train_mask]
     return recall_score(y_true_no_train, y_pred_no_train)
 
+def batch_recall_at(labels, probs, k=100):
+    """
+    """
+    labels[labels == -1] = 0
+
+    N, M = probs.shape
+    argsort_output = np.argsort(probs, axis=1)
+    rows = np.column_stack((np.arange(N),) * k)
+    cols = argsort_output[:, (M - k):]
+    binary_output = np.zeros_like(probs)
+    binary_output[rows, cols] = 1
+    recall = np.mean([recall_score(labels[row, :], 
+                                   binary_output[row, :]) for row in range(N)])
+
+    return recall
 
 def recall_at(y_true, output_probs, k, excluded_indices=[]): 
     no_train_mask = inverse_sample_mask(excluded_indices, y_true.shape[0])

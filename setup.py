@@ -13,14 +13,14 @@ setuptools.setup(
             'run=milieu.run:main'
         ]
     },
-    name="disease-protein-prediction",
+    name="milieu",
     version="0.0.1",
-    author="Geoff Angus and Sabri Eyuboglu",
+    author="Evan Sabri Eyuboglu",
     author_email="eyuboglu@stanford.edu",
     description="Research software for Stanford SNAP disease protein prediction.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/seyuboglu/disease-protein-prediction",
+    url="https://github.com/seyuboglu/milieu",
     packages=setuptools.find_packages(include=['milieu']),
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -30,6 +30,6 @@ setuptools.setup(
     install_requires=[
         'torch', 'numpy', 'pandas', 'scipy', 'scikit-learn',
         'tqdm', 'click', 'matplotlib', 'networkx',
-        'goatools', 'parse', 'seaborn'
+        'goatools', 'parse', 'seaborn', 'jupyter', 'ipywidgets'
     ]
 )

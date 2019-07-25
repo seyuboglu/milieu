@@ -171,7 +171,11 @@ def recall_at_100(probs, labels):
     cols = argsort_output[:, (M - k):]
     binary_output = np.zeros_like(probs)
     binary_output[rows, cols] = 1
-
+    print("here")
+    for row in range(N):
+        print(labels[row, :])
+        print(binary_output[row, :]))
+        recall_score(labels[row, :], binary_output[row, :])
     recall = np.mean([recall_score(labels[row, :], 
                       binary_output[row, :]) for row in range(N)])
 

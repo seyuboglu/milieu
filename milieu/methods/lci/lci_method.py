@@ -1,6 +1,5 @@
 """
 """
-from __future__ import division
 import os
 import json
 import logging
@@ -100,7 +99,6 @@ class LCI(DPPMethod):
             path = os.path.join(self.dir, "models/model_{}.tar".format(test_fold))
             torch.save(model.state_dict(), path)
             self.folds_to_models[test_fold] = path
-
     
     def train_model(self, train_dataset, val_dataset):
         """ Trains the underlying model

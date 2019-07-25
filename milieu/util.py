@@ -1,5 +1,5 @@
 """General utility functions"""
-import os
+import os, sys
 import json
 import logging
 import smtplib
@@ -51,7 +51,7 @@ def load_params(experiment_dir):
     return params
     
 
-def set_logger(log_path, level=logging.INFO, console=True):
+def set_logger(log_path=None, level=logging.INFO, console=True):
     """Sets the logger to log info in terminal and file `log_path`.
 
     In general, it is useful to have a logger so that every output to the terminal is saved
@@ -70,13 +70,14 @@ def set_logger(log_path, level=logging.INFO, console=True):
 
     if not logger.handlers:
         # Logging to a file
-        file_handler = logging.FileHandler(log_path)
-        file_handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s: %(message)s'))
-        logger.addHandler(file_handler)
+        if log_path is not None:
+            file_handler = logging.FileHandler(log_path)
+            file_handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s: %(message)s'))
+            logger.addHandler(file_handler)
 
         # Logging to console
         if console: 
-            stream_handler = logging.StreamHandler()
+            stream_handler = logging.StreamHandler(sys.stdout)
             stream_handler.setFormatter(logging.Formatter('%(message)s'))
             logger.addHandler(stream_handler)
 
