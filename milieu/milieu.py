@@ -20,7 +20,7 @@ import torch.nn as nn
 from torch.autograd import Variable
 import torch.optim as optim 
 from torch.utils.data import Dataset, DataLoader
-from tqdm.autonotebook import tqdm
+from tqdm import tqdm
 from scipy.sparse import coo_matrix, csr_matrix
 import parse
 
@@ -199,6 +199,9 @@ class Milieu(nn.Module):
         input_nodes = self.network.get_nodes(entrez_ids)
         inputs = torch.zeros((1, len(self.network)), dtype=torch.float)
         inputs[0, input_nodes] = 1
+        
+        if self.params["cuda"]:
+            inputs = inputs.to(self.params["device"])
 
         probs = self.predict(inputs).cpu().detach().numpy().squeeze()
 
@@ -320,7 +323,6 @@ class Milieu(nn.Module):
                     targets = targets.to(self.params["device"])
 
                 # forward pass
-                print(inputs)
                 outputs = self.forward(inputs)
                 loss = self.loss(outputs, targets)
 
