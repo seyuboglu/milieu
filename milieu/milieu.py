@@ -1,5 +1,10 @@
+#!/usr/bin/env python
 """
-Implementation of Milieu mode as described in {TODO}
+Implementation of Milieu model as described in {TODO}.
+
+Includes:
+Milieu  a torch.nn.Module that implements a trainable Milieu model.
+MilieuDataset   a torch.util.data.Dataset that serves disease-protein associations
 """
 import os
 import json
@@ -23,15 +28,18 @@ from milieu.methods.method import DPPMethod
 from milieu.data.associations import load_diseases
 from milieu.metrics import compute_metrics
 from milieu.util import set_logger, load_mapping
-    
 
+__author__ = "Evan Sabri Eyuboglu"
+    
 class Milieu(nn.Module):
     """
-    T
+    Milieu model as described in {TODO}. 
+    Milieu training is parameterized by the self.params dictionary. The default dictionary
+    is updated with the params passed to __init__. 
     """
     default_params = {
         "cuda": True,
-        "device": [0],
+        "device": 0,
             
         "batch_size": 200,
         "num_workers": 4,
@@ -40,15 +48,23 @@ class Milieu(nn.Module):
         "optim_args": {
             "lr": 1e-1,
             "weight_decay": 0
-        }
+        }, 
+
+        "metric_configs": [
+            {
+                "name": "recall_at_25",
+                "fn": "batch_recall_at", 
+                "args": {"k":25}
+            }
+        ]
     }
 
     def __init__(self, network, params):
         """
         Milieu model as described in {TODO}. 
         args:
-            network (PPINetwork) 
-            params   (dict) 
+            network (PPINetwork) The PPINetwork to use. 
+            params   (dict) Params to update in default_params. 
         """
         super().__init__()
 
@@ -149,7 +165,23 @@ class Milieu(nn.Module):
     
     def discover(self, entrez_ids=None, genbank_ids=None, top_k=10):
         """
-        Get the top k predictions for a set of proteins
+        Get the top k proteins with the highest probability of association for a 
+        phenotype of interest. Must provide proteins known to be associated with the 
+        phenotype via either the entrez_ids or genbank_ids argument. 
+        args:
+            entrez_ids (iterable) a set of entrez ids representing proteins known to be 
+            associated with a phenotype of interest. Note: must provide either entrez_ids
+            or genbank ids, but not both. 
+
+            genbank_ids (iterable) a set of genbank ids representing proteins known to be
+            associated with a phenotype of interest. Note: must provide either entrez_ids 
+            or genbank ids, but not both. 
+
+            top_k (int) the number of predicted proteins to return
+        returns:
+            top_k_entrez/genbank    (list(tuple)) returns a list of tuples of the form
+            (entrez/genbank_id, probability of association). Includes top k predictions
+            with highest probability. 
         """
         if (entrez_ids is not None) == (genbank_ids is not None):
             raise ValueError("Must provide either Entrez ids or GenBank ids, not both.")
@@ -170,7 +202,7 @@ class Milieu(nn.Module):
 
         probs = self.predict(inputs).cpu().detach().numpy().squeeze()
 
-        # get predictions
+        # get top k predictions
         ranking = np.arange(len(self.network))[np.argsort(-probs)]
         top_k_nodes = []
         for node in ranking:
@@ -189,7 +221,6 @@ class Milieu(nn.Module):
             return list(zip(top_k_genbank, top_k_probs))
 
         return list(zip(top_k_entrez, top_k_probs))
-
 
     def loss(self, outputs, targets):
         """
@@ -216,10 +247,18 @@ class Milieu(nn.Module):
     
     def train_model(self, train_dataset, valid_dataset=None): 
         """
-        Train the Milieu model on data.
-        Collects metrics on the validation set. Saves
-        weights on every epoch, denoting the best iteration by some specified
-        metric.
+        Train the Milieu model on train_dataset. Parameters for training including
+        "num_epochs" and "optimizer_class" should be specified in the params dict 
+        passed in at __init__.  Optionally validate the model on a validation dataset
+        on each epoch. Computes metrics specified in params["metric_configs"] on each
+        epoch. 
+        args:
+            train_dataset (MilieuDataset) A milieu dataset of training diseases
+            valid_dataset (MilieuDataset) A milieu dataset of validatio diseases
+        returns:
+            train_metrics   (list(dict)) train_metrics[i] is a dictionary mapping metric
+            names to their values on epoch i
+            valid_metrics   (list(dict)) like train_metrics but for validation metrics 
         """
         logging.info(f'Starting training for {self.params["num_epochs"]} epoch(s)')
 
@@ -254,12 +293,17 @@ class Milieu(nn.Module):
                 metrics = self.score(valid_dataloader)
                 valid_metrics.append(metrics)
 
-        return  train_metrics, valid_metrics if validate else train_metrics
+        return train_metrics, valid_metrics if validate else train_metrics
 
     def _train_epoch(self, dataloader, metric_configs=[]):
         """ Train the model for one epoch
-        Args:
-            train_data  (DataLoader)
+        args:
+            train_data  (DataLoader) A dataloader wrapping a MilieuDataset
+            metric_configs  (list(dict)) A list of metric configuration dictionary. Each
+            config dict should include "name", "fn", and "args". "fn" should be the name
+            of a function in milieu.metrics. See default params for an example. 
+        return:
+            metrics (dict)  Dictionary mapping metric "name" to value. 
         """
         logging.info("Training")
 
@@ -272,10 +316,11 @@ class Milieu(nn.Module):
         with tqdm(total=len(dataloader)) as t:
             for i, (inputs, targets) in enumerate(dataloader):
                 if self.params["cuda"]:
-                    inputs.to(self.params["device"])
-                    targets.to(self.params["device"])
+                    inputs = inputs.to(self.params["device"])
+                    targets = targets.to(self.params["device"])
 
                 # forward pass
+                print(inputs)
                 outputs = self.forward(inputs)
                 loss = self.loss(outputs, targets)
 
@@ -303,7 +348,15 @@ class Milieu(nn.Module):
         return metrics
     
     def score(self, dataloader, metric_configs=[]):
-        """
+        """ Evaluate the model on the data in dataloader and the metrics in 
+            metric_configs.
+        args:
+            train_data  (DataLoader) A dataloader wrapping a MilieuDataset
+            metric_configs  (list(dict)) A list of metric configuration dictionary. Each
+            config dict should include "name", "fn", and "args". See default params for
+            example. 
+        return:
+            metrics (dict)  Dictionary mapping metric "name" to value. 
         """
         logging.info("Validation")
         self.eval()
@@ -319,8 +372,8 @@ class Milieu(nn.Module):
             for i, (inputs, targets) in enumerate(dataloader):
                 # move to GPU if available
                 if self.params["cuda"]:
-                    inputs.to(self.params["device"])
-                    targets.to(self.params["device"])
+                    inputs = inputs.to(self.params["device"])
+                    targets = targets.to(self.params["device"])
 
                 # forward pass
                 probs = self.predict(inputs)
@@ -335,22 +388,67 @@ class Milieu(nn.Module):
         return metrics
     
     def _build_optimizer(self,
-                         optim_class="Adam", optim_args={},
-                         scheduler_class=None, scheduler_args={}):
+                         optim_class="Adam", optim_args={}):
         """
+        Build the optimizer. 
+        args:
+            optim_class (str) The name of an optimizer class from torch.optim
+            opteim_args (args) The args for the optimizer
         """
         optim_class = getattr(optim, self.params["optim_class"])
         self.optimizer = optim_class(self.parameters(), **self.params["optim_args"])
+    
+    def save_weights(self, destination):
+        """
+        Save the model weights. 
+        args:
+            destination (str)   path where to save weights
+        """
+        torch.save(self.state_dict(), destination)
+
+    def load_weights(self, src_path):
+        """
+        Load model weights. 
+        args:
+            src_path (str) path to the weights files.
+            substitution_res (list(tuple(str, str))) list of tuples like
+                    (regex_pattern, replacement). re.sub is called on each key in the dict
+        """
+        if self.params["cuda"]:
+            src_state_dict = torch.load(src_path, 
+                                        map_location=torch.device(self.params["device"]))
+        else:
+            src_state_dict = torch.load(src_path)
+
+        self.load_state_dict(src_state_dict, strict=False)
+        n_loaded_params = len(set(self.state_dict().keys()) & set(src_state_dict.keys()))
+        n_tot_params = len(src_state_dict.keys())
+        if n_loaded_params < n_tot_params:
+            logging.info("Could not load these parameters due to name mismatch: " +
+                         f"{set(src_state_dict.keys()) - set(self.state_dict().keys())}")
+        logging.info(f"Loaded {n_loaded_params}/{n_tot_params} pretrained parameters " +
+                     f"from {src_path}.")
 
 
 class MilieuDataset(Dataset):
-    """
-    """
+
     def __init__(self, network, diseases=None, diseases_path=None, frac_known=0.9):
         """
+        PyTorch dataset that holds disease-protein association sets and serves them to the 
+        Milieu for training. During training we simulate disease protein discovery by 
+        splitting each association set into an input set and a target set. Each time we
+        access an association set from this dataset we randomly sample 90% of associations 
+        for the input set and use the remaining 10% for the target set. See Methods. 
+        args:
+            network (PPINetwork)    PPINetwork being used by the Milieu model
+            diseases    (list(Disease)) list of milieu.data.associations.Disease. Note:
+            must provide either diseases or diseases_path but not both. 
+            diseases_path (str) a path to a csv file of disease associations readable by 
+            load_diseases. Note: must provide either diseases or diseases_path.
+            frac_known  (float)   fraction of each association set used for input set and
+            target set. 
         """
-        if((diseases is None and diseases_path is None) or
-           (diseases is not None and diseases_path is not None)):
+        if(diseases is not None) == (diseases_path is not None):
             raise ValueError("Must provide either a list of Diseases or a path to " + 
                              "a *.csv of disease associations readable by load_diseases.")
         
@@ -365,19 +463,24 @@ class MilieuDataset(Dataset):
         self.frac_known = frac_known
     
     def __len__(self):
-        """ 
-        Returns the size of the dataset.
-        """
+        """ Returns the size of the dataset."""
         return len(self.examples)
     
     def get_ids(self):
-        """
-        Returns a set of all the disease ids in
-        dataset.
-        """
+        """ Get the set of all the disease ids in the dataset."""
         return set([disease["id"] for disease in self.examples])
 
     def __getitem__(self, idx):
+        """
+        Get an association split into an input and target set as described in Methods. 
+        args:
+            idx (int) The index of the association set in the dataset. 
+        returns:
+            inputs (torch.Tensor) an (n,) binary torch tensor indicating the proteins in
+            the input set.
+            targets (torch.Tensor) an (n,) binary torch tensor indicating the proteins in
+            the target set.
+        """
         nodes = self.examples[idx]["nodes"]
         np.random.shuffle(nodes)
         split = int(self.frac_known * len(nodes))
@@ -385,12 +488,12 @@ class MilieuDataset(Dataset):
         known_nodes = nodes[:split]
         hidden_nodes = nodes[split:]
 
-        X = torch.zeros(self.n, dtype=torch.float)
-        X[known_nodes] = 1
-        Y = torch.zeros(self.n, dtype=torch.float) 
-        Y[hidden_nodes] = 1
+        inputs = torch.zeros(self.n, dtype=torch.float)
+        inputs[known_nodes] = 1
+        targets = torch.zeros(self.n, dtype=torch.float) 
+        targets[hidden_nodes] = 1
 
         # ensure no data leakage
-        assert(torch.dot(X, Y) == 0)
+        assert(torch.dot(inputs, targets) == 0)
 
-        return X, Y
+        return inputs, targets

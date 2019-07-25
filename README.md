@@ -2,8 +2,9 @@
 
 *Sabri Eyuboglu, Marinka Zitnik and Jure Leskovec*
 
-Implementations of several network-based disease protein prediction methods including Learned Common Interactors (LCI). Includes harnesses for disease protein prediction experiments as well as Jupyter notebooks detailing the experiments described in our paper. 
+This repository includes our implementation *Milieu*, a disease protein discovery algorithm that uncovers novel disease-protein associations *in silico* by leveraging the mutal interators between proteins already known to be associated with the disease. For a detailed description of the algorithm, please see our [paper](TODO).  
 
+We also include software for replicating the experiments referenced in the paper. Each experiment has a designated class in the `milieu/experiment' module. We also provide implementations of several baseline network-based disease protein prediction methods, including DIAMOnD, Random Walks and Graph Neural Networks.
 
 
 ## Setup
@@ -27,13 +28,30 @@ Install package (`-e` for development mode)
 pip install -e .
 ```
 
-### Jupyter Notebooks
+## Using *Milieu*
+See Jupyter Notebook. 
+
+
+## Replicating Experiments
+
+### disease-significance
+
+### disease_subgraph
+
+### dpp_evaluate
+
+### dpp_predict
+
+### go_enrichment
+
+### lci_anlaysis
+
+### protein_significance
 
 
 
 
-
-#### Directory
+## Directory
 
 - *data* - all of the data for the project
   - *associations* - datasets of disease protein associations each stored in a *.csv* 
