@@ -1,0 +1,34 @@
+{
+    "process": "protein_significance",
+    "process_params":
+        {
+            "n_processes": 1,
+            "ppi_network": "data/networks/bio-pathways-network.txt",
+            "diseases_path": "data/associations/drugbank-associations.csv",
+            "disease_subset": [],
+
+            "ppi_matrices": {"mi": "data/network_matrices/mi"},
+            "metric_fns": ["frac_direct_interactions",
+                           "common_interactor_score"],
+
+            "n_random_nodes": 1000,
+            "min_bucket_len": 250,
+
+            "plots_to_params": {
+                "pvalue_comparison": {
+                    "plot_fn": "plot_full_distribution",
+                    "metrics": ["common_interactor_score_pvalue", 
+                                "frac_direct_interactions_pvalue"],
+                    "plot_type": "bar",
+                    "yscale": "log",
+                    "xlabel": "p-value",
+                    "bins": 49,
+                    "xmin": 0.0,
+                    "xmax": 0.1
+                }
+            },
+            
+            "plot_palette": ["#E03C3F", "lightgrey"],
+            "plot_font": "AppleGothic"
+        }
+}

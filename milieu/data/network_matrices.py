@@ -10,7 +10,7 @@ import numpy as np
 import networkx as nx
 from scipy.sparse import csr_matrix
 
-from milieu.process import Process
+from milieu.run import Process
 from milieu.data.network import PPINetwork
 
 

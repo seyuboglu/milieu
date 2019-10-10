@@ -6,7 +6,7 @@ import pandas as pd
 import networkx as nx
 from goatools.obo_parser import GODag
 
-from milieu.util import load_mapping
+from milieu.util.util import load_mapping
 
 class Disease: 
     """

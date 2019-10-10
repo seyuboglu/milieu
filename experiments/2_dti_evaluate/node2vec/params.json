@@ -1,0 +1,21 @@
+{
+    "process": "dpp_evaluate",
+    "process_params": {
+        "n_processes": 1, 
+
+        "ppi_network": "data/networks/bio-pathways-network.txt",
+        "remove_nodes": 0,
+        "remove_edges": 0.1,
+        "disease_path": "data/associations/drugbank-associations.csv",
+        "disease_subset": [],
+        
+        "n_folds": 10,
+
+        "method_class": "LogisticRegression",
+        "method_params": { 
+            "l2_reg": 1.0,
+            "features_path": "data/embeddings/biopathways-n2v-q1-p1-d128.txt"
+        }
+    }
+  
+}

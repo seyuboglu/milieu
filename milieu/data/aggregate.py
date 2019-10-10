@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 
 from milieu.data.associations import load_diseases
-from milieu.process import Process
+from milieu.run import Process
 
 
 class Aggregate(Process):

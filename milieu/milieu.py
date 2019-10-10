@@ -24,13 +24,14 @@ from tqdm import tqdm
 from scipy.sparse import coo_matrix, csr_matrix
 import parse
 
-from milieu.methods.method import DPPMethod
+from milieu.paper.methods.method import DPPMethod
 from milieu.data.associations import load_diseases
-from milieu.metrics import compute_metrics
-from milieu.util import set_logger, load_mapping
+from milieu.util.metrics import compute_metrics
+from milieu.util.util import set_logger, load_mapping
 
 __author__ = "Evan Sabri Eyuboglu"
     
+
 class Milieu(nn.Module):
     """
     Milieu model as described in {TODO}. 
@@ -54,7 +55,7 @@ class Milieu(nn.Module):
             {
                 "name": "recall_at_25",
                 "fn": "batch_recall_at", 
-                "args": {"k":25}
+                "args": {"k": 25}
             }
         ]
     }
@@ -79,7 +80,7 @@ class Milieu(nn.Module):
         self.network = network
         self.adj_matrix = network.adj_matrix 
 
-        self.genbank_to_entrez = load_mapping("data/protein/genbank_to_entrez.txt",
+        self.genbank_to_entrez = load_mapping("data/protein_attrs/genbank_to_entrez.txt",
                                               b_transform=int, delimiter='\t')
         self.entrez_to_genbank = {entrez: genbank 
                                   for genbank, entrez in self.genbank_to_entrez.items()}

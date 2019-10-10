@@ -1,0 +1,18 @@
+{
+    "process": "dpp_evaluate",
+    "process_params": {
+        "n_processes": 100,
+        "ppi_network": "data/networks/bio-pathways-network.txt",
+        "disease_path": "data/associations/drugbank-associations.csv",
+        "disease_subset": [],
+        
+        "n_folds": 10,
+        
+        "method_class": "MatrixFactorization",
+        "method_params": { 
+            "rank": 50, 
+            "max_iter": 12, 
+            "rel_error": 1e-5
+        }
+    }
+}

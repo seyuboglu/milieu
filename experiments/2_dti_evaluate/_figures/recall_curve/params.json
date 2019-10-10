@@ -1,0 +1,25 @@
+{
+    "process": "recall_curve",
+    "process_params":
+        {
+            "diseases_path": "data/drug/drugbank-associations-all.csv",
+
+            "method_exp_dirs": {"Milieu": "experiments/dti_evaluate/lci/search/candidates/exp_6",
+                                "Matrix Factorization": "experiments/dti_evaluate/matrix_factorization",
+                                "GCN": "experiments/dti_evaluate/gcn",
+                                "Random Walk": "experiments/dti_evaluate/random_walk", 
+                                "node2vec": "experiments/dti_evaluate/node2vec",
+                                "Direct Neighbor": "experiments/dti_evaluate/direct_neighbor"
+                            },
+
+            "primary": "",
+            "length": 150, 
+            "thresholds": [], 
+            "offset": 0.003,
+            "by_disease": true,
+            "title": false,
+
+            "plot_palette": ["#E03C3F", "#FF9300", "#F8BA00", "#CB297B", "#6178A8", "#56C1FF"],
+            "plot_font": "AppleGothic"
+        }
+}
