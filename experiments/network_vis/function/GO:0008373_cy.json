@@ -1,0 +1,1051 @@
+{
+    "elements": {
+        "nodes": [
+            {
+                "data": {
+                    "role": "seed",
+                    "id": "5614",
+                    "entrez": "8128",
+                    "genbank": "ST8SIA2",
+                    "normalized_milieu_weight": 1.0
+                }
+            },
+            {
+                "data": {
+                    "role": "seed",
+                    "id": "7352",
+                    "entrez": "10402",
+                    "genbank": "ST3GAL6",
+                    "normalized_milieu_weight": 1.0
+                }
+            },
+            {
+                "data": {
+                    "role": "seed",
+                    "id": "6129",
+                    "entrez": "8869",
+                    "genbank": "ST3GAL5",
+                    "normalized_milieu_weight": 1.0
+                }
+            },
+            {
+                "data": {
+                    "role": "seed",
+                    "id": "12691",
+                    "entrez": "51046",
+                    "genbank": "ST8SIA3",
+                    "normalized_milieu_weight": 1.0
+                }
+            },
+            {
+                "data": {
+                    "role": "seed",
+                    "id": "18727",
+                    "entrez": "84620",
+                    "genbank": "ST6GAL2",
+                    "normalized_milieu_weight": 1.0
+                }
+            },
+            {
+                "data": {
+                    "role": "seed",
+                    "id": "4534",
+                    "entrez": "6480",
+                    "genbank": "ST6GAL1",
+                    "normalized_milieu_weight": 1.0
+                }
+            },
+            {
+                "data": {
+                    "role": "seed",
+                    "id": "4536",
+                    "entrez": "6482",
+                    "genbank": "ST3GAL1",
+                    "normalized_milieu_weight": 1.0
+                }
+            },
+            {
+                "data": {
+                    "role": "seed",
+                    "id": "4537",
+                    "entrez": "6483",
+                    "genbank": "ST3GAL2",
+                    "normalized_milieu_weight": 1.0
+                }
+            },
+            {
+                "data": {
+                    "role": "seed",
+                    "id": "4538",
+                    "entrez": "6484",
+                    "genbank": "ST3GAL4",
+                    "normalized_milieu_weight": 1.0
+                }
+            },
+            {
+                "data": {
+                    "role": "seed",
+                    "id": "7524",
+                    "entrez": "10610",
+                    "genbank": "ST6GALNAC2",
+                    "normalized_milieu_weight": 1.0
+                }
+            },
+            {
+                "data": {
+                    "role": "seed",
+                    "id": "21085",
+                    "entrez": "256435",
+                    "genbank": "ST6GALNAC3",
+                    "normalized_milieu_weight": 1.0
+                }
+            },
+            {
+                "data": {
+                    "role": "seed",
+                    "id": "5527",
+                    "entrez": "7903",
+                    "genbank": "ST8SIA4",
+                    "normalized_milieu_weight": 1.0
+                }
+            },
+            {
+                "data": {
+                    "role": "seed",
+                    "id": "11856",
+                    "entrez": "30815",
+                    "genbank": "ST6GALNAC6",
+                    "normalized_milieu_weight": 1.0
+                }
+            },
+            {
+                "data": {
+                    "role": "pred",
+                    "id": "4539",
+                    "entrez": "6487",
+                    "genbank": "ST3GAL3",
+                    "normalized_milieu_weight": 1.0
+                }
+            },
+            {
+                "data": {
+                    "role": "pred",
+                    "id": "5995",
+                    "entrez": "8704",
+                    "genbank": "B4GALT2",
+                    "normalized_milieu_weight": 1.0
+                }
+            },
+            {
+                "data": {
+                    "role": "pred",
+                    "id": "1834",
+                    "entrez": "2683",
+                    "genbank": "B4GALT1",
+                    "normalized_milieu_weight": 1.0
+                }
+            },
+            {
+                "data": {
+                    "role": "pred",
+                    "id": "6450",
+                    "entrez": "9334",
+                    "genbank": "B4GALT5",
+                    "normalized_milieu_weight": 1.0
+                }
+            },
+            {
+                "data": {
+                    "role": "pred",
+                    "id": "20147",
+                    "entrez": "374907",
+                    "genbank": "B3GNT8",
+                    "normalized_milieu_weight": 1.0
+                }
+            },
+            {
+                "data": {
+                    "role": "mutual_interactor",
+                    "id": "5994",
+                    "entrez": "8703",
+                    "genbank": "B4GALT3",
+                    "normalized_milieu_weight": 0.18495818972587585
+                }
+            },
+            {
+                "data": {
+                    "role": "mutual_interactor",
+                    "id": "1717",
+                    "entrez": "2523",
+                    "genbank": "FUT1",
+                    "normalized_milieu_weight": 0.3630613386631012
+                }
+            },
+            {
+                "data": {
+                    "role": "mutual_interactor",
+                    "id": "7306",
+                    "entrez": "10331",
+                    "genbank": "B3GNT3",
+                    "normalized_milieu_weight": 0.21199287474155426
+                }
+            },
+            {
+                "data": {
+                    "role": "mutual_interactor",
+                    "id": "7839",
+                    "entrez": "11041",
+                    "genbank": "B4GAT1",
+                    "normalized_milieu_weight": 0.3126688301563263
+                }
+            },
+            {
+                "data": {
+                    "role": "mutual_interactor",
+                    "id": "21169",
+                    "entrez": "257202",
+                    "genbank": "GPX6",
+                    "normalized_milieu_weight": 0.1929757297039032
+                }
+            },
+            {
+                "data": {
+                    "role": "mutual_interactor",
+                    "id": "19637",
+                    "entrez": "93010",
+                    "genbank": "B3GNT7",
+                    "normalized_milieu_weight": 0.40316301584243774
+                }
+            },
+            {
+                "data": {
+                    "role": "mutual_interactor",
+                    "id": "7580",
+                    "entrez": "10678",
+                    "genbank": "B3GNT2",
+                    "normalized_milieu_weight": 0.20650197565555573
+                }
+            },
+            {
+                "data": {
+                    "role": "mutual_interactor",
+                    "id": "17439",
+                    "entrez": "79369",
+                    "genbank": "B3GNT4",
+                    "normalized_milieu_weight": 0.36042138934135437
+                }
+            },
+            {
+                "data": {
+                    "role": "mutual_interactor",
+                    "id": "6389",
+                    "entrez": "9245",
+                    "genbank": "GCNT3",
+                    "normalized_milieu_weight": 0.3136043846607208
+                }
+            },
+            {
+                "data": {
+                    "role": "mutual_interactor",
+                    "id": "3992",
+                    "entrez": "5727",
+                    "genbank": "PTCH1",
+                    "normalized_milieu_weight": 0.11412400007247925
+                }
+            },
+            {
+                "data": {
+                    "role": "mutual_interactor",
+                    "id": "3767",
+                    "entrez": "5445",
+                    "genbank": "PON2",
+                    "normalized_milieu_weight": 0.11802288144826889
+                }
+            },
+            {
+                "data": {
+                    "role": "mutual_interactor",
+                    "id": "3203",
+                    "entrez": "4684",
+                    "genbank": "NCAM1",
+                    "normalized_milieu_weight": 0.1891036182641983
+                }
+            },
+            {
+                "data": {
+                    "role": "mutual_interactor",
+                    "id": "252",
+                    "entrez": "351",
+                    "genbank": "APP",
+                    "normalized_milieu_weight": 0.01691080443561077
+                }
+            },
+            {
+                "data": {
+                    "role": "mutual_interactor",
+                    "id": "1810",
+                    "entrez": "2650",
+                    "genbank": "GCNT1",
+                    "normalized_milieu_weight": 0.4131016731262207
+                }
+            },
+            {
+                "data": {
+                    "role": "mutual_interactor",
+                    "id": "12886",
+                    "entrez": "51301",
+                    "genbank": "GCNT4",
+                    "normalized_milieu_weight": 0.5501221418380737
+                }
+            },
+            {
+                "data": {
+                    "role": "mutual_interactor",
+                    "id": "14615",
+                    "entrez": "56913",
+                    "genbank": "C1GALT1",
+                    "normalized_milieu_weight": 0.36292240023612976
+                }
+            },
+            {
+                "data": {
+                    "role": "mutual_interactor",
+                    "id": "14270",
+                    "entrez": "55808",
+                    "genbank": "ST6GALNAC1",
+                    "normalized_milieu_weight": 0.5502821803092957
+                }
+            }
+        ],
+        "edges": [
+            {
+                "data": {
+                    "source": "3203",
+                    "target": "5527",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "3203",
+                    "target": "5614",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "3203",
+                    "target": "12691",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "7306",
+                    "target": "1834",
+                    "roles": "mutual_interactor-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "7306",
+                    "target": "4536",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "7306",
+                    "target": "4537",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "7306",
+                    "target": "4538",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "7306",
+                    "target": "4539",
+                    "roles": "mutual_interactor-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "7306",
+                    "target": "5995",
+                    "roles": "mutual_interactor-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "7306",
+                    "target": "6450",
+                    "roles": "mutual_interactor-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "1810",
+                    "target": "4536",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "1810",
+                    "target": "4537",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "1810",
+                    "target": "4538",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "5527",
+                    "target": "3992",
+                    "roles": "seed-mutual_interactor"
+                }
+            },
+            {
+                "data": {
+                    "source": "3992",
+                    "target": "1834",
+                    "roles": "mutual_interactor-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "3992",
+                    "target": "4538",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "3992",
+                    "target": "7352",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "3992",
+                    "target": "21085",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "14615",
+                    "target": "4536",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "14615",
+                    "target": "4537",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "14615",
+                    "target": "4538",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "7580",
+                    "target": "1834",
+                    "roles": "mutual_interactor-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "7580",
+                    "target": "4536",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "7580",
+                    "target": "4537",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "7580",
+                    "target": "4538",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "7580",
+                    "target": "4539",
+                    "roles": "mutual_interactor-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "7580",
+                    "target": "5995",
+                    "roles": "mutual_interactor-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "7580",
+                    "target": "6450",
+                    "roles": "mutual_interactor-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "7839",
+                    "target": "1834",
+                    "roles": "mutual_interactor-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "7839",
+                    "target": "4536",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "7839",
+                    "target": "4537",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "7839",
+                    "target": "4538",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "7839",
+                    "target": "4539",
+                    "roles": "mutual_interactor-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "7839",
+                    "target": "5995",
+                    "roles": "mutual_interactor-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "7839",
+                    "target": "6450",
+                    "roles": "mutual_interactor-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "17439",
+                    "target": "1834",
+                    "roles": "mutual_interactor-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "17439",
+                    "target": "4536",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "17439",
+                    "target": "4537",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "17439",
+                    "target": "4538",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "17439",
+                    "target": "4539",
+                    "roles": "mutual_interactor-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "17439",
+                    "target": "5995",
+                    "roles": "mutual_interactor-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "17439",
+                    "target": "6450",
+                    "roles": "mutual_interactor-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "1834",
+                    "target": "3767",
+                    "roles": "pred-mutual_interactor"
+                }
+            },
+            {
+                "data": {
+                    "source": "1834",
+                    "target": "4534",
+                    "roles": "pred-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "1834",
+                    "target": "4536",
+                    "roles": "pred-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "1834",
+                    "target": "4537",
+                    "roles": "pred-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "1834",
+                    "target": "4538",
+                    "roles": "pred-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "1834",
+                    "target": "4539",
+                    "roles": "pred-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "1834",
+                    "target": "6389",
+                    "roles": "pred-mutual_interactor"
+                }
+            },
+            {
+                "data": {
+                    "source": "1834",
+                    "target": "19637",
+                    "roles": "pred-mutual_interactor"
+                }
+            },
+            {
+                "data": {
+                    "source": "1834",
+                    "target": "20147",
+                    "roles": "pred-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "1834",
+                    "target": "21169",
+                    "roles": "pred-mutual_interactor"
+                }
+            },
+            {
+                "data": {
+                    "source": "21169",
+                    "target": "4536",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "21169",
+                    "target": "4537",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "21169",
+                    "target": "4538",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "21169",
+                    "target": "4539",
+                    "roles": "mutual_interactor-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "21169",
+                    "target": "5995",
+                    "roles": "mutual_interactor-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "21169",
+                    "target": "6450",
+                    "roles": "mutual_interactor-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "6450",
+                    "target": "4534",
+                    "roles": "pred-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "6450",
+                    "target": "4536",
+                    "roles": "pred-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "6450",
+                    "target": "4537",
+                    "roles": "pred-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "6450",
+                    "target": "4538",
+                    "roles": "pred-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "6450",
+                    "target": "4539",
+                    "roles": "pred-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "6450",
+                    "target": "6389",
+                    "roles": "pred-mutual_interactor"
+                }
+            },
+            {
+                "data": {
+                    "source": "6450",
+                    "target": "19637",
+                    "roles": "pred-mutual_interactor"
+                }
+            },
+            {
+                "data": {
+                    "source": "6450",
+                    "target": "20147",
+                    "roles": "pred-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "20147",
+                    "target": "4536",
+                    "roles": "pred-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "20147",
+                    "target": "4537",
+                    "roles": "pred-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "20147",
+                    "target": "4538",
+                    "roles": "pred-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "20147",
+                    "target": "4539",
+                    "roles": "pred-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "20147",
+                    "target": "5994",
+                    "roles": "pred-mutual_interactor"
+                }
+            },
+            {
+                "data": {
+                    "source": "20147",
+                    "target": "5995",
+                    "roles": "pred-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "1717",
+                    "target": "4534",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "1717",
+                    "target": "4539",
+                    "roles": "mutual_interactor-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "4534",
+                    "target": "4539",
+                    "roles": "seed-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "4534",
+                    "target": "5994",
+                    "roles": "seed-mutual_interactor"
+                }
+            },
+            {
+                "data": {
+                    "source": "4534",
+                    "target": "5995",
+                    "roles": "seed-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "19637",
+                    "target": "4536",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "19637",
+                    "target": "4537",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "19637",
+                    "target": "4538",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "19637",
+                    "target": "4539",
+                    "roles": "mutual_interactor-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "19637",
+                    "target": "5995",
+                    "roles": "mutual_interactor-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "4536",
+                    "target": "5994",
+                    "roles": "seed-mutual_interactor"
+                }
+            },
+            {
+                "data": {
+                    "source": "4536",
+                    "target": "5995",
+                    "roles": "seed-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "4536",
+                    "target": "6389",
+                    "roles": "seed-mutual_interactor"
+                }
+            },
+            {
+                "data": {
+                    "source": "4536",
+                    "target": "12886",
+                    "roles": "seed-mutual_interactor"
+                }
+            },
+            {
+                "data": {
+                    "source": "4536",
+                    "target": "14270",
+                    "roles": "seed-mutual_interactor"
+                }
+            },
+            {
+                "data": {
+                    "source": "7352",
+                    "target": "252",
+                    "roles": "seed-mutual_interactor"
+                }
+            },
+            {
+                "data": {
+                    "source": "7352",
+                    "target": "3767",
+                    "roles": "seed-mutual_interactor"
+                }
+            },
+            {
+                "data": {
+                    "source": "4537",
+                    "target": "5994",
+                    "roles": "seed-mutual_interactor"
+                }
+            },
+            {
+                "data": {
+                    "source": "4537",
+                    "target": "5995",
+                    "roles": "seed-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "4537",
+                    "target": "6389",
+                    "roles": "seed-mutual_interactor"
+                }
+            },
+            {
+                "data": {
+                    "source": "4537",
+                    "target": "12886",
+                    "roles": "seed-mutual_interactor"
+                }
+            },
+            {
+                "data": {
+                    "source": "4537",
+                    "target": "14270",
+                    "roles": "seed-mutual_interactor"
+                }
+            },
+            {
+                "data": {
+                    "source": "4538",
+                    "target": "5994",
+                    "roles": "seed-mutual_interactor"
+                }
+            },
+            {
+                "data": {
+                    "source": "4538",
+                    "target": "5995",
+                    "roles": "seed-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "4538",
+                    "target": "6389",
+                    "roles": "seed-mutual_interactor"
+                }
+            },
+            {
+                "data": {
+                    "source": "4538",
+                    "target": "12886",
+                    "roles": "seed-mutual_interactor"
+                }
+            },
+            {
+                "data": {
+                    "source": "4538",
+                    "target": "14270",
+                    "roles": "seed-mutual_interactor"
+                }
+            },
+            {
+                "data": {
+                    "source": "4539",
+                    "target": "5994",
+                    "roles": "pred-mutual_interactor"
+                }
+            },
+            {
+                "data": {
+                    "source": "4539",
+                    "target": "5995",
+                    "roles": "pred-pred"
+                }
+            },
+            {
+                "data": {
+                    "source": "3767",
+                    "target": "21085",
+                    "roles": "mutual_interactor-seed"
+                }
+            },
+            {
+                "data": {
+                    "source": "11856",
+                    "target": "252",
+                    "roles": "seed-mutual_interactor"
+                }
+            },
+            {
+                "data": {
+                    "source": "5995",
+                    "target": "6389",
+                    "roles": "pred-mutual_interactor"
+                }
+            }
+        ]
+    }
+}
