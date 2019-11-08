@@ -7,6 +7,9 @@ This repository includes our PyTorch implementation of *Milieu*, a disease prote
 We also include software for replicating the experiments referenced in the paper. Each experiment has a designated class in the `milieu/experiment' module. We also provide implementations of several baseline network-based disease protein prediction methods, including DIAMOnD, Random Walks and Graph Neural Networks.
 
 
+<p align="center">
+<img src="https://github.com/seyuboglu/milieu/blob/master/data/images/model.png" width="600" align="center">
+</p>
 
 ## Setup
 
