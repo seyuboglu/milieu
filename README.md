@@ -1,10 +1,11 @@
-# Network-based Disease Protein Prediction
+# Mutual Interactors: A network-based machine 
 
 *Sabri Eyuboglu, Marinka Zitnik and Jure Leskovec*
 
 This repository includes our PyTorch implementation of *Milieu*, a disease protein discovery algorithm that uncovers novel disease-protein associations *in silico* by leveraging the mutal interators between proteins already known to be associated with the disease. For a detailed description of the algorithm, please see our [paper](TODO).  
 
 We also include software for replicating the experiments referenced in the paper. Each experiment has a designated class in the `milieu/experiment' module. We also provide implementations of several baseline network-based disease protein prediction methods, including DIAMOnD, Random Walks and Graph Neural Networks.
+
 
 
 ## Setup
