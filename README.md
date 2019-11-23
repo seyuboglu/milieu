@@ -52,9 +52,9 @@ Each experiment has a designated class in the `milieu/experiment` module. For ex
 
 To run an experiment, we construct an instance of an experiment class. The constructor accepts an experiment directory (`dir`) where parameters, logs and results will be stored and a parameter dictionary (`params`). Then we call the `run()` method on the experiment object.
 
- We've included the experiment directories and parameters for all of the experiments we ran. These can be found under the  `experiments` directory. For example, the parameters we used to evaluate the performance of Random Walks on the task of protein function prediction with the human PPI Network can be found at `experiments/3_go_evaluate/species_9606/function/random_walk/params.json`. Similarly, the results from this experiment can be found at `experiments/3_go_evaluate/species_9606/function/random_walk/metrics.csv`. 
+We've included the experiment directories and parameters for all of the experiments we ran. These can be found under the  `experiments` directory. For example, the parameters we used to evaluate the performance of Random Walks on the task of protein function prediction with the human PPI Network can be found at `experiments/3_go_evaluate/species_9606/function/random_walk/params.json`. Similarly, the results from this experiment can be found at `experiments/3_go_evaluate/species_9606/function/random_walk/metrics.csv`. 
 
- We can easily re-run any of the experiments from the command line with the `run` command. The `run` command accepts one argument: an experiment directory containing a parameter 
+We can easily re-run any of the experiments from the command line with the `run` command. The `run` command accepts one argument: an experiment directory containing a parameter 
 
 
 ### 1) `EvaluateMethod`
