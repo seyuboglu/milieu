@@ -4,7 +4,7 @@
 
 This repository includes our PyTorch implementation of *Mutual Interactors*, a machine learning algorithm for node set expansion in large networks. The algorithm is motivated by the structure of disease-associated proteins, drug targets and protein functions in molecular networks, and can be used to  predict molecular phenotypes *in silico*. For a detailed description of the algorithm, please see our [paper](TODO).  
 
-We include software for easily reproducing *all* the experiments described in the paper. Each experiment has a designated class in the `milieu/experiment` module. We also provide implementations of several baseline network-based disease protein prediction methods, including DIAMOnD, Random Walks and Graph Neural Networks.
+We include software for easily **reproducing** *all* the experiments described in the paper. Each experiment has a designated class in the `milieu/experiment` module. We also provide implementations of several baseline network-based disease protein prediction methods, including DIAMOnD, Random Walks and Graph Neural Networks.
 
 
 <p align="center">
@@ -116,14 +116,21 @@ run experiments/3_go_evaluate/species_9606/function/random_walk
 
 
 ### 2) `NodeSignificance`
+Evaluate the statistical significance of a network structure in a dataset of node sets (e.g. disease pathways). Uses permutation tests to compute $p$-values (See **Evaluating the statistical significance of network structures** in Methods.)
+<p align="center">
+<img src="https://github.com/seyuboglu/milieu/blob/master/data/images/node_significance.png" width="300" align="center">
+</p>
 
-### 3) `SetSignificance` 
+*Required parameters*: `network`, `associations_path`, `metric_fns`, `network_matrices`, `n_random_nodes`, `min_bucket_len`
 
-### 4) `GOEnrichment`
+*Experiment directories*: the directories containing the parameters we used when running experiments for our study
+- `experiments/4_protein_significance/disease`: evaluate statistical significance of mutual interactor scores and direct interactor scores for proteins in the same disease pathway (*Used for*: Fig. 1d) 
+- `experiments/4_protein_significance/drug`: evaluate statistical significance of mutual interactor scores and direct interactor scores for proteins targetted by the same drug (*Used for*: Fig. 3a) 
+- `experiments/4_protein_significance/go`: evaluate statistical significance of mutual interactor scores and direct interactor scores for proteins with the same function (*Used for*: Extended Fig. 1a, Extended Fig. 2a) 
 
-### 5) `Network Robustness`
+### 3) `Network Robustness`
 
-### 6) `MilieuAnalysis`
+### 4) `MilieuAnalysis`
 
 
 
