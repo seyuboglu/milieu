@@ -1,0 +1,3 @@
+disease_id,disease_name,gene_entrez_ids,splits
+0,adjective,"dear,right,red,lost,light,happy,white,agreeable,best,late,young,dark,strange,kind,miserable,fancy,natural,beautiful,poor,little,general,certain,common,hard,new,usual,strong,greater,short,early,small,round,full,bad,pleasant,low,quiet,whole,alone,wrong,black,better,perfect,same,true,ready,good,old,pretty,large,first,bright,long,great,open,other,glad,possible",9
+1,noun,"man,something,time,woman,name,boy,head,friend,anything,bed,money,nothing,eye,place,year,arm,letter,child,mother,moment,world,day,home,aunt,thought,night,voice,manner,room,side,evening,morning,word,person,hand,master,mind,state,hope,love,face,air,fire,part,house,half,door,heart,family,course,work,way,life,thing",9

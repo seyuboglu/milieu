@@ -1,0 +1,9 @@
+{
+    "process_fn": "generate_dream_network",
+    "process_params": {
+        "process_dir": "data/networks/signaling",
+        "corr_threshold": 0,
+        "dream_path": "data/networks/signaling/3_signal_omnipath_directed_v3.txt",
+        "symbol_to_entrez": "data/protein/symbol_to_entrez.txt"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "process_fn": "generate_word_associations",
+    "process_params": {
+        "process_dir": "data/associations/word",
+        "gml_path": "data/networks/raw/adjnoun.gml",
+        "threshold": 10
+    }
+}

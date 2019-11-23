@@ -1,0 +1,16 @@
+{
+    "process": "dpp_evaluate",
+    "process_params": {"notify": true,
+        "n_processes": 20,
+        "ppi_network": "data/networks/species_10090/bio-grid/network.txt",
+        "disease_path": "data/associations/species_10090/go_function/associations.csv",
+        "disease_subset": [],
+        
+        "n_folds": 10,
+        
+        "method_class": "RandomWalk",
+        "method_params": { 
+            "alpha": 0.25
+        }
+    }
+}

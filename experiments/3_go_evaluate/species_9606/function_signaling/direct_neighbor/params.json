@@ -1,0 +1,13 @@
+{
+    "process": "dpp_evaluate",
+    "process_params": {
+        "notify": true,
+        "n_processes": 30,
+        "ppi_network": "data/networks/signaling/network.txt",
+        "disease_path": "data/associations/species_9606/go_function/associations.csv",
+        "disease_subset": [],
+        "n_folds": 10,
+        "method_class": "DirectNeighbor",
+        "method_params": {}
+    }
+}

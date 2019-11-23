@@ -1,0 +1,14 @@
+{
+    "process_fn": "duplicate_process",
+    "process_params": {
+        "process_dir": "experiments/prediction_evaluate/signaling_evaluate/function/directed_mutual_interactor",
+        "source_dir": "experiments/prediction_evaluate/signaling_evaluate/process/directed_mutual_interactor",
+        "updates": {
+            "process": "dpp_evaluate",
+            "process_params": {
+                "disease_path": "data/associations/species_9606/go_process/associations.csv"
+            }
+        },
+        "overwrite": false
+    }
+}

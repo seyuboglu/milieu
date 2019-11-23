@@ -1,0 +1,14 @@
+2019-09-12 08:53:56,222:INFO: Loading Disease Associations...
+2019-09-12 08:53:56,238:INFO: Recall Curve
+2019-09-12 08:53:56,238:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-09-12 08:53:56,238:INFO: ======================================
+2019-09-12 08:53:56,238:INFO: Mutal Interactor
+2019-09-12 08:53:56,279:INFO: Plotted 788 out of 788 sets.
+2019-09-12 08:53:56,465:INFO: Direct Neighbor
+2019-09-12 08:53:56,506:INFO: Plotted 788 out of 788 sets.
+2019-09-12 08:53:56,522:INFO: Random Walk
+2019-09-12 08:53:56,562:INFO: Plotted 788 out of 788 sets.
+2019-09-12 08:53:56,577:INFO: GCN
+2019-09-12 08:53:56,617:INFO: Plotted 788 out of 788 sets.
+2019-09-12 08:53:56,634:INFO: node2vec
+2019-09-12 08:53:56,673:INFO: Plotted 788 out of 788 sets.

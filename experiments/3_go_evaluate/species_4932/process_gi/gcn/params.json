@@ -1,0 +1,81 @@
+
+{
+    "process": "dpp_evaluate",
+    "process_params": 
+        {
+            "n_processes": 1,
+            "ppi_network": "data/networks/species_4932/bio-grid-gi/network.txt",
+            "disease_path": "data/associations/species_4932/go_process/associations.csv",
+            "disease_subset": [],
+
+            "n_folds": 10,
+
+            "method_class": "GCN",
+            "method_params": {
+                "model_args": {
+                    "cuda": true,
+                    "devices": [2],
+                    "optim_class": "Adam",
+                    "optim_args": {
+                        "lr": 1e-3,
+                        "weight_decay": 0
+                    },
+
+                    "scheduler_class": "StepLR",
+                    "scheduler_args": {
+                        "step_size": 20,
+                        "gamma": 0.5
+                    },
+
+                    "gcn_layer_configs": [
+                        {
+                            "class": "GraphConvolutionLayer",
+                            "args": {
+                                "out_features": 128,
+                                "activation": "relu",
+                                "bias": false
+                            }
+                        }
+                    ],
+                    "fcn_layer_configs": [
+                        {
+                            "class": "FullyConnectedLayer",
+                            "args": {
+                                "in_features": 128,
+                                "out_features": 16,
+                                "activation": "relu",
+                                "bias": true
+                            }
+                        },
+                        {
+                            "class": "FullyConnectedLayer",
+                            "args": {
+                                "in_features": 16,
+                                "out_features": 1,
+                                "activation": null,
+                                "bias": true
+                            }
+                        }
+                    ]
+                },
+
+                "dataset_args": {
+                    "num_examples": 30
+                },
+
+                "train_args": {
+                    "num_epochs": 6,
+                    "summary_period": 1,
+                    "metric_configs": [
+                        {"fn": "recall_at_100"}
+                    ]
+                },
+
+                "valid_args": {
+                    "metric_configs": [
+                        {"fn": "recall_at_100"}
+                    ]
+                }
+            }
+        }
+}

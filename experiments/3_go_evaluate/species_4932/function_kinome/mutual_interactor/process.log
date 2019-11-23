@@ -1,0 +1,53 @@
+2019-09-13 12:58:40,926:INFO: Disease Protein Prediction in the PPI Network
+2019-09-13 12:58:40,926:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-09-13 12:58:40,926:INFO: ======================================
+2019-09-13 12:58:40,926:INFO: Loading PPI Network: data/networks/species_4932/bio-grid-kinome/network.txt
+2019-09-13 12:58:42,536:INFO: Loading Disease Associations: data/associations/species_4932/go_function/associations.csv
+2019-09-13 12:58:42,790:INFO: Running Experiment...
+2019-09-13 13:01:33,227:INFO: Disease Protein Prediction in the PPI Network
+2019-09-13 13:01:33,227:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-09-13 13:01:33,227:INFO: ======================================
+2019-09-13 13:01:33,228:INFO: Loading PPI Network: data/networks/species_4932/bio-grid-kinome/network.txt
+2019-09-13 13:01:34,780:INFO: Loading Disease Associations: data/associations/species_4932/go_function/associations.csv
+2019-09-13 13:01:35,075:INFO: Running Experiment...
+2019-09-13 13:01:55,529:INFO: Disease Protein Prediction in the PPI Network
+2019-09-13 13:01:55,529:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-09-13 13:01:55,530:INFO: ======================================
+2019-09-13 13:01:55,530:INFO: Loading PPI Network: data/networks/species_4932/bio-grid-kinome/network.txt
+2019-09-13 13:01:57,163:INFO: Loading Disease Associations: data/associations/species_4932/go_function/associations.csv
+2019-09-13 13:01:57,343:INFO: Running Experiment...
+2019-09-13 13:02:11,358:INFO: Disease Protein Prediction in the PPI Network
+2019-09-13 13:02:11,359:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-09-13 13:02:11,359:INFO: ======================================
+2019-09-13 13:02:11,359:INFO: Loading PPI Network: data/networks/species_4932/bio-grid-kinome/network.txt
+2019-09-13 13:02:12,926:INFO: Loading Disease Associations: data/associations/species_4932/go_function/associations.csv
+2019-09-13 13:02:13,153:INFO: Running Experiment...
+2019-09-13 13:02:41,903:INFO: Disease Protein Prediction in the PPI Network
+2019-09-13 13:02:41,904:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-09-13 13:02:41,904:INFO: ======================================
+2019-09-13 13:02:41,904:INFO: Loading PPI Network: data/networks/species_4932/bio-grid-kinome/network.txt
+2019-09-13 13:02:43,434:INFO: Loading Disease Associations: data/associations/species_4932/go_function/associations.csv
+2019-09-13 13:02:43,694:INFO: Running Experiment...
+2019-09-13 13:04:47,557:INFO: Disease Protein Prediction in the PPI Network
+2019-09-13 13:04:47,557:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-09-13 13:04:47,557:INFO: ======================================
+2019-09-13 13:04:47,557:INFO: Loading PPI Network: data/networks/species_4932/bio-grid-kinome/network.txt
+2019-09-13 13:04:49,165:INFO: Loading Disease Associations: data/associations/species_4932/go_function/associations.csv
+2019-09-13 13:04:49,440:INFO: Running Experiment...
+2019-09-13 13:05:26,456:INFO: Disease Protein Prediction in the PPI Network
+2019-09-13 13:05:26,456:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-09-13 13:05:26,456:INFO: ======================================
+2019-09-13 13:05:26,456:INFO: Loading PPI Network: data/networks/species_4932/bio-grid-kinome/network.txt
+2019-09-13 13:05:28,066:INFO: Loading Disease Associations: data/associations/species_4932/go_function/associations.csv
+2019-09-13 13:05:51,877:INFO: Disease Protein Prediction in the PPI Network
+2019-09-13 13:05:51,878:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-09-13 13:05:51,878:INFO: ======================================
+2019-09-13 13:05:51,878:INFO: Loading PPI Network: data/networks/species_4932/bio-grid-kinome/network.txt
+2019-09-13 13:05:53,466:INFO: Loading Disease Associations: data/associations/species_4932/go_function/associations.csv
+2019-09-13 13:05:53,604:INFO: Running Experiment...
+2019-09-13 13:06:05,908:INFO: Disease Protein Prediction in the PPI Network
+2019-09-13 13:06:05,983:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-09-13 13:06:05,983:INFO: ======================================
+2019-09-13 13:06:05,983:INFO: Loading PPI Network: data/networks/species_4932/bio-grid-kinome/network.txt
+2019-09-13 13:06:07,580:INFO: Loading Disease Associations: data/associations/species_4932/go_function/associations.csv
+2019-09-13 13:06:07,723:INFO: Running Experiment...

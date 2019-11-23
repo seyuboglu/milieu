@@ -1,0 +1,6 @@
+2019-09-10 10:04:50,471:INFO: Disease Protein Prediction in the PPI Network
+2019-09-10 10:04:50,472:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-09-10 10:04:50,472:INFO: ======================================
+2019-09-10 10:04:50,472:INFO: Loading PPI Network: data/networks/species_4932/bio-grid-gi/network.txt
+2019-09-10 10:04:55,399:INFO: Loading Disease Associations: data/associations/species_4932/go_function/associations.csv
+2019-09-10 10:04:55,404:INFO: Running Experiment...

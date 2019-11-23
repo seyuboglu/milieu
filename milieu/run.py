@@ -17,17 +17,17 @@ import torch
 import click
 
 from milieu.util.util import set_logger, send_email
-import milieu.experiments.dpp_evaluate as dpp_evaluate
-import milieu.experiments.dpp_predict as dpp_predict
-import milieu.experiments.go_enrichment as go_enrichment
-import milieu.experiments.protein_significance as protein_significance
-import milieu.experiments.disease_significance as disease_significance
-import milieu.experiments.disease_subgraph as disease_subgraph
-import milieu.experiments.network_robustness as network_robustness
+import milieu.paper.experiments.dpp_evaluate as dpp_evaluate
+import milieu.paper.experiments.dpp_predict as dpp_predict
+import milieu.paper.experiments.go_enrichment as go_enrichment
+import milieu.paper.experiments.protein_significance as protein_significance
+import milieu.paper.experiments.disease_significance as disease_significance
+import milieu.paper.experiments.disease_subgraph as disease_subgraph
+import milieu.paper.experiments.network_robustness as network_robustness
 import milieu.data.network_matrices as network_matrices
-import milieu.figures.recall_curve as recall_curve
-import milieu.figures.robustness_curve as robustness_curve
-import milieu.figures.recall_comparison as recall_comparison
+import milieu.paper.figures.recall_curve as recall_curve
+import milieu.paper.figures.robustness_curve as robustness_curve
+import milieu.paper.figures.recall_comparison as recall_comparison
 import milieu.data.aggregate as aggregate 
 
 

@@ -1,0 +1,24 @@
+{
+    "process": "recall_curve",
+    "process_params":
+        {
+            "diseases_path": "data/associations/go_process/associations.csv",
+            "name": "process_recall_curve",
+            "method_exp_dirs": {"Mutual Interactor": "experiments/go_evaluate/process/milieu/mutual_interactor",
+                                "RW": "experiments/go_evaluate/process/random_walk",
+                                "Direct Neighbor": "experiments/go_evaluate/process/direct_neighbor",
+                                "GCN": "experiments/go_evaluate/process/gcn"
+                                "node2vec": "experiments/go_evaluate/process/node2vec"
+                            },
+
+            "primary": "",
+            "length": 50, 
+            "thresholds": [10, 25], 
+            "offset": 0.003,
+            "by_disease": true,
+            "title": false,
+
+            "plot_palette": ["#E03C3F", "#FF9300", "#F8BA00", "#CB297B", "#6178A8", "#56C1FF"],
+            "plot_font": "AppleGothic"
+        }
+}

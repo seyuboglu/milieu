@@ -1,0 +1,32 @@
+{
+    "process_fn": "generate_go_associations",
+    "process_params": {
+        "process_dir": "data/associations/species_4932/go_process",
+        "network_path": "data/networks/species_4932/bio-grid/network.txt",
+        "propagate_ancestors": true,
+        "evidence_codes": [
+            "EXP",
+            "IDA",
+            "IPI",
+            "IMP",
+            "IGI",
+            "IEP",
+            "HTP",
+            "HDA",
+            "HMP",
+            "HGI",
+            "HEP"
+        ],
+        "tax_ids": [
+            559292
+        ],
+        "categories": [
+            "Process"
+        ],
+        "min_size": 10,
+        "max_size": 100,
+        "jacc_threshold": 0.7,
+        "obodag_path": "data/go/go-basic.obo",
+        "entrez_to_go_path": "data/go/gene2go.txt"
+    }
+}

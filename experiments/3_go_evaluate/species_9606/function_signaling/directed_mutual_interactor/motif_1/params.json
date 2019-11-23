@@ -1,0 +1,16 @@
+{
+    "process": "dpp_evaluate",
+    "process_params": {
+        "notify": false,
+        "n_processes": 1,
+        "ppi_network": "data/networks/signaling/network.txt",
+        "directed": true,
+        "disease_path": "data/associations/species_9606/go_function/associations.csv",
+        "disease_subset": [],
+        "n_folds": 10,
+        "method_class": "DirectedMutualInteractor",
+        "method_params": {
+            "motifs": [1]
+        }
+    }
+}

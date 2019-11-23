@@ -1,0 +1,18 @@
+{
+    "process": "dpp_evaluate",
+    "process_params": {"notify": true,
+        "n_processes": 30,
+        "ppi_network": "data/networks/species_3702/bio-grid/network.txt",
+        "disease_path": "data/associations/species_3702/go_process/associations.csv",
+        "disease_subset": [],
+        
+        "n_folds": 10,
+
+        "method_class": "LogisticRegression",
+        "method_params": { 
+            "l2_reg": 1.0,
+            "features_path": "data/networks/species_3702/bio-grid/n2v-1-p1-d128.txt"
+        }
+    }
+  
+}

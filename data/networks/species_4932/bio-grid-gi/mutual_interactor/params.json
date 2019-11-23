@@ -1,0 +1,12 @@
+{
+    "process": "network_matrices",
+    "process_params":
+        {
+            "ppi_network": "data/networks/species_4932/bio-grid-gi/network.txt",
+
+            "col_norm": true, 
+            "row_norm": true,
+            "deg_fn": "sqrt",
+            "self_loops": true
+        }
+}

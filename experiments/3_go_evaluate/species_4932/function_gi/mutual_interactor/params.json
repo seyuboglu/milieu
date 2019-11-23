@@ -1,0 +1,17 @@
+{
+    "process": "dpp_evaluate",
+    "process_params": {"notify": true,
+        "n_processes": 1,
+        "ppi_network": "data/networks/species_4932/bio-grid-gi/network.txt",
+        "disease_path": "data/associations/species_4932/go_function/associations.csv",
+        "disease_subset": [],
+
+        
+        "n_folds": 10,
+        
+        "method_class": "MutualInteractor",
+        "method_params": { 
+            "matrix_dir": "data/networks/species_4932/bio-grid-gi/mutual_interactor"
+        }
+    }
+}

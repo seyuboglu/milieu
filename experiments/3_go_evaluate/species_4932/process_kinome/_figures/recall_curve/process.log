@@ -1,0 +1,47 @@
+2019-09-13 14:46:12,838:INFO: Loading Disease Associations...
+2019-09-13 14:46:12,855:INFO: Recall Curve
+2019-09-13 14:46:12,856:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-09-13 14:46:12,856:INFO: ======================================
+2019-09-13 14:46:12,856:INFO: Mutal Interactor
+2019-09-13 14:46:12,899:INFO: Plotted 788 out of 788 sets.
+2019-09-13 14:46:13,074:INFO: Direct Neighbor
+2019-09-13 14:46:13,117:INFO: Plotted 788 out of 788 sets.
+2019-09-13 14:46:13,135:INFO: Random Walk
+2019-09-13 14:46:13,174:INFO: Plotted 788 out of 788 sets.
+2019-09-13 14:46:13,193:INFO: GCN
+2019-09-13 16:19:44,332:INFO: Loading Disease Associations...
+2019-09-13 16:19:44,350:INFO: Recall Curve
+2019-09-13 16:19:44,350:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-09-13 16:19:44,350:INFO: ======================================
+2019-09-13 16:19:44,350:INFO: Mutal Interactor
+2019-09-13 16:19:44,389:INFO: Plotted 788 out of 788 sets.
+2019-09-13 16:19:44,559:INFO: Direct Neighbor
+2019-09-13 16:19:44,599:INFO: Plotted 788 out of 788 sets.
+2019-09-13 16:19:44,615:INFO: Random Walk
+2019-09-13 16:19:44,654:INFO: Plotted 788 out of 788 sets.
+2019-09-13 16:19:44,671:INFO: GCN
+2019-09-14 10:10:17,983:INFO: Loading Disease Associations...
+2019-09-14 10:10:18,002:INFO: Recall Curve
+2019-09-14 10:10:18,002:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-09-14 10:10:18,002:INFO: ======================================
+2019-09-14 10:10:18,002:INFO: Mutal Interactor
+2019-09-14 10:10:18,043:INFO: Plotted 788 out of 788 sets.
+2019-09-14 10:10:18,272:INFO: Direct Neighbor
+2019-09-14 10:10:18,328:INFO: Plotted 788 out of 788 sets.
+2019-09-14 10:10:18,344:INFO: Random Walk
+2019-09-14 10:10:18,384:INFO: Plotted 788 out of 788 sets.
+2019-09-14 10:10:18,400:INFO: GCN
+2019-09-14 10:10:34,799:INFO: Loading Disease Associations...
+2019-09-14 10:10:34,816:INFO: Recall Curve
+2019-09-14 10:10:34,816:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-09-14 10:10:34,816:INFO: ======================================
+2019-09-14 10:10:34,816:INFO: Mutal Interactor
+2019-09-14 10:10:34,856:INFO: Plotted 788 out of 788 sets.
+2019-09-14 10:10:35,023:INFO: Direct Neighbor
+2019-09-14 10:10:35,064:INFO: Plotted 788 out of 788 sets.
+2019-09-14 10:10:35,080:INFO: Random Walk
+2019-09-14 10:10:35,120:INFO: Plotted 788 out of 788 sets.
+2019-09-14 10:10:35,136:INFO: GCN
+2019-09-14 10:10:35,177:INFO: Plotted 788 out of 788 sets.
+2019-09-14 10:10:35,194:INFO: node2vec
+2019-09-14 10:10:35,235:INFO: Plotted 788 out of 788 sets.

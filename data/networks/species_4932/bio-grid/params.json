@@ -1,0 +1,13 @@
+{
+    "process_fn": "generate_biogrid_network",
+    "process_params": {
+        "process_dir": "data/networks/species_4932/bio-grid",
+        "tax_ids": [
+            559292
+        ],
+        "biogrid_path": "data/networks/raw/BIOGRID-ORGANISM-Saccharomyces_cerevisiae_S288c-3.5.175.tab2.txt",
+        "experimental_system_types": [
+            "physical"
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "process_fn": "generate_biogrid_network",
+    "process_params": {
+        "process_dir": "data/networks/species_10090/bio-grid",
+        "tax_ids": [
+            10090
+        ],
+        "biogrid_path": "data/networks/raw/BIOGRID-ORGANISM-Mus_musculus-3.5.175.tab2.txt"
+    }
+}

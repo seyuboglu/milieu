@@ -4,7 +4,7 @@
 
 This repository includes our PyTorch implementation of *Mutual Interactors*, a machine learning algorithm for node set expansion in large networks. The algorithm is motivated by the structure of disease-associated proteins, drug targets and protein functions in molecular networks, and can be used to  predicrt molecular phenotypes *in silico*. For a detailed description of the algorithm, please see our [paper](TODO).  
 
-We include software for easily reproducing *all* the experiments described in the paper. Each experiment has a designated class in the `milieu/experiment' module. We also provide implementations of several baseline network-based disease protein prediction methods, including DIAMOnD, Random Walks and Graph Neural Networks.
+We include software for easily reproducing *all* the experiments described in the paper. Each experiment has a designated class in the `milieu/experiment` module. We also provide implementations of several baseline network-based disease protein prediction methods, including DIAMOnD, Random Walks and Graph Neural Networks.
 
 
 <p align="center">
@@ -33,7 +33,7 @@ pip install -e .
 ```
 
 ## Using *Mutual Interactors*
-To get started checkout `mutual_interactors.ipynb` a Jupyter Notebook that will walk you
+To get started checkout `notebooks/mutual_interactors.ipynb` a Jupyter Notebook that will walk you
 through the process of training a *Mutual Interactors* model.
 
 It will also show you how to visualize the predictions of a trained *Mutual Interactors*
@@ -45,11 +45,12 @@ model.
 
 
 
-## Replicating Experiments
+## Reproducing Experiments
+We provide the code and data to reproduce all of the experiments 
 
-### disease-significance
+### 1) dpp_evaluate
 
-### disease_subgraph
+### 2) disease_subgraph
 
 ### dpp_evaluate
 
@@ -65,6 +66,7 @@ model.
 
 
 ## Directory
+S
 
 - *data* - all of the data for the project
   - *associations* - datasets of disease protein associations each stored in a *.csv* 

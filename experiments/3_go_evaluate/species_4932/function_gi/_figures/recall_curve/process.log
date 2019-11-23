@@ -1,0 +1,32 @@
+2019-09-10 11:17:12,512:INFO: Loading Disease Associations...
+2019-09-10 11:17:12,518:INFO: Recall Curve
+2019-09-10 11:17:12,518:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-09-10 11:17:12,518:INFO: ======================================
+2019-09-10 11:17:12,518:INFO: Mutal Interactor
+2019-09-10 11:17:12,532:INFO: Plotted 255 out of 255 sets.
+2019-09-10 11:17:12,694:INFO: Direct Neighbor
+2019-09-10 11:17:12,709:INFO: Plotted 255 out of 255 sets.
+2019-09-10 12:25:20,258:INFO: Loading Disease Associations...
+2019-09-10 12:25:20,265:INFO: Recall Curve
+2019-09-10 12:25:20,265:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-09-10 12:25:20,265:INFO: ======================================
+2019-09-10 12:25:20,265:INFO: Mutal Interactor
+2019-09-10 12:25:20,279:INFO: Plotted 255 out of 255 sets.
+2019-09-10 12:25:20,455:INFO: Direct Neighbor
+2019-09-10 12:25:20,470:INFO: Plotted 255 out of 255 sets.
+2019-09-10 12:25:20,486:INFO: Random Walk
+2019-09-10 12:25:20,500:INFO: Plotted 255 out of 255 sets.
+2019-09-11 10:40:55,960:INFO: Loading Disease Associations...
+2019-09-11 10:40:55,968:INFO: Recall Curve
+2019-09-11 10:40:55,975:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-09-11 10:40:55,975:INFO: ======================================
+2019-09-11 10:40:55,975:INFO: Mutal Interactor
+2019-09-11 10:40:55,991:INFO: Plotted 255 out of 255 sets.
+2019-09-11 10:40:56,220:INFO: Direct Neighbor
+2019-09-11 10:40:56,235:INFO: Plotted 255 out of 255 sets.
+2019-09-11 10:40:56,251:INFO: Random Walk
+2019-09-11 10:40:56,267:INFO: Plotted 255 out of 255 sets.
+2019-09-11 10:40:56,284:INFO: GCN
+2019-09-11 10:40:56,298:INFO: Plotted 255 out of 255 sets.
+2019-09-11 10:40:56,315:INFO: node2vec
+2019-09-11 10:40:56,329:INFO: Plotted 255 out of 255 sets.

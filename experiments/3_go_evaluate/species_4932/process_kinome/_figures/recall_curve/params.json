@@ -1,0 +1,24 @@
+{
+    "process": "recall_curve",
+    "process_params":
+        {
+            "diseases_path": "data/associations/species_4932/go_process/associations.csv",
+            "name": "process_kinome_recall_curve",
+            "method_exp_dirs": {"Mutal Interactor": "experiments/go_evaluate/species_4932/process_kinome/mutual_interactor",
+                                "Direct Neighbor": "experiments/go_evaluate/species_4932/process_kinome/direct_neighbor",
+                                "Random Walk": "experiments/go_evaluate/species_4932/process_kinome/random_walk",
+                                "GCN": "experiments/go_evaluate/species_4932/process_kinome/gcn",
+                                "node2vec": "experiments/go_evaluate/species_4932/process_kinome/node2vec"
+                            },
+
+            "primary": "",
+            "length": 50, 
+            "thresholds": [], 
+            "offset": 0.003,
+            "by_disease": true,
+            "title": false,
+
+            "plot_palette": ["#E03C3F", "#FF9300", "#F8BA00", "#CB297B", "#6178A8", "#56C1FF"],
+            "plot_font": "AppleGothic"
+        }
+}

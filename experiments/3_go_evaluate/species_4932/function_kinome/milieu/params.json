@@ -1,0 +1,32 @@
+{
+    "process": "dpp_evaluate",
+    "process_params": {"notify": true,
+        "cuda": true,
+        "cuda_gpu": 3,
+        "num_workers": 1,
+        "n_processes": 1,
+        "ppi_network": "data/networks/species_4932/bio-grid-kinome/network.txt",
+        "disease_path": "data/associations/species_4932/go_function/associations.csv",
+        "disease_subset": [],
+        "n_folds": 10,
+        "method_class": "LCI",
+        "method_params": {
+            "model_class": "LCIModule",
+            "model_args": {},
+            "d": 1,
+            "cuda": true,
+            "cuda_gpu": 3,
+            "num_workers": 1,
+            "linear_layer_units": [],
+            "dropout": 0.5,
+            "initialization": "ones",
+            "learning_rate": 0.01,
+            "activation": "ReLU",
+            "weight_decay": 0,
+            "num_epochs": 40,
+            "batch_size": 50,
+            "save_summary_steps": 40,
+            "primary_metric": "recall_at_100"
+        }
+    }
+}

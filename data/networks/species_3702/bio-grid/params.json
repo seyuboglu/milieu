@@ -1,0 +1,10 @@
+{
+    "process_fn": "generate_biogrid_network",
+    "process_params": {
+        "process_dir": "data/networks/species_3702/bio-grid",
+        "tax_ids": [
+            3702
+        ],
+        "biogrid_path": "data/networks/raw/BIOGRID-ORGANISM-Arabidopsis_thaliana_Columbia-3.5.175.tab2.txt"
+    }
+}
