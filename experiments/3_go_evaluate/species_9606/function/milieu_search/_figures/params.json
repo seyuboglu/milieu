@@ -2,7 +2,7 @@
     "process": "recall_curve",
     "process_params":
         {
-            "diseases_path": "data/associations/go_function/associations.csv",
+            "diseases_path": "data/associations/gene_ontology/species_9606/go_function/associations.csv",
             "name": "mf_recall_curve",
             "method_exp_dirs": {"Mutual Interactor": "experiments/go_evaluate/function/milieu/mutual_interactor",
                                 "Milieu0": "experiments/go_evaluate/function/milieu/milieu_search/candidates/exp_0"

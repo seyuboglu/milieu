@@ -31,8 +31,10 @@ from collections import defaultdict
 import csv
 import sys
 
+from milieu.paper.methods.method import DPPMethod 
 
-class RandomWalk(DPPMethod):
+
+class DIAMOnD(DPPMethod):
     """
 
     """
@@ -48,7 +50,7 @@ class RandomWalk(DPPMethod):
     def compute_scores(self, train_nodes, disease):
         n_nodes = len(self.ppi_networkx)
         scores = np.zeros((n_nodes))
-        added_nodes = DIAMOnD(self.ppi_networkx, train_nodes, self.max_nodes, self.alpha)
+        added_nodes = run_diamond(self.ppi_networkx, train_nodes, self.max_nodes, self.alpha)
         for i, node in enumerate(added_nodes):
             scores[node[0]] = 1.0*(n_nodes - i) / n_nodes
         return scores
@@ -358,7 +360,7 @@ def diamond_iteration_of_first_X_nodes(G,S,X,alpha):
 #   M A I N    D I A M O n D    A L G O R I T H M
 # 
 # ===========================================================================
-def DIAMOnD(G_original,seed_genes,max_number_of_added_nodes,alpha,outfile = None):
+def run_diamond(G_original,seed_genes,max_number_of_added_nodes,alpha,outfile = None):
 
     """
     Runs the DIAMOnD algorithm

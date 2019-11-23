@@ -1,7 +1,7 @@
 {
     "n_processes": 1,
 
-    "ppi_network": "data/networks/bio-pathways-network.txt",
+    "ppi_network": "data/networks/species_9606/bio-pathways/network.txt",
     "diseases_path": "data/associations/disgenet-associations.csv",
     "disease_subset": [],
     

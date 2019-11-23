@@ -18,10 +18,10 @@ import seaborn as sns
 from tqdm import tqdm
 
 from milieu.data.associations import load_diseases
-from milieu.data.network import PPINetwork
+from milieu.data.network import Network
 from milieu.data.network_matrices import load_network_matrices
 from milieu.paper.experiments.experiment import Experiment
-from milieu.util.util import Params, set_logger, prepare_sns, compute_pvalue, build_degree_buckets
+from milieu.util.util import set_logger, prepare_sns, compute_pvalue, build_degree_buckets
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--dir', default='experiments/base_model',
@@ -50,7 +50,7 @@ class ProteinSignificance(Experiment):
         logging.info("Sabri Eyuboglu  -- SNAP Group")
         logging.info("======================================")
         logging.info("Loading Disease Associations...")
-        self.diseases = load_diseases(self.params["diseases_path"], 
+        self.diseases = load_diseases(self.params["associations_path"], 
                                       self.params["disease_subset"],
                                       exclude_splits=['none'])
     
@@ -116,7 +116,7 @@ class ProteinSignificance(Experiment):
         Run the experiment.
         """
         logging.info("Loading Network...")
-        self.network = PPINetwork(self.params["ppi_network"]) 
+        self.network = Network(self.params["ppi_network"]) 
 
         logging.info("Loading PPI Matrices...")
         self.ppi_matrices = load_network_matrices(self.params["ppi_matrices"],

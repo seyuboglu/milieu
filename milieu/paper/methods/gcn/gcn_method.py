@@ -20,9 +20,6 @@ import parse
 
 from milieu.paper.methods.method import DPPMethod
 from milieu.paper.methods.gcn.gcn_model import GCNModel
-from milieu.paper.methods.lci.metrics import metrics
-from milieu.paper.methods.lci.utils import (save_checkpoint, load_checkpoint, 
-                                   save_dict_to_json, RunningAverage)
 
 
 class GCN(DPPMethod):

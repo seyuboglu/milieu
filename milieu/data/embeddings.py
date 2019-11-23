@@ -9,7 +9,7 @@ def load_embeddings(embeddings_path, network):
     """ Builds a numpy matrix for a node embedding encoded in the embeddingf ile
     passed in. Row indices are given by protein_to_node dictionary passed in. 
     @param embedding_filename (string)
-    @param network (PPINetwork)
+    @param network (Network)
     @returns embeddings (np.array)
     """
     with open(embeddings_path) as embedding_file:
@@ -36,7 +36,7 @@ def write_embeddings(embeddings, embeddings_path, network):
     """
     @param embeddings (np.array)
     @param embeddings_path (string)
-    @param network (PPINetwork)
+    @param network (Network)
     """
     with open(embeddings_path, 'w') as embedding_file:
         n_nodes, n_dim = embeddings.shape

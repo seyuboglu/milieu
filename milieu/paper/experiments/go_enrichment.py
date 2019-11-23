@@ -18,9 +18,9 @@ from goatools.go_enrichment import GOEnrichmentStudy
 
 
 from milieu.data.associations import load_diseases
-from milieu.data.network import PPINetwork
+from milieu.data.network import Network
 from milieu.paper.experiments.experiment import Experiment
-from milieu.util.util import Params, set_logger
+from milieu.util.util import set_logger
 
 
 class GOEnrichment(Experiment):
@@ -46,17 +46,17 @@ class GOEnrichment(Experiment):
         logging.info("======================================")
         
         logging.info("Loading Disease Associations...")
-        self.diseases_dict = load_diseases(self.params["diseases_path"], 
+        self.diseases_dict = load_diseases(self.params["associations_path"], 
                                            self.params["disease_subset"],
                                            exclude_splits=['none'])
         
         logging.info("Loading Network...")
-        self.network = PPINetwork(self.params["ppi_network"]) 
+        self.network = Network(self.params["ppi_network"]) 
         
         logging.info("Loading enrichment study...")
         obodag = GODag(self.params["go_path"])
         geneid2go = read_ncbi_gene2go(self.params["gene_to_go_path"], taxids=[9606])
-        self.enrichment_study = GOEnrichmentStudy(self.network.get_proteins(),
+        self.enrichment_study = GOEnrichmentStudy(self.network.get_names(),
                                                   geneid2go,
                                                   obodag,
                                                   log=None,

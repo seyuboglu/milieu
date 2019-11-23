@@ -110,7 +110,7 @@ def build_disease_matrix(diseases_dict, network, exclude_splits=[]):
     that in the network.
     args:
         diseases_dict   (dict)  dictionary of diseases
-        network     (PPINetwork) 
+        network     (Network) 
         exclude_splites     (list)
     """
     split_diseases = [disease for disease in diseases_dict.values() 

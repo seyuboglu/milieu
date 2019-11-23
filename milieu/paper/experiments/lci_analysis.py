@@ -21,10 +21,10 @@ from goatools.go_enrichment import GOEnrichmentStudy
 
 
 from milieu.data.associations import load_diseases
-from milieu.data.network import PPINetwork
+from milieu.data.network import Network
 from milieu.data.protein import load_drug_targets, load_essential_proteins
 from milieu.paper.experiments.experiment import Experiment
-from milieu.util.util import Params, set_logger, prepare_sns
+from milieu.util.util import set_logger, prepare_sns
 
 
 class DrugTarget(Experiment):
@@ -45,12 +45,12 @@ class DrugTarget(Experiment):
                    level=logging.INFO, console=True)
 
         logging.info("Loading disease associations...")
-        self.diseases_dict = load_diseases(self.params["diseases_path"], 
+        self.diseases_dict = load_diseases(self.params["associations_path"], 
                                            self.params["disease_subset"],
                                            exclude_splits=['none'])
         
         logging.info("Loading network...")
-        self.network = PPINetwork(self.params["ppi_network"]) 
+        self.network = Network(self.params["ppi_network"]) 
         self.degrees = np.array(list(dict(self.network.nx.degree()).values()))
         
         logging.info("Loading weights...")
@@ -189,12 +189,12 @@ class FunctionalEnrichmentAnalysis(Experiment):
                    level=logging.INFO, console=True)
 
         logging.info("Loading disease associations...")
-        self.diseases_dict = load_diseases(self.params["diseases_path"], 
+        self.diseases_dict = load_diseases(self.params["associations_path"], 
                                            self.params["disease_subset"],
                                            exclude_splits=['none'])
         
         logging.info("Loading network...")
-        self.network = PPINetwork(self.params["ppi_network"]) 
+        self.network = Network(self.params["ppi_network"]) 
         self.degrees = np.array(list(dict(self.network.nx.degree()).values()))
         
         logging.info("Loading weights...")
@@ -208,7 +208,7 @@ class FunctionalEnrichmentAnalysis(Experiment):
         logging.info("Loading enrichment study...")
         geneid2go = read_ncbi_gene2go("data/go/gene2go.txt", taxids=[9606])
         obodag = GODag("data/go/go-basic.obo")
-        self.go_study = GOEnrichmentStudy(self.network.get_proteins(),
+        self.go_study = GOEnrichmentStudy(self.network.get_names(),
                                           geneid2go,
                                           obodag, 
                                           propagate_counts = True,
@@ -220,7 +220,7 @@ class FunctionalEnrichmentAnalysis(Experiment):
         """
         """
         top_nodes = np.argsort(self.ci_weights_norm)[-self.params["top_k"]:]
-        top_proteins = self.network.get_proteins(top_nodes)
+        top_proteins = self.network.get_names(top_nodes)
         self.raw_results = self.go_study.run_study(set(top_proteins))  
     
     def to_csv(self):
@@ -262,12 +262,12 @@ class EssentialGeneAnalysis(Experiment):
                    level=logging.INFO, console=True)
 
         logging.info("Loading disease associations...")
-        self.diseases_dict = load_diseases(self.params["diseases_path"], 
+        self.diseases_dict = load_diseases(self.params["associations_path"], 
                                            self.params["disease_subset"],
                                            exclude_splits=['none'])
         
         logging.info("Loading network...")
-        self.network = PPINetwork(self.params["ppi_network"]) 
+        self.network = Network(self.params["ppi_network"]) 
         self.degrees = np.array(list(dict(self.network.nx.degree()).values()))
         
         logging.info("Loading weights...")

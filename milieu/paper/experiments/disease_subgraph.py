@@ -18,10 +18,10 @@ import seaborn as sns
 from tqdm import tqdm
 
 from milieu.data.associations import load_diseases
-from milieu.data.network import PPINetwork
+from milieu.data.network import Network
 from milieu.data.network_matrices import load_network_matrices
 from milieu.paper.experiments.experiment import Experiment
-from milieu.util.util import (Params, set_logger, prepare_sns, string_to_list, 
+from milieu.util.util import (set_logger, prepare_sns, string_to_list, 
                       compute_pvalue, build_degree_buckets, list_to_string, load_mapping)
 
 
@@ -47,12 +47,12 @@ class DiseaseSubgraph(Experiment):
         logging.info("Sabri Eyuboglu  -- SNAP Group")
         logging.info("======================================")
         logging.info("Loading Disease Associations...")
-        self.diseases = load_diseases(self.params["diseases_path"], 
+        self.diseases = load_diseases(self.params["associations_path"], 
                                       self.params["disease_subset"],
                                       exclude_splits=['none'])
         
         logging.info("Loading Network...")
-        self.network = PPINetwork(self.params["ppi_network"]) 
+        self.network = Network(self.params["ppi_network"]) 
 
         logging.info("Loading Predictions...")
         self.method_to_preds = {name: pd.read_csv(os.path.join(preds, "predictions.csv"), 
@@ -139,7 +139,7 @@ class DiseaseSubgraph(Experiment):
         
         protein_data = []
         for node, roles in node_to_roles.items():
-            protein_id = self.network.get_proteins([node])[0]
+            protein_id = self.network.get_names([node])[0]
             node_dict = {
                 "node_id": node, 
                 "protein_id": protein_id,

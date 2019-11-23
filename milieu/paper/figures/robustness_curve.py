@@ -12,10 +12,10 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from scipy.stats import rankdata
 
-from milieu.data.network import PPINetwork
+from milieu.data.network import Network
 from milieu.data.associations import load_diseases
 from milieu.paper.figures.figure import Figure
-from milieu.util.util import Params, set_logger, parse_id_rank_pair, prepare_sns
+from milieu.util.util import set_logger, parse_id_rank_pair, prepare_sns
 
  
 class RobustnessCurve(Figure):
@@ -44,7 +44,7 @@ class RobustnessCurve(Figure):
         """
         """
         logging.info("Loading Disease Associations...")
-        self.diseases_dict = load_diseases(self.params["diseases_path"])
+        self.diseases_dict = load_diseases(self.params["associations_path"])
 
     def _generate(self):
         """

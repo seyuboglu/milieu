@@ -14,11 +14,10 @@ import pandas as pd
 from tqdm import tqdm
 
 from milieu.data.associations import load_diseases
-from milieu.data.network import PPINetwork
+from milieu.data.network import Network
 from milieu.paper.experiments.experiment import Experiment
-from milieu.paper.methods.lci.lci_method import LCI 
 from milieu.paper.methods.random_walk import RandomWalk
-from milieu.util.util import Params, set_logger, string_to_list, fraction_nonzero
+from milieu.util.util import set_logger, string_to_list, fraction_nonzero
 
 
 class DPPPredict(Experiment):
@@ -43,12 +42,12 @@ class DPPPredict(Experiment):
         logging.info("======================================")
         
         logging.info("Loading Disease Associations...")
-        self.diseases_dict = load_diseases(self.params["diseases_path"], 
+        self.diseases_dict = load_diseases(self.params["associations_path"], 
                                            self.params["disease_subset"],
                                            exclude_splits=['none'])
         
         logging.info("Loading Network...")
-        self.network = PPINetwork(self.params["ppi_network"]) 
+        self.network = Network(self.params["ppi_network"]) 
 
         self.params["method_params"]["dir"] = dir
         self.method = globals()[self.params["method_class"]](self.network, 
@@ -65,7 +64,7 @@ class DPPPredict(Experiment):
         # zero out scores for disease_nodes
         scores[disease_nodes] = 0
 
-        results = {self.network.get_proteins([node])[0]: score 
+        results = {self.network.get_names([node])[0]: score 
                    for node, score in enumerate(scores)}
         
         return disease, results

@@ -5,7 +5,7 @@ import os
 
 import pandas 
 
-from milieu.run import Process
+from milieu.util.util import Process
  
 
 class Figure(Process):

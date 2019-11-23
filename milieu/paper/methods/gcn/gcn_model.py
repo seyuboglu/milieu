@@ -17,7 +17,7 @@ from torch.nn import Linear
 from tqdm import tqdm
 
 from milieu.util.util import place_on_cpu, place_on_gpu
-from milieu.paper.methods.mia.metrics import Metrics
+from milieu.paper.methods.gcn.metrics import Metrics
 
 
 class GCNModel(nn.Module):
@@ -30,7 +30,7 @@ class GCNModel(nn.Module):
         GCN (MIA)
 
         args:
-            network (PPINetwork) 
+            network (Network) 
             layer_configs   (list) 
         """
         super().__init__()

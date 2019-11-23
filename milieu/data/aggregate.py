@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 
 from milieu.data.associations import load_diseases
-from milieu.run import Process
+from milieu.util.util import Process
 
 
 class Aggregate(Process):
@@ -33,7 +33,7 @@ class Aggregate(Process):
         logging.info("Sabri Eyuboglu  -- SNAP Group")
         logging.info("======================================")
         logging.info("Loading Disease Associations...")
-        self.diseases = load_diseases(self.params["diseases_path"], 
+        self.diseases = load_diseases(self.params["associations_path"], 
                                       self.params["disease_subset"],
                                       exclude_splits=['none'])
         print(len(self.diseases))

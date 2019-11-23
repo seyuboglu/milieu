@@ -5,7 +5,7 @@
         {
             "n_processes": 1,
             "ppi_network": "data/networks/species_3702/bio-grid/network.txt",
-            "disease_path": "data/associations/species_3702/go_function/associations.csv",
+            "associations_path": "data/associations/species_3702/go_function/associations.csv",
             "disease_subset": [],
 
             "n_folds": 10,

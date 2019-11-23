@@ -6,7 +6,7 @@
         "num_workers": 1,
         "n_processes": 1,
         "ppi_network": "data/networks/species_4932/bio-grid-gi/network.txt",
-        "disease_path": "data/associations/species_4932/go_function/associations.csv",
+        "associations_path": "data/associations/species_4932/go_function/associations.csv",
         "disease_subset": [],
         "n_folds": 10,
         "method_class": "LCI",

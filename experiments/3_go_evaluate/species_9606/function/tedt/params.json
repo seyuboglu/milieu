@@ -1,9 +1,9 @@
 {
     "process": "dpp_evaluate",
     "process_params": {"notify": true,
-        "n_processes": 50,
-        "ppi_network": "data/networks/bio-pathways-network.txt",
-        "disease_path": "data/associations/go_function/associations.csv",
+        "n_processes": 1,
+        "ppi_network": "data/networks/species_9606/bio-pathways/network.txt",
+        "associations_path": "data/associations/gene_ontology/species_9606/go_function/associations.csv",
         "disease_subset": [],
         
         "n_folds": 10,

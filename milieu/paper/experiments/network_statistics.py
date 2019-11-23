@@ -15,10 +15,10 @@ import matplotlib.pyplot as plt
 from tqdm import tqdm_notebook as tqdm
 
 from milieu.data.associations import load_diseases
-from milieu.data.network import PPINetwork
+from milieu.data.network import Network
 from milieu.data.protein import load_drug_targets, load_essential_proteins
 from milieu.paper.experiments.experiment import Experiment
-from milieu.util.util import Params, set_logger, prepare_sns
+from milieu.util.util import set_logger, prepare_sns
 
 
 class NetworkStatistics(Experiment):
@@ -39,12 +39,12 @@ class NetworkStatistics(Experiment):
                    level=logging.INFO, console=True)
 
         logging.info("Loading disease associations...")
-        self.diseases_dict = load_diseases(self.params["diseases_path"], 
+        self.diseases_dict = load_diseases(self.params["associations_path"], 
                                            self.params["disease_subset"],
                                            exclude_splits=['none'])
         
         logging.info("Loading network...")
-        self.network = PPINetwork(self.params["ppi_network"]) 
+        self.network = Network(self.params["ppi_network"]) 
         self.degrees = np.array(list(dict(self.network.nx.degree()).values()))
     
     def compute_cut_ratio(self, nodes):

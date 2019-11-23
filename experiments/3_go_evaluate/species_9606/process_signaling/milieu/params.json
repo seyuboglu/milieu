@@ -7,7 +7,7 @@
         "num_workers": 1,
         "n_processes": 1,
         "ppi_network": "data/networks/signaling/network.txt",
-        "disease_path": "data/associations/species_9606/go_process/associations.csv",
+        "associations_path": "data/associations/species_9606/go_process/associations.csv",
         "disease_subset": [],
         "n_folds": 10,
         "method_class": "LCI",

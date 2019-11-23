@@ -424,7 +424,7 @@ class MilieuDataset(Dataset):
         access an node set set from this dataset we randomly sample 90% of associations 
         for the input set and use the remaining 10% for the target set. See Methods. 
         args:
-            network (Network)    PPINetwork being used by the Milieu model
+            network (Network)    Network being used by the Milieu model
             node_sets    (list(NodeSet)) list of milieu.data.associations.NodeSet.
             frac_known  (float)   fraction of each association set used for input set and
             target set. 

@@ -4,7 +4,7 @@ Provides base class for all experiments
 import os
 import json
 
-from milieu.run import Process
+from milieu.util.util import Process
  
 
 class Experiment(Process):

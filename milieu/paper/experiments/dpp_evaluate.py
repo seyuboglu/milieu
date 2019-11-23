@@ -16,14 +16,15 @@ import click
 from milieu.paper.experiments.experiment import Experiment
 from milieu.paper.methods.random_walk import RandomWalk
 from milieu.paper.methods.logistic_regression import LogisticRegression
-from milieu.paper.methods.lci.lci_method import LCI
-from milieu.paper.methods.mia.mia_method import MIA
+from milieu.paper.methods.milieu import MilieuMethod
 from milieu.paper.methods.gcn.gcn_method import GCN
+from milieu.paper.methods.direct_neighbor import DirectNeighbor
+from milieu.paper.methods.diamond import DIAMOnD
 from milieu.data.associations import load_diseases
-from milieu.data.network import PPINetwork
-from milieu.metrics import positive_rankings, recall_at, recall, auroc, average_precision
+from milieu.data.network import Network
+from milieu.util.metrics import positive_rankings, recall_at, recall, auroc, average_precision
 from milieu.data.output import ExperimentResults
-from milieu.util.util import Params, set_logger, parse_id_rank_pair
+from milieu.util.util import set_logger, parse_id_rank_pair
 
 
 class DPPEvaluate(Experiment):
@@ -41,17 +42,17 @@ class DPPEvaluate(Experiment):
         set_logger(os.path.join(dir, 'experiment.log'), level=logging.INFO, console=True)
 
         # log Title 
-        logging.info("Disease Protein Prediction in the PPI Network")
-        logging.info("Sabri Eyuboglu  -- SNAP Group")
+        logging.info("Node set expansion evaluation")
+        logging.info("Sabri Eyuboglu, Marinka Zitnik and Jure Leskovec  -- SNAP Group")
         logging.info("======================================")
 
         # load data from params file
         logging.info("Loading PPI Network...")
-        self.network = PPINetwork(self.params["ppi_network"],
-                                  remove_nodes=self.params.get("remove_nodes", 0),
-                                  remove_edges=self.params.get("remove_edges", 0))
+        self.network = Network(self.params["ppi_network"],
+                               remove_nodes=self.params.get("remove_nodes", 0),
+                               remove_edges=self.params.get("remove_edges", 0))
         logging.info("Loading Disease Associations...")
-        self.diseases_dict = load_diseases(self.params["diseases_path"], 
+        self.diseases_dict = load_diseases(self.params["associations_path"], 
                                            self.params["disease_subset"], 
                                            exclude_splits=['none'])
 
@@ -137,7 +138,7 @@ class DPPEvaluate(Experiment):
             compute_metrics(metrics, labels, scores, train_nodes, val_nodes)
 
         avg_metrics = {name: np.mean(values) for name, values in metrics.items()}
-        proteins = self.network.get_proteins(metrics["Nodes"])
+        proteins = self.network.get_names(metrics["Nodes"])
         ranks = metrics["Ranks"]
         proteins_to_ranks = {protein: ranks for protein, ranks in zip(proteins, ranks)}
         return disease, avg_metrics, proteins_to_ranks 

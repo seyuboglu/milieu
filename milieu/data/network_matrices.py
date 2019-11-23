@@ -10,8 +10,8 @@ import numpy as np
 import networkx as nx
 from scipy.sparse import csr_matrix
 
-from milieu.run import Process
-from milieu.data.network import PPINetwork
+from milieu.util.util import Process
+from milieu.data.network import Network
 
 
 class BuildNetworkMatrix(Process):
@@ -26,7 +26,7 @@ class BuildNetworkMatrix(Process):
         logging.info("Sabri Eyuboglu  -- SNAP Group")
         logging.info("======================================")
         logging.info("Loading PPI Network...")
-        self.network = PPINetwork(params["ppi_network"])
+        self.network = Network(params["ppi_network"])
         self.deg_fn = params["deg_fn"]
         self.col_norm = params["col_norm"]
         self.row_norm = params["row_norm"]

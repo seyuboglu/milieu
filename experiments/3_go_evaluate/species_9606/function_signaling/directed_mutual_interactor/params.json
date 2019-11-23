@@ -6,7 +6,7 @@
         "updates": {
             "process": "dpp_evaluate",
             "process_params": {
-                "disease_path": "data/associations/species_9606/go_process/associations.csv"
+                "associations_path": "data/associations/species_9606/go_process/associations.csv"
             }
         },
         "overwrite": false

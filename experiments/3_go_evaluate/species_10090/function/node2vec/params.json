@@ -3,7 +3,7 @@
     "process_params": {"notify": true,
         "n_processes": 30,
         "ppi_network": "data/networks/species_10090/bio-grid/network.txt",
-        "disease_path": "data/associations/species_10090/go_function/associations.csv",
+        "associations_path": "data/associations/species_10090/go_function/associations.csv",
         "disease_subset": [],
         
         "n_folds": 10,

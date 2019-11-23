@@ -12,10 +12,10 @@ import seaborn as sns
 import pandas as pd
 from scipy.stats import rankdata
 
-from milieu.data.network import PPINetwork
+from milieu.data.network import Network
 from milieu.data.associations import load_diseases
 from milieu.paper.figures.figure import Figure
-from milieu.util.util import Params, set_logger, parse_id_rank_pair, prepare_sns
+from milieu.util.util import set_logger, parse_id_rank_pair, prepare_sns
 
  
 class RecallComparison(Figure):
@@ -44,7 +44,7 @@ class RecallComparison(Figure):
         """
         """
         logging.info("Loading Disease Associations...")
-        self.diseases_dict = load_diseases(self.params["diseases_path"], exclude_splits=["none"])
+        self.diseases_dict = load_diseases(self.params["associations_path"], exclude_splits=["none"])
         print(len(self.diseases_dict))
     
         logging.info("Loading Results...")

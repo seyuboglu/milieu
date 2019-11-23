@@ -2,7 +2,7 @@
     "process_fn": "generate_go_associations",
     "process_params": {
         "process_dir": "data/associations/go_function",
-        "network_path": "data/networks/bio-pathways-network.txt",
+        "network_path": "data/networks/species_9606/bio-pathways/network.txt",
         "propagate_ancestors": true,
         "evidence_codes": [
             "EXP",

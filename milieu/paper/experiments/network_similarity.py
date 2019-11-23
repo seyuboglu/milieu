@@ -15,10 +15,10 @@ import matplotlib.pyplot as plt
 from tqdm import tqdm_notebook as tqdm
 
 from milieu.data.associations import load_diseases
-from milieu.data.network import PPINetwork
+from milieu.data.network import Network
 from milieu.data.protein import load_drug_targets, load_essential_proteins
 from milieu.paper.experiments.experiment import Experiment
-from milieu.util.util import Params, set_logger, prepare_sns
+from milieu.util.util import set_logger, prepare_sns
 
 def jaccard(set_a, set_b):
     "Jaccard similarity between two sets"
@@ -43,7 +43,7 @@ class NetworkSimilarity(Experiment):
                    level=logging.INFO, console=True)
         
         logging.info("Loading networks...")
-        self.networks = {name: PPINetwork(path) 
+        self.networks = {name: Network(path) 
                          for name, path in self.params["ppi_networks"].items()}
     
   
