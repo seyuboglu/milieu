@@ -36,8 +36,7 @@ pip install -e .
 To get started checkout `notebooks/mutual_interactors.ipynb` a Jupyter Notebook that will walk you
 through the process of training a *Mutual Interactors* model.
 
-It will also show you how to visualize the predictions of a trained *Mutual Interactors*
-model. 
+Once you've trained a model you can use it to discover new nodes that might belong to a set of nodes you're interested in. For example, below we use it to predict what other nodes might also be associated tracheomalacia. You can visualize the model's predictions in the context of known associated nodes (red), predicted nodes (orange), and the mutual interactors between them (blue). In the screenshot below, we show a visualization for tracheomalacia.
 
 <p align="center">
 <img src="https://github.com/seyuboglu/milieu/blob/master/data/images/notebook.png" width="800" align="center">
