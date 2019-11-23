@@ -49,7 +49,7 @@ model.
 We provide the code and data to reproduce *all* of the experiments described in our manuscript. 
 
 ### `Experiment` Classes
-Each experiment has a designated class in the `milieu.paper.experiments` module. For example, the `EvaluateMethod` class can be used to evaluate a method on any node-set expansion task (e.g. disease protein prediction on the human PPI network).  All experiment classes subclass `milieu.paper.experiments.experiment.Experiment`. 
+Each experiment has a designated class in the `milieu.paper.experiments` module. For example, the `EvaluateMethod` class can be used to evaluate a method on a node-set expansion task (e.g. disease protein prediction on the human PPI network).  All experiment classes subclass `milieu.paper.experiments.experiment.Experiment`. 
 
 To run an experiment, we first construct an instance of an experiment class (such as `EvaluateMethod`). The constructor accepts an experiment directory (`dir`) and a parameter dictionary (`params`). The **experiment directory** is a directory where the experiment parameters, results, and logs are stored. The **experiment parameters** should be represented by a nested dictionary that specify which experiment class to use (e.g.  `"process": "evaluate_method"`) and the parameters for that experiment class (e.g. `"process_params": {...}`). Below we've included the parameters we used to evaluate the performance of Random Walks on the task of protein function prediction with the human PPI Network:
 ```
@@ -96,9 +96,10 @@ run experiments/3_go_evaluate/species_9606/function/random_walk
 
 Below we walk through the various `Experiment` classes we've implemented for our study. 
 
-
 ### 1) `EvaluateMethod`
-Provides an experimental harness for evaluating a methods 
+Uses node-wise cross-validation to evaluate a method's capacity to accurately expand node sets in a network. 
+*Required parameters*: `network`, `associations_path`, `n_folds`, `method_class`, `method_params`
+
 
 ### 2) `NodeSignificance`
 
@@ -106,14 +107,14 @@ Provides an experimental harness for evaluating a methods
 
 ### 4) `GOEnrichment`
 
-### 5) Network Robustness 
+### 5) `Network Robustness`
 
-### 6) MilieuAnalysis
+### 6) `MilieuAnalysis`
 
 
 
 ## Directory
-S
+\
 
 - *data* - all of the data for the project
   - *associations* - datasets of disease protein associations each stored in a *.csv* 
