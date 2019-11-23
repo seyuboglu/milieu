@@ -1,4 +1,4 @@
-# Mutual Interactors: A graph-based machine learning model with applications in molecular phenotype prediction
+# Mutual Interactors
 
 *Sabri Eyuboglu, Marinka Zitnik and Jure Leskovec*
 
