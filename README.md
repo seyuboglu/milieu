@@ -2,9 +2,13 @@
 
 *Sabri Eyuboglu, Marinka Zitnik and Jure Leskovec*
 
-This repository includes our PyTorch implementation of *Mutual Interactors*, a machine learning algorithm for node-set expansion in large networks. The algorithm is motivated by the structure of disease-associated proteins, drug targets and protein functions in molecular networks, and can be used to  predict molecular phenotypes *in silico*. For a detailed description of the algorithm, please see our [paper](TODO).  
+This repository includes our PyTorch implementation of *Mutual Interactors*, a machine learning algorithm for expanding node-sets in large networks. 
 
-We include software that makes it easy to **reproduce** *all* the experiments described in the paper. Each experiment has a designated class in the `milieu.paper.experiment` module. We also provide implementations of several **baseline** network-based disease protein prediction methods, including DIAMOnD, Random Walks and GCN.
+A *node-set* is any group of nodes that are all associated with some common concept. To *expand* a node-set is to predict what other nodes might also be associated with that concept. For example, in a protein-protein interaction network, the set of proteins known to be associated with Lymphoma make up a node-set. By expanding this node-set, we are predicting which proteins might also be associated with Lymphoma. 
+
+*Mutual Interactors'* design is informed by the molecular network structure of proteins associated with the same disease. Proteins targetted by the same drug and proteins with the same function also share this network structure. In this way, *Mutual Interactors* is a method tailored to molecular phenotype prediction in molecular networks. At the same time, it is a general method applicable wherever the mutual interactor principle applies. For a detailed description of the algorithm, please see our [paper](TODO).  
+
+In this repository, we also include software that makes it easy to **reproduce** *all* the experiments described in the paper. Each experiment has a designated class in the `milieu.paper.experiment` module. We also provide implementations of several **baseline** node-set expansion methods, including DIAMOnD, Random Walks and GCN.
 
 
 <p align="center">
