@@ -1,5 +1,5 @@
 {
-    "process": "protein_significance",
+    "process": "node_significance",
     "process_params":
         {
             "n_processes": 1,

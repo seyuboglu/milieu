@@ -1,7 +1,0 @@
-{
-    "ppi_network": "data/networks/species_9606/bio-pathways/network.txt",
-    "diseases_path": "data/associations/disgenet-associations.csv",
-    "disease_subset": [],
-    "model_path": "experiments/dpp_predict/lci_new/",
-    "top_k": 100
-}

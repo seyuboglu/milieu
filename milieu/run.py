@@ -20,8 +20,8 @@ from milieu.util.util import set_logger, send_email
 import milieu.paper.experiments.evaluate_method as evaluate_method
 import milieu.paper.experiments.dpp_predict as dpp_predict
 import milieu.paper.experiments.go_enrichment as go_enrichment
-import milieu.paper.experiments.protein_significance as protein_significance
-import milieu.paper.experiments.disease_significance as disease_significance
+import milieu.paper.experiments.node_significance as node_significance
+import milieu.paper.experiments.set_significance as set_significance
 import milieu.paper.experiments.disease_subgraph as disease_subgraph
 import milieu.paper.experiments.network_robustness as network_robustness
 import milieu.data.network_matrices as network_matrices

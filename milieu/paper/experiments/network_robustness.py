@@ -15,8 +15,8 @@ from milieu.paper.experiments.experiment import Experiment
 from milieu.paper.experiments.evaluate_method import EvaluateMethod
 from milieu.paper.experiments.dpp_predict import DPPPredict
 from milieu.paper.experiments.go_enrichment import GOEnrichment
-from milieu.paper.experiments.protein_significance import ProteinSignificance
-from milieu.paper.experiments.disease_significance import DiseaseSignificance
+from milieu.paper.experiments.node_significance import NodeSignificance
+from milieu.paper.experiments.set_significance import SetSignificance
 from milieu.paper.experiments.disease_subgraph import DiseaseSubgraph
 from milieu.util.util import set_logger
 

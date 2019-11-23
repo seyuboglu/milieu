@@ -1,0 +1,27 @@
+{
+    "process": "go_enrichment",
+    "process_params": 
+        {
+            "n_processes": 1,
+            "ppi_network": "data/networks/species_9606/bio-pathways/network.txt",
+            "diseases_path": "data/associations/disgenet-associations.csv",
+            "disease_subset": [],
+
+            "method_to_preds": {
+                "lci": "experiments/dpp_predict/lci"
+            },
+
+            "go_path": "data/go/go-basic.obo",
+            "gene_to_go_path": "data/go/gene2go.txt",
+            
+            "enrichment_params": {
+                "propogate_counts": true,
+                "alpha": 0.05,
+                "methods": ["fdr_bh"]
+            },
+
+            "num_preds": -1,
+            "top_k": 10
+
+        }
+}
