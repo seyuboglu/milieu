@@ -102,14 +102,20 @@ Uses node-wise cross-validation to evaluate a method's capacity to accurately ex
 *Required parameters*: `network`, `associations_path`, `n_folds`, `method_class`, `method_params`
 
 *Experiment directories*: the directories containing the parameters we used when running experiments for our study
-- `experiments/1_dpp_evaluate/**`: evaluate method performance on disease protein prediction
-- `experiments/2_dti_evaluate/**`: evaluate method performance on drug-target interaction prediction
-- `experiments/3_go_evaluate/**`: evaluate method performance on gene ontology molecular function and biological process prediction
+- `experiments/1_dpp_evaluate/**`: evaluate method performance on disease protein prediction (*Used for*: Fig. 2a, Fig. 2c-e)
+- `experiments/2_dti_evaluate/**`: evaluate method performance on drug-target interaction prediction (*Used for*: Fig. 3b, Fig. 3e)
+- `experiments/3_go_evaluate/**`: evaluate method performance on gene ontology molecular function and biological process prediction (*Used for*: Extended Fig. 1b, Extended Fig. 2b) 
 
 *Example*: 
 ```
 run experiments/3_go_evaluate/species_9606/function/random_walk
 ```
+
+<p align="center">
+<img src="https://github.com/seyuboglu/milieu/blob/master/data/images/recall_curve.png" width="800" align="center">
+</p>
+
+
 
 ### 2) `NodeSignificance`
 
