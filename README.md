@@ -98,8 +98,18 @@ Below we walk through the various `Experiment` classes we've implemented for our
 
 ### 1) `EvaluateMethod`
 Uses node-wise cross-validation to evaluate a method's capacity to accurately expand node sets in a network. 
+
 *Required parameters*: `network`, `associations_path`, `n_folds`, `method_class`, `method_params`
 
+*Experiment directories*: the directories containing the parameters we used when running experiments for our study
+- `experiments/1_dpp_evaluate/**`: evaluate method performance on disease protein prediction
+- `experiments/2_dti_evaluate/**`: evaluate method performance on drug-target interaction prediction
+- `experiments/3_go_evaluate/**`: evaluate method performance on gene ontology molecular function and biological process prediction
+
+*Example*: 
+```
+run experiments/3_go_evaluate/species_9606/function/random_walk
+```
 
 ### 2) `NodeSignificance`
 
