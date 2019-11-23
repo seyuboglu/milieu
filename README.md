@@ -40,7 +40,7 @@ pip install -e .
 To get started checkout `notebooks/mutual_interactors.ipynb` a Jupyter Notebook that will walk you
 through the process of training a *Mutual Interactors* model. In the notebook, we use the task of disease protein prediction on a PPI network as a running example, but it is easy to swap out the network and node sets for a different task. 
 
-Note: throughout our code we use the name `Milieu` instead of `MutualInteractors`. 
+Note: throughout our code we use the name `Milieu` as a shorthand for *Mutual Interactors*. 
 
 ### Training 
 We've implemented the *Mutual Interactors* model in a self-contained class, which makes it easy to quickly train a model. 
@@ -65,8 +65,7 @@ predicted_proteins = milieu.expand(tracheomalacia_proteins)
 ```
 
 ### Visualizing model predictions
-You can **visualize** the model's predictions in the context of known associated nodes (red), predicted nodes (orange), and the mutual interactors between them (blue). In the screenshot below, we show a visualization for tracheomalacia.
-
+You can **visualize** the model's predictions in the context of known associated nodes (red), predicted nodes (orange), and the mutual interactors between them (blue). In the screenshot below, we show a visualization of *Mutual Interactors*' predictions for tracheomalacia. Note: these visualizations do not yet work with Jupyter Lab - start up a classic Jupyter Notebook to visualize your predictions. 
 ```
 show_network(network, tracheomalacia_proteins, predicted_proteins)
 ```
@@ -165,7 +164,7 @@ Evaluate the statistical significance of a network structure in a dataset of nod
 run experiments/4_protein_significance/disease
 ```
 
-### 3) `Network Robustness`
+### 3) `NetworkRobustness`
 Evaluate a method's robustness to incomplete networks. 
 <p align="center">
 <img src="https://github.com/seyuboglu/milieu/blob/master/data/images/robustness.png" width="300" align="center">
