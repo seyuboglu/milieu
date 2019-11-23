@@ -38,7 +38,9 @@ pip install -e .
 
 ## Using *Mutual Interactors*
 To get started checkout `notebooks/mutual_interactors.ipynb` a Jupyter Notebook that will walk you
-through the process of training a *Mutual Interactors* model. In the notebook, we use the task of disease protein prediction on a PPI network as a running example, but it is easy to swap out the network and node sets for a different task.
+through the process of training a *Mutual Interactors* model. In the notebook, we use the task of disease protein prediction on a PPI network as a running example, but it is easy to swap out the network and node sets for a different task. 
+
+Note: throughout our code we use the name `Milieu` instead of `MutualInteractors`. 
 
 ### Training 
 We've implemented the *Mutual Interactors* model in a self-contained class, which makes it easy to quickly train a model. 
