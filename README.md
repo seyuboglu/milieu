@@ -1,6 +1,6 @@
 # Mutual Interactors
 
-*Sabri Eyuboglu, Marinka Zitnik and Jure Leskovec*
+*Sabri Eyuboglu\*, Marinka Zitnik\* and Jure Leskovec*
 
 This repository includes our PyTorch implementation of *Mutual Interactors*, a machine learning algorithm for expanding node-sets in large networks. 
 
