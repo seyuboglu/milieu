@@ -48,6 +48,7 @@ model.
 ## Reproducing Experiments
 We provide the code and data to reproduce *all* of the experiments described in our manuscript. 
 
+### `Experiment` Classes
 Each experiment has a designated class in the `milieu.paper.experiments` module. For example, the `EvaluateMethod` class can be used to evaluate a method on any node-set expansion task (e.g. disease protein prediction on the human PPI network).  All experiment classes subclass `milieu.paper.experiments.experiment.Experiment`. 
 
 To run an experiment, we first construct an instance of an experiment class (such as `EvaluateMethod`). The constructor accepts an experiment directory (`dir`) and a parameter dictionary (`params`). The **experiment directory** is a directory where the experiment parameters, results, and logs are stored. The **experiment parameters** should be represented by a nested dictionary that specify which experiment class to use (e.g.  `"process": "evaluate_method"`) and the parameters for that experiment class (e.g. `"process_params": {...}`). Below we've included the parameters we used to evaluate the performance of Random Walks on the task of protein function prediction with the human PPI Network:
@@ -70,18 +71,30 @@ To run an experiment, we first construct an instance of an experiment class (suc
 ```
 Once we've created an experiment object, we can run the experiment using the objects `run()` method. 
 
+### Running from command line
 We can also easily run any experiment from the command line with the `run` command. The `run` command accepts one argument: an experiment directory containing a params file `params.json`. This JSON file should follow the structure shown above. 
+To run a new experiment: 
+1) Create a directory with an descriptive name:
 ```
 mkdir new_experiment
 ```
+2) Add a params file and fill it in with the desired params.
 ```
 vi new_experiment/params.json
 ```
+3) Run it!
 ```
 run new_experiment
 ```
 
-This repository includes the experiment directories for all of the experiments we ran in our study. For example, the parameters we used to evaluate the performance of Random Walks on the task of protein function prediction with the human PPI Network can be found at `experiments/3_go_evaluate/species_9606/function/random_walk/params.json`. Similarly, the results from this experiment can be found at `experiments/3_go_evaluate/species_9606/function/random_walk/metrics.csv`. 
+This repository includes the experiment directories for all of the experiments we ran in our study. For example, the parameters we used to evaluate the performance of Random Walks on the task of protein function prediction with the human PPI Network can be found at `experiments/3_go_evaluate/species_9606/function/random_walk/params.json`. The results from this experiment can be found at `experiments/3_go_evaluate/species_9606/function/random_walk/metrics.csv`. 
+
+We can easily re-run any of these experiments from the command line:
+```
+run experiments/3_go_evaluate/species_9606/function/random_walk
+```
+
+Below we walk through the various `Experiment` classes we've implemented for our study. 
 
 
 ### 1) `EvaluateMethod`
