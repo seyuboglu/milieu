@@ -2,7 +2,7 @@
 
 *Sabri Eyuboglu, Marinka Zitnik and Jure Leskovec*
 
-This repository includes our PyTorch implementation of *Mutual Interactors*, a machine learning algorithm for node set expansion in large networks. The algorithm is motivated by the structure of disease-associated proteins, drug targets and protein functions in molecular networks, and can be used to  predict molecular phenotypes *in silico*. For a detailed description of the algorithm, please see our [paper](TODO).  
+This repository includes our PyTorch implementation of *Mutual Interactors*, a machine learning algorithm for node-set expansion in large networks. The algorithm is motivated by the structure of disease-associated proteins, drug targets and protein functions in molecular networks, and can be used to  predict molecular phenotypes *in silico*. For a detailed description of the algorithm, please see our [paper](TODO).  
 
 We include software that makes it easy to **reproduce** *all* the experiments described in the paper. Each experiment has a designated class in the `milieu.paper.experiment` module. We also provide implementations of several **baseline** network-based disease protein prediction methods, including DIAMOnD, Random Walks and GCN.
 
@@ -34,9 +34,36 @@ pip install -e .
 
 ## Using *Mutual Interactors*
 To get started checkout `notebooks/mutual_interactors.ipynb` a Jupyter Notebook that will walk you
-through the process of training a *Mutual Interactors* model.
+through the process of training a *Mutual Interactors* model for a particular node set expansion task. In the notebook, we use the task of disease protein prediction on a PPI network as a running example, but it is easy to swap out the network and node sets for a different task.
 
-Once you've trained a model you can use it to discover new nodes that might belong to a set of nodes you're interested in. For example, below we use it to predict what other nodes might also be associated tracheomalacia. You can visualize the model's predictions in the context of known associated nodes (red), predicted nodes (orange), and the mutual interactors between them (blue). In the screenshot below, we show a visualization for tracheomalacia.
+### Training 
+We've implemented the *Mutual Interactors* model in a self-contained class, which makes it easy to quickly train a model. 
+```
+network = Network("path_to_adj_list.txt")
+milieu = Milieu(network, params)
+
+train_node_sets = ... # generate a list of NodeSets
+valid_node_sets = ... # generate a list of NodeSets 
+train_dataset = MilieuDataset(network, node_sets=train_node_sets)
+valid_dataset = MilieuDataset(network, node_sets=valid_node_sets)
+
+milieu.train_model(train_dataset, valid_dataset)
+```
+
+### Making Predictions
+Once we've trained an instance of the `Milieu` class, we can use it to discover new nodes that might belong to a set of nodes we're interested in. For example, below we use it to predict what other nodes might also be associated tracheomalacia.
+```
+tracheomalacia_proteins = ['COL2A1', 'HRAS', 'DCHS1', 'SNRPB', 'ORC4', 'LTBP4', 
+                           'FLNB', 'PRRX1', 'RAB3GAP2', 'FGFR2','TRIM2']
+predicted_proteins = milieu.expand(tracheomalacia_proteins)
+```
+
+### Visualizing model predictions
+You can **visualize** the model's predictions in the context of known associated nodes (red), predicted nodes (orange), and the mutual interactors between them (blue). In the screenshot below, we show a visualization for tracheomalacia.
+
+```
+show_network(network, tracheomalacia_proteins, predicted_proteins)
+```
 
 <p align="center">
 <img src="https://github.com/seyuboglu/milieu/blob/master/data/images/notebook.png" width="800" align="center">
