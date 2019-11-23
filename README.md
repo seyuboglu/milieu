@@ -4,7 +4,7 @@
 
 This repository includes our PyTorch implementation of *Mutual Interactors*, a machine learning algorithm for expanding node-sets in large networks. 
 
-A *node-set* is any group of nodes that are all associated with some common concept. To *expand* a node-set is to predict what other nodes might also be associated with that concept. For example, in a protein-protein interaction network, the set of proteins known to be associated with Lymphoma make up a node-set. By expanding this node-set, we are predicting which proteins might also be associated with Lymphoma. 
+A *node-set* is any group of nodes that are all associated with some common concept. To *expand* a node-set is to predict what other nodes might also be associated with that concept. For example, in a protein-protein interaction network, the set of proteins known to be associated with Lymphoma make up a node-set. By expanding this node-set, we are predicting which other proteins might also be associated with Lymphoma. 
 
 *Mutual Interactors'* design is informed by the molecular network structure of proteins associated with the same disease. Proteins targetted by the same drug and proteins with the same function also share this network structure. In this way, *Mutual Interactors* is a method tailored to molecular phenotype prediction in molecular networks. At the same time, it is a general method applicable wherever the mutual interactor principle applies. For a detailed description of the algorithm, please see our [paper](TODO).  
 
@@ -146,7 +146,7 @@ run experiments/3_go_evaluate/species_9606/function/random_walk
 
 
 ### 2) `NodeSignificance`
-Evaluate the statistical significance of a network structure in a dataset of node sets (e.g. disease pathways). Uses permutation tests to compute $p$-values (See **Evaluating the statistical significance of network structures** in Methods.)
+Evaluate the statistical significance of a network structure in a dataset of node sets (e.g. disease pathways). Uses permutation tests to compute p-values (See **Evaluating the statistical significance of network structures** in Methods.)
 <p align="center">
 <img src="https://github.com/seyuboglu/milieu/blob/master/data/images/node_significance.png" width="300" align="center">
 </p>
