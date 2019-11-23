@@ -98,6 +98,9 @@ Below we walk through the various `Experiment` classes we've implemented for our
 
 ### 1) `EvaluateMethod`
 Uses node-wise cross-validation to evaluate a method's capacity to accurately expand node sets in a network. 
+<p align="center">
+<img src="https://github.com/seyuboglu/milieu/blob/master/data/images/recall_curve.png" width="300" align="center">
+</p>
 
 *Required parameters*: `network`, `associations_path`, `n_folds`, `method_class`, `method_params`
 
@@ -110,11 +113,6 @@ Uses node-wise cross-validation to evaluate a method's capacity to accurately ex
 ```
 run experiments/3_go_evaluate/species_9606/function/random_walk
 ```
-
-<p align="center">
-<img src="https://github.com/seyuboglu/milieu/blob/master/data/images/recall_curve.png" width="800" align="center">
-</p>
-
 
 
 ### 2) `NodeSignificance`
