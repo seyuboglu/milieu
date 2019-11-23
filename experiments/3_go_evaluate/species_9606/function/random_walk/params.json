@@ -1,6 +1,6 @@
 {
-    "process": "dpp_evaluate",
-    "process_params": {"notify": true,
+    "process": "evaluate_method",
+    "process_params": {
         "n_processes": 20,
         "ppi_network": "data/networks/species_9606/bio-pathways/network.txt",
         "associations_path": "data/associations/gene_ontology/species_9606/go_function/associations.csv",

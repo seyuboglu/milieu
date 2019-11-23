@@ -1,5 +1,5 @@
 {
-    "process": "dpp_evaluate",
+    "process": "evaluate_method",
     "process_params": {"notify": true,
         "n_processes": 10,
         "ppi_network": "data/networks/species_4932/bio-grid/network.txt",

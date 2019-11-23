@@ -1,5 +1,5 @@
 {
-    "process": "dpp_evaluate",
+    "process": "evaluate_method",
     "process_params": {"notify": true,\n"notify": true,\n
         "cuda": true,
         "cuda_gpu": 7,

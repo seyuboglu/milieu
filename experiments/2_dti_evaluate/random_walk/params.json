@@ -1,5 +1,5 @@
 {
-    "process": "dpp_evaluate",
+    "process": "evaluate_method",
     "process_params": {
         "n_processes": 50,
         "ppi_network": "data/networks/species_9606/bio-pathways/network.txt",

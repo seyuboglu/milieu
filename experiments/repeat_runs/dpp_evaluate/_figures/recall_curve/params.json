@@ -4,12 +4,12 @@
         {
             "diseases_path": "data/associations/disgenet-associations.csv",
 
-            "method_exp_dirs": {"LCI": "experiments/_multi/dpp_evaluate/milieu",
-                                "Random Walk": "experiments/_multi/dpp_evaluate/rw", 
-                                "Direct Neighbor": "experiments/dpp_evaluate/direct_neighbor",
-                                "DIAMOnD": "experiments/dpp_evaluate/diamond",
-                                "1-Layer GCN": "experiments/dpp_evaluate/gcn_old",
-                                "Node2Vec": "experiments/_multi/dpp_evaluate/node2vec"
+            "method_exp_dirs": {"LCI": "experiments/_multi/evaluate_method/milieu",
+                                "Random Walk": "experiments/_multi/evaluate_method/rw", 
+                                "Direct Neighbor": "experiments/evaluate_method/direct_neighbor",
+                                "DIAMOnD": "experiments/evaluate_method/diamond",
+                                "1-Layer GCN": "experiments/evaluate_method/gcn_old",
+                                "Node2Vec": "experiments/_multi/evaluate_method/node2vec"
                             },
 
             "primary": "",

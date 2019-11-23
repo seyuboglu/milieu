@@ -4,7 +4,7 @@
         "process_dir": "experiments/prediction_evaluate/signaling_evaluate/function/directed_mutual_interactor",
         "source_dir": "experiments/prediction_evaluate/signaling_evaluate/process/directed_mutual_interactor",
         "updates": {
-            "process": "dpp_evaluate",
+            "process": "evaluate_method",
             "process_params": {
                 "associations_path": "data/associations/species_9606/go_process/associations.csv"
             }

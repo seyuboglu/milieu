@@ -1,5 +1,5 @@
 {
-    "process": "dpp_evaluate",
+    "process": "evaluate_method",
     "process_params": {
         "notify": false,
         "n_processes": 1,

@@ -1,5 +1,5 @@
 {
-    "process": "dpp_evaluate",
+    "process": "evaluate_method",
     "num_runs": 10, 
     "process_params": {
 

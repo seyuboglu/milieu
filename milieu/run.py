@@ -17,7 +17,7 @@ import torch
 import click
 
 from milieu.util.util import set_logger, send_email
-import milieu.paper.experiments.dpp_evaluate as dpp_evaluate
+import milieu.paper.experiments.evaluate_method as evaluate_method
 import milieu.paper.experiments.dpp_predict as dpp_predict
 import milieu.paper.experiments.go_enrichment as go_enrichment
 import milieu.paper.experiments.protein_significance as protein_significance

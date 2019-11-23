@@ -5,7 +5,7 @@
             "diseases_path": "data/associations/disgenet-associations.csv",
 
             "method_exp_dirs": {
-                "Milieu": "experiments/dpp_evaluate/lci-repeat",
+                "Milieu": "experiments/evaluate_method/lci-repeat",
                 "0.05": "experiments/network_robustness/milieu/config_0_run_0",
                 "0.1": "experiments/network_robustness/milieu/config_1_run_0",
                 "0.15": "experiments/network_robustness/milieu/config_2_run_0",
@@ -16,7 +16,7 @@
                 "0.4": "experiments/network_robustness/milieu/config_7_run_0",
                 "0.45": "experiments/network_robustness/milieu/config_8_run_0",
                 "0.5": "experiments/network_robustness/milieu/config_9_run_0",
-                "Random Walk": "experiments/dpp_evaluate/random_walk"
+                "Random Walk": "experiments/evaluate_method/random_walk"
 
             },
 

@@ -12,7 +12,7 @@ import pandas as pd
 import torch
 
 from milieu.paper.experiments.experiment import Experiment
-from milieu.paper.experiments.dpp_evaluate import DPPEvaluate
+from milieu.paper.experiments.evaluate_method import EvaluateMethod
 from milieu.paper.experiments.dpp_predict import DPPPredict
 from milieu.paper.experiments.go_enrichment import GOEnrichment
 from milieu.paper.experiments.protein_significance import ProteinSignificance

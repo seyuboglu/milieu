@@ -5,7 +5,7 @@
             "diseases_path": "data/associations/disgenet-associations.csv",
 
             "method_exp_dirs": {
-                "0.00": "experiments/dpp_evaluate/lci",
+                "0.00": "experiments/evaluate_method/lci",
                 "0.05": "experiments/network_robustness/milieu/config_0_run_0",
                 "0.1": "experiments/network_robustness/milieu/config_1_run_0",
                 "0.15": "experiments/network_robustness/milieu/config_2_run_0",
@@ -16,7 +16,7 @@
                 "0.4": "experiments/network_robustness/milieu/config_7_run_0",
                 "0.45": "experiments/network_robustness/milieu/config_8_run_0",
                 "0.5": "experiments/network_robustness/milieu/config_9_run_0",
-                "RW": "experiments/_multi/dpp_evaluate/rw/run_0"
+                "RW": "experiments/_multi/evaluate_method/rw/run_0"
             },
 
             "metric": "Recall-at-25",

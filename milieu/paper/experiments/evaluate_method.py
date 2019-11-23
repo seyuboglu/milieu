@@ -27,7 +27,7 @@ from milieu.data.output import ExperimentResults
 from milieu.util.util import set_logger, parse_id_rank_pair
 
 
-class DPPEvaluate(Experiment):
+class EvaluateMethod(Experiment):
     """
     Class for the disease protein prediction experiment
     """
@@ -47,11 +47,11 @@ class DPPEvaluate(Experiment):
         logging.info("======================================")
 
         # load data from params file
-        logging.info("Loading PPI Network...")
+        logging.info("Loading Network...")
         self.network = Network(self.params["ppi_network"],
                                remove_nodes=self.params.get("remove_nodes", 0),
                                remove_edges=self.params.get("remove_edges", 0))
-        logging.info("Loading Disease Associations...")
+        logging.info("Loading Associations...")
         self.diseases_dict = load_diseases(self.params["associations_path"], 
                                            self.params["disease_subset"], 
                                            exclude_splits=['none'])
@@ -225,9 +225,9 @@ def main(process_dir, overwrite, notify):
     """
     with open(os.path.join(process_dir, "params.json")) as f:
         params = json.load(f)
-    assert(params["process"] == "dpp_evaluate")
+    assert(params["process"] == "evaluate_method")
     global exp
-    exp = DPPEvaluate(process_dir, params["process_params"])
+    exp = EvaluateMethod(process_dir, params["process_params"])
     if exp.is_completed():
         exp.load_results()
     elif exp.run():

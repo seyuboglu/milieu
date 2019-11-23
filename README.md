@@ -2,7 +2,7 @@
 
 *Sabri Eyuboglu, Marinka Zitnik and Jure Leskovec*
 
-This repository includes our PyTorch implementation of *Mutual Interactors*, a machine learning algorithm for node set expansion in large networks. The algorithm is motivated by the structure of disease-associated proteins, drug targets and protein functions in molecular networks, and can be used to  predicrt molecular phenotypes *in silico*. For a detailed description of the algorithm, please see our [paper](TODO).  
+This repository includes our PyTorch implementation of *Mutual Interactors*, a machine learning algorithm for node set expansion in large networks. The algorithm is motivated by the structure of disease-associated proteins, drug targets and protein functions in molecular networks, and can be used to  predict molecular phenotypes *in silico*. For a detailed description of the algorithm, please see our [paper](TODO).  
 
 We include software for easily reproducing *all* the experiments described in the paper. Each experiment has a designated class in the `milieu/experiment` module. We also provide implementations of several baseline network-based disease protein prediction methods, including DIAMOnD, Random Walks and Graph Neural Networks.
 
@@ -46,22 +46,29 @@ model.
 
 
 ## Reproducing Experiments
-We provide the code and data to reproduce all of the experiments 
+We provide the code and data to reproduce *all* of the experiments described in our manuscript. 
 
-### 1) dpp_evaluate
+Each experiment has a designated class in the `milieu/experiment` module. For example, the `EvaluateMethod` class can be used to evaluate a method on any node-set expansion task (e.g. disease protein prediction on the human PPI network). 
 
-### 2) disease_subgraph
+To run an experiment, we construct an instance of an experiment class. The constructor accepts an experiment directory (`dir`) where parameters, logs and results will be stored and a parameter dictionary (`params`). Then we call the `run()` method on the experiment object.
 
-### dpp_evaluate
+ We've included the experiment directories and parameters for all of the experiments we ran. These can be found under the  `experiments` directory. For example, the parameters we used to evaluate the performance of Random Walks on the task of protein function prediction with the human PPI Network can be found at `experiments/3_go_evaluate/species_9606/function/random_walk/params.json`. Similarly, the results from this experiment can be found at `experiments/3_go_evaluate/species_9606/function/random_walk/metrics.csv`. 
 
-### dpp_predict
+ We can easily re-run any of the experiments from the command line with the `run` command. The `run` command accepts one argument: an experiment directory containing a parameter 
 
-### go_enrichment
 
-### lci_anlaysis
+### 1) `EvaluateMethod`
+Provides an experimental harness for evaluating a methods 
 
-### protein_significance
+### 2) `NodeSignificance`
 
+### 3) `SetSignificance` 
+
+### 4) `GOEnrichment`
+
+### 5) Network Robustness 
+
+### 6) MilieuAnalysis
 
 
 

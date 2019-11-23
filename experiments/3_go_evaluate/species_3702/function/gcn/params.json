@@ -1,6 +1,6 @@
 
 {
-    "process": "dpp_evaluate",
+    "process": "evaluate_method",
     "process_params": 
         {
             "n_processes": 1,

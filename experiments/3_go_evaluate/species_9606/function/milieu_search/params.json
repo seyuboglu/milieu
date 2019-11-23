@@ -1,7 +1,7 @@
 {
     "process": "tuner",
     "process_params": {"notify": true,
-        "process": "dpp_evaluate",
+        "process": "evaluate_method",
         "process_params": {"notify": true,
             "n_processes": 1,
             "cuda": true,
