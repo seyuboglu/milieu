@@ -4,7 +4,7 @@
 
 This repository includes our PyTorch implementation of *Mutual Interactors*, a machine learning algorithm for node set expansion in large networks. The algorithm is motivated by the structure of disease-associated proteins, drug targets and protein functions in molecular networks, and can be used to  predict molecular phenotypes *in silico*. For a detailed description of the algorithm, please see our [paper](TODO).  
 
-We include software that makes it easy to **reproduce** *all* the experiments described in the paper. Each experiment has a designated class in the `milieu.paper.experiment` module. We also provide implementations of several **baseline** network-based disease protein prediction methods, including DIAMOnD, Random Walks and Graph Neural Networks.
+We include software that makes it easy to **reproduce** *all* the experiments described in the paper. Each experiment has a designated class in the `milieu.paper.experiment` module. We also provide implementations of several **baseline** network-based disease protein prediction methods, including DIAMOnD, Random Walks and GCN.
 
 
 <p align="center">
