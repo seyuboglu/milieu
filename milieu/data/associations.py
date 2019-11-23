@@ -8,11 +8,22 @@ from goatools.obo_parser import GODag
 
 from milieu.util.util import load_mapping
 
-class Disease: 
+class NodeSet:
     """
-    Represents a disease and associated associations. 
+    Abstract class for representing a set of nodes in a network
     """
+    def __init__(self, id, name, split="none"):
+        self.id = id
+        self.name = name
+        self.split = split
+    
+    def to_node_array(self, network):
+        raise NotImplementedError
 
+class ProteinSet(NodeSet): 
+    """
+    Represents a set of proteins associated with an entity. 
+    """
     def __init__(self, id, name, entrez_ids, split="none"):
         """ Initialize a disease. 
         Args:
@@ -21,18 +32,15 @@ class Disease:
             proteins (list of ints) entrez ids
             valdiation_proteins (list of ints)
         """
-        self.id = id
-        self.name = name
+        super().__init__(id=id, name=name, split=split)
         self.proteins = entrez_ids
-        self.size = len(self.proteins)
-        self.split = split
 
         self.doids = []
         self.parents = []
         self.class_doid = None 
         self.class_name = None
     
-    def to_node_array(self, network, validation=False):
+    def to_node_array(self, network):
         """ Translates the diseases protein list to an array of node ids using
         the protein_to_node dictionary.
         Args: 
@@ -49,6 +57,13 @@ class Disease:
     
     def __len__(self):
         return len(self.proteins)
+
+
+def load_node_sets(file_path, 
+                   id_subset=[],
+                   exclude_splits=[],
+                   gene_names_path=None):
+    return load_diseases(file_path, id_subset, exclude_splits, gene_names_path)
 
 
 def load_diseases(associations_path, 
@@ -82,8 +97,8 @@ def load_diseases(associations_path,
                                     for a in row["gene_entrez_ids"].split(",")])
 
             total += len(entrez_ids)
-            diseases[disease_id] = Disease(disease_id, disease_name, 
-                                           entrez_ids, split)
+            diseases[disease_id] = ProteinSet(disease_id, disease_name, 
+                                              entrez_ids, split)
 
     return diseases 
 

@@ -12,7 +12,7 @@ import networkx as nx
 #from goatools.obo_parser import GODag
 
 
-class PPINetwork:
+class Network:
     """
     Represents a protein protein interaction network. 
     """
@@ -28,28 +28,28 @@ class PPINetwork:
             fraction of nodes to randomly remove 
         """
         # map protein entrez ids to node index
-        protein_ids = set()
+        node_names = set()
         edges = []
         with open(network_path) as network_file:
             for line in network_file:
                 if remove_edges > 0 and random.random() < remove_edges:
                     continue
                 p1, p2 = [int(a) for a in line.split()] 
-                protein_ids.add(p1)
-                protein_ids.add(p2)
+                node_names.add(p1)
+                node_names.add(p2)
                 edges.append((p1, p2))
         if remove_nodes > 0: 
             assert(remove_nodes < 1)
-            protein_ids = random.sample(protein_ids, 1 - remove_nodes)
+            node_names = random.sample(node_names, 1 - remove_nodes)
 
-        self.protein_to_node = {p: n for n, p in enumerate(protein_ids)}
-        self.node_to_protein = {n: p for p, n in self.protein_to_node.items()}
+        self.name_to_node = {p: n for n, p in enumerate(node_names)}
+        self.node_to_name = {n: p for p, n in self.name_to_node.items()}
 
         # build adjacency matrix
-        self.adj_matrix = np.zeros((len(self.protein_to_node), 
-                                    len(self.protein_to_node)))
+        self.adj_matrix = np.zeros((len(self.name_to_node), 
+                                    len(self.name_to_node)))
         for p1, p2 in edges:
-            n1, n2 = self.protein_to_node[p1], self.protein_to_node[p2]
+            n1, n2 = self.name_to_node[p1], self.name_to_node[p2]
             self.adj_matrix[n1, n2] = 1
             self.adj_matrix[n2, n1] = 1
         
@@ -66,7 +66,7 @@ class PPINetwork:
         True if protein is in network. 
         @protein (int) entrez id for a protein
         """
-        return protein in self.protein_to_node
+        return protein in self.name_to_node
         
     def get_interactions(self, nodes=False):
         """
@@ -75,36 +75,36 @@ class PPINetwork:
         """
         for a, b in self.nx.edges():
             if not nodes:
-                a = self.node_to_protein[a]
-                b = self.node_to_protein[b]
+                a = self.node_to_name[a]
+                b = self.node_to_name[b]
             
             yield (a, b) if a < b else (b, a)
 
-    def get_protein(self, node):
+    def get_name(self, node):
         """
         """
-        return self.node_to_protein.get(node, None)
+        return self.node_to_name.get(node, None)
     
-    def get_proteins(self, nodes=None):
+    def get_names(self, nodes=None):
         """
-        Converts an iterable of node ids to protein ids.
+        Converts an iterable of node ids to node names.
         args:
             nodes  (iterable)   List or other iterable of node ids
         return:
             proteins    (ndarray)
         """
         if nodes is not None:
-            return np.array([self.node_to_protein[n] 
-                             for n in nodes if n in self.node_to_protein])
+            return np.array([self.node_to_name[n] 
+                             for n in nodes if n in self.node_to_name])
         else:
-            return np.fromiter(self.node_to_protein.values(), dtype=int)
+            return np.fromiter(self.node_to_name.values(), dtype=int)
     
-    def get_node(self, protein):
+    def get_node(self, name):
         """
         """
-        return self.protein_to_node.get(protein, None)
+        return self.name_to_node.get(name, None)
     
-    def get_nodes(self, proteins=None):
+    def get_nodes(self, names=None):
         """
         Converts an iterable of protein ids to node ids. If protein is not in network, 
         it is omitted from the final np.array
@@ -113,8 +113,8 @@ class PPINetwork:
         return:
             proteins    (ndarray)
         """
-        if proteins is not None:
-            return np.array([self.protein_to_node[p] 
-                             for p in proteins if p in self.protein_to_node])
+        if names is not None:
+            return np.array([self.name_to_node[p] 
+                             for p in names if p in self.name_to_node])
         else:
-            return np.fromiter(self.protein_to_node.values(), dtype=int)
+            return np.fromiter(self.name_to_node.values(), dtype=int)

@@ -178,7 +178,7 @@
                     "id": "2652",
                     "entrez": "3814",
                     "genbank": "KISS1",
-                    "normalized_milieu_weight": 0.45006895065307617
+                    "normalized_milieu_weight": 0.44828492403030396
                 }
             },
             {
@@ -187,7 +187,7 @@
                     "id": "1521",
                     "entrez": "2130",
                     "genbank": "EWSR1",
-                    "normalized_milieu_weight": 0.04394976422190666
+                    "normalized_milieu_weight": 0.04759504646062851
                 }
             },
             {
@@ -196,7 +196,7 @@
                     "id": "132",
                     "entrez": "186",
                     "genbank": "AGTR2",
-                    "normalized_milieu_weight": 0.2608594596385956
+                    "normalized_milieu_weight": 0.26695430278778076
                 }
             },
             {
@@ -205,7 +205,7 @@
                     "id": "3003",
                     "entrez": "4311",
                     "genbank": "MME",
-                    "normalized_milieu_weight": 0.09699049592018127
+                    "normalized_milieu_weight": 0.09460391104221344
                 }
             },
             {
@@ -214,7 +214,7 @@
                     "id": "5024",
                     "entrez": "7077",
                     "genbank": "TIMP2",
-                    "normalized_milieu_weight": 0.20074288547039032
+                    "normalized_milieu_weight": 0.20541025698184967
                 }
             },
             {
@@ -223,7 +223,7 @@
                     "id": "5025",
                     "entrez": "7078",
                     "genbank": "TIMP3",
-                    "normalized_milieu_weight": 0.3066874146461487
+                    "normalized_milieu_weight": 0.3143828213214874
                 }
             },
             {
@@ -232,7 +232,7 @@
                     "id": "5026",
                     "entrez": "7079",
                     "genbank": "TIMP4",
-                    "normalized_milieu_weight": 0.7421686053276062
+                    "normalized_milieu_weight": 0.7628453373908997
                 }
             },
             {
@@ -241,7 +241,7 @@
                     "id": "4717",
                     "entrez": "6695",
                     "genbank": "SPOCK1",
-                    "normalized_milieu_weight": 0.36854287981987
+                    "normalized_milieu_weight": 0.385431170463562
                 }
             },
             {
@@ -250,7 +250,7 @@
                     "id": "2546",
                     "entrez": "3685",
                     "genbank": "ITGAV",
-                    "normalized_milieu_weight": 0.14472509920597076
+                    "normalized_milieu_weight": 0.14499938488006592
                 }
             },
             {
@@ -259,7 +259,7 @@
                     "id": "4435",
                     "entrez": "6354",
                     "genbank": "CCL7",
-                    "normalized_milieu_weight": 0.24349258840084076
+                    "normalized_milieu_weight": 0.25456029176712036
                 }
             },
             {
@@ -268,7 +268,7 @@
                     "id": "6263",
                     "entrez": "9076",
                     "genbank": "CLDN1",
-                    "normalized_milieu_weight": 0.23539532721042633
+                    "normalized_milieu_weight": 0.24717643857002258
                 }
             },
             {
@@ -277,7 +277,7 @@
                     "id": "125",
                     "entrez": "176",
                     "genbank": "ACAN",
-                    "normalized_milieu_weight": 0.2637028694152832
+                    "normalized_milieu_weight": 0.27595242857933044
                 }
             },
             {
@@ -286,7 +286,7 @@
                     "id": "4990",
                     "entrez": "7040",
                     "genbank": "TGFB1",
-                    "normalized_milieu_weight": 0.11807969212532043
+                    "normalized_milieu_weight": 0.11561321467161179
                 }
             },
             {
@@ -295,7 +295,7 @@
                     "id": "47",
                     "entrez": "60",
                     "genbank": "ACTB",
-                    "normalized_milieu_weight": 0.059960730373859406
+                    "normalized_milieu_weight": 0.05957615002989769
                 }
             },
             {
@@ -304,7 +304,7 @@
                     "id": "2796",
                     "entrez": "4035",
                     "genbank": "LRP1",
-                    "normalized_milieu_weight": 0.1306249052286148
+                    "normalized_milieu_weight": 0.13339290022850037
                 }
             },
             {
@@ -313,7 +313,7 @@
                     "id": "2155",
                     "entrez": "3106",
                     "genbank": "HLA-B",
-                    "normalized_milieu_weight": 0.0697762742638588
+                    "normalized_milieu_weight": 0.06940358132123947
                 }
             },
             {
@@ -322,7 +322,7 @@
                     "id": "7420",
                     "entrez": "10482",
                     "genbank": "NXF1",
-                    "normalized_milieu_weight": 0.03746487945318222
+                    "normalized_milieu_weight": 0.03706824779510498
                 }
             },
             {
@@ -331,7 +331,7 @@
                     "id": "3031",
                     "entrez": "4343",
                     "genbank": "MOV10",
-                    "normalized_milieu_weight": 0.03682174161076546
+                    "normalized_milieu_weight": 0.037410639226436615
                 }
             },
             {
@@ -340,7 +340,7 @@
                     "id": "571",
                     "entrez": "801",
                     "genbank": "CALM1",
-                    "normalized_milieu_weight": 0.05188318341970444
+                    "normalized_milieu_weight": 0.05309080705046654
                 }
             },
             {
@@ -349,7 +349,7 @@
                     "id": "3380",
                     "entrez": "4914",
                     "genbank": "NTRK1",
-                    "normalized_milieu_weight": 0.028937676921486855
+                    "normalized_milieu_weight": 0.02904796041548252
                 }
             },
             {
@@ -358,7 +358,7 @@
                     "id": "252",
                     "entrez": "351",
                     "genbank": "APP",
-                    "normalized_milieu_weight": 0.027441412210464478
+                    "normalized_milieu_weight": 0.027499716728925705
                 }
             },
             {
@@ -367,7 +367,7 @@
                     "id": "6615",
                     "entrez": "9531",
                     "genbank": "BAG3",
-                    "normalized_milieu_weight": 0.05497398227453232
+                    "normalized_milieu_weight": 0.05619201809167862
                 }
             }
         ],

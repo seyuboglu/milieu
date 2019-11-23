@@ -1,14 +1,14 @@
-# Mutual Interactors: A network-based machine 
+# Mutual Interactors: A graph-based machine learning model with applications in molecular phenotype prediction
 
 *Sabri Eyuboglu, Marinka Zitnik and Jure Leskovec*
 
-This repository includes our PyTorch implementation of *Milieu*, a disease protein discovery algorithm that uncovers novel disease-protein associations *in silico* by leveraging the mutal interators between proteins already known to be associated with the disease. For a detailed description of the algorithm, please see our [paper](TODO).  
+This repository includes our PyTorch implementation of *Mutual Interactors*, a machine learning algorithm for node set expansion in large networks. The algorithm is motivated by the structure of disease-associated proteins, drug targets and protein functions in molecular networks, and can be used to  predicrt molecular phenotypes *in silico*. For a detailed description of the algorithm, please see our [paper](TODO).  
 
-We also include software for replicating the experiments referenced in the paper. Each experiment has a designated class in the `milieu/experiment' module. We also provide implementations of several baseline network-based disease protein prediction methods, including DIAMOnD, Random Walks and Graph Neural Networks.
+We include software for easily reproducing *all* the experiments described in the paper. Each experiment has a designated class in the `milieu/experiment' module. We also provide implementations of several baseline network-based disease protein prediction methods, including DIAMOnD, Random Walks and Graph Neural Networks.
 
 
 <p align="center">
-<img src="https://github.com/seyuboglu/milieu/blob/master/data/images/model.png" width="600" align="center">
+<img src="https://github.com/seyuboglu/milieu/blob/master/data/images/model.png" width="800" align="center">
 </p>
 
 ## Setup
@@ -32,8 +32,17 @@ Install package (`-e` for development mode)
 pip install -e .
 ```
 
-## Using *Milieu*
-To 
+## Using *Mutual Interactors*
+To get started checkout `mutual_interactors.ipynb` a Jupyter Notebook that will walk you
+through the process of training a *Mutual Interactors* model.
+
+It will also show you how to visualize the predictions of a trained *Mutual Interactors*
+model. 
+
+<p align="center">
+<img src="https://github.com/seyuboglu/milieu/blob/master/data/images/notebook.png" width="800" align="center">
+</p>
+
 
 
 ## Replicating Experiments
@@ -72,18 +81,3 @@ To
   - `methods` - modules including implementations of disease protein prediction methods
 - *notebooks* - assorted notebooks for exploring data and experiments
 
-## Experiments 
-
-### disease-significance
-
-### disease_subgraph
-
-### dpp_evaluate
-
-### dpp_predict
-
-### go_enrichment
-
-### lci_anlaysis
-
-### protein_significance

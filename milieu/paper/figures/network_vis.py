@@ -1,6 +1,7 @@
 
 import json
 import os
+import random
 
 import ndex2.client as nc
 from cyjupyter import Cytoscape
@@ -12,8 +13,11 @@ from milieu.util.util import ensure_dir_exists
 
 def show_network(network, seed_proteins, pred_proteins, 
                  id_format="genbank", style=None, show_seed_mi=True,
-                 model=None, excluded_interactions=[], save_path=None):
+                 model=None, excluded_interactions=[], save_path=None,
+                 size_limit=200):
     """
+    Generate a cytoscape jupyter visualization for the induced subgraph of seed_proteins, 
+    pred_proteins and the mutual interactors between them. 
     """
     if id_format == "genbank":
         genbank_to_entrez = load_mapping("data/protein_attrs/genbank_to_entrez.txt",
@@ -28,12 +32,11 @@ def show_network(network, seed_proteins, pred_proteins,
     elif id_format == "entrez":
         seed_nodes = network.get_nodes(seed_proteins)
         pred_nodes = network.get_nodes(pred_proteins) 
-    
     else:
         raise ValueError("id_format is not recognized.")
 
     cyjs_network = get_network(network, seed_nodes, pred_nodes, model,
-                               show_seed_mi, excluded_interactions)
+                               show_seed_mi, excluded_interactions, size_limit)
     # Unique ID for a network entry in NDEx
     uuid = 'f28356ce-362d-11e5-8ac5-06603eb7f303'
 
@@ -96,14 +99,13 @@ def show_network(network, seed_proteins, pred_proteins,
 
 
 def get_network(network, seed_nodes, pred_nodes, model=None,
-                show_seed_mi=True, excluded_interactions=[]):
+                show_seed_mi=True, excluded_interactions=[], size_limit=200):
     """ Get the disease subgraph of 
     Args:
         disease: (Disease) A disease object
     """
     entrez_to_genbank = load_mapping("data/protein_attrs/genbank_to_entrez.txt",
                                      b_transform=int, delimiter='\t', reverse=True)
-                    
     nodes = {}
 
     def add_node(node, role="seed"):
@@ -116,8 +118,8 @@ def get_network(network, seed_nodes, pred_nodes, model=None,
                 "data": {
                     "role": role, 
                     "id": str(node),
-                    "entrez": str(network.get_protein(node)),
-                    "genbank": entrez_to_genbank.get(network.get_protein(node), ""),
+                    "entrez": str(network.get_name(node)),
+                    "genbank": entrez_to_genbank.get(network.get_name(node), ""),
                     "normalized_milieu_weight": weight
                 }
             }
@@ -151,6 +153,16 @@ def get_network(network, seed_nodes, pred_nodes, model=None,
                 for common_nbr in common_nbrs:
                     add_node(common_nbr, role="mutual_interactor")
     
+    if size_limit is not None:
+        if size_limit < len(seed_nodes) + len(pred_nodes):
+            raise ValueError(f"size_limit ({size_limit}) must be at least as large as the total number" + 
+                             f"of seed and predicted nodes ({len(seed_nodes) + len(pred_nodes)}).")
+        while len(nodes) > size_limit: 
+            node = random.choice(list(nodes.keys()))
+            node_data = nodes[node]["data"]
+            if node_data["role"] == "mutual_interactor":
+                del nodes[node]
+
     # get induced subgraph 
     subgraph = nx.Graph(network.nx.subgraph(nodes.keys()))
 

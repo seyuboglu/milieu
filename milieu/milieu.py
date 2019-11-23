@@ -1,10 +1,12 @@
 #!/usr/bin/env python
 """
-Implementation of Milieu model as described in {TODO}.
+Implementation of Milieu model as described in "Mutual Interactors as a principle for the 
+discovery of phenotypers in molecular networks" by Sabri Eyuboglu, Marinka Zitnik, and
+Jure Leskovec. 
 
 Includes:
 Milieu  a torch.nn.Module that implements a trainable Milieu model.
-MilieuDataset   a torch.util.data.Dataset that serves disease-protein associations
+MilieuDataset   a torch.util.data.Dataset that serves NodeSet expansion examples 
 """
 import os
 import json
@@ -25,7 +27,7 @@ from scipy.sparse import coo_matrix, csr_matrix
 import parse
 
 from milieu.paper.methods.method import DPPMethod
-from milieu.data.associations import load_diseases
+from milieu.data.associations import load_node_sets
 from milieu.util.metrics import compute_metrics
 from milieu.util.util import set_logger, load_mapping
 
@@ -34,7 +36,8 @@ __author__ = "Evan Sabri Eyuboglu"
 
 class Milieu(nn.Module):
     """
-    Milieu model as described in {TODO}. 
+    Milieu model as described in "Mutual Interactors as a principle for the 
+    discovery of phenotypers in molecular networks". 
     Milieu training is parameterized by the self.params dictionary. The default dictionary
     is updated with the params passed to __init__. 
     """
@@ -64,7 +67,7 @@ class Milieu(nn.Module):
         """
         Milieu model as described in {TODO}. 
         args:
-            network (PPINetwork) The PPINetwork to use. 
+            network (Network) The Network to use. 
             params   (dict) Params to update in default_params. 
         """
         super().__init__()
@@ -80,10 +83,6 @@ class Milieu(nn.Module):
         self.network = network
         self.adj_matrix = network.adj_matrix 
 
-        self.genbank_to_entrez = load_mapping("data/protein_attrs/genbank_to_entrez.txt",
-                                              b_transform=int, delimiter='\t')
-        self.entrez_to_genbank = {entrez: genbank 
-                                  for genbank, entrez in self.genbank_to_entrez.items()}
 
         logging.info("Building model...")
         self._build_model()
@@ -132,11 +131,11 @@ class Milieu(nn.Module):
         """
         Forward pass through the model. See Methods, Equation (2).
         args:
-            inputs (torch.Tensor) an (m, n) binary torch tensor where m = # of diseases
-            in batch and n = # of proteins in the PPI network
+            inputs (torch.Tensor) an (m, n) binary torch tensor where m = # of nodesets
+            in batch and n = # of ndoes in the Network
         returns:
             out (torch.Tensor) an (m, n) torch tensor. Element (i, j) is the activations 
-            for disease i and protein j. Note: these are activations, not probabilities.
+            for nodeset i and node j. Note: these are activations, not probabilities.
             Use torch.sigmoid to convert to probabilties. 
         """
         m, n = inputs.shape
@@ -153,51 +152,39 @@ class Milieu(nn.Module):
 
     def predict(self, inputs):
         """
-        Make probabilistic predictions for novel protein associaitions for a batch of 
-        diseases.
+        Make probabilistic predictions for expansions of a batch of 
+        node sets.
         args:
-            inputs (torch.Tensor) an (m, n) binary torch tensor where m = # of diseases
-            in batch and n = # of proteins in the PPI network
+            inputs (torch.Tensor) an (m, n) binary torch tensor where m = # of nodeset
+            in batch and n = # of nodes in the PPI network
         returns:
             out (torch.Tensor) an (m, n) torch tensor. Element (i, j) is the probability 
-            protein j is associated with disease i and protein j.
+            node j is associated with nodeset i and node j.
         """
         return torch.sigmoid(self.forward(inputs))
     
-    def discover(self, entrez_ids=None, genbank_ids=None, top_k=10):
+    def expand(self, node_names=None, top_k=10):
         """
-        Get the top k proteins with the highest probability of association for a 
-        phenotype of interest. Must provide proteins known to be associated with the 
+        Get the top k nodes with the highest probability of association for a 
+        phenotype of interest. Must provide nodes known to be associated with the 
         phenotype via either the entrez_ids or genbank_ids argument. 
         args:
-            entrez_ids (iterable) a set of entrez ids representing proteins known to be 
+            entrez_ids (iterable) a set of entrez ids representing nodes known to be 
             associated with a phenotype of interest. Note: must provide either entrez_ids
             or genbank ids, but not both. 
 
-            genbank_ids (iterable) a set of genbank ids representing proteins known to be
+            genbank_ids (iterable) a set of genbank ids representing nodes known to be
             associated with a phenotype of interest. Note: must provide either entrez_ids 
             or genbank ids, but not both. 
 
-            top_k (int) the number of predicted proteins to return
+            top_k (int) the number of predicted nodes to return
         returns:
             top_k_entrez/genbank    (list(tuple)) returns a list of tuples of the form
             (entrez/genbank_id, probability of association). Includes top k predictions
             with highest probability. 
         """
-        if (entrez_ids is not None) == (genbank_ids is not None):
-            raise ValueError("Must provide either Entrez ids or GenBank ids, not both.")
-        
-        if genbank_ids is not None:
-            # get entrez from genbank ids
-            entrez_ids = [self.genbank_to_entrez[genbank] 
-                          for genbank in genbank_ids if genbank in self.genbank_to_entrez]
-            missing_ids = [genbank for genbank in genbank_ids 
-                           if genbank not in self.genbank_to_entrez]
-            if missing_ids:
-                logging.warning(f"Could not find entrez_ids for {missing_ids}")
-
         # build model input vector 
-        input_nodes = self.network.get_nodes(entrez_ids)
+        input_nodes = self.network.get_nodes(node_names)
         inputs = torch.zeros((1, len(self.network)), dtype=torch.float)
         inputs[0, input_nodes] = 1
         
@@ -216,13 +203,7 @@ class Milieu(nn.Module):
                     break
 
         top_k_probs = probs[top_k_nodes]
-        top_k_entrez = list(self.network.get_proteins(top_k_nodes))
-
-        if genbank_ids is not None:
-            top_k_genbank = [self.entrez_to_genbank[entrez] 
-                             for entrez in top_k_entrez 
-                             if entrez in self.entrez_to_genbank]
-            return list(zip(top_k_genbank, top_k_probs))
+        top_k_entrez = list(self.network.get_names(top_k_nodes))
 
         return list(zip(top_k_entrez, top_k_probs))
 
@@ -233,12 +214,12 @@ class Milieu(nn.Module):
         and negative examples are weighted 1. 
         args:
             outputs (torch.Tensor) An (m, n) torch tensor. Element (i, j) is the 
-            activation for disease i and protein j. Note: these are activations, not 
+            activation for node set i and node j. Note: these are activations, not 
             probabilities. We use BCEWithLogitsLoss which combines the sigmoid with 
             the loss for numerical stability. 
 
             targets (torch.Tensor) An (m, n) binary tensor. Element (i, j) indicates
-            whether protein j is in the held-out set of proteins associated with disease
+            whether node j is in the held-out set of nodes associated with node set
             i. 
 
         returns:
@@ -257,8 +238,8 @@ class Milieu(nn.Module):
         on each epoch. Computes metrics specified in params["metric_configs"] on each
         epoch. 
         args:
-            train_dataset (MilieuDataset) A milieu dataset of training diseases
-            valid_dataset (MilieuDataset) A milieu dataset of validatio diseases
+            train_dataset (MilieuDataset) A milieu dataset of training node sets
+            valid_dataset (MilieuDataset) A milieu dataset of validatio node sets
         returns:
             train_metrics   (list(dict)) train_metrics[i] is a dictionary mapping metric
             names to their values on epoch i
@@ -435,34 +416,24 @@ class Milieu(nn.Module):
 
 class MilieuDataset(Dataset):
 
-    def __init__(self, network, diseases=None, diseases_path=None, frac_known=0.9):
+    def __init__(self, network, node_sets=None, frac_known=0.9):
         """
-        PyTorch dataset that holds disease-protein association sets and serves them to the 
-        Milieu for training. During training we simulate disease protein discovery by 
-        splitting each association set into an input set and a target set. Each time we
-        access an association set from this dataset we randomly sample 90% of associations 
+        PyTorch dataset that holds node sets and serves them to the 
+        Milieu for training. During training we simulate node set expansion by 
+        splitting each node set into an input set and a target set. Each time we
+        access an node set set from this dataset we randomly sample 90% of associations 
         for the input set and use the remaining 10% for the target set. See Methods. 
         args:
-            network (PPINetwork)    PPINetwork being used by the Milieu model
-            diseases    (list(Disease)) list of milieu.data.associations.Disease. Note:
-            must provide either diseases or diseases_path but not both. 
-            diseases_path (str) a path to a csv file of disease associations readable by 
-            load_diseases. Note: must provide either diseases or diseases_path.
+            network (Network)    PPINetwork being used by the Milieu model
+            node_sets    (list(NodeSet)) list of milieu.data.associations.NodeSet.
             frac_known  (float)   fraction of each association set used for input set and
             target set. 
         """
-        if(diseases is not None) == (diseases_path is not None):
-            raise ValueError("Must provide either a list of Diseases or a path to " + 
-                             "a *.csv of disease associations readable by load_diseases.")
-        
-        if diseases_path is not None:
-            diseases = list(load_diseases(diseases_path).values())
-
         self.n = len(network)
-        self.examples = [{"id": disease.id, 
-                          "nodes": disease.to_node_array(network)}
-                         for disease 
-                         in diseases]
+        self.examples = [{"id": node_set.id, 
+                          "nodes": node_set.to_node_array(network)}
+                         for node_set 
+                         in node_sets]
         self.frac_known = frac_known
     
     def __len__(self):
@@ -470,8 +441,8 @@ class MilieuDataset(Dataset):
         return len(self.examples)
     
     def get_ids(self):
-        """ Get the set of all the disease ids in the dataset."""
-        return set([disease["id"] for disease in self.examples])
+        """ Get the set of all the node_set ids in the dataset."""
+        return set([node_set["id"] for node_set in self.examples])
 
     def __getitem__(self, idx):
         """
@@ -479,9 +450,9 @@ class MilieuDataset(Dataset):
         args:
             idx (int) The index of the association set in the dataset. 
         returns:
-            inputs (torch.Tensor) an (n,) binary torch tensor indicating the proteins in
+            inputs (torch.Tensor) an (n,) binary torch tensor indicating the nodes in
             the input set.
-            targets (torch.Tensor) an (n,) binary torch tensor indicating the proteins in
+            targets (torch.Tensor) an (n,) binary torch tensor indicating the nodes in
             the target set.
         """
         nodes = self.examples[idx]["nodes"]
