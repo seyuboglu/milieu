@@ -40,7 +40,7 @@ It will also show you how to visualize the predictions of a trained *Mutual Inte
 model. 
 
 <p align="center">
-<img src="https://github.com/seyuboglu/milieu/blob/master/data/images/notebook.png" width="800" align="center">
+<img src="https://github.com/seyuboglu/milieu/blob/master/data/images/notebook.pdf" width="800" align="center">
 </p>
 
 
