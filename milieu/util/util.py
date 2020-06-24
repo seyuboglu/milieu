@@ -11,13 +11,14 @@ from collections import OrderedDict, defaultdict
 
 import numpy as np
 import pandas as pd
-import torch 
+import torch
 
 
 class Process(object):
     """ 
     Base class for all disease protein prediction processes.
     """
+
     def __init__(self, dir, params):
         """ Initialize the 
         Args: 
@@ -28,27 +29,27 @@ class Process(object):
         # ensure dir exists
         if not os.path.isdir(self.dir):
             os.mkdir(self.dir)
-            with open(os.path.join(self.dir, "params.json"), 'w') as f: 
+            with open(os.path.join(self.dir, "params.json"), "w") as f:
                 json.dump(params, f, indent=4)
-        
+
         self.params = params
-        set_logger(os.path.join(self.dir, 'process.log'), 
-                   level=logging.INFO, 
-                   console=True)
-    
+        set_logger(
+            os.path.join(self.dir, "process.log"), level=logging.INFO, console=True
+        )
+
     def is_completed(self):
         """
         Checks if the experiment has already been run. 
         """
-        return os.path.isfile(os.path.join(self.dir, 'results.csv'))
+        return os.path.isfile(os.path.join(self.dir, "results.csv"))
 
-    def _run(self): 
+    def _run(self):
         raise NotImplementedError
-    
+
     def run(self, overwrite=False):
-        if os.path.isfile(os.path.join(self.dir, 'results.csv')) and not overwrite:
+        if os.path.isfile(os.path.join(self.dir, "results.csv")) and not overwrite:
             print("Experiment already run.")
-            return False 
+            return False
 
         if hasattr(self.params, "notify") and self.params.notify:
             try:
@@ -56,51 +57,55 @@ class Process(object):
             except:
                 tb = traceback.format_exc()
                 self.notify_user(error=tb)
-                return False 
+                return False
             else:
                 self.notify_user()
-                return True 
+                return True
         self._run()
         return True
-        
+
     def notify_user(self, error=None):
-        # read params 
-        with open(os.path.join(self.dir, 'params.json'), "r") as file:
+        # read params
+        with open(os.path.join(self.dir, "params.json"), "r") as file:
             params_string = file.readlines()
         if error is None:
             subject = "Experiment Completed: " + self.dir
-            message = ("Yo!\n",
-                       "Good news, your experiment just finished.",
-                       "You were running the experiment on: {}".format(
-                           socket.gethostname()),
-                       "---------------------------------------------",
-                       "See the results here: {}".format(self.dir),
-                       "---------------------------------------------", 
-                       "The parameters you fed to this experiment were: {}".format(
-                           params_string),
-                       "---------------------------------------------", 
-                       "Thanks!")
-        else: 
+            message = (
+                "Yo!\n",
+                "Good news, your experiment just finished.",
+                "You were running the experiment on: {}".format(socket.gethostname()),
+                "---------------------------------------------",
+                "See the results here: {}".format(self.dir),
+                "---------------------------------------------",
+                "The parameters you fed to this experiment were: {}".format(
+                    params_string
+                ),
+                "---------------------------------------------",
+                "Thanks!",
+            )
+        else:
             subject = "Experiment Error: " + self.dir
-            message = ("Uh Oh!\n",
-                       "Your experiment encountered an error.",
-                       "You were running the experiment found at: {}".format(self.dir),
-                       "You were running the experiment on: {}".format(
-                           socket.gethostname()),
-                       "---------------------------------------------",
-                       "Check out the error message: \n{}".format(error),
-                       "---------------------------------------------", 
-                       "The parameters you fed to this experiment were: {}".format(
-                           params_string),
-                       "---------------------------------------------", 
-                       "Thanks!")
+            message = (
+                "Uh Oh!\n",
+                "Your experiment encountered an error.",
+                "You were running the experiment found at: {}".format(self.dir),
+                "You were running the experiment on: {}".format(socket.gethostname()),
+                "---------------------------------------------",
+                "Check out the error message: \n{}".format(error),
+                "---------------------------------------------",
+                "The parameters you fed to this experiment were: {}".format(
+                    params_string
+                ),
+                "---------------------------------------------",
+                "Thanks!",
+            )
 
         message = "\n".join(message)
         send_email(subject, message)
 
-    def __call__(self): 
+    def __call__(self):
         return self.run()
-    
+
     def summarize_results(self):
         """
         Returns the summary of the dataframe 
@@ -110,7 +115,6 @@ class Process(object):
         return self.results.describe()
 
 
-
 def load_params(experiment_dir):
     """
     loads the params at the experiment dir
@@ -118,7 +122,7 @@ def load_params(experiment_dir):
     with open(os.path.join(experiment_dir, "params.json")) as f:
         params = json.load(f, object_pairs_hook=OrderedDict)
     return params
-    
+
 
 def set_logger(log_path=None, level=logging.INFO, console=True):
     """Sets the logger to log info in terminal and file `log_path`.
@@ -141,13 +145,15 @@ def set_logger(log_path=None, level=logging.INFO, console=True):
         # Logging to a file
         if log_path is not None:
             file_handler = logging.FileHandler(log_path)
-            file_handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s: %(message)s'))
+            file_handler.setFormatter(
+                logging.Formatter("%(asctime)s:%(levelname)s: %(message)s")
+            )
             logger.addHandler(file_handler)
 
         # Logging to console
-        if console: 
+        if console:
             stream_handler = logging.StreamHandler(sys.stdout)
-            stream_handler.setFormatter(logging.Formatter('%(message)s'))
+            stream_handler.setFormatter(logging.Formatter("%(message)s"))
             logger.addHandler(stream_handler)
 
 
@@ -157,7 +163,7 @@ def parse_id_rank_pair(str):
     """
     if "=" not in str:
         return -1, float(str)
-    
+
     id, rank = str.split("=")
     return int(id), float(rank)
 
@@ -168,12 +174,21 @@ def prepare_sns(sns, params={}, kwargs={}):
     Args: 
         params (object) dictionary containing settings for each of the seaborn plots
     """
-    sns.set_context('paper', font_scale=1) 
-    sns.set(palette=tuple(params.get("plot_palette", ["#E03C3F", "lightgrey"])),
-            font=params.get("plot_font", "Times New Roman"), **kwargs)
-    sns.set_style(params.get("plot_style", "ticks"),  
-                  {'xtick.major.size': 5.0, 'xtick.minor.size': 5.0, 
-                   'ytick.major.size': 5.0, 'ytick.minor.size': 5.0})
+    sns.set_context("paper", font_scale=1)
+    sns.set(
+        palette=tuple(params.get("plot_palette", ["#E03C3F", "lightgrey"])),
+        font=params.get("plot_font", "Times New Roman"),
+        **kwargs,
+    )
+    sns.set_style(
+        params.get("plot_style", "ticks"),
+        {
+            "xtick.major.size": 5.0,
+            "xtick.minor.size": 5.0,
+            "ytick.major.size": 5.0,
+            "ytick.minor.size": 5.0,
+        },
+    )
 
 
 def send_email(subject, message, to_addr=None, login=None, pw=None):
@@ -181,27 +196,25 @@ def send_email(subject, message, to_addr=None, login=None, pw=None):
     Send emails notifying the completion of experiments. 
     """
     if to_addr is None or login is None or pw is None:
-        return 
+        return
 
-    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server = smtplib.SMTP("smtp.gmail.com", 587)
     server.starttls()
     server.login(login, pw)
 
-    msg = MIMEMultipart()       # create a message
+    msg = MIMEMultipart()  # create a message
 
     # add in the actual person name to the message template
 
     # setup the parameters of the message
-    msg['From'] = f"{login}@gmail.com"
-    msg['To'] = to_addr
-    msg['Subject'] = subject
+    msg["From"] = f"{login}@gmail.com"
+    msg["To"] = to_addr
+    msg["Subject"] = subject
 
     # add in the message body
-    msg.attach(MIMEText(message, 'plain'))
+    msg.attach(MIMEText(message, "plain"))
 
-    problems = server.sendmail(f"{login}@gmail.com", 
-                               to_addr, 
-                               msg.as_string())
+    problems = server.sendmail(f"{login}@gmail.com", to_addr, msg.as_string())
     server.quit()
 
 
@@ -232,7 +245,7 @@ def fraction_nonzero(array):
 
 def print_title(title="Experiment", subtitle=None):
     print(title)
-    if subtitle is not None: 
+    if subtitle is not None:
         print(subtitle)
     print("Sabri Eyuboglu, Marinka Zitnik and Jure Leskovec -- SNAP Group")
     print("==============================================================")
@@ -249,13 +262,14 @@ def compute_pvalue(result, null_results):
     """
     """
     null_results = np.array(null_results)
-    return np.logical_or((null_results > result), 
-                          np.isclose(null_results, result)).mean()
+    return np.logical_or(
+        (null_results > result), np.isclose(null_results, result)
+    ).mean()
 
 
-def load_mapping(path, delimiter=" ", reverse=False, 
-                 a_transform=lambda x: x,
-                 b_transform=lambda x: x):
+def load_mapping(
+    path, delimiter=" ", reverse=False, a_transform=lambda x: x, b_transform=lambda x: x
+):
     """
     Loads a str-str mapping from a text file of the form:     
         ' a b
@@ -273,14 +287,14 @@ def load_mapping(path, delimiter=" ", reverse=False,
     mapping = {}
     with open(path) as f:
         for line in f:
-            if line[0] == '#':
+            if line[0] == "#":
                 continue
             a, b = line.split(delimiter)
             b = b.strip("\n")
 
             if not a or not b:
                 continue
-                
+
             a = a_transform(a)
             b = b_transform(b)
 
@@ -318,27 +332,32 @@ def build_degree_buckets(network, min_len=500):
         # skip nonexistant degrees
         if degree not in degree_to_buckets:
             continue
-        
+
         curr_degrees.append(degree)
 
         # extend current bucket if necessary
         if curr_bucket is not None:
             curr_bucket.extend(degree_to_buckets[degree])
             degree_to_buckets[degree] = curr_bucket
-        else: 
+        else:
             curr_bucket = degree_to_buckets[degree]
-            
-        if(len(curr_bucket) >= min_len):
+
+        if len(curr_bucket) >= min_len:
             prev_bucket = curr_bucket
             curr_bucket = None
             curr_degrees = []
 
-    if curr_bucket is not None and prev_bucket is not None and len(curr_bucket) < min_len:
+    if (
+        curr_bucket is not None
+        and prev_bucket is not None
+        and len(curr_bucket) < min_len
+    ):
         prev_bucket.extend(curr_bucket)
         for degree in curr_degrees:
             degree_to_buckets[degree] = prev_bucket
 
     return degree_to_buckets
+
 
 def place_on_gpu(data, device=0):
     """
@@ -376,12 +395,13 @@ def place_on_cpu(data):
         data = data_type(data)
         return data
     elif data_type is dict:
-        data = {key: place_on_cpu(val) for key,val in data.items()}
+        data = {key: place_on_cpu(val) for key, val in data.items()}
         return data
     elif isinstance(data, torch.Tensor):
         return data.cpu().detach()
     else:
         return data
+
 
 def ensure_dir_exists(dir):
     """
@@ -389,8 +409,9 @@ def ensure_dir_exists(dir):
     args:
         dir     (str)   directory to be created
     """
-    if not(os.path.exists(dir)):
+    if not (os.path.exists(dir)):
         parent_dir = os.path.dirname(dir)
         if parent_dir:
             ensure_dir_exists(parent_dir)
         os.mkdir(dir)
+

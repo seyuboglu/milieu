@@ -13,7 +13,7 @@ from shutil import copyfile
 
 import pandas as pd
 import numpy as np
-import torch 
+import torch
 import click
 
 from milieu.util.util import set_logger, send_email
@@ -24,33 +24,21 @@ import milieu.paper.experiments.node_significance as node_significance
 import milieu.paper.experiments.set_significance as set_significance
 import milieu.paper.experiments.disease_subgraph as disease_subgraph
 import milieu.paper.experiments.network_robustness as network_robustness
+import milieu.paper.experiments.jaccard as jaccard_comparison
 import milieu.data.network_matrices as network_matrices
 import milieu.paper.figures.recall_curve as recall_curve
 import milieu.paper.figures.robustness_curve as robustness_curve
 import milieu.paper.figures.recall_comparison as recall_comparison
-import milieu.data.aggregate as aggregate 
+import milieu.data.aggregate as aggregate
 
 
 @click.command()
 @click.argument(
-    "process_dir",
-    type=str,
+    "process_dir", type=str,
 )
-@click.option(
-    "--overwrite",
-    type=bool,
-    default=False
-)
-@click.option(
-    "--notify",
-    type=bool,
-    default=True
-)
-@click.option(
-    "--num_runs",
-    type=int,
-    default=1
-)
+@click.option("--overwrite", type=bool, default=False)
+@click.option("--notify", type=bool, default=True)
+@click.option("--num_runs", type=int, default=1)
 def main(process_dir, overwrite, notify, num_runs):
     """
     """
@@ -77,4 +65,3 @@ def main(process_dir, overwrite, notify, num_runs):
 
 if __name__ == "__main__":
     sys.exit(main())
-    

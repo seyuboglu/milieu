@@ -1,0 +1,14 @@
+{
+    "process": "jaccard_comparison",
+    "process_params": {
+        "n_processes": 1,
+        "ppi_network": "data/networks/species_9606/string/network.txt",
+        "association_paths": [
+            "data/associations/disgenet/associations.csv",
+            "data/associations/gene_ontology/species_9606/go_function/associations.csv",
+            "data/associations/drugbank/associations.csv",
+            "data/associations/gene_ontology/species_9606/go_process/associations.csv"
+        ],
+        "mi_dir": "data/networks/species_9606/string/mutual_interactor"
+    }
+}

@@ -10,7 +10,7 @@ from multiprocessing import Pool
 from collections import defaultdict
 
 import numpy as np
-import matplotlib.pyplot as plt 
+import matplotlib.pyplot as plt
 from scipy.stats import truncnorm, rankdata
 from sklearn.model_selection import LeaveOneOut
 import pandas as pd
@@ -21,11 +21,17 @@ from milieu.data.associations import load_diseases
 from milieu.data.network import Network
 from milieu.data.network_matrices import load_network_matrices
 from milieu.paper.experiments.experiment import Experiment
-from milieu.util.util import set_logger, prepare_sns, compute_pvalue, build_degree_buckets
+from milieu.util.util import (
+    set_logger,
+    prepare_sns,
+    compute_pvalue,
+    build_degree_buckets,
+)
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--dir', default='experiments/base_model',
-                    help="Directory containing params.json")
+parser.add_argument(
+    "--dir", default="experiments/base_model", help="Directory containing params.json"
+)
 
 
 class NodeSignificance(Experiment):
@@ -34,6 +40,7 @@ class NodeSignificance(Experiment):
     between disease proteins. Uses the method described in Guney et al. for generating
     random subgraph. 
     """
+
     def __init__(self, dir, params):
         """
         Constructor 
@@ -43,37 +50,50 @@ class NodeSignificance(Experiment):
         super().__init__(dir, params)
 
         # Set the logger
-        set_logger(os.path.join(self.dir, 'experiment.log'), level=logging.INFO, console=True)
+        set_logger(
+            os.path.join(self.dir, "experiment.log"), level=logging.INFO, console=True
+        )
 
-        # Log title 
+        # Log title
         logging.info("Metric Significance of Diseases in the PPI Network")
         logging.info("Sabri Eyuboglu  -- SNAP Group")
         logging.info("======================================")
         logging.info("Loading Disease Associations...")
-        self.diseases = load_diseases(self.params["associations_path"], 
-                                      self.params["disease_subset"],
-                                      exclude_splits=['none'])
-    
+        self.diseases = load_diseases(
+            self.params["associations_path"],
+            self.params["disease_subset"],
+            exclude_splits=["none"],
+        )
+
     def get_null_nodes(self, node, quantity=1):
         """
         """
         degree = self.network.nx.degree[node]
-        return np.random.choice(self.degree_to_bucket[degree], 
-                                size=quantity, 
-                                replace=True)
-    
+        return np.random.choice(
+            self.degree_to_bucket[degree], size=quantity, replace=True
+        )
+
     def frac_direct_interactions(self, test_node, train_nodes):
         """
         """
-        return (np.sum(self.network.adj_matrix[test_node, :][train_nodes]) / 
-                len(train_nodes))
+        return np.sum(self.network.adj_matrix[test_node, :][train_nodes]) / len(
+            train_nodes
+        )
 
     def frac_common_interactions(self, test_node, train_nodes):
         """
         """
-        return 1.0*np.count_nonzero(np.dot(self.network.adj_matrix[test_node, :], 
-                      self.network.adj_matrix[train_nodes, :].T)) / len(train_nodes)
-    
+        return (
+            1.0
+            * np.count_nonzero(
+                np.dot(
+                    self.network.adj_matrix[test_node, :],
+                    self.network.adj_matrix[train_nodes, :].T,
+                )
+            )
+            / len(train_nodes)
+        )
+
     def common_interactor_score(self, test_node, train_nodes):
         """
         """
@@ -88,67 +108,79 @@ class NodeSignificance(Experiment):
         indices = []
         results = []
         disease_pathway = disease.to_node_array(self.network)
+        if len(disease_pathway) < 10:
+            return None, None
         loo = LeaveOneOut()
         for train_index, test_index in loo.split(disease_pathway):
             train_nodes = disease_pathway[train_index]
             test_node = disease_pathway[test_index][0]
 
-            indices.append((disease.id, self.network.node_to_protein[test_node]))
+            indices.append((disease.id, self.network.node_to_name[test_node]))
             metrics = {}
             metrics["degree"] = self.network.nx.degree[test_node]
 
-            null_nodes = self.get_null_nodes(test_node, 
-                                             quantity=self.params["n_random_nodes"])
-            
+            null_nodes = self.get_null_nodes(
+                test_node, quantity=self.params["n_random_nodes"]
+            )
+
             for metric_fn in self.params["metric_fns"]:
                 result = getattr(self, metric_fn)(test_node, train_nodes)
-                null_results = [getattr(self, metric_fn)(null_node, train_nodes)
-                                for null_node in null_nodes]
+                null_results = [
+                    getattr(self, metric_fn)(null_node, train_nodes)
+                    for null_node in null_nodes
+                ]
                 p_value = compute_pvalue(result, null_results)
                 metrics[metric_fn] = result
                 metrics["{}_pvalue".format(metric_fn)] = p_value
-                
+
             results.append(metrics)
         return indices, results
-    
+
     def _run(self):
         """
         Run the experiment.
         """
         logging.info("Loading Network...")
-        self.network = Network(self.params["ppi_network"]) 
+        self.network = Network(self.params["ppi_network"])
 
         logging.info("Loading PPI Matrices...")
-        self.ppi_matrices = load_network_matrices(self.params["ppi_matrices"],
-                                                  self.network)
+        self.ppi_matrices = load_network_matrices(
+            self.params["ppi_matrices"], self.network
+        )
 
         logging.info("Building Degree Buckets...")
-        self.degree_to_bucket = build_degree_buckets(self.network,
-                                                     min_len=self.params["min_bucket_len"])
+        self.degree_to_bucket = build_degree_buckets(
+            self.network, min_len=self.params["min_bucket_len"]
+        )
 
         logging.info("Running Experiment...")
         self.results = []
         self.indices = []
 
         if self.params["n_processes"] > 1:
-            with tqdm(total=len(self.diseases)) as t: 
+            with tqdm(total=len(self.diseases)) as t:
                 p = Pool(self.params["n_processes"])
-                for indices, results in p.imap(process_disease_wrapper, 
-                                               self.diseases.values()):
+                for indices, results in p.imap(
+                    process_disease_wrapper, self.diseases.values()
+                ):
+                    if indices is None:
+                        continue
                     self.indices.extend(indices)
                     self.results.extend(results)
                     t.update()
         else:
-            with tqdm(total=len(self.diseases)) as t: 
+            with tqdm(total=len(self.diseases)) as t:
                 for disease in self.diseases.values():
                     indices, results = self.process_disease(disease)
+                    if indices is None:
+                        continue
                     self.indices.extend(indices)
                     self.results.extend(results)
                     t.update()
 
-        index = pd.MultiIndex.from_tuples(self.indices, names=['disease', 'protein'])
+        index = pd.MultiIndex.from_tuples(self.indices, names=["disease", "protein"])
         self.results = pd.DataFrame(self.results, index=index)
-    
+
     def summarize_results(self):
         """
         Creates a dataframe summarizing the results across
@@ -156,9 +188,9 @@ class NodeSignificance(Experiment):
         return:
             summary_df (DataFrame)
         """
-        summary_df =  self.results.describe()
+        summary_df = self.results.describe()
 
-        frac_significant = {} 
+        frac_significant = {}
         for col_name in self.results:
             if "pvalue" not in col_name:
                 continue
@@ -167,80 +199,99 @@ class NodeSignificance(Experiment):
         summary_df = summary_df.append(pd.Series(frac_significant, name="<= 0.05"))
 
         return summary_df
-    
+
     def save_results(self, summary=True):
         """
         Saves the results to a csv using a pandas Data Fram
         """
         print("Saving Results...")
-        self.results.to_csv(os.path.join(self.dir, 'results.csv'), index=True)
+        self.results.to_csv(os.path.join(self.dir, "results.csv"), index=True)
 
         if summary:
             summary_df = self.summarize_results()
-            summary_df.to_csv(os.path.join(self.dir, 'summary.csv'))
-    
+            summary_df.to_csv(os.path.join(self.dir, "summary.csv"))
+
     def load_results(self):
         """
         Loads the results from a csv to a pandas Data Frame.
         """
         print("Loading Results...")
-        self.results = pd.read_csv(os.path.join(self.dir, 'results.csv'), index_col=[0,1])
+        self.results = pd.read_csv(
+            os.path.join(self.dir, "results.csv"), index_col=[0, 1]
+        )
 
-    def plot_full_distribution(self, name, metrics, 
-                               plot_type="bar", xlabel="", ylabel="",
-                               yscale="linear", bins=100,
-                               xmin=0.0, xmax=1.0):
+    def plot_full_distribution(
+        self,
+        name,
+        metrics,
+        plot_type="bar",
+        xlabel="",
+        ylabel="",
+        yscale="linear",
+        bins=100,
+        xmin=0.0,
+        xmax=1.0,
+    ):
         """
         """
 
         for metric_name in metrics:
             metric = np.array(self.results[metric_name])
-            
+
             metric[metric >= 0.1] = 0.15
             print(f"{metric_name}: {len(metric[metric >= 0.1])}")
-            
-            prepare_sns(sns, kwargs={"font_scale": 1,
-                         "rc": {'figure.figsize':(6, 3)}})
 
+            prepare_sns(sns, kwargs={"font_scale": 1, "rc": {"figure.figsize": (6, 3)}})
 
             if plot_type == "bar":
-                sns.distplot(metric, bins=bins, kde=False,
-                            hist_kws={'range': (xmin, xmax),
-                                      'alpha': 0.8}, 
-                            label=metric_name)
+                sns.distplot(
+                    metric,
+                    bins=bins,
+                    kde=False,
+                    hist_kws={"range": (xmin, xmax), "alpha": 0.8},
+                    label=metric_name,
+                )
                 plt.ylabel("# of associations")
 
             elif plot_type == "kde":
-                sns.kdeplot(metric, shade=True, kernel="gau", clip=(0, 1), 
-                            label=metric_name)
-                plt.ylabel("Associations [KDE{}]".format(r' $\log_{10}$' 
-                                                        if yscale == "log" 
-                                                        else ""))
+                sns.kdeplot(
+                    metric, shade=True, kernel="gau", clip=(0, 1), label=metric_name
+                )
+                plt.ylabel(
+                    "Associations [KDE{}]".format(
+                        r" $\log_{10}$" if yscale == "log" else ""
+                    )
+                )
                 plt.yticks([])
 
             elif plot_type == "bar_kde":
-                sns.distplot(metric, bins=40, kde=True, 
-                            kde_kws={'clip': (xmin, xmax)}, label=metric_name)
+                sns.distplot(
+                    metric,
+                    bins=40,
+                    kde=True,
+                    kde_kws={"clip": (xmin, xmax)},
+                    label=metric_name,
+                )
                 plt.ylabel("# of associations")
-            
+
             elif plot_type == "":
                 pass
-        
+
         plt.xlabel(xlabel)
         sns.despine()
         plt.xticks(np.arange(0.0, 1.0, 0.05))
-        if plot_type == "kde": 
+        if plot_type == "kde":
             plt.yticks()
         plt.legend()
         plt.tight_layout()
-        plt.ylim(bottom=0, top=3500)
+        plt.ylim(bottom=0, top=600)
         plt.xlim(xmin=xmin, xmax=xmax)
-    #plt.yscale(yscale)
+        # plt.yscale(yscale)
 
         time_string = datetime.datetime.now().strftime("%m-%d_%H%M")
-        plot_path = os.path.join(self.figures_dir, 
-                                 '{}_{}_'.format(name, 
-                                                 yscale) + time_string + '.pdf')
+        plot_path = os.path.join(
+            self.figures_dir, "{}_{}_".format(name, yscale) + time_string + ".pdf"
+        )
         plt.savefig(plot_path)
         plt.show()
         plt.close()
@@ -252,10 +303,10 @@ class NodeSignificance(Experiment):
         """
         print("Plotting Results...")
         prepare_sns(sns, self.params)
-        self.figures_dir = os.path.join(self.dir, 'figures')
+        self.figures_dir = os.path.join(self.dir, "figures")
         if not os.path.exists(self.figures_dir):
             os.makedirs(self.figures_dir)
-        
+
         for plot_name, params in self.params["plots_to_params"].items():
             plot_fn = params["plot_fn"]
             del params["plot_fn"]
@@ -269,7 +320,7 @@ def process_disease_wrapper(disease):
 def main(process_dir, overwrite, notify):
     with open(os.path.join(process_dir, "params.json")) as f:
         params = json.load(f)
-    assert(params["process"] == "node_significance")
+    assert params["process"] == "node_significance"
     global exp
     exp = NodeSignificance(process_dir, params["process_params"])
     if exp.is_completed():
