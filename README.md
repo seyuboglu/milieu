@@ -36,6 +36,10 @@ Install package (`-e` for development mode)
 pip install -e .
 ```
 
+- This package has been tested on the following systems: macOS Catalina (10.15) and Ubuntu Linux (16.04.5).
+- This package requires Python >=3.7.3
+- This package depends on a number of open-source Python packages which can be found in the setup.py.
+
 ## Using *Mutual Interactors*
 To get started checkout `notebooks/mutual_interactors.ipynb` a Jupyter Notebook that will walk you
 through the process of training a *Mutual Interactors* model. In the notebook, we use the task of disease protein prediction on a PPI network as a running example, but it is easy to swap out the network and node sets for a different task. 
