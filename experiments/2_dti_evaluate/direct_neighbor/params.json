@@ -7,7 +7,6 @@
         "disease_subset": [],
         
         "n_folds": 10,
-        
         "method_class": "DirectNeighbor",
         "method_params": { 
         }
