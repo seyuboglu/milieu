@@ -246,7 +246,7 @@ class SetSignificance(Experiment):
                     plt.ylabel(ylabel)
 
                 disease = self.diseases[disease_id]
-                sns.scatterplot(disease_mean, 0)
+                plt.plot([disease_mean], [0], marker="o", markersize=4, markeredgecolor="red", markerfacecolor="red")
                 
                 #xlabel = r"Mean CI score" # , $\frac{1}{|S|} \sum_{u \in S} CI(u, S \backslash \{u\})$
                 plt.xlabel(xlabel)
@@ -254,7 +254,7 @@ class SetSignificance(Experiment):
 
                 plt.tight_layout()
                 plt.savefig(os.path.join(disease_dir, 
-                                         f"{disease_id}_simple.pdf"))
+                                         f"{disease_id}_simple_{metric}.pdf"))
                 #plt.show()
                 plt.close()
                 plt.clf()

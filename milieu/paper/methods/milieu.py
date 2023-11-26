@@ -10,6 +10,7 @@ import torch
 from torch.utils.data import DataLoader
 from torch.optim import Adam 
 from tqdm import tqdm
+from milieu.milieu import Milieu, MilieuDataset
 
 from milieu.util.util import place_on_cpu, place_on_gpu
 from milieu.paper.methods.method import DPPMethod
@@ -68,17 +69,17 @@ class MilieuMethod(DPPMethod):
         for test_fold in folds_to_diseases.keys(): 
             logging.info("Training model for test {}".format(test_fold))
             val_fold = str((int(test_fold) - 1) % len(folds_to_diseases))
-            test_dataset = DiseaseDataset([disease 
-                                           for disease in folds_to_diseases[test_fold]],
-                                           self.network)
-            val_dataset = DiseaseDataset([disease 
-                                          for disease in folds_to_diseases[val_fold]],
-                                          self.network) 
-            train_dataset = DiseaseDataset([disease  
+            test_dataset = MilieuDataset(self.network, 
+                                         [disease 
+                                           for disease in folds_to_diseases[test_fold]])
+            val_dataset = MilieuDataset(self.network, [disease 
+                                          for disease in folds_to_diseases[val_fold]]
+                                          ) 
+            train_dataset = MilieuDataset(self.network, [disease  
                                              for fold, diseases in folds_to_diseases.items()
                                              if fold != test_fold and fold != val_fold
-                                             for disease in diseases], 
-                                            self.network)
+                                             for disease in diseases]
+                                            )
             
             # ensure no data leakage
             assert(not set.intersection(*[test_dataset.get_ids(), 
@@ -106,10 +107,8 @@ class MilieuMethod(DPPMethod):
                             num_workers=self.params["num_workers"],
                             pin_memory=self.params["cuda"])
 
-        if self.params["model_class"] == "LCIEmbModule":
-            model = LCIEmbModule(self.params["model_args"], self.network)
-        else:
-            model = LCIModule(self.params, self.adjacency)
+
+        model = Milieu(self.network, self.params)
 
         if self.params["cuda"]:
             model = model.cuda()
@@ -118,16 +117,21 @@ class MilieuMethod(DPPMethod):
         
         logging.info("Starting training for {} epoch(s)".format(self.params["num_epochs"]))
         model.train()
-        train_and_evaluate(
-            model,
-            train_dl,
-            dev_dl,
-            optimizer,
-            bce_loss,
-            metrics,
-            self.params,
-            self.dir
+        model.train_model(
+            train_dataset=train_dataset,
+            valid_dataset=val_dataset,
         )
+        
+        # train_and_evaluate(
+        #     model,
+        #     train_dl,
+        #     dev_dl,
+        #     optimizer,
+        #     bce_loss,
+        #     metrics,
+        #     self.params,
+        #     self.dir
+        # )
         model.eval()
         return model.cpu()
 
